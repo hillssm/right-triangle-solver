@@ -30,7 +30,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
       "sec-intro": {
         "h2": "Så beräknar du arean av en rätvinklig triangel utifrån en vinkel",
         "blocks": [
-          { "kind": "p", "text": "Anta att en rätvinklig triangel har en katet på [[b=4\\text{ m}]], en hypotenusa på [[c=5\\text{ m}]] och att den spetsiga vinkeln mellan dessa två sidor mäter cirka [[A\\approx36.87^\\circ]]. Arean följer direkt: [[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]. Eftersom [[\\sin(36.87^\\circ)\\approx0.6]] är arean ungefär [[[\\boxed{K=6\\text{ m}^2}]]]. Triangeln omsluter 6 kvadratmeter plan yta." },
+          { "kind": "p", "text": "Anta att en rätvinklig triangel har en katet på [[b=4\\text{ m}]], en hypotenusa på [[c=5\\text{ m}]] och att den spetsiga vinkeln mellan dessa två sidor mäter cirka [[A\\approx36.87^\\circ]]. Arean följer direkt: [[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]. Eftersom [[\\sin(36.87^\\circ)\\approx0.6]] är arean ungefär [[[\\boxed{K=6\\text{ m}^2}]]] Triangeln omsluter 6 kvadratmeter plan yta." },
           { "kind": "p", "text": "Den här kalkylatorn hanterar just den situationen: med en katet, hypotenusan och den spetsiga vinkeln mellan dem förvandlar sinus hypotenusan till den saknade vinkelräta höjden, och hälften av basen gånger höjden ger arean i kvadratenheter. Den inkluderade vinkeln måste ligga mellan de två inmatade sidorna, och varje läge kopplar en specifik vinkel till dess två sidor." },
           { "kind": "p", "text": "Vinkeln [[36.87^\\circ]] är avrundad från cirka [[36.8699^\\circ]]; full precision i kalkylatorn ger det mest exakta resultatet." }
         ]
@@ -78,7 +78,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
           { "kind": "p", "text": "[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]" },
           { "kind": "p", "text": "Variablerna är: [[b]] kateten närliggande vinkel [[A]], [[c]] hypotenusan, [[A]] den spetsiga inkluderade vinkeln mellan [[b]] och [[c]], och [[K]] arean." },
           { "kind": "h3", "text": "Steg-för-steg-härledning av formeln" },
-          { "kind": "p", "text": "Börja från kateternas areaformel [[K=ab/2]]. Från sinusförhållandet vid vinkel [[A]], [[\\sin(A)=a/c]], alltså [[a=c\\sin(A)]]. Den motstående kateten [[a]] skrivs om som hypotenusans sinuskomponent. Insättning ger [[K=\\frac{b(c\\sin(A))}{2}]], och omskrivning ger [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]. Den okända motstående kateten behöver aldrig matas in eftersom formeln konstruerar den från hypotenusan och vinkeln bakom kulisserna." },
+          { "kind": "p", "text": "Börja från kateternas areaformel [[K=ab/2]]. Från sinusförhållandet vid vinkel [[A]], [[\\sin(A)=a/c]], alltså [[a=c\\sin(A)]]. Den motstående kateten [[a]] skrivs om som hypotenusans sinuskomponent. Insättning ger [[K=\\frac{b(c\\sin(A))}{2}]], och omskrivning ger [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]] Den okända motstående kateten behöver aldrig matas in eftersom formeln konstruerar den från hypotenusan och vinkeln bakom kulisserna." },
           { "kind": "h3", "text": "Fullständigt räkneexempel" },
           { "kind": "p", "text": "Givet [[b=4\\text{ m}]], [[c=5\\text{ m}]], [[A\\approx36.87^\\circ]]:" }
         ],
@@ -87,7 +87,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
           "<strong>Sätt in.</strong> [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]].",
           "<strong>Beräkna sinus.</strong> [[\\sin(36.87^\\circ)\\approx0.6]].",
           "<strong>Multiplicera.</strong> [[K\\approx(20\\times0.6)/2]].",
-          "<strong>Dividera.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]."
+          "<strong>Dividera.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]"
         ],
         "closingParagraphs": [
           "Svaret säger att triangeln täcker cirka 6 kvadratmeter. Eftersom invinkeln är avrundad hör ordet ungefär hemma i rapporten, även om samma indata med full precision ger exakt 6.",
@@ -102,7 +102,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
           { "kind": "p", "text": "[[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]" },
           { "kind": "p", "text": "Variablerna är: [[a]] kateten närliggande vinkel [[B]], som är motstående vinkel [[A]]; [[c]] hypotenusan; [[B]] den inkluderade spetsiga vinkeln mellan [[a]] och [[c]]; och [[K]] arean." },
           { "kind": "h3", "text": "Steg-för-steg-härledning av formeln" },
-          { "kind": "p", "text": "Börja igen från [[K=ab/2]]. Sinusförhållandet mätt vid vinkel [[B]] lyder [[\\sin(B)=b/c]], eftersom den motstående sidan från [[B]]:s synvinkel är [[b]]. Alltså [[b=c\\sin(B)]]. Insättning ger [[K=\\frac{a(c\\sin(B))}{2}]], alltså [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]. Formeln använder sidan [[a]] även om [[a]] kallas den motstående sidan i sidans huvudnotation; etiketten motstående hör till vinkel [[A]], medan samma sida relativt vinkel [[B]] är närliggande. Sidetiketter är alltid relativa till den valda referensvinkeln." },
+          { "kind": "p", "text": "Börja igen från [[K=ab/2]]. Sinusförhållandet mätt vid vinkel [[B]] lyder [[\\sin(B)=b/c]], eftersom den motstående sidan från [[B]]:s synvinkel är [[b]]. Alltså [[b=c\\sin(B)]]. Insättning ger [[K=\\frac{a(c\\sin(B))}{2}]], alltså [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]] Formeln använder sidan [[a]] även om [[a]] kallas den motstående sidan i sidans huvudnotation; etiketten motstående hör till vinkel [[A]], medan samma sida relativt vinkel [[B]] är närliggande. Sidetiketter är alltid relativa till den valda referensvinkeln." },
           { "kind": "h3", "text": "Fullständigt räkneexempel" },
           { "kind": "p", "text": "Givet [[a=3\\text{ m}]], [[c=5\\text{ m}]], [[B\\approx53.13^\\circ]]:" }
         ],
@@ -110,7 +110,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
           "<strong>Skriv formeln.</strong> [[K=ac\\sin(B)/2]].",
           "<strong>Sätt in.</strong> [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]].",
           "<strong>Beräkna sinus.</strong> [[\\sin(53.13^\\circ)\\approx0.8]].",
-          "<strong>Multiplicera och dividera.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]."
+          "<strong>Multiplicera och dividera.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]"
         ],
         "closingParagraphs": [
           "Resultatet är samma 6 kvadratmeter som i läge 1-exemplet, eftersom båda exemplen beskriver samma 3-4-5-triangel sedd från dess två spetsiga vinklar.",
@@ -168,13 +168,13 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           { "kind": "p", "text": "Fyra exempel bygger metoden på välkända trianglar, från 3-4-5-tripeln till specialvinkelfall." },
           { "kind": "h3", "text": "Exempel 1: 3-4-5-triangel med vinkel A" },
-          { "kind": "p", "text": "Givet [[b=4]], [[c=5]], [[A\\approx36.87^\\circ]], använd [[K=bc\\sin(A)/2]]. Då [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], [[K\\approx(20\\times0.6)/2]], alltså [[[\\boxed{K\\approx6}]]]. Arean är 6 kvadratenheter eftersom triangeln omsluter sex enhetskvadrater av plan yta; med fullprecisionsvinkel är värdet exakt 6." },
+          { "kind": "p", "text": "Givet [[b=4]], [[c=5]], [[A\\approx36.87^\\circ]], använd [[K=bc\\sin(A)/2]]. Då [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], [[K\\approx(20\\times0.6)/2]], alltså [[[\\boxed{K\\approx6}]]] Arean är 6 kvadratenheter eftersom triangeln omsluter sex enhetskvadrater av plan yta; med fullprecisionsvinkel är värdet exakt 6." },
           { "kind": "h3", "text": "Exempel 2: Samma triangel med vinkel B" },
-          { "kind": "p", "text": "Givet [[a=3]], [[c=5]], [[B\\approx53.13^\\circ]], använd [[K=ac\\sin(B)/2]]. Då [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]], [[K\\approx(15\\times0.8)/2]], alltså [[[\\boxed{K\\approx6}]]]. Resultatet matchar exempel 1 eftersom båda exemplen beskriver samma triangel; de två vinklarna är komplementära vyer av en form." },
+          { "kind": "p", "text": "Givet [[a=3]], [[c=5]], [[B\\approx53.13^\\circ]], använd [[K=ac\\sin(B)/2]]. Då [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]], [[K\\approx(15\\times0.8)/2]], alltså [[[\\boxed{K\\approx6}]]] Resultatet matchar exempel 1 eftersom båda exemplen beskriver samma triangel; de två vinklarna är komplementära vyer av en form." },
           { "kind": "h3", "text": "Exempel 3: En 30-60-90-triangel" },
-          { "kind": "p", "text": "Ta [[c=10]] och [[A=30^\\circ]]. Kateten följer från [[b=c\\cos(30^\\circ)=5\\sqrt{3}]]. Då [[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]], och eftersom [[\\sin(30^\\circ)=1/2]], [[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]]. Specialvinkelvärden som [[\\sin(30^\\circ)]] och [[\\cos(30^\\circ)]] ger exakta former före avrundning till decimaler, vilket är varför dessa trianglar är användbara för att kontrollera kalkylatorn för hand." },
+          { "kind": "p", "text": "Ta [[c=10]] och [[A=30^\\circ]]. Kateten följer från [[b=c\\cos(30^\\circ)=5\\sqrt{3}]]. Då [[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]], och eftersom [[\\sin(30^\\circ)=1/2]], [[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]] Specialvinkelvärden som [[\\sin(30^\\circ)]] och [[\\cos(30^\\circ)]] ger exakta former före avrundning till decimaler, vilket är varför dessa trianglar är användbara för att kontrollera kalkylatorn för hand." },
           { "kind": "h3", "text": "Exempel 4: En 45-45-90-triangel" },
-          { "kind": "p", "text": "Givet [[c=10]] och [[A=45^\\circ]] är kateterna lika: [[a=b=5\\sqrt{2}]]. Då [[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]], och eftersom [[\\sin(45^\\circ)=\\sqrt{2}/2]] förenklas produkten till [[[\\boxed{K=25}]]]. Detta är en likbent rätvinklig triangel, och som visas senare har den också den största möjliga arean för en rätvinklig triangel med en hypotenusa på 10 enheter." }
+          { "kind": "p", "text": "Givet [[c=10]] och [[A=45^\\circ]] är kateterna lika: [[a=b=5\\sqrt{2}]]. Då [[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]], och eftersom [[\\sin(45^\\circ)=\\sqrt{2}/2]] förenklas produkten till [[[\\boxed{K=25}]]] Detta är en likbent rätvinklig triangel, och som visas senare har den också den största möjliga arean för en rätvinklig triangel med en hypotenusa på 10 enheter." }
         ]
       },
       "sec-applications": {
@@ -182,29 +182,29 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           { "kind": "p", "text": "Tolv fullt uträknade situationer, sex för varje kalkylatorläge. Varje exempel anger mätningarna, väljer läge, tillämpar formeln och tolkar svaret. Vinkelvärden visas med två decimaler medan aritmetiken behåller full precision under ytan." },
           { "kind": "h3", "text": "Praktiskt exempel 1: Trekantig takgavel" },
-          { "kind": "p", "text": "En förenklad rätvinklig takgavelsektion har närliggande sida [[b=4\\text{ m}]], hypotenusa [[c=5\\text{ m}]] och inkluderad vinkel [[A\\approx36.87^\\circ]]. Använd läge 1: [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], alltså [[[\\boxed{K\\approx6\\text{ m}^2}]]]. den plana sektionens area, inte den totala takytan. Kontroll: [[K=(3\\times4)/2=6]]." },
+          { "kind": "p", "text": "En förenklad rätvinklig takgavelsektion har närliggande sida [[b=4\\text{ m}]], hypotenusa [[c=5\\text{ m}]] och inkluderad vinkel [[A\\approx36.87^\\circ]]. Använd läge 1: [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], alltså [[[\\boxed{K\\approx6\\text{ m}^2}]]] den plana sektionens area, inte den totala takytan. Kontroll: [[K=(3\\times4)/2=6]]." },
           { "kind": "h3", "text": "Praktiskt exempel 2: Sidopanel till trekantig ramp" },
-          { "kind": "p", "text": "En rätvinklig rampsidopanel har [[b=2.4\\text{ m}]], [[c=2.5\\text{ m}]] och [[A\\approx16.26^\\circ]]. Den underliggande motstående sidan är 0.7 m, så [[\\sin(A)=0.7/2.5=0.28]]. Använd läge 1: [[K=(2.4\\times2.5\\times0.28)/2]], alltså [[[\\boxed{K\\approx0.84\\text{ m}^2}]]]. sidopanelens area, inte den sluttande rampytan. Kontroll: [[K=(0.7\\times2.4)/2=0.84]]." },
+          { "kind": "p", "text": "En rätvinklig rampsidopanel har [[b=2.4\\text{ m}]], [[c=2.5\\text{ m}]] och [[A\\approx16.26^\\circ]]. Den underliggande motstående sidan är 0.7 m, så [[\\sin(A)=0.7/2.5=0.28]]. Använd läge 1: [[K=(2.4\\times2.5\\times0.28)/2]], alltså [[[\\boxed{K\\approx0.84\\text{ m}^2}]]] sidopanelens area, inte den sluttande rampytan. Kontroll: [[K=(0.7\\times2.4)/2=0.84]]." },
           { "kind": "h3", "text": "Praktiskt exempel 3: Trekantigt segel" },
-          { "kind": "p", "text": "En plan rätvinklig segelsektion har [[b=12\\text{ ft}]], [[c=13\\text{ ft}]] och [[A\\approx22.62^\\circ]]. Den motstående sidan är 5 ft, så [[\\sin(A)=5/13]]. Använd läge 1: [[K=(12\\times13\\times(5/13))/2]], alltså [[[\\boxed{K=30\\text{ ft}^2}]]]. plan geometrisk area, före sömmar och spill. Kontroll: [[K=(5\\times12)/2=30]]." },
+          { "kind": "p", "text": "En plan rätvinklig segelsektion har [[b=12\\text{ ft}]], [[c=13\\text{ ft}]] och [[A\\approx22.62^\\circ]]. Den motstående sidan är 5 ft, så [[\\sin(A)=5/13]]. Använd läge 1: [[K=(12\\times13\\times(5/13))/2]], alltså [[[\\boxed{K=30\\text{ ft}^2}]]] plan geometrisk area, före sömmar och spill. Kontroll: [[K=(5\\times12)/2=30]]." },
           { "kind": "h3", "text": "Praktiskt exempel 4: Rätvinklig marksektion" },
-          { "kind": "p", "text": "En lantmäteriskiss beskriver en rätvinklig tomt med [[b=40\\text{ m}]], [[c=50\\text{ m}]] och [[A\\approx36.87^\\circ]]. Eftersom [[\\sin(A)=30/50=0.6]] ger läge 1 [[K=(40\\times50\\times0.6)/2]], alltså [[[\\boxed{K=600\\text{ m}^2}]]]. den plana tomtarean under en plan modell. Kontroll: [[K=(30\\times40)/2=600]]." },
+          { "kind": "p", "text": "En lantmäteriskiss beskriver en rätvinklig tomt med [[b=40\\text{ m}]], [[c=50\\text{ m}]] och [[A\\approx36.87^\\circ]]. Eftersom [[\\sin(A)=30/50=0.6]] ger läge 1 [[K=(40\\times50\\times0.6)/2]], alltså [[[\\boxed{K=600\\text{ m}^2}]]] den plana tomtarean under en plan modell. Kontroll: [[K=(30\\times40)/2=600]]." },
           { "kind": "h3", "text": "Praktiskt exempel 5: Stödpanel av stål" },
-          { "kind": "p", "text": "En plan trekantig stålpanel har [[b=1.5\\text{ m}]], [[c=1.7\\text{ m}]] och [[A\\approx28.07^\\circ]]. Den motstående sidan är 0.8 m, så [[\\sin(A)=0.8/1.7]]. Använd läge 1: [[K=(1.5\\times1.7\\times(0.8/1.7))/2]], alltså [[[\\boxed{K=0.6\\text{ m}^2}]]]. plan area endast, inte bärförmåga. Kontroll: [[K=(0.8\\times1.5)/2=0.6]]." },
+          { "kind": "p", "text": "En plan trekantig stålpanel har [[b=1.5\\text{ m}]], [[c=1.7\\text{ m}]] och [[A\\approx28.07^\\circ]]. Den motstående sidan är 0.8 m, så [[\\sin(A)=0.8/1.7]]. Använd läge 1: [[K=(1.5\\times1.7\\times(0.8/1.7))/2]], alltså [[[\\boxed{K=0.6\\text{ m}^2}]]] plan area endast, inte bärförmåga. Kontroll: [[K=(0.8\\times1.5)/2=0.6]]." },
           { "kind": "h3", "text": "Praktiskt exempel 6: Sidoprofil till trappa" },
-          { "kind": "p", "text": "En förenklad sidopanel till en trappa har horisontell katet [[b=3.2\\text{ m}]], hypotenusa [[c=4\\text{ m}]] och [[A\\approx36.87^\\circ]]. Med [[\\sin(A)=0.6]] ger läge 1 [[K=(3.2\\times4\\times0.6)/2]], alltså [[[\\boxed{K=3.84\\text{ m}^2}]]]. sidoprofilen, inte stegytan. Kontroll: med den andra kateten 2.4 m, [[K=(2.4\\times3.2)/2=3.84]]." },
+          { "kind": "p", "text": "En förenklad sidopanel till en trappa har horisontell katet [[b=3.2\\text{ m}]], hypotenusa [[c=4\\text{ m}]] och [[A\\approx36.87^\\circ]]. Med [[\\sin(A)=0.6]] ger läge 1 [[K=(3.2\\times4\\times0.6)/2]], alltså [[[\\boxed{K=3.84\\text{ m}^2}]]] sidoprofilen, inte stegytan. Kontroll: med den andra kateten 2.4 m, [[K=(2.4\\times3.2)/2=3.84]]." },
           { "kind": "h3", "text": "Praktiskt exempel 7: Trekantigt glasfönster" },
-          { "kind": "p", "text": "Ett rätvinkligt fönster har sidan [[a=0.6\\text{ m}]], hypotenusan [[c=1\\text{ m}]] och inkluderad vinkel [[B\\approx53.13^\\circ]]. Med [[\\sin(B)=0.8]] ger läge 2 [[K=(0.6\\times1\\times0.8)/2]], alltså [[[\\boxed{K=0.24\\text{ m}^2}]]]. glasarea före karmmån. Kontroll: [[K=(0.6\\times0.8)/2=0.24]]." },
+          { "kind": "p", "text": "Ett rätvinkligt fönster har sidan [[a=0.6\\text{ m}]], hypotenusan [[c=1\\text{ m}]] och inkluderad vinkel [[B\\approx53.13^\\circ]]. Med [[\\sin(B)=0.8]] ger läge 2 [[K=(0.6\\times1\\times0.8)/2]], alltså [[[\\boxed{K=0.24\\text{ m}^2}]]] glasarea före karmmån. Kontroll: [[K=(0.6\\times0.8)/2=0.24]]." },
           { "kind": "h3", "text": "Praktiskt exempel 8: Trekantig markis" },
-          { "kind": "p", "text": "En plan rätvinklig markissektion har [[a=1.2\\text{ m}]], [[c=2\\text{ m}]] och [[B\\approx53.13^\\circ]]. Använd läge 2: [[K=(1.2\\times2\\times0.8)/2]], alltså [[[\\boxed{K=0.96\\text{ m}^2}]]]. Kontroll: [[K=(1.2\\times1.6)/2=0.96]]." },
+          { "kind": "p", "text": "En plan rätvinklig markissektion har [[a=1.2\\text{ m}]], [[c=2\\text{ m}]] och [[B\\approx53.13^\\circ]]. Använd läge 2: [[K=(1.2\\times2\\times0.8)/2]], alltså [[[\\boxed{K=0.96\\text{ m}^2}]]] Kontroll: [[K=(1.2\\times1.6)/2=0.96]]." },
           { "kind": "h3", "text": "Praktiskt exempel 9: Utskärningsmönster i plywood" },
-          { "kind": "p", "text": "En rätvinklig plywoodbit har [[a=0.9\\text{ m}]], [[c=1.5\\text{ m}]] och [[B\\approx53.13^\\circ]]. Använd läge 2: [[K=(0.9\\times1.5\\times0.8)/2]], alltså [[[\\boxed{K=0.54\\text{ m}^2}]]]. användbar materialarea, exklusive bortskuret spill. Kontroll: [[K=(0.9\\times1.2)/2=0.54]]." },
+          { "kind": "p", "text": "En rätvinklig plywoodbit har [[a=0.9\\text{ m}]], [[c=1.5\\text{ m}]] och [[B\\approx53.13^\\circ]]. Använd läge 2: [[K=(0.9\\times1.5\\times0.8)/2]], alltså [[[\\boxed{K=0.54\\text{ m}^2}]]] användbar materialarea, exklusive bortskuret spill. Kontroll: [[K=(0.9\\times1.2)/2=0.54]]." },
           { "kind": "h3", "text": "Praktiskt exempel 10: Uppmätning av ett trekantigt fält" },
-          { "kind": "p", "text": "En förenklad fältmätning ger [[a=7\\text{ m}]], [[c=25\\text{ m}]] och [[B\\approx73.74^\\circ]]. Den andra kateten är 24 m, så [[\\sin(B)=24/25=0.96]]. Använd läge 2: [[K=(7\\times25\\times0.96)/2]], alltså [[[\\boxed{K=84\\text{ m}^2}]]]. den plana sektionsarean. Kontroll: [[K=(7\\times24)/2=84]]." },
+          { "kind": "p", "text": "En förenklad fältmätning ger [[a=7\\text{ m}]], [[c=25\\text{ m}]] och [[B\\approx73.74^\\circ]]. Den andra kateten är 24 m, så [[\\sin(B)=24/25=0.96]]. Använd läge 2: [[K=(7\\times25\\times0.96)/2]], alltså [[[\\boxed{K=84\\text{ m}^2}]]] den plana sektionsarean. Kontroll: [[K=(7\\times24)/2=84]]." },
           { "kind": "h3", "text": "Praktiskt exempel 11: Trekantig drakpanel" },
-          { "kind": "p", "text": "En rätvinklig drak- eller tygpanel har [[a=20\\text{ cm}]], [[c=25\\text{ cm}]] och [[B\\approx36.87^\\circ]]. Eftersom [[\\sin(B)=15/25=0.6]] ger läge 2 [[K=(20\\times25\\times0.6)/2]], alltså [[[\\boxed{K=150\\text{ cm}^2}]]]. kvadratcentimeter, i överensstämmelse med indatana. Kontroll: [[K=(20\\times15)/2=150]]." },
+          { "kind": "p", "text": "En rätvinklig drak- eller tygpanel har [[a=20\\text{ cm}]], [[c=25\\text{ cm}]] och [[B\\approx36.87^\\circ]]. Eftersom [[\\sin(B)=15/25=0.6]] ger läge 2 [[K=(20\\times25\\times0.6)/2]], alltså [[[\\boxed{K=150\\text{ cm}^2}]]] kvadratcentimeter, i överensstämmelse med indatana. Kontroll: [[K=(20\\times15)/2=150]]." },
           { "kind": "h3", "text": "Praktiskt exempel 12: Sidopanel till solcellsfäste" },
-          { "kind": "p", "text": "En plan rätvinklig sidopanel till ett stöd har [[a=1.8\\text{ m}]], [[c=3\\text{ m}]] och inkluderad vinkel [[B\\approx53.13^\\circ]]. Med [[\\sin(B)=0.8]] ger läge 2 [[K=(1.8\\times3\\times0.8)/2]], alltså [[[\\boxed{K=2.16\\text{ m}^2}]]]. panelarea, inte elektrisk effekt eller kapacitet. Kontroll: [[K=(1.8\\times2.4)/2=2.16]]." }
+          { "kind": "p", "text": "En plan rätvinklig sidopanel till ett stöd har [[a=1.8\\text{ m}]], [[c=3\\text{ m}]] och inkluderad vinkel [[B\\approx53.13^\\circ]]. Med [[\\sin(B)=0.8]] ger läge 2 [[K=(1.8\\times3\\times0.8)/2]], alltså [[[\\boxed{K=2.16\\text{ m}^2}]]] panelarea, inte elektrisk effekt eller kapacitet. Kontroll: [[K=(1.8\\times2.4)/2=2.16]]." }
         ],
         "table": {
           "headers": ["Situation", "Läge", "Katet / Hyp.", "Vinkel", "Area", "Tolkning"],
@@ -231,9 +231,9 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           { "kind": "p", "text": "En katet, en hypotenusa och en spetsig vinkel bär mer information än en rätvinklig triangel behöver: två av de tre bestämmer den tredje, så alla tre måste stämma överens. Kontrollerna nedan bekräftar att det beräknade talet beskriver en rätvinklig triangel." },
           { "kind": "h3", "text": "Validera läge 1" },
-          { "kind": "p", "text": "För läge 1 är konsistensrelationen [[\\cos(A)=b/c]], ekvivalent [[[\\boxed{b=c\\cos(A)}]]]. Med [[b=4]] och [[c=5]] ger [[\\cos(A)=0.8]] [[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]. En godtycklig vinkel som [[60^\\circ]] skulle inte beskriva samma rätvinkliga triangel med dessa sidlängder: [[5\\cos(60^\\circ)=2.5\\neq4]], så de tre indatana vore ömsesidigt inkonsistenta." },
+          { "kind": "p", "text": "För läge 1 är konsistensrelationen [[\\cos(A)=b/c]], ekvivalent [[[\\boxed{b=c\\cos(A)}]]] Med [[b=4]] och [[c=5]] ger [[\\cos(A)=0.8]] [[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]. En godtycklig vinkel som [[60^\\circ]] skulle inte beskriva samma rätvinkliga triangel med dessa sidlängder: [[5\\cos(60^\\circ)=2.5\\neq4]], så de tre indatana vore ömsesidigt inkonsistenta." },
           { "kind": "h3", "text": "Validera läge 2" },
-          { "kind": "p", "text": "För läge 2 är relationen [[\\cos(B)=a/c]], ekvivalent [[[\\boxed{a=c\\cos(B)}]]]. Med [[a=3]] och [[c=5]], [[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]. Den valda vinkeln måste motsvara de faktiska mätningarna; en katet på 3 med en hypotenusa på 5 möts helt enkelt inte i en inkluderad vinkel på till exempel [[70^\\circ]]." },
+          { "kind": "p", "text": "För läge 2 är relationen [[\\cos(B)=a/c]], ekvivalent [[[\\boxed{a=c\\cos(B)}]]] Med [[a=3]] och [[c=5]], [[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]. Den valda vinkeln måste motsvara de faktiska mätningarna; en katet på 3 med en hypotenusa på 5 möts helt enkelt inte i en inkluderad vinkel på till exempel [[70^\\circ]]." },
           { "kind": "h3", "text": "Varför den allmänna areaformeln ändå kan returnera ett tal" },
           { "kind": "p", "text": "Formeln [[K=\\frac12xy\\sin(\\theta)]] beräknar arean av en allmän triangel definierad av två sidor och deras inkluderade vinkel. En inkompatibel vinkel-sidkombination returnerar ändå ett tal, men den resulterande triangeln är inte rätvinklig: det är någon annan triangel som råkar dela dessa tre indata. Det aritmetiska resultatet bevisar inte i sig att indatana beskriver en giltig rätvinklig triangel; cosinuskontrollen ovan gör det jobbet." },
           { "kind": "h3", "text": "Så hanterar du avrundade vinkelmätningar" },
@@ -245,11 +245,11 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           { "kind": "p", "text": "Dessa är matematiska alternativ, inte extra kalkylatorlägen; de visar samma geometri under andra indatakombinationer." },
           { "kind": "h3", "text": "Med hypotenusan och en spetsig vinkel" },
-          { "kind": "p", "text": "För en giltig rätvinklig triangel, [[a=c\\sin(A)]] och [[b=c\\cos(A)]]. Insättning i [[K=ab/2]] ger [[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]]. Med dubbelvinkelidentiteten [[\\sin(2A)=2\\sin(A)\\cos(A)]] blir detta [[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]]. Hypotenusan och en spetsig vinkel bestämmer triangeln fullständigt, så ingen katetmätning behövs alls." },
+          { "kind": "p", "text": "För en giltig rätvinklig triangel, [[a=c\\sin(A)]] och [[b=c\\cos(A)]]. Insättning i [[K=ab/2]] ger [[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]] Med dubbelvinkelidentiteten [[\\sin(2A)=2\\sin(A)\\cos(A)]] blir detta [[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]] Hypotenusan och en spetsig vinkel bestämmer triangeln fullständigt, så ingen katetmätning behövs alls." },
           { "kind": "h3", "text": "Med en katet och dess närliggande vinkel" },
-          { "kind": "p", "text": "Om sidan [[b]] och vinkeln [[A]] är kända, då [[a=b\\tan(A)]], och [[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]]. Parningen spelar roll: [[b]] måste vara kateten närliggande vinkel [[A]] för att tangens ska producera den motstående kateten." },
+          { "kind": "p", "text": "Om sidan [[b]] och vinkeln [[A]] är kända, då [[a=b\\tan(A)]], och [[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]] Parningen spelar roll: [[b]] måste vara kateten närliggande vinkel [[A]] för att tangens ska producera den motstående kateten." },
           { "kind": "h3", "text": "Med sidan a och vinkeln B" },
-          { "kind": "p", "text": "Speglar föregående fall för vinkel [[B]]: [[b=a\\tan(B)]], alltså [[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]]. Sidan [[a]] är närliggande vinkel [[B]], vilket är precis varför tangens återigen återskapar den motstående kateten." },
+          { "kind": "p", "text": "Speglar föregående fall för vinkel [[B]]: [[b=a\\tan(B)]], alltså [[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]] Sidan [[a]] är närliggande vinkel [[B]], vilket är precis varför tangens återigen återskapar den motstående kateten." },
           { "kind": "h3", "text": "Vilken metod är enklast?" },
           { "kind": "p", "text": "Den bästa formeln är den som matchar de tillgängliga mätningarna. Om båda kateterna är kända, använd [[K=ab/2]] och hoppa över trigonometrin. Om en katet, hypotenusan och den inkluderade vinkeln är kända är kalkylatorns två lägen den direkta vägen. Tangens- och dubbelvinkelformerna är användbara för handberäkningar med specialvinklar, men att lägga till steg som indatana inte kräver lägger bara till fler ställen där fel kan gömma sig." }
         ]
@@ -261,7 +261,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3C = {
           { "kind": "h3", "text": "Fast hypotenusa, föränderlig vinkel" },
           { "kind": "p", "text": "För en fast hypotenusa kan arean skrivas som [[K=\\frac{c^2\\sin(2A)}{4}]]. Faktorn [[\\sin(2A)]] stiger när [[A]] rör sig från nära [[0^\\circ]] mot [[45^\\circ]] och faller sedan när [[A]] närmar sig [[90^\\circ]]. Arean ökar därför över första halvan av det spetsiga intervallet och minskar över andra halvan. De två halvorna är spegelbilder genom komplementvinkelrelationen [[A+B=90^\\circ]]: att byta vinklarna byter kateterna och lämnar arean oförändrad." },
           { "kind": "h3", "text": "Maximal area för en fast hypotenusa" },
-          { "kind": "p", "text": "Eftersom [[\\sin(2A)\\leq1]] är den största möjliga arean [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]], uppnådd när [[A=B=45^\\circ]]. För [[c=10]] är den maximala arean [[[\\boxed{K_{\\max}=25\\text{ square units}}]]]. Detta är den likbenta rätvinkliga triangeln i exempel 4: lika kateter gör produkten av kateterna, och därmed arean, så stor som den fasta hypotenusan tillåter." },
+          { "kind": "p", "text": "Eftersom [[\\sin(2A)\\leq1]] är den största möjliga arean [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]], uppnådd när [[A=B=45^\\circ]]. För [[c=10]] är den maximala arean [[[\\boxed{K_{\\max}=25\\text{ square units}}]]] Detta är den likbenta rätvinkliga triangeln i exempel 4: lika kateter gör produkten av kateterna, och därmed arean, så stor som den fasta hypotenusan tillåter." },
           { "kind": "h3", "text": "Varför arean inte enkelt ökar med vinkeln i varje fall" },
           { "kind": "p", "text": "Ett påstående om ökande vinklar är meningslöst utan att ange vad som hålls konstant. Med en fast hypotenusa stiger relationen först och faller sedan; med en fast katet är relationen återigen en annan. Att behandla area som en enkelt ökande funktion av vinkeln är en vanlig överförenkling, och detta avsnitt finns för att hålla den borta från ditt arbete." }
         ]

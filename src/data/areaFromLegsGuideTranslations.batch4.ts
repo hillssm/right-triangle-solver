@@ -87,7 +87,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-intro": {
         "h2": "두 변으로 직각삼각형의 넓이를 구하는 방법",
         "blocks": [
-          { "kind": "p", "text": "[[a=6]], [[b=8]]을 가져옵니다. [[K=\\frac{6\\times8}{2}]]를 적용합니다. [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. 이 결과는 세 변으로 둘러싸인 전체 평면 표면을 나타냅니다. 스물네 제곱 단위. 두 변으로 넓이 구하는 직각삼각형 계산기가 이 두 입력에 대해 돌려주는 값과 정확히 같습니다." },
+          { "kind": "p", "text": "[[a=6]], [[b=8]]을 가져옵니다. [[K=\\frac{6\\times8}{2}]]를 적용합니다. [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] 이 결과는 세 변으로 둘러싸인 전체 평면 표면을 나타냅니다. 스물네 제곱 단위. 두 변으로 넓이 구하는 직각삼각형 계산기가 이 두 입력에 대해 돌려주는 값과 정확히 같습니다." },
           { "kind": "p", "text": "이 계산기에 필요한 것은 두 변, 즉 직각에서 만나는 두 변뿐입니다. 두 변이 서로 수직이므로 하나는 밑변이 되고 다른 하나는 높이가 되어 추가 측정이 필요 없습니다. 빗변은 여기서 아무 역할도 하지 않습니다. 두 변을 곱하고 그 곱을 절반으로 나누면 [[K=\\frac{ab}{2}]]에서 넓이가 따라옵니다." },
           { "kind": "p", "text": "이것은 기하학에서 가장 단순한 넓이 계산 중 하나로, 두 수직 측정값이 이미 손에 있기 때문입니다. 모서리가 직각인 곳이면 어디서나 등장합니다. 건축 배치도, 재단 시트, 화단, 측량 스케치는 모두 두 변과 절반이 된 하나의 곱으로 귀결됩니다." }
         ]
@@ -127,13 +127,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-formula": {
         "h2": "왜 직각삼각형의 넓이는 두 변의 곱의 절반인가요?",
         "blocks": [
-          { "kind": "p", "text": "일반 규칙에서 시작합니다. [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. 직각삼각형에서는 [[\\text{Base}=a]], [[\\text{Height}=b]]로 둡니다. 두 변이 수직이므로 [[[\\boxed{K=\\frac{a\\times b}{2}}]]]. 이 절의 나머지는 그 절반이 어디서 오는지 보여주어, 2로 나누는 것을 외우는 것이 아니라 이해하도록 합니다." },
+          { "kind": "p", "text": "일반 규칙에서 시작합니다. [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. 직각삼각형에서는 [[\\text{Base}=a]], [[\\text{Height}=b]]로 둡니다. 두 변이 수직이므로 [[[\\boxed{K=\\frac{a\\times b}{2}}]]] 이 절의 나머지는 그 절반이 어디서 오는지 보여주어, 2로 나누는 것을 외우는 것이 아니라 이해하도록 합니다." },
           { "kind": "h3", "text": "직사각형 방법 이해하기" },
-          { "kind": "p", "text": "가로 [[a]], 세로 [[b]]인 직사각형을 그립니다. 그 넓이는 [[K_{\\text{rectangle}}=a\\times b]]입니다. 이제 한 모서리에서 맞은편 모서리로 대각선을 그립니다. 대각선은 직사각형을 서로 정확히 같은 두 삼각형으로 나누며, 각 삼각형은 변 [[a]]와 [[b]], 그리고 직사각형의 모서리가 있던 자리의 직각을 가집니다. 두 삼각형의 넓이가 같으므로 각각이 직사각형의 절반을 차지합니다. [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]." },
+          { "kind": "p", "text": "가로 [[a]], 세로 [[b]]인 직사각형을 그립니다. 그 넓이는 [[K_{\\text{rectangle}}=a\\times b]]입니다. 이제 한 모서리에서 맞은편 모서리로 대각선을 그립니다. 대각선은 직사각형을 서로 정확히 같은 두 삼각형으로 나누며, 각 삼각형은 변 [[a]]와 [[b]], 그리고 직사각형의 모서리가 있던 자리의 직각을 가집니다. 두 삼각형의 넓이가 같으므로 각각이 직사각형의 절반을 차지합니다. [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]" },
           { "kind": "h3", "text": "왜 합동인 두 직각삼각형이 직사각형을 이루나요?" },
           { "kind": "p", "text": "두 삼각형을 빗변이 맞닿도록 놓습니다. 대응하는 변이 맞물립니다. [[a]] 대 [[a]], [[b]] 대 [[b]]. 직각삼각형의 예각이 여각 관계([[A+B=90^\\circ]])이므로 합쳐진 도형의 각 모서리에서 만나는 각들의 합은 사방 모두 90도가 됩니다. 결과는 네 직각과 마주보는 변이 같은 도형, 즉 직사각형입니다. 그 변은 정확히 두 변이며, 그래서 직사각형의 넓이는 [[a\\times b]]이고 각 삼각형은 그 절반을 차지합니다." },
           { "kind": "h3", "text": "왜 2로 나누어야 하나요?" },
-          { "kind": "p", "text": "6×8 직사각형을 가져옵니다. 그 넓이는 [[K=6\\times8=48]]입니다. 합동인 두 직각삼각형은 각각 절반을 차지합니다. [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]]. 나누기를 빼먹으면 다른 질문에 답하는 것입니다. 삼각형이 아니라 직사각형의 넓이. 2로 나누는 것은 보정 계수가 아닙니다. 감싸는 직사각형을 삼각형으로 다듬는 단계입니다." },
+          { "kind": "p", "text": "6×8 직사각형을 가져옵니다. 그 넓이는 [[K=6\\times8=48]]입니다. 합동인 두 직각삼각형은 각각 절반을 차지합니다. [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]] 나누기를 빼먹으면 다른 질문에 답하는 것입니다. 삼각형이 아니라 직사각형의 넓이. 2로 나누는 것은 보정 계수가 아닙니다. 감싸는 직사각형을 삼각형으로 다듬는 단계입니다." },
           { "kind": "h3", "text": "좌표를 이용한 기하학적 증명" },
           { "kind": "p", "text": "좌표에 익숙한 독자를 위해 같은 결과를 대수에서 가져옵니다. 직각 꼭짓점을 원점에 놓고 꼭짓점을 [[C=(0,0)]], [[A=(a,0)]], [[B=(0,b)]]라 합니다. 삼각형은 두 좌표축과 [[A]]와 [[B]]를 잇는 직선으로 둘러싸인 영역입니다. x축을 따른 밑변의 길이는 [[a]], 수직 변의 길이는 [[b]]이며, 둘러싸인 직각삼각형은 그 축들이 표시하는 [[a]]×[[b]] 직사각형의 정확히 절반을 채웁니다. 따라서 [[[\\boxed{K=\\frac{ab}{2}}]]], 같은 공식이 새로운 장치 없이 도달됩니다." }
         ],
@@ -170,13 +170,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "고전적인 직각삼각형 네 개가 크기를 키워가며 방법을 보여줍니다. 각 예제는 공식에 대입하며, 빗변은 선택적 확인용으로만 등장하고 입력으로는 절대 쓰이지 않습니다." },
           { "kind": "h3", "text": "예제 1: 3-4-5 직각삼각형" },
-          { "kind": "p", "text": "[[a=3]], [[b=4]]가 주어졌습니다. 1단계: 공식을 씁니다, [[K=\\frac{a\\times b}{2}]]. 2단계: 대입합니다, [[K=\\frac{3\\times4}{2}]]. 3단계: 곱합니다, [[K=\\frac{12}{2}]]. 최종 답: [[[\\boxed{K=6\\text{ square units}}]]]. 선택적 확인: [[c=\\sqrt{3^2+4^2}=5]]. 빗변은 친숙한 삼중수를 확인해주지만 넓이에는 관여하지 않습니다." },
+          { "kind": "p", "text": "[[a=3]], [[b=4]]가 주어졌습니다. 1단계: 공식을 씁니다, [[K=\\frac{a\\times b}{2}]]. 2단계: 대입합니다, [[K=\\frac{3\\times4}{2}]]. 3단계: 곱합니다, [[K=\\frac{12}{2}]]. 최종 답: [[[\\boxed{K=6\\text{ square units}}]]] 선택적 확인: [[c=\\sqrt{3^2+4^2}=5]]. 빗변은 친숙한 삼중수를 확인해주지만 넓이에는 관여하지 않습니다." },
           { "kind": "h3", "text": "예제 2: 6-8-10 직각삼각형" },
-          { "kind": "p", "text": "[[a=6]], [[b=8]]가 주어졌습니다. 그러면 [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. 직사각형 확인: 감싸는 6×8 직사각형의 넓이는 48이며, 삼각형은 그 정확히 절반을 차지합니다." },
+          { "kind": "p", "text": "[[a=6]], [[b=8]]가 주어졌습니다. 그러면 [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] 직사각형 확인: 감싸는 6×8 직사각형의 넓이는 48이며, 삼각형은 그 정확히 절반을 차지합니다." },
           { "kind": "h3", "text": "예제 3: 5-12-13 직각삼각형" },
-          { "kind": "p", "text": "[[a=5]], [[b=12]]가 주어졌습니다. 그러면 [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]]. 13인 빗변은 계산에 절대 들어가지 않습니다. 변이 하나 빠졌을 때만 문제될 것입니다." },
+          { "kind": "p", "text": "[[a=5]], [[b=12]]가 주어졌습니다. 그러면 [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]] 13인 빗변은 계산에 절대 들어가지 않습니다. 변이 하나 빠졌을 때만 문제될 것입니다." },
           { "kind": "h3", "text": "예제 4: 8-15-17 직각삼각형" },
-          { "kind": "p", "text": "[[a=8]], [[b=15]]가 주어졌습니다. 그러면 [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]]. 같은 세 단계, 더 큰 숫자, 동일한 논리." },
+          { "kind": "p", "text": "[[a=8]], [[b=15]]가 주어졌습니다. 그러면 [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]] 같은 세 단계, 더 큰 숫자, 동일한 논리." },
           { "kind": "h3", "text": "기초 예제 비교" }
         ],
         "table": {
@@ -194,29 +194,29 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "열두 가지 실제 상황이 공식을 페이지에서 작업장, 현장, 스튜디오로 옮깁니다. 각각은 직각삼각형 패널, 구역, 측단면, 또는 단순화된 모형을 이름 붙이고, 두 계산기 입력을 공식에 통과시켜 답을 내며, 숫자 뒤의 가정을 밝힙니다. 실제 물체가 곡선이거나 불규칙한 경우 계산은 모형화된 삼각형만 다루며, 넓이는 그 자체로 강도, 비용, 안전을 대신하지 않습니다." },
           { "kind": "h3", "text": "예제 1: 삼각형 유리창" },
-          { "kind": "p", "text": "삼각형 유리창의 수직 치수는 [[a=3\\text{ m}]], [[b=4\\text{ m}]]입니다. 대입: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]]. 결과는 프레임 치수를 빼기 전의 평평한 유리 표면을 나타냅니다. 가정: 유리판은 진정한 직각삼각형이며, 프레임 여유는 별도로 처리합니다." },
+          { "kind": "p", "text": "삼각형 유리창의 수직 치수는 [[a=3\\text{ m}]], [[b=4\\text{ m}]]입니다. 대입: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]] 결과는 프레임 치수를 빼기 전의 평평한 유리 표면을 나타냅니다. 가정: 유리판은 진정한 직각삼각형이며, 프레임 여유는 별도로 처리합니다." },
           { "kind": "h3", "text": "예제 2: 강철 지지 브래킷" },
-          { "kind": "p", "text": "삼각형 강철 브래킷은 [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]입니다. 그러면 [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. 넓이는 평평한 판을 설명하며 하중 지지 능력을 결정하지 않습니다. 가정: 브래킷 소재는 직각삼각형으로 절단되며, 볼트 구멍과 굽힘은 제외합니다." },
+          { "kind": "p", "text": "삼각형 강철 브래킷은 [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]입니다. 그러면 [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]] 넓이는 평평한 판을 설명하며 하중 지지 능력을 결정하지 않습니다. 가정: 브래킷 소재는 직각삼각형으로 절단되며, 볼트 구멍과 굽힘은 제외합니다." },
           { "kind": "h3", "text": "예제 3: 삼각형 경사로 측단면" },
-          { "kind": "p", "text": "단순화된 경사로 측단면은 [[a=6\\text{ m}]], [[b=8\\text{ m}]]입니다. 그러면 [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]]. 이것은 기울어진 보행 표면이 아니라 수직인 삼각형 측단면입니다. 가정: 측단면은 밑변에 직각 모서리를 둔 것으로 모형화합니다." },
+          { "kind": "p", "text": "단순화된 경사로 측단면은 [[a=6\\text{ m}]], [[b=8\\text{ m}]]입니다. 그러면 [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]] 이것은 기울어진 보행 표면이 아니라 수직인 삼각형 측단면입니다. 가정: 측단면은 밑변에 직각 모서리를 둔 것으로 모형화합니다." },
           { "kind": "h3", "text": "예제 4: 삼각형 지붕 지지대" },
-          { "kind": "p", "text": "삼각형 지붕 지지대 단면은 [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]입니다. 그러면 [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. 넓이는 평평한 삼각형 단면을 나타내며 자재 추산에 유용합니다. 가정: 단면은 직각삼각형으로 모형화하며, 전체 지붕 형상은 다를 수 있습니다." },
+          { "kind": "p", "text": "삼각형 지붕 지지대 단면은 [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]입니다. 그러면 [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]] 넓이는 평평한 삼각형 단면을 나타내며 자재 추산에 유용합니다. 가정: 단면은 직각삼각형으로 모형화하며, 전체 지붕 형상은 다를 수 있습니다." },
           { "kind": "h3", "text": "예제 5: 직각삼각형 정원 구역" },
-          { "kind": "p", "text": "정원에는 [[a=7\\text{ m}]], [[b=24\\text{ m}]]인 직각삼각형 구역이 있습니다. 그러면 [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]]. 결과는 식재나 잔디에 쓸 수 있는 면적 추산에 도움이 됩니다. 가정: 화단 경계는 직선이며 직각으로 만납니다." },
+          { "kind": "p", "text": "정원에는 [[a=7\\text{ m}]], [[b=24\\text{ m}]]인 직각삼각형 구역이 있습니다. 그러면 [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]] 결과는 식재나 잔디에 쓸 수 있는 면적 추산에 도움이 됩니다. 가정: 화단 경계는 직선이며 직각으로 만납니다." },
           { "kind": "h3", "text": "예제 6: 삼각형 천 돛" },
-          { "kind": "p", "text": "직각삼각형 천 패널은 [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]입니다. 그러면 [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. 이것은 솔기와 자재 여유 전의 평평한 삼각형 천 단면을 나타냅니다. 가정: 돛은 평평한 것으로 모형화합니다. 실제 돛은 하중을 받으면 굽습니다." },
+          { "kind": "p", "text": "직각삼각형 천 패널은 [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]입니다. 그러면 [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]] 이것은 솔기와 자재 여유 전의 평평한 삼각형 천 단면을 나타냅니다. 가정: 돛은 평평한 것으로 모형화합니다. 실제 돛은 하중을 받으면 굽습니다." },
           { "kind": "h3", "text": "예제 7: 합판 절단 템플릿" },
-          { "kind": "p", "text": "직각삼각형 합판 템플릿은 [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]입니다. 그러면 [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. 결과는 절단 손실 전의 자재 소요량 추산에 도움이 됩니다. 가정: 템플릿은 진정한 직각삼각형이며, 톱날 두께와 자투리는 별도입니다." },
+          { "kind": "p", "text": "직각삼각형 합판 템플릿은 [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]입니다. 그러면 [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]] 결과는 절단 손실 전의 자재 소요량 추산에 도움이 됩니다. 가정: 템플릿은 진정한 직각삼각형이며, 톱날 두께와 자투리는 별도입니다." },
           { "kind": "h3", "text": "예제 8: 삼각형 간판 패널" },
-          { "kind": "p", "text": "삼각형 간판 패널의 수직 치수는 [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]입니다. 그러면 [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]]. 이것은 평평한 인쇄 또는 도장 면적을 나타냅니다. 가정: 패널 면은 평평하고 직각삼각형이며, 장착 철물은 제외합니다." },
+          { "kind": "p", "text": "삼각형 간판 패널의 수직 치수는 [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]입니다. 그러면 [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]] 이것은 평평한 인쇄 또는 도장 면적을 나타냅니다. 가정: 패널 면은 평평하고 직각삼각형이며, 장착 철물은 제외합니다." },
           { "kind": "h3", "text": "예제 9: 토지 측량 구역" },
-          { "kind": "p", "text": "단순화된 직각삼각형 토지 구역은 [[a=9\\text{ m}]], [[b=40\\text{ m}]]입니다. 그러면 [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]]. 공식은 측량된 삼각형 구역의 넓이를 계산합니다. 가정: 구역은 직각 모서리를 둔 것으로 모형화합니다. 불규칙한 필지는 더 단순한 도형으로 나누어야 합니다." },
+          { "kind": "p", "text": "단순화된 직각삼각형 토지 구역은 [[a=9\\text{ m}]], [[b=40\\text{ m}]]입니다. 그러면 [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]] 공식은 측량된 삼각형 구역의 넓이를 계산합니다. 가정: 구역은 직각 모서리를 둔 것으로 모형화합니다. 불규칙한 필지는 더 단순한 도형으로 나누어야 합니다." },
           { "kind": "h3", "text": "예제 10: 삼각형 어닝 지지대" },
-          { "kind": "p", "text": "직각삼각형 어닝 지지대 단면은 [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]입니다. 그러면 [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. 결과는 모형화된 평평한 삼각형 단면을 나타내며, 불규칙한 어닝의 전체 표면이 꼭 그런 것은 아닙니다. 가정: 지지대 형상은 직각삼각형으로 단순화합니다." },
+          { "kind": "p", "text": "직각삼각형 어닝 지지대 단면은 [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]입니다. 그러면 [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]] 결과는 모형화된 평평한 삼각형 단면을 나타내며, 불규칙한 어닝의 전체 표면이 꼭 그런 것은 아닙니다. 가정: 지지대 형상은 직각삼각형으로 단순화합니다." },
           { "kind": "h3", "text": "예제 11: 산업용 지지 패널" },
-          { "kind": "p", "text": "직각삼각형 산업용 패널은 [[a=11\\text{ m}]], [[b=60\\text{ m}]]입니다. 그러면 [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]]. 넓이는 구조적 성능이 아니라 평평한 기하학적 패널을 설명합니다. 가정: 패널은 직각삼각형으로 모형화하며, 두께와 고정 장치는 별개의 문제입니다." },
+          { "kind": "p", "text": "직각삼각형 산업용 패널은 [[a=11\\text{ m}]], [[b=60\\text{ m}]]입니다. 그러면 [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]] 넓이는 구조적 성능이 아니라 평평한 기하학적 패널을 설명합니다. 가정: 패널은 직각삼각형으로 모형화하며, 두께와 고정 장치는 별개의 문제입니다." },
           { "kind": "h3", "text": "예제 12: 창고 지붕 끝단" },
-          { "kind": "p", "text": "창고에는 [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]인 단순화된 직각삼각형 지붕 끝단이 있습니다. 그러면 [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. 결과는 평평한 삼각형 끝단 면적 추산에 도움이 되며, 예를 들어 외장재 견적을 낼 때 씁니다. 가정: 박공 끝단은 직각삼각형으로 모형화합니다." },
+          { "kind": "p", "text": "창고에는 [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]인 단순화된 직각삼각형 지붕 끝단이 있습니다. 그러면 [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]] 결과는 평평한 삼각형 끝단 면적 추산에 도움이 되며, 예를 들어 외장재 견적을 낼 때 씁니다. 가정: 박공 끝단은 직각삼각형으로 모형화합니다." },
           { "kind": "h3", "text": "실제 예제 비교" }
         ],
         "table": {
@@ -252,9 +252,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-missing-leg": {
         "h2": "삼각형 넓이를 알 때 빠진 변을 구하는 방법",
         "blocks": [
-          { "kind": "p", "text": "넓이 공식은 양쪽으로 읽힙니다. [[K=\\frac{ab}{2}]]에서 시작합니다. 양변에 2를 곱합니다. [[2K=ab]]. [[a]]로 나눕니다. [[[\\boxed{b=\\frac{2K}{a}}]]]. 마찬가지로 [[[\\boxed{a=\\frac{2K}{b}}]]]. 같은 관계를 재배열하면 어느 쪽 빠진 변이든 복원합니다." },
+          { "kind": "p", "text": "넓이 공식은 양쪽으로 읽힙니다. [[K=\\frac{ab}{2}]]에서 시작합니다. 양변에 2를 곱합니다. [[2K=ab]]. [[a]]로 나눕니다. [[[\\boxed{b=\\frac{2K}{a}}]]] 마찬가지로 [[[\\boxed{a=\\frac{2K}{b}}]]] 같은 관계를 재배열하면 어느 쪽 빠진 변이든 복원합니다." },
           { "kind": "h3", "text": "풀이 예제" },
-          { "kind": "p", "text": "[[K=24\\text{ cm}^2]], [[a=6\\text{ cm}]]이라 가정합니다. 그러면 [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]]. 단위는 일관되게 유지됩니다. 제곱센티미터를 센티미터로 나누면 센티미터가 됩니다. 이 역이용은 보고된 넓이를 확인하거나 도면에서 치수를 복원할 때 편리하지만, 이것은 교육적 재배열일 뿐 위 계산기의 추가 입력 모드가 아니며, 계산기는 여전히 두 변을 받습니다." }
+          { "kind": "p", "text": "[[K=24\\text{ cm}^2]], [[a=6\\text{ cm}]]이라 가정합니다. 그러면 [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]] 단위는 일관되게 유지됩니다. 제곱센티미터를 센티미터로 나누면 센티미터가 됩니다. 이 역이용은 보고된 넓이를 확인하거나 도면에서 치수를 복원할 때 편리하지만, 이것은 교육적 재배열일 뿐 위 계산기의 추가 입력 모드가 아니며, 계산기는 여전히 두 변을 받습니다." }
         ]
       },
       "sec-scaling": {
@@ -262,11 +262,11 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "[[K=\\frac{ab}{2}]]가 곱이므로 변을 늘리면 넓이도 예측 가능한 방식으로 늘어납니다. 삼각형 설계를 크기 조정하기 전에 아래 패턴을 알아두면 좋습니다." },
           { "kind": "h3", "text": "한 변이 두 배가 되면?" },
-          { "kind": "p", "text": "[[a]]는 고정하고 [[b]]를 두 배로 합니다. 그러면 [[K_1=\\frac{ab}{2}]]가 [[K_2=\\frac{a(2b)}{2}]]가 되므로 [[[\\boxed{K_2=2K_1}]]]. 한 변만 두 배로 하면 넓이도 두 배가 됩니다. 구체적인 확인: 3×4 삼각형은 [[K=6]]이며, 한 변을 늘려 3×8로 만들면 [[K=12]]가 됩니다." },
+          { "kind": "p", "text": "[[a]]는 고정하고 [[b]]를 두 배로 합니다. 그러면 [[K_1=\\frac{ab}{2}]]가 [[K_2=\\frac{a(2b)}{2}]]가 되므로 [[[\\boxed{K_2=2K_1}]]] 한 변만 두 배로 하면 넓이도 두 배가 됩니다. 구체적인 확인: 3×4 삼각형은 [[K=6]]이며, 한 변을 늘려 3×8로 만들면 [[K=12]]가 됩니다." },
           { "kind": "h3", "text": "두 변이 모두 두 배가 되면?" },
           { "kind": "p", "text": "이제 둘 다 두 배로 합니다. [[K_2=\\frac{(2a)(2b)}{2}]]이며, 이는 [[[\\boxed{K_2=4K_1}]]]로 간단해집니다. 두 수직 치수를 모두 두 배로 하면 넓이는 두 배가 아니라 네 배가 됩니다. 3×4 삼각형([[K=6]])을 6×8로 확대하면 [[K=24]]가 되며, 정확히 원래의 네 배입니다." },
           { "kind": "h3", "text": "두 변에 축척을 적용하면?" },
-          { "kind": "p", "text": "각 변에 축척 계수 [[k]]를 곱합니다. [[K_2=\\frac{(ka)(kb)}{2}]], 따라서 [[[\\boxed{K_2=k^2K_1}]]]. 넓이는 축척 계수의 제곱으로 커집니다. 실제 예제: 6×8 삼각형에 1.5를 곱해 9×12로 만듭니다. 그러면 [[K=\\frac{9\\times12}{2}=54]]이며, [[24\\times1.5^2=24\\times2.25=54]]입니다. 자재 추산이 선형 치수보다 빨리 뛰는 이유가 이것입니다. 모든 길이를 두 배로 하면 판은 네 배가 필요합니다." },
+          { "kind": "p", "text": "각 변에 축척 계수 [[k]]를 곱합니다. [[K_2=\\frac{(ka)(kb)}{2}]], 따라서 [[[\\boxed{K_2=k^2K_1}]]] 넓이는 축척 계수의 제곱으로 커집니다. 실제 예제: 6×8 삼각형에 1.5를 곱해 9×12로 만듭니다. 그러면 [[K=\\frac{9\\times12}{2}=54]]이며, [[24\\times1.5^2=24\\times2.25=54]]입니다. 자재 추산이 선형 치수보다 빨리 뛰는 이유가 이것입니다. 모든 길이를 두 배로 하면 판은 네 배가 필요합니다." },
           { "kind": "h3", "text": "서로 다른 두 직각삼각형이 같은 넓이를 가질 수 있나요?" },
           { "kind": "p", "text": "네. 삼각형 1, [[a=3]], [[b=4]]와 비교합니다. [[K=\\frac{3\\times4}{2}=6]]. 삼각형 2, [[a=2]], [[b=6]]: [[K=\\frac{2\\times6}{2}=6]]. 변의 곱이 같으면 서로 다른 모양도 같은 넓이를 둘러쌉니다. 짧고 넓은 삼각형과 키 크고 좁은 삼각형이 동일한 표면을 덮을 수 있으며, 이는 패널을 서로 다른 공간에 맞출 때 중요합니다." }
         ],
@@ -287,9 +287,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "왜 결과에 제곱 단위를 쓰나요?" },
           { "kind": "p", "text": "넓이는 표면을 덮는 단위 정사각형의 개수를 셉니다. [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]], [[\\text{m}\\times\\text{m}=\\text{m}^2]], [[\\text{ft}\\times\\text{ft}=\\text{ft}^2]]. 단위는 항상 길이 단위를 제곱한 것인데, 두 길이의 곱은 정사각형의 개수이기 때문입니다. 넓이를 24 m이라 보고하는 것은 범주 오류입니다. 24 m은 길이고, 24 m²는 표면입니다." },
           { "kind": "h3", "text": "계산 전에 서로 다른 단위 변환하기" },
-          { "kind": "p", "text": "[[a=3\\text{ ft}]], [[b=24\\text{ inches}]]를 가져옵니다. 먼저 변환합니다. [[24\\text{ inches}=2\\text{ ft}]]. 그러면 [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]]. 변환 없이는 날것의 곱 72에 깔끔한 의미가 없습니다. 제곱피트도 제곱인치도 아닙니다. 먼저 변환하고, 다음에 곱하면 답의 단위가 자동으로 따라옵니다." },
+          { "kind": "p", "text": "[[a=3\\text{ ft}]], [[b=24\\text{ inches}]]를 가져옵니다. 먼저 변환합니다. [[24\\text{ inches}=2\\text{ ft}]]. 그러면 [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]] 변환 없이는 날것의 곱 72에 깔끔한 의미가 없습니다. 제곱피트도 제곱인치도 아닙니다. 먼저 변환하고, 다음에 곱하면 답의 단위가 자동으로 따라옵니다." },
           { "kind": "h3", "text": "소수점 측정값으로 계산하기" },
-          { "kind": "p", "text": "같은 공식이 소수도 아무 변경 없이 처리합니다. [[a=3.5]], [[b=9.2]]가 주어지면 [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]]. 정수, 소수, 정밀한 작업장 측정값 모두 같은 곱하고 절반 나누기를 통과합니다. 측정이 뒷받침하는 소수점 자릿수를 유지하고 계산은 계산기에 맡기세요." },
+          { "kind": "p", "text": "같은 공식이 소수도 아무 변경 없이 처리합니다. [[a=3.5]], [[b=9.2]]가 주어지면 [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]] 정수, 소수, 정밀한 작업장 측정값 모두 같은 곱하고 절반 나누기를 통과합니다. 측정이 뒷받침하는 소수점 자릿수를 유지하고 계산은 계산기에 맡기세요." },
           { "kind": "h3", "text": "왜 이른 반올림을 피해야 하나요?" },
           { "kind": "p", "text": "입력을 반올림하면 오차가 곱셈을 타고 답까지 이어집니다. 9.2로 측정된 변을 곱하기 전에 9로 만들면 안 됩니다. 단위당 잃는 0.2가 곱 전체에 쌓입니다. 중간 단계까지 완전한 정밀도를 유지하고, 측정이 정당화하는 정확도로 최종 결과만 반올림하세요. 일찍 지킨 정밀도가 끝에서 전달하는 정확도입니다." }
         ]
@@ -467,7 +467,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-intro": {
         "h2": "Cara Mengira Luas Segi Tiga Bersudut Tepat Menggunakan Dua Kakinya",
         "blocks": [
-          { "kind": "p", "text": "Ambil [[a=6]], [[b=8]]. Gunakan [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. Hasilnya menamakan jumlah permukaan rata yang dilingkungi oleh tiga sisi: dua puluh empat unit persegi. Inilah tepatnya yang dikembalikan oleh Kalkulator Luas Segi Tiga Bersudut Tepat daripada Kaki untuk dua input ini." },
+          { "kind": "p", "text": "Ambil [[a=6]], [[b=8]]. Gunakan [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] Hasilnya menamakan jumlah permukaan rata yang dilingkungi oleh tiga sisi: dua puluh empat unit persegi. Inilah tepatnya yang dikembalikan oleh Kalkulator Luas Segi Tiga Bersudut Tepat daripada Kaki untuk dua input ini." },
           { "kind": "p", "text": "Kalkulator hanya memerlukan dua kaki, iaitu sisi yang bertemu pada sudut tepat. Oleh sebab kedua-dua sisi itu berserenjang, satu berfungsi sebagai tapak dan satu lagi sebagai tinggi, jadi tiada ukuran lanjut diperlukan. Hipotenus tidak berperanan di sini. Darabkan kaki, belah dua hasil darabnya, dan luas diperoleh daripada [[K=\\frac{ab}{2}]]." },
           { "kind": "p", "text": "Ini antara pengiraan luas paling mudah dalam geometri, kerana kedua-dua ukuran serenjang sudah ada di tangan. Ia muncul di mana-mana sudut berbentuk segi empat sama: susun atur binaan, helaian potongan, batas kebun, dan lakaran ukur semuanya terturun kepada dua kaki dan satu hasil darab yang dibelah dua." }
         ]
@@ -507,13 +507,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-formula": {
         "h2": "Mengapa Luas Segi Tiga Bersudut Tepat Separuh Hasil Darab Kakinya?",
         "blocks": [
-          { "kind": "p", "text": "Mulakan dengan peraturan umum: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. Untuk segi tiga bersudut tepat, tetapkan [[\\text{Base}=a]] dan [[\\text{Height}=b]]. Oleh sebab dua kaki berserenjang, [[[\\boxed{K=\\frac{a\\times b}{2}}]]]. Selebihnya bahagian ini menunjukkan dari mana datangnya pembelahan dua itu, supaya pembahagian dengan dua difahami, bukan sekadar dihafal." },
+          { "kind": "p", "text": "Mulakan dengan peraturan umum: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. Untuk segi tiga bersudut tepat, tetapkan [[\\text{Base}=a]] dan [[\\text{Height}=b]]. Oleh sebab dua kaki berserenjang, [[[\\boxed{K=\\frac{a\\times b}{2}}]]] Selebihnya bahagian ini menunjukkan dari mana datangnya pembelahan dua itu, supaya pembahagian dengan dua difahami, bukan sekadar dihafal." },
           { "kind": "h3", "text": "Memahami Kaedah Segi Empat Tepat" },
-          { "kind": "p", "text": "Lukis segi empat tepat dengan lebar [[a]] dan tinggi [[b]]. Luasnya ialah [[K_{\\text{rectangle}}=a\\times b]]. Sekarang lukis pepenjuru dari satu penjuru ke penjuru bertentangan. Pepenjuru memotong segi empat tepat itu kepada dua segi tiga yang serupa tepat antara satu sama lain, setiap satunya berkaki [[a]] dan [[b]] dengan sudut tepat di tempat penjuru segi empat tepat itu berada. Kedua-dua segi tiga mempunyai luas yang sama, jadi setiap satunya memiliki separuh segi empat tepat: [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]." },
+          { "kind": "p", "text": "Lukis segi empat tepat dengan lebar [[a]] dan tinggi [[b]]. Luasnya ialah [[K_{\\text{rectangle}}=a\\times b]]. Sekarang lukis pepenjuru dari satu penjuru ke penjuru bertentangan. Pepenjuru memotong segi empat tepat itu kepada dua segi tiga yang serupa tepat antara satu sama lain, setiap satunya berkaki [[a]] dan [[b]] dengan sudut tepat di tempat penjuru segi empat tepat itu berada. Kedua-dua segi tiga mempunyai luas yang sama, jadi setiap satunya memiliki separuh segi empat tepat: [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]" },
           { "kind": "h3", "text": "Mengapa Dua Segi Tiga Bersudut Tepat yang Serupa Membentuk Segi Empat Tepat?" },
           { "kind": "p", "text": "Letakkan dua salinan segi tiga itu supaya hipotenusnya bertemu. Kaki yang sepadan berbaris: [[a]] lawan [[a]], [[b]] lawan [[b]]. Oleh sebab sudut tirus segi tiga bersudut tepat adalah pelengkap ([[A+B=90^\\circ]]), sudut-sudut yang bercantum di setiap penjuru bentuk gabungan berjumlah 90 darjah di sekelilingnya. Hasilnya mempunyai empat sudut tepat dan sisi bertentangan yang sama: sebuah segi empat tepat. Sisinya tepat dua kaki itu, itulah sebabnya luas segi empat tepat ialah [[a\\times b]] dan setiap segi tiga memiliki separuhnya." },
           { "kind": "h3", "text": "Mengapa Pembahagian dengan Dua Perlu?" },
-          { "kind": "p", "text": "Ambil segi empat tepat 6-darab-8. Luasnya ialah [[K=6\\times8=48]]. Setiap satu daripada dua segi tiga bersudut tepat yang serupa itu menempati separuh: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]]. Melangkau pembahagian menjawab soalan yang berbeza: luas segi empat tepat, bukan luas segi tiga. Pembahagian dengan dua bukan faktor tokok tambah; ia langkah yang memangkas segi empat tepat yang melingkungi kepada segi tiga." },
+          { "kind": "p", "text": "Ambil segi empat tepat 6-darab-8. Luasnya ialah [[K=6\\times8=48]]. Setiap satu daripada dua segi tiga bersudut tepat yang serupa itu menempati separuh: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]] Melangkau pembahagian menjawab soalan yang berbeza: luas segi empat tepat, bukan luas segi tiga. Pembahagian dengan dua bukan faktor tokok tambah; ia langkah yang memangkas segi empat tepat yang melingkungi kepada segi tiga." },
           { "kind": "h3", "text": "Bukti Geometri Menggunakan Koordinat" },
           { "kind": "p", "text": "Bagi pembaca yang selesa dengan koordinat, inilah hasil yang sama daripada algebra. Letakkan bucu sudut tepat pada asalan dan biarkan bucunya menjadi [[C=(0,0)]], [[A=(a,0)]], [[B=(0,b)]]. Segi tiga itu ialah rantau yang dibatasi oleh dua paksi koordinat dan garis yang menyambung [[A]] ke [[B]]. Tapak sepanjang paksi-x mempunyai panjang [[a]], sisi menegak mempunyai panjang [[b]], dan segi tiga bersudut tepat yang dilingkungi mengisi tepat separuh daripada segi empat tepat [[a]]-darab-[[b]] yang ditandai oleh paksi-paksi itu. Jadi [[[\\boxed{K=\\frac{ab}{2}}]]], formula yang sama, dicapai tanpa sebarang jentera baharu." }
         ],
@@ -550,13 +550,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Empat segi tiga bersudut tepat klasik menunjukkan kaedah pada saiz yang semakin besar. Setiap contoh menggantikan ke dalam formula, dan hipotenus muncul hanya sebagai semakan pilihan, tidak pernah sebagai input." },
           { "kind": "h3", "text": "Contoh 1: Segi Tiga Bersudut Tepat 3-4-5" },
-          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]]. Langkah 1: tulis formula, [[K=\\frac{a\\times b}{2}]]. Langkah 2: gantikan, [[K=\\frac{3\\times4}{2}]]. Langkah 3: darabkan, [[K=\\frac{12}{2}]]. Jawapan akhir: [[[\\boxed{K=6\\text{ square units}}]]]. Semakan pilihan: [[c=\\sqrt{3^2+4^2}=5]]. Hipotenus mengesahkan ganda tiga yang lazim tetapi tidak berperanan dalam luas." },
+          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]]. Langkah 1: tulis formula, [[K=\\frac{a\\times b}{2}]]. Langkah 2: gantikan, [[K=\\frac{3\\times4}{2}]]. Langkah 3: darabkan, [[K=\\frac{12}{2}]]. Jawapan akhir: [[[\\boxed{K=6\\text{ square units}}]]] Semakan pilihan: [[c=\\sqrt{3^2+4^2}=5]]. Hipotenus mengesahkan ganda tiga yang lazim tetapi tidak berperanan dalam luas." },
           { "kind": "h3", "text": "Contoh 2: Segi Tiga Bersudut Tepat 6-8-10" },
-          { "kind": "p", "text": "Diberi [[a=6]], [[b=8]]. Kemudian [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. Semakan segi empat tepat: segi empat tepat 6-darab-8 yang melingkungi mempunyai luas 48, dan segi tiga memiliki tepat separuhnya." },
+          { "kind": "p", "text": "Diberi [[a=6]], [[b=8]]. Kemudian [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] Semakan segi empat tepat: segi empat tepat 6-darab-8 yang melingkungi mempunyai luas 48, dan segi tiga memiliki tepat separuhnya." },
           { "kind": "h3", "text": "Contoh 3: Segi Tiga Bersudut Tepat 5-12-13" },
-          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]]. Kemudian [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]]. Hipotenus 13 tidak pernah memasuki pengiraan; ia hanya penting jika satu sisi tiada." },
+          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]]. Kemudian [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]] Hipotenus 13 tidak pernah memasuki pengiraan; ia hanya penting jika satu sisi tiada." },
           { "kind": "h3", "text": "Contoh 4: Segi Tiga Bersudut Tepat 8-15-17" },
-          { "kind": "p", "text": "Diberi [[a=8]], [[b=15]]. Kemudian [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]]. Tiga langkah yang sama, nombor lebih besar, logik serupa." },
+          { "kind": "p", "text": "Diberi [[a=8]], [[b=15]]. Kemudian [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]] Tiga langkah yang sama, nombor lebih besar, logik serupa." },
           { "kind": "h3", "text": "Perbandingan Contoh Asas" }
         ],
         "table": {
@@ -574,29 +574,29 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Dua belas situasi yang diolah membawa formula dari halaman ke bengkel, tapak, dan studio. Setiap satunya menamakan panel, bahagian, profil, atau model ringkas segi tiga bersudut tepat, mengolah dua input kalkulator melalui formula, dan menyatakan andaian di sebalik nombor. Di mana objek sebenar melengkung atau tidak sekata, pengiraan meliputi segi tiga yang dimodelkan sahaja, dan luas tidak sekali-kali menggantikan kekuatan, kos, atau keselamatan dengan sendirinya." },
           { "kind": "h3", "text": "Contoh 1: Tingkap Kaca Segi Tiga" },
-          { "kind": "p", "text": "Tingkap kaca segi tiga mempunyai dimensi serenjang [[a=3\\text{ m}]], [[b=4\\text{ m}]]. Gantikan: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]]. Hasilnya mewakili permukaan kaca rata sebelum dimensi bingkai ditolak. Andaian: anak tingkap ialah segi tiga bersudut tepat yang sebenar; elaun bingkai dikendalikan berasingan." },
+          { "kind": "p", "text": "Tingkap kaca segi tiga mempunyai dimensi serenjang [[a=3\\text{ m}]], [[b=4\\text{ m}]]. Gantikan: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]] Hasilnya mewakili permukaan kaca rata sebelum dimensi bingkai ditolak. Andaian: anak tingkap ialah segi tiga bersudut tepat yang sebenar; elaun bingkai dikendalikan berasingan." },
           { "kind": "h3", "text": "Contoh 2: Pendakap Sokongan Keluli" },
-          { "kind": "p", "text": "Pendakap keluli segi tiga mempunyai [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]. Kemudian [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. Luasnya memerihalkan plat rata dan tidak menentukan kapasiti galas bebannya. Andaian: kosong pendakap dipotong sebagai segi tiga bersudut tepat; lubang bolt dan bengkokan dikecualikan." },
+          { "kind": "p", "text": "Pendakap keluli segi tiga mempunyai [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]. Kemudian [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]] Luasnya memerihalkan plat rata dan tidak menentukan kapasiti galas bebannya. Andaian: kosong pendakap dipotong sebagai segi tiga bersudut tepat; lubang bolt dan bengkokan dikecualikan." },
           { "kind": "h3", "text": "Contoh 3: Profil Sisi Tanjakan Segi Tiga" },
-          { "kind": "p", "text": "Profil sisi tanjakan yang diringkaskan mempunyai [[a=6\\text{ m}]], [[b=8\\text{ m}]]. Kemudian [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Ini ialah profil sisi segi tiga yang menegak, bukan permukaan jalan yang condong. Andaian: profil dimodelkan dengan penjuru segi empat sama di tapak." },
+          { "kind": "p", "text": "Profil sisi tanjakan yang diringkaskan mempunyai [[a=6\\text{ m}]], [[b=8\\text{ m}]]. Kemudian [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]] Ini ialah profil sisi segi tiga yang menegak, bukan permukaan jalan yang condong. Andaian: profil dimodelkan dengan penjuru segi empat sama di tapak." },
           { "kind": "h3", "text": "Contoh 4: Sokongan Bumbung Segi Tiga" },
-          { "kind": "p", "text": "Bahagian sokongan bumbung segi tiga mempunyai [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]. Kemudian [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. Luasnya mewakili bahagian segi tiga yang rata, berguna untuk anggaran bahan. Andaian: bahagian dimodelkan sebagai segi tiga bersudut tepat; geometri bumbung penuh mungkin berbeza." },
+          { "kind": "p", "text": "Bahagian sokongan bumbung segi tiga mempunyai [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]. Kemudian [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]] Luasnya mewakili bahagian segi tiga yang rata, berguna untuk anggaran bahan. Andaian: bahagian dimodelkan sebagai segi tiga bersudut tepat; geometri bumbung penuh mungkin berbeza." },
           { "kind": "h3", "text": "Contoh 5: Bahagian Kebun Segi Tiga Bersudut Tepat" },
-          { "kind": "p", "text": "Sebuah kebun mengandungi bahagian segi tiga bersudut tepat dengan [[a=7\\text{ m}]], [[b=24\\text{ m}]]. Kemudian [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]]. Hasilnya membantu menganggarkan luas yang tersedia untuk tanaman atau rumput. Andaian: sempadan batas adalah lurus dan bertemu pada sudut tepat." },
+          { "kind": "p", "text": "Sebuah kebun mengandungi bahagian segi tiga bersudut tepat dengan [[a=7\\text{ m}]], [[b=24\\text{ m}]]. Kemudian [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]] Hasilnya membantu menganggarkan luas yang tersedia untuk tanaman atau rumput. Andaian: sempadan batas adalah lurus dan bertemu pada sudut tepat." },
           { "kind": "h3", "text": "Contoh 6: Layar Fabrik Segi Tiga" },
-          { "kind": "p", "text": "Panel fabrik segi tiga bersudut tepat mempunyai [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]. Kemudian [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Ini mewakili bahagian fabrik segi tiga yang rata sebelum jahitan dan elaun bahan. Andaian: layar dimodelkan rata; layar sebenar melengkung di bawah beban." },
+          { "kind": "p", "text": "Panel fabrik segi tiga bersudut tepat mempunyai [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]. Kemudian [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Ini mewakili bahagian fabrik segi tiga yang rata sebelum jahitan dan elaun bahan. Andaian: layar dimodelkan rata; layar sebenar melengkung di bawah beban." },
           { "kind": "h3", "text": "Contoh 7: Templat Potongan Papan Lapis" },
-          { "kind": "p", "text": "Templat papan lapis segi tiga bersudut tepat mempunyai [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]. Kemudian [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. Hasilnya membantu menganggarkan keperluan bahan sebelum sisa potongan. Andaian: templat ialah segi tiga bersudut tepat yang sebenar; potongan gergaji dan lebihan adalah tambahan." },
+          { "kind": "p", "text": "Templat papan lapis segi tiga bersudut tepat mempunyai [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]. Kemudian [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]] Hasilnya membantu menganggarkan keperluan bahan sebelum sisa potongan. Andaian: templat ialah segi tiga bersudut tepat yang sebenar; potongan gergaji dan lebihan adalah tambahan." },
           { "kind": "h3", "text": "Contoh 8: Panel Papan Tanda Segi Tiga" },
-          { "kind": "p", "text": "Panel papan tanda segi tiga mempunyai dimensi serenjang [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]. Kemudian [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]]. Ini mewakili luas rata yang boleh dicetak atau dicat. Andaian: muka panel adalah rata dan segi tiga bersudut tepat; perkakasan pelekap dikecualikan." },
+          { "kind": "p", "text": "Panel papan tanda segi tiga mempunyai dimensi serenjang [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]. Kemudian [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]] Ini mewakili luas rata yang boleh dicetak atau dicat. Andaian: muka panel adalah rata dan segi tiga bersudut tepat; perkakasan pelekap dikecualikan." },
           { "kind": "h3", "text": "Contoh 9: Bahagian Ukur Tanah" },
-          { "kind": "p", "text": "Bahagian tanah segi tiga bersudut tepat yang diringkaskan mempunyai [[a=9\\text{ m}]], [[b=40\\text{ m}]]. Kemudian [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]]. Formula mengira luas bahagian segi tiga yang diukur. Andaian: bahagian dimodelkan dengan penjuru segi empat sama; lot yang tidak sekata perlu dibahagi kepada bentuk yang lebih ringkas." },
+          { "kind": "p", "text": "Bahagian tanah segi tiga bersudut tepat yang diringkaskan mempunyai [[a=9\\text{ m}]], [[b=40\\text{ m}]]. Kemudian [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]] Formula mengira luas bahagian segi tiga yang diukur. Andaian: bahagian dimodelkan dengan penjuru segi empat sama; lot yang tidak sekata perlu dibahagi kepada bentuk yang lebih ringkas." },
           { "kind": "h3", "text": "Contoh 10: Sokongan Bidai Segi Tiga" },
-          { "kind": "p", "text": "Bahagian sokongan bidai segi tiga bersudut tepat mempunyai [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]. Kemudian [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. Hasilnya mewakili bahagian segi tiga rata yang dimodelkan, tidak semestinya seluruh permukaan bidai yang tidak sekata. Andaian: geometri sokongan diringkaskan kepada segi tiga bersudut tepat." },
+          { "kind": "p", "text": "Bahagian sokongan bidai segi tiga bersudut tepat mempunyai [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]. Kemudian [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]] Hasilnya mewakili bahagian segi tiga rata yang dimodelkan, tidak semestinya seluruh permukaan bidai yang tidak sekata. Andaian: geometri sokongan diringkaskan kepada segi tiga bersudut tepat." },
           { "kind": "h3", "text": "Contoh 11: Panel Sokongan Industri" },
-          { "kind": "p", "text": "Panel industri segi tiga bersudut tepat mempunyai [[a=11\\text{ m}]], [[b=60\\text{ m}]]. Kemudian [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]]. Luasnya memerihalkan panel geometri yang rata bukannya prestasi strukturnya. Andaian: panel dimodelkan sebagai segi tiga bersudut tepat; ketebalan dan pengikat adalah perkara berasingan." },
+          { "kind": "p", "text": "Panel industri segi tiga bersudut tepat mempunyai [[a=11\\text{ m}]], [[b=60\\text{ m}]]. Kemudian [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]] Luasnya memerihalkan panel geometri yang rata bukannya prestasi strukturnya. Andaian: panel dimodelkan sebagai segi tiga bersudut tepat; ketebalan dan pengikat adalah perkara berasingan." },
           { "kind": "h3", "text": "Contoh 12: Bahagian Hujung Bumbung Gudang" },
-          { "kind": "p", "text": "Sebuah gudang mempunyai bahagian hujung bumbung segi tiga bersudut tepat yang diringkaskan dengan [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]. Kemudian [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. Hasilnya membantu menganggarkan luas hujung segi tiga yang rata, contohnya semasa menetapkan harga pelapisan. Andaian: hujung gabel dimodelkan sebagai segi tiga bersudut tepat." },
+          { "kind": "p", "text": "Sebuah gudang mempunyai bahagian hujung bumbung segi tiga bersudut tepat yang diringkaskan dengan [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]. Kemudian [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]] Hasilnya membantu menganggarkan luas hujung segi tiga yang rata, contohnya semasa menetapkan harga pelapisan. Andaian: hujung gabel dimodelkan sebagai segi tiga bersudut tepat." },
           { "kind": "h3", "text": "Perbandingan Contoh Amali" }
         ],
         "table": {
@@ -622,7 +622,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Teorem Pythagoras menyatakan [[[\\boxed{a^2+b^2=c^2}]]]: kaki [[a]] dan [[b]] menentukan hipotenus [[c]]. Ia menjawab soalan tentang panjang sisi, manakala formula luas mengukur permukaan yang dilingkungi. Kedua-duanya berkaitan tetapi menyelesaikan masalah berbeza, dan pengiraan luas di sini tidak pernah bergantung pada teorem." },
           { "kind": "h3", "text": "Mengira Hipotenus daripada Kedua-dua Kaki" },
-          { "kind": "p", "text": "Dengan [[a=6]] dan [[b=8]], hipotenusnya ialah [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]]. Luas kemudian dikira berasingan: [[K=\\frac{6\\times8}{2}=24]]. Hipotenus ialah maklumat tambahan pilihan untuk pengiraan luas ini, fakta yang berguna bukannya langkah yang diperlukan." },
+          { "kind": "p", "text": "Dengan [[a=6]] dan [[b=8]], hipotenusnya ialah [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]] Luas kemudian dikira berasingan: [[K=\\frac{6\\times8}{2}=24]]. Hipotenus ialah maklumat tambahan pilihan untuk pengiraan luas ini, fakta yang berguna bukannya langkah yang diperlukan." },
           { "kind": "h3", "text": "Bolehkah Teorem Pythagoras Menggantikan Formula Luas?" },
           { "kind": "p", "text": "Tidak. Teorem Pythagoras menentukan hubungan antara panjang sisi; formula luas menukar dua sisi serenjang kepada permukaan yang dilingkungi. Satu menjawab berapa panjang, satu lagi menjawab berapa permukaan. Ia bekerjasama: apabila hanya satu kaki dan hipotenus diketahui, teorem mendapatkan semula kaki yang hilang dahulu, dan kemudian formula luas mengambil alih. Tiada satu pun menggantikan yang satu lagi." },
           { "kind": "h3", "text": "Bilakah Teorem Pythagoras Berguna?" },
@@ -632,9 +632,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-missing-leg": {
         "h2": "Cara Mencari Kaki yang Hilang Apabila Luas Segi Tiga Diketahui",
         "blocks": [
-          { "kind": "p", "text": "Formula luas dibaca dua hala. Mulakan dengan [[K=\\frac{ab}{2}]]. Darabkan kedua-dua sisi dengan 2: [[2K=ab]]. Bahagikan dengan [[a]]: [[[\\boxed{b=\\frac{2K}{a}}]]]. Begitu juga, [[[\\boxed{a=\\frac{2K}{b}}]]]. Hubungan yang sama, disusun semula, mendapatkan semula mana-mana kaki yang tidak diketahui." },
+          { "kind": "p", "text": "Formula luas dibaca dua hala. Mulakan dengan [[K=\\frac{ab}{2}]]. Darabkan kedua-dua sisi dengan 2: [[2K=ab]]. Bahagikan dengan [[a]]: [[[\\boxed{b=\\frac{2K}{a}}]]] Begitu juga, [[[\\boxed{a=\\frac{2K}{b}}]]] Hubungan yang sama, disusun semula, mendapatkan semula mana-mana kaki yang tidak diketahui." },
           { "kind": "h3", "text": "Contoh yang Diolah" },
-          { "kind": "p", "text": "Andaikan [[K=24\\text{ cm}^2]] dan [[a=6\\text{ cm}]]. Kemudian [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]]. Unit kekal konsisten: sentimeter persegi dibahagi dengan sentimeter memberi sentimeter. Penggunaan songsang ini berguna untuk menyemak luas yang dilaporkan atau mendapatkan semula dimensi daripada pelan, tetapi perhatikan ia susunan semula pendidikan, bukan mod input tambahan dalam kalkulator di atas, yang masih mengambil dua kaki." }
+          { "kind": "p", "text": "Andaikan [[K=24\\text{ cm}^2]] dan [[a=6\\text{ cm}]]. Kemudian [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]] Unit kekal konsisten: sentimeter persegi dibahagi dengan sentimeter memberi sentimeter. Penggunaan songsang ini berguna untuk menyemak luas yang dilaporkan atau mendapatkan semula dimensi daripada pelan, tetapi perhatikan ia susunan semula pendidikan, bukan mod input tambahan dalam kalkulator di atas, yang masih mengambil dua kaki." }
         ]
       },
       "sec-scaling": {
@@ -642,11 +642,11 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Oleh sebab [[K=\\frac{ab}{2}]] ialah hasil darab, meregangkan kaki meregangkan luas dengan cara yang boleh diramal. Corak di bawah wajar diketahui sebelum mengubah saiz sebarang reka bentuk segi tiga." },
           { "kind": "h3", "text": "Apakah yang Berlaku Apabila Satu Kaki Digandakan?" },
-          { "kind": "p", "text": "Kekalkan [[a]] dan gandakan [[b]]. Kemudian [[K_1=\\frac{ab}{2}]] menjadi [[K_2=\\frac{a(2b)}{2}]], jadi [[[\\boxed{K_2=2K_1}]]]. Menggandakan hanya satu kaki menggandakan luas. Semakan konkrit: segi tiga 3-darab-4 mempunyai [[K=6]]; meregangkan satu kaki kepada 3-darab-8 memberi [[K=12]]." },
+          { "kind": "p", "text": "Kekalkan [[a]] dan gandakan [[b]]. Kemudian [[K_1=\\frac{ab}{2}]] menjadi [[K_2=\\frac{a(2b)}{2}]], jadi [[[\\boxed{K_2=2K_1}]]] Menggandakan hanya satu kaki menggandakan luas. Semakan konkrit: segi tiga 3-darab-4 mempunyai [[K=6]]; meregangkan satu kaki kepada 3-darab-8 memberi [[K=12]]." },
           { "kind": "h3", "text": "Apakah yang Berlaku Apabila Kedua-dua Kaki Digandakan?" },
-          { "kind": "p", "text": "Sekarang gandakan kedua-duanya: [[K_2=\\frac{(2a)(2b)}{2}]], yang diringkaskan kepada [[[\\boxed{K_2=4K_1}]]]. Menggandakan kedua-dua dimensi serenjang menjadikan luas empat kali lebih besar, bukan dua kali. Segi tiga 3-darab-4 ([[K=6]]) diskalakan kepada 6-darab-8 memberi [[K=24]], tepat empat kali ganda yang asal." },
+          { "kind": "p", "text": "Sekarang gandakan kedua-duanya: [[K_2=\\frac{(2a)(2b)}{2}]], yang diringkaskan kepada [[[\\boxed{K_2=4K_1}]]] Menggandakan kedua-dua dimensi serenjang menjadikan luas empat kali lebih besar, bukan dua kali. Segi tiga 3-darab-4 ([[K=6]]) diskalakan kepada 6-darab-8 memberi [[K=24]], tepat empat kali ganda yang asal." },
           { "kind": "h3", "text": "Apakah yang Berlaku Apabila Kedua-dua Kaki Diskalakan?" },
-          { "kind": "p", "text": "Darabkan setiap kaki dengan faktor skala [[k]]: [[K_2=\\frac{(ka)(kb)}{2}]], oleh itu [[[\\boxed{K_2=k^2K_1}]]]. Luas membesar dengan kuasa dua faktor skala. Contoh amali: skalakan segi tiga 6-darab-8 dengan 1.5 untuk mendapat 9-darab-12. Kemudian [[K=\\frac{9\\times12}{2}=54]], dan [[24\\times1.5^2=24\\times2.25=54]]. Inilah sebabnya anggaran bahan melonjak lebih cepat daripada dimensi linear: gandakan setiap panjang dan helaian empat kali ganda diperlukan." },
+          { "kind": "p", "text": "Darabkan setiap kaki dengan faktor skala [[k]]: [[K_2=\\frac{(ka)(kb)}{2}]], oleh itu [[[\\boxed{K_2=k^2K_1}]]] Luas membesar dengan kuasa dua faktor skala. Contoh amali: skalakan segi tiga 6-darab-8 dengan 1.5 untuk mendapat 9-darab-12. Kemudian [[K=\\frac{9\\times12}{2}=54]], dan [[24\\times1.5^2=24\\times2.25=54]]. Inilah sebabnya anggaran bahan melonjak lebih cepat daripada dimensi linear: gandakan setiap panjang dan helaian empat kali ganda diperlukan." },
           { "kind": "h3", "text": "Bolehkah Dua Segi Tiga Bersudut Tepat yang Berbeza Mempunyai Luas yang Sama?" },
           { "kind": "p", "text": "Ya. Bandingkan segi tiga 1, [[a=3]], [[b=4]]: [[K=\\frac{3\\times4}{2}=6]]. Segi tiga 2, [[a=2]], [[b=6]]: [[K=\\frac{2\\times6}{2}=6]]. Bentuk berbeza melingkungi luas yang sama apabila hasil darab kakinya sama. Segi tiga yang pendek lebar dan yang tinggi sempit boleh menutupi permukaan yang serupa, yang penting apabila memuatkan panel ke dalam ruang yang berbeza." }
         ],
@@ -657,7 +657,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "h2": "Mengapa Anda Tidak Boleh Menggunakan Formula Dua Kaki untuk Setiap Segi Tiga?",
         "blocks": [
           { "kind": "p", "text": "Formula [[K=\\frac{ab}{2}]] berfungsi kerana dua kaki berserenjang. Untuk segi tiga umum, dua panjang sisi sahaja tidak mencukupi: sudut terkandung antaranya, atau tinggi yang sepadan, juga mesti diketahui." },
-          { "kind": "p", "text": "Peraturan umumnya ialah [[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]], dengan [[C]] ialah sudut terkandung antara sisi [[a]] dan [[b]]. Untuk segi tiga bersudut tepat, [[C=90^\\circ]] dan [[\\sin(90^\\circ)=1]]. Oleh itu [[K=\\frac{ab\\times1}{2}]], iaitu [[[\\boxed{K=\\frac{ab}{2}}]]]. Formula segi tiga bersudut tepat ialah formula umum dengan faktor sinus sama dengan 1. Untuk sebarang sudut lain sinus mengecilkan hasil darab, itulah sebabnya formula kaki tidak boleh digunakan pada segi tiga bukan bersudut tepat: ia secara senyap menganggap [[\\sin(C)]] sebagai 1 sedangkan ia bukan." }
+          { "kind": "p", "text": "Peraturan umumnya ialah [[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]], dengan [[C]] ialah sudut terkandung antara sisi [[a]] dan [[b]]. Untuk segi tiga bersudut tepat, [[C=90^\\circ]] dan [[\\sin(90^\\circ)=1]]. Oleh itu [[K=\\frac{ab\\times1}{2}]], iaitu [[[\\boxed{K=\\frac{ab}{2}}]]] Formula segi tiga bersudut tepat ialah formula umum dengan faktor sinus sama dengan 1. Untuk sebarang sudut lain sinus mengecilkan hasil darab, itulah sebabnya formula kaki tidak boleh digunakan pada segi tiga bukan bersudut tepat: ia secara senyap menganggap [[\\sin(C)]] sebagai 1 sedangkan ia bukan." }
         ]
       },
       "sec-units": {
@@ -667,9 +667,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "Mengapa Hasil Menggunakan Unit Persegi" },
           { "kind": "p", "text": "Luas mengira segi empat unit yang menutupi permukaan: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]], [[\\text{m}\\times\\text{m}=\\text{m}^2]], [[\\text{ft}\\times\\text{ft}=\\text{ft}^2]]. Unit sentiasa unit panjang dikuasa duakan, kerana hasil darab dua panjang ialah kiraan segi empat. Melaporkan luas sebagai 24 m ialah kesilapan kategori: 24 m ialah panjang, manakala 24 m² ialah permukaan." },
           { "kind": "h3", "text": "Menukar Unit Berbeza Sebelum Mengira" },
-          { "kind": "p", "text": "Ambil [[a=3\\text{ ft}]] dan [[b=24\\text{ inches}]]. Tukarkan dahulu: [[24\\text{ inches}=2\\text{ ft}]]. Kemudian [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]]. Tanpa penukaran, hasil darab mentah 72 tiada makna yang kemas: ia bukan kaki persegi mahupun inci persegi. Tukarkan dahulu, darabkan kemudian, dan unit jawapan mengikut secara automatik." },
+          { "kind": "p", "text": "Ambil [[a=3\\text{ ft}]] dan [[b=24\\text{ inches}]]. Tukarkan dahulu: [[24\\text{ inches}=2\\text{ ft}]]. Kemudian [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]] Tanpa penukaran, hasil darab mentah 72 tiada makna yang kemas: ia bukan kaki persegi mahupun inci persegi. Tukarkan dahulu, darabkan kemudian, dan unit jawapan mengikut secara automatik." },
           { "kind": "h3", "text": "Mengira dengan Ukuran Perpuluhan" },
-          { "kind": "p", "text": "Formula yang sama mengendalikan perpuluhan tanpa sebarang perubahan. Diberi [[a=3.5]] dan [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]]. Nombor bulat, perpuluhan, dan ukuran bengkel yang halus semuanya mengalir melalui darab-dan-belah-dua yang sama. Kekalkan tempat perpuluhan yang disokong ukuran dan biarkan kalkulator mengendalikan aritmetik." },
+          { "kind": "p", "text": "Formula yang sama mengendalikan perpuluhan tanpa sebarang perubahan. Diberi [[a=3.5]] dan [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]] Nombor bulat, perpuluhan, dan ukuran bengkel yang halus semuanya mengalir melalui darab-dan-belah-dua yang sama. Kekalkan tempat perpuluhan yang disokong ukuran dan biarkan kalkulator mengendalikan aritmetik." },
           { "kind": "h3", "text": "Mengapa Pembundaran Awal Harus Dielakkan" },
           { "kind": "p", "text": "Bundarkan input dan ralat menunggang melalui pendaraban ke dalam jawapan. Kaki yang diukur sebagai 9.2 tidak harus menjadi 9 sebelum didarab; 0.2 yang hilang per unit bertambah merentas hasil darab. Kekalkan ketepatan penuh melalui langkah perantaraan dan bundarkan hanya hasil akhir, mengikut ketepatan yang diwajarkan ukuran. Ketepatan yang dikekalkan awal ialah ketepatan yang disampaikan di akhir." }
         ]
@@ -847,7 +847,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-intro": {
         "h2": "Jak obliczyć pole trójkąta prostokątnego na podstawie jego dwóch przyprostokątnych",
         "blocks": [
-          { "kind": "p", "text": "Weź [[a=6]], [[b=8]]. Zastosuj [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. Wynik nazywa całkowitą płaską powierzchnię otoczoną trzema bokami: dwadzieścia cztery jednostki kwadratowe. Dokładnie to zwraca kalkulator pola trójkąta prostokątnego na podstawie przyprostokątnych dla tych dwóch danych wejściowych." },
+          { "kind": "p", "text": "Weź [[a=6]], [[b=8]]. Zastosuj [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] Wynik nazywa całkowitą płaską powierzchnię otoczoną trzema bokami: dwadzieścia cztery jednostki kwadratowe. Dokładnie to zwraca kalkulator pola trójkąta prostokątnego na podstawie przyprostokątnych dla tych dwóch danych wejściowych." },
           { "kind": "p", "text": "Kalkulator potrzebuje tylko dwóch przyprostokątnych, boków stykających się w kącie prostym. Ponieważ te dwa boki są prostopadłe, jeden służy za podstawę, a drugi za wysokość, więc żaden dalszy pomiar nie jest wymagany. Przeciwprostokątna nie odgrywa tu żadnej roli. Pomnóż przyprostokątne, podziel iloczyn na pół, a pole wynika ze wzoru [[K=\\frac{ab}{2}]]." },
           { "kind": "p", "text": "To jedno z najprostszych obliczeń pola w geometrii, ponieważ oba prostopadłe pomiary są już w ręku. Pojawia się wszędzie tam, gdzie róg jest prosty: rozkłady budowlane, arkusze do cięcia, grządki ogrodowe i szkice pomiarowe sprowadzają się do dwóch przyprostokątnych i jednego iloczynu podzielonego na pół." }
         ]
@@ -887,13 +887,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-formula": {
         "h2": "Dlaczego pole trójkąta prostokątnego to połowa iloczynu jego przyprostokątnych?",
         "blocks": [
-          { "kind": "p", "text": "Zacznij od ogólnej reguły: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. Dla trójkąta prostokątnego przyjmij [[\\text{Base}=a]] i [[\\text{Height}=b]]. Ponieważ dwie przyprostokątne są prostopadłe, [[[\\boxed{K=\\frac{a\\times b}{2}}]]]. Reszta tej sekcji pokazuje, skąd bierze się to dzielenie na pół, żeby dzielenie przez dwa było zrozumiane, a nie tylko zapamiętane." },
+          { "kind": "p", "text": "Zacznij od ogólnej reguły: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. Dla trójkąta prostokątnego przyjmij [[\\text{Base}=a]] i [[\\text{Height}=b]]. Ponieważ dwie przyprostokątne są prostopadłe, [[[\\boxed{K=\\frac{a\\times b}{2}}]]] Reszta tej sekcji pokazuje, skąd bierze się to dzielenie na pół, żeby dzielenie przez dwa było zrozumiane, a nie tylko zapamiętane." },
           { "kind": "h3", "text": "Zrozumienie metody prostokąta" },
-          { "kind": "p", "text": "Narysuj prostokąt o szerokości [[a]] i wysokości [[b]]. Jego pole to [[K_{\\text{rectangle}}=a\\times b]]. Teraz poprowadź przekątną z jednego narożnika do przeciwległego. Przekątna tnie prostokąt na dwa trójkąty będące swoimi dokładnymi kopiami, każdy o przyprostokątnych [[a]] i [[b]] i kącie prostym tam, gdzie był narożnik prostokąta. Oba trójkąty mają równe pole, więc każdy posiada połowę prostokąta: [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]." },
+          { "kind": "p", "text": "Narysuj prostokąt o szerokości [[a]] i wysokości [[b]]. Jego pole to [[K_{\\text{rectangle}}=a\\times b]]. Teraz poprowadź przekątną z jednego narożnika do przeciwległego. Przekątna tnie prostokąt na dwa trójkąty będące swoimi dokładnymi kopiami, każdy o przyprostokątnych [[a]] i [[b]] i kącie prostym tam, gdzie był narożnik prostokąta. Oba trójkąty mają równe pole, więc każdy posiada połowę prostokąta: [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]" },
           { "kind": "h3", "text": "Dlaczego dwa przystające trójkąty prostokątne tworzą prostokąt?" },
           { "kind": "p", "text": "Ułóż dwie kopie trójkąta tak, by ich przeciwprostokątne się stykały. Pasujące przyprostokątne układają się naprzeciw siebie: [[a]] przy [[a]], [[b]] przy [[b]]. Ponieważ kąty ostre trójkąta prostokątnego są dopełniające ([[A+B=90^\\circ]]), kąty schodzące się w każdym narożniku połączonego kształtu sumują się do 90 stopni dookoła. Wynik ma cztery kąty proste i równe boki naprzeciw: prostokąt. Jego bokami są dokładnie dwie przyprostokątne, dlatego pole prostokąta wynosi [[a\\times b]], a każdy trójkąt posiada połowę." },
           { "kind": "h3", "text": "Dlaczego dzielenie przez dwa jest konieczne?" },
-          { "kind": "p", "text": "Weź prostokąt 6 na 8. Jego pole to [[K=6\\times8=48]]. Każdy z dwóch przystających trójkątów prostokątnych zajmuje połowę: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]]. Pominięcie dzielenia odpowiada na inne pytanie: na pole prostokąta, nie trójkąta. Dzielenie przez dwa nie jest współczynnikiem korygującym; to krok, który przycina otaczający prostokąt do trójkąta." },
+          { "kind": "p", "text": "Weź prostokąt 6 na 8. Jego pole to [[K=6\\times8=48]]. Każdy z dwóch przystających trójkątów prostokątnych zajmuje połowę: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]] Pominięcie dzielenia odpowiada na inne pytanie: na pole prostokąta, nie trójkąta. Dzielenie przez dwa nie jest współczynnikiem korygującym; to krok, który przycina otaczający prostokąt do trójkąta." },
           { "kind": "h3", "text": "Geometryczny dowód przy użyciu współrzędnych" },
           { "kind": "p", "text": "Dla czytelników obeznanych ze współrzędnymi, ten sam wynik z algebry. Umieść wierzchołek kąta prostego w początku układu i niech wierzchołki będą [[C=(0,0)]], [[A=(a,0)]], [[B=(0,b)]]. Trójkąt to obszar ograniczony dwiema osiami współrzędnych i prostą łączącą [[A]] z [[B]]. Podstawa wzdłuż osi x ma długość [[a]], bok pionowy ma długość [[b]], a otoczony trójkąt prostokątny wypełnia dokładnie połowę prostokąta [[a]] na [[b]], który wyznaczają te osie. Zatem [[[\\boxed{K=\\frac{ab}{2}}]]], ten sam wzór, osiągnięty bez żadnej nowej machinerii." }
         ],
@@ -930,13 +930,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Cztery klasyczne trójkąty prostokątne pokazują metodę na rosnących rozmiarach. Każdy przykład podstawia do wzoru, a przeciwprostokątna pojawia się tylko jako opcjonalne sprawdzenie, nigdy jako dane wejściowe." },
           { "kind": "h3", "text": "Przykład 1: Trójkąt prostokątny 3-4-5" },
-          { "kind": "p", "text": "Dane [[a=3]], [[b=4]]. Krok 1: zapisz wzór, [[K=\\frac{a\\times b}{2}]]. Krok 2: podstaw, [[K=\\frac{3\\times4}{2}]]. Krok 3: pomnóż, [[K=\\frac{12}{2}]]. Odpowiedź końcowa: [[[\\boxed{K=6\\text{ square units}}]]]. Opcjonalne sprawdzenie: [[c=\\sqrt{3^2+4^2}=5]]. Przeciwprostokątna potwierdza znaną trójkę, ale nie bierze udziału w polu." },
+          { "kind": "p", "text": "Dane [[a=3]], [[b=4]]. Krok 1: zapisz wzór, [[K=\\frac{a\\times b}{2}]]. Krok 2: podstaw, [[K=\\frac{3\\times4}{2}]]. Krok 3: pomnóż, [[K=\\frac{12}{2}]]. Odpowiedź końcowa: [[[\\boxed{K=6\\text{ square units}}]]] Opcjonalne sprawdzenie: [[c=\\sqrt{3^2+4^2}=5]]. Przeciwprostokątna potwierdza znaną trójkę, ale nie bierze udziału w polu." },
           { "kind": "h3", "text": "Przykład 2: Trójkąt prostokątny 6-8-10" },
-          { "kind": "p", "text": "Dane [[a=6]], [[b=8]]. Wtedy [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. Sprawdzenie prostokątem: otaczający prostokąt 6 na 8 ma pole 48, a trójkąt posiada dokładnie jego połowę." },
+          { "kind": "p", "text": "Dane [[a=6]], [[b=8]]. Wtedy [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] Sprawdzenie prostokątem: otaczający prostokąt 6 na 8 ma pole 48, a trójkąt posiada dokładnie jego połowę." },
           { "kind": "h3", "text": "Przykład 3: Trójkąt prostokątny 5-12-13" },
-          { "kind": "p", "text": "Dane [[a=5]], [[b=12]]. Wtedy [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]]. Przeciwprostokątna 13 nigdy nie wchodzi do obliczenia; miałaby znaczenie tylko gdyby brakowało boku." },
+          { "kind": "p", "text": "Dane [[a=5]], [[b=12]]. Wtedy [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]] Przeciwprostokątna 13 nigdy nie wchodzi do obliczenia; miałaby znaczenie tylko gdyby brakowało boku." },
           { "kind": "h3", "text": "Przykład 4: Trójkąt prostokątny 8-15-17" },
-          { "kind": "p", "text": "Dane [[a=8]], [[b=15]]. Wtedy [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]]. Te same trzy kroki, większe liczby, identyczna logika." },
+          { "kind": "p", "text": "Dane [[a=8]], [[b=15]]. Wtedy [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]] Te same trzy kroki, większe liczby, identyczna logika." },
           { "kind": "h3", "text": "Porównanie przykładów podstawowych" }
         ],
         "table": {
@@ -954,29 +954,29 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Dwanaście opracowanych sytuacji przenosi wzór ze strony do warsztatu, na plac budowy i do studia. Każda nazywa trójkątny panel, przekrój, profil lub uproszczony model, przepuszcza dwa wejścia kalkulatora przez wzór i podaje założenie stojące za liczbami. Tam, gdzie prawdziwy obiekt jest zakrzywiony lub nieregularny, obliczenie obejmuje tylko zamodelowany trójkąt, a pole nigdy samo nie zastępuje wytrzymałości, kosztu ani bezpieczeństwa." },
           { "kind": "h3", "text": "Przykład 1: Trójkątne okno szklane" },
-          { "kind": "p", "text": "Trójkątne okno szklane ma wymiary prostopadłe [[a=3\\text{ m}]], [[b=4\\text{ m}]]. Podstaw: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]]. Wynik przedstawia płaską powierzchnię szkła przed odjęciem wymiarów ramy. Założenie: szyba jest prawdziwym trójkątem prostokątnym; naddatek na ramę liczy się osobno." },
+          { "kind": "p", "text": "Trójkątne okno szklane ma wymiary prostopadłe [[a=3\\text{ m}]], [[b=4\\text{ m}]]. Podstaw: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]] Wynik przedstawia płaską powierzchnię szkła przed odjęciem wymiarów ramy. Założenie: szyba jest prawdziwym trójkątem prostokątnym; naddatek na ramę liczy się osobno." },
           { "kind": "h3", "text": "Przykład 2: Stalowy wspornik" },
-          { "kind": "p", "text": "Trójkątny stalowy wspornik ma [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]. Wtedy [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. Pole opisuje płaską blachę i nie wyznacza jej nośności. Założenie: wykrój wspornika cięty jest jako trójkąt prostokątny; otwory na śruby i zagięcia pominięto." },
+          { "kind": "p", "text": "Trójkątny stalowy wspornik ma [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]. Wtedy [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]] Pole opisuje płaską blachę i nie wyznacza jej nośności. Założenie: wykrój wspornika cięty jest jako trójkąt prostokątny; otwory na śruby i zagięcia pominięto." },
           { "kind": "h3", "text": "Przykład 3: Trójkątny profil boczny rampy" },
-          { "kind": "p", "text": "Uproszczony profil boczny rampy ma [[a=6\\text{ m}]], [[b=8\\text{ m}]]. Wtedy [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]]. To pionowy trójkątny profil boczny, nie pochyła powierzchnia do chodzenia. Założenie: profil zamodelowano z prostym narożnikiem u podstawy." },
+          { "kind": "p", "text": "Uproszczony profil boczny rampy ma [[a=6\\text{ m}]], [[b=8\\text{ m}]]. Wtedy [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]] To pionowy trójkątny profil boczny, nie pochyła powierzchnia do chodzenia. Założenie: profil zamodelowano z prostym narożnikiem u podstawy." },
           { "kind": "h3", "text": "Przykład 4: Trójkątna podpora dachu" },
-          { "kind": "p", "text": "Trójkątny przekrój podpory dachu ma [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]. Wtedy [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. Pole przedstawia płaski trójkątny przekrój, przydatne do szacowania materiałów. Założenie: przekrój zamodelowano jako trójkąt prostokątny; pełna geometria dachu może się różnić." },
+          { "kind": "p", "text": "Trójkątny przekrój podpory dachu ma [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]. Wtedy [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]] Pole przedstawia płaski trójkątny przekrój, przydatne do szacowania materiałów. Założenie: przekrój zamodelowano jako trójkąt prostokątny; pełna geometria dachu może się różnić." },
           { "kind": "h3", "text": "Przykład 5: Trójkątny prostokątny fragment ogrodu" },
-          { "kind": "p", "text": "Ogród zawiera trójkątny prostokątny fragment o [[a=7\\text{ m}]], [[b=24\\text{ m}]]. Wtedy [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]]. Wynik pomaga oszacować powierzchnię dostępną pod nasadzenia lub trawnik. Założenie: granice grządki są proste i stykają się pod kątem prostym." },
+          { "kind": "p", "text": "Ogród zawiera trójkątny prostokątny fragment o [[a=7\\text{ m}]], [[b=24\\text{ m}]]. Wtedy [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]] Wynik pomaga oszacować powierzchnię dostępną pod nasadzenia lub trawnik. Założenie: granice grządki są proste i stykają się pod kątem prostym." },
           { "kind": "h3", "text": "Przykład 6: Trójkątny żagiel z tkaniny" },
-          { "kind": "p", "text": "Prostokątny trójkątny panel z tkaniny ma [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]. Wtedy [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Przedstawia płaski trójkątny fragment tkaniny przed szwami i naddatkami materiałowymi. Założenie: żagiel zamodelowano na płasko; prawdziwe żagle wyginają się pod obciążeniem." },
+          { "kind": "p", "text": "Prostokątny trójkątny panel z tkaniny ma [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]. Wtedy [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Przedstawia płaski trójkątny fragment tkaniny przed szwami i naddatkami materiałowymi. Założenie: żagiel zamodelowano na płasko; prawdziwe żagle wyginają się pod obciążeniem." },
           { "kind": "h3", "text": "Przykład 7: Szablon do cięcia ze sklejki" },
-          { "kind": "p", "text": "Trójkątny prostokątny szablon ze sklejki ma [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]. Wtedy [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. Wynik pomaga oszacować zapotrzebowanie na materiał przed odpadami z cięcia. Założenie: szablon jest prawdziwym trójkątem prostokątnym; szerokość rzazu i ścinki liczy się dodatkowo." },
+          { "kind": "p", "text": "Trójkątny prostokątny szablon ze sklejki ma [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]. Wtedy [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]] Wynik pomaga oszacować zapotrzebowanie na materiał przed odpadami z cięcia. Założenie: szablon jest prawdziwym trójkątem prostokątnym; szerokość rzazu i ścinki liczy się dodatkowo." },
           { "kind": "h3", "text": "Przykład 8: Trójkątny panel szyldu" },
-          { "kind": "p", "text": "Trójkątny panel szyldu ma wymiary prostopadłe [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]. Wtedy [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]]. Przedstawia płaską powierzchnię do druku lub malowania. Założenie: lico panelu jest płaskie i trójkątne prostokątne; osprzęt montażowy pominięto." },
+          { "kind": "p", "text": "Trójkątny panel szyldu ma wymiary prostopadłe [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]. Wtedy [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]] Przedstawia płaską powierzchnię do druku lub malowania. Założenie: lico panelu jest płaskie i trójkątne prostokątne; osprzęt montażowy pominięto." },
           { "kind": "h3", "text": "Przykład 9: Geodezyjny fragment działki" },
-          { "kind": "p", "text": "Uproszczony trójkątny prostokątny fragment gruntu ma [[a=9\\text{ m}]], [[b=40\\text{ m}]]. Wtedy [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]]. Wzór oblicza pole zmierzonego trójkątnego fragmentu. Założenie: fragment zamodelowano z prostym narożnikiem; nieregularną działkę trzeba podzielić na prostsze kształty." },
+          { "kind": "p", "text": "Uproszczony trójkątny prostokątny fragment gruntu ma [[a=9\\text{ m}]], [[b=40\\text{ m}]]. Wtedy [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]] Wzór oblicza pole zmierzonego trójkątnego fragmentu. Założenie: fragment zamodelowano z prostym narożnikiem; nieregularną działkę trzeba podzielić na prostsze kształty." },
           { "kind": "h3", "text": "Przykład 10: Trójkątna podpora markizy" },
-          { "kind": "p", "text": "Trójkątny prostokątny przekrój podpory markizy ma [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]. Wtedy [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. Wynik przedstawia zamodelowany płaski trójkątny przekrój, niekoniecznie całą powierzchnię nieregularnej markizy. Założenie: geometrię podpory uproszczono do trójkąta prostokątnego." },
+          { "kind": "p", "text": "Trójkątny prostokątny przekrój podpory markizy ma [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]. Wtedy [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]] Wynik przedstawia zamodelowany płaski trójkątny przekrój, niekoniecznie całą powierzchnię nieregularnej markizy. Założenie: geometrię podpory uproszczono do trójkąta prostokątnego." },
           { "kind": "h3", "text": "Przykład 11: Przemysłowy panel wsporczy" },
-          { "kind": "p", "text": "Trójkątny prostokątny panel przemysłowy ma [[a=11\\text{ m}]], [[b=60\\text{ m}]]. Wtedy [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]]. Pole opisuje płaski geometryczny panel, a nie jego parametry konstrukcyjne. Założenie: panel zamodelowano jako trójkąt prostokątny; grubość i mocowania to osobne zagadnienia." },
+          { "kind": "p", "text": "Trójkątny prostokątny panel przemysłowy ma [[a=11\\text{ m}]], [[b=60\\text{ m}]]. Wtedy [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]] Pole opisuje płaski geometryczny panel, a nie jego parametry konstrukcyjne. Założenie: panel zamodelowano jako trójkąt prostokątny; grubość i mocowania to osobne zagadnienia." },
           { "kind": "h3", "text": "Przykład 12: Trójkątny szczyt magazynu" },
-          { "kind": "p", "text": "Magazyn ma uproszczony trójkątny prostokątny przekrój szczytu dachu o [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]. Wtedy [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. Wynik pomaga oszacować płaską trójkątną powierzchnię szczytu, na przykład przy wycenie okładziny. Założenie: szczyt zamodelowano jako trójkąt prostokątny." },
+          { "kind": "p", "text": "Magazyn ma uproszczony trójkątny prostokątny przekrój szczytu dachu o [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]. Wtedy [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]] Wynik pomaga oszacować płaską trójkątną powierzchnię szczytu, na przykład przy wycenie okładziny. Założenie: szczyt zamodelowano jako trójkąt prostokątny." },
           { "kind": "h3", "text": "Porównanie przykładów praktycznych" }
         ],
         "table": {
@@ -1002,7 +1002,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Twierdzenie Pitagorasa głosi [[[\\boxed{a^2+b^2=c^2}]]]: przyprostokątne [[a]] i [[b]] wyznaczają przeciwprostokątną [[c]]. Odpowiada na pytanie o długości boków, podczas gdy wzór na pole mierzy otoczoną powierzchnię. Oba są powiązane, ale rozwiązują różne problemy, a obliczenie pola tutaj nigdy nie zależy od twierdzenia." },
           { "kind": "h3", "text": "Obliczanie przeciwprostokątnej z obu przyprostokątnych" },
-          { "kind": "p", "text": "Dla [[a=6]] i [[b=8]] przeciwprostokątna wynosi [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]]. Pole oblicza się osobno: [[K=\\frac{6\\times8}{2}=24]]. Przeciwprostokątna to opcjonalna dodatkowa informacja do tego obliczenia pola, przydatny fakt, a nie wymagany krok." },
+          { "kind": "p", "text": "Dla [[a=6]] i [[b=8]] przeciwprostokątna wynosi [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]] Pole oblicza się osobno: [[K=\\frac{6\\times8}{2}=24]]. Przeciwprostokątna to opcjonalna dodatkowa informacja do tego obliczenia pola, przydatny fakt, a nie wymagany krok." },
           { "kind": "h3", "text": "Czy twierdzenie Pitagorasa może zastąpić wzór na pole?" },
           { "kind": "p", "text": "Nie. Twierdzenie Pitagorasa ustala zależności między długościami boków; wzór na pole zamienia dwie prostopadłe przyprostokątne w otoczoną powierzchnię. Jedno odpowiada, jak długie, drugie odpowiada, ile powierzchni. Współpracują: gdy znana jest tylko jedna przyprostokątna i przeciwprostokątna, twierdzenie najpierw odtwarza brakującą przyprostokątną, a potem przejmuje wzór na pole. Żadne nie zastępuje drugiego." },
           { "kind": "h3", "text": "Kiedy twierdzenie Pitagorasa jest przydatne?" },
@@ -1012,9 +1012,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
       "sec-missing-leg": {
         "h2": "Jak znaleźć brakującą przyprostokątną, znając pole trójkąta",
         "blocks": [
-          { "kind": "p", "text": "Wzór na pole czyta się w obie strony. Zacznij od [[K=\\frac{ab}{2}]]. Pomnóż obie strony przez 2: [[2K=ab]]. Podziel przez [[a]]: [[[\\boxed{b=\\frac{2K}{a}}]]]. Podobnie [[[\\boxed{a=\\frac{2K}{b}}]]]. Ta sama zależność, przekształcona, odtwarza nieznaną przyprostokątną." },
+          { "kind": "p", "text": "Wzór na pole czyta się w obie strony. Zacznij od [[K=\\frac{ab}{2}]]. Pomnóż obie strony przez 2: [[2K=ab]]. Podziel przez [[a]]: [[[\\boxed{b=\\frac{2K}{a}}]]] Podobnie [[[\\boxed{a=\\frac{2K}{b}}]]] Ta sama zależność, przekształcona, odtwarza nieznaną przyprostokątną." },
           { "kind": "h3", "text": "Opracowany przykład" },
-          { "kind": "p", "text": "Załóżmy [[K=24\\text{ cm}^2]] i [[a=6\\text{ cm}]]. Wtedy [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]]. Jednostki pozostają spójne: centymetry kwadratowe dzielone przez centymetry dają centymetry. To odwrotne użycie przydaje się do sprawdzenia zgłoszonego pola albo odtworzenia wymiaru z planów, ale zauważ, że to przekształcenie edukacyjne, a nie dodatkowy tryb wprowadzania w kalkulatorze powyżej, który nadal przyjmuje dwie przyprostokątne." }
+          { "kind": "p", "text": "Załóżmy [[K=24\\text{ cm}^2]] i [[a=6\\text{ cm}]]. Wtedy [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]] Jednostki pozostają spójne: centymetry kwadratowe dzielone przez centymetry dają centymetry. To odwrotne użycie przydaje się do sprawdzenia zgłoszonego pola albo odtworzenia wymiaru z planów, ale zauważ, że to przekształcenie edukacyjne, a nie dodatkowy tryb wprowadzania w kalkulatorze powyżej, który nadal przyjmuje dwie przyprostokątne." }
         ]
       },
       "sec-scaling": {
@@ -1022,11 +1022,11 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Ponieważ [[K=\\frac{ab}{2}]] jest iloczynem, rozciąganie przyprostokątnych rozciąga pole w przewidywalny sposób. Poniższe prawidłowości warto znać przed przeskalowaniem jakiegokolwiek trójkątnego projektu." },
           { "kind": "h3", "text": "Co się dzieje, gdy jedna przyprostokątna się podwaja?" },
-          { "kind": "p", "text": "Utrzymaj [[a]] i podwoj [[b]]. Wtedy [[K_1=\\frac{ab}{2}]] staje się [[K_2=\\frac{a(2b)}{2}]], więc [[[\\boxed{K_2=2K_1}]]]. Podwojenie tylko jednej przyprostokątnej podwaja pole. Konkretne sprawdzenie: trójkąt 3 na 4 ma [[K=6]]; rozciągnięcie jednej przyprostokątnej do 3 na 8 daje [[K=12]]." },
+          { "kind": "p", "text": "Utrzymaj [[a]] i podwoj [[b]]. Wtedy [[K_1=\\frac{ab}{2}]] staje się [[K_2=\\frac{a(2b)}{2}]], więc [[[\\boxed{K_2=2K_1}]]] Podwojenie tylko jednej przyprostokątnej podwaja pole. Konkretne sprawdzenie: trójkąt 3 na 4 ma [[K=6]]; rozciągnięcie jednej przyprostokątnej do 3 na 8 daje [[K=12]]." },
           { "kind": "h3", "text": "Co się dzieje, gdy obie przyprostokątne się podwajają?" },
-          { "kind": "p", "text": "Teraz podwoj obie: [[K_2=\\frac{(2a)(2b)}{2}]], co upraszcza się do [[[\\boxed{K_2=4K_1}]]]. Podwojenie obu prostopadłych wymiarów czyni pole cztery razy większym, nie dwa razy. Trójkąt 3 na 4 ([[K=6]]) przeskalowany do 6 na 8 daje [[K=24]], dokładnie cztery razy więcej niż pierwotnie." },
+          { "kind": "p", "text": "Teraz podwoj obie: [[K_2=\\frac{(2a)(2b)}{2}]], co upraszcza się do [[[\\boxed{K_2=4K_1}]]] Podwojenie obu prostopadłych wymiarów czyni pole cztery razy większym, nie dwa razy. Trójkąt 3 na 4 ([[K=6]]) przeskalowany do 6 na 8 daje [[K=24]], dokładnie cztery razy więcej niż pierwotnie." },
           { "kind": "h3", "text": "Co się dzieje, gdy obie przyprostokątne są skalowane?" },
-          { "kind": "p", "text": "Pomnóż każdą przyprostokątną przez współczynnik skali [[k]]: [[K_2=\\frac{(ka)(kb)}{2}]], zatem [[[\\boxed{K_2=k^2K_1}]]]. Pole rośnie z kwadratem współczynnika skali. Przykład praktyczny: przeskaluj trójkąt 6 na 8 przez 1.5, by otrzymać 9 na 12. Wtedy [[K=\\frac{9\\times12}{2}=54]], a [[24\\times1.5^2=24\\times2.25=54]]. Dlatego szacunki materiałowe rosną szybciej niż wymiary liniowe: podwoj każdą długość, a potrzeba cztery razy więcej arkusza." },
+          { "kind": "p", "text": "Pomnóż każdą przyprostokątną przez współczynnik skali [[k]]: [[K_2=\\frac{(ka)(kb)}{2}]], zatem [[[\\boxed{K_2=k^2K_1}]]] Pole rośnie z kwadratem współczynnika skali. Przykład praktyczny: przeskaluj trójkąt 6 na 8 przez 1.5, by otrzymać 9 na 12. Wtedy [[K=\\frac{9\\times12}{2}=54]], a [[24\\times1.5^2=24\\times2.25=54]]. Dlatego szacunki materiałowe rosną szybciej niż wymiary liniowe: podwoj każdą długość, a potrzeba cztery razy więcej arkusza." },
           { "kind": "h3", "text": "Czy dwa różne trójkąty prostokątne mogą mieć to samo pole?" },
           { "kind": "p", "text": "Tak. Porównaj trójkąt 1, [[a=3]], [[b=4]]: [[K=\\frac{3\\times4}{2}=6]]. Trójkąt 2, [[a=2]], [[b=6]]: [[K=\\frac{2\\times6}{2}=6]]. Różne kształty otaczają to samo pole, gdy iloczyn ich przyprostokątnych jest równy. Krótki szeroki trójkąt i wysoki wąski mogą pokrywać identyczną powierzchnię, co ma znaczenie przy wpasowywaniu paneli w różne przestrzenie." }
         ],
@@ -1037,7 +1037,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
         "h2": "Dlaczego wzoru na dwie przyprostokątne nie można stosować do każdego trójkąta?",
         "blocks": [
           { "kind": "p", "text": "Wzór [[K=\\frac{ab}{2}]] działa, ponieważ dwie przyprostokątne są prostopadłe. Dla ogólnego trójkąta same dwie długości boków nie wystarczą: trzeba znać też kąt między nimi zawarty albo odpowiadającą wysokość." },
-          { "kind": "p", "text": "Ogólna reguła to [[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]], gdzie [[C]] jest kątem zawartym między bokami [[a]] i [[b]]. Dla trójkąta prostokątnego [[C=90^\\circ]] i [[\\sin(90^\\circ)=1]]. Zatem [[K=\\frac{ab\\times1}{2}]], czyli [[[\\boxed{K=\\frac{ab}{2}}]]]. Wzór dla trójkąta prostokątnego to wzór ogólny ze współczynnikiem sinus równym 1. Dla każdego innego kąta sinus zmniejsza iloczyn, dlatego wzoru na przyprostokątne nie wolno stosować do trójkąta nieprostokątnego: po cichu traktuje [[\\sin(C)]] jak 1, choć tak nie jest." }
+          { "kind": "p", "text": "Ogólna reguła to [[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]], gdzie [[C]] jest kątem zawartym między bokami [[a]] i [[b]]. Dla trójkąta prostokątnego [[C=90^\\circ]] i [[\\sin(90^\\circ)=1]]. Zatem [[K=\\frac{ab\\times1}{2}]], czyli [[[\\boxed{K=\\frac{ab}{2}}]]] Wzór dla trójkąta prostokątnego to wzór ogólny ze współczynnikiem sinus równym 1. Dla każdego innego kąta sinus zmniejsza iloczyn, dlatego wzoru na przyprostokątne nie wolno stosować do trójkąta nieprostokątnego: po cichu traktuje [[\\sin(C)]] jak 1, choć tak nie jest." }
         ]
       },
       "sec-units": {
@@ -1047,9 +1047,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "Dlaczego wynik używa jednostek kwadratowych" },
           { "kind": "p", "text": "Pole liczy kwadraty jednostkowe pokrywające powierzchnię: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]], [[\\text{m}\\times\\text{m}=\\text{m}^2]], [[\\text{ft}\\times\\text{ft}=\\text{ft}^2]]. Jednostka to zawsze jednostka długości podniesiona do kwadratu, ponieważ iloczyn dwóch długości jest liczbą kwadratów. Podanie pola jako 24 m to błąd kategorii: 24 m to długość, a 24 m² to powierzchnia." },
           { "kind": "h3", "text": "Przeliczanie różnych jednostek przed obliczeniem" },
-          { "kind": "p", "text": "Weź [[a=3\\text{ ft}]] i [[b=24\\text{ inches}]]. Najpierw przelicz: [[24\\text{ inches}=2\\text{ ft}]]. Potem [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]]. Bez przeliczenia surowy iloczyn 72 nie ma czystego znaczenia: to ani stopy kwadratowe, ani cale kwadratowe. Najpierw przelicz, potem pomnóż, a jednostka odpowiedzi podąży automatycznie." },
+          { "kind": "p", "text": "Weź [[a=3\\text{ ft}]] i [[b=24\\text{ inches}]]. Najpierw przelicz: [[24\\text{ inches}=2\\text{ ft}]]. Potem [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]] Bez przeliczenia surowy iloczyn 72 nie ma czystego znaczenia: to ani stopy kwadratowe, ani cale kwadratowe. Najpierw przelicz, potem pomnóż, a jednostka odpowiedzi podąży automatycznie." },
           { "kind": "h3", "text": "Obliczanie na pomiarach dziesiętnych" },
-          { "kind": "p", "text": "Ten sam wzór obsługuje liczby dziesiętne bez żadnej zmiany. Dane [[a=3.5]] i [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]]. Liczby całkowite, dziesiętne i drobne pomiary warsztatowe przepływają przez to samo mnożenie-i-dzielenie-na-pół. Zachowaj miejsca dziesiętne, na które pozwala pomiar, a arytmetykę zostaw kalkulatorowi." },
+          { "kind": "p", "text": "Ten sam wzór obsługuje liczby dziesiętne bez żadnej zmiany. Dane [[a=3.5]] i [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]] Liczby całkowite, dziesiętne i drobne pomiary warsztatowe przepływają przez to samo mnożenie-i-dzielenie-na-pół. Zachowaj miejsca dziesiętne, na które pozwala pomiar, a arytmetykę zostaw kalkulatorowi." },
           { "kind": "h3", "text": "Dlaczego należy unikać wczesnego zaokrąglania" },
           { "kind": "p", "text": "Zaokrąglij dane wejściowe, a błąd przejedzie przez mnożenie do odpowiedzi. Przyprostokątna zmierzona jako 9.2 nie powinna stać się 9 przed mnożeniem; stracone 0.2 na jednostkę sumuje się w całym iloczynie. Zachowaj pełną precyzję przez kroki pośrednie i zaokrąglij tylko wynik końcowy, do dokładności, którą uzasadniają pomiary. Precyzja zachowana wcześnie to dokładność dostarczona na końcu." }
         ]

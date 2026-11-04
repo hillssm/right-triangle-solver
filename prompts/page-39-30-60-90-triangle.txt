@@ -1,0 +1,1735 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## 30-60-90 Triangle Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, trigonometry teacher, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/30-60-90-triangle-calculator/
+
+**Page Title:** 30-60-90 Triangle Calculator
+
+**Primary Focus Keyword:** 30-60-90 Triangle Calculator
+
+**Secondary Topic:** Calculate Missing Sides, Area, and Perimeter of a 30-60-90 Triangle
+
+**Main Side Ratio:**
+
+a : a√3 : 2a
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English
+
+**Target Audience:**
+- Middle school mathematics students
+- High school geometry students
+- College students
+- Mathematics teachers
+- Private tutors
+- Parents helping children with geometry
+- Students learning trigonometry
+- Beginners studying special right triangles
+- Students preparing for geometry examinations
+- Anyone solving 30-60-90 triangle problems
+
+**Main Objective:**
+
+Create a detailed educational resource explaining how a 30-60-90 triangle works and how to calculate its missing sides, area, and perimeter using its special side ratio.
+
+The article must teach readers:
+
+- What a 30-60-90 triangle is.
+- Why it is called a special right triangle.
+- Why its angles always add up to 180 degrees.
+- Which side is the short leg.
+- Which side is the long leg.
+- Which side is the hypotenuse.
+- Why the side ratio is 1:√3:2.
+- Where the square root of 3 comes from.
+- How to find the long leg from the short leg.
+- How to find the hypotenuse from the short leg.
+- How to find the short leg from the hypotenuse.
+- How to find the short leg from the long leg.
+- How to find the long leg from the hypotenuse.
+- How to calculate area from the short leg.
+- How to calculate perimeter from the short leg.
+- How to solve different 30-60-90 triangle problems manually.
+- How to verify answers.
+- How to avoid common calculation mistakes.
+
+Write naturally, like an experienced mathematics teacher explaining geometry to students.
+
+Avoid robotic language, unnecessary repetition, keyword stuffing, generic filler, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm its actual calculator modes, input fields, unit selectors, buttons, result displays, solution steps, diagrams, examples, and FAQs.
+
+The existing page provides seven calculator modes.
+
+#### MODE 1: FIND LONG LEG FROM SHORT LEG
+
+**Input:**
+
+Short leg a.
+
+**Formula:**
+
+b = a√3
+
+**Result:**
+
+Long leg b.
+
+#### MODE 2: FIND HYPOTENUSE FROM SHORT LEG
+
+**Input:**
+
+Short leg a.
+
+**Formula:**
+
+c = 2a
+
+**Result:**
+
+Hypotenuse c.
+
+#### MODE 3: FIND SHORT LEG FROM HYPOTENUSE
+
+**Input:**
+
+Hypotenuse c.
+
+**Formula:**
+
+a = c/2
+
+**Result:**
+
+Short leg a.
+
+#### MODE 4: FIND SHORT LEG FROM LONG LEG
+
+**Input:**
+
+Long leg b.
+
+**Formula:**
+
+a = b/√3
+
+**Result:**
+
+Short leg a.
+
+#### MODE 5: FIND LONG LEG FROM HYPOTENUSE
+
+**Input:**
+
+Hypotenuse c.
+
+**Formula:**
+
+b = c√3/2
+
+**Result:**
+
+Long leg b.
+
+#### MODE 6: FIND AREA FROM SHORT LEG
+
+**Input:**
+
+Short leg a.
+
+First calculate the long leg:
+
+b = a√3
+
+Then calculate area:
+
+A = ab/2
+
+Therefore:
+
+A = a²√3/2
+
+**Result:**
+
+Triangle area.
+
+#### MODE 7: FIND PERIMETER FROM SHORT LEG
+
+**Input:**
+
+Short leg a.
+
+Formula:
+
+P = a + a√3 + 2a
+
+Simplified:
+
+P = a(3 + √3)
+
+**Result:**
+
+Triangle perimeter.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The live page includes:
+
+- Calculator mode selector.
+- Seven calculation modes.
+- Input fields.
+- Measurement unit selectors.
+- Calculate buttons.
+- Reset buttons.
+- Result displays.
+- Step-by-step solutions.
+- Live triangle visualizations.
+- Triangle diagram.
+- Triangle diagram key.
+- Formula explanation.
+- Calculator instructions.
+- Worked examples.
+- Explanation of results.
+- Side ratio explanation.
+- When to use the calculator.
+- Common mistakes.
+- FAQs.
+- Related calculators.
+
+Preserve the existing seven-mode functionality.
+
+Do not invent additional calculator features.
+
+Do not claim that the current calculator directly calculates:
+- Triangle angles from arbitrary side lengths.
+- Missing angles for non-special triangles.
+- Triangle height as a separate calculator mode.
+- Trigonometric functions for arbitrary triangles.
+- Circumradius.
+- Inradius.
+- Coordinates.
+- Missing values for triangles that are not 30-60-90 triangles.
+
+These concepts can be explained as related mathematical information but must not be presented as existing calculator features.
+
+**Important mathematical notation check:**
+
+The published page's extracted formula text contains some expressions that appear to have lost radical signs or fraction formatting.
+
+Verify all visible formulas and their rendered mathematical notation before finalizing the article.
+
+Use the correct equations provided in this prompt.
+
+Do not reproduce malformed expressions.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Calculate missing sides of a 30-60-90 triangle.
+2. Understand the special side ratio.
+3. Find the long leg from the short leg.
+4. Find the hypotenuse from the short leg.
+5. Find the short leg from the hypotenuse.
+6. Find the short leg from the long leg.
+7. Find the long leg from the hypotenuse.
+8. Calculate the area of a 30-60-90 triangle.
+9. Calculate the perimeter of a 30-60-90 triangle.
+10. Understand why √3 appears in the formulas.
+11. Learn how the ratio is derived.
+12. Solve textbook and examination problems.
+13. Verify their answers.
+
+Answer the main calculation question immediately.
+
+Introduce the side ratio near the top of the article.
+
+Explain the seven calculator modes before introducing lengthy theoretical material.
+
+Do not make users scroll through extensive explanations before finding the calculator.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+30-60-90 Triangle Calculator
+
+**Secondary Keywords:**
+- 30 60 90 triangle calculator
+- 30-60-90 triangle formula
+- 30-60-90 triangle side calculator
+- 30-60-90 triangle side ratio
+- 30-60-90 triangle solver
+- 30-60-90 triangle missing side calculator
+- 30-60-90 triangle hypotenuse calculator
+- 30-60-90 triangle long leg calculator
+- 30-60-90 triangle short leg calculator
+- 30-60-90 triangle area calculator
+- 30-60-90 triangle perimeter calculator
+- special right triangle calculator
+
+**Related Semantic Keywords:**
+- special right triangle
+- 30 degree angle
+- 60 degree angle
+- 90 degree angle
+- short leg a
+- long leg b
+- hypotenuse c
+- square root of 3
+- side length ratio
+- equilateral triangle
+- triangle altitude
+- Pythagorean theorem
+- trigonometric ratios
+- sine 30 degrees
+- cosine 30 degrees
+- tangent 30 degrees
+- exact values
+- irrational number
+- triangle area
+- triangle perimeter
+- right triangle geometry
+- missing side lengths
+- geometric proportions
+
+### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords contextually.
+
+Avoid:
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repetitive headings.
+
+Prioritize mathematical accuracy, natural language, and genuine search intent.
+
+---
+
+### 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use one consistent triangle throughout the entire article.
+
+Consider right triangle ABC with:
+
+- ∠A = 30°.
+- ∠B = 60°.
+- ∠C = 90°.
+
+Use the following side notation:
+
+- BC = a: short leg opposite 30°.
+- AC = b: long leg opposite 60°.
+- AB = c: hypotenuse opposite 90°.
+
+Maintain this labeling convention throughout the article.
+
+#### MAIN SIDE RATIO
+
+a : b : c = 1 : √3 : 2
+
+Therefore:
+
+b = a√3
+
+c = 2a
+
+#### FIND LONG LEG FROM SHORT LEG
+
+b = a√3
+
+#### FIND HYPOTENUSE FROM SHORT LEG
+
+c = 2a
+
+#### FIND SHORT LEG FROM HYPOTENUSE
+
+a = c/2
+
+#### FIND SHORT LEG FROM LONG LEG
+
+a = b/√3
+
+#### FIND LONG LEG FROM HYPOTENUSE
+
+b = c√3/2
+
+#### FIND AREA FROM SHORT LEG
+
+A = ab/2
+
+Since b = a√3:
+
+A = a²√3/2
+
+#### FIND PERIMETER FROM SHORT LEG
+
+P = a + b + c
+
+P = a + a√3 + 2a
+
+P = a(3 + √3)
+
+#### PYTHAGOREAN THEOREM
+
+a² + b² = c²
+
+Substituting:
+
+a² + (a√3)² = (2a)²
+
+a² + 3a² = 4a²
+
+4a² = 4a²
+
+#### TRIGONOMETRIC RELATIONSHIPS
+
+sin 30° = 1/2
+
+cos 30° = √3/2
+
+tan 30° = 1/√3
+
+sin 60° = √3/2
+
+cos 60° = 1/2
+
+tan 60° = √3
+
+Explain these relationships only where they support the main educational topic.
+
+Maintain consistent notation.
+
+Never swap the short and long legs.
+
+Never label the long leg as the hypotenuse.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The completed article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: 30-60-90 Triangle Calculator
+
+**Suggested length: 130–160 words**
+
+Write a direct and informative introduction.
+
+Explain:
+- What a 30-60-90 triangle is.
+- Why it is a special right triangle.
+- Why its sides always follow a fixed ratio.
+- What the calculator can calculate.
+- How visitors can use one known side to find other measurements.
+
+Introduce:
+
+a : b : c = 1 : √3 : 2
+
+Explain:
+- a = short leg.
+- b = long leg.
+- c = hypotenuse.
+
+Include a short example:
+
+If a = 5 cm:
+
+b = 5√3 ≈ 8.660 cm
+
+c = 2 × 5 = 10 cm
+
+Explain that the calculator can also determine area and perimeter from the short leg.
+
+Avoid generic introductions.
+
+### H2: Calculate Missing Sides, Area, and Perimeter
+
+**Suggested length: 180–220 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Introduce all seven modes.
+
+Explain each mode and the input it requires.
+
+| Calculator mode | Required input | Result |
+|---|---|---|
+| Long leg from short leg | Short leg a | Long leg b |
+| Hypotenuse from short leg | Short leg a | Hypotenuse c |
+| Short leg from hypotenuse | Hypotenuse c | Short leg a |
+| Short leg from long leg | Long leg b | Short leg a |
+| Long leg from hypotenuse | Hypotenuse c | Long leg b |
+| Area from short leg | Short leg a | Area A |
+| Perimeter from short leg | Short leg a | Perimeter P |
+
+Explain:
+- How to choose the correct mode.
+- How to identify the known side.
+- How to enter a positive measurement.
+- How to select compatible units.
+- How to click the relevant Calculate button.
+- How to use Reset.
+- How to interpret the result.
+- Why different modes require different formulas.
+
+Do not invent additional calculator functionality.
+
+### H2: What Is a 30-60-90 Triangle?
+
+**Suggested length: 200–250 words**
+
+Explain the definition.
+
+Describe its three interior angles:
+
+30°, 60°, and 90°.
+
+Explain:
+- Why it is a right triangle.
+- Why it is classified as a special right triangle.
+- Why its side lengths follow a fixed ratio.
+- Why it can have many different sizes but always retains the same side proportions.
+
+Explain the angle-sum property:
+
+30° + 60° + 90° = 180°.
+
+Include a labeled diagram.
+
+### H2: Understanding the Short Leg, Long Leg, and Hypotenuse
+
+**Suggested length: 200–250 words**
+
+Explain the three sides carefully.
+
+**Short leg a:**
+
+Opposite the 30° angle.
+
+**Long leg b:**
+
+Opposite the 60° angle.
+
+**Hypotenuse c:**
+
+Opposite the 90° angle.
+
+Explain:
+- Why the short leg is the smallest.
+- Why the long leg is longer than the short leg.
+- Why the hypotenuse is the longest.
+- How to identify each side from its opposite angle.
+- Why side identification is more reliable than relying on diagram orientation.
+
+Include a comparison table.
+
+### H2: The 30-60-90 Triangle Side Ratio
+
+**Suggested length: 200–250 words**
+
+Introduce:
+
+a : b : c = 1 : √3 : 2
+
+Explain each part.
+
+The short leg represents one unit.
+
+The long leg represents √3 units.
+
+The hypotenuse represents two units.
+
+Show:
+
+a = a
+
+b = a√3
+
+c = 2a
+
+Explain why the ratio remains the same regardless of the triangle's size.
+
+Use an example with:
+
+a = 4 cm
+
+b = 4√3 cm
+
+c = 8 cm
+
+Explain that √3 is approximately 1.732, but the exact radical form should be preserved whenever possible.
+
+### H2: Why Does the Square Root of 3 Appear?
+
+**Suggested length: 250–300 words**
+
+This is one of the most important educational sections.
+
+Explain how the 30-60-90 triangle can be created by dividing an equilateral triangle into two equal right triangles.
+
+Start with an equilateral triangle of side length 2a.
+
+All three angles are 60°.
+
+Draw an altitude from one vertex to the opposite side.
+
+Explain that:
+- The altitude bisects the base.
+- The original triangle is divided into two congruent right triangles.
+- Each smaller triangle has angles 30°, 60°, and 90°.
+- The hypotenuse is 2a.
+- The short leg is a.
+- The remaining leg is the altitude.
+
+Use the Pythagorean theorem:
+
+b² = (2a)² − a²
+
+b² = 4a² − a²
+
+b² = 3a²
+
+Therefore:
+
+b = a√3
+
+Explain why this proves the side ratio.
+
+Include an educational diagram.
+
+### H2: Formula to Find the Long Leg From the Short Leg
+
+**Suggested length: 170–210 words**
+
+Introduce:
+
+b = a√3
+
+Define the variables.
+
+Explain that the long leg is √3 times the short leg.
+
+Show a numerical example:
+
+a = 5 cm
+
+b = 5√3
+
+b ≈ 8.660 cm
+
+Explain:
+- Why multiplication is required.
+- Why √3 appears.
+- Why the result is longer than a.
+- Why the exact answer is preferable when requested.
+
+### H2: Formula to Find the Hypotenuse From the Short Leg
+
+**Suggested length: 150–180 words**
+
+Introduce:
+
+c = 2a
+
+Explain that the hypotenuse is always exactly twice the short leg.
+
+Use:
+
+a = 7 cm
+
+c = 2 × 7
+
+c = 14 cm
+
+Explain the geometric reason behind this relationship using the equilateral-triangle construction.
+
+### H2: Formula to Find the Short Leg From the Hypotenuse
+
+**Suggested length: 150–180 words**
+
+Introduce:
+
+a = c/2
+
+Explain that the short leg is half the hypotenuse.
+
+Use:
+
+c = 18 cm
+
+a = 18/2
+
+a = 9 cm
+
+Clarify that this relationship applies specifically to 30-60-90 triangles.
+
+### H2: Formula to Find the Short Leg From the Long Leg
+
+**Suggested length: 150–180 words**
+
+Introduce:
+
+a = b/√3
+
+Explain how this formula is obtained by rearranging:
+
+b = a√3
+
+Use:
+
+b = 12 cm
+
+a = 12/√3
+
+Rationalize if appropriate:
+
+a = 4√3 cm
+
+a ≈ 6.928 cm
+
+Explain why dividing by √3 reverses the original multiplication.
+
+### H2: Formula to Find the Long Leg From the Hypotenuse
+
+**Suggested length: 170–200 words**
+
+Introduce:
+
+b = c√3/2
+
+Explain how this formula is derived from:
+
+a = c/2
+
+and:
+
+b = a√3
+
+Substitute:
+
+b = (c/2)√3
+
+Use:
+
+c = 16 cm
+
+b = 8√3 cm
+
+b ≈ 13.856 cm
+
+Explain why the result is smaller than the hypotenuse but larger than the short leg.
+
+### H2: How to Calculate the Area of a 30-60-90 Triangle
+
+**Suggested length: 200–250 words**
+
+Introduce:
+
+A = ab/2
+
+Since:
+
+b = a√3
+
+Then:
+
+A = a²√3/2
+
+Explain:
+- Why the two legs are used as the base and perpendicular height.
+- Why division by two is necessary.
+- Why the final area is expressed in square units.
+
+Use:
+
+a = 6 cm
+
+b = 6√3 cm
+
+Area:
+
+A = (6 × 6√3)/2
+
+A = 18√3 cm²
+
+A ≈ 31.177 cm²
+
+Clarify that the calculator's area mode accepts the short leg and calculates the long leg internally.
+
+### H2: How to Calculate the Perimeter of a 30-60-90 Triangle
+
+**Suggested length: 180–220 words**
+
+Introduce:
+
+P = a + b + c
+
+Substitute the special triangle relationships:
+
+P = a + a√3 + 2a
+
+Simplify:
+
+P = a(3 + √3)
+
+Use:
+
+a = 5 cm
+
+P = 5(3 + √3)
+
+P ≈ 23.660 cm
+
+Explain why all three side lengths are included.
+
+Clarify that perimeter is a linear measurement, not an area measurement.
+
+### H2: Step-by-Step Example of Solving a 30-60-90 Triangle
+
+**Suggested length: 220–260 words**
+
+Use:
+
+a = 5 cm
+
+Calculate the long leg:
+
+b = 5√3
+
+b ≈ 8.660 cm
+
+Calculate the hypotenuse:
+
+c = 2 × 5
+
+c = 10 cm
+
+Calculate the area:
+
+A = (5 × 5√3)/2
+
+A = 25√3/2
+
+A ≈ 21.651 cm²
+
+Calculate the perimeter:
+
+P = 5 + 5√3 + 10
+
+P = 15 + 5√3
+
+P ≈ 23.660 cm
+
+Present the results in a summary table.
+
+Explain how all the measurements describe the same triangle.
+
+### H2: Worked Examples of 30-60-90 Triangle Calculations
+
+**Suggested length: 400–500 words**
+
+Provide at least eight varied worked examples.
+
+Every example must include:
+- Given measurement.
+- Formula.
+- Substitution.
+- Intermediate calculation.
+- Final answer.
+- Short interpretation.
+
+Use examples from all seven calculator modes.
+
+**Example 1: Find the Long Leg**
+
+a = 4 cm
+
+b = 4√3 cm
+
+b ≈ 6.928 cm
+
+**Example 2: Find the Hypotenuse**
+
+a = 9 cm
+
+c = 18 cm
+
+**Example 3: Find the Short Leg From Hypotenuse**
+
+c = 20 cm
+
+a = 10 cm
+
+**Example 4: Find the Short Leg From Long Leg**
+
+b = 15 cm
+
+a = 15/√3
+
+a = 5√3 cm
+
+**Example 5: Find the Long Leg From Hypotenuse**
+
+c = 12 cm
+
+b = 6√3 cm
+
+**Example 6: Calculate Area**
+
+a = 8 cm
+
+A = 32√3 cm²
+
+**Example 7: Calculate Perimeter**
+
+a = 3 cm
+
+P = 9 + 3√3 cm
+
+**Example 8: Larger Measurements**
+
+a = 10 m
+
+b = 10√3 m
+
+c = 20 m
+
+Explain how the exact and approximate answers differ.
+
+Avoid repeating identical explanations.
+
+### H2: How to Derive the 30-60-90 Triangle Ratio Using Pythagoras
+
+**Suggested length: 180–220 words**
+
+Provide a concise mathematical proof.
+
+Start with:
+
+a = short leg
+
+b = long leg
+
+c = hypotenuse
+
+Use the relationship:
+
+c = 2a
+
+Apply Pythagoras:
+
+a² + b² = c²
+
+Substitute:
+
+a² + b² = 4a²
+
+Rearrange:
+
+b² = 3a²
+
+Therefore:
+
+b = a√3
+
+Conclude:
+
+a : b : c = 1 : √3 : 2
+
+Explain that all side-length formulas come from this fixed relationship.
+
+### H2: Relationship Between 30-60-90 Triangles and Equilateral Triangles
+
+**Suggested length: 180–220 words**
+
+Explain how an altitude divides an equilateral triangle into two congruent 30-60-90 triangles.
+
+Cover:
+- Equal sides.
+- Equal 60-degree angles.
+- The altitude bisecting the base.
+- Creation of two right triangles.
+- The appearance of 30° and 60° angles.
+- The derivation of the √3 relationship.
+
+Explain why this construction is useful in geometry and trigonometry.
+
+Include a diagram.
+
+### H2: Trigonometric Relationships in a 30-60-90 Triangle
+
+**Suggested length: 180–220 words**
+
+Explain the trigonometric values:
+
+sin 30° = 1/2
+
+cos 30° = √3/2
+
+tan 30° = 1/√3
+
+sin 60° = √3/2
+
+cos 60° = 1/2
+
+tan 60° = √3
+
+Explain how these values agree with the fixed side ratio.
+
+Do not turn this into an advanced trigonometry chapter.
+
+Keep the explanation accessible to beginners.
+
+### H2: How to Verify Your 30-60-90 Triangle Calculations
+
+**Suggested length: 180–220 words**
+
+Explain four verification methods.
+
+**Check 1: Side Ratio**
+
+b/a = √3
+
+c/a = 2
+
+**Check 2: Pythagorean Theorem**
+
+a² + b² = c²
+
+**Check 3: Angle Sum**
+
+30° + 60° + 90° = 180°
+
+**Check 4: Side Ordering**
+
+a < b < c
+
+Use one numerical example.
+
+Explain how to identify an incorrect result.
+
+### H2: Important Properties of 30-60-90 Triangles
+
+**Suggested length: 200–240 words**
+
+Explain:
+
+1. The triangle always has angles of 30°, 60°, and 90°.
+2. The short leg is opposite 30°.
+3. The long leg is opposite 60°.
+4. The hypotenuse is opposite 90°.
+5. The hypotenuse is twice the short leg.
+6. The long leg is √3 times the short leg.
+7. The side ratio is independent of the triangle's size.
+8. All 30-60-90 triangles are similar.
+9. The area depends on the square of the short leg.
+10. The perimeter scales directly with the short leg.
+
+Explain the reasoning behind these properties.
+
+### H2: Common Mistakes When Solving 30-60-90 Triangles
+
+**Suggested length: 280–330 words**
+
+Discuss at least twelve common mistakes.
+
+1. Mixing up the short and long legs.
+2. Using √2 instead of √3.
+3. Multiplying the short leg by 2 to find the long leg.
+4. Using a√3 as the hypotenuse.
+5. Forgetting that the hypotenuse equals 2a.
+6. Dividing by 2 instead of √3 when finding the short leg from the long leg.
+7. Forgetting to divide by two when calculating area.
+8. Adding only two sides when calculating perimeter.
+9. Confusing exact answers with decimal approximations.
+10. Rounding √3 too early.
+11. Mixing measurement units.
+12. Applying the formulas to a triangle with different angles.
+13. Confusing the 30-degree and 60-degree opposite sides.
+14. Forgetting that area requires square units.
+
+For each mistake:
+- Explain why it is incorrect.
+- Show the correct formula.
+- Provide a short example where useful.
+
+Avoid repetitive warnings.
+
+### H2: Practical Applications of 30-60-90 Triangles
+
+**Suggested length: 150–190 words**
+
+Discuss relevant applications:
+
+- Geometry homework.
+- Trigonometry exercises.
+- Equilateral triangle height calculations.
+- Technical drawing.
+- Architecture and design concepts.
+- Construction geometry.
+- Mathematical modeling.
+- Classroom demonstrations.
+- Calculating diagonal and height relationships in geometric shapes.
+
+Use realistic hypothetical examples.
+
+Do not make unsupported claims about engineering accuracy.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create six original practice problems.
+
+Include:
+
+1. Find the long leg from the short leg.
+2. Find the hypotenuse from the short leg.
+3. Find the short leg from the hypotenuse.
+4. Find the long leg from the hypotenuse.
+5. Calculate the area from the short leg.
+6. Calculate the perimeter from the short leg.
+
+Provide complete solutions.
+
+Use different values from the main worked examples.
+
+Include exact answers and decimal approximations where appropriate.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What is a 30-60-90 triangle?
+2. What is the side ratio of a 30-60-90 triangle?
+3. Why is the long leg multiplied by √3?
+4. How do I find the hypotenuse from the short leg?
+5. How do I find the short leg from the hypotenuse?
+6. How do I calculate the long leg from the hypotenuse?
+7. How do I find the short leg from the long leg?
+8. How do I calculate the area of a 30-60-90 triangle?
+9. How do I calculate the perimeter of a 30-60-90 triangle?
+10. Can a 30-60-90 triangle have decimal side lengths?
+11. Is every 30-60-90 triangle similar?
+12. How can I check whether my triangle measurements are correct?
+
+Keep answers approximately 35–65 words.
+
+Avoid copying entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- Special Right Triangle Calculator.
+- 45-45-90 Triangle Calculator.
+- Right Triangle Side Calculator.
+- Right Triangle Area Calculator.
+- Right Triangle Perimeter Calculator.
+- Pythagorean Theorem Calculator.
+
+Explain which tool is useful for each different problem.
+
+Verify all destination URLs before including them.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least eight mathematically accurate diagrams.
+
+### Diagram 1: Complete 30-60-90 Triangle
+
+Show:
+
+- 30° angle.
+- 60° angle.
+- 90° angle.
+- Short leg a.
+- Long leg a√3.
+- Hypotenuse 2a.
+
+Clearly label which side is opposite each angle.
+
+### Diagram 2: Derivation From an Equilateral Triangle
+
+Show:
+
+- An equilateral triangle.
+- All three sides labeled 2a.
+- An altitude drawn from the top vertex.
+- The base divided into two equal segments of length a.
+- Two resulting 30-60-90 triangles.
+- The altitude labeled a√3.
+
+Explain how the altitude produces the long leg.
+
+### Diagram 3: The Fixed Side Ratio
+
+Show:
+
+a : a√3 : 2a
+
+Include a comparison of:
+- Short leg.
+- Long leg.
+- Hypotenuse.
+
+### Diagram 4: Find the Long Leg
+
+Show:
+
+b = a√3
+
+Use a = 5 cm.
+
+Label:
+
+b = 5√3 ≈ 8.660 cm.
+
+### Diagram 5: Find the Hypotenuse
+
+Show:
+
+c = 2a
+
+Use a = 5 cm.
+
+Label:
+
+c = 10 cm.
+
+### Diagram 6: Area Calculation
+
+Show:
+
+A = a²√3/2
+
+Use:
+
+a = 6 cm.
+
+Show the short and long legs as perpendicular base and height.
+
+### Diagram 7: Perimeter Calculation
+
+Show:
+
+P = a(3 + √3)
+
+Use:
+
+a = 5 cm.
+
+Label all three sides.
+
+### Diagram 8: All Seven Calculator Modes
+
+Create an educational overview showing the seven different calculation paths.
+
+Clearly identify the known input and calculated output for each mode.
+
+**Diagram requirements:**
+
+For every diagram provide:
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer accurate SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+The angles must be positioned correctly.
+
+The short leg must always be opposite 30°.
+
+The long leg must always be opposite 60°.
+
+The hypotenuse must always be opposite 90°.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/special-right-triangle-calculator/
+
+2. https://www.righttrianglesolver.com/45-45-90-triangle-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-area-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-perimeter-calculator/
+
+6. https://www.righttrianglesolver.com/pythagorean-theorem-calculator/
+
+Verify every destination URL before including them.
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeatedly use the same exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**30-60-90 Triangle Calculator**
+
+Its main purpose is to explain and calculate the fixed side relationships of a 30-60-90 triangle.
+
+Keep the article focused on:
+
+- Special triangle geometry.
+- Fixed side ratio.
+- Short leg.
+- Long leg.
+- Hypotenuse.
+- Finding missing sides.
+- Area.
+- Perimeter.
+- Derivation of √3.
+- Seven calculator modes.
+
+Do not turn this page into a duplicate of:
+
+- General Right Triangle Calculator.
+- Right Triangle Side Calculator.
+- 45-45-90 Triangle Calculator.
+- General Pythagorean Theorem Calculator.
+- General Trigonometry Calculator.
+
+Explain the Pythagorean theorem and trigonometric relationships only when they support the special triangle's formulas.
+
+The 45-45-90 page should focus on its own ratio:
+
+1 : 1 : √2
+
+This page must focus on:
+
+1 : √3 : 2
+
+Use contextual internal links to other calculators when readers need a different triangle type or calculation.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation across multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+Use:
+
+**Side ratio:**
+
+a : b : c = 1 : √3 : 2
+
+**Long leg:**
+
+b = a√3
+
+**Hypotenuse:**
+
+c = 2a
+
+**Short leg from hypotenuse:**
+
+a = c/2
+
+**Short leg from long leg:**
+
+a = b/√3
+
+**Long leg from hypotenuse:**
+
+b = c√3/2
+
+**Area:**
+
+A = ab/2
+
+A = a²√3/2
+
+**Perimeter:**
+
+P = a + b + c
+
+P = a(3 + √3)
+
+**Pythagorean theorem:**
+
+a² + b² = c²
+
+**Trigonometric values:**
+
+sin 30° = 1/2
+
+cos 30° = √3/2
+
+tan 30° = 1/√3
+
+sin 60° = √3/2
+
+cos 60° = 1/2
+
+tan 60° = √3
+
+Ensure:
+
+- Short leg a is always opposite 30°.
+- Long leg b is always opposite 60°.
+- Hypotenuse c is always opposite 90°.
+- √3 is used in the long-leg relationship.
+- The hypotenuse is twice the short leg.
+- Area is expressed in square units.
+- Perimeter is expressed in linear units.
+- Exact radical answers are preserved.
+- Decimal approximations are labeled correctly.
+- All examples are recalculated.
+- All unit conversions are correct.
+- Diagrams use consistent labeling.
+
+Never write:
+
+b = a√2
+
+Never write:
+
+c = a√3
+
+Never write:
+
+a = c√3/2
+
+Never use the 45-45-90 side ratio on a 30-60-90 triangle.
+
+Never confuse the short leg and long leg.
+
+Never apply these special formulas to an arbitrary right triangle without confirming its angles.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO Title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Explain that the calculator finds missing sides, area, and perimeter using the 30-60-90 triangle ratio.
+
+### Primary Focus Keyword
+
+30-60-90 Triangle Calculator
+
+### Secondary Keywords
+
+Provide 8–12 relevant keyword variations.
+
+### Existing URL Slug
+
+30-60-90-triangle-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all eight diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual visible calculator.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the 1:√3:2 side ratio.
+- Verify all seven calculator modes.
+- Recalculate every worked example.
+- Check exact and decimal results.
+- Verify the equilateral-triangle derivation.
+- Check Pythagorean relationships.
+- Verify area and perimeter formulas.
+- Check all unit conversions.
+- Verify every diagram's angles and side labels.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- All seven calculator modes are explained.
+- The √3 derivation is clear.
+- Exact and approximate values are distinguished.
+- Examples cover different calculator modes.
+- Mathematical proofs are understandable to beginners.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from the 45-45-90 and general right triangle pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- Side ratio is immediately visible.
+- Calculator instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+
+Remove weak, repetitive, or irrelevant material before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding that range only when additional information genuinely improves educational value.
+
+Include:
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Eight worked examples.
+- Comparison tables.
+- Contextual internal links.
+- Practice questions.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all eight diagram specifications.
+
+Include:
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the 30-60-90 Triangle Calculator.
+
+The primary purpose must remain explaining and solving 30-60-90 triangle problems using the fixed side ratio:
+
+a : a√3 : 2a
+
+Give particular attention to:
+
+- What makes a 30-60-90 triangle special.
+- How to identify the short leg, long leg, and hypotenuse.
+- Why the square root of 3 appears.
+- How the ratio is derived from an equilateral triangle.
+- How all seven calculator modes work.
+- How to calculate missing side lengths.
+- How to calculate area.
+- How to calculate perimeter.
+- How to preserve exact radical answers.
+- How to verify the final results.
+- How to distinguish 30-60-90 triangles from 45-45-90 triangles.
+
+Use accurate mathematical diagrams, varied numerical examples, and clear step-by-step proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, and anyone learning special right triangle geometry.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

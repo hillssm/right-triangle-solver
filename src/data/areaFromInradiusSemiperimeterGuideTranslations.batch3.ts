@@ -89,7 +89,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
       "sec-intro": {
         "h2": "Como Calcular a Área de um Triângulo Retângulo Usando Inraio e Semiperímetro",
         "blocks": [
-          { "kind": "p", "text": "Um triângulo retângulo tem inraio [[r=2]] e semiperímetro [[s=12]]. Aplique [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. O triângulo encerra 24 unidades quadradas de área plana. Este é o método completo que a calculadora automatiza: duas medidas, uma multiplicação, uma resposta." },
+          { "kind": "p", "text": "Um triângulo retângulo tem inraio [[r=2]] e semiperímetro [[s=12]]. Aplique [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] O triângulo encerra 24 unidades quadradas de área plana. Este é o método completo que a calculadora automatiza: duas medidas, uma multiplicação, uma resposta." },
           { "kind": "p", "text": "O inraio é o raio do círculo que cabe justo dentro do triângulo, tocando os três lados. O semiperímetro é metade da distância ao redor do triângulo. Juntos, eles bastam para determinar a área porque o raio do círculo atua como a altura de três triângulos menores cujas bases são os lados do triângulo. Esta identidade vale para todo triângulo não degenerado, não só para triângulos retângulos; o que é especial nos triângulos retângulos é a maneira rápida de calcular o próprio inraio a partir dos três lados. Ela é mais útil quando o círculo inscrito foi medido diretamente, ou quando o inraio e o semiperímetro já são conhecidos de um trabalho anterior." }
         ]
       },
@@ -106,7 +106,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "Entendendo o Incentro" },
           { "kind": "p", "text": "O incentro [[I]] é o ponto onde as três bissetrizes internas do triângulo se encontram. Cada bissetriz é o conjunto de pontos equidistantes dos dois lados que formam aquele ângulo, de modo que um ponto situado nas três bissetrizes está à mesma distância dos três lados, e deve ficar dentro do triângulo. Essa distância comum é exatamente o inraio, e o círculo centrado em [[I]] com raio [[r]] toca cada lado uma vez: o círculo inscrito." },
           { "kind": "h3", "text": "O Inraio é o Mesmo que o Circunraio?" },
-          { "kind": "p", "text": "Não. O inraio [[r]] é o raio do círculo dentro do triângulo, enquanto o circunraio [[R]] é o raio do círculo que passa pelos três vértices, o círculo circunscrito. Para um triângulo retângulo, o centro do círculo circunscrito é o ponto médio da hipotenusa, então [[[\\boxed{R=\\frac{c}{2}}]]]. Os dois raios descrevem círculos completamente diferentes: um está inscrito no triângulo, o outro é desenhado ao redor dele. Confundi-los é um dos erros mais comuns neste tema, então mantenha-os separados: [[r]] para dentro, [[R]] para ao redor." }
+          { "kind": "p", "text": "Não. O inraio [[r]] é o raio do círculo dentro do triângulo, enquanto o circunraio [[R]] é o raio do círculo que passa pelos três vértices, o círculo circunscrito. Para um triângulo retângulo, o centro do círculo circunscrito é o ponto médio da hipotenusa, então [[[\\boxed{R=\\frac{c}{2}}]]] Os dois raios descrevem círculos completamente diferentes: um está inscrito no triângulo, o outro é desenhado ao redor dele. Confundi-los é um dos erros mais comuns neste tema, então mantenha-os separados: [[r]] para dentro, [[R]] para ao redor." }
         ],
         "imgAlt": "Triângulo ABC com círculo inscrito, incentro I, inraio r, pontos de tangência e círculo circunscrito",
         "figcaption": "Triângulo ABC e seu círculo inscrito: incentro I, inraio r = ID com ID perpendicular a cada lado, além do círculo circunscrito para comparação."
@@ -129,13 +129,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Comece da regra padrão da área do triângulo: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]. Traçar segmentos do incentro [[I]] até os três vértices divide o triângulo original em três triângulos menores. Cada triângulo menor tem base igual a um lado do triângulo original e altura perpendicular igual ao inraio [[r]], porque o raio encontra cada lado em ângulo reto. Isso funciona para todo triângulo não degenerado; para esta calculadora o triângulo é retângulo, mas a identidade da área em si é totalmente geral." },
           { "kind": "h3", "text": "Área do Primeiro Triângulo Menor" },
-          { "kind": "p", "text": "O triângulo menor apoiado no lado [[a]] tem base [[a]] e altura [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "O triângulo menor apoiado no lado [[a]] tem base [[a]] e altura [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "Área do Segundo Triângulo Menor" },
-          { "kind": "p", "text": "O triângulo menor apoiado no lado [[b]] tem base [[b]] e altura [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "O triângulo menor apoiado no lado [[b]] tem base [[b]] e altura [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "Área do Terceiro Triângulo Menor" },
-          { "kind": "p", "text": "O triângulo menor apoiado no lado [[c]] tem base [[c]] e altura [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "O triângulo menor apoiado no lado [[c]] tem base [[c]] e altura [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "Some as Três Áreas" },
-          { "kind": "p", "text": "Os três triângulos menores ladrilham o original sem sobreposição, então [[K=K_1+K_2+K_3]]. Substituindo: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Fatore [[\\frac{r}{2}]]: [[K=\\frac{r(a+b+c)}{2}]]. Lembre que [[s=\\frac{a+b+c}{2}]], portanto [[[\\boxed{K=r\\times s}]]]. Cada transição é justificada: o ladrilhamento é exato, a altura [[r]] é comum, e o semiperímetro absorve a divisão por dois." },
+          { "kind": "p", "text": "Os três triângulos menores ladrilham o original sem sobreposição, então [[K=K_1+K_2+K_3]]. Substituindo: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Fatore [[\\frac{r}{2}]]: [[K=\\frac{r(a+b+c)}{2}]]. Lembre que [[s=\\frac{a+b+c}{2}]], portanto [[[\\boxed{K=r\\times s}]]] Cada transição é justificada: o ladrilhamento é exato, a altura [[r]] é comum, e o semiperímetro absorve a divisão por dois." },
           { "kind": "h3", "text": "Por Que Esta Fórmula Não Precisa de Outra Divisão por Dois?" },
           { "kind": "p", "text": "Porque a metade já está embutida no semiperímetro. As três metades se combinam em [[\\frac{r(a+b+c)}{2}]], e [[s]] é exatamente metade do perímetro, de modo que dividir por dois uma segunda vez reduziria a expressão correta a um quarto. Calcule [[r\\times s]] e pare por aí; dividir pela metade de novo é um erro, não uma correção." }
         ],
@@ -147,11 +147,11 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Quando os três lados são conhecidos, o inraio de um triângulo retângulo segue um atalho que evita desenhar o círculo inscrito: [[[\\boxed{r=\\frac{a+b-c}{2}}]]], onde [[a]] e [[b]] são os catetos perpendiculares e [[c]] é a hipotenusa. Este é um dos fatos mais úteis da geometria do triângulo retângulo." },
           { "kind": "h3", "text": "Derivando a Fórmula do Inraio do Triângulo Retângulo" },
-          { "kind": "p", "text": "A derivação usa o teorema dos segmentos tangentes iguais: de um ponto externo comum, os dois segmentos tangentes traçados a um círculo têm comprimentos iguais. Sejam os comprimentos tangentes a partir dos três vértices [[x]] do vértice [[A]], [[y]] do vértice [[B]] e [[z]] do vértice [[C]]. No ângulo reto [[C]], as duas tangentes do círculo inscrito correm ao longo dos catetos perpendiculares e cada uma tem comprimento [[r]], formando um pequeno quadrado com os dois raios, de modo que [[z=r]]. Os lados são então [[a=y+r]], [[b=x+r]] e [[c=x+y]]. Subtraindo: [[a+b-c=(y+r)+(x+r)-(x+y)]], logo [[a+b-c=2r]], dando [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. O quadrado no ângulo reto é o motivo de este atalho pertencer somente aos triângulos retângulos." },
+          { "kind": "p", "text": "A derivação usa o teorema dos segmentos tangentes iguais: de um ponto externo comum, os dois segmentos tangentes traçados a um círculo têm comprimentos iguais. Sejam os comprimentos tangentes a partir dos três vértices [[x]] do vértice [[A]], [[y]] do vértice [[B]] e [[z]] do vértice [[C]]. No ângulo reto [[C]], as duas tangentes do círculo inscrito correm ao longo dos catetos perpendiculares e cada uma tem comprimento [[r]], formando um pequeno quadrado com os dois raios, de modo que [[z=r]]. Os lados são então [[a=y+r]], [[b=x+r]] e [[c=x+y]]. Subtraindo: [[a+b-c=(y+r)+(x+r)-(x+y)]], logo [[a+b-c=2r]], dando [[[\\boxed{r=\\frac{a+b-c}{2}}]]] O quadrado no ângulo reto é o motivo de este atalho pertencer somente aos triângulos retângulos." },
           { "kind": "h3", "text": "Exemplo Usando um Triângulo 3-4-5" },
-          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. O raio do círculo inscrito é exatamente 1, sem construção necessária." },
+          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] O raio do círculo inscrito é exatamente 1, sem construção necessária." },
           { "kind": "h3", "text": "Exemplo Usando um Triângulo 5-12-13" },
-          { "kind": "p", "text": "Dados [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. De novo, o inraio sai diretamente dos comprimentos dos lados." },
+          { "kind": "p", "text": "Dados [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] De novo, o inraio sai diretamente dos comprimentos dos lados." },
           { "kind": "h3", "text": "Encontrando o Semiperímetro ao Mesmo Tempo" },
           { "kind": "p", "text": "Com os mesmos três lados, calcule [[s=\\frac{a+b+c}{2}]] junto com [[r]]. Para o triângulo 5-12-13: [[s=\\frac{5+12+13}{2}=15]], e então [[K=rs=2\\times15=30]]. Uma passada pelos três lados fornece ambas as entradas da calculadora e a própria área." },
           { "kind": "h3", "text": "Quando Usar Este Atalho?" },
@@ -189,13 +189,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Quatro exemplos resolvidos constroem o método do familiar para o novo. Cada um calcula o semiperímetro e o inraio a partir dos três lados, aplica [[K=rs]] com cada substituição mostrada e verifica com a fórmula dos catetos." },
           { "kind": "h3", "text": "Exemplo 1: Triângulo Retângulo 3-4-5" },
-          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]]. Passo 1: semiperímetro, [[s=\\frac{3+4+5}{2}=6]]. Passo 2: inraio, [[r=\\frac{3+4-5}{2}=1]]. Passo 3: aplique a fórmula, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Verifique: [[K=\\frac{3\\times4}{2}=6]]." },
+          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]]. Passo 1: semiperímetro, [[s=\\frac{3+4+5}{2}=6]]. Passo 2: inraio, [[r=\\frac{3+4-5}{2}=1]]. Passo 3: aplique a fórmula, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Verifique: [[K=\\frac{3\\times4}{2}=6]]." },
           { "kind": "h3", "text": "Exemplo 2: Triângulo Retângulo 6-8-10" },
-          { "kind": "p", "text": "Dados [[a=6]], [[b=8]], [[c=10]]. Então [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] e [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Verifique: [[K=\\frac{6\\times8}{2}=24]]." },
+          { "kind": "p", "text": "Dados [[a=6]], [[b=8]], [[c=10]]. Então [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] e [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Verifique: [[K=\\frac{6\\times8}{2}=24]]." },
           { "kind": "h3", "text": "Exemplo 3: Triângulo Retângulo 5-12-13" },
-          { "kind": "p", "text": "Dados [[a=5]], [[b=12]], [[c=13]]. Então [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] e [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Verifique: [[K=\\frac{5\\times12}{2}=30]]." },
+          { "kind": "p", "text": "Dados [[a=5]], [[b=12]], [[c=13]]. Então [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] e [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Verifique: [[K=\\frac{5\\times12}{2}=30]]." },
           { "kind": "h3", "text": "Exemplo 4: Triângulo Retângulo 8-15-17" },
-          { "kind": "p", "text": "Dados [[a=8]], [[b=15]], [[c=17]]. Então [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] e [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. Verifique: [[K=\\frac{8\\times15}{2}=60]]." },
+          { "kind": "p", "text": "Dados [[a=8]], [[b=15]], [[c=17]]. Então [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] e [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] Verifique: [[K=\\frac{8\\times15}{2}=60]]." },
           { "kind": "h3", "text": "Comparação dos Exemplos Fundamentais" }
         ],
         "table": {
@@ -213,29 +213,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Doze situações resolvidas mostram a fórmula em diferentes escalas e unidades. Cada uma nomeia o objeto triangular, dá as três medidas de lado, calcula o inraio e o semiperímetro, aplica a fórmula principal passo a passo e declara a suposição por trás dela. Cada exemplo é um painel, seção, perfil ou modelo geométrico simplificado triangular retângulo; onde o objeto real é curvo ou irregular, o cálculo cobre apenas o triângulo modelado." },
           { "kind": "h3", "text": "Exemplo 1: Janela de Vidro Triangular" },
-          { "kind": "p", "text": "Uma janela de vidro triangular retângulo tem [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Inraio: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Semiperímetro: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Área: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. Esta é a área plana de vidro antes de considerar as dimensões do caixilho." },
+          { "kind": "p", "text": "Uma janela de vidro triangular retângulo tem [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Inraio: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Semiperímetro: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Área: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] Esta é a área plana de vidro antes de considerar as dimensões do caixilho." },
           { "kind": "h3", "text": "Exemplo 2: Suporte de Aço" },
-          { "kind": "p", "text": "Uma placa de suporte de aço triangular tem [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Então [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. A área sozinha não determina a capacidade de carga da placa." },
+          { "kind": "p", "text": "Uma placa de suporte de aço triangular tem [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Então [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] A área sozinha não determina a capacidade de carga da placa." },
           { "kind": "h3", "text": "Exemplo 3: Perfil Lateral de Rampa Triangular" },
-          { "kind": "p", "text": "Um perfil de rampa triangular retângulo simplificado tem [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Então [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Isso representa o perfil lateral, não a superfície inclinada de caminhada." },
+          { "kind": "p", "text": "Um perfil de rampa triangular retângulo simplificado tem [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Então [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] Isso representa o perfil lateral, não a superfície inclinada de caminhada." },
           { "kind": "h3", "text": "Exemplo 4: Painel de Suporte de Telhado Triangular" },
-          { "kind": "p", "text": "Um painel de suporte de telhado triangular retângulo tem [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Então [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. O resultado é a área plana estimada do painel triangular." },
+          { "kind": "p", "text": "Um painel de suporte de telhado triangular retângulo tem [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Então [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] O resultado é a área plana estimada do painel triangular." },
           { "kind": "h3", "text": "Exemplo 5: Seção de Jardim Medida" },
-          { "kind": "p", "text": "Uma seção de jardim triangular retângulo tem [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Então [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. A fórmula dá a área da seção triangular diretamente a partir de suas três medidas de contorno." },
+          { "kind": "p", "text": "Uma seção de jardim triangular retângulo tem [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Então [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] A fórmula dá a área da seção triangular diretamente a partir de suas três medidas de contorno." },
           { "kind": "h3", "text": "Exemplo 6: Vela de Tecido Triangular" },
-          { "kind": "p", "text": "Um painel de tecido triangular retângulo tem [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Então [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Costuras e folgas de tecido estão excluídas deste valor de painel plano." },
+          { "kind": "p", "text": "Um painel de tecido triangular retângulo tem [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Então [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Costuras e folgas de tecido estão excluídas deste valor de painel plano." },
           { "kind": "h3", "text": "Exemplo 7: Grande Seção de Terreno Triangular" },
-          { "kind": "p", "text": "Uma seção de terreno medida modelada como triângulo retângulo tem [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Então [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. O modelo triangular retângulo simplificado pressupõe contornos retos em terreno plano." },
+          { "kind": "p", "text": "Uma seção de terreno medida modelada como triângulo retângulo tem [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Então [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] O modelo triangular retângulo simplificado pressupõe contornos retos em terreno plano." },
           { "kind": "h3", "text": "Exemplo 8: Gabarito de Corte de Compensado" },
-          { "kind": "p", "text": "Um gabarito de compensado triangular tem [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Então [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. A área ajuda a estimar as necessidades de material antes do desperdício de corte." },
+          { "kind": "p", "text": "Um gabarito de compensado triangular tem [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Então [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] A área ajuda a estimar as necessidades de material antes do desperdício de corte." },
           { "kind": "h3", "text": "Exemplo 9: Grande Painel de Sinalização Triangular" },
-          { "kind": "p", "text": "Um painel de sinalização triangular retângulo tem [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Então [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. O resultado representa a superfície triangular plana voltada para o observador." },
+          { "kind": "p", "text": "Um painel de sinalização triangular retângulo tem [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Então [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] O resultado representa a superfície triangular plana voltada para o observador." },
           { "kind": "h3", "text": "Exemplo 10: Suporte de Toldo Triangular" },
-          { "kind": "p", "text": "Uma seção de suporte de toldo triangular retângulo tem [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Então [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. Esta é a área calculada da seção triangular modelada." },
+          { "kind": "p", "text": "Uma seção de suporte de toldo triangular retângulo tem [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Então [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] Esta é a área calculada da seção triangular modelada." },
           { "kind": "h3", "text": "Exemplo 11: Painel de Suporte Industrial" },
-          { "kind": "p", "text": "Um painel de suporte industrial triangular retângulo tem [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Então [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. Este cálculo geométrico descreve a área plana do painel, não seu desempenho estrutural." },
+          { "kind": "p", "text": "Um painel de suporte industrial triangular retângulo tem [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Então [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] Este cálculo geométrico descreve a área plana do painel, não seu desempenho estrutural." },
           { "kind": "h3", "text": "Exemplo 12: Grande Seção de Extremidade de Telhado Triangular" },
-          { "kind": "p", "text": "Uma seção de extremidade de telhado triangular retângulo tem [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Então [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. A área calculada ajuda a estimar a cobertura triangular plana." },
+          { "kind": "p", "text": "Uma seção de extremidade de telhado triangular retângulo tem [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Então [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] A área calculada ajuda a estimar a cobertura triangular plana." },
           { "kind": "h3", "text": "Comparação dos Exemplos Práticos" }
         ],
         "table": {
@@ -259,15 +259,15 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
       "sec-relationship": {
         "h2": "Como o Inraio e o Semiperímetro se Relacionam com os Três Lados?",
         "blocks": [
-          { "kind": "p", "text": "Em um triângulo retângulo, o inraio e o semiperímetro não são independentes dos lados; são construídos a partir deles. Partindo de [[r=\\frac{a+b-c}{2}]] e [[s=\\frac{a+b+c}{2}]], some e subtraia as duas expressões. Somar dá [[[\\boxed{s+r=a+b}]]], e subtrair dá [[[\\boxed{s-r=c}]]]. Essas duas identidades são específicas dos triângulos retângulos sob a notação dada, e transformam as duas entradas da calculadora em uma quantidade surpreendente de informação sobre o próprio triângulo." },
+          { "kind": "p", "text": "Em um triângulo retângulo, o inraio e o semiperímetro não são independentes dos lados; são construídos a partir deles. Partindo de [[r=\\frac{a+b-c}{2}]] e [[s=\\frac{a+b+c}{2}]], some e subtraia as duas expressões. Somar dá [[[\\boxed{s+r=a+b}]]], e subtrair dá [[[\\boxed{s-r=c}]]] Essas duas identidades são específicas dos triângulos retângulos sob a notação dada, e transformam as duas entradas da calculadora em uma quantidade surpreendente de informação sobre o próprio triângulo." },
           { "kind": "h3", "text": "Recuperando a Hipotenusa" },
-          { "kind": "p", "text": "De [[s-r=c]], a hipotenusa pode ser recuperada quando [[r]] e [[s]] são conhecidos. Para [[r=2]] e [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]]. Duas entradas revelam assim o lado mais longo sem nenhuma outra medição." },
+          { "kind": "p", "text": "De [[s-r=c]], a hipotenusa pode ser recuperada quando [[r]] e [[s]] são conhecidos. Para [[r=2]] e [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]] Duas entradas revelam assim o lado mais longo sem nenhuma outra medição." },
           { "kind": "h3", "text": "Recuperando a Soma dos Dois Catetos" },
           { "kind": "p", "text": "De [[a+b=s+r]], a soma dos catetos segue diretamente. Para [[r=2]] e [[s=12]]: [[a+b=14]]. A soma sozinha não consegue identificar cada cateto individualmente; os comprimentos individuais precisam de mais uma informação." },
           { "kind": "h3", "text": "Recuperando o Produto dos Dois Catetos" },
-          { "kind": "p", "text": "Como [[K=\\frac{ab}{2}]] e [[K=rs]], segue que [[[\\boxed{ab=2rs}]]]. Para [[r=2]] e [[s=12]]: [[ab=48]]. Com [[a+b=14]] e [[ab=48]], os dois catetos são 6 e 8: [[6+8=14]] e [[6\\times8=48]]. Os dois catetos podem ser trocados sem mudar a área do triângulo." },
+          { "kind": "p", "text": "Como [[K=\\frac{ab}{2}]] e [[K=rs]], segue que [[[\\boxed{ab=2rs}]]] Para [[r=2]] e [[s=12]]: [[ab=48]]. Com [[a+b=14]] e [[ab=48]], os dois catetos são 6 e 8: [[6+8=14]] e [[6\\times8=48]]. Os dois catetos podem ser trocados sem mudar a área do triângulo." },
           { "kind": "h3", "text": "Recuperando Ambos os Comprimentos dos Catetos" },
-          { "kind": "p", "text": "A soma e o produto fazem de [[a]] e [[b]] as duas raízes de [[t^2-(s+r)t+2rs=0]], dando [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]]. Os dois sinais correspondem às duas atribuições possíveis de catetos. Com [[r=2]] e [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], então [[a,b=\\frac{14\\pm2}{2}]], catetos 6 e 8. Esta é uma dedução matemática avançada, não um recurso adicional da calculadora." }
+          { "kind": "p", "text": "A soma e o produto fazem de [[a]] e [[b]] as duas raízes de [[t^2-(s+r)t+2rs=0]], dando [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]] Os dois sinais correspondem às duas atribuições possíveis de catetos. Com [[r=2]] e [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], então [[a,b=\\frac{14\\pm2}{2}]], catetos 6 e 8. Esta é uma dedução matemática avançada, não um recurso adicional da calculadora." }
         ]
       },
       "sec-valid": {
@@ -277,7 +277,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "Condições Básicas de Entrada" },
           { "kind": "p", "text": "As entradas devem satisfazer [[r>0]] e [[s>0]]. Para um triângulo retângulo, [[s>r]] também é exigido, porque [[c=s-r]] e a hipotenusa deve ser positiva. Essas três condições são necessárias mas não suficientes." },
           { "kind": "h3", "text": "Uma Verificação Avançada de Consistência do Triângulo Retângulo" },
-          { "kind": "p", "text": "De [[a+b=s+r]] e [[ab=2rs]], os dois catetos são reais exatamente quando o discriminante [[\\Delta=(s+r)^2-8rs]] é não negativo. Simplificado: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]]. Para comprimentos de cateto reais, [[\\Delta\\geq0]]. Como [[s]] deve exceder [[r]], a condição equivalente do triângulo retângulo é [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], ou [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]. A igualdade ocorre para um triângulo retângulo isósceles, o ajuste mais apertado possível. Este é um teste matemático avançado de compatibilidade, claramente separado das verificações básicas acima." },
+          { "kind": "p", "text": "De [[a+b=s+r]] e [[ab=2rs]], os dois catetos são reais exatamente quando o discriminante [[\\Delta=(s+r)^2-8rs]] é não negativo. Simplificado: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]] Para comprimentos de cateto reais, [[\\Delta\\geq0]]. Como [[s]] deve exceder [[r]], a condição equivalente do triângulo retângulo é [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], ou [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]] A igualdade ocorre para um triângulo retângulo isósceles, o ajuste mais apertado possível. Este é um teste matemático avançado de compatibilidade, claramente separado das verificações básicas acima." },
           { "kind": "h3", "text": "Exemplo Válido" },
           { "kind": "p", "text": "Dados [[r=2]] e [[s=12]], a razão é [[\\frac{s}{r}=6]]. Como [[6>3+2\\sqrt2]] (cerca de 5,83), os valores podem descrever um triângulo retângulo válido, e os lados correspondentes são 6, 8 e 10." },
           { "kind": "h3", "text": "Exemplo Incompatível" },
@@ -287,19 +287,19 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
       "sec-heron": {
         "h2": "Como a Fórmula do Inraio se Compara com a Fórmula de Heron?",
         "blocks": [
-          { "kind": "p", "text": "A fórmula de Heron calcula a área a partir dos três lados: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]. Ela usa os três comprimentos de lado e o semiperímetro, funciona para qualquer triângulo não degenerado e não precisa do inraio como entrada separada. Compare-a com [[[\\boxed{K=rs}]]]. As duas são parentes próximas: o semiperímetro [[s]] aparece em ambas, e provar que elas concordam é uma das maneiras mais limpas de ver que [[K=rs]] está correto." },
+          { "kind": "p", "text": "A fórmula de Heron calcula a área a partir dos três lados: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]] Ela usa os três comprimentos de lado e o semiperímetro, funciona para qualquer triângulo não degenerado e não precisa do inraio como entrada separada. Compare-a com [[[\\boxed{K=rs}]]] As duas são parentes próximas: o semiperímetro [[s]] aparece em ambas, e provar que elas concordam é uma das maneiras mais limpas de ver que [[K=rs]] está correto." },
           { "kind": "h3", "text": "Quando a Fórmula do Inraio é Mais Fácil?" },
           { "kind": "p", "text": "[[K=rs]] é especialmente conveniente quando o inraio e o semiperímetro já são conhecidos: uma única multiplicação, sem raízes quadradas, sem fatoração de diferenças de lado. Quando um círculo inscrito foi medido, ou quando passos anteriores já produziram [[r]] e [[s]], este é o caminho mais curto até a área." },
           { "kind": "h3", "text": "Quando a Fórmula de Heron é Mais Útil?" },
           { "kind": "p", "text": "A fórmula de Heron é a melhor escolha quando os três comprimentos de lado são conhecidos mas o inraio não foi calculado. Ela chega à área diretamente de [[a]], [[b]] e [[c]] sem o desvio por [[r]]. Nenhuma fórmula é universalmente mais precisa; elas são exatas em entradas consistentes e discordam apenas quando as entradas são inconsistentes." },
           { "kind": "h3", "text": "Verifique Ambas as Fórmulas Usando um Triângulo 3-4-5" },
-          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]], com [[s=6]] e [[r=1]]. Usando o inraio: [[K=1\\times6=6]]. Usando a fórmula de Heron: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], então [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. Os resultados concordam porque ambas as fórmulas medem a mesma região; são duas expressões de uma área, e a concordância entre elas é um forte sinal de que a aritmética está certa." }
+          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]], com [[s=6]] e [[r=1]]. Usando o inraio: [[K=1\\times6=6]]. Usando a fórmula de Heron: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], então [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] Os resultados concordam porque ambas as fórmulas medem a mesma região; são duas expressões de uma área, e a concordância entre elas é um forte sinal de que a aritmética está certa." }
         ]
       },
       "sec-legs": {
         "h2": "Por Que a Fórmula do Inraio Produz a Mesma Área que a Fórmula dos Catetos?",
         "blocks": [
-          { "kind": "p", "text": "Duas fórmulas reivindicam a mesma área: [[K=\\frac{ab}{2}]] e [[K=rs]]. Escrevendo [[r]] e [[s]] em termos dos lados dá [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], de modo que [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. O numerador é uma diferença de quadrados: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Aplique o teorema de Pitágoras [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], portanto [[[\\boxed{rs=\\frac{ab}{2}}]]]. As duas fórmulas são idênticas em todo triângulo retângulo; elas não podem discordar em entradas consistentes." },
+          { "kind": "p", "text": "Duas fórmulas reivindicam a mesma área: [[K=\\frac{ab}{2}]] e [[K=rs]]. Escrevendo [[r]] e [[s]] em termos dos lados dá [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], de modo que [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. O numerador é uma diferença de quadrados: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Aplique o teorema de Pitágoras [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], portanto [[[\\boxed{rs=\\frac{ab}{2}}]]] As duas fórmulas são idênticas em todo triângulo retângulo; elas não podem discordar em entradas consistentes." },
           { "kind": "p", "text": "Confira com um triângulo 3-4-5: [[r=1]], [[s=6]], [[rs=6]] e [[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]. Com um triângulo 6-8-10: [[r=2]], [[s=12]], [[rs=24]] e [[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]. A familiar fórmula dos catetos e a fórmula do inraio são a mesma quantidade vestindo roupas diferentes." }
         ]
       },
@@ -367,7 +367,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "A área é bidimensional, então sua unidade é o quadrado da unidade de comprimento. Em símbolos, [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]. O mesmo vale para metros e metros quadrados, milímetros e milímetros quadrados, pés e pés quadrados, polegadas e polegadas quadradas. Os seletores de unidade existem para que o resultado possa ser rotulado corretamente." },
           { "kind": "h3", "text": "Por Que Ambas as Entradas Devem Usar Unidades Compatíveis" },
-          { "kind": "p", "text": "O inraio e o semiperímetro devem ser expressos na mesma unidade antes de a fórmula ser aplicada. Se [[r=20\\text{ cm}]] e [[s=1\\text{ m}]], converta primeiro: [[1\\text{ m}=100\\text{ cm}]]. Então [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]], ou de forma equivalente [[[\\boxed{K=0.2\\text{ m}^2}]]]. Multiplicar medidas em unidades diferentes produz um número sem unidade limpa, então converta primeiro e calcule depois." },
+          { "kind": "p", "text": "O inraio e o semiperímetro devem ser expressos na mesma unidade antes de a fórmula ser aplicada. Se [[r=20\\text{ cm}]] e [[s=1\\text{ m}]], converta primeiro: [[1\\text{ m}=100\\text{ cm}]]. Então [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]], ou de forma equivalente [[[\\boxed{K=0.2\\text{ m}^2}]]] Multiplicar medidas em unidades diferentes produz um número sem unidade limpa, então converta primeiro e calcule depois." },
           { "kind": "h3", "text": "Por Que Evitar o Arredondamento Precoce" },
           { "kind": "p", "text": "Valores arredondados de [[r]] ou [[s]] podem afetar ligeiramente a área final, porque o inraio é multiplicado diretamente nela. Mantenha precisão suficiente nos cálculos intermediários e arredonde apenas a resposta final. Este guia não faz afirmações sobre a precisão interna da calculadora além do que sua interface mostra." },
           { "kind": "h3", "text": "Medidas Exatas Contra Medidas Práticas" },
@@ -483,7 +483,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
       "sec-intro": {
         "h2": "অন্তর্ব্যাসার্ধ ও অর্ধপরিসীমা ব্যবহার করে সমকোণী ত্রিভুজের ক্ষেত্রফল কীভাবে নির্ণয় করবেন",
         "blocks": [
-          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজের অন্তর্ব্যাসার্ধ [[r=2]] এবং অর্ধপরিসীমা [[s=12]]। [[K=r\\times s]] প্রয়োগ করুন: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. ত্রিভুজটি 24 বর্গ একক সমতল ক্ষেত্র ঘিরে রাখে। ক্যালকুলেটর যে সম্পূর্ণ পদ্ধতি স্বয়ংক্রিয় করে, এটাই সেটি: দুটি পরিমাপ, একবার গুণ, একটিই উত্তর।" },
+          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজের অন্তর্ব্যাসার্ধ [[r=2]] এবং অর্ধপরিসীমা [[s=12]]। [[K=r\\times s]] প্রয়োগ করুন: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] ত্রিভুজটি 24 বর্গ একক সমতল ক্ষেত্র ঘিরে রাখে। ক্যালকুলেটর যে সম্পূর্ণ পদ্ধতি স্বয়ংক্রিয় করে, এটাই সেটি: দুটি পরিমাপ, একবার গুণ, একটিই উত্তর।" },
           { "kind": "p", "text": "অন্তর্ব্যাসার্ধ হলো ত্রিভুজের ভেতরে ঠিকমতো বসা বৃত্তের ব্যাসার্ধ, যা তিনটি বাহুকেই স্পর্শ করে। অর্ধপরিসীমা হলো ত্রিভুজের চারদিকের মোট দূরত্বের অর্ধেক। একসঙ্গে এরা ক্ষেত্রফল নির্ণয়ে যথেষ্ট, কারণ বৃত্তের ব্যাসার্ধ তিনটি ছোট ত্রিভুজের উচ্চতা হিসেবে কাজ করে, যাদের ভূমি ত্রিভুজের বাহুগুলো। এই অভেদ প্রতিটি অ-পতিত ত্রিভুজের জন্য সত্য, শুধু সমকোণী ত্রিভুজের জন্য নয়; সমকোণী ত্রিভুজের বিশেষত্ব হলো তিন বাহু থেকে অন্তর্ব্যাসার্ধ বের করার দ্রুত উপায়। এটি সবচেয়ে উপযোগী হয় যখন অন্তর্বৃত্ত সরাসরি পরিমাপ করা হয়েছে, অথবা অন্তর্ব্যাসার্ধ ও অর্ধপরিসীমা আগের কাজ থেকে জানা আছে।" }
         ]
       },
@@ -500,7 +500,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "অন্তঃকেন্দ্র বোঝা" },
           { "kind": "p", "text": "অন্তঃকেন্দ্র [[I]] হলো সেই বিন্দু যেখানে ত্রিভুজের তিনটি অভ্যন্তরীণ কোণ সমদ্বিখণ্ডক মিলিত হয়। প্রতিটি কোণ সমদ্বিখণ্ডক হলো সেই কোণ গঠনকারী দুটি বাহু থেকে সমান দূরত্বের বিন্দুর সেট, তাই তিনটি সমদ্বিখণ্ডকে থাকা বিন্দু তিন বাহু থেকে সমান দূরে থাকে, এবং তাকে ত্রিভুজের ভেতরে থাকতেই হয়। এই সাধারণ দূরত্বই ঠিক অন্তর্ব্যাসার্ধ, এবং [[I]] কেন্দ্র ও [[r]] ব্যাসার্ধের বৃত্ত প্রতিটি বাহুকে একবার স্পর্শ করে: অন্তর্বৃত্ত।" },
           { "kind": "h3", "text": "অন্তর্ব্যাসার্ধ কি পরিব্যাসার্ধের সমান?" },
-          { "kind": "p", "text": "না। অন্তর্ব্যাসার্ধ [[r]] ত্রিভুজের ভেতরের বৃত্তের ব্যাসার্ধ, অন্যদিকে পরিব্যাসার্ধ [[R]] সেই বৃত্তের ব্যাসার্ধ যা তিনটি শীর্ষ দিয়ে যায়, অর্থাৎ পরিবৃত্ত। সমকোণী ত্রিভুজের জন্য পরিবৃত্তের কেন্দ্র অতিভুজের মধ্যবিন্দু, তাই [[[\\boxed{R=\\frac{c}{2}}]]]. দুটি ব্যাসার্ধ সম্পূর্ণ ভিন্ন বৃত্ত বর্ণনা করে: একটি ত্রিভুজের ভেতরে আঁকা, অন্যটি চারদিকে আঁকা। এদের গুলিয়ে ফেলা এই বিষয়ের সবচেয়ে সাধারণ ভুলগুলোর একটি, তাই এদের আলাদা রাখুন: ভেতরের জন্য [[r]], চারদিকের জন্য [[R]]।" }
+          { "kind": "p", "text": "না। অন্তর্ব্যাসার্ধ [[r]] ত্রিভুজের ভেতরের বৃত্তের ব্যাসার্ধ, অন্যদিকে পরিব্যাসার্ধ [[R]] সেই বৃত্তের ব্যাসার্ধ যা তিনটি শীর্ষ দিয়ে যায়, অর্থাৎ পরিবৃত্ত। সমকোণী ত্রিভুজের জন্য পরিবৃত্তের কেন্দ্র অতিভুজের মধ্যবিন্দু, তাই [[[\\boxed{R=\\frac{c}{2}}]]] দুটি ব্যাসার্ধ সম্পূর্ণ ভিন্ন বৃত্ত বর্ণনা করে: একটি ত্রিভুজের ভেতরে আঁকা, অন্যটি চারদিকে আঁকা। এদের গুলিয়ে ফেলা এই বিষয়ের সবচেয়ে সাধারণ ভুলগুলোর একটি, তাই এদের আলাদা রাখুন: ভেতরের জন্য [[r]], চারদিকের জন্য [[R]]।" }
         ],
         "imgAlt": "সমকোণী ত্রিভুজ ABC, অন্তর্বৃত্ত, অন্তঃকেন্দ্র I, অন্তর্ব্যাসার্ধ r, স্পর্শবিন্দু ও পরিবৃত্ত",
         "figcaption": "ত্রিভুজ ABC ও এর অন্তর্বৃত্ত: অন্তঃকেন্দ্র I, অন্তর্ব্যাসার্ধ r = ID, যেখানে ID প্রতিটি বাহুর ওপর লম্ব, সঙ্গে তুলনার জন্য পরিবৃত্ত।"
@@ -523,13 +523,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "ত্রিভুজের ক্ষেত্রফলের প্রমাণিত নিয়ম থেকে শুরু করুন: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]। অন্তঃকেন্দ্র [[I]] থেকে তিন শীর্ষে খণ্ড টানলে মূল ত্রিভুজটি তিনটি ছোট ত্রিভুজে ভাগ হয়। প্রতিটি ছোট ত্রিভুজের ভূমি মূল ত্রিভুজের একটি বাহুর সমান এবং লম্ব উচ্চতা অন্তর্ব্যাসার্ধ [[r]]-এর সমান, কারণ ব্যাসার্ধ প্রতিটি বাহুকে সমকোণে মিলিত হয়। এটি প্রতিটি অ-পতিত ত্রিভুজের জন্য কাজ করে; এই ক্যালকুলেটরের জন্য ত্রিভুজটি সমকোণী, কিন্তু ক্ষেত্রফলের এই অভেদ নিজে সম্পূর্ণ সাধারণ।" },
           { "kind": "h3", "text": "প্রথম ছোট ত্রিভুজের ক্ষেত্রফল" },
-          { "kind": "p", "text": "[[a]] বাহুর ওপর দাঁড়ানো ছোট ত্রিভুজের ভূমি [[a]] ও উচ্চতা [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "[[a]] বাহুর ওপর দাঁড়ানো ছোট ত্রিভুজের ভূমি [[a]] ও উচ্চতা [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "দ্বিতীয় ছোট ত্রিভুজের ক্ষেত্রফল" },
-          { "kind": "p", "text": "[[b]] বাহুর ওপর দাঁড়ানো ছোট ত্রিভুজের ভূমি [[b]] ও উচ্চতা [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "[[b]] বাহুর ওপর দাঁড়ানো ছোট ত্রিভুজের ভূমি [[b]] ও উচ্চতা [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "তৃতীয় ছোট ত্রিভুজের ক্ষেত্রফল" },
-          { "kind": "p", "text": "[[c]] বাহুর ওপর দাঁড়ানো ছোট ত্রিভুজের ভূমি [[c]] ও উচ্চতা [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "[[c]] বাহুর ওপর দাঁড়ানো ছোট ত্রিভুজের ভূমি [[c]] ও উচ্চতা [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "তিনটি ক্ষেত্রফল যোগ করুন" },
-          { "kind": "p", "text": "তিনটি ছোট ত্রিভুজ মূলটিকে ফাঁক বা ওভারল্যাপ ছাড়াই ঢেকে দেয়, তাই [[K=K_1+K_2+K_3]]। প্রতিস্থাপন করলে: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]। [[\\frac{r}{2}]] কমন নিন: [[K=\\frac{r(a+b+c)}{2}]]। মনে রাখুন [[s=\\frac{a+b+c}{2}]], অতএব [[[\\boxed{K=r\\times s}]]]. প্রতিটি রূপান্তর যুক্তিসঙ্গত: টাইলিং সঠিক, উচ্চতা [[r]] সাধারণ, এবং অর্ধপরিসীমা দুই দিয়ে ভাগকে শোষণ করে।" },
+          { "kind": "p", "text": "তিনটি ছোট ত্রিভুজ মূলটিকে ফাঁক বা ওভারল্যাপ ছাড়াই ঢেকে দেয়, তাই [[K=K_1+K_2+K_3]]। প্রতিস্থাপন করলে: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]। [[\\frac{r}{2}]] কমন নিন: [[K=\\frac{r(a+b+c)}{2}]]। মনে রাখুন [[s=\\frac{a+b+c}{2}]], অতএব [[[\\boxed{K=r\\times s}]]] প্রতিটি রূপান্তর যুক্তিসঙ্গত: টাইলিং সঠিক, উচ্চতা [[r]] সাধারণ, এবং অর্ধপরিসীমা দুই দিয়ে ভাগকে শোষণ করে।" },
           { "kind": "h3", "text": "এই সূত্রে আবার দুই দিয়ে ভাগের দরকার কেন নেই?" },
           { "kind": "p", "text": "কারণ এক-অর্ধেক ইতিমধ্যে অর্ধপরিসীমার ভেতরে ভাঁজ করা আছে। তিনটি অর্ধেক মিলে [[\\frac{r(a+b+c)}{2}]] হয়, এবং [[s]] ঠিক পরিসীমার অর্ধেক, তাই দ্বিতীয়বার দুই দিয়ে ভাগ করলে সঠিক রাশিটি এক-চতুর্থাংশ হয়ে যাবে। [[r\\times s]] হিসাব করুন এবং এখানেই থামুন; আবার অর্ধেক করা ভুল, সংশোধন নয়।" }
         ],
@@ -541,11 +541,11 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "তিন বাহু জানা থাকলে সমকোণী ত্রিভুজের অন্তর্ব্যাসার্ধ একটি শর্টকাট অনুসরণ করে, যাতে অন্তর্বৃত্ত আঁকার দরকার পড়ে না: [[[\\boxed{r=\\frac{a+b-c}{2}}]]], যেখানে [[a]] ও [[b]] লম্ব পাদ এবং [[c]] অতিভুজ। এটি সমকোণী ত্রিভুজ জ্যামিতির সবচেয়ে কাজের তথ্যগুলোর একটি।" },
           { "kind": "h3", "text": "সমকোণী ত্রিভুজের অন্তর্ব্যাসার্ধ সূত্রের প্রমাণ" },
-          { "kind": "p", "text": "প্রমাণে সমান স্পর্শক-খণ্ড উপপাদ্য ব্যবহার করা হয়: একটি সাধারণ বাহ্যিক বিন্দু থেকে বৃত্তে টানা দুটি স্পর্শক খণ্ডের দৈর্ঘ্য সমান হয়। তিন শীর্ষ থেকে স্পর্শক দৈর্ঘ্য ধরুন [[A]] শীর্ষ থেকে [[x]], [[B]] শীর্ষ থেকে [[y]], এবং [[C]] শীর্ষ থেকে [[z]]। সমকোণ [[C]]-এ অন্তর্বৃত্তের দুটি স্পর্শক লম্ব পাদ বরাবর চলে এবং প্রতিটির দৈর্ঘ্য [[r]], দুটি ব্যাসার্ধের সঙ্গে একটি ছোট বর্গ গঠন করে, তাই [[z=r]]। বাহুগুলো তখন [[a=y+r]], [[b=x+r]] এবং [[c=x+y]]। বিয়োগ করলে: [[a+b-c=(y+r)+(x+r)-(x+y)]], তাই [[a+b-c=2r]], ফলে [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. সমকোণে থাকা বর্গই কারণ যার জন্য এই শর্টকাট শুধু সমকোণী ত্রিভুজের।" },
+          { "kind": "p", "text": "প্রমাণে সমান স্পর্শক-খণ্ড উপপাদ্য ব্যবহার করা হয়: একটি সাধারণ বাহ্যিক বিন্দু থেকে বৃত্তে টানা দুটি স্পর্শক খণ্ডের দৈর্ঘ্য সমান হয়। তিন শীর্ষ থেকে স্পর্শক দৈর্ঘ্য ধরুন [[A]] শীর্ষ থেকে [[x]], [[B]] শীর্ষ থেকে [[y]], এবং [[C]] শীর্ষ থেকে [[z]]। সমকোণ [[C]]-এ অন্তর্বৃত্তের দুটি স্পর্শক লম্ব পাদ বরাবর চলে এবং প্রতিটির দৈর্ঘ্য [[r]], দুটি ব্যাসার্ধের সঙ্গে একটি ছোট বর্গ গঠন করে, তাই [[z=r]]। বাহুগুলো তখন [[a=y+r]], [[b=x+r]] এবং [[c=x+y]]। বিয়োগ করলে: [[a+b-c=(y+r)+(x+r)-(x+y)]], তাই [[a+b-c=2r]], ফলে [[[\\boxed{r=\\frac{a+b-c}{2}}]]] সমকোণে থাকা বর্গই কারণ যার জন্য এই শর্টকাট শুধু সমকোণী ত্রিভুজের।" },
           { "kind": "h3", "text": "3-4-5 ত্রিভুজ ব্যবহার করে উদাহরণ" },
-          { "kind": "p", "text": "প্রদত্ত [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. অন্তর্বৃত্তের ব্যাসার্ধ ঠিক 1, কোনো নির্মাণ ছাড়াই।" },
+          { "kind": "p", "text": "প্রদত্ত [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] অন্তর্বৃত্তের ব্যাসার্ধ ঠিক 1, কোনো নির্মাণ ছাড়াই।" },
           { "kind": "h3", "text": "5-12-13 ত্রিভুজ ব্যবহার করে উদাহরণ" },
-          { "kind": "p", "text": "প্রদত্ত [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. আবার, অন্তর্ব্যাসার্ধ বাহুর দৈর্ঘ্য থেকে সরাসরি বেরিয়ে আসে।" },
+          { "kind": "p", "text": "প্রদত্ত [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] আবার, অন্তর্ব্যাসার্ধ বাহুর দৈর্ঘ্য থেকে সরাসরি বেরিয়ে আসে।" },
           { "kind": "h3", "text": "একই সঙ্গে অর্ধপরিসীমা বের করা" },
           { "kind": "p", "text": "একই তিন বাহু দিয়ে [[r]]-এর পাশাপাশি [[s=\\frac{a+b+c}{2}]] হিসাব করুন। 5-12-13 ত্রিভুজের জন্য: [[s=\\frac{5+12+13}{2}=15]], এবং তারপর [[K=rs=2\\times15=30]]। তিন বাহুর ওপর একবার নজর বুলালেই ক্যালকুলেটরের দুটি ইনপুট ও ক্ষেত্রফল নিজেই পাওয়া যায়।" },
           { "kind": "h3", "text": "এই শর্টকাট কখন ব্যবহার করবেন?" },
@@ -583,13 +583,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "চারটি সমাধান করা উদাহরণ পরিচিত থেকে পদ্ধতি গড়ে তোলে। প্রতিটি তিন বাহু থেকে অর্ধপরিসীমা ও অন্তর্ব্যাসার্ধ হিসাব করে, প্রতিটি প্রতিস্থাপন দেখিয়ে [[K=rs]] প্রয়োগ করে, এবং পাদের সূত্র দিয়ে যাচাই করে।" },
           { "kind": "h3", "text": "উদাহরণ 1: 3-4-5 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "প্রদত্ত [[a=3]], [[b=4]], [[c=5]]। ধাপ 1: অর্ধপরিসীমা, [[s=\\frac{3+4+5}{2}=6]]। ধাপ 2: অন্তর্ব্যাসার্ধ, [[r=\\frac{3+4-5}{2}=1]]। ধাপ 3: সূত্র প্রয়োগ করুন, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. যাচাই: [[K=\\frac{3\\times4}{2}=6]]।" },
+          { "kind": "p", "text": "প্রদত্ত [[a=3]], [[b=4]], [[c=5]]। ধাপ 1: অর্ধপরিসীমা, [[s=\\frac{3+4+5}{2}=6]]। ধাপ 2: অন্তর্ব্যাসার্ধ, [[r=\\frac{3+4-5}{2}=1]]। ধাপ 3: সূত্র প্রয়োগ করুন, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] যাচাই: [[K=\\frac{3\\times4}{2}=6]]।" },
           { "kind": "h3", "text": "উদাহরণ 2: 6-8-10 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "প্রদত্ত [[a=6]], [[b=8]], [[c=10]]। তাহলে [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]], এবং [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. যাচাই: [[K=\\frac{6\\times8}{2}=24]]।" },
+          { "kind": "p", "text": "প্রদত্ত [[a=6]], [[b=8]], [[c=10]]। তাহলে [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]], এবং [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] যাচাই: [[K=\\frac{6\\times8}{2}=24]]।" },
           { "kind": "h3", "text": "উদাহরণ 3: 5-12-13 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "প্রদত্ত [[a=5]], [[b=12]], [[c=13]]। তাহলে [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]], এবং [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. যাচাই: [[K=\\frac{5\\times12}{2}=30]]।" },
+          { "kind": "p", "text": "প্রদত্ত [[a=5]], [[b=12]], [[c=13]]। তাহলে [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]], এবং [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] যাচাই: [[K=\\frac{5\\times12}{2}=30]]।" },
           { "kind": "h3", "text": "উদাহরণ 4: 8-15-17 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "প্রদত্ত [[a=8]], [[b=15]], [[c=17]]। তাহলে [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]], এবং [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. যাচাই: [[K=\\frac{8\\times15}{2}=60]]।" },
+          { "kind": "p", "text": "প্রদত্ত [[a=8]], [[b=15]], [[c=17]]। তাহলে [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]], এবং [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] যাচাই: [[K=\\frac{8\\times15}{2}=60]]।" },
           { "kind": "h3", "text": "ভিত্তিমূলক উদাহরণের তুলনা" }
         ],
         "table": {
@@ -607,29 +607,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "বারোটি সমাধান করা পরিস্থিতি বিভিন্ন স্কেল ও এককে সূত্রটি দেখায়। প্রতিটি ত্রিকোণীয় বস্তুর নাম দেয়, তিনটি বাহুর পরিমাপ দেয়, অন্তর্ব্যাসার্ধ ও অর্ধপরিসীমা হিসাব করে, ধাপে ধাপে মূল সূত্র প্রয়োগ করে, এবং এর পেছনের ধারণা উল্লেখ করে। প্রতিটি উদাহরণ একটি সমকোণী-ত্রিকোণীয় প্যানেল, অংশ, প্রোফাইল, বা সরলীকৃত জ্যামিতিক মডেল; যেখানে আসল বস্তু বাঁকা বা অনিয়মিত, সেখানে গণনা শুধু মডেল করা ত্রিভুজকে আচ্ছাদন করে।" },
           { "kind": "h3", "text": "উদাহরণ 1: ত্রিকোণীয় কাচের জানালা" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় কাচের জানালার [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]। অন্তর্ব্যাসার্ধ: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]। অর্ধপরিসীমা: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]। ক্ষেত্রফল: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. ফ্রেমের মাত্রা ধরা ছাড়া এটি সমতল কাচের ক্ষেত্রফল।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় কাচের জানালার [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]। অন্তর্ব্যাসার্ধ: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]। অর্ধপরিসীমা: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]। ক্ষেত্রফল: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] ফ্রেমের মাত্রা ধরা ছাড়া এটি সমতল কাচের ক্ষেত্রফল।" },
           { "kind": "h3", "text": "উদাহরণ 2: ইস্পাতের সাপোর্ট ব্র্যাকেট" },
-          { "kind": "p", "text": "একটি ত্রিকোণীয় ইস্পাত সাপোর্ট প্লেটের [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]। তাহলে [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. শুধু ক্ষেত্রফল প্লেটের ভার বহনের ক্ষমতা নির্ধারণ করে না।" },
+          { "kind": "p", "text": "একটি ত্রিকোণীয় ইস্পাত সাপোর্ট প্লেটের [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]। তাহলে [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] শুধু ক্ষেত্রফল প্লেটের ভার বহনের ক্ষমতা নির্ধারণ করে না।" },
           { "kind": "h3", "text": "উদাহরণ 3: ত্রিকোণীয় র‍্যাম্পের পাশের প্রোফাইল" },
-          { "kind": "p", "text": "একটি সরলীকৃত সমকোণী-ত্রিকোণীয় র‍্যাম্প প্রোফাইলের [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]। তাহলে [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. এটি হাঁটার ঢালু পৃষ্ঠ নয়, পাশের প্রোফাইলকে প্রতিনিধিত্ব করে।" },
+          { "kind": "p", "text": "একটি সরলীকৃত সমকোণী-ত্রিকোণীয় র‍্যাম্প প্রোফাইলের [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]। তাহলে [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] এটি হাঁটার ঢালু পৃষ্ঠ নয়, পাশের প্রোফাইলকে প্রতিনিধিত্ব করে।" },
           { "kind": "h3", "text": "উদাহরণ 4: ত্রিকোণীয় ছাদের সাপোর্ট প্যানেল" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় ছাদের সাপোর্ট প্যানেলের [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]। তাহলে [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. ফলাফলটি আনুমানিক সমতল ত্রিকোণীয় প্যানেলের ক্ষেত্রফল।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় ছাদের সাপোর্ট প্যানেলের [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]। তাহলে [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] ফলাফলটি আনুমানিক সমতল ত্রিকোণীয় প্যানেলের ক্ষেত্রফল।" },
           { "kind": "h3", "text": "উদাহরণ 5: জরিপ করা বাগানের অংশ" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় বাগান অংশের [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]। তাহলে [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. সূত্রটি তিনটি সীমানা পরিমাপ থেকে সরাসরি ত্রিকোণীয় অংশের ক্ষেত্রফল দেয়।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় বাগান অংশের [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]। তাহলে [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] সূত্রটি তিনটি সীমানা পরিমাপ থেকে সরাসরি ত্রিকোণীয় অংশের ক্ষেত্রফল দেয়।" },
           { "kind": "h3", "text": "উদাহরণ 6: ত্রিকোণীয় কাপড়ের পাল" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় কাপড়ের প্যানেলের [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]। তাহলে [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. এই সমতল প্যানেলের হিসাবে সেলাই ও কাপড়ের ছাড় বাদ দেওয়া হয়েছে।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় কাপড়ের প্যানেলের [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]। তাহলে [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] এই সমতল প্যানেলের হিসাবে সেলাই ও কাপড়ের ছাড় বাদ দেওয়া হয়েছে।" },
           { "kind": "h3", "text": "উদাহরণ 7: বড় ত্রিকোণীয় জমির অংশ" },
-          { "kind": "p", "text": "সমকোণী ত্রিভুজ হিসেবে মডেল করা একটি জরিপকৃত জমির অংশের [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]। তাহলে [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. সরলীকৃত সমকোণী-ত্রিকোণীয় মডেল সমতল জমিতে সোজা সীমানা ধরে নেয়।" },
+          { "kind": "p", "text": "সমকোণী ত্রিভুজ হিসেবে মডেল করা একটি জরিপকৃত জমির অংশের [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]। তাহলে [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] সরলীকৃত সমকোণী-ত্রিকোণীয় মডেল সমতল জমিতে সোজা সীমানা ধরে নেয়।" },
           { "kind": "h3", "text": "উদাহরণ 8: প্লাইউড কাটার টেমপ্লেট" },
-          { "kind": "p", "text": "একটি ত্রিকোণীয় প্লাইউড টেমপ্লেটের [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]। তাহলে [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. ক্ষেত্রফল কাটার অপচয়ের আগে উপাদানের প্রয়োজন অনুমানে সাহায্য করে।" },
+          { "kind": "p", "text": "একটি ত্রিকোণীয় প্লাইউড টেমপ্লেটের [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]। তাহলে [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] ক্ষেত্রফল কাটার অপচয়ের আগে উপাদানের প্রয়োজন অনুমানে সাহায্য করে।" },
           { "kind": "h3", "text": "উদাহরণ 9: বড় ত্রিকোণীয় সাইন প্যানেল" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় সাইন প্যানেলের [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]। তাহলে [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. ফলাফলটি দর্শকের দিকে মুখ করা সমতল ত্রিকোণীয় পৃষ্ঠকে প্রতিনিধিত্ব করে।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় সাইন প্যানেলের [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]। তাহলে [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] ফলাফলটি দর্শকের দিকে মুখ করা সমতল ত্রিকোণীয় পৃষ্ঠকে প্রতিনিধিত্ব করে।" },
           { "kind": "h3", "text": "উদাহরণ 10: ত্রিকোণীয় শামিয়ানা সাপোর্ট" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় শামিয়ানা সাপোর্ট অংশের [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]। তাহলে [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. এটি মডেল করা ত্রিকোণীয় অংশের গণনা করা ক্ষেত্রফল।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় শামিয়ানা সাপোর্ট অংশের [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]। তাহলে [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] এটি মডেল করা ত্রিকোণীয় অংশের গণনা করা ক্ষেত্রফল।" },
           { "kind": "h3", "text": "উদাহরণ 11: শিল্প সাপোর্ট প্যানেল" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় শিল্প সাপোর্ট প্যানেলের [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]। তাহলে [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. এই জ্যামিতিক গণনা প্যানেলের সমতল ক্ষেত্রফল বর্ণনা করে, এর কাঠামোগত কার্যকারিতা নয়।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় শিল্প সাপোর্ট প্যানেলের [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]। তাহলে [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] এই জ্যামিতিক গণনা প্যানেলের সমতল ক্ষেত্রফল বর্ণনা করে, এর কাঠামোগত কার্যকারিতা নয়।" },
           { "kind": "h3", "text": "উদাহরণ 12: বড় ত্রিকোণীয় ছাদের প্রান্ত অংশ" },
-          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় ছাদের প্রান্ত অংশের [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]। তাহলে [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. গণনা করা ক্ষেত্রফল সমতল ত্রিকোণীয় আচ্ছাদন অনুমানে সাহায্য করে।" },
+          { "kind": "p", "text": "একটি সমকোণী-ত্রিকোণীয় ছাদের প্রান্ত অংশের [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]। তাহলে [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] গণনা করা ক্ষেত্রফল সমতল ত্রিকোণীয় আচ্ছাদন অনুমানে সাহায্য করে।" },
           { "kind": "h3", "text": "ব্যবহারিক উদাহরণের তুলনা" }
         ],
         "table": {
@@ -661,7 +661,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "দুটি পাদের গুণফল পুনরুদ্ধার" },
           { "kind": "p", "text": "যেহেতু [[K=\\frac{ab}{2}]] ও [[K=rs]], তাই [[[\\boxed{ab=2rs}]]] অনুসরণ করে। [[r=2]] ও [[s=12]]-এর জন্য: [[ab=48]]। [[a+b=14]] ও [[ab=48]] থেকে দুটি পাদ 6 ও 8: [[6+8=14]] এবং [[6\\times8=48]]। ত্রিভুজের ক্ষেত্রফল না বদলে দুটি পাদ পরস্পর বিনিময় করা যায়।" },
           { "kind": "h3", "text": "দুটি পাদের দৈর্ঘ্য পুনরুদ্ধার" },
-          { "kind": "p", "text": "যোগফল ও গুণফল [[a]] ও [[b]]-কে [[t^2-(s+r)t+2rs=0]]-এর দুটি মূল করে, ফলে [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]]. দুটি চিহ্ন দুটি সম্ভাব্য পাদ বরাদ্দের সঙ্গে সঙ্গত। [[r=2]] ও [[s=12]]-এর ক্ষেত্রে: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], তাই [[a,b=\\frac{14\\pm2}{2}]], পাদ 6 ও 8। এটি একটি উন্নত গাণিতিক সিদ্ধান্ত, ক্যালকুলেটরের অতিরিক্ত বৈশিষ্ট্য নয়।" }
+          { "kind": "p", "text": "যোগফল ও গুণফল [[a]] ও [[b]]-কে [[t^2-(s+r)t+2rs=0]]-এর দুটি মূল করে, ফলে [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]] দুটি চিহ্ন দুটি সম্ভাব্য পাদ বরাদ্দের সঙ্গে সঙ্গত। [[r=2]] ও [[s=12]]-এর ক্ষেত্রে: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], তাই [[a,b=\\frac{14\\pm2}{2}]], পাদ 6 ও 8। এটি একটি উন্নত গাণিতিক সিদ্ধান্ত, ক্যালকুলেটরের অতিরিক্ত বৈশিষ্ট্য নয়।" }
         ]
       },
       "sec-valid": {
@@ -671,7 +671,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "মৌলিক ইনপুট শর্ত" },
           { "kind": "p", "text": "ইনপুটগুলোকে [[r>0]] ও [[s>0]] সন্তুষ্ট করতে হবে। সমকোণী ত্রিভুজের জন্য [[s>r]]-ও দরকার, কারণ [[c=s-r]] এবং অতিভুজকে ধনাত্মক হতেই হবে। এই তিনটি শর্ত প্রয়োজনীয় কিন্তু পর্যাপ্ত নয়।" },
           { "kind": "h3", "text": "একটি উন্নত সমকোণী-ত্রিভুজ সামঞ্জস্য পরীক্ষা" },
-          { "kind": "p", "text": "[[a+b=s+r]] ও [[ab=2rs]] থেকে, বিভেদক [[\\Delta=(s+r)^2-8rs]] অ-ঋণাত্মক হলেই দুটি পাদ বাস্তব হয়। সরলীকৃত: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]]. বাস্তব পাদের দৈর্ঘ্যের জন্য [[\\Delta\\geq0]]। যেহেতু [[s]]-কে [[r]] ছাড়িয়ে যেতেই হবে, সমতুল্য সমকোণী-ত্রিভুজ শর্ত হলো [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], অথবা [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]। সমতা ঘটে সমদ্বিবাহু সমকোণী ত্রিভুজের জন্য, সবচেয়ে টাইট সম্ভাব্য ফিট। এটি একটি উন্নত গাণিতিক সামঞ্জস্য পরীক্ষা, উপরের মৌলিক পরীক্ষা থেকে স্পষ্টভাবে আলাদা।" },
+          { "kind": "p", "text": "[[a+b=s+r]] ও [[ab=2rs]] থেকে, বিভেদক [[\\Delta=(s+r)^2-8rs]] অ-ঋণাত্মক হলেই দুটি পাদ বাস্তব হয়। সরলীকৃত: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]] বাস্তব পাদের দৈর্ঘ্যের জন্য [[\\Delta\\geq0]]। যেহেতু [[s]]-কে [[r]] ছাড়িয়ে যেতেই হবে, সমতুল্য সমকোণী-ত্রিভুজ শর্ত হলো [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], অথবা [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]। সমতা ঘটে সমদ্বিবাহু সমকোণী ত্রিভুজের জন্য, সবচেয়ে টাইট সম্ভাব্য ফিট। এটি একটি উন্নত গাণিতিক সামঞ্জস্য পরীক্ষা, উপরের মৌলিক পরীক্ষা থেকে স্পষ্টভাবে আলাদা।" },
           { "kind": "h3", "text": "বৈধ উদাহরণ" },
           { "kind": "p", "text": "[[r=2]] ও [[s=12]] প্রদত্ত হলে অনুপাত [[\\frac{s}{r}=6]]। যেহেতু [[6>3+2\\sqrt2]] (প্রায় 5.83), মানগুলো একটি বৈধ সমকোণী ত্রিভুজ বর্ণনা করতে পারে, এবং সংশ্লিষ্ট বাহুগুলো 6, 8 ও 10।" },
           { "kind": "h3", "text": "অসামঞ্জস্যপূর্ণ উদাহরণ" },
@@ -687,13 +687,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "হেরনের সূত্র কখন বেশি উপযোগী?" },
           { "kind": "p", "text": "তিন বাহুর দৈর্ঘ্য জানা থাকলেও অন্তর্ব্যাসার্ধ হিসাব না করা থাকলে হেরনের সূত্র ভালো পছন্দ। এটি [[r]]-এর মধ্য দিয়ে ঘোরা ছাড়াই [[a]], [[b]] ও [[c]] থেকে সরাসরি ক্ষেত্রফলে পৌঁছায়। কোনো সূত্রই সর্বজনীনভাবে বেশি নির্ভুল নয়; সঙ্গতিপূর্ণ ইনপুটে এরা সঠিক, এবং শুধু ইনপুট অসঙ্গতিপূর্ণ হলেই এদের মধ্যে অমিল হয়।" },
           { "kind": "h3", "text": "3-4-5 ত্রিভুজ ব্যবহার করে দুটি সূত্র যাচাই করুন" },
-          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]] প্রদত্ত, [[s=6]] ও [[r=1]] সহ। অন্তর্ব্যাসার্ধ ব্যবহার করে: [[K=1\\times6=6]]। হেরনের সূত্র ব্যবহার করে: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], তাই [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. ফলাফল মেলে কারণ দুটি সূত্র একই অঞ্চল পরিমাপ করে; এরা এক ক্ষেত্রফলের দুটি রাশি, এবং এদের মধ্যে মিল গাণিতিক কাজ ঠিক আছে, এর একটি শক্তিশালী ইঙ্গিত।" }
+          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]] প্রদত্ত, [[s=6]] ও [[r=1]] সহ। অন্তর্ব্যাসার্ধ ব্যবহার করে: [[K=1\\times6=6]]। হেরনের সূত্র ব্যবহার করে: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], তাই [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] ফলাফল মেলে কারণ দুটি সূত্র একই অঞ্চল পরিমাপ করে; এরা এক ক্ষেত্রফলের দুটি রাশি, এবং এদের মধ্যে মিল গাণিতিক কাজ ঠিক আছে, এর একটি শক্তিশালী ইঙ্গিত।" }
         ]
       },
       "sec-legs": {
         "h2": "অন্তর্ব্যাসার্ধ সূত্র পাদের সূত্রের মতো একই ক্ষেত্রফল দেয় কেন?",
         "blocks": [
-          { "kind": "p", "text": "দুটি সূত্র একই ক্ষেত্রফল দাবি করে: [[K=\\frac{ab}{2}]] ও [[K=rs]]। বাহুর পদে [[r]] ও [[s]] লিখলে [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]] পাওয়া যায়, তাই [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]। লব বর্গের পার্থক্য: [[rs=\\frac{(a+b)^2-c^2}{4}]]। পিথাগোরাসের উপপাদ্য [[c^2=a^2+b^2]] প্রয়োগ করুন: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], অতএব [[[\\boxed{rs=\\frac{ab}{2}}]]]. দুটি সূত্র প্রতিটি সমকোণী ত্রিভুজে অভিন্ন; সঙ্গতিপূর্ণ ইনপুটে এরা কখনো অমিল হতে পারে না।" },
+          { "kind": "p", "text": "দুটি সূত্র একই ক্ষেত্রফল দাবি করে: [[K=\\frac{ab}{2}]] ও [[K=rs]]। বাহুর পদে [[r]] ও [[s]] লিখলে [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]] পাওয়া যায়, তাই [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]। লব বর্গের পার্থক্য: [[rs=\\frac{(a+b)^2-c^2}{4}]]। পিথাগোরাসের উপপাদ্য [[c^2=a^2+b^2]] প্রয়োগ করুন: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], অতএব [[[\\boxed{rs=\\frac{ab}{2}}]]] দুটি সূত্র প্রতিটি সমকোণী ত্রিভুজে অভিন্ন; সঙ্গতিপূর্ণ ইনপুটে এরা কখনো অমিল হতে পারে না।" },
           { "kind": "p", "text": "3-4-5 ত্রিভুজ দিয়ে যাচাই: [[r=1]], [[s=6]], [[rs=6]], এবং [[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]। 6-8-10 ত্রিভুজ দিয়ে: [[r=2]], [[s=12]], [[rs=24]], এবং [[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]। পরিচিত পাদের সূত্র ও অন্তর্ব্যাসার্ধ সূত্র ভিন্ন পোশাকে একই পরিমাণ।" }
         ]
       },

@@ -1,0 +1,1816 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## Special Right Triangle Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, trigonometry teacher, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/special-right-triangle-calculator/
+
+**Page Title:** Special Right Triangle Calculator
+
+**Primary Focus Keyword:** Special Right Triangle Calculator
+
+**Secondary Topics:**
+- 45-45-90 Triangle Calculator
+- 30-60-90 Triangle Calculator
+- Special Right Triangle Side Ratios
+- Special Right Triangle Formulas
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English
+
+**Target Audience:**
+- Middle school mathematics students
+- High school geometry students
+- College students
+- Mathematics teachers
+- Private tutors
+- Parents helping children with geometry
+- Students learning trigonometry
+- Beginners studying special right triangles
+- Students preparing for geometry examinations
+- Anyone solving special right triangle problems
+
+**Main Objective:**
+
+Create a detailed educational guide explaining the two most commonly studied special right triangles:
+
+1. 45-45-90 triangle.
+2. 30-60-90 triangle.
+
+The article must teach readers:
+
+- What special right triangles are.
+- Why these triangles have fixed side ratios.
+- What makes a 45-45-90 triangle special.
+- What makes a 30-60-90 triangle special.
+- How to identify the short leg, long leg, and hypotenuse.
+- Why the square root of 2 appears in 45-45-90 triangles.
+- Why the square root of 3 appears in 30-60-90 triangles.
+- How to calculate the hypotenuse of a 45-45-90 triangle.
+- How to calculate a missing leg of a 45-45-90 triangle.
+- How to calculate the long leg of a 30-60-90 triangle.
+- How to calculate the hypotenuse of a 30-60-90 triangle.
+- How to derive both side ratios.
+- How to use all four calculator modes.
+- How to verify calculated answers.
+- How to distinguish the two triangle types.
+- How special right triangles relate to squares, equilateral triangles, and trigonometry.
+
+Write naturally, like an experienced mathematics teacher explaining geometry to students.
+
+Avoid robotic language, unnecessary repetition, keyword stuffing, generic filler, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm the actual calculator modes, input fields, unit selectors, buttons, results, mathematical notation, diagrams, instructions, FAQs, and related calculators.
+
+The existing page provides four calculator modes.
+
+#### MODE 1: 45-45-90 — FIND HYPOTENUSE FROM LEG
+
+**Input:**
+
+Leg a.
+
+**Formula:**
+
+\[
+c=a\sqrt{2}
+\]
+
+**Result:**
+
+Hypotenuse c.
+
+Explain that both legs of a 45-45-90 triangle are equal.
+
+Therefore, either leg can be used as the known input.
+
+#### MODE 2: 45-45-90 — FIND LEG FROM HYPOTENUSE
+
+**Input:**
+
+Hypotenuse c.
+
+**Formula:**
+
+\[
+a=\frac{c}{\sqrt{2}}
+\]
+
+Equivalent rationalized formula:
+
+\[
+a=\frac{c\sqrt{2}}{2}
+\]
+
+**Result:**
+
+Leg a.
+
+Explain that the second leg has the same length.
+
+#### MODE 3: 30-60-90 — FIND LONG LEG FROM SHORT LEG
+
+**Input:**
+
+Short leg a.
+
+**Formula:**
+
+\[
+b=a\sqrt{3}
+\]
+
+**Result:**
+
+Long leg b.
+
+Explain that the short leg is opposite 30° and the long leg is opposite 60°.
+
+#### MODE 4: 30-60-90 — FIND HYPOTENUSE FROM SHORT LEG
+
+**Input:**
+
+Short leg a.
+
+**Formula:**
+
+\[
+c=2a
+\]
+
+**Result:**
+
+Hypotenuse c.
+
+Explain that the hypotenuse is twice the short leg.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The live page includes:
+
+- Calculator mode selector.
+- Four calculation modes.
+- Input fields.
+- Unit selectors.
+- Calculate buttons.
+- Reset buttons.
+- Formula explanations.
+- Quick side relationships.
+- Explanation of when to choose each mode.
+- Input tips.
+- Calculator instructions.
+- Available calculator modes.
+- Common mistakes.
+- Five FAQs.
+- Related calculators.
+- Further reading.
+
+Preserve the existing four-mode functionality.
+
+Do not invent additional calculator features.
+
+Do not claim that the calculator directly calculates:
+
+- Area.
+- Perimeter.
+- Missing angles.
+- Circumradius.
+- Inradius.
+- Triangle altitude.
+- Arbitrary triangle side lengths.
+- Coordinates.
+- General trigonometric ratios.
+
+These topics can be discussed as related mathematical concepts, but must not be presented as existing calculator functions.
+
+**Important mathematical notation requirement:**
+
+Use the following consistent notation throughout the article:
+
+For 45-45-90 triangles:
+- a = first leg.
+- b = second leg.
+- c = hypotenuse.
+- a = b.
+
+For 30-60-90 triangles:
+- a = short leg.
+- b = long leg.
+- c = hypotenuse.
+
+Clearly explain that the meaning of a and b changes depending on the triangle type.
+
+Never confuse the short leg of a 30-60-90 triangle with either leg of a 45-45-90 triangle.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Understand what special right triangles are.
+2. Calculate missing sides of a 45-45-90 triangle.
+3. Calculate missing sides of a 30-60-90 triangle.
+4. Understand the 1:1:√2 ratio.
+5. Understand the 1:√3:2 ratio.
+6. Learn when to use each calculator mode.
+7. Find the hypotenuse from a known leg.
+8. Find a missing leg from a known hypotenuse.
+9. Understand why √2 appears.
+10. Understand why √3 appears.
+11. Learn how to derive both ratios.
+12. Verify their results.
+13. Understand the difference between special and general right triangles.
+
+Answer the main question immediately.
+
+Introduce both side ratios near the beginning.
+
+Explain all four calculator modes before introducing lengthy mathematical theory.
+
+Do not make visitors scroll through extensive explanations before finding the calculator.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+Special Right Triangle Calculator
+
+**Secondary Keywords:**
+
+- special right triangle calculator
+- special right triangle solver
+- special right triangle formulas
+- special right triangle side ratios
+- 45-45-90 triangle calculator
+- 30-60-90 triangle calculator
+- special right triangle side calculator
+- special right triangle hypotenuse calculator
+- special triangle missing side calculator
+- 45-45-90 triangle formula
+- 30-60-90 triangle formula
+- special right triangle ratios
+
+**Related Semantic Keywords:**
+
+- special right triangles
+- 45 degree angle
+- 30 degree angle
+- 60 degree angle
+- 90 degree angle
+- hypotenuse
+- short leg
+- long leg
+- equal legs
+- square root of 2
+- square root of 3
+- Pythagorean theorem
+- equilateral triangle
+- square diagonal
+- isosceles right triangle
+- triangle side lengths
+- exact radical values
+- trigonometric ratios
+- special triangle geometry
+- side proportions
+- missing side calculation
+
+### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords in relevant sections.
+
+Avoid:
+
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repetitive headings.
+
+Prioritize mathematical accuracy, natural language, and genuine search intent.
+
+---
+
+## 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Explain both special triangle types separately.
+
+### A. 45-45-90 TRIANGLE
+
+Consider a right triangle with:
+
+- ∠A = 45°.
+- ∠B = 45°.
+- ∠C = 90°.
+
+The two perpendicular legs are equal.
+
+\[
+a=b
+\]
+
+The side ratio is:
+
+\[
+\boxed{a:b:c=1:1:\sqrt{2}}
+\]
+
+**Hypotenuse from leg:**
+
+\[
+c=a\sqrt{2}
+\]
+
+**Leg from hypotenuse:**
+
+\[
+a=\frac{c}{\sqrt{2}}
+\]
+
+Equivalent:
+
+\[
+a=\frac{c\sqrt{2}}{2}
+\]
+
+**Pythagorean derivation:**
+
+\[
+a^2+a^2=c^2
+\]
+
+\[
+2a^2=c^2
+\]
+
+\[
+c=a\sqrt{2}
+\]
+
+### B. 30-60-90 TRIANGLE
+
+Consider a right triangle with:
+
+- ∠A = 30°.
+- ∠B = 60°.
+- ∠C = 90°.
+
+Use:
+
+- a = short leg opposite 30°.
+- b = long leg opposite 60°.
+- c = hypotenuse opposite 90°.
+
+The side ratio is:
+
+\[
+\boxed{a:b:c=1:\sqrt{3}:2}
+\]
+
+**Long leg from short leg:**
+
+\[
+b=a\sqrt{3}
+\]
+
+**Hypotenuse from short leg:**
+
+\[
+c=2a
+\]
+
+**Short leg from hypotenuse:**
+
+\[
+a=\frac{c}{2}
+\]
+
+**Short leg from long leg:**
+
+\[
+a=\frac{b}{\sqrt{3}}
+\]
+
+**Long leg from hypotenuse:**
+
+\[
+b=\frac{c\sqrt{3}}{2}
+\]
+
+**Pythagorean derivation:**
+
+\[
+a^2+(a\sqrt{3})^2=(2a)^2
+\]
+
+\[
+a^2+3a^2=4a^2
+\]
+
+### C. RELATED AREA FORMULAS
+
+These may be explained as related mathematical applications, not existing calculator modes.
+
+For 45-45-90:
+
+\[
+A=\frac{a^2}{2}
+\]
+
+For 30-60-90:
+
+\[
+A=\frac{a^2\sqrt{3}}{2}
+\]
+
+### D. RELATED PERIMETER FORMULAS
+
+For 45-45-90:
+
+\[
+P=a(2+\sqrt{2})
+\]
+
+For 30-60-90:
+
+\[
+P=a(3+\sqrt{3})
+\]
+
+Clearly label these as additional mathematical relationships.
+
+Do not suggest that the existing combined calculator calculates area or perimeter.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The completed article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: Special Right Triangle Calculator
+
+**Suggested length: 130–160 words**
+
+Write a direct and informative introduction.
+
+Explain:
+
+- What a special right triangle is.
+- Why certain right triangles have fixed side ratios.
+- Which two special triangle types the calculator covers.
+- What visitors can calculate.
+- How to identify the correct calculator mode.
+
+Introduce both ratios:
+
+**45-45-90:**
+
+\[
+1:1:\sqrt{2}
+\]
+
+**30-60-90:**
+
+\[
+1:\sqrt{3}:2
+\]
+
+Briefly explain that the first triangle has two equal legs, while the second has three different side lengths.
+
+Include a short example of each type.
+
+Avoid generic introductions.
+
+### H2: Calculate Missing Sides of Special Right Triangles
+
+**Suggested length: 180–220 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Introduce all four calculator modes.
+
+| Calculator mode | Required input | Result |
+|---|---|---|
+| 45-45-90: Hypotenuse | Leg a | Hypotenuse c |
+| 45-45-90: Leg | Hypotenuse c | Leg a |
+| 30-60-90: Long leg | Short leg a | Long leg b |
+| 30-60-90: Hypotenuse | Short leg a | Hypotenuse c |
+
+Explain each mode.
+
+**Mode 1:**
+
+\[
+c=a\sqrt{2}
+\]
+
+**Mode 2:**
+
+\[
+a=\frac{c}{\sqrt{2}}
+\]
+
+**Mode 3:**
+
+\[
+b=a\sqrt{3}
+\]
+
+**Mode 4:**
+
+\[
+c=2a
+\]
+
+Explain:
+
+- How to select the correct triangle type.
+- How to identify the known side.
+- How to choose the appropriate mode.
+- How to enter positive measurements.
+- How to select compatible units.
+- How to click Calculate.
+- How to use Reset.
+- How to interpret the result.
+- Why different modes require different formulas.
+
+Do not invent additional calculator functionality.
+
+### H2: What Are Special Right Triangles?
+
+**Suggested length: 200–240 words**
+
+Explain the definition.
+
+Describe how these triangles have particular angle combinations that produce fixed side ratios.
+
+Explain:
+
+- What makes a right triangle special.
+- Why the Pythagorean theorem applies.
+- Why certain angle combinations produce simple ratios.
+- Why the ratios remain the same regardless of overall size.
+- Why these relationships are useful in geometry and trigonometry.
+
+Introduce 45-45-90 and 30-60-90 triangles.
+
+Explain that these are two different triangle families, not two names for the same shape.
+
+Include a comparison diagram.
+
+### H2: The Two Main Types of Special Right Triangles
+
+**Suggested length: 200–250 words**
+
+Introduce both triangle types separately.
+
+#### 45-45-90 Triangle
+
+- Angles: 45°, 45°, 90°.
+- Two equal legs.
+- Hypotenuse = leg × √2.
+- Ratio = 1:1:√2.
+
+#### 30-60-90 Triangle
+
+- Angles: 30°, 60°, 90°.
+- Short leg opposite 30°.
+- Long leg opposite 60°.
+- Hypotenuse opposite 90°.
+- Ratio = 1:√3:2.
+
+Explain the visual differences.
+
+Include a comparison table.
+
+### H2: Understanding the 45-45-90 Triangle
+
+**Suggested length: 200–230 words**
+
+Explain:
+
+- Why it is called an isosceles right triangle.
+- Why both acute angles measure 45°.
+- Why both legs are equal.
+- Why the hypotenuse is the longest side.
+- Why its side ratio is 1:1:√2.
+
+Use:
+
+\[
+a=b
+\]
+
+\[
+c=a\sqrt{2}
+\]
+
+Include a 5 cm leg example:
+
+\[
+c=5\sqrt{2}\approx7.071\text{ cm}
+\]
+
+Explain the geometry clearly.
+
+### H2: Deriving the 45-45-90 Side Ratio
+
+**Suggested length: 220–260 words**
+
+Show the complete Pythagorean derivation.
+
+Start with:
+
+\[
+a=b
+\]
+
+Apply:
+
+\[
+a^2+b^2=c^2
+\]
+
+Substitute:
+
+\[
+a^2+a^2=c^2
+\]
+
+Combine:
+
+\[
+2a^2=c^2
+\]
+
+Take the positive square root:
+
+\[
+c=a\sqrt{2}
+\]
+
+Therefore:
+
+\[
+1:1:\sqrt{2}
+\]
+
+Explain every step.
+
+Use a square diagonal diagram to show how a square creates two congruent 45-45-90 triangles.
+
+### H2: Understanding the 30-60-90 Triangle
+
+**Suggested length: 200–230 words**
+
+Explain:
+
+- Why it has 30°, 60°, and 90° angles.
+- Why the side opposite 30° is the shortest.
+- Why the side opposite 60° is longer.
+- Why the hypotenuse is twice the short leg.
+- Why the side ratio is 1:√3:2.
+
+Use:
+
+\[
+b=a\sqrt{3}
+\]
+
+\[
+c=2a
+\]
+
+Use a short leg of 5 cm:
+
+\[
+b=5\sqrt{3}\approx8.660\text{ cm}
+\]
+
+\[
+c=10\text{ cm}
+\]
+
+Include a labeled diagram.
+
+### H2: Deriving the 30-60-90 Side Ratio
+
+**Suggested length: 240–280 words**
+
+Explain the equilateral-triangle construction.
+
+Start with an equilateral triangle whose side length is 2a.
+
+Draw an altitude from one vertex to the opposite side.
+
+Explain:
+
+- The altitude divides the equilateral triangle into two congruent right triangles.
+- The base is divided into two segments of length a.
+- The angles become 30°, 60°, and 90°.
+- The hypotenuse is 2a.
+- The short leg is a.
+
+Use Pythagoras:
+
+\[
+b^2=(2a)^2-a^2
+\]
+
+\[
+b^2=4a^2-a^2
+\]
+
+\[
+b^2=3a^2
+\]
+
+\[
+b=a\sqrt{3}
+\]
+
+Therefore:
+
+\[
+1:\sqrt{3}:2
+\]
+
+Include an educational diagram.
+
+### H2: Comparing the Two Special Triangle Side Ratios
+
+**Suggested length: 220–260 words**
+
+Give this section special importance.
+
+Use a detailed comparison table.
+
+| Feature | 45-45-90 | 30-60-90 |
+|---|---|---|
+| Angles | 45°, 45°, 90° | 30°, 60°, 90° |
+| Side ratio | 1:1:√2 | 1:√3:2 |
+| Equal legs | Yes | No |
+| Shortest side | Both legs | Short leg |
+| Longest side | Hypotenuse | Hypotenuse |
+| Hypotenuse formula | a√2 | 2a |
+| Long leg formula | Not applicable | a√3 |
+| Triangle type | Isosceles right | Scalene right |
+
+Explain why their formulas cannot be interchanged.
+
+Use one numerical example for each triangle.
+
+### H2: How to Use the 45-45-90 Hypotenuse Calculator
+
+**Suggested length: 150–180 words**
+
+Explain:
+
+1. Identify a 45-45-90 triangle.
+2. Identify either equal leg.
+3. Select the 45-45-90 hypotenuse mode.
+4. Enter the leg length.
+5. Select the correct unit.
+6. Click Calculate Hypotenuse c.
+7. Review the result.
+8. Use Reset for a new calculation.
+
+Show:
+
+\[
+c=a\sqrt{2}
+\]
+
+Use a numerical example.
+
+Clarify that the formula is valid only when the acute angles are both 45°.
+
+### H2: How to Find a Leg From the 45-45-90 Hypotenuse
+
+**Suggested length: 150–180 words**
+
+Explain:
+
+\[
+a=\frac{c}{\sqrt{2}}
+\]
+
+Also:
+
+\[
+a=\frac{c\sqrt{2}}{2}
+\]
+
+Provide calculator instructions.
+
+Use:
+
+\[
+c=10\text{ cm}
+\]
+
+\[
+a=5\sqrt{2}\approx7.071\text{ cm}
+\]
+
+Explain why both legs have this length.
+
+### H2: How to Use the 30-60-90 Long Leg Calculator
+
+**Suggested length: 150–180 words**
+
+Explain:
+
+1. Identify the 30-60-90 triangle.
+2. Find the side opposite 30°.
+3. Select the long leg mode.
+4. Enter the short leg.
+5. Select the unit.
+6. Click Calculate Long Leg.
+7. Review the result.
+
+Show:
+
+\[
+b=a\sqrt{3}
+\]
+
+Use:
+
+\[
+a=6\text{ cm}
+\]
+
+\[
+b=6\sqrt{3}\approx10.392\text{ cm}
+\]
+
+Explain why the short leg must be identified correctly.
+
+### H2: How to Use the 30-60-90 Hypotenuse Calculator
+
+**Suggested length: 150–180 words**
+
+Explain:
+
+1. Identify the short leg.
+2. Select the 30-60-90 hypotenuse mode.
+3. Enter a.
+4. Select the correct unit.
+5. Click Calculate Hypotenuse c.
+6. Review the result.
+
+Show:
+
+\[
+c=2a
+\]
+
+Use:
+
+\[
+a=8\text{ cm}
+\]
+
+\[
+c=16\text{ cm}
+\]
+
+Explain why the hypotenuse is twice the short leg.
+
+### H2: Step-by-Step Examples for Both Special Triangle Types
+
+**Suggested length: 300–350 words**
+
+Provide two complete worked examples.
+
+#### Example 1: 45-45-90 Triangle
+
+Given:
+
+a = 5 cm
+
+Find:
+
+- Other leg.
+- Hypotenuse.
+- Area.
+- Perimeter.
+
+Solutions:
+
+\[
+b=5
+\]
+
+\[
+c=5\sqrt{2}\approx7.071
+\]
+
+\[
+A=\frac{25}{2}=12.5\text{ cm}^2
+\]
+
+\[
+P=10+5\sqrt{2}\approx17.071\text{ cm}
+\]
+
+#### Example 2: 30-60-90 Triangle
+
+Given:
+
+a = 5 cm
+
+Find:
+
+- Long leg.
+- Hypotenuse.
+- Area.
+- Perimeter.
+
+Solutions:
+
+\[
+b=5\sqrt{3}\approx8.660
+\]
+
+\[
+c=10
+\]
+
+\[
+A=\frac{25\sqrt{3}}{2}\approx21.651\text{ cm}^2
+\]
+
+\[
+P=15+5\sqrt{3}\approx23.660\text{ cm}
+\]
+
+Clarify that area and perimeter are additional manual calculations, not current calculator modes.
+
+### H2: Area and Perimeter Relationships in Special Right Triangles
+
+**Suggested length: 200–240 words**
+
+Explain the additional formulas.
+
+For 45-45-90:
+
+\[
+A=\frac{a^2}{2}
+\]
+
+\[
+P=a(2+\sqrt{2})
+\]
+
+For 30-60-90:
+
+\[
+A=\frac{a^2\sqrt{3}}{2}
+\]
+
+\[
+P=a(3+\sqrt{3})
+\]
+
+Define all variables.
+
+Show one numerical example for each.
+
+Clarify the distinction between linear units and square units.
+
+### H2: Exact Radical Answers Versus Decimal Approximations
+
+**Suggested length: 180–210 words**
+
+Explain:
+
+\[
+\sqrt{2}\approx1.41421356
+\]
+
+\[
+\sqrt{3}\approx1.73205081
+\]
+
+Explain:
+
+- What a radical expression means.
+- Why √2 and √3 are irrational.
+- Why exact expressions are useful in mathematics.
+- Why decimals are convenient in practical measurements.
+- Why rounding should occur at the end.
+- How to label approximate answers.
+
+Use:
+
+\[
+5\sqrt{2}\approx7.071
+\]
+
+And:
+
+\[
+5\sqrt{3}\approx8.660
+\]
+
+Do not describe decimal approximations as exact answers.
+
+### H2: How to Verify Special Right Triangle Calculations
+
+**Suggested length: 180–220 words**
+
+Explain the verification methods separately.
+
+**For 45-45-90:**
+
+\[
+a=b
+\]
+
+\[
+c^2=a^2+b^2
+\]
+
+**For 30-60-90:**
+
+\[
+b=a\sqrt{3}
+\]
+
+\[
+c=2a
+\]
+
+\[
+a^2+b^2=c^2
+\]
+
+Also verify the angle sum.
+
+Explain that the side ratios and angles must agree.
+
+Use one example from each triangle type.
+
+### H2: Common Mistakes When Solving Special Right Triangles
+
+**Suggested length: 280–330 words**
+
+Discuss at least fourteen mistakes.
+
+1. Confusing 45-45-90 with 30-60-90 triangles.
+2. Using √3 instead of √2.
+3. Using √2 instead of √3.
+4. Assuming both legs are equal in a 30-60-90 triangle.
+5. Assuming the short and long legs are equal.
+6. Forgetting that the 30-60-90 hypotenuse equals twice the short leg.
+7. Using the wrong input side.
+8. Confusing the short leg with the hypotenuse.
+9. Forgetting to divide by √2 when finding a 45-45-90 leg.
+10. Forgetting to multiply by √3 when finding a 30-60-90 long leg.
+11. Rounding radicals too early.
+12. Mixing units.
+13. Confusing area and perimeter.
+14. Applying special triangle formulas to arbitrary right triangles.
+
+For each mistake:
+- Explain why it is incorrect.
+- Show the correct formula.
+- Provide a short example where useful.
+
+### H2: Practical Applications of Special Right Triangles
+
+**Suggested length: 150–190 words**
+
+Discuss:
+
+- Square diagonal calculations.
+- Equilateral triangle altitude calculations.
+- Geometry homework.
+- Trigonometry exercises.
+- Technical drawing.
+- Architecture and design concepts.
+- Construction geometry.
+- Mathematical modeling.
+- Classroom demonstrations.
+- Standard-angle drafting.
+
+Use realistic hypothetical examples.
+
+Do not make unsupported claims about engineering precision.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create eight original practice problems.
+
+Include four problems for 45-45-90 triangles:
+
+1. Find the hypotenuse from a known leg.
+2. Find a leg from the hypotenuse.
+3. Calculate area.
+4. Calculate perimeter.
+
+Include four problems for 30-60-90 triangles:
+
+5. Find the long leg from the short leg.
+6. Find the hypotenuse from the short leg.
+7. Calculate area.
+8. Calculate perimeter.
+
+Provide complete solutions.
+
+Use different numbers from the main examples.
+
+Clearly label additional area and perimeter questions as manual exercises.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What is a special right triangle?
+2. Which special right triangles does this calculator cover?
+3. What is the side ratio of a 45-45-90 triangle?
+4. What is the side ratio of a 30-60-90 triangle?
+5. Why does √2 appear in a 45-45-90 triangle?
+6. Why does √3 appear in a 30-60-90 triangle?
+7. How do I find the hypotenuse of a 45-45-90 triangle?
+8. How do I find the long leg of a 30-60-90 triangle?
+9. Can I calculate the missing leg from the hypotenuse?
+10. Are all special right triangles similar within their own type?
+11. What is the difference between the two special triangle types?
+12. How can I verify my calculated side lengths?
+
+Keep answers approximately 35–65 words.
+
+Avoid copying entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- 45-45-90 Triangle Calculator.
+- 30-60-90 Triangle Calculator.
+- Right Triangle Side Calculator.
+- Trigonometric Ratios Calculator.
+- Right Triangle Angle Calculator.
+- Pythagorean Theorem Calculator.
+
+Explain which tool is useful for each different problem.
+
+Verify all destination URLs before including them.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least eight mathematically accurate diagrams.
+
+### Diagram 1: Both Special Right Triangle Types
+
+Show two triangles side by side.
+
+First triangle:
+
+45°, 45°, 90°.
+
+Side ratio:
+
+1:1:√2.
+
+Second triangle:
+
+30°, 60°, 90°.
+
+Side ratio:
+
+1:√3:2.
+
+Clearly label all angles and sides.
+
+### Diagram 2: 45-45-90 Triangle Geometry
+
+Show:
+
+- Two equal legs.
+- 45° and 45° angles.
+- 90° angle.
+- Hypotenuse.
+- Equal-side markings.
+
+### Diagram 3: 45-45-90 Pythagorean Derivation
+
+Show:
+
+\[
+a^2+a^2=c^2
+\]
+
+\[
+c=a\sqrt{2}
+\]
+
+Use a labeled triangle.
+
+### Diagram 4: Square Diagonal
+
+Show:
+
+- A square.
+- Equal sides.
+- One diagonal.
+- Two congruent 45-45-90 triangles.
+- Diagonal = a√2.
+
+### Diagram 5: 30-60-90 Triangle Geometry
+
+Show:
+
+- 30° angle.
+- 60° angle.
+- 90° angle.
+- Short leg a.
+- Long leg a√3.
+- Hypotenuse 2a.
+
+### Diagram 6: Equilateral Triangle Derivation
+
+Show:
+
+- An equilateral triangle.
+- All sides equal to 2a.
+- An altitude.
+- The base split into two segments of length a.
+- Two 30-60-90 triangles.
+- Altitude = a√3.
+
+### Diagram 7: Side Ratio Comparison
+
+Present both ratios clearly:
+
+\[
+45-45-90:\quad1:1:\sqrt{2}
+\]
+
+\[
+30-60-90:\quad1:\sqrt{3}:2
+\]
+
+Use matching visual scales where possible.
+
+Do not make the two diagrams appear identical.
+
+### Diagram 8: Four Calculator Modes
+
+Create a visual flow diagram showing:
+
+- 45-45-90: leg → hypotenuse.
+- 45-45-90: hypotenuse → leg.
+- 30-60-90: short leg → long leg.
+- 30-60-90: short leg → hypotenuse.
+
+Clearly label the known input, formula, and result.
+
+**Diagram requirements:**
+
+For every diagram provide:
+
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer mathematically accurate SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+Ensure:
+
+- Correct angle measurements.
+- Correct opposite-side relationships.
+- Correct side ratios.
+- Correct placement of the hypotenuse.
+- Equal legs in the 45-45-90 triangle.
+- Correct short and long legs in the 30-60-90 triangle.
+- Accurate equilateral triangle construction.
+- Accurate square diagonal construction.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/45-45-90-triangle-calculator/
+
+2. https://www.righttrianglesolver.com/30-60-90-triangle-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+4. https://www.righttrianglesolver.com/trigonometric-ratios-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-angle-calculator/
+
+6. https://www.righttrianglesolver.com/pythagorean-theorem-calculator/
+
+Verify every destination URL before including it.
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeatedly use the same exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**Special Right Triangle Calculator**
+
+It should function as the parent educational hub for both special right triangle types.
+
+Its main purpose is to:
+
+- Introduce both triangle families.
+- Compare their side ratios.
+- Explain the mathematical derivation of both ratios.
+- Explain the four calculator modes.
+- Help visitors choose the correct mode.
+- Provide introductory examples for both types.
+- Link to the dedicated calculators for deeper learning.
+
+The dedicated 45-45-90 page should focus on:
+
+- Isosceles right triangle geometry.
+- Equal legs.
+- The √2 relationship.
+- Square diagonal derivation.
+- Detailed 45-45-90 calculations.
+
+The dedicated 30-60-90 page should focus on:
+
+- Short and long legs.
+- The √3 relationship.
+- Equilateral triangle derivation.
+- Detailed 30-60-90 calculations.
+
+Do not duplicate the complete educational explanations from those dedicated pages.
+
+Use this combined page for comparison and mode selection.
+
+Link to the dedicated pages when readers need detailed explanations of a specific triangle type.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation across multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+### 45-45-90 FORMULAS
+
+Side ratio:
+
+\[
+1:1:\sqrt{2}
+\]
+
+Equal legs:
+
+\[
+a=b
+\]
+
+Hypotenuse:
+
+\[
+c=a\sqrt{2}
+\]
+
+Leg from hypotenuse:
+
+\[
+a=\frac{c}{\sqrt{2}}
+\]
+
+Area:
+
+\[
+A=\frac{a^2}{2}
+\]
+
+Perimeter:
+
+\[
+P=a(2+\sqrt{2})
+\]
+
+### 30-60-90 FORMULAS
+
+Side ratio:
+
+\[
+1:\sqrt{3}:2
+\]
+
+Long leg:
+
+\[
+b=a\sqrt{3}
+\]
+
+Hypotenuse:
+
+\[
+c=2a
+\]
+
+Short leg from hypotenuse:
+
+\[
+a=\frac{c}{2}
+\]
+
+Area:
+
+\[
+A=\frac{a^2\sqrt{3}}{2}
+\]
+
+Perimeter:
+
+\[
+P=a(3+\sqrt{3})
+\]
+
+### PYTHAGOREAN THEOREM
+
+\[
+a^2+b^2=c^2
+\]
+
+Ensure:
+
+- The correct ratio is used for each triangle.
+- The two legs are equal only in the 45-45-90 triangle.
+- The short leg is opposite 30° in the 30-60-90 triangle.
+- The long leg is opposite 60°.
+- The hypotenuse is opposite 90°.
+- Exact radical answers are preserved.
+- Decimal approximations are labeled correctly.
+- All examples are recalculated.
+- All unit conversions are correct.
+- Area is expressed in square units.
+- Perimeter is expressed in linear units.
+- Diagrams use consistent labeling.
+
+Never interchange √2 and √3.
+
+Never use the 30-60-90 ratio for a 45-45-90 triangle.
+
+Never use the 45-45-90 ratio for a 30-60-90 triangle.
+
+Never claim that both legs are equal in a 30-60-90 triangle.
+
+Never claim that the long leg of a 30-60-90 triangle equals twice the short leg.
+
+Never present area or perimeter as existing calculator modes.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO Title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Explain that the calculator solves 45-45-90 and 30-60-90 triangles using their special side ratios.
+
+### Primary Focus Keyword
+
+Special Right Triangle Calculator
+
+### Secondary Keywords
+
+Provide 8–12 relevant keyword variations.
+
+### Existing URL Slug
+
+special-right-triangle-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all eight diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual visible calculator.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the 1:1:√2 ratio.
+- Verify the 1:√3:2 ratio.
+- Verify all four calculator modes.
+- Recalculate every worked example.
+- Check exact and decimal results.
+- Verify both Pythagorean derivations.
+- Check the equilateral triangle construction.
+- Check the square diagonal construction.
+- Verify all area and perimeter formulas.
+- Check every unit conversion.
+- Verify every diagram's angles and side labels.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- Both triangle types receive balanced attention.
+- All four calculator modes are explained.
+- Both radical derivations are clear.
+- Exact and approximate values are distinguished.
+- Examples cover all four calculator modes.
+- Mathematical proofs are understandable to beginners.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from the dedicated 45-45-90 and 30-60-90 pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- Both side ratios are immediately visible.
+- Calculator instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+- Readers can easily identify the correct calculator mode.
+
+Remove weak, repetitive, or irrelevant content before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding that range only when additional information genuinely improves educational value.
+
+Include:
+
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Both special triangle types.
+- Four calculator mode explanations.
+- Worked examples.
+- Comparison tables.
+- Contextual internal links.
+- Practice questions.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all eight diagram specifications.
+
+Include:
+
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the Special Right Triangle Calculator.
+
+The primary purpose must remain explaining and solving both 45-45-90 and 30-60-90 triangles.
+
+Give particular attention to:
+
+**45-45-90:**
+
+\[
+1:1:\sqrt{2}
+\]
+
+**30-60-90:**
+
+\[
+1:\sqrt{3}:2
+\]
+
+Explain:
+
+- What makes each triangle special.
+- Why their side ratios are different.
+- How to identify their sides.
+- Why √2 appears.
+- Why √3 appears.
+- How both ratios are mathematically derived.
+- How all four calculator modes work.
+- How to choose the correct calculation mode.
+- How to verify calculated answers.
+- How to distinguish the two triangle types.
+- How to preserve exact radical answers.
+
+Use accurate mathematical diagrams, varied numerical examples, and clear step-by-step proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, and anyone learning special right triangle geometry.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

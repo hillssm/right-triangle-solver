@@ -87,7 +87,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-intro": {
         "h2": "Hipotenüs ve Yüksekliğini Kullanarak Dik Üçgenin Alanı Nasıl Hesaplanır",
         "blocks": [
-          { "kind": "p", "text": "Bir dik üçgenin hipotenüsü [[10\\text{ m}]] ve bu hipotenüse inen yükseklik [[4.8\\text{ m}]] ölçülmüştür. [[K=ch/2]] uygulayın: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Üçgen 24 metrekarelik düz alan kaplar. Hesaplayıcının otomatikleştirdiği yöntemin tamamı budur: bir kenar, ona dik yükseklik, bir çarpma, bir yarılama." },
+          { "kind": "p", "text": "Bir dik üçgenin hipotenüsü [[10\\text{ m}]] ve bu hipotenüse inen yükseklik [[4.8\\text{ m}]] ölçülmüştür. [[K=ch/2]] uygulayın: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Üçgen 24 metrekarelik düz alan kaplar. Hesaplayıcının otomatikleştirdiği yöntemin tamamı budur: bir kenar, ona dik yükseklik, bir çarpma, bir yarılama." },
           { "kind": "p", "text": "Hipotenüs taban görevi görür, çünkü eşleşen dik yükseklik bilindiğinde üçgenin herhangi bir kenarı taban olabilir. Yükseklik, dik açılı köşeden hipotenüse inen dik doğru parçasıdır ve hipotenüsü dik açıyla kesmelidir; eğik bir parça bu formülün ihtiyaç duyduğu yükseklik değildir. Alan yalnızca tabana ve onun yüksekliğine bağlı olduğundan, iki dik kenar girdi olarak gerekli değildir ve sonuç her zaman kullanılan uzunluk biriminin kare birimleriyle ifade edilir." }
         ]
       },
@@ -104,7 +104,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Hipotenüse İnen Yüksekliği Anlama" },
           { "kind": "p", "text": "[[ABC]] üçgeninde [[C]] dik açılı köşedir ve [[AB]] hipotenüstür. Yükseklik [[h]], [[C]]'den [[AB]]'ye dik inen [[CD]] parçasıdır; yani [[CD\\perp AB]], [[CD=h]] ve [[AB=c]] olur; [[D]] taban noktasıdır ve üçgeni, içinde iç içe duran iki küçük dik üçgene böler." },
           { "kind": "h3", "text": "Yükseklik Hipotenüsü Nasıl Böler" },
-          { "kind": "p", "text": "Yüksekliğin hipotenüsü [[AD=x]] ve [[DB=y]] olarak kestiğini varsayın. O zaman [[[\\boxed{x+y=c}]]]. Her küçük üçgen bir dik açı içerir ve özgün üçgenle bir dar açıyı paylaşır, bu yüzden üç üçgen de benzerdir. İki küçük üçgenin benzerliği [[x/h=h/y]] verir ve içler dışlar çarpımıyla [[[\\boxed{h^2=xy}]]] elde edilir; yani geometrik ortalama ilişkisi: yükseklik, hipotenüsün iki parçasının geometrik ortalamasıdır ve aşağıdaki maksimum yükseklik kuralının başlangıç noktasıdır." }
+          { "kind": "p", "text": "Yüksekliğin hipotenüsü [[AD=x]] ve [[DB=y]] olarak kestiğini varsayın. O zaman [[[\\boxed{x+y=c}]]] Her küçük üçgen bir dik açı içerir ve özgün üçgenle bir dar açıyı paylaşır, bu yüzden üç üçgen de benzerdir. İki küçük üçgenin benzerliği [[x/h=h/y]] verir ve içler dışlar çarpımıyla [[[\\boxed{h^2=xy}]]] elde edilir; yani geometrik ortalama ilişkisi: yükseklik, hipotenüsün iki parçasının geometrik ortalamasıdır ve aşağıdaki maksimum yükseklik kuralının başlangıç noktasıdır." }
         ],
         "imgAlt": "C'de dik açılı ABC üçgeni, hipotenüs AB c olarak, yükseklik CD h olarak, x ve y parçalarıyla etiketli",
         "figcaption": "Hipotenüse inen CD yükseklikli ABC üçgeni: AD = x, DB = y, x + y = c, h² = xy ve K = ch/2."
@@ -128,11 +128,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-relationship": {
         "h2": "Hipotenüs ve Yükseklik İki Dik Kenarla Nasıl İlişkilidir",
         "blocks": [
-          { "kind": "p", "text": "Aynı üçgeni iki geçerli alan formülü tanımlar: [[K=ab/2]] ve [[K=ch/2]]. Aynı alanı hesapladıklarından [[\\frac{ab}{2}=\\frac{ch}{2}]]. İki yanı da ikiyle çarpın: [[ab=ch]]. Yükseklik için düzenleyin: [[[\\boxed{h=\\frac{ab}{c}}]]]. Hipotenüse inen yükseklik, iki dik kenarın çarpımının hipotenüse bölümüdür; bu da iki alan formülünün tutarlı bir üçgende asla çelişemeyeceğini açıklar." },
+          { "kind": "p", "text": "Aynı üçgeni iki geçerli alan formülü tanımlar: [[K=ab/2]] ve [[K=ch/2]]. Aynı alanı hesapladıklarından [[\\frac{ab}{2}=\\frac{ch}{2}]]. İki yanı da ikiyle çarpın: [[ab=ch]]. Yükseklik için düzenleyin: [[[\\boxed{h=\\frac{ab}{c}}]]] Hipotenüse inen yükseklik, iki dik kenarın çarpımının hipotenüse bölümüdür; bu da iki alan formülünün tutarlı bir üçgende asla çelişemeyeceğini açıklar." },
           { "kind": "h3", "text": "Bu İlişki Neden Yararlıdır" },
           { "kind": "p", "text": "Aynı geometriyi tanımlamanın üç yolunu birbirine bağlar. Dik kenarlar ve hipotenüs yüksekliği belirler, yani kenarlarıyla ölçülen bir üçgen onu zaten içerir. Yükseklik ve hipotenüs alanı belirler, yani alan için dik kenarların önce bulunması gerekmez. Alanı iki formülle de hesaplayıp karşılaştırmak en güçlü kontrollerden biridir, çünkü bir yoldaki hata nadiren diğerinde aynen tekrarlanır." },
           { "kind": "h3", "text": "Formülü Pisagor Teoremiyle Bağlama" },
-          { "kind": "p", "text": "Pisagor teoremi [[a^2+b^2=c^2]], dik kenarlarla hipotenüs arasındaki bağı doğrular. 3-4-5 üçgenini alın: [[3^2+4^2=5^2]], [[9+16=25]]. Yükseklik [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]]. Hipotenüs ve yükseklikten alan [[K=\\frac{5\\times2.4}{2}=6]], dik kenarlardan ise [[K=\\frac{3\\times4}{2}=6]]'dır. İki formül de aynı kapalı bölgeyi ölçer ve [[h=ab/c]] bunu garantileyen bağdır." },
+          { "kind": "p", "text": "Pisagor teoremi [[a^2+b^2=c^2]], dik kenarlarla hipotenüs arasındaki bağı doğrular. 3-4-5 üçgenini alın: [[3^2+4^2=5^2]], [[9+16=25]]. Yükseklik [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]] Hipotenüs ve yükseklikten alan [[K=\\frac{5\\times2.4}{2}=6]], dik kenarlardan ise [[K=\\frac{3\\times4}{2}=6]]'dır. İki formül de aynı kapalı bölgeyi ölçer ve [[h=ab/c]] bunu garantileyen bağdır." },
           { "kind": "h3", "text": "Yükseklik İki Benzer Üçgeni Nasıl Oluşturur" },
           { "kind": "p", "text": "Yükseklik özgün üçgeni iki küçük dik üçgene böler; her biri dar açılarını özgün üçgenle paylaşır. İki ortak açı, üç üçgeni de benzer yapar, bu yüzden karşılıklı kenarlar orantılı kalır. Yüksekliği hipotenüs parçalarıyla eşleştirmek [[x/h=h/y]] verir; bu da içler dışlar çarpımıyla [[h^2=xy]] olur: geometrik ortalama ilişkisi, benzerliğin denklem olarak yazılmış halidir." }
         ]
@@ -146,7 +146,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Maksimum Yükseklikte Ne Olur?" },
           { "kind": "p", "text": "Maksimum, [[x=y=c/2]] iken gerçekleşir ve o zaman [[h=c/2]] olur. Bu bir ikizkenar dik üçgen üretir: iki dik kenarı eşittir ve dar açıları [[45^\\circ]] ve [[45^\\circ]]'dir. Yükseklik o zaman hipotenüse inen kenarortay görevini de üstlenir; bu yozlaşmış değil, geçerli bir üçgendir." },
           { "kind": "h3", "text": "Maksimum Yükseklik Örneği" },
-          { "kind": "p", "text": "[[c=10]] verildiğinde maksimum yükseklik [[h_{\\max}=10/2=5]]'tir. Maksimum alan [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]]. Hipotenüsü 10 olan hiçbir dik üçgenin yüksekliği 5'i aşamaz ve dolayısıyla alanı 25 kare birimi aşamaz." },
+          { "kind": "p", "text": "[[c=10]] verildiğinde maksimum yükseklik [[h_{\\max}=10/2=5]]'tir. Maksimum alan [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]] Hipotenüsü 10 olan hiçbir dik üçgenin yüksekliği 5'i aşamaz ve dolayısıyla alanı 25 kare birimi aşamaz." },
           { "kind": "h3", "text": "Yükseklik c/2'den Büyükse Ne Olur?" },
           { "kind": "p", "text": "[[c=10]] ve [[h=5.5]] verildiğinde geçerli maksimum yükseklik 5'tir, yani bu ölçümler bir dik üçgeni tanımlayamaz. Formül yine de [[K=\\frac{10\\times5.5}{2}=27.5]] üretir, ama bu sayı bu ölçümlerle geçerli bir dik üçgeni temsil etmez. Bunu bir alan değil, bir ölçümün yanlış olduğunun işareti sayın. Bu kılavuz, hesaplayıcının bu tür girdileri otomatik olarak reddettiğine dair bir iddiada bulunmaz." },
           { "kind": "h3", "text": "Yükseklik Çok Daha Küçükse Ne Olur?" },
@@ -184,13 +184,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Dört çözülmüş örnek yöntemi tanıdıktan yukarı doğru kurar. Her biri [[K=ch/2]]'yi uygular, her yerine koyma gösterilir ve her biri yüksekliğin dik üçgen sınırına uyduğunu kontrol eder." },
           { "kind": "h3", "text": "Örnek 1: Mevcut Hesaplayıcının Örneğini Kullanma" },
-          { "kind": "p", "text": "Verilenler [[c=10]] ve [[h=4.8]]. Adım 1: formülü yazın, [[K=ch/2]]. Adım 2: yerine koyun, [[K=\\frac{10\\times4.8}{2}]]. Adım 3: çarpın, [[K=\\frac{48}{2}]]. Son yanıt: [[[\\boxed{K=24\\text{ square units}}]]]. Yükseklik geçerlidir, çünkü [[4.8<5]]; hipotenüsün yarısı olan maksimumun altındadır." },
+          { "kind": "p", "text": "Verilenler [[c=10]] ve [[h=4.8]]. Adım 1: formülü yazın, [[K=ch/2]]. Adım 2: yerine koyun, [[K=\\frac{10\\times4.8}{2}]]. Adım 3: çarpın, [[K=\\frac{48}{2}]]. Son yanıt: [[[\\boxed{K=24\\text{ square units}}]]] Yükseklik geçerlidir, çünkü [[4.8<5]]; hipotenüsün yarısı olan maksimumun altındadır." },
           { "kind": "h3", "text": "Örnek 2: 3-4-5 Üçgeni" },
-          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]. Önce yüksekliği bulun: [[h=ab/c]], yani [[h=\\frac{3\\times4}{5}=2.4]]. Sonra [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]]. Dik kenarlarla doğrulayın: [[K=\\frac{3\\times4}{2}=6]]. İki yol da aynı fikirde, olması gerektiği gibi." },
+          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]. Önce yüksekliği bulun: [[h=ab/c]], yani [[h=\\frac{3\\times4}{5}=2.4]]. Sonra [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]] Dik kenarlarla doğrulayın: [[K=\\frac{3\\times4}{2}=6]]. İki yol da aynı fikirde, olması gerektiği gibi." },
           { "kind": "h3", "text": "Örnek 3: İkizkenar Dik Üçgen" },
-          { "kind": "p", "text": "Verilenler [[c=10]] ve [[h=5]]. O zaman [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]]. Yükseklik hipotenüsün yarısına eşittir, yani dik kenarlar eşittir ve her dar açı [[45^\\circ]]'dir. Bu, hipotenüsü 10 olan herhangi bir dik üçgen için mümkün olan maksimum alandır." },
+          { "kind": "p", "text": "Verilenler [[c=10]] ve [[h=5]]. O zaman [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]] Yükseklik hipotenüsün yarısına eşittir, yani dik kenarlar eşittir ve her dar açı [[45^\\circ]]'dir. Bu, hipotenüsü 10 olan herhangi bir dik üçgen için mümkün olan maksimum alandır." },
           { "kind": "h3", "text": "Örnek 4: Daha Küçük Bir Üçgensel Yükseklik" },
-          { "kind": "p", "text": "Verilenler [[c=13]] ve [[h=5]]. O zaman [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]]. Yükseklik sınırı sağlar, çünkü [[5\\leq6.5]]: hipotenüsün yarısı 6.5'tir ve 5 rahatça altındadır." }
+          { "kind": "p", "text": "Verilenler [[c=13]] ve [[h=5]]. O zaman [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]] Yükseklik sınırı sağlar, çünkü [[5\\leq6.5]]: hipotenüsün yarısı 6.5'tir ve 5 rahatça altındadır." }
         ]
       },
       "sec-applications": {
@@ -198,29 +198,29 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "On iki çözülmüş durum formülü farklı ölçeklerde ve farklı birimlerde gösterir. Her biri sahnedeki üçgeni adlandırır, iki ölçümü verir, adım adım yerine koyar ve ardındaki varsayımı belirtir. Her örnek dik üçgensel bir panel, profil, kesit veya basitleştirilmiş modeldir; formül modellenen üçgene uygulanır, aynı adı taşıyan her eğri veya düzensiz nesneye değil." },
           { "kind": "h3", "text": "Örnek 1: Üçgen Cam Pencere" },
-          { "kind": "p", "text": "Dik üçgensel bir cam panelin hipotenüsü [[2.5\\text{ m}]] ve dik yüksekliği [[1.2\\text{ m}]]'dir. [[K=ch/2]] kullanılarak: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]]. Bu, çerçeveden önceki düz cam alanıdır; kenarların düz ve açının gerçek bir dik açı olduğu varsayılır." },
+          { "kind": "p", "text": "Dik üçgensel bir cam panelin hipotenüsü [[2.5\\text{ m}]] ve dik yüksekliği [[1.2\\text{ m}]]'dir. [[K=ch/2]] kullanılarak: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]] Bu, çerçeveden önceki düz cam alanıdır; kenarların düz ve açının gerçek bir dik açı olduğu varsayılır." },
           { "kind": "h3", "text": "Örnek 2: Üçgen Rampa Yan Paneli" },
-          { "kind": "p", "text": "Bir rampanın dik üçgensel yan panelinin hipotenüsü [[4\\text{ m}]] ve dik yüksekliği [[1.5\\text{ m}]]'dir. O zaman [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]]. Sonuç üçgen yan profili tanımlar, yürüme yüzeyini değil." },
+          { "kind": "p", "text": "Bir rampanın dik üçgensel yan panelinin hipotenüsü [[4\\text{ m}]] ve dik yüksekliği [[1.5\\text{ m}]]'dir. O zaman [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]] Sonuç üçgen yan profili tanımlar, yürüme yüzeyini değil." },
           { "kind": "h3", "text": "Örnek 3: Üçgen Yelken Bölümü" },
-          { "kind": "p", "text": "Dik üçgensel bir yelken bölümünün hipotenüsü [[13\\text{ ft}]] ve yüksekliği [[5\\text{ ft}]]'tir. O zaman [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]]. Bu, dikişler veya eğrilikten önceki düz kumaş alanıdır; gerçek yelkenler şişer, bu yüzden yelken düz modellenir." },
+          { "kind": "p", "text": "Dik üçgensel bir yelken bölümünün hipotenüsü [[13\\text{ ft}]] ve yüksekliği [[5\\text{ ft}]]'tir. O zaman [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]] Bu, dikişler veya eğrilikten önceki düz kumaş alanıdır; gerçek yelkenler şişer, bu yüzden yelken düz modellenir." },
           { "kind": "h3", "text": "Örnek 4: Üçgen Arazi Parselinin Ölçümü" },
-          { "kind": "p", "text": "Basitleştirilmiş dik üçgensel bir arsanın hipotenüsü [[50\\text{ m}]] ve yüksekliği [[12\\text{ m}]]'dir. O zaman [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]]. Bu, sınırların düz çizgiler olarak ve zeminin düz olduğu basitleştirilmiş bir model altında alan tahminidir." },
+          { "kind": "p", "text": "Basitleştirilmiş dik üçgensel bir arsanın hipotenüsü [[50\\text{ m}]] ve yüksekliği [[12\\text{ m}]]'dir. O zaman [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]] Bu, sınırların düz çizgiler olarak ve zeminin düz olduğu basitleştirilmiş bir model altında alan tahminidir." },
           { "kind": "h3", "text": "Örnek 5: Çelik Köşebent Levha" },
-          { "kind": "p", "text": "Dik üçgensel bir çelik destek levhasının hipotenüsü [[3.4\\text{ m}]] ve yüksekliği [[1.6\\text{ m}]]'dir. O zaman [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]]. Bu yalnızca düz levha alanıdır; yük taşıma kapasitesi ayrı bir sorudur." },
+          { "kind": "p", "text": "Dik üçgensel bir çelik destek levhasının hipotenüsü [[3.4\\text{ m}]] ve yüksekliği [[1.6\\text{ m}]]'dir. O zaman [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]] Bu yalnızca düz levha alanıdır; yük taşıma kapasitesi ayrı bir sorudur." },
           { "kind": "h3", "text": "Örnek 6: Merdiven Yan Profili" },
-          { "kind": "p", "text": "Basitleştirilmiş dik üçgensel bir merdiven yan profilinin hipotenüsü [[5\\text{ m}]] ve yüksekliği [[2\\text{ m}]]'dir. O zaman [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]]. Bu üçgen yan profili tanımlar, tek tek basamak ve rıhtların toplamını değil." },
+          { "kind": "p", "text": "Basitleştirilmiş dik üçgensel bir merdiven yan profilinin hipotenüsü [[5\\text{ m}]] ve yüksekliği [[2\\text{ m}]]'dir. O zaman [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]] Bu üçgen yan profili tanımlar, tek tek basamak ve rıhtların toplamını değil." },
           { "kind": "h3", "text": "Örnek 7: Üçgen Trafik Levhası" },
-          { "kind": "p", "text": "Dik üçgensel bir levha panelinin hipotenüsü [[1.8\\text{ m}]] ve yüksekliği [[0.8\\text{ m}]]'dir. O zaman [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]]. 0.72 metrekare levha yüzeyi malzemesi; montaj donanımı hariç." },
+          { "kind": "p", "text": "Dik üçgensel bir levha panelinin hipotenüsü [[1.8\\text{ m}]] ve yüksekliği [[0.8\\text{ m}]]'dir. O zaman [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]] 0.72 metrekare levha yüzeyi malzemesi; montaj donanımı hariç." },
           { "kind": "h3", "text": "Örnek 8: Güneş Paneli Destek Paneli" },
-          { "kind": "p", "text": "Dik üçgensel bir montaj destek panelinin hipotenüsü [[3\\text{ m}]] ve yüksekliği [[1.2\\text{ m}]]'dir. O zaman [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]]. Yalnızca panel alanı; üretilen elektrikle ilgili hiçbir şey yok, çünkü bu bir montaj braketidir." },
+          { "kind": "p", "text": "Dik üçgensel bir montaj destek panelinin hipotenüsü [[3\\text{ m}]] ve yüksekliği [[1.2\\text{ m}]]'dir. O zaman [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]] Yalnızca panel alanı; üretilen elektrikle ilgili hiçbir şey yok, çünkü bu bir montaj braketidir." },
           { "kind": "h3", "text": "Örnek 9: Kontrplak Kesim Şablonu" },
-          { "kind": "p", "text": "Dik üçgensel bir kontrplak şablonun hipotenüsü [[2.5\\text{ m}]] ve yüksekliği [[1\\text{ m}]]'dir. O zaman [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]]. Kullanılabilir üçgen parça; kesim firesi için ayrı bir pay gerekir." },
+          { "kind": "p", "text": "Dik üçgensel bir kontrplak şablonun hipotenüsü [[2.5\\text{ m}]] ve yüksekliği [[1\\text{ m}]]'dir. O zaman [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]] Kullanılabilir üçgen parça; kesim firesi için ayrı bir pay gerekir." },
           { "kind": "h3", "text": "Örnek 10: Üçgen Kumaş Pankart" },
-          { "kind": "p", "text": "Dik üçgensel bir pankartın hipotenüsü [[6\\text{ ft}]] ve yüksekliği [[2.4\\text{ ft}]]'tir. O zaman [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]]. 7.2 fit kare düz malzeme; kenar paylarını kumaşçı ekler." },
+          { "kind": "p", "text": "Dik üçgensel bir pankartın hipotenüsü [[6\\text{ ft}]] ve yüksekliği [[2.4\\text{ ft}]]'tir. O zaman [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]] 7.2 fit kare düz malzeme; kenar paylarını kumaşçı ekler." },
           { "kind": "h3", "text": "Örnek 11: Büyük Üçgen Ölçüm Parseli" },
-          { "kind": "p", "text": "Dik üçgensel bir arazi bölümünün hipotenüsü [[80\\text{ m}]] ve yüksekliği [[30\\text{ m}]]'dir. O zaman [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]]. Yalnızca arsanın gerçekten dik üçgensel ve zeminin düz olduğu yerlerde geçerlidir." },
+          { "kind": "p", "text": "Dik üçgensel bir arazi bölümünün hipotenüsü [[80\\text{ m}]] ve yüksekliği [[30\\text{ m}]]'dir. O zaman [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]] Yalnızca arsanın gerçekten dik üçgensel ve zeminin düz olduğu yerlerde geçerlidir." },
           { "kind": "h3", "text": "Örnek 12: Üçgen Tente Destek Paneli" },
-          { "kind": "p", "text": "Dik üçgensel bir tente destek panelinin hipotenüsü [[8\\text{ m}]] ve yüksekliği [[3.6\\text{ m}]]'dir. O zaman [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]]. Düz üçgen alan; rüzgâr yükleri ve bağlantılar ayrı sorulardır." },
+          { "kind": "p", "text": "Dik üçgensel bir tente destek panelinin hipotenüsü [[8\\text{ m}]] ve yüksekliği [[3.6\\text{ m}]]'dir. O zaman [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]] Düz üçgen alan; rüzgâr yükleri ve bağlantılar ayrı sorulardır." },
           { "kind": "h3", "text": "Pratik Örneklerin Karşılaştırması" }
         ],
         "table": {
@@ -246,11 +246,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-geomean": {
         "h2": "Yüksekliğin Karesi Neden Hipotenüsün İki Parçasının Çarpımına Eşittir?",
         "blocks": [
-          { "kind": "p", "text": "Yükseklik hipotenüsü [[D]]'de keser ve onu [[AD=x]] ve [[DB=y]] olarak böler. İlişki şudur: [[[\\boxed{h^2=xy}]]]. Burada [[x]] birinci parça, [[y]] ikinci parça ve [[h]] dik yüksekliktir. Bunu ezberlemek yerine nereden geldiğini görmeye değer." },
+          { "kind": "p", "text": "Yükseklik hipotenüsü [[D]]'de keser ve onu [[AD=x]] ve [[DB=y]] olarak böler. İlişki şudur: [[[\\boxed{h^2=xy}]]] Burada [[x]] birinci parça, [[y]] ikinci parça ve [[h]] dik yüksekliktir. Bunu ezberlemek yerine nereden geldiğini görmeye değer." },
           { "kind": "h3", "text": "Bu İlişki Nasıl Çalışır?" },
           { "kind": "p", "text": "Yükseklik iki küçük dik üçgen oluşturur; her biri özgün üçgene ve dolayısıyla birbirine benzer. Birinin kısa kenarını diğerinin uzun kenarıyla eşleştirmek [[\\frac{x}{h}=\\frac{h}{y}]] verir; bu da içler dışlar çarpımıyla [[h^2=xy]] olur. Karekök alınırsa [[h=\\sqrt{xy}]]: yükseklik, hipotenüsün iki parçasının geometrik ortalamasıdır; karesi çarpımlarına eşit olan sayıdır." },
           { "kind": "h3", "text": "Sayısal Bir Örnek" },
-          { "kind": "p", "text": "[[x=4]] ve [[y=9]] verildiğinde [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]]. Tam hipotenüs [[c=4+9=13]]'tür ve alan [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]]. Hipotenüsün iki parçası bilindiğinde yükseklik hiçbir dik kenar ölçümü olmadan bulunur." },
+          { "kind": "p", "text": "[[x=4]] ve [[y=9]] verildiğinde [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]] Tam hipotenüs [[c=4+9=13]]'tür ve alan [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]] Hipotenüsün iki parçası bilindiğinde yükseklik hiçbir dik kenar ölçümü olmadan bulunur." },
           { "kind": "h3", "text": "Bu İlişki Ne Zaman Yararlıdır?" },
           { "kind": "p", "text": "Yüksekliğin eksik ama parçaların verildiği geometri alıştırmalarında, benzerlik problemlerinde ve bir yükseklik ölçümünün bağımsız bir kontrole ihtiyaç duyduğu her durumda karşımıza çıkar. Yükseklik sınırını da açıklar: [[xy]] çarpımı sabit hipotenüsle sınırlıdır, bu yüzden yükseklik de sınırlıdır. Hesaplayıcı [[x]] ve [[y]]'yi girdi olarak istemez; bu teorem destekleyici bilgidir, bir hesaplayıcı alanı değil." }
         ]
@@ -258,7 +258,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-legs": {
         "h2": "Hipotenüs ve Yükseklik Bilindiğinde İki Dik Kenar Nasıl Bulunur",
         "blocks": [
-          { "kind": "p", "text": "Hesaplayıcı alan için yalnızca [[c]] ve [[h]]'ye ihtiyaç duyar, ama bu iki ölçüm iki dik kenar uzunluğunu da belirlemeye yeter; yer değiştirmeleri dışında. [[a^2+b^2=c^2]] ve [[ab=ch]] denklemlerinden başlayın. [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]] olduğundan, yerine koymak [[(a^2-b^2)^2=c^4-4c^2h^2]] verir ve dolayısıyla [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. İki işaret iki dik kenar atamasına karşılık gelir: dik kenarları değiştirmek üçgeni veya alanını değiştirmez." },
+          { "kind": "p", "text": "Hesaplayıcı alan için yalnızca [[c]] ve [[h]]'ye ihtiyaç duyar, ama bu iki ölçüm iki dik kenar uzunluğunu da belirlemeye yeter; yer değiştirmeleri dışında. [[a^2+b^2=c^2]] ve [[ab=ch]] denklemlerinden başlayın. [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]] olduğundan, yerine koymak [[(a^2-b^2)^2=c^4-4c^2h^2]] verir ve dolayısıyla [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]] İki işaret iki dik kenar atamasına karşılık gelir: dik kenarları değiştirmek üçgeni veya alanını değiştirmez." },
           { "kind": "p", "text": "Sayısal örnek: [[c=10]] ve [[h=4.8]] verildiğinde [[ab=ch=48]] ve [[a^2+b^2=100]] olur. Dik kenarlar [[a=6]] ve [[b=8]]'dir. Doğrulayın: [[6^2+8^2=10^2]], [[36+64=100]]. Alan iki yönden de kontrol edilir: [[K=\\frac{6\\times8}{2}=24]] ve [[K=\\frac{10\\times4.8}{2}=24]]. Bu ek bir matematiksel içgörüdür, mevcut hesaplayıcının fazladan bir işlevi değil ve hesaplayıcının amacından uzaklaştırmamalıdır: hipotenüs ve yükseklikten alan." }
         ]
       },
@@ -471,7 +471,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-intro": {
         "h2": "Så beräknar du arean av en rätvinklig triangel med dess hypotenusa och höjd",
         "blocks": [
-          { "kind": "p", "text": "En rätvinklig triangel har hypotenusan [[10\\text{ m}]] och höjden mot den hypotenusan mäter [[4.8\\text{ m}]]. Tillämpa [[K=ch/2]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Triangeln omsluter 24 kvadratmeter plan yta. Detta är hela metoden som räknaren automatiserar: en sida, dess vinkelräta höjd, en multiplikation, en halvering." },
+          { "kind": "p", "text": "En rätvinklig triangel har hypotenusan [[10\\text{ m}]] och höjden mot den hypotenusan mäter [[4.8\\text{ m}]]. Tillämpa [[K=ch/2]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Triangeln omsluter 24 kvadratmeter plan yta. Detta är hela metoden som räknaren automatiserar: en sida, dess vinkelräta höjd, en multiplikation, en halvering." },
           { "kind": "p", "text": "Hypotenusan fungerar som bas eftersom vilken sida som helst i en triangel kan vara bas när den matchande vinkelräta höjden är känd. Höjden är den vinkelräta sträckan från det rätvinkliga hörnet till hypotenusan, och den måste möta hypotenusan i rät vinkel; en sned sträcka är inte den höjd som formeln behöver. Eftersom arean bara beror på basen och dess höjd behövs de två kateterna inte som indata, och resultatet uttrycks alltid i kvadratenheter av den använda längdenheten." }
         ]
       },
@@ -488,7 +488,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Förstå höjden mot hypotenusan" },
           { "kind": "p", "text": "I triangeln [[ABC]] är [[C]] det rätvinkliga hörnet och [[AB]] hypotenusan. Höjden [[h]] är sträckan [[CD]] från [[C]] vinkelrätt mot [[AB]], så [[CD\\perp AB]], [[CD=h]] och [[AB=c]], med [[D]] som fotpunkt, som delar triangeln i två mindre rätvinkliga trianglar inbäddade i den." },
           { "kind": "h3", "text": "Hur höjden delar hypotenusan" },
-          { "kind": "p", "text": "Låt höjden skära hypotenusan i [[AD=x]] och [[DB=y]]. Då är [[[\\boxed{x+y=c}]]]. Varje mindre triangel innehåller en rät vinkel och delar en spetsig vinkel med den ursprungliga, så alla tre trianglarna är likformiga. Likformigheten hos de två mindre trianglarna ger [[x/h=h/y]], och korsmultiplikation ger [[[\\boxed{h^2=xy}]]], det geometriska medelvärdessambandet: höjden är det geometriska medelvärdet av hypotenusans två delar, och utgångspunkten för maximihöjdsregeln nedan." }
+          { "kind": "p", "text": "Låt höjden skära hypotenusan i [[AD=x]] och [[DB=y]]. Då är [[[\\boxed{x+y=c}]]] Varje mindre triangel innehåller en rät vinkel och delar en spetsig vinkel med den ursprungliga, så alla tre trianglarna är likformiga. Likformigheten hos de två mindre trianglarna ger [[x/h=h/y]], och korsmultiplikation ger [[[\\boxed{h^2=xy}]]], det geometriska medelvärdessambandet: höjden är det geometriska medelvärdet av hypotenusans två delar, och utgångspunkten för maximihöjdsregeln nedan." }
         ],
         "imgAlt": "Triangel ABC med rät vinkel vid C, hypotenusan AB betecknad c, höjden CD betecknad h, delarna x och y",
         "figcaption": "Triangel ABC med höjden CD mot hypotenusan: AD = x, DB = y, x + y = c, h² = xy och K = ch/2."
@@ -496,7 +496,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-formula": {
         "h2": "Varför är areaformeln halva hypotenusan gånger höjden?",
         "blocks": [
-          { "kind": "p", "text": "Varje triangels area utgår från en regel [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Vilken sida som helst kan vara bas om höjden som används är vinkelrät mot den. Räknaren väljer hypotenusan som bas, så [[\\text{base}=c]] och den matchande vinkelräta höjden är höjden, [[\\text{height}=h]]. Insättning ger [[K=\\frac12\\times c\\times h]], vilket är [[[\\boxed{K=\\frac{ch}{2}}]]]." },
+          { "kind": "p", "text": "Varje triangels area utgår från en regel [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Vilken sida som helst kan vara bas om höjden som används är vinkelrät mot den. Räknaren väljer hypotenusan som bas, så [[\\text{base}=c]] och den matchande vinkelräta höjden är höjden, [[\\text{height}=h]]. Insättning ger [[K=\\frac12\\times c\\times h]], vilket är [[[\\boxed{K=\\frac{ch}{2}}]]]" },
           { "kind": "h3", "text": "Varför kan hypotenusan användas som bas?" },
           { "kind": "p", "text": "Hypotenusan är helt enkelt den valda basen för denna beräkning. Höjden måste mätas från det motstående hörnet, det rätvinkliga hörnet [[C]], och den måste vara vinkelrät mot hypotenusan. Att välja en annan sida som bas med dess egen matchande höjd ger samma area. Basen är en roll som en sida spelar, inte en permanent etikett." },
           { "kind": "h3", "text": "Varför delas formeln med två?" },
@@ -512,11 +512,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-relationship": {
         "h2": "Hur hypotenusan och höjden hänger ihop med de två kateterna",
         "blocks": [
-          { "kind": "p", "text": "Två giltiga areaformler beskriver samma triangel: [[K=ab/2]] och [[K=ch/2]]. Eftersom de beräknar samma area är [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplicera båda sidor med två: [[ab=ch]]. Omskrivning för höjden ger [[[\\boxed{h=\\frac{ab}{c}}]]]. Höjden mot hypotenusan är produkten av de två kateterna dividerad med hypotenusan, vilket förklarar varför de två areaformlerna aldrig kan vara oense om en konsistent triangel." },
+          { "kind": "p", "text": "Två giltiga areaformler beskriver samma triangel: [[K=ab/2]] och [[K=ch/2]]. Eftersom de beräknar samma area är [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplicera båda sidor med två: [[ab=ch]]. Omskrivning för höjden ger [[[\\boxed{h=\\frac{ab}{c}}]]] Höjden mot hypotenusan är produkten av de två kateterna dividerad med hypotenusan, vilket förklarar varför de två areaformlerna aldrig kan vara oense om en konsistent triangel." },
           { "kind": "h3", "text": "Varför detta samband är användbart" },
           { "kind": "p", "text": "Det kopplar samman tre sätt att beskriva samma geometri. Kateterna och hypotenusan bestämmer höjden, så en triangel uppmätt med sina sidor innehåller den redan. Höjden och hypotenusan bestämmer arean, så arean behöver aldrig att kateterna återställs först. Att beräkna arean genom endera formeln och jämföra är en av de starkaste kontrollerna, eftersom ett misstag på ena vägen sällan reproducerar sig på den andra." },
           { "kind": "h3", "text": "Koppla formeln till Pythagoras sats" },
-          { "kind": "p", "text": "Pythagoras sats [[a^2+b^2=c^2]] verifierar länken mellan kateterna och hypotenusan. Ta en 3-4-5-triangel: [[3^2+4^2=5^2]], [[9+16=25]]. Höjden är [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]]. Arean från hypotenusa och höjd är [[K=\\frac{5\\times2.4}{2}=6]], och från kateterna är den [[K=\\frac{3\\times4}{2}=6]]. Båda formlerna mäter samma omslutna område, och [[h=ab/c]] är länken som garanterar det." },
+          { "kind": "p", "text": "Pythagoras sats [[a^2+b^2=c^2]] verifierar länken mellan kateterna och hypotenusan. Ta en 3-4-5-triangel: [[3^2+4^2=5^2]], [[9+16=25]]. Höjden är [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]] Arean från hypotenusa och höjd är [[K=\\frac{5\\times2.4}{2}=6]], och från kateterna är den [[K=\\frac{3\\times4}{2}=6]]. Båda formlerna mäter samma omslutna område, och [[h=ab/c]] är länken som garanterar det." },
           { "kind": "h3", "text": "Hur höjden skapar två likformiga trianglar" },
           { "kind": "p", "text": "Höjden delar den ursprungliga triangeln i två mindre rätvinkliga trianglar, som var och en delar sina spetsiga vinklar med den ursprungliga. Två delade vinklar gör alla tre trianglarna likformiga, så motsvarande sidor förblir proportionella. Att matcha höjden mot hypotenusans delar ger [[x/h=h/y]], vilket korsmultipliceras till [[h^2=xy]]: det geometriska medelvärdessambandet är likformighet skriven som en ekvation." }
         ]
@@ -524,13 +524,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-max": {
         "h2": "Varför kan höjden aldrig vara längre än halva hypotenusan?",
         "blocks": [
-          { "kind": "p", "text": "Varje giltig rätvinklig triangel lyder [[[\\boxed{h\\leq\\frac{c}{2}}]]]. Detta är ett geometriskt faktum, och det förtjänar en härledning." },
+          { "kind": "p", "text": "Varje giltig rätvinklig triangel lyder [[[\\boxed{h\\leq\\frac{c}{2}}]]] Detta är ett geometriskt faktum, och det förtjänar en härledning." },
           { "kind": "h3", "text": "Förstå hypotenusans två delar" },
           { "kind": "p", "text": "Kom ihåg [[x+y=c]] och [[h^2=xy]]. Produkten [[xy]] är störst när de två delarna är lika, en följd av olikheten mellan aritmetiskt och geometriskt medelvärde: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. Eftersom [[x+y=c]] blir högersidan [[c^2/4]], så [[h^2\\leq\\frac{c^2}{4}]], och för positiva längder [[h\\leq c/2]]. I klartext: ojämna delningar krymper produkten och höjden; den högsta höjden kommer från den jämnaste delningen." },
           { "kind": "h3", "text": "Vad händer vid den maximala höjden?" },
           { "kind": "p", "text": "Maximumet inträffar när [[x=y=c/2]], och då är [[h=c/2]]. Detta ger en likbent rätvinklig triangel: dess två kateter är lika, och dess spetsiga vinklar är [[45^\\circ]] och [[45^\\circ]]. Höjden fungerar då också som median till hypotenusan, en giltig triangel, inte en degenererad." },
           { "kind": "h3", "text": "Exempel på maximal höjd" },
-          { "kind": "p", "text": "Givet [[c=10]] är den maximala höjden [[h_{\\max}=10/2=5]]. Den maximala arean är [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]]. Ingen rätvinklig triangel med hypotenusan 10 kan ha en höjd över 5, och därför kan ingen ha en area över 25 kvadratenheter." },
+          { "kind": "p", "text": "Givet [[c=10]] är den maximala höjden [[h_{\\max}=10/2=5]]. Den maximala arean är [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]] Ingen rätvinklig triangel med hypotenusan 10 kan ha en höjd över 5, och därför kan ingen ha en area över 25 kvadratenheter." },
           { "kind": "h3", "text": "Vad händer när höjden är större än c/2?" },
           { "kind": "p", "text": "Givet [[c=10]] och [[h=5.5]] är den maximala giltiga höjden 5, så dessa mätningar kan inte beskriva en rätvinklig triangel. Formeln ger ändå [[K=\\frac{10\\times5.5}{2}=27.5]], men det talet representerar ingen giltig rätvinklig triangel med de mätningarna. Behandla det som en signal om att en mätning är fel, inte som en area. Den här guiden påstår inte att räknaren automatiskt avvisar sådana indata." },
           { "kind": "h3", "text": "Vad händer när höjden är mycket mindre?" },
@@ -568,13 +568,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Fyra lösta exempel bygger metoden från det bekanta och uppåt. Vart och ett tillämpar [[K=ch/2]] med varje insättning visad, och vart och ett kontrollerar att höjden respekterar den rätvinkliga triangelns gräns." },
           { "kind": "h3", "text": "Exempel 1: Med räknarens befintliga exempel" },
-          { "kind": "p", "text": "Givet [[c=10]] och [[h=4.8]]. Steg 1: skriv formeln, [[K=ch/2]]. Steg 2: sätt in, [[K=\\frac{10\\times4.8}{2}]]. Steg 3: multiplicera, [[K=\\frac{48}{2}]]. Slutsvar: [[[\\boxed{K=24\\text{ square units}}]]]. Höjden är giltig eftersom [[4.8<5]], under maximumet av halva hypotenusan." },
+          { "kind": "p", "text": "Givet [[c=10]] och [[h=4.8]]. Steg 1: skriv formeln, [[K=ch/2]]. Steg 2: sätt in, [[K=\\frac{10\\times4.8}{2}]]. Steg 3: multiplicera, [[K=\\frac{48}{2}]]. Slutsvar: [[[\\boxed{K=24\\text{ square units}}]]] Höjden är giltig eftersom [[4.8<5]], under maximumet av halva hypotenusan." },
           { "kind": "h3", "text": "Exempel 2: En 3-4-5-triangel" },
-          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Hitta först höjden: [[h=ab/c]], så [[h=\\frac{3\\times4}{5}=2.4]]. Sedan [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]]. Verifiera med kateterna: [[K=\\frac{3\\times4}{2}=6]]. Båda vägarna är överens, som de måste." },
+          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Hitta först höjden: [[h=ab/c]], så [[h=\\frac{3\\times4}{5}=2.4]]. Sedan [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]] Verifiera med kateterna: [[K=\\frac{3\\times4}{2}=6]]. Båda vägarna är överens, som de måste." },
           { "kind": "h3", "text": "Exempel 3: En likbent rätvinklig triangel" },
-          { "kind": "p", "text": "Givet [[c=10]] och [[h=5]]. Då [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]]. Höjden är lika med halva hypotenusan, så kateterna är lika och varje spetsig vinkel är [[45^\\circ]]. Detta är den maximala möjliga arean för varje rätvinklig triangel med hypotenusan 10." },
+          { "kind": "p", "text": "Givet [[c=10]] och [[h=5]]. Då [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]] Höjden är lika med halva hypotenusan, så kateterna är lika och varje spetsig vinkel är [[45^\\circ]]. Detta är den maximala möjliga arean för varje rätvinklig triangel med hypotenusan 10." },
           { "kind": "h3", "text": "Exempel 4: En mindre triangulär höjd" },
-          { "kind": "p", "text": "Givet [[c=13]] och [[h=5]]. Då [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]]. Höjden uppfyller gränsen eftersom [[5\\leq6.5]]: halva hypotenusan är 6.5, och 5 ligger bekvämt under den." }
+          { "kind": "p", "text": "Givet [[c=13]] och [[h=5]]. Då [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]] Höjden uppfyller gränsen eftersom [[5\\leq6.5]]: halva hypotenusan är 6.5, och 5 ligger bekvämt under den." }
         ]
       },
       "sec-applications": {
@@ -582,29 +582,29 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Tolv lösta situationer visar formeln i olika skalor och i olika enheter. Var och en namnger triangeln i scenen, ger de två mätningarna, sätter in steg för steg och anger antagandet bakom den. Varje exempel är en rätvinklig panel, profil, sektion eller förenklad modell; formeln gäller den modellerade triangeln, inte varje böjt eller oregelbundet objekt med samma namn." },
           { "kind": "h3", "text": "Exempel 1: Trekantigt glasfönster" },
-          { "kind": "p", "text": "En rätvinklig glaspanel har hypotenusan [[2.5\\text{ m}]] och en vinkelrät höjd på [[1.2\\text{ m}]]. Med [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]]. Detta är den plana glasarean före ramen, förutsatt raka kanter och en sann rät vinkel." },
+          { "kind": "p", "text": "En rätvinklig glaspanel har hypotenusan [[2.5\\text{ m}]] och en vinkelrät höjd på [[1.2\\text{ m}]]. Med [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]] Detta är den plana glasarean före ramen, förutsatt raka kanter och en sann rät vinkel." },
           { "kind": "h3", "text": "Exempel 2: Trekantig rampsidopanel" },
-          { "kind": "p", "text": "En rätvinklig sidopanel till en ramp har hypotenusan [[4\\text{ m}]] och en vinkelrät höjd på [[1.5\\text{ m}]]. Då [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]]. Resultatet beskriver den trekantiga sidoprofilen, inte gångytan." },
+          { "kind": "p", "text": "En rätvinklig sidopanel till en ramp har hypotenusan [[4\\text{ m}]] och en vinkelrät höjd på [[1.5\\text{ m}]]. Då [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]] Resultatet beskriver den trekantiga sidoprofilen, inte gångytan." },
           { "kind": "h3", "text": "Exempel 3: Trekantig segelsektion" },
-          { "kind": "p", "text": "En rätvinklig segelsektion har hypotenusan [[13\\text{ ft}]] och en höjd på [[5\\text{ ft}]]. Då [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]]. Detta är den plana tygarean före sömmar eller krökning; riktiga segel buktar, så seglet modelleras som plant." },
+          { "kind": "p", "text": "En rätvinklig segelsektion har hypotenusan [[13\\text{ ft}]] och en höjd på [[5\\text{ ft}]]. Då [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]] Detta är den plana tygarean före sömmar eller krökning; riktiga segel buktar, så seglet modelleras som plant." },
           { "kind": "h3", "text": "Exempel 4: Uppmätning av en trekantig marksektion" },
-          { "kind": "p", "text": "En förenklad rätvinklig tomt har hypotenusan [[50\\text{ m}]] och en höjd på [[12\\text{ m}]]. Då [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]]. Detta uppskattar arean under en förenklad modell som behandlar gränser som raka linjer på plan mark." },
+          { "kind": "p", "text": "En förenklad rätvinklig tomt har hypotenusan [[50\\text{ m}]] och en höjd på [[12\\text{ m}]]. Då [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]] Detta uppskattar arean under en förenklad modell som behandlar gränser som raka linjer på plan mark." },
           { "kind": "h3", "text": "Exempel 5: Gussetplåt av stål" },
-          { "kind": "p", "text": "En rätvinklig stödplåt av stål har hypotenusan [[3.4\\text{ m}]] och en höjd på [[1.6\\text{ m}]]. Då [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]]. Detta är endast plan plåtarea; bärförmåga är en separat fråga." },
+          { "kind": "p", "text": "En rätvinklig stödplåt av stål har hypotenusan [[3.4\\text{ m}]] och en höjd på [[1.6\\text{ m}]]. Då [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]] Detta är endast plan plåtarea; bärförmåga är en separat fråga." },
           { "kind": "h3", "text": "Exempel 6: Trappsidoprofil" },
-          { "kind": "p", "text": "En förenklad rätvinklig trappsidoprofil har hypotenusan [[5\\text{ m}]] och en höjd på [[2\\text{ m}]]. Då [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]]. Detta beskriver den trekantiga sidoprofilen, inte summan av de enskilda trappstegen." },
+          { "kind": "p", "text": "En förenklad rätvinklig trappsidoprofil har hypotenusan [[5\\text{ m}]] och en höjd på [[2\\text{ m}]]. Då [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]] Detta beskriver den trekantiga sidoprofilen, inte summan av de enskilda trappstegen." },
           { "kind": "h3", "text": "Exempel 7: Trekantig vägskylt" },
-          { "kind": "p", "text": "En rätvinklig skyltpanel har hypotenusan [[1.8\\text{ m}]] och en höjd på [[0.8\\text{ m}]]. Då [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]]. 0.72 kvadratmeter skyltyta; monteringsdetaljer exkluderade." },
+          { "kind": "p", "text": "En rätvinklig skyltpanel har hypotenusan [[1.8\\text{ m}]] och en höjd på [[0.8\\text{ m}]]. Då [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]] 0.72 kvadratmeter skyltyta; monteringsdetaljer exkluderade." },
           { "kind": "h3", "text": "Exempel 8: Stödplåt för solpanel" },
-          { "kind": "p", "text": "En rätvinklig monteringsstödplåt har hypotenusan [[3\\text{ m}]] och en höjd på [[1.2\\text{ m}]]. Då [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]]. Endast panelarea; inget om producerad el, eftersom detta är ett monteringsfäste." },
+          { "kind": "p", "text": "En rätvinklig monteringsstödplåt har hypotenusan [[3\\text{ m}]] och en höjd på [[1.2\\text{ m}]]. Då [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]] Endast panelarea; inget om producerad el, eftersom detta är ett monteringsfäste." },
           { "kind": "h3", "text": "Exempel 9: Skärmall av plywood" },
-          { "kind": "p", "text": "En rätvinklig plywoodmall har hypotenusan [[2.5\\text{ m}]] och en höjd på [[1\\text{ m}]]. Då [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]]. Användbar trekantig bit; spill vid skärning behöver en separat marginal." },
+          { "kind": "p", "text": "En rätvinklig plywoodmall har hypotenusan [[2.5\\text{ m}]] och en höjd på [[1\\text{ m}]]. Då [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]] Användbar trekantig bit; spill vid skärning behöver en separat marginal." },
           { "kind": "h3", "text": "Exempel 10: Trekantig tygbanderoll" },
-          { "kind": "p", "text": "En rätvinklig banderoll har hypotenusan [[6\\text{ ft}]] och en höjd på [[2.4\\text{ ft}]]. Då [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]]. 7.2 kvadratfot plant material; fållmån läggs till av sömmerskan." },
+          { "kind": "p", "text": "En rätvinklig banderoll har hypotenusan [[6\\text{ ft}]] och en höjd på [[2.4\\text{ ft}]]. Då [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]] 7.2 kvadratfot plant material; fållmån läggs till av sömmerskan." },
           { "kind": "h3", "text": "Exempel 11: Stor trekantig uppmätt tomt" },
-          { "kind": "p", "text": "En rätvinklig marksektion har hypotenusan [[80\\text{ m}]] och en höjd på [[30\\text{ m}]]. Då [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]]. Giltigt endast där tomten är genuint rätvinklig på plan mark." },
+          { "kind": "p", "text": "En rätvinklig marksektion har hypotenusan [[80\\text{ m}]] och en höjd på [[30\\text{ m}]]. Då [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]] Giltigt endast där tomten är genuint rätvinklig på plan mark." },
           { "kind": "h3", "text": "Exempel 12: Trekantig stödplåt för markis" },
-          { "kind": "p", "text": "En rätvinklig stödplåt för markis har hypotenusan [[8\\text{ m}]] och en höjd på [[3.6\\text{ m}]]. Då [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]]. Plan trekantig area; vindlaster och fästen är separata frågor." },
+          { "kind": "p", "text": "En rätvinklig stödplåt för markis har hypotenusan [[8\\text{ m}]] och en höjd på [[3.6\\text{ m}]]. Då [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]] Plan trekantig area; vindlaster och fästen är separata frågor." },
           { "kind": "h3", "text": "Jämförelse av praktiska exempel" }
         ],
         "table": {
@@ -630,11 +630,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-geomean": {
         "h2": "Varför är höjdens kvadrat lika med produkten av hypotenusans två delar?",
         "blocks": [
-          { "kind": "p", "text": "Höjden möter hypotenusan i [[D]] och delar den i [[AD=x]] och [[DB=y]]. Sambandet är [[[\\boxed{h^2=xy}]]]. Här är [[x]] den första delen, [[y]] den andra, och [[h]] den vinkelräta höjden. Det är värt att se varifrån detta kommer snarare än att memorera det." },
+          { "kind": "p", "text": "Höjden möter hypotenusan i [[D]] och delar den i [[AD=x]] och [[DB=y]]. Sambandet är [[[\\boxed{h^2=xy}]]] Här är [[x]] den första delen, [[y]] den andra, och [[h]] den vinkelräta höjden. Det är värt att se varifrån detta kommer snarare än att memorera det." },
           { "kind": "h3", "text": "Hur fungerar detta samband?" },
           { "kind": "p", "text": "Höjden skapar två mindre rätvinkliga trianglar, var och en likformig med den ursprungliga och därför med varandra. Att matcha den ena triangelns korta katet mot den andras långa ger [[\\frac{x}{h}=\\frac{h}{y}]], vilket korsmultipliceras till [[h^2=xy]]. Med kvadratrötter, [[h=\\sqrt{xy}]]: höjden är det geometriska medelvärdet av hypotenusans två delar, det tal vars kvadrat är lika med deras produkt." },
           { "kind": "h3", "text": "Ett numeriskt exempel" },
-          { "kind": "p", "text": "Givet [[x=4]] och [[y=9]] är [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]]. Den fullständiga hypotenusan är [[c=4+9=13]], och arean är [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]]. När hypotenusans två delar är kända följer höjden utan några katetmätningar." },
+          { "kind": "p", "text": "Givet [[x=4]] och [[y=9]] är [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]] Den fullständiga hypotenusan är [[c=4+9=13]], och arean är [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]] När hypotenusans två delar är kända följer höjden utan några katetmätningar." },
           { "kind": "h3", "text": "När är detta samband användbart?" },
           { "kind": "p", "text": "Det dyker upp i geometriuppgifter där höjden saknas men delarna är givna, i likformighetsproblem, och närhelst en höjdmätning behöver en oberoende kontroll. Det förklarar också höjdgränsen: produkten [[xy]] är begränsad av den fixerade hypotenusan, så höjden är också begränsad. Räknaren behöver inte [[x]] och [[y]] som indata; denna sats är stödjande kunskap, inte ett räknarfält." }
         ]
@@ -642,7 +642,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH6 = {
       "sec-legs": {
         "h2": "Så återställer du de två kateterna när hypotenusan och höjden är kända",
         "blocks": [
-          { "kind": "p", "text": "Räknaren behöver bara [[c]] och [[h]] för arean, men de två mätningarna innehåller också tillräckligt med information för att bestämma de två katetlängderna, upp till att byta plats på dem. Utgå från [[a^2+b^2=c^2]] och [[ab=ch]]. Eftersom [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]] ger insättning [[(a^2-b^2)^2=c^4-4c^2h^2]], och därför [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. De två tecknen motsvarar de två katettilldelningarna: att byta kateter ändrar inget om triangeln eller dess area." },
+          { "kind": "p", "text": "Räknaren behöver bara [[c]] och [[h]] för arean, men de två mätningarna innehåller också tillräckligt med information för att bestämma de två katetlängderna, upp till att byta plats på dem. Utgå från [[a^2+b^2=c^2]] och [[ab=ch]]. Eftersom [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]] ger insättning [[(a^2-b^2)^2=c^4-4c^2h^2]], och därför [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]] De två tecknen motsvarar de två katettilldelningarna: att byta kateter ändrar inget om triangeln eller dess area." },
           { "kind": "p", "text": "Numeriskt exempel: givet [[c=10]] och [[h=4.8]] är [[ab=ch=48]] och [[a^2+b^2=100]]. Kateterna är [[a=6]] och [[b=8]]. Verifiera: [[6^2+8^2=10^2]], [[36+64=100]]. Arean kontrolleras åt båda hållen: [[K=\\frac{6\\times8}{2}=24]] och [[K=\\frac{10\\times4.8}{2}=24]]. Detta är en extra matematisk insikt, inte en extrafunktion i den befintliga räknaren, och den bör inte distrahera från räknarens syfte: area från hypotenusa och höjd." }
         ]
       },

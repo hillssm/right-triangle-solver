@@ -27,7 +27,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
       "sec-intro": {
         "h2": "Cara Menghitung Luas Segitiga Siku-Siku dari Sudut",
         "blocks": [
-          { "kind": "p", "text": "Misalkan sebuah segitiga siku-siku memiliki sisi siku-siku [[b=4\\text{ m}]], sisi miring [[c=5\\text{ m}]], dan sudut lancip di antara kedua sisi itu berukuran sekitar [[A\\approx36.87^\\circ]]. Luasnya langsung diperoleh: [[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]. Karena [[\\sin(36.87^\\circ)\\approx0.6]], luasnya kira-kira [[[\\boxed{K=6\\text{ m}^2}]]]. Segitiga itu menutupi 6 meter persegi permukaan datar." },
+          { "kind": "p", "text": "Misalkan sebuah segitiga siku-siku memiliki sisi siku-siku [[b=4\\text{ m}]], sisi miring [[c=5\\text{ m}]], dan sudut lancip di antara kedua sisi itu berukuran sekitar [[A\\approx36.87^\\circ]]. Luasnya langsung diperoleh: [[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]. Karena [[\\sin(36.87^\\circ)\\approx0.6]], luasnya kira-kira [[[\\boxed{K=6\\text{ m}^2}]]] Segitiga itu menutupi 6 meter persegi permukaan datar." },
           { "kind": "p", "text": "Kalkulator ini menangani situasi tersebut: dengan satu sisi siku-siku, sisi miring, dan sudut lancip di antara keduanya, sinus mengubah sisi miring menjadi tinggi tegak lurus yang hilang, dan setengah dari alas kali tinggi memberikan luas dalam satuan persegi. Sudut apit harus terletak di antara dua sisi yang dimasukkan, dan setiap mode memasangkan satu sudut tertentu dengan dua sisinya." },
           { "kind": "p", "text": "Sudut [[36.87^\\circ]] dibulatkan dari sekitar [[36.8699^\\circ]]; menjaga presisi penuh pada kalkulator memberikan hasil yang paling akurat." }
         ]
@@ -75,7 +75,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           { "kind": "p", "text": "[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]" },
           { "kind": "p", "text": "Variabel-variabelnya adalah: [[b]] sisi siku-siku yang bersebelahan dengan sudut [[A]], [[c]] sisi miring, [[A]] sudut lancip apit di antara [[b]] dan [[c]], dan [[K]] luas." },
           { "kind": "h3", "text": "Penurunan Rumus Langkah demi Langkah" },
-          { "kind": "p", "text": "Mulai dari rumus luas sisi siku-siku [[K=ab/2]]. Dari perbandingan sinus pada sudut [[A]], [[\\sin(A)=a/c]], sehingga [[a=c\\sin(A)]]. Sisi depan [[a]] sedang ditulis ulang sebagai komponen sinus dari sisi miring. Substitusi menghasilkan [[K=\\frac{b(c\\sin(A))}{2}]], dan penataan ulang menghasilkan [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]. Sisi depan yang tidak diketahui tidak perlu dimasukkan karena rumus membangunnya dari sisi miring dan sudut di balik layar." },
+          { "kind": "p", "text": "Mulai dari rumus luas sisi siku-siku [[K=ab/2]]. Dari perbandingan sinus pada sudut [[A]], [[\\sin(A)=a/c]], sehingga [[a=c\\sin(A)]]. Sisi depan [[a]] sedang ditulis ulang sebagai komponen sinus dari sisi miring. Substitusi menghasilkan [[K=\\frac{b(c\\sin(A))}{2}]], dan penataan ulang menghasilkan [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]] Sisi depan yang tidak diketahui tidak perlu dimasukkan karena rumus membangunnya dari sisi miring dan sudut di balik layar." },
           { "kind": "h3", "text": "Contoh Pengerjaan Lengkap" },
           { "kind": "p", "text": "Diketahui [[b=4\\text{ m}]], [[c=5\\text{ m}]], [[A\\approx36.87^\\circ]]:" },
           { "kind": "p", "text": "Jawaban tersebut menyatakan segitiga menutupi sekitar 6 meter persegi. Karena sudut masukan dibulatkan, kata kira-kira layak ada dalam laporan, meskipun dengan presisi penuh masukan yang sama menghasilkan tepat 6." },
@@ -89,7 +89,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           "<strong>Substitusikan.</strong> [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]].",
           "<strong>Hitung sinusnya.</strong> [[\\sin(36.87^\\circ)\\approx0.6]].",
           "<strong>Kalikan.</strong> [[K\\approx(20\\times0.6)/2]].",
-          "<strong>Bagi.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]."
+          "<strong>Bagi.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]"
         ]
       },
       "sec-mode2": {
@@ -99,7 +99,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           { "kind": "p", "text": "[[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]" },
           { "kind": "p", "text": "Variabel-variabelnya adalah: [[a]] sisi siku-siku yang bersebelahan dengan sudut [[B]], yang berhadapan dengan sudut [[A]]; [[c]] sisi miring; [[B]] sudut lancip apit di antara [[a]] dan [[c]]; dan [[K]] luas." },
           { "kind": "h3", "text": "Penurunan Rumus Langkah demi Langkah" },
-          { "kind": "p", "text": "Mulai lagi dari [[K=ab/2]]. Perbandingan sinus yang diukur pada sudut [[B]] berbunyi [[\\sin(B)=b/c]], karena dari sudut pandang [[B]] sisi depannya adalah [[b]]. Maka [[b=c\\sin(B)]]. Substitusi menghasilkan [[K=\\frac{a(c\\sin(B))}{2}]], sehingga [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]. Rumus menggunakan sisi [[a]] meskipun [[a]] disebut sisi depan dalam notasi utama halaman ini; label depan milik sudut [[A]], sedangkan relatif terhadap sudut [[B]] sisi yang sama adalah sisi samping. Label sisi selalu relatif terhadap sudut acuan yang dipilih." },
+          { "kind": "p", "text": "Mulai lagi dari [[K=ab/2]]. Perbandingan sinus yang diukur pada sudut [[B]] berbunyi [[\\sin(B)=b/c]], karena dari sudut pandang [[B]] sisi depannya adalah [[b]]. Maka [[b=c\\sin(B)]]. Substitusi menghasilkan [[K=\\frac{a(c\\sin(B))}{2}]], sehingga [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]] Rumus menggunakan sisi [[a]] meskipun [[a]] disebut sisi depan dalam notasi utama halaman ini; label depan milik sudut [[A]], sedangkan relatif terhadap sudut [[B]] sisi yang sama adalah sisi samping. Label sisi selalu relatif terhadap sudut acuan yang dipilih." },
           { "kind": "h3", "text": "Contoh Pengerjaan Lengkap" },
           { "kind": "p", "text": "Diketahui [[a=3\\text{ m}]], [[c=5\\text{ m}]], [[B\\approx53.13^\\circ]]:" },
           { "kind": "p", "text": "Hasilnya sama, 6 meter persegi, seperti contoh Mode 1, karena kedua contoh menggambarkan segitiga 3-4-5 yang sama dilihat dari dua sudut lancipnya." },
@@ -112,7 +112,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           "<strong>Tulis rumusnya.</strong> [[K=ac\\sin(B)/2]].",
           "<strong>Substitusikan.</strong> [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]].",
           "<strong>Hitung sinusnya.</strong> [[\\sin(53.13^\\circ)\\approx0.8]].",
-          "<strong>Kalikan dan bagi.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]."
+          "<strong>Kalikan dan bagi.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]"
         ]
       },
       "sec-same": {
@@ -163,13 +163,13 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Empat contoh membangun metode ini pada segitiga-segitiga yang dikenal, dari tripel 3-4-5 hingga kasus sudut istimewa." },
           { "kind": "h3", "text": "Contoh 1: Segitiga 3-4-5 Menggunakan Sudut A" },
-          { "kind": "p", "text": "Diketahui [[b=4]], [[c=5]], [[A\\approx36.87^\\circ]], gunakan [[K=bc\\sin(A)/2]]. Kemudian [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], [[K\\approx(20\\times0.6)/2]], sehingga [[[\\boxed{K\\approx6}]]]. Luasnya 6 satuan persegi karena segitiga menutupi enam persegi satuan permukaan datar; dengan sudut presisi penuh nilainya tepat 6." },
+          { "kind": "p", "text": "Diketahui [[b=4]], [[c=5]], [[A\\approx36.87^\\circ]], gunakan [[K=bc\\sin(A)/2]]. Kemudian [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], [[K\\approx(20\\times0.6)/2]], sehingga [[[\\boxed{K\\approx6}]]] Luasnya 6 satuan persegi karena segitiga menutupi enam persegi satuan permukaan datar; dengan sudut presisi penuh nilainya tepat 6." },
           { "kind": "h3", "text": "Contoh 2: Segitiga yang Sama Menggunakan Sudut B" },
-          { "kind": "p", "text": "Diketahui [[a=3]], [[c=5]], [[B\\approx53.13^\\circ]], gunakan [[K=ac\\sin(B)/2]]. Kemudian [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]], [[K\\approx(15\\times0.8)/2]], sehingga [[[\\boxed{K\\approx6}]]]. Hasilnya cocok dengan Contoh 1 karena kedua contoh menggambarkan segitiga yang sama; kedua sudut adalah pandangan berkomplemen dari satu bangun." },
+          { "kind": "p", "text": "Diketahui [[a=3]], [[c=5]], [[B\\approx53.13^\\circ]], gunakan [[K=ac\\sin(B)/2]]. Kemudian [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]], [[K\\approx(15\\times0.8)/2]], sehingga [[[\\boxed{K\\approx6}]]] Hasilnya cocok dengan Contoh 1 karena kedua contoh menggambarkan segitiga yang sama; kedua sudut adalah pandangan berkomplemen dari satu bangun." },
           { "kind": "h3", "text": "Contoh 3: Segitiga 30-60-90" },
-          { "kind": "p", "text": "Ambil [[c=10]] dan [[A=30^\\circ]]. Sisinya mengikuti [[b=c\\cos(30^\\circ)=5\\sqrt{3}]]. Kemudian [[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]], dan karena [[\\sin(30^\\circ)=1/2]], [[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]]. Nilai sudut istimewa seperti [[\\sin(30^\\circ)]] dan [[\\cos(30^\\circ)]] memberikan bentuk eksak sebelum pembulatan desimal apa pun, itulah sebabnya segitiga-segitiga ini berguna untuk memeriksa kalkulator dengan tangan." },
+          { "kind": "p", "text": "Ambil [[c=10]] dan [[A=30^\\circ]]. Sisinya mengikuti [[b=c\\cos(30^\\circ)=5\\sqrt{3}]]. Kemudian [[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]], dan karena [[\\sin(30^\\circ)=1/2]], [[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]] Nilai sudut istimewa seperti [[\\sin(30^\\circ)]] dan [[\\cos(30^\\circ)]] memberikan bentuk eksak sebelum pembulatan desimal apa pun, itulah sebabnya segitiga-segitiga ini berguna untuk memeriksa kalkulator dengan tangan." },
           { "kind": "h3", "text": "Contoh 4: Segitiga 45-45-90" },
-          { "kind": "p", "text": "Diketahui [[c=10]] dan [[A=45^\\circ]], sisi-sisinya sama: [[a=b=5\\sqrt{2}]]. Kemudian [[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]], dan karena [[\\sin(45^\\circ)=\\sqrt{2}/2]], hasil kalinya menyederhanakan menjadi [[[\\boxed{K=25}]]]. Ini adalah segitiga siku-siku sama kaki, dan seperti ditunjukkan nanti, segitiga ini juga memiliki luas maksimum yang mungkin untuk segitiga siku-siku dengan sisi miring 10 satuan." }
+          { "kind": "p", "text": "Diketahui [[c=10]] dan [[A=45^\\circ]], sisi-sisinya sama: [[a=b=5\\sqrt{2}]]. Kemudian [[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]], dan karena [[\\sin(45^\\circ)=\\sqrt{2}/2]], hasil kalinya menyederhanakan menjadi [[[\\boxed{K=25}]]] Ini adalah segitiga siku-siku sama kaki, dan seperti ditunjukkan nanti, segitiga ini juga memiliki luas maksimum yang mungkin untuk segitiga siku-siku dengan sisi miring 10 satuan." }
         ]
       },
       "sec-applications": {
@@ -177,29 +177,29 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Dua belas situasi yang dikerjakan penuh, enam untuk setiap mode kalkulator. Setiap contoh menyatakan pengukurannya, memilih modenya, menerapkan rumusnya, dan menafsirkan jawabannya. Nilai sudut ditampilkan hingga dua desimal sedangkan aritmetikanya menjaga presisi penuh di baliknya." },
           { "kind": "h3", "text": "Contoh Praktis 1: Atap Pelana Segitiga" },
-          { "kind": "p", "text": "Penampang atap pelana segitiga siku-siku yang disederhanakan memiliki sisi samping [[b=4\\text{ m}]], sisi miring [[c=5\\text{ m}]], dan sudut apit [[A\\approx36.87^\\circ]]. Gunakan Mode 1: [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], sehingga [[[\\boxed{K\\approx6\\text{ m}^2}]]]. Ini luas penampang datar, bukan total permukaan atap. Periksa: [[K=(3\\times4)/2=6]]." },
+          { "kind": "p", "text": "Penampang atap pelana segitiga siku-siku yang disederhanakan memiliki sisi samping [[b=4\\text{ m}]], sisi miring [[c=5\\text{ m}]], dan sudut apit [[A\\approx36.87^\\circ]]. Gunakan Mode 1: [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]], sehingga [[[\\boxed{K\\approx6\\text{ m}^2}]]] Ini luas penampang datar, bukan total permukaan atap. Periksa: [[K=(3\\times4)/2=6]]." },
           { "kind": "h3", "text": "Contoh Praktis 2: Panel Samping Ram Segitiga" },
-          { "kind": "p", "text": "Panel samping ram segitiga siku-siku memiliki [[b=2.4\\text{ m}]], [[c=2.5\\text{ m}]], dan [[A\\approx16.26^\\circ]]. Sisi depan yang mendasarinya adalah 0,7 m, sehingga [[\\sin(A)=0.7/2.5=0.28]]. Gunakan Mode 1: [[K=(2.4\\times2.5\\times0.28)/2]], sehingga [[[\\boxed{K\\approx0.84\\text{ m}^2}]]]. Ini luas panel samping, bukan permukaan ram yang miring. Periksa: [[K=(0.7\\times2.4)/2=0.84]]." },
+          { "kind": "p", "text": "Panel samping ram segitiga siku-siku memiliki [[b=2.4\\text{ m}]], [[c=2.5\\text{ m}]], dan [[A\\approx16.26^\\circ]]. Sisi depan yang mendasarinya adalah 0,7 m, sehingga [[\\sin(A)=0.7/2.5=0.28]]. Gunakan Mode 1: [[K=(2.4\\times2.5\\times0.28)/2]], sehingga [[[\\boxed{K\\approx0.84\\text{ m}^2}]]] Ini luas panel samping, bukan permukaan ram yang miring. Periksa: [[K=(0.7\\times2.4)/2=0.84]]." },
           { "kind": "h3", "text": "Contoh Praktis 3: Layar Segitiga" },
-          { "kind": "p", "text": "Penampang layar segitiga siku-siku yang datar memiliki [[b=12\\text{ ft}]], [[c=13\\text{ ft}]], dan [[A\\approx22.62^\\circ]]. Sisi depannya 5 ft, sehingga [[\\sin(A)=5/13]]. Gunakan Mode 1: [[K=(12\\times13\\times(5/13))/2]], sehingga [[[\\boxed{K=30\\text{ ft}^2}]]]. Ini luas geometris datar, sebelum jahitan atau sisa bahan. Periksa: [[K=(5\\times12)/2=30]]." },
+          { "kind": "p", "text": "Penampang layar segitiga siku-siku yang datar memiliki [[b=12\\text{ ft}]], [[c=13\\text{ ft}]], dan [[A\\approx22.62^\\circ]]. Sisi depannya 5 ft, sehingga [[\\sin(A)=5/13]]. Gunakan Mode 1: [[K=(12\\times13\\times(5/13))/2]], sehingga [[[\\boxed{K=30\\text{ ft}^2}]]] Ini luas geometris datar, sebelum jahitan atau sisa bahan. Periksa: [[K=(5\\times12)/2=30]]." },
           { "kind": "h3", "text": "Contoh Praktis 4: Petak Tanah Segitiga Siku-Siku" },
-          { "kind": "p", "text": "Sketsa survei menggambarkan petak segitiga siku-siku dengan [[b=40\\text{ m}]], [[c=50\\text{ m}]], dan [[A\\approx36.87^\\circ]]. Karena [[\\sin(A)=30/50=0.6]], Mode 1 menghasilkan [[K=(40\\times50\\times0.6)/2]], sehingga [[[\\boxed{K=600\\text{ m}^2}]]]. Ini luas petak planar dalam model datar. Periksa: [[K=(30\\times40)/2=600]]." },
+          { "kind": "p", "text": "Sketsa survei menggambarkan petak segitiga siku-siku dengan [[b=40\\text{ m}]], [[c=50\\text{ m}]], dan [[A\\approx36.87^\\circ]]. Karena [[\\sin(A)=30/50=0.6]], Mode 1 menghasilkan [[K=(40\\times50\\times0.6)/2]], sehingga [[[\\boxed{K=600\\text{ m}^2}]]] Ini luas petak planar dalam model datar. Periksa: [[K=(30\\times40)/2=600]]." },
           { "kind": "h3", "text": "Contoh Praktis 5: Panel Penyangga Baja" },
-          { "kind": "p", "text": "Panel baja segitiga datar memiliki [[b=1.5\\text{ m}]], [[c=1.7\\text{ m}]], dan [[A\\approx28.07^\\circ]]. Sisi depannya 0,8 m, sehingga [[\\sin(A)=0.8/1.7]]. Gunakan Mode 1: [[K=(1.5\\times1.7\\times(0.8/1.7))/2]], sehingga [[[\\boxed{K=0.6\\text{ m}^2}]]]. Hanya luas planar, bukan kapasitas beban. Periksa: [[K=(0.8\\times1.5)/2=0.6]]." },
+          { "kind": "p", "text": "Panel baja segitiga datar memiliki [[b=1.5\\text{ m}]], [[c=1.7\\text{ m}]], dan [[A\\approx28.07^\\circ]]. Sisi depannya 0,8 m, sehingga [[\\sin(A)=0.8/1.7]]. Gunakan Mode 1: [[K=(1.5\\times1.7\\times(0.8/1.7))/2]], sehingga [[[\\boxed{K=0.6\\text{ m}^2}]]] Hanya luas planar, bukan kapasitas beban. Periksa: [[K=(0.8\\times1.5)/2=0.6]]." },
           { "kind": "h3", "text": "Contoh Praktis 6: Profil Samping Tangga" },
-          { "kind": "p", "text": "Panel samping tangga yang disederhanakan memiliki sisi horizontal [[b=3.2\\text{ m}]], sisi miring [[c=4\\text{ m}]], dan [[A\\approx36.87^\\circ]]. Dengan [[\\sin(A)=0.6]], Mode 1 menghasilkan [[K=(3.2\\times4\\times0.6)/2]], sehingga [[[\\boxed{K=3.84\\text{ m}^2}]]]. Ini profil samping, bukan luas anak tangga. Periksa: dengan sisi lainnya 2,4 m, [[K=(2.4\\times3.2)/2=3.84]]." },
+          { "kind": "p", "text": "Panel samping tangga yang disederhanakan memiliki sisi horizontal [[b=3.2\\text{ m}]], sisi miring [[c=4\\text{ m}]], dan [[A\\approx36.87^\\circ]]. Dengan [[\\sin(A)=0.6]], Mode 1 menghasilkan [[K=(3.2\\times4\\times0.6)/2]], sehingga [[[\\boxed{K=3.84\\text{ m}^2}]]] Ini profil samping, bukan luas anak tangga. Periksa: dengan sisi lainnya 2,4 m, [[K=(2.4\\times3.2)/2=3.84]]." },
           { "kind": "h3", "text": "Contoh Praktis 7: Jendela Kaca Segitiga" },
-          { "kind": "p", "text": "Jendela segitiga siku-siku memiliki sisi [[a=0.6\\text{ m}]], sisi miring [[c=1\\text{ m}]], dan sudut apit [[B\\approx53.13^\\circ]]. Dengan [[\\sin(B)=0.8]], Mode 2 menghasilkan [[K=(0.6\\times1\\times0.8)/2]], sehingga [[[\\boxed{K=0.24\\text{ m}^2}]]]. Ini luas kaca sebelum kelonggaran bingkai. Periksa: [[K=(0.6\\times0.8)/2=0.24]]." },
+          { "kind": "p", "text": "Jendela segitiga siku-siku memiliki sisi [[a=0.6\\text{ m}]], sisi miring [[c=1\\text{ m}]], dan sudut apit [[B\\approx53.13^\\circ]]. Dengan [[\\sin(B)=0.8]], Mode 2 menghasilkan [[K=(0.6\\times1\\times0.8)/2]], sehingga [[[\\boxed{K=0.24\\text{ m}^2}]]] Ini luas kaca sebelum kelonggaran bingkai. Periksa: [[K=(0.6\\times0.8)/2=0.24]]." },
           { "kind": "h3", "text": "Contoh Praktis 8: Kanopi Segitiga" },
-          { "kind": "p", "text": "Penampang kanopi segitiga siku-siku yang datar memiliki [[a=1.2\\text{ m}]], [[c=2\\text{ m}]], dan [[B\\approx53.13^\\circ]]. Gunakan Mode 2: [[K=(1.2\\times2\\times0.8)/2]], sehingga [[[\\boxed{K=0.96\\text{ m}^2}]]]. Periksa: [[K=(1.2\\times1.6)/2=0.96]]." },
+          { "kind": "p", "text": "Penampang kanopi segitiga siku-siku yang datar memiliki [[a=1.2\\text{ m}]], [[c=2\\text{ m}]], dan [[B\\approx53.13^\\circ]]. Gunakan Mode 2: [[K=(1.2\\times2\\times0.8)/2]], sehingga [[[\\boxed{K=0.96\\text{ m}^2}]]] Periksa: [[K=(1.2\\times1.6)/2=0.96]]." },
           { "kind": "h3", "text": "Contoh Praktis 9: Pola Potong Tripleks" },
-          { "kind": "p", "text": "Potongan tripleks segitiga siku-siku memiliki [[a=0.9\\text{ m}]], [[c=1.5\\text{ m}]], dan [[B\\approx53.13^\\circ]]. Gunakan Mode 2: [[K=(0.9\\times1.5\\times0.8)/2]], sehingga [[[\\boxed{K=0.54\\text{ m}^2}]]]. Ini luas bahan yang terpakai, tidak termasuk sisa potongan. Periksa: [[K=(0.9\\times1.2)/2=0.54]]." },
+          { "kind": "p", "text": "Potongan tripleks segitiga siku-siku memiliki [[a=0.9\\text{ m}]], [[c=1.5\\text{ m}]], dan [[B\\approx53.13^\\circ]]. Gunakan Mode 2: [[K=(0.9\\times1.5\\times0.8)/2]], sehingga [[[\\boxed{K=0.54\\text{ m}^2}]]] Ini luas bahan yang terpakai, tidak termasuk sisa potongan. Periksa: [[K=(0.9\\times1.2)/2=0.54]]." },
           { "kind": "h3", "text": "Contoh Praktis 10: Survei Ladang Segitiga" },
-          { "kind": "p", "text": "Pengukuran ladang segitiga yang disederhanakan menghasilkan [[a=7\\text{ m}]], [[c=25\\text{ m}]], dan [[B\\approx73.74^\\circ]]. Sisi lainnya 24 m, sehingga [[\\sin(B)=24/25=0.96]]. Gunakan Mode 2: [[K=(7\\times25\\times0.96)/2]], sehingga [[[\\boxed{K=84\\text{ m}^2}]]]. Ini luas penampang planar. Periksa: [[K=(7\\times24)/2=84]]." },
+          { "kind": "p", "text": "Pengukuran ladang segitiga yang disederhanakan menghasilkan [[a=7\\text{ m}]], [[c=25\\text{ m}]], dan [[B\\approx73.74^\\circ]]. Sisi lainnya 24 m, sehingga [[\\sin(B)=24/25=0.96]]. Gunakan Mode 2: [[K=(7\\times25\\times0.96)/2]], sehingga [[[\\boxed{K=84\\text{ m}^2}]]] Ini luas penampang planar. Periksa: [[K=(7\\times24)/2=84]]." },
           { "kind": "h3", "text": "Contoh Praktis 11: Panel Layang-Layang Segitiga" },
-          { "kind": "p", "text": "Panel layang-layang atau kain segitiga siku-siku memiliki [[a=20\\text{ cm}]], [[c=25\\text{ cm}]], dan [[B\\approx36.87^\\circ]]. Karena [[\\sin(B)=15/25=0.6]], Mode 2 menghasilkan [[K=(20\\times25\\times0.6)/2]], sehingga [[[\\boxed{K=150\\text{ cm}^2}]]]. Satuan sentimeter persegi, sesuai masukannya. Periksa: [[K=(20\\times15)/2=150]]." },
+          { "kind": "p", "text": "Panel layang-layang atau kain segitiga siku-siku memiliki [[a=20\\text{ cm}]], [[c=25\\text{ cm}]], dan [[B\\approx36.87^\\circ]]. Karena [[\\sin(B)=15/25=0.6]], Mode 2 menghasilkan [[K=(20\\times25\\times0.6)/2]], sehingga [[[\\boxed{K=150\\text{ cm}^2}]]] Satuan sentimeter persegi, sesuai masukannya. Periksa: [[K=(20\\times15)/2=150]]." },
           { "kind": "h3", "text": "Contoh Praktis 12: Panel Samping Dudukan Surya" },
-          { "kind": "p", "text": "Panel sisi penyangga segitiga siku-siku yang datar memiliki [[a=1.8\\text{ m}]], [[c=3\\text{ m}]], dan sudut apit [[B\\approx53.13^\\circ]]. Dengan [[\\sin(B)=0.8]], Mode 2 menghasilkan [[K=(1.8\\times3\\times0.8)/2]], sehingga [[[\\boxed{K=2.16\\text{ m}^2}]]]. Ini luas panel, bukan keluaran atau kapasitas listrik. Periksa: [[K=(1.8\\times2.4)/2=2.16]]." }
+          { "kind": "p", "text": "Panel sisi penyangga segitiga siku-siku yang datar memiliki [[a=1.8\\text{ m}]], [[c=3\\text{ m}]], dan sudut apit [[B\\approx53.13^\\circ]]. Dengan [[\\sin(B)=0.8]], Mode 2 menghasilkan [[K=(1.8\\times3\\times0.8)/2]], sehingga [[[\\boxed{K=2.16\\text{ m}^2}]]] Ini luas panel, bukan keluaran atau kapasitas listrik. Periksa: [[K=(1.8\\times2.4)/2=2.16]]." }
         ],
         "table": {
           "headers": ["Situasi", "Mode", "Sisi / Sisi miring", "Sudut", "Luas", "Penafsiran"],
@@ -226,9 +226,9 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Satu sisi siku-siku, satu sisi miring, dan satu sudut lancip membawa informasi lebih daripada yang dibutuhkan segitiga siku-siku: dua dari ketiganya menentukan yang ketiga, sehingga ketiganya harus saling cocok. Pemeriksaan di bawah memastikan angka yang dihitung menggambarkan segitiga siku-siku." },
           { "kind": "h3", "text": "Memvalidasi Mode 1" },
-          { "kind": "p", "text": "Untuk Mode 1 relasi konsistensinya adalah [[\\cos(A)=b/c]], atau setara [[[\\boxed{b=c\\cos(A)}]]]. Dengan [[b=4]] dan [[c=5]], [[\\cos(A)=0.8]] menghasilkan [[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]. Sudut sembarang seperti [[60^\\circ]] tidak akan menggambarkan segitiga siku-siku yang sama dengan panjang sisi ini: [[5\\cos(60^\\circ)=2.5\\neq4]], sehingga ketiga masukan akan saling tidak konsisten." },
+          { "kind": "p", "text": "Untuk Mode 1 relasi konsistensinya adalah [[\\cos(A)=b/c]], atau setara [[[\\boxed{b=c\\cos(A)}]]] Dengan [[b=4]] dan [[c=5]], [[\\cos(A)=0.8]] menghasilkan [[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]. Sudut sembarang seperti [[60^\\circ]] tidak akan menggambarkan segitiga siku-siku yang sama dengan panjang sisi ini: [[5\\cos(60^\\circ)=2.5\\neq4]], sehingga ketiga masukan akan saling tidak konsisten." },
           { "kind": "h3", "text": "Memvalidasi Mode 2" },
-          { "kind": "p", "text": "Untuk Mode 2 relasinya adalah [[\\cos(B)=a/c]], atau setara [[[\\boxed{a=c\\cos(B)}]]]. Dengan [[a=3]] dan [[c=5]], [[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]. Sudut yang dipilih harus sesuai dengan pengukuran sebenarnya; sisi 3 dengan sisi miring 5 tidak bertemu pada sudut apit, katakanlah, [[70^\\circ]]." },
+          { "kind": "p", "text": "Untuk Mode 2 relasinya adalah [[\\cos(B)=a/c]], atau setara [[[\\boxed{a=c\\cos(B)}]]] Dengan [[a=3]] dan [[c=5]], [[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]. Sudut yang dipilih harus sesuai dengan pengukuran sebenarnya; sisi 3 dengan sisi miring 5 tidak bertemu pada sudut apit, katakanlah, [[70^\\circ]]." },
           { "kind": "h3", "text": "Mengapa Rumus Luas Umum Tetap Dapat Mengembalikan Angka" },
           { "kind": "p", "text": "Rumus [[K=\\frac12xy\\sin(\\theta)]] menghitung luas segitiga umum yang ditentukan oleh dua sisi dan sudut apitnya. Kombinasi sisi-sudut yang tidak cocok tetap mengembalikan angka, tetapi segitiga yang dihasilkan tidak siku-siku: segitiga itu adalah segitiga lain yang kebetulan berbagi ketiga masukan tersebut. Hasil aritmetika saja tidak membuktikan masukan menggambarkan segitiga siku-siku yang valid; pemeriksaan kosinus di atas yang melakukan pekerjaan itu." },
           { "kind": "h3", "text": "Cara Menangani Pengukuran Sudut yang Dibulatkan" },
@@ -240,11 +240,11 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Ini adalah alternatif matematis, bukan mode kalkulator tambahan; semuanya menunjukkan geometri yang sama dalam kombinasi masukan yang lain." },
           { "kind": "h3", "text": "Menggunakan Sisi Miring dan Satu Sudut Lancip" },
-          { "kind": "p", "text": "Untuk segitiga siku-siku yang valid, [[a=c\\sin(A)]] dan [[b=c\\cos(A)]]. Substitusi ke [[K=ab/2]] menghasilkan [[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]]. Dengan identitas sudut ganda [[\\sin(2A)=2\\sin(A)\\cos(A)]], bentuk ini menjadi [[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]]. Sisi miring dan satu sudut lancip menentukan segitiga sepenuhnya, sehingga tidak diperlukan pengukuran sisi sama sekali." },
+          { "kind": "p", "text": "Untuk segitiga siku-siku yang valid, [[a=c\\sin(A)]] dan [[b=c\\cos(A)]]. Substitusi ke [[K=ab/2]] menghasilkan [[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]] Dengan identitas sudut ganda [[\\sin(2A)=2\\sin(A)\\cos(A)]], bentuk ini menjadi [[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]] Sisi miring dan satu sudut lancip menentukan segitiga sepenuhnya, sehingga tidak diperlukan pengukuran sisi sama sekali." },
           { "kind": "h3", "text": "Menggunakan Satu Sisi dan Sudut Sampingnya" },
-          { "kind": "p", "text": "Jika sisi [[b]] dan sudut [[A]] diketahui, maka [[a=b\\tan(A)]], dan [[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]]. Pasangannya penting: [[b]] haruslah sisi yang bersebelahan dengan sudut [[A]] agar tangen menghasilkan sisi depan." },
+          { "kind": "p", "text": "Jika sisi [[b]] dan sudut [[A]] diketahui, maka [[a=b\\tan(A)]], dan [[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]] Pasangannya penting: [[b]] haruslah sisi yang bersebelahan dengan sudut [[A]] agar tangen menghasilkan sisi depan." },
           { "kind": "h3", "text": "Menggunakan Sisi a dan Sudut B" },
-          { "kind": "p", "text": "Cerminan kasus sebelumnya untuk sudut [[B]]: [[b=a\\tan(B)]], sehingga [[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]]. Sisi [[a]] bersebelahan dengan sudut [[B]], dan itulah tepatnya alasan tangen kembali memulihkan sisi depan." },
+          { "kind": "p", "text": "Cerminan kasus sebelumnya untuk sudut [[B]]: [[b=a\\tan(B)]], sehingga [[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]] Sisi [[a]] bersebelahan dengan sudut [[B]], dan itulah tepatnya alasan tangen kembali memulihkan sisi depan." },
           { "kind": "h3", "text": "Metode Mana yang Paling Sederhana?" },
           { "kind": "p", "text": "Rumus terbaik adalah rumus yang cocok dengan pengukuran yang tersedia. Jika kedua sisi diketahui, gunakan [[K=ab/2]] dan lewatkan trigonometri. Jika satu sisi, sisi miring, dan sudut apit diketahui, kedua mode kalkulator adalah jalur langsung. Bentuk tangen dan sudut ganda berguna untuk perhitungan tangan dengan sudut istimewa, tetapi menambah langkah yang tidak dibutuhkan masukan hanya menambah tempat bersembunyinya kesalahan." }
         ]
@@ -256,7 +256,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           { "kind": "h3", "text": "Sisi Miring Tetap, Sudut Berubah" },
           { "kind": "p", "text": "Untuk sisi miring yang tetap, luas dapat ditulis sebagai [[K=\\frac{c^2\\sin(2A)}{4}]]. Faktor [[\\sin(2A)]] naik ketika [[A]] bergerak dari dekat [[0^\\circ]] menuju [[45^\\circ]], lalu turun ketika [[A]] mendekati [[90^\\circ]]. Luas karenanya bertambah pada paruh pertama rentang lancip dan berkurang pada paruh kedua. Kedua paruh adalah cerminan melalui hubungan sudut berkomplemen [[A+B=90^\\circ]]: menukar sudut-sudut menukar sisi-sisinya dan luasnya tidak berubah." },
           { "kind": "h3", "text": "Luas Maksimum untuk Sisi Miring Tetap" },
-          { "kind": "p", "text": "Karena [[\\sin(2A)\\leq1]], luas terbesar yang mungkin adalah [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]], tercapai ketika [[A=B=45^\\circ]]. Untuk [[c=10]] luas maksimumnya adalah [[[\\boxed{K_{\\max}=25\\text{ square units}}]]]. Ini adalah segitiga siku-siku sama kaki pada Contoh 4: sisi-sisi yang sama membuat hasil kali sisi-sisinya, dan karenanya luasnya, sebesar mungkin sesuai batas sisi miring yang tetap." },
+          { "kind": "p", "text": "Karena [[\\sin(2A)\\leq1]], luas terbesar yang mungkin adalah [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]], tercapai ketika [[A=B=45^\\circ]]. Untuk [[c=10]] luas maksimumnya adalah [[[\\boxed{K_{\\max}=25\\text{ square units}}]]] Ini adalah segitiga siku-siku sama kaki pada Contoh 4: sisi-sisi yang sama membuat hasil kali sisi-sisinya, dan karenanya luasnya, sebesar mungkin sesuai batas sisi miring yang tetap." },
           { "kind": "h3", "text": "Mengapa Luas Tidak Begitu Saja Bertambah terhadap Sudut dalam Setiap Kasus" },
           { "kind": "p", "text": "Klaim tentang sudut yang bertambah tidak ada artinya tanpa menyebut apa yang ditahan konstan. Dengan sisi miring tetap hubungannya naik lalu turun; dengan sisi tetap hubungannya berbeda lagi. Memperlakukan luas sebagai fungsi naik sederhana dari sudut adalah penyederhanaan berlebihan yang umum, dan bagian ini ada untuk menjauhkannya dari pekerjaan Anda." }
         ]
@@ -419,7 +419,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
       "sec-intro": {
         "h2": "كيفية حساب مساحة المثلث القائم الزاوية من زاوية",
         "blocks": [
-          { "kind": "p", "text": "لنفترض أن مثلثًا قائم الزاوية له ضلع قائم [[b=4\\text{ m}]] ووتر [[c=5\\text{ m}]]، وأن الزاوية الحادة بين هذين الضلعين قياسها حوالي [[A\\approx36.87^\\circ]]. تتبع مساحته مباشرة: [[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]. وبما أن [[\\sin(36.87^\\circ)\\approx0.6]]، فإن المساحة تساوي تقريبًا [[[\\boxed{K=6\\text{ m}^2}]]]. يحصر المثلث 6 أمتار مربعة من السطح المستوي." },
+          { "kind": "p", "text": "لنفترض أن مثلثًا قائم الزاوية له ضلع قائم [[b=4\\text{ m}]] ووتر [[c=5\\text{ m}]]، وأن الزاوية الحادة بين هذين الضلعين قياسها حوالي [[A\\approx36.87^\\circ]]. تتبع مساحته مباشرة: [[K=\\frac{4\\times5\\times\\sin(36.87^\\circ)}{2}]]. وبما أن [[\\sin(36.87^\\circ)\\approx0.6]]، فإن المساحة تساوي تقريبًا [[[\\boxed{K=6\\text{ m}^2}]]] يحصر المثلث 6 أمتار مربعة من السطح المستوي." },
           { "kind": "p", "text": "تتعامل هذه الحاسبة مع هذه الحالة: بمعرفة ضلع قائم واحد والوتر والزاوية الحادة بينهما، يحوّل الجيب الوتر إلى الارتفاع العمودي المفقود، ونصف القاعدة مضروبًا في الارتفاع يعطي المساحة بوحدات مربعة. يجب أن تقع الزاوية المحصورة بين الضلعين المدخلين، ويقرن كل وضع زاوية محددة بضلعيها." },
           { "kind": "p", "text": "الزاوية [[36.87^\\circ]] مقربة من حوالي [[36.8699^\\circ]]؛ والحفاظ على الدقة الكاملة في الحاسبة يعطي أدق نتيجة." }
         ]
@@ -467,7 +467,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           { "kind": "p", "text": "[[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]" },
           { "kind": "p", "text": "المتغيرات هي: [[b]] الضلع القائم المجاور للزاوية [[A]]، و[[c]] الوتر، و[[A]] الزاوية الحادة المحصورة بين [[b]] و[[c]]، و[[K]] المساحة." },
           { "kind": "h3", "text": "اشتقاق الصيغة خطوة بخطوة" },
-          { "kind": "p", "text": "ابدأ من صيغة مساحة الضلعين القائمين [[K=ab/2]]. من نسبة الجيب عند الزاوية [[A]]، [[\\sin(A)=a/c]]، فيكون [[a=c\\sin(A)]]. يُعاد كتابة الضلع المقابل [[a]] كمركبة جيبية للوتر. يعطي التعويض [[K=\\frac{b(c\\sin(A))}{2}]]، وإعادة الترتيب تعطي [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]. لا حاجة لإدخال الضلع المقابل المجهول لأن الصيغة تبنيه من الوتر والزاوية خلف الكواليس." },
+          { "kind": "p", "text": "ابدأ من صيغة مساحة الضلعين القائمين [[K=ab/2]]. من نسبة الجيب عند الزاوية [[A]]، [[\\sin(A)=a/c]]، فيكون [[a=c\\sin(A)]]. يُعاد كتابة الضلع المقابل [[a]] كمركبة جيبية للوتر. يعطي التعويض [[K=\\frac{b(c\\sin(A))}{2}]]، وإعادة الترتيب تعطي [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]] لا حاجة لإدخال الضلع المقابل المجهول لأن الصيغة تبنيه من الوتر والزاوية خلف الكواليس." },
           { "kind": "h3", "text": "مثال محلول كامل" },
           { "kind": "p", "text": "بمعرفة [[b=4\\text{ m}]] و[[c=5\\text{ m}]] و[[A\\approx36.87^\\circ]]:" },
           { "kind": "p", "text": "تقول الإجابة إن المثلث يغطي حوالي 6 أمتار مربعة. ولأن زاوية الإدخال مقربة، فإن كلمة تقريبًا لها مكانها في التقرير، مع أنه بالدقة الكاملة تعطي المدخلات نفسها 6 بالضبط." },
@@ -481,7 +481,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           "<strong>عوّض.</strong> [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]].",
           "<strong>احسب الجيب.</strong> [[\\sin(36.87^\\circ)\\approx0.6]].",
           "<strong>اضرب.</strong> [[K\\approx(20\\times0.6)/2]].",
-          "<strong>اقسم.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]."
+          "<strong>اقسم.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]"
         ]
       },
       "sec-mode2": {
@@ -491,7 +491,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           { "kind": "p", "text": "[[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]" },
           { "kind": "p", "text": "المتغيرات هي: [[a]] الضلع القائم المجاور للزاوية [[B]]، وهو مقابل الزاوية [[A]]؛ و[[c]] الوتر؛ و[[B]] الزاوية الحادة المحصورة بين [[a]] و[[c]]؛ و[[K]] المساحة." },
           { "kind": "h3", "text": "اشتقاق الصيغة خطوة بخطوة" },
-          { "kind": "p", "text": "ابدأ مجددًا من [[K=ab/2]]. نسبة الجيب المقاسة عند الزاوية [[B]] هي [[\\sin(B)=b/c]]، لأن الضلع المقابل من وجهة نظر [[B]] هو [[b]]. ومن ثم [[b=c\\sin(B)]]. يعطي التعويض [[K=\\frac{a(c\\sin(B))}{2}]]، فيكون [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]. تستخدم الصيغة الضلع [[a]] مع أن [[a]] يُسمى الضلع المقابل في الترميز الرئيسي للصفحة؛ فتسمية المقابل تخص الزاوية [[A]]، بينما بالنسبة للزاوية [[B]] يكون الضلع نفسه مجاورًا. تسميات الأضلاع نسبية دائمًا للزاوية المرجعية المختارة." },
+          { "kind": "p", "text": "ابدأ مجددًا من [[K=ab/2]]. نسبة الجيب المقاسة عند الزاوية [[B]] هي [[\\sin(B)=b/c]]، لأن الضلع المقابل من وجهة نظر [[B]] هو [[b]]. ومن ثم [[b=c\\sin(B)]]. يعطي التعويض [[K=\\frac{a(c\\sin(B))}{2}]]، فيكون [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]] تستخدم الصيغة الضلع [[a]] مع أن [[a]] يُسمى الضلع المقابل في الترميز الرئيسي للصفحة؛ فتسمية المقابل تخص الزاوية [[A]]، بينما بالنسبة للزاوية [[B]] يكون الضلع نفسه مجاورًا. تسميات الأضلاع نسبية دائمًا للزاوية المرجعية المختارة." },
           { "kind": "h3", "text": "مثال محلول كامل" },
           { "kind": "p", "text": "بمعرفة [[a=3\\text{ m}]] و[[c=5\\text{ m}]] و[[B\\approx53.13^\\circ]]:" },
           { "kind": "p", "text": "النتيجة هي نفس 6 أمتار مربعة في مثال الوضع 1، لأن المثالين يصفان المثلث 3-4-5 نفسه منظورًا إليه من زاويتيه الحادتين." },
@@ -504,7 +504,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           "<strong>اكتب الصيغة.</strong> [[K=ac\\sin(B)/2]].",
           "<strong>عوّض.</strong> [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]].",
           "<strong>احسب الجيب.</strong> [[\\sin(53.13^\\circ)\\approx0.8]].",
-          "<strong>اضرب واقسم.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]."
+          "<strong>اضرب واقسم.</strong> [[[\\boxed{K\\approx6\\text{ m}^2}]]]"
         ]
       },
       "sec-same": {
@@ -555,13 +555,13 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "تبني أربعة أمثلة الطريقة على مثلثات مألوفة، من الثلاثية 3-4-5 إلى حالات الزوايا الخاصة." },
           { "kind": "h3", "text": "المثال 1: مثلث 3-4-5 باستخدام الزاوية A" },
-          { "kind": "p", "text": "بمعرفة [[b=4]] و[[c=5]] و[[A\\approx36.87^\\circ]]، استخدم [[K=bc\\sin(A)/2]]. ثم [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]] و[[K\\approx(20\\times0.6)/2]]، فيكون [[[\\boxed{K\\approx6}]]]. المساحة 6 وحدات مربعة لأن المثلث يحصر ستة مربعات وحدة من السطح المستوي؛ وبالزاوية ذات الدقة الكاملة تكون القيمة 6 بالضبط." },
+          { "kind": "p", "text": "بمعرفة [[b=4]] و[[c=5]] و[[A\\approx36.87^\\circ]]، استخدم [[K=bc\\sin(A)/2]]. ثم [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]] و[[K\\approx(20\\times0.6)/2]]، فيكون [[[\\boxed{K\\approx6}]]] المساحة 6 وحدات مربعة لأن المثلث يحصر ستة مربعات وحدة من السطح المستوي؛ وبالزاوية ذات الدقة الكاملة تكون القيمة 6 بالضبط." },
           { "kind": "h3", "text": "المثال 2: المثلث نفسه باستخدام الزاوية B" },
-          { "kind": "p", "text": "بمعرفة [[a=3]] و[[c=5]] و[[B\\approx53.13^\\circ]]، استخدم [[K=ac\\sin(B)/2]]. ثم [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]] و[[K\\approx(15\\times0.8)/2]]، فيكون [[[\\boxed{K\\approx6}]]]. تطابق النتيجة المثال 1 لأن المثالين يصفان المثلث نفسه؛ فالزاويتان منظران متتامان لشكل واحد." },
+          { "kind": "p", "text": "بمعرفة [[a=3]] و[[c=5]] و[[B\\approx53.13^\\circ]]، استخدم [[K=ac\\sin(B)/2]]. ثم [[K=(3\\times5\\times\\sin(53.13^\\circ))/2]] و[[K\\approx(15\\times0.8)/2]]، فيكون [[[\\boxed{K\\approx6}]]] تطابق النتيجة المثال 1 لأن المثالين يصفان المثلث نفسه؛ فالزاويتان منظران متتامان لشكل واحد." },
           { "kind": "h3", "text": "المثال 3: مثلث 30-60-90" },
-          { "kind": "p", "text": "خذ [[c=10]] و[[A=30^\\circ]]. يتبع الضلع من [[b=c\\cos(30^\\circ)=5\\sqrt{3}]]. ثم [[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]]، وبما أن [[\\sin(30^\\circ)=1/2]]، فيكون [[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]]. قيم الزوايا الخاصة مثل [[\\sin(30^\\circ)]] و[[\\cos(30^\\circ)]] تعطي صورًا دقيقة قبل أي تقريب عشري، ولهذا تفيد هذه المثلثات في فحص الحاسبة يدويًا." },
+          { "kind": "p", "text": "خذ [[c=10]] و[[A=30^\\circ]]. يتبع الضلع من [[b=c\\cos(30^\\circ)=5\\sqrt{3}]]. ثم [[K=(5\\sqrt{3})(10)\\sin(30^\\circ)/2]]، وبما أن [[\\sin(30^\\circ)=1/2]]، فيكون [[[\\boxed{K=\\frac{25\\sqrt{3}}{2}\\approx21.65}]]] قيم الزوايا الخاصة مثل [[\\sin(30^\\circ)]] و[[\\cos(30^\\circ)]] تعطي صورًا دقيقة قبل أي تقريب عشري، ولهذا تفيد هذه المثلثات في فحص الحاسبة يدويًا." },
           { "kind": "h3", "text": "المثال 4: مثلث 45-45-90" },
-          { "kind": "p", "text": "بمعرفة [[c=10]] و[[A=45^\\circ]]، يتساوى الضلعان: [[a=b=5\\sqrt{2}]]. ثم [[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]]، وبما أن [[\\sin(45^\\circ)=\\sqrt{2}/2]]، يتبسط حاصل الضرب إلى [[[\\boxed{K=25}]]]. هذا مثلث قائم متساوي الساقين، وكما سيُبين لاحقًا، له أيضًا أكبر مساحة ممكنة لمثلث قائم وتره 10 وحدات." }
+          { "kind": "p", "text": "بمعرفة [[c=10]] و[[A=45^\\circ]]، يتساوى الضلعان: [[a=b=5\\sqrt{2}]]. ثم [[K=(5\\sqrt{2})(10)\\sin(45^\\circ)/2]]، وبما أن [[\\sin(45^\\circ)=\\sqrt{2}/2]]، يتبسط حاصل الضرب إلى [[[\\boxed{K=25}]]] هذا مثلث قائم متساوي الساقين، وكما سيُبين لاحقًا، له أيضًا أكبر مساحة ممكنة لمثلث قائم وتره 10 وحدات." }
         ]
       },
       "sec-applications": {
@@ -569,29 +569,29 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "اثنتا عشرة حالة محلولة بالكامل، ست لكل وضع من وضعي الحاسبة. يذكر كل مثال القياسات ويختار الوضع ويطبق الصيغة ويفسر الإجابة. تُعرض قيم الزوايا لمنزلتين عشريتين بينما يحافظ الحساب على الدقة الكاملة تحته." },
           { "kind": "h3", "text": "المثال العملي 1: جملون سقف مثلث" },
-          { "kind": "p", "text": "مقطع جملون سقف قائم مثلث مبسط له ضلع مجاور [[b=4\\text{ m}]] ووتر [[c=5\\text{ m}]] وزاوية محصورة [[A\\approx36.87^\\circ]]. استخدم الوضع 1: [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]، فيكون [[[\\boxed{K\\approx6\\text{ m}^2}]]]. وهي مساحة المقطع المستوي لا سطح السقف الكلي. تحقق: [[K=(3\\times4)/2=6]]." },
+          { "kind": "p", "text": "مقطع جملون سقف قائم مثلث مبسط له ضلع مجاور [[b=4\\text{ m}]] ووتر [[c=5\\text{ m}]] وزاوية محصورة [[A\\approx36.87^\\circ]]. استخدم الوضع 1: [[K=(4\\times5\\times\\sin(36.87^\\circ))/2]]، فيكون [[[\\boxed{K\\approx6\\text{ m}^2}]]] وهي مساحة المقطع المستوي لا سطح السقف الكلي. تحقق: [[K=(3\\times4)/2=6]]." },
           { "kind": "h3", "text": "المثال العملي 2: لوح جانبي لمنحدر مثلث" },
-          { "kind": "p", "text": "لوح جانبي لمنحدر قائم مثلث له [[b=2.4\\text{ m}]] و[[c=2.5\\text{ m}]] و[[A\\approx16.26^\\circ]]. الضلع المقابل الكامن 0.7 م، فيكون [[\\sin(A)=0.7/2.5=0.28]]. استخدم الوضع 1: [[K=(2.4\\times2.5\\times0.28)/2]]، فيكون [[[\\boxed{K\\approx0.84\\text{ m}^2}]]]. وهي مساحة اللوح الجانبي لا سطح المنحدر المائل. تحقق: [[K=(0.7\\times2.4)/2=0.84]]." },
+          { "kind": "p", "text": "لوح جانبي لمنحدر قائم مثلث له [[b=2.4\\text{ m}]] و[[c=2.5\\text{ m}]] و[[A\\approx16.26^\\circ]]. الضلع المقابل الكامن 0.7 م، فيكون [[\\sin(A)=0.7/2.5=0.28]]. استخدم الوضع 1: [[K=(2.4\\times2.5\\times0.28)/2]]، فيكون [[[\\boxed{K\\approx0.84\\text{ m}^2}]]] وهي مساحة اللوح الجانبي لا سطح المنحدر المائل. تحقق: [[K=(0.7\\times2.4)/2=0.84]]." },
           { "kind": "h3", "text": "المثال العملي 3: شراع مثلث" },
-          { "kind": "p", "text": "مقطع شراع قائم مثلث مستوٍ له [[b=12\\text{ ft}]] و[[c=13\\text{ ft}]] و[[A\\approx22.62^\\circ]]. الضلع المقابل 5 قدم، فيكون [[\\sin(A)=5/13]]. استخدم الوضع 1: [[K=(12\\times13\\times(5/13))/2]]، فيكون [[[\\boxed{K=30\\text{ ft}^2}]]]. مساحة هندسية مستوية قبل الدرزات أو الهدر. تحقق: [[K=(5\\times12)/2=30]]." },
+          { "kind": "p", "text": "مقطع شراع قائم مثلث مستوٍ له [[b=12\\text{ ft}]] و[[c=13\\text{ ft}]] و[[A\\approx22.62^\\circ]]. الضلع المقابل 5 قدم، فيكون [[\\sin(A)=5/13]]. استخدم الوضع 1: [[K=(12\\times13\\times(5/13))/2]]، فيكون [[[\\boxed{K=30\\text{ ft}^2}]]] مساحة هندسية مستوية قبل الدرزات أو الهدر. تحقق: [[K=(5\\times12)/2=30]]." },
           { "kind": "h3", "text": "المثال العملي 4: مقطع أرض قائم مثلث" },
-          { "kind": "p", "text": "يصف رسم مساحي قطعة أرض قائمة مثلثة حيث [[b=40\\text{ m}]] و[[c=50\\text{ m}]] و[[A\\approx36.87^\\circ]]. وبما أن [[\\sin(A)=30/50=0.6]]، يعطي الوضع 1 [[K=(40\\times50\\times0.6)/2]]، فيكون [[[\\boxed{K=600\\text{ m}^2}]]]. وهي مساحة القطعة المستوية في نموذج مستوٍ. تحقق: [[K=(30\\times40)/2=600]]." },
+          { "kind": "p", "text": "يصف رسم مساحي قطعة أرض قائمة مثلثة حيث [[b=40\\text{ m}]] و[[c=50\\text{ m}]] و[[A\\approx36.87^\\circ]]. وبما أن [[\\sin(A)=30/50=0.6]]، يعطي الوضع 1 [[K=(40\\times50\\times0.6)/2]]، فيكون [[[\\boxed{K=600\\text{ m}^2}]]] وهي مساحة القطعة المستوية في نموذج مستوٍ. تحقق: [[K=(30\\times40)/2=600]]." },
           { "kind": "h3", "text": "المثال العملي 5: لوح دعم فولاذي" },
-          { "kind": "p", "text": "لوح فولاذي مثلث مستوٍ له [[b=1.5\\text{ m}]] و[[c=1.7\\text{ m}]] و[[A\\approx28.07^\\circ]]. الضلع المقابل 0.8 م، فيكون [[\\sin(A)=0.8/1.7]]. استخدم الوضع 1: [[K=(1.5\\times1.7\\times(0.8/1.7))/2]]، فيكون [[[\\boxed{K=0.6\\text{ m}^2}]]]. مساحة مستوية فقط لا قدرة تحمل. تحقق: [[K=(0.8\\times1.5)/2=0.6]]." },
+          { "kind": "p", "text": "لوح فولاذي مثلث مستوٍ له [[b=1.5\\text{ m}]] و[[c=1.7\\text{ m}]] و[[A\\approx28.07^\\circ]]. الضلع المقابل 0.8 م، فيكون [[\\sin(A)=0.8/1.7]]. استخدم الوضع 1: [[K=(1.5\\times1.7\\times(0.8/1.7))/2]]، فيكون [[[\\boxed{K=0.6\\text{ m}^2}]]] مساحة مستوية فقط لا قدرة تحمل. تحقق: [[K=(0.8\\times1.5)/2=0.6]]." },
           { "kind": "h3", "text": "المثال العملي 6: مقطع جانبي لسلم" },
-          { "kind": "p", "text": "لوح جانبي لسلم مبسط له ضلع أفقي [[b=3.2\\text{ m}]] ووتر [[c=4\\text{ m}]] و[[A\\approx36.87^\\circ]]. مع [[\\sin(A)=0.6]]، يعطي الوضع 1 [[K=(3.2\\times4\\times0.6)/2]]، فيكون [[[\\boxed{K=3.84\\text{ m}^2}]]]. وهو المقطع الجانبي لا مساحة الدرجات. تحقق: مع الضلع الآخر 2.4 م، [[K=(2.4\\times3.2)/2=3.84]]." },
+          { "kind": "p", "text": "لوح جانبي لسلم مبسط له ضلع أفقي [[b=3.2\\text{ m}]] ووتر [[c=4\\text{ m}]] و[[A\\approx36.87^\\circ]]. مع [[\\sin(A)=0.6]]، يعطي الوضع 1 [[K=(3.2\\times4\\times0.6)/2]]، فيكون [[[\\boxed{K=3.84\\text{ m}^2}]]] وهو المقطع الجانبي لا مساحة الدرجات. تحقق: مع الضلع الآخر 2.4 م، [[K=(2.4\\times3.2)/2=3.84]]." },
           { "kind": "h3", "text": "المثال العملي 7: نافذة زجاجية مثلثة" },
-          { "kind": "p", "text": "نافذة قائمة مثلثة لها ضلع [[a=0.6\\text{ m}]] ووتر [[c=1\\text{ m}]] وزاوية محصورة [[B\\approx53.13^\\circ]]. مع [[\\sin(B)=0.8]]، يعطي الوضع 2 [[K=(0.6\\times1\\times0.8)/2]]، فيكون [[[\\boxed{K=0.24\\text{ m}^2}]]]. مساحة الزجاج قبل بدلات الإطار. تحقق: [[K=(0.6\\times0.8)/2=0.24]]." },
+          { "kind": "p", "text": "نافذة قائمة مثلثة لها ضلع [[a=0.6\\text{ m}]] ووتر [[c=1\\text{ m}]] وزاوية محصورة [[B\\approx53.13^\\circ]]. مع [[\\sin(B)=0.8]]، يعطي الوضع 2 [[K=(0.6\\times1\\times0.8)/2]]، فيكون [[[\\boxed{K=0.24\\text{ m}^2}]]] مساحة الزجاج قبل بدلات الإطار. تحقق: [[K=(0.6\\times0.8)/2=0.24]]." },
           { "kind": "h3", "text": "المثال العملي 8: مظلة مثلثة" },
-          { "kind": "p", "text": "مقطع مظلة قائم مثلث مستوٍ له [[a=1.2\\text{ m}]] و[[c=2\\text{ m}]] و[[B\\approx53.13^\\circ]]. استخدم الوضع 2: [[K=(1.2\\times2\\times0.8)/2]]، فيكون [[[\\boxed{K=0.96\\text{ m}^2}]]]. تحقق: [[K=(1.2\\times1.6)/2=0.96]]." },
+          { "kind": "p", "text": "مقطع مظلة قائم مثلث مستوٍ له [[a=1.2\\text{ m}]] و[[c=2\\text{ m}]] و[[B\\approx53.13^\\circ]]. استخدم الوضع 2: [[K=(1.2\\times2\\times0.8)/2]]، فيكون [[[\\boxed{K=0.96\\text{ m}^2}]]] تحقق: [[K=(1.2\\times1.6)/2=0.96]]." },
           { "kind": "h3", "text": "المثال العملي 9: نموذج قص خشب رقائقي" },
-          { "kind": "p", "text": "قطعة خشب رقائقي قائمة مثلثة لها [[a=0.9\\text{ m}]] و[[c=1.5\\text{ m}]] و[[B\\approx53.13^\\circ]]. استخدم الوضع 2: [[K=(0.9\\times1.5\\times0.8)/2]]، فيكون [[[\\boxed{K=0.54\\text{ m}^2}]]]. مساحة الخامة الصالحة دون فضلات القص. تحقق: [[K=(0.9\\times1.2)/2=0.54]]." },
+          { "kind": "p", "text": "قطعة خشب رقائقي قائمة مثلثة لها [[a=0.9\\text{ m}]] و[[c=1.5\\text{ m}]] و[[B\\approx53.13^\\circ]]. استخدم الوضع 2: [[K=(0.9\\times1.5\\times0.8)/2]]، فيكون [[[\\boxed{K=0.54\\text{ m}^2}]]] مساحة الخامة الصالحة دون فضلات القص. تحقق: [[K=(0.9\\times1.2)/2=0.54]]." },
           { "kind": "h3", "text": "المثال العملي 10: مسح حقل مثلث" },
-          { "kind": "p", "text": "يعطي قياس حقل مثلث مبسط [[a=7\\text{ m}]] و[[c=25\\text{ m}]] و[[B\\approx73.74^\\circ]]. الضلع الآخر 24 م، فيكون [[\\sin(B)=24/25=0.96]]. استخدم الوضع 2: [[K=(7\\times25\\times0.96)/2]]، فيكون [[[\\boxed{K=84\\text{ m}^2}]]]. وهي مساحة المقطع المستوية. تحقق: [[K=(7\\times24)/2=84]]." },
+          { "kind": "p", "text": "يعطي قياس حقل مثلث مبسط [[a=7\\text{ m}]] و[[c=25\\text{ m}]] و[[B\\approx73.74^\\circ]]. الضلع الآخر 24 م، فيكون [[\\sin(B)=24/25=0.96]]. استخدم الوضع 2: [[K=(7\\times25\\times0.96)/2]]، فيكون [[[\\boxed{K=84\\text{ m}^2}]]] وهي مساحة المقطع المستوية. تحقق: [[K=(7\\times24)/2=84]]." },
           { "kind": "h3", "text": "المثال العملي 11: لوح طائرة ورقية مثلث" },
-          { "kind": "p", "text": "لوح طائرة ورقية أو قماش قائم مثلث له [[a=20\\text{ cm}]] و[[c=25\\text{ cm}]] و[[B\\approx36.87^\\circ]]. وبما أن [[\\sin(B)=15/25=0.6]]، يعطي الوضع 2 [[K=(20\\times25\\times0.6)/2]]، فيكون [[[\\boxed{K=150\\text{ cm}^2}]]]. سنتيمترات مربعة تطابق المدخلات. تحقق: [[K=(20\\times15)/2=150]]." },
+          { "kind": "p", "text": "لوح طائرة ورقية أو قماش قائم مثلث له [[a=20\\text{ cm}]] و[[c=25\\text{ cm}]] و[[B\\approx36.87^\\circ]]. وبما أن [[\\sin(B)=15/25=0.6]]، يعطي الوضع 2 [[K=(20\\times25\\times0.6)/2]]، فيكون [[[\\boxed{K=150\\text{ cm}^2}]]] سنتيمترات مربعة تطابق المدخلات. تحقق: [[K=(20\\times15)/2=150]]." },
           { "kind": "h3", "text": "المثال العملي 12: لوح جانبي لتركيب شمسي" },
-          { "kind": "p", "text": "لوح جانبي داعم قائم مثلث مستوٍ له [[a=1.8\\text{ m}]] و[[c=3\\text{ m}]] وزاوية محصورة [[B\\approx53.13^\\circ]]. مع [[\\sin(B)=0.8]]، يعطي الوضع 2 [[K=(1.8\\times3\\times0.8)/2]]، فيكون [[[\\boxed{K=2.16\\text{ m}^2}]]]. مساحة اللوح لا الناتج الكهربائي أو السعة. تحقق: [[K=(1.8\\times2.4)/2=2.16]]." }
+          { "kind": "p", "text": "لوح جانبي داعم قائم مثلث مستوٍ له [[a=1.8\\text{ m}]] و[[c=3\\text{ m}]] وزاوية محصورة [[B\\approx53.13^\\circ]]. مع [[\\sin(B)=0.8]]، يعطي الوضع 2 [[K=(1.8\\times3\\times0.8)/2]]، فيكون [[[\\boxed{K=2.16\\text{ m}^2}]]] مساحة اللوح لا الناتج الكهربائي أو السعة. تحقق: [[K=(1.8\\times2.4)/2=2.16]]." }
         ],
         "table": {
           "headers": ["الحالة", "الوضع", "الضلع / الوتر", "الزاوية", "المساحة", "التفسير"],
@@ -618,9 +618,9 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "يحمل الضلع القائم والوتر والزاوية الحادة معلومات أكثر مما يحتاجه المثلث القائم: فاثنان من الثلاثة يحددان الثالث، لذا يجب أن تتفق الثلاثة. تؤكد الفحوص أدناه أن العدد المحسوب يصف مثلثًا قائم الزاوية." },
           { "kind": "h3", "text": "التحقق من الوضع 1" },
-          { "kind": "p", "text": "بالنسبة للوضع 1 علاقة الاتساق هي [[\\cos(A)=b/c]]، أي [[[\\boxed{b=c\\cos(A)}]]]. مع [[b=4]] و[[c=5]]، يعطي [[\\cos(A)=0.8]] أن [[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]. زاوية عشوائية مثل [[60^\\circ]] لن تصف المثلث القائم نفسه بهذه الأطوال: [[5\\cos(60^\\circ)=2.5\\neq4]]، فتكون المدخلات الثلاثة غير متسقة." },
+          { "kind": "p", "text": "بالنسبة للوضع 1 علاقة الاتساق هي [[\\cos(A)=b/c]]، أي [[[\\boxed{b=c\\cos(A)}]]] مع [[b=4]] و[[c=5]]، يعطي [[\\cos(A)=0.8]] أن [[A=\\cos^{-1}(0.8)\\approx36.87^\\circ]]. زاوية عشوائية مثل [[60^\\circ]] لن تصف المثلث القائم نفسه بهذه الأطوال: [[5\\cos(60^\\circ)=2.5\\neq4]]، فتكون المدخلات الثلاثة غير متسقة." },
           { "kind": "h3", "text": "التحقق من الوضع 2" },
-          { "kind": "p", "text": "بالنسبة للوضع 2 العلاقة هي [[\\cos(B)=a/c]]، أي [[[\\boxed{a=c\\cos(B)}]]]. مع [[a=3]] و[[c=5]]، [[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]. يجب أن تقابل الزاوية المختارة القياسات الفعلية؛ فضلع 3 مع وتر 5 لا يلتقيان عند زاوية محصورة [[70^\\circ]] مثلًا." },
+          { "kind": "p", "text": "بالنسبة للوضع 2 العلاقة هي [[\\cos(B)=a/c]]، أي [[[\\boxed{a=c\\cos(B)}]]] مع [[a=3]] و[[c=5]]، [[B=\\cos^{-1}(0.6)\\approx53.13^\\circ]]. يجب أن تقابل الزاوية المختارة القياسات الفعلية؛ فضلع 3 مع وتر 5 لا يلتقيان عند زاوية محصورة [[70^\\circ]] مثلًا." },
           { "kind": "h3", "text": "لماذا يمكن للصيغة العامة للمساحة أن ترجع عددًا رغم ذلك" },
           { "kind": "p", "text": "تحسب الصيغة [[K=\\frac12xy\\sin(\\theta)]] مساحة مثلث عام يحدده ضلعان وزاويتهما المحصورة. تركيبة زاوية وضلع غير متوافقة ترجع عددًا رغم ذلك، لكن المثلث الناتج ليس قائم الزاوية: بل هو مثلث آخر يتشارك تلك المدخلات الثلاثة مصادفة. النتيجة الحسابية وحدها لا تثبت أن المدخلات تصف مثلثًا قائمًا صحيحًا؛ ففحص جيب التمام أعلاه هو من يقوم بهذا العمل." },
           { "kind": "h3", "text": "كيفية التعامل مع قياسات الزوايا المقربة" },
@@ -632,11 +632,11 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "هذه بدائل رياضية لا أوضاع حاسبة إضافية؛ فهي تُظهر الهندسة نفسها بتركيبات مدخلات أخرى." },
           { "kind": "h3", "text": "استخدام الوتر وزاوية حادة واحدة" },
-          { "kind": "p", "text": "بالنسبة للمثلث القائم الصحيح، [[a=c\\sin(A)]] و[[b=c\\cos(A)]]. يعطي التعويض في [[K=ab/2]] أن [[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]]. ومع متطابقة ضعف الزاوية [[\\sin(2A)=2\\sin(A)\\cos(A)]]، تصبح [[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]]. يحدد الوتر وزاوية حادة واحدة المثلث تمامًا، فلا حاجة لقياس أي ضلع على الإطلاق." },
+          { "kind": "p", "text": "بالنسبة للمثلث القائم الصحيح، [[a=c\\sin(A)]] و[[b=c\\cos(A)]]. يعطي التعويض في [[K=ab/2]] أن [[[\\boxed{K=\\frac{c^2\\sin(A)\\cos(A)}{2}}]]] ومع متطابقة ضعف الزاوية [[\\sin(2A)=2\\sin(A)\\cos(A)]]، تصبح [[[\\boxed{K=\\frac{c^2\\sin(2A)}{4}}]]] يحدد الوتر وزاوية حادة واحدة المثلث تمامًا، فلا حاجة لقياس أي ضلع على الإطلاق." },
           { "kind": "h3", "text": "استخدام ضلع قائم وزاويته المجاورة" },
-          { "kind": "p", "text": "إذا عُرف الضلع [[b]] والزاوية [[A]]، فإن [[a=b\\tan(A)]]، ويكون [[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]]. الإقران مهم: يجب أن يكون [[b]] هو الضلع المجاور للزاوية [[A]] حتى يستعيد الظل الضلع المقابل." },
+          { "kind": "p", "text": "إذا عُرف الضلع [[b]] والزاوية [[A]]، فإن [[a=b\\tan(A)]]، ويكون [[[\\boxed{K=\\frac{b^2\\tan(A)}{2}}]]] الإقران مهم: يجب أن يكون [[b]] هو الضلع المجاور للزاوية [[A]] حتى يستعيد الظل الضلع المقابل." },
           { "kind": "h3", "text": "استخدام الضلع a والزاوية B" },
-          { "kind": "p", "text": "على غرار الحالة السابقة للزاوية [[B]]: [[b=a\\tan(B)]]، فيكون [[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]]. الضلع [[a]] مجاور للزاوية [[B]]، وهذا بالضبط سبب استعادة الظل للضلع المقابل مجددًا." },
+          { "kind": "p", "text": "على غرار الحالة السابقة للزاوية [[B]]: [[b=a\\tan(B)]]، فيكون [[[\\boxed{K=\\frac{a^2\\tan(B)}{2}}]]] الضلع [[a]] مجاور للزاوية [[B]]، وهذا بالضبط سبب استعادة الظل للضلع المقابل مجددًا." },
           { "kind": "h3", "text": "أي طريقة هي الأبسط؟" },
           { "kind": "p", "text": "أفضل صيغة هي التي تطابق القياسات المتاحة. إذا كان الضلعان معروفين، استخدم [[K=ab/2]] وتجاوز حساب المثلثات. وإذا عُرف ضلع قائم والوتر والزاوية المحصورة، فإن وضعي الحاسبة هما الطريق المباشر. صور الظل وضعف الزاوية مفيدة للحسابات اليدوية بالزوايا الخاصة، لكن إضافة خطوات لا تتطلبها المدخلات لا تضيف إلا مواضع تختبئ فيها الأخطاء." }
         ]
@@ -648,7 +648,7 @@ export const AREA_FROM_ANGLE_TRANSLATIONS_BATCH3A = {
           { "kind": "h3", "text": "وتر ثابت وزاوية متغيرة" },
           { "kind": "p", "text": "لوتر ثابت، يمكن كتابة المساحة [[K=\\frac{c^2\\sin(2A)}{4}]]. يرتفع العامل [[\\sin(2A)]] كلما تحركت [[A]] من قرب [[0^\\circ]] نحو [[45^\\circ]]، ثم ينخفض كلما اقتربت [[A]] من [[90^\\circ]]. لذا تزداد المساحة على النصف الأول من المدى الحاد وتنقص على النصف الثاني. النصفان صورتان مرآويتان عبر علاقة الزاويتين المتتامتين [[A+B=90^\\circ]]: فتبديل الزاويتين يبدل الضلعين ويُبقي المساحة دون تغيير." },
           { "kind": "h3", "text": "المساحة القصوى لوتر ثابت" },
-          { "kind": "p", "text": "بما أن [[\\sin(2A)\\leq1]]، فإن أكبر مساحة ممكنة هي [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]، وتتحقق عندما [[A=B=45^\\circ]]. وعند [[c=10]] تكون المساحة القصوى [[[\\boxed{K_{\\max}=25\\text{ square units}}]]]. هذا هو المثلث القائم متساوي الساقين في المثال 4: فتساوي الضلعين يجعل حاصل ضرب الضلعين، ومن ثم المساحة، أكبر ما يسمح به الوتر الثابت." },
+          { "kind": "p", "text": "بما أن [[\\sin(2A)\\leq1]]، فإن أكبر مساحة ممكنة هي [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]، وتتحقق عندما [[A=B=45^\\circ]]. وعند [[c=10]] تكون المساحة القصوى [[[\\boxed{K_{\\max}=25\\text{ square units}}]]] هذا هو المثلث القائم متساوي الساقين في المثال 4: فتساوي الضلعين يجعل حاصل ضرب الضلعين، ومن ثم المساحة، أكبر ما يسمح به الوتر الثابت." },
           { "kind": "h3", "text": "لماذا لا تزداد المساحة مع الزاوية ببساطة في كل حالة" },
           { "kind": "p", "text": "أي ادعاء عن زوايا متزايدة لا معنى له دون تسمية ما يُثبت. مع وتر ثابت ترتفع العلاقة ثم تهبط؛ ومع ضلع ثابت تكون العلاقة مختلفة مجددًا. معاملة المساحة كدالة متزايدة بسيطة للزاوية تبسيط مفرط شائع، وهذا القسم موجود لإبعاده عن عملك." }
         ]

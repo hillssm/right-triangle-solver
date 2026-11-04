@@ -160,7 +160,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Sinus membandingkan sisi bertentangan dengan hipotenus: [[[\\boxed{\\sin(A)=\\frac{a}{c}}]]]. Hipotenus ialah penyebut kerana ia adalah sisi terpanjang, itulah yang mengekalkan sinus antara 0 dan 1 bagi sudut tirus. Dengan [[a=3]] dan [[c=5]]: [[\\sin(A)=3/5]], jadi [[[\\boxed{\\sin(A)=0.6}]]]. Keputusan bermakna sisi bertentangan ialah 60 peratus daripada hipotenus. Sinus berguna apabila sisi bertentangan dan hipotenus ialah pasangan yang diketahui, seperti mencari sudut tangga daripada ketinggian dan panjangnya. Ia berkaitan dengan kosinus sebagai pasangan pelengkap: sinus satu sudut tirus sama dengan kosinus sudut yang satu lagi. Kesilapan yang perlu dielakkan: 0.6 ialah nisbah, bukan sudut 0.6 darjah."
+            "text": "Sinus membandingkan sisi bertentangan dengan hipotenus: [[[\\boxed{\\sin(A)=\\frac{a}{c}}]]] Hipotenus ialah penyebut kerana ia adalah sisi terpanjang, itulah yang mengekalkan sinus antara 0 dan 1 bagi sudut tirus. Dengan [[a=3]] dan [[c=5]]: [[\\sin(A)=3/5]], jadi [[[\\boxed{\\sin(A)=0.6}]]] Keputusan bermakna sisi bertentangan ialah 60 peratus daripada hipotenus. Sinus berguna apabila sisi bertentangan dan hipotenus ialah pasangan yang diketahui, seperti mencari sudut tangga daripada ketinggian dan panjangnya. Ia berkaitan dengan kosinus sebagai pasangan pelengkap: sinus satu sudut tirus sama dengan kosinus sudut yang satu lagi. Kesilapan yang perlu dielakkan: 0.6 ialah nisbah, bukan sudut 0.6 darjah."
           },
           {
             "kind": "h3",
@@ -168,7 +168,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Kosinus membandingkan sisi bersebelahan dengan hipotenus: [[[\\boxed{\\cos(A)=\\frac{b}{c}}]]]. Kedua-dua sinus dan kosinus membahagi dengan hipotenus, jadi kedua-duanya kekal antara 0 dan 1; ia hanya berbeza pada pengangka, itulah sebabnya sinus dan kosinus memerikan aspek berbeza sudut yang sama. Dengan [[b=4]] dan [[c=5]]: [[\\cos(A)=4/5]], jadi [[[\\boxed{\\cos(A)=0.8}]]]. Sisi bersebelahan ialah 80 peratus daripada hipotenus. Kosinus berguna apabila sisi bersebelahan dan hipotenus diketahui, seperti larian mendatar bumbung dan panjang gelegar. Ia berkaitan dengan sinus melalui identiti [[\\sin^2(A)+\\cos^2(A)=1]]. Kesilapan yang perlu dielakkan: menukar pengangka, menggunakan 3/5 untuk kosinus dan bukannya 4/5."
+            "text": "Kosinus membandingkan sisi bersebelahan dengan hipotenus: [[[\\boxed{\\cos(A)=\\frac{b}{c}}]]] Kedua-dua sinus dan kosinus membahagi dengan hipotenus, jadi kedua-duanya kekal antara 0 dan 1; ia hanya berbeza pada pengangka, itulah sebabnya sinus dan kosinus memerikan aspek berbeza sudut yang sama. Dengan [[b=4]] dan [[c=5]]: [[\\cos(A)=4/5]], jadi [[[\\boxed{\\cos(A)=0.8}]]] Sisi bersebelahan ialah 80 peratus daripada hipotenus. Kosinus berguna apabila sisi bersebelahan dan hipotenus diketahui, seperti larian mendatar bumbung dan panjang gelegar. Ia berkaitan dengan sinus melalui identiti [[\\sin^2(A)+\\cos^2(A)=1]]. Kesilapan yang perlu dielakkan: menukar pengangka, menggunakan 3/5 untuk kosinus dan bukannya 4/5."
           },
           {
             "kind": "h3",
@@ -176,7 +176,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Tangen membandingkan sisi bertentangan dengan sisi bersebelahan: [[[\\boxed{\\tan(A)=\\frac{a}{b}}]]]. Ia melangkau hipotenus sepenuhnya, yang menjadikannya nisbah semula jadi untuk masalah cerun di mana kedua-dua kaki ialah kuantiti yang diukur. Dengan [[a=3]] dan [[b=4]]: [[\\tan(A)=3/4]], jadi [[[\\boxed{\\tan(A)=0.75}]]]. Sisi bertentangan ialah 75 peratus sepanjang sisi bersebelahan. Tangen ialah bentuk matematik bagi kenaikan per larian, jadi ia muncul dalam kecerunan bumbung, tanjakan, dan gred. Berbeza dengan sinus dan kosinus, tangen boleh melebihi 1 apabila sisi bertentangan lebih panjang daripada sisi bersebelahan. Kesilapan yang perlu dielakkan: mengelirukan tangen 0.75 dengan 75 peratus daripada sudut tepat."
+            "text": "Tangen membandingkan sisi bertentangan dengan sisi bersebelahan: [[[\\boxed{\\tan(A)=\\frac{a}{b}}]]] Ia melangkau hipotenus sepenuhnya, yang menjadikannya nisbah semula jadi untuk masalah cerun di mana kedua-dua kaki ialah kuantiti yang diukur. Dengan [[a=3]] dan [[b=4]]: [[\\tan(A)=3/4]], jadi [[[\\boxed{\\tan(A)=0.75}]]] Sisi bertentangan ialah 75 peratus sepanjang sisi bersebelahan. Tangen ialah bentuk matematik bagi kenaikan per larian, jadi ia muncul dalam kecerunan bumbung, tanjakan, dan gred. Berbeza dengan sinus dan kosinus, tangen boleh melebihi 1 apabila sisi bertentangan lebih panjang daripada sisi bersebelahan. Kesilapan yang perlu dielakkan: mengelirukan tangen 0.75 dengan 75 peratus daripada sudut tepat."
           },
           {
             "kind": "h3",
@@ -184,7 +184,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Kotangen ialah salingan tangen: [[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]. Ia membalikkan perbandingan sisi yang dibuat tangen, jadi di mana tangen bertanya betapa curam cerun, kotangen bertanya betapa landainya. Dengan [[b=4]] dan [[a=3]]: [[\\cot(A)=4/3]], jadi [[[\\boxed{\\cot(A)\\approx1.3333}]]]. Setara, [[\\cot(A)=1/\\tan(A)=1/0.75\\approx1.3333]]. Kotangen berguna apabila masalah secara semula jadi memberikan bersebelahan per bertentangan, atau apabila formula ditulis dalam bentuk salingan. Kesilapan yang perlu dielakkan: menulis kotangen sebagai a/b, yang merupakan tangen."
+            "text": "Kotangen ialah salingan tangen: [[[\\boxed{\\cot(A)=\\frac{b}{a}}]]] Ia membalikkan perbandingan sisi yang dibuat tangen, jadi di mana tangen bertanya betapa curam cerun, kotangen bertanya betapa landainya. Dengan [[b=4]] dan [[a=3]]: [[\\cot(A)=4/3]], jadi [[[\\boxed{\\cot(A)\\approx1.3333}]]] Setara, [[\\cot(A)=1/\\tan(A)=1/0.75\\approx1.3333]]. Kotangen berguna apabila masalah secara semula jadi memberikan bersebelahan per bertentangan, atau apabila formula ditulis dalam bentuk salingan. Kesilapan yang perlu dielakkan: menulis kotangen sebagai a/b, yang merupakan tangen."
           },
           {
             "kind": "h3",
@@ -192,7 +192,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Sekan ialah salingan kosinus: [[[\\boxed{\\sec(A)=\\frac{c}{b}}]]]. Membalikkan pecahan kosinus meletakkan hipotenus, sisi terpanjang, di atas, itulah sebabnya sekan sentiasa lebih besar daripada 1 untuk sudut tirus dalam segi tiga tepat yang sah. Dengan [[c=5]] dan [[b=4]]: [[\\sec(A)=5/4]], jadi [[[\\boxed{\\sec(A)=1.25}]]]. Setara, [[\\sec(A)=1/\\cos(A)=1/0.8=1.25]]. Sekan berguna dalam formula fizik dan kejuruteraan yang dinyatakan dengan hipotenus sebagai pengangka. Kesilapan yang perlu dielakkan: mengelirukan sekan dengan kosinus, atau dengan fungsi kosinus songsang."
+            "text": "Sekan ialah salingan kosinus: [[[\\boxed{\\sec(A)=\\frac{c}{b}}]]] Membalikkan pecahan kosinus meletakkan hipotenus, sisi terpanjang, di atas, itulah sebabnya sekan sentiasa lebih besar daripada 1 untuk sudut tirus dalam segi tiga tepat yang sah. Dengan [[c=5]] dan [[b=4]]: [[\\sec(A)=5/4]], jadi [[[\\boxed{\\sec(A)=1.25}]]] Setara, [[\\sec(A)=1/\\cos(A)=1/0.8=1.25]]. Sekan berguna dalam formula fizik dan kejuruteraan yang dinyatakan dengan hipotenus sebagai pengangka. Kesilapan yang perlu dielakkan: mengelirukan sekan dengan kosinus, atau dengan fungsi kosinus songsang."
           },
           {
             "kind": "h3",
@@ -200,7 +200,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Kosekan ialah salingan sinus: [[[\\boxed{\\csc(A)=\\frac{c}{a}}]]]. Seperti sekan, ia meletakkan hipotenus di atas, jadi ia sentiasa lebih besar daripada 1 untuk sudut tirus. Dengan [[c=5]] dan [[a=3]]: [[\\csc(A)=5/3]], jadi [[[\\boxed{\\csc(A)\\approx1.6667}]]]. Setara, [[\\csc(A)=1/\\sin(A)=1/0.6\\approx1.6667]]. Kosekan muncul dalam matematik gelombang dan ayunan di mana salingan sinus ialah bentuk yang mudah. Kesilapan yang perlu dielakkan: mengelirukan kosekan dengan sinus songsang; [[1/\\sin(A)]] ialah kosekan, manakala [[\\sin^{-1}(r)]] mendapatkan semula sudut."
+            "text": "Kosekan ialah salingan sinus: [[[\\boxed{\\csc(A)=\\frac{c}{a}}]]] Seperti sekan, ia meletakkan hipotenus di atas, jadi ia sentiasa lebih besar daripada 1 untuk sudut tirus. Dengan [[c=5]] dan [[a=3]]: [[\\csc(A)=5/3]], jadi [[[\\boxed{\\csc(A)\\approx1.6667}]]] Setara, [[\\csc(A)=1/\\sin(A)=1/0.6\\approx1.6667]]. Kosekan muncul dalam matematik gelombang dan ayunan di mana salingan sinus ialah bentuk yang mudah. Kesilapan yang perlu dielakkan: mengelirukan kosekan dengan sinus songsang; [[1/\\sin(A)]] ialah kosekan, manakala [[\\sin^{-1}(r)]] mendapatkan semula sudut."
           },
           {
             "kind": "h3",
@@ -529,7 +529,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Begitu juga, [[[\\boxed{\\cot(A)=\\frac{\\cos(A)}{\\sin(A)}}]]]. Dengan nilai 3-4-5: [[0.8/0.6\\approx1.3333]], sepadan dengan [[\\cot(A)]]. Kotangen mewarisi semua yang diketahui tangen, dalam keadaan terbalik."
+            "text": "Begitu juga, [[[\\boxed{\\cot(A)=\\frac{\\cos(A)}{\\sin(A)}}]]] Dengan nilai 3-4-5: [[0.8/0.6\\approx1.3333]], sepadan dengan [[\\cot(A)]]. Kotangen mewarisi semua yang diketahui tangen, dalam keadaan terbalik."
           },
           {
             "kind": "h3",
@@ -585,7 +585,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Mulakan daripada [[\\sin(A)=a/c]] dan susun semula: [[[\\boxed{a=c\\sin(A)}]]]. Dengan hipotenus 10 m dan sudut [[A=30^\\circ]]: [[a=10\\sin(30^\\circ)=5\\text{ m}]]."
+            "text": "Mulakan daripada [[\\sin(A)=a/c]] dan susun semula: [[[\\boxed{a=c\\sin(A)}]]] Dengan hipotenus 10 m dan sudut [[A=30^\\circ]]: [[a=10\\sin(30^\\circ)=5\\text{ m}]]."
           },
           {
             "kind": "h3",
@@ -593,7 +593,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Mulakan daripada [[\\cos(A)=b/c]] dan susun semula: [[[\\boxed{b=c\\cos(A)}]]]. Dengan hipotenus 10 m dan sudut [[A=60^\\circ]]: [[b=10\\cos(60^\\circ)=5\\text{ m}]]."
+            "text": "Mulakan daripada [[\\cos(A)=b/c]] dan susun semula: [[[\\boxed{b=c\\cos(A)}]]] Dengan hipotenus 10 m dan sudut [[A=60^\\circ]]: [[b=10\\cos(60^\\circ)=5\\text{ m}]]."
           },
           {
             "kind": "h3",
@@ -601,7 +601,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Mulakan daripada [[\\tan(A)=a/b]] dan susun semula: [[[\\boxed{a=b\\tan(A)}]]]. Dengan sisi bersebelahan 8 m dan sudut [[A=30^\\circ]]: [[a=8\\tan(30^\\circ)\\approx4.62\\text{ m}]]. Tangen amat berguna di sini kerana ia menghubungkan kedua-dua kaki secara langsung, tanpa hipotenus."
+            "text": "Mulakan daripada [[\\tan(A)=a/b]] dan susun semula: [[[\\boxed{a=b\\tan(A)}]]] Dengan sisi bersebelahan 8 m dan sudut [[A=30^\\circ]]: [[a=8\\tan(30^\\circ)\\approx4.62\\text{ m}]]. Tangen amat berguna di sini kerana ia menghubungkan kedua-dua kaki secara langsung, tanpa hipotenus."
           }
         ]
       },
@@ -1066,7 +1066,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Sinus porównuje bok przeciwległy z przeciwprostokątną: [[[\\boxed{\\sin(A)=\\frac{a}{c}}]]]. Przeciwprostokątna jest mianownikiem, ponieważ jest najdłuższym bokiem, co utrzymuje sinus między 0 a 1 dla kątów ostrych. Przy [[a=3]] i [[c=5]]: [[\\sin(A)=3/5]], więc [[[\\boxed{\\sin(A)=0.6}]]]. Wynik oznacza, że bok przeciwległy to 60 procent przeciwprostokątnej. Sinus jest przydatny, gdy znaną parą są bok przeciwległy i przeciwprostokątna, na przykład przy wyznaczaniu kąta drabiny z jej wysokości i długości. Łączy się z cosinusem jako dopełniający partner: sinus jednego kąta ostrego równa się cosinusowi drugiego. Błąd, którego należy unikać: 0.6 to stosunek, a nie kąt 0.6 stopnia."
+            "text": "Sinus porównuje bok przeciwległy z przeciwprostokątną: [[[\\boxed{\\sin(A)=\\frac{a}{c}}]]] Przeciwprostokątna jest mianownikiem, ponieważ jest najdłuższym bokiem, co utrzymuje sinus między 0 a 1 dla kątów ostrych. Przy [[a=3]] i [[c=5]]: [[\\sin(A)=3/5]], więc [[[\\boxed{\\sin(A)=0.6}]]] Wynik oznacza, że bok przeciwległy to 60 procent przeciwprostokątnej. Sinus jest przydatny, gdy znaną parą są bok przeciwległy i przeciwprostokątna, na przykład przy wyznaczaniu kąta drabiny z jej wysokości i długości. Łączy się z cosinusem jako dopełniający partner: sinus jednego kąta ostrego równa się cosinusowi drugiego. Błąd, którego należy unikać: 0.6 to stosunek, a nie kąt 0.6 stopnia."
           },
           {
             "kind": "h3",
@@ -1074,7 +1074,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Cosinus porównuje bok przyległy z przeciwprostokątną: [[[\\boxed{\\cos(A)=\\frac{b}{c}}]]]. Sinus i cosinus dzielą przez przeciwprostokątną, więc oba pozostają między 0 a 1; różnią się tylko licznikiem, dlatego sinus i cosinus opisują różne aspekty tego samego kąta. Przy [[b=4]] i [[c=5]]: [[\\cos(A)=4/5]], więc [[[\\boxed{\\cos(A)=0.8}]]]. Bok przyległy to 80 procent przeciwprostokątnej. Cosinus jest przydatny, gdy znane są bok przyległy i przeciwprostokątna, na przykład poziomy przebieg dachu i długość krokwi. Łączy się z sinusem poprzez tożsamość [[\\sin^2(A)+\\cos^2(A)=1]]. Błąd, którego należy unikać: zamiana liczników, użycie 3/5 dla cosinusa zamiast 4/5."
+            "text": "Cosinus porównuje bok przyległy z przeciwprostokątną: [[[\\boxed{\\cos(A)=\\frac{b}{c}}]]] Sinus i cosinus dzielą przez przeciwprostokątną, więc oba pozostają między 0 a 1; różnią się tylko licznikiem, dlatego sinus i cosinus opisują różne aspekty tego samego kąta. Przy [[b=4]] i [[c=5]]: [[\\cos(A)=4/5]], więc [[[\\boxed{\\cos(A)=0.8}]]] Bok przyległy to 80 procent przeciwprostokątnej. Cosinus jest przydatny, gdy znane są bok przyległy i przeciwprostokątna, na przykład poziomy przebieg dachu i długość krokwi. Łączy się z sinusem poprzez tożsamość [[\\sin^2(A)+\\cos^2(A)=1]]. Błąd, którego należy unikać: zamiana liczników, użycie 3/5 dla cosinusa zamiast 4/5."
           },
           {
             "kind": "h3",
@@ -1082,7 +1082,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Tangens porównuje bok przeciwległy z bokiem przyległym: [[[\\boxed{\\tan(A)=\\frac{a}{b}}]]]. Pomija przeciwprostokątną całkowicie, co czyni go naturalnym stosunkiem dla zadań o nachyleniu, w których obie przyprostokątne są mierzonymi wielkościami. Przy [[a=3]] i [[b=4]]: [[\\tan(A)=3/4]], więc [[[\\boxed{\\tan(A)=0.75}]]]. Bok przeciwległy jest o 75 procent tak długi jak bok przyległy. Tangens to matematyczna postać przyrostu na przebieg poziomy, dlatego występuje w spadach dachów, rampach i nachyleniach. W przeciwieństwie do sinusa i cosinusa tangens może przekraczać 1, gdy bok przeciwległy jest dłuższy niż przyległy. Błąd, którego należy unikać: mylenie tangensa 0.75 z 75 procentami kąta prostego."
+            "text": "Tangens porównuje bok przeciwległy z bokiem przyległym: [[[\\boxed{\\tan(A)=\\frac{a}{b}}]]] Pomija przeciwprostokątną całkowicie, co czyni go naturalnym stosunkiem dla zadań o nachyleniu, w których obie przyprostokątne są mierzonymi wielkościami. Przy [[a=3]] i [[b=4]]: [[\\tan(A)=3/4]], więc [[[\\boxed{\\tan(A)=0.75}]]] Bok przeciwległy jest o 75 procent tak długi jak bok przyległy. Tangens to matematyczna postać przyrostu na przebieg poziomy, dlatego występuje w spadach dachów, rampach i nachyleniach. W przeciwieństwie do sinusa i cosinusa tangens może przekraczać 1, gdy bok przeciwległy jest dłuższy niż przyległy. Błąd, którego należy unikać: mylenie tangensa 0.75 z 75 procentami kąta prostego."
           },
           {
             "kind": "h3",
@@ -1090,7 +1090,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Cotangens to odwrotność tangensa: [[[\\boxed{\\cot(A)=\\frac{b}{a}}]]]. Odwraca porównanie boków, które wykonuje tangens, więc tam, gdzie tangens pyta, jak strome jest nachylenie, cotangens pyta, jak łagodne ono jest. Przy [[b=4]] i [[a=3]]: [[\\cot(A)=4/3]], więc [[[\\boxed{\\cot(A)\\approx1.3333}]]]. Równoważnie, [[\\cot(A)=1/\\tan(A)=1/0.75\\approx1.3333]]. Cotangens jest przydatny, gdy zadanie w naturalny sposób podaje przyległy przez przeciwległy albo gdy wzór jest zapisany w postaci odwrotnej. Błąd, którego należy unikać: zapisywanie cotangensa jako a/b, co jest tangensem."
+            "text": "Cotangens to odwrotność tangensa: [[[\\boxed{\\cot(A)=\\frac{b}{a}}]]] Odwraca porównanie boków, które wykonuje tangens, więc tam, gdzie tangens pyta, jak strome jest nachylenie, cotangens pyta, jak łagodne ono jest. Przy [[b=4]] i [[a=3]]: [[\\cot(A)=4/3]], więc [[[\\boxed{\\cot(A)\\approx1.3333}]]] Równoważnie, [[\\cot(A)=1/\\tan(A)=1/0.75\\approx1.3333]]. Cotangens jest przydatny, gdy zadanie w naturalny sposób podaje przyległy przez przeciwległy albo gdy wzór jest zapisany w postaci odwrotnej. Błąd, którego należy unikać: zapisywanie cotangensa jako a/b, co jest tangensem."
           },
           {
             "kind": "h3",
@@ -1098,7 +1098,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Sekans to odwrotność cosinusa: [[[\\boxed{\\sec(A)=\\frac{c}{b}}]]]. Odwrócenie ułamka cosinusa stawia przeciwprostokątną, najdłuższy bok, na górze, dlatego sekans jest zawsze większy od 1 dla kąta ostrego w prawidłowym trójkącie prostokątnym. Przy [[c=5]] i [[b=4]]: [[\\sec(A)=5/4]], więc [[[\\boxed{\\sec(A)=1.25}]]]. Równoważnie, [[\\sec(A)=1/\\cos(A)=1/0.8=1.25]]. Sekans jest przydatny we wzorach fizycznych i inżynieryjnych zapisanych z przeciwprostokątną w liczniku. Błąd, którego należy unikać: mylenie sekansa z cosinusem albo z funkcją arcus cosinus."
+            "text": "Sekans to odwrotność cosinusa: [[[\\boxed{\\sec(A)=\\frac{c}{b}}]]] Odwrócenie ułamka cosinusa stawia przeciwprostokątną, najdłuższy bok, na górze, dlatego sekans jest zawsze większy od 1 dla kąta ostrego w prawidłowym trójkącie prostokątnym. Przy [[c=5]] i [[b=4]]: [[\\sec(A)=5/4]], więc [[[\\boxed{\\sec(A)=1.25}]]] Równoważnie, [[\\sec(A)=1/\\cos(A)=1/0.8=1.25]]. Sekans jest przydatny we wzorach fizycznych i inżynieryjnych zapisanych z przeciwprostokątną w liczniku. Błąd, którego należy unikać: mylenie sekansa z cosinusem albo z funkcją arcus cosinus."
           },
           {
             "kind": "h3",
@@ -1106,7 +1106,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Cosecans to odwrotność sinusa: [[[\\boxed{\\csc(A)=\\frac{c}{a}}]]]. Podobnie jak sekans stawia przeciwprostokątną na górze, więc jest zawsze większy od 1 dla kątów ostrych. Przy [[c=5]] i [[a=3]]: [[\\csc(A)=5/3]], więc [[[\\boxed{\\csc(A)\\approx1.6667}]]]. Równoważnie, [[\\csc(A)=1/\\sin(A)=1/0.6\\approx1.6667]]. Cosecans występuje w matematyce fal i oscylacji, gdzie odwrotność sinusa jest wygodną postacią. Błąd, którego należy unikać: mylenie cosecansa z arcus sinusem; [[1/\\sin(A)]] to cosecans, natomiast [[\\sin^{-1}(r)]] odtwarza kąt."
+            "text": "Cosecans to odwrotność sinusa: [[[\\boxed{\\csc(A)=\\frac{c}{a}}]]] Podobnie jak sekans stawia przeciwprostokątną na górze, więc jest zawsze większy od 1 dla kątów ostrych. Przy [[c=5]] i [[a=3]]: [[\\csc(A)=5/3]], więc [[[\\boxed{\\csc(A)\\approx1.6667}]]] Równoważnie, [[\\csc(A)=1/\\sin(A)=1/0.6\\approx1.6667]]. Cosecans występuje w matematyce fal i oscylacji, gdzie odwrotność sinusa jest wygodną postacią. Błąd, którego należy unikać: mylenie cosecansa z arcus sinusem; [[1/\\sin(A)]] to cosecans, natomiast [[\\sin^{-1}(r)]] odtwarza kąt."
           },
           {
             "kind": "h3",
@@ -1435,7 +1435,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Podobnie, [[[\\boxed{\\cot(A)=\\frac{\\cos(A)}{\\sin(A)}}]]]. Dla wartości 3-4-5: [[0.8/0.6\\approx1.3333]], co zgadza się z [[\\cot(A)]]. Cotangens dziedziczy wszystko, co wie tangens, w odwróconej postaci."
+            "text": "Podobnie, [[[\\boxed{\\cot(A)=\\frac{\\cos(A)}{\\sin(A)}}]]] Dla wartości 3-4-5: [[0.8/0.6\\approx1.3333]], co zgadza się z [[\\cot(A)]]. Cotangens dziedziczy wszystko, co wie tangens, w odwróconej postaci."
           },
           {
             "kind": "h3",
@@ -1491,7 +1491,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Zacznij od [[\\sin(A)=a/c]] i przekształć: [[[\\boxed{a=c\\sin(A)}]]]. Przy przeciwprostokątnej 10 m i kącie [[A=30^\\circ]]: [[a=10\\sin(30^\\circ)=5\\text{ m}]]."
+            "text": "Zacznij od [[\\sin(A)=a/c]] i przekształć: [[[\\boxed{a=c\\sin(A)}]]] Przy przeciwprostokątnej 10 m i kącie [[A=30^\\circ]]: [[a=10\\sin(30^\\circ)=5\\text{ m}]]."
           },
           {
             "kind": "h3",
@@ -1499,7 +1499,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Zacznij od [[\\cos(A)=b/c]] i przekształć: [[[\\boxed{b=c\\cos(A)}]]]. Przy przeciwprostokątnej 10 m i kącie [[A=60^\\circ]]: [[b=10\\cos(60^\\circ)=5\\text{ m}]]."
+            "text": "Zacznij od [[\\cos(A)=b/c]] i przekształć: [[[\\boxed{b=c\\cos(A)}]]] Przy przeciwprostokątnej 10 m i kącie [[A=60^\\circ]]: [[b=10\\cos(60^\\circ)=5\\text{ m}]]."
           },
           {
             "kind": "h3",
@@ -1507,7 +1507,7 @@ export const TRIG_RATIOS_TRANSLATIONS_BATCH2C = {
           },
           {
             "kind": "p",
-            "text": "Zacznij od [[\\tan(A)=a/b]] i przekształć: [[[\\boxed{a=b\\tan(A)}]]]. Przy boku przyległym 8 m i kącie [[A=30^\\circ]]: [[a=8\\tan(30^\\circ)\\approx4.62\\text{ m}]]. Tangens jest tu szczególnie przydatny, ponieważ łączy obie przyprostokątne bezpośrednio, bez przeciwprostokątnej."
+            "text": "Zacznij od [[\\tan(A)=a/b]] i przekształć: [[[\\boxed{a=b\\tan(A)}]]] Przy boku przyległym 8 m i kącie [[A=30^\\circ]]: [[a=8\\tan(30^\\circ)\\approx4.62\\text{ m}]]. Tangens jest tu szczególnie przydatny, ponieważ łączy obie przyprostokątne bezpośrednio, bez przeciwprostokątnej."
           }
         ]
       },

@@ -27,7 +27,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-intro": {
         "h2": "Cara Mengira Luas Segi Tiga Bersudut Tepat dari Altitud",
         "blocks": [
-          { "kind": "p", "text": "Andaikan sebuah segi tiga bersudut tepat mempunyai hipotenus 10 m, dan jarak berserenjang dari bucu sudut tepat ke hipotenus itu berukuran 4.8 m. Luasnya mengikut secara langsung: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Segi tiga itu menempati 24 meter persegi permukaan rata." },
+          { "kind": "p", "text": "Andaikan sebuah segi tiga bersudut tepat mempunyai hipotenus 10 m, dan jarak berserenjang dari bucu sudut tepat ke hipotenus itu berukuran 4.8 m. Luasnya mengikut secara langsung: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Segi tiga itu menempati 24 meter persegi permukaan rata." },
           { "kind": "p", "text": "Kalkulator ini wujud untuk situasi seperti itu. Apabila anda mengetahui sisi terpanjang segi tiga bersudut tepat, iaitu hipotenus [[c]], dan altitud berserenjang dari bucu sudut tepat ke sisi itu, iaitu [[h]], kedua-dua kaki tidak diperlukan. Hipotenus menjadi tapak, altitud ialah tinggi berserenjang yang sepadan, dan luas setiap segi tiga ialah separuh hasil darab tapak dengan tingginya yang sepadan: [[K=ch/2]]." },
           { "kind": "p", "text": "Altitud mesti bertemu hipotenus pada sudut tepat; segmen condong yang tidak berserenjang memberi tinggi yang salah dan luas yang salah. Masukkan kedua-dua ukuran dalam unit panjang yang sepadan, dan kalkulator mengembalikan luas dalam unit persegi yang sepadan, dengan setiap langkah penggantian ditunjukkan." }
         ]
@@ -53,7 +53,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-formula": {
         "h2": "Formula Luas Segi Tiga Bersudut Tepat dari Altitud",
         "blocks": [
-          { "kind": "p", "text": "Formula luas altitud ialah [[[\\boxed{K=\\frac{ch}{2}}]]]. Di sini [[K]] ialah luas, [[c]] ialah hipotenus yang menjadi tapak, dan [[h]] ialah altitud berserenjang ke hipotenus. Tiga simbol, satu pendaraban, satu pembahagian dua." },
+          { "kind": "p", "text": "Formula luas altitud ialah [[[\\boxed{K=\\frac{ch}{2}}]]] Di sini [[K]] ialah luas, [[c]] ialah hipotenus yang menjadi tapak, dan [[h]] ialah altitud berserenjang ke hipotenus. Tiga simbol, satu pendaraban, satu pembahagian dua." },
           { "kind": "h3", "text": "Mengapakah Kita Mendarabkan Hipotenus dengan Altitud?" },
           { "kind": "p", "text": "Formula luas segi tiga yang umum ialah [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], dan tapak serta tinggi mestilah berserenjang antara satu sama lain. Memilih hipotenus sebagai tapak memaksa tinggi menjadi jarak berserenjang kepadanya, iaitu tepat altitud: [[\\text{base}=c]] dan [[\\text{height}=h]], oleh itu [[K=ch/2]]. Ini berlaku walau bagaimana segi tiga diputar atau dilukis: keserenjangan ialah hubungan geometri, bukan arah skrin, jadi hipotenus condong berfungsi sebagai tapak sama baiknya dengan yang mendatar." },
           { "kind": "h3", "text": "Mengapakah Hasil Dibahagi dengan Dua?" },
@@ -76,7 +76,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
           "<strong>Tulis formula.</strong> [[K=ch/2]].",
           "<strong>Gantikan ukuran.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Darabkan.</strong> [[10\\times4.8=48]], jadi [[K=48/2]].",
-          "<strong>Bahagikan dengan dua.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Bahagikan dengan dua.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Tafsirkan jawapan.</strong> Segi tiga itu menempati 24 meter persegi luas rata.",
           "<strong>Semak kebolehlaksanaan.</strong> Segi tiga bersudut tepat yang sah memerlukan [[h\\leq c/2]]; di sini [[4.8\\leq5]], jadi ukuran itu boleh menggambarkan segi tiga bersudut tepat yang sebenar.",
           "<strong>Sahkan menggunakan kaki.</strong> Segi tiga 6-8-10 mempunyai hipotenus dan altitud yang sama, dan [[K=(6\\times8)/2=24]]. Kedua-dua laluan sepadan."
@@ -112,13 +112,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
         "blocks": [
           { "kind": "p", "text": "Empat contoh terperinci membina kaedah dari segi tiga yang biasa ke atas. Setiap satu mengira altitud dari kaki di mana perlu, menggunakan [[K=ch/2]], dan menyemak silang dengan formula kaki." },
           { "kind": "h3", "text": "Contoh 1: Segi Tiga Bersudut Tepat 3-4-5" },
-          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]]. Altitud ialah [[h=ab/c]], jadi [[h=(3\\times4)/5=2.4]]. Luasnya ialah [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Menyemak dengan kaki, [[K=(3\\times4)/2=6]]. Kedua-dua formula menggambarkan segi tiga yang sama, jadi ia mesti sepadan, dan ia memang sepadan." },
+          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]]. Altitud ialah [[h=ab/c]], jadi [[h=(3\\times4)/5=2.4]]. Luasnya ialah [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Menyemak dengan kaki, [[K=(3\\times4)/2=6]]. Kedua-dua formula menggambarkan segi tiga yang sama, jadi ia mesti sepadan, dan ia memang sepadan." },
           { "kind": "h3", "text": "Contoh 2: Segi Tiga Bersudut Tepat 5-12-13" },
-          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]], [[c=13]]. Altitud ialah [[h=(5\\times12)/13=60/13\\approx4.61538]]. Mengekalkan pecahan tepat, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Mengekalkan [[60/13]] bukannya perpuluhan yang dibundarkan mengelakkan ralat pembundaran awal: 13 terhapus tepat, meninggalkan 30 yang bersih." },
+          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]], [[c=13]]. Altitud ialah [[h=(5\\times12)/13=60/13\\approx4.61538]]. Mengekalkan pecahan tepat, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Mengekalkan [[60/13]] bukannya perpuluhan yang dibundarkan mengelakkan ralat pembundaran awal: 13 terhapus tepat, meninggalkan 30 yang bersih." },
           { "kind": "h3", "text": "Contoh 3: Segi Tiga Bersudut Tepat 6-8-10" },
-          { "kind": "p", "text": "Diberi [[c=10]] dan [[h=4.8]] secara langsung. Maka [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Dengan kaki 6 dan 8, [[K=(6\\times8)/2=24]], yang mengesahkan laluan altitud." },
+          { "kind": "p", "text": "Diberi [[c=10]] dan [[h=4.8]] secara langsung. Maka [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Dengan kaki 6 dan 8, [[K=(6\\times8)/2=24]], yang mengesahkan laluan altitud." },
           { "kind": "h3", "text": "Contoh 4: Segi Tiga Bersudut Tepat Sama Kaki" },
-          { "kind": "p", "text": "Diberi [[c=10]] dan [[h=5]]. Maka [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Ini ialah luas terbesar yang boleh dimiliki oleh sebarang segi tiga bersudut tepat dengan hipotenus 10. Altitud sama dengan separuh hipotenus hanya apabila kaki adalah sama, menjadikan setiap sudut tirus [[45^\\circ]], dan tiada segi tiga bersudut tepat yang sah dengan hipotenus ini boleh melebihi 25 unit persegi." }
+          { "kind": "p", "text": "Diberi [[c=10]] dan [[h=5]]. Maka [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Ini ialah luas terbesar yang boleh dimiliki oleh sebarang segi tiga bersudut tepat dengan hipotenus 10. Altitud sama dengan separuh hipotenus hanya apabila kaki adalah sama, menjadikan setiap sudut tirus [[45^\\circ]], dan tiada segi tiga bersudut tepat yang sah dengan hipotenus ini boleh melebihi 25 unit persegi." }
         ]
       },
       "sec-applications": {
@@ -126,29 +126,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
         "blocks": [
           { "kind": "p", "text": "Dua belas situasi terperinci menunjukkan formula pada skala dan unit yang berbeza. Setiap satu menamakan segi tiga dalam pemandangan, dua ukuran, penggantian, luas, dan andaian di sebalik model." },
           { "kind": "h3", "text": "Contoh 1: Seksyen Taman Berbentuk Segi Tiga" },
-          { "kind": "p", "text": "Seksyen taman berbentuk segi tiga bersudut tepat mempunyai sempadan terpanjang 10 m, dan jarak berserenjang dari bucu sudut tepat ke sempadan itu ialah 4.8 m. Jadi [[c=10\\text{ m}]] dan [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Seksyen itu menempati 24 meter persegi. Ini mengandaikan sempadan itu lurus dan bucu itu benar-benar sudut tepat." },
+          { "kind": "p", "text": "Seksyen taman berbentuk segi tiga bersudut tepat mempunyai sempadan terpanjang 10 m, dan jarak berserenjang dari bucu sudut tepat ke sempadan itu ialah 4.8 m. Jadi [[c=10\\text{ m}]] dan [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Seksyen itu menempati 24 meter persegi. Ini mengandaikan sempadan itu lurus dan bucu itu benar-benar sudut tepat." },
           { "kind": "h3", "text": "Contoh 2: Panel Papan Lapis Berbentuk Segi Tiga" },
-          { "kind": "p", "text": "Panel papan lapis berbentuk segi tiga bersudut tepat mempunyai hipotenus 1 m dan altitud berserenjang 0.48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. Itu ialah permukaan rata satu muka, berguna untuk anggaran liputan. Sisa potongan dan elaun bahan adalah pertimbangan berasingan." },
+          { "kind": "p", "text": "Panel papan lapis berbentuk segi tiga bersudut tepat mempunyai hipotenus 1 m dan altitud berserenjang 0.48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] Itu ialah permukaan rata satu muka, berguna untuk anggaran liputan. Sisa potongan dan elaun bahan adalah pertimbangan berasingan." },
           { "kind": "h3", "text": "Contoh 3: Tingkap Kaca Berbentuk Segi Tiga Bersudut Tepat" },
-          { "kind": "p", "text": "Panel kaca berbentuk segi tiga bersudut tepat mempunyai hipotenus 1.3 m dan altitud 0.6 m yang berserenjang dengan sisi itu: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Ini ialah luas kaca geometri sebelum liputan bingkai atau elaun pemasangan diambil kira." },
+          { "kind": "p", "text": "Panel kaca berbentuk segi tiga bersudut tepat mempunyai hipotenus 1.3 m dan altitud 0.6 m yang berserenjang dengan sisi itu: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Ini ialah luas kaca geometri sebelum liputan bingkai atau elaun pemasangan diambil kira." },
           { "kind": "h3", "text": "Contoh 4: Mengukur Seksyen Berbentuk Segi Tiga" },
-          { "kind": "p", "text": "Lukisan tinjauan mengandungi segi tiga bersudut tepat dengan hipotenus 13 m dan altitud [[60/13]] m. Mengekalkan pecahan: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Lukisan itu mewakili seksyen 30 meter persegi. Kerja lapangan sebenar mungkin masih memerlukan pembetulan instrumen di luar pelan." },
+          { "kind": "p", "text": "Lukisan tinjauan mengandungi segi tiga bersudut tepat dengan hipotenus 13 m dan altitud [[60/13]] m. Mengekalkan pecahan: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Lukisan itu mewakili seksyen 30 meter persegi. Kerja lapangan sebenar mungkin masih memerlukan pembetulan instrumen di luar pelan." },
           { "kind": "h3", "text": "Contoh 5: Mengukur Jubin Berbentuk Segi Tiga" },
-          { "kind": "p", "text": "Jubin berbentuk segi tiga bersudut tepat mempunyai hipotenus 25 cm dan altitud berserenjang 6.72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Satu jubin meliputi 84 sentimeter persegi, yang membantu menganggar bilangan jubin yang diperlukan oleh permukaan. Celah grout dan kehilangan potongan dikira berasingan." },
+          { "kind": "p", "text": "Jubin berbentuk segi tiga bersudut tepat mempunyai hipotenus 25 cm dan altitud berserenjang 6.72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Satu jubin meliputi 84 sentimeter persegi, yang membantu menganggar bilangan jubin yang diperlukan oleh permukaan. Celah grout dan kehilangan potongan dikira berasingan." },
           { "kind": "h3", "text": "Contoh 6: Panel Sokongan Keluli" },
-          { "kind": "p", "text": "Panel sokongan rata berbentuk segi tiga bersudut tepat mempunyai hipotenus 1.7 m dengan kaki 0.8 m dan 1.5 m. Altitudnya ialah [[h=(0.8\\times1.5)/1.7=12/17]] m. Maka [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. Itu ialah luas panel geometri, bukan kapasiti menanggung bebannya." },
+          { "kind": "p", "text": "Panel sokongan rata berbentuk segi tiga bersudut tepat mempunyai hipotenus 1.7 m dengan kaki 0.8 m dan 1.5 m. Altitudnya ialah [[h=(0.8\\times1.5)/1.7=12/17]] m. Maka [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] Itu ialah luas panel geometri, bukan kapasiti menanggung bebannya." },
           { "kind": "h3", "text": "Contoh 7: Panel Sisi Tanjakan Berbentuk Segi Tiga" },
-          { "kind": "p", "text": "Panel sisi tanjakan yang dipermudah membentuk segi tiga bersudut tepat dengan hipotenus 5 m dan altitud berserenjang 2.4 m ke hipotenus itu: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Ini ialah luas rata seksyen sisi berbentuk segi tiga, bukan permukaan tanjakan yang condong, dan pengiraan tidak menetapkan pematuhan kebolehcapaian." },
+          { "kind": "p", "text": "Panel sisi tanjakan yang dipermudah membentuk segi tiga bersudut tepat dengan hipotenus 5 m dan altitud berserenjang 2.4 m ke hipotenus itu: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Ini ialah luas rata seksyen sisi berbentuk segi tiga, bukan permukaan tanjakan yang condong, dan pengiraan tidak menetapkan pematuhan kebolehcapaian." },
           { "kind": "h3", "text": "Contoh 8: Seksyen Gabel Bumbung" },
-          { "kind": "p", "text": "Seksyen gabel bumbung berbentuk segi tiga bersudut tepat mempunyai hipotenus 6.5 m dan altitud berserenjang [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Hasilnya menggambarkan satah segi tiga yang diberikan oleh ukuran. Jumlah luas permukaan bumbung sebenar ialah masalah ukuran tiga dimensi yang berasingan." },
+          { "kind": "p", "text": "Seksyen gabel bumbung berbentuk segi tiga bersudut tepat mempunyai hipotenus 6.5 m dan altitud berserenjang [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Hasilnya menggambarkan satah segi tiga yang diberikan oleh ukuran. Jumlah luas permukaan bumbung sebenar ialah masalah ukuran tiga dimensi yang berasingan." },
           { "kind": "h3", "text": "Contoh 9: Plot Tanah Berbentuk Segi Tiga Bersudut Tepat" },
-          { "kind": "p", "text": "Seksyen tanah berbentuk segi tiga bersudut tepat mempunyai hipotenus 50 m dan altitud berserenjang 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Sempadan yang diukur menempati 600 meter persegi. Angka luas rasmi mungkin masih memerlukan pengesahan tinjauan." },
+          { "kind": "p", "text": "Seksyen tanah berbentuk segi tiga bersudut tepat mempunyai hipotenus 50 m dan altitud berserenjang 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Sempadan yang diukur menempati 600 meter persegi. Angka luas rasmi mungkin masih memerlukan pengesahan tinjauan." },
           { "kind": "h3", "text": "Contoh 10: Plot Tinjauan Berbentuk Segi Tiga yang Besar" },
-          { "kind": "p", "text": "Seksyen berbentuk segi tiga bersudut tepat yang ditinjau mempunyai hipotenus 100 m dan altitud berserenjang 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Itu ialah luas satah seksyen segi tiga itu. Ia mewakili keseluruhan harta hanya apabila harta itu terdiri semata-mata daripada segi tiga itu." },
+          { "kind": "p", "text": "Seksyen berbentuk segi tiga bersudut tepat yang ditinjau mempunyai hipotenus 100 m dan altitud berserenjang 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Itu ialah luas satah seksyen segi tiga itu. Ia mewakili keseluruhan harta hanya apabila harta itu terdiri semata-mata daripada segi tiga itu." },
           { "kind": "h3", "text": "Contoh 11: Seksyen Layar Berbentuk Segi Tiga" },
-          { "kind": "p", "text": "Reka bentuk layar rata berbentuk segi tiga bersudut tepat mempunyai hipotenus 15 kaki dan altitud berserenjang 7.2 kaki: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Ini ialah luas satah layar yang diidealkan. Kain melengkung, jahitan, dan elaun tepi memerlukan pertimbangan berasingan." },
+          { "kind": "p", "text": "Reka bentuk layar rata berbentuk segi tiga bersudut tepat mempunyai hipotenus 15 kaki dan altitud berserenjang 7.2 kaki: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Ini ialah luas satah layar yang diidealkan. Kain melengkung, jahitan, dan elaun tepi memerlukan pertimbangan berasingan." },
           { "kind": "h3", "text": "Contoh 12: Braket Mekanikal Kecil" },
-          { "kind": "p", "text": "Braket rata berbentuk segi tiga bersudut tepat mempunyai hipotenus 250 mm dan altitud berserenjang 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. Jawapan dalam milimeter persegi kerana input dalam milimeter. Oleh kerana [[1\\text{ cm}^2=100\\text{ mm}^2]], ini sama dengan [[[\\boxed{150\\text{ cm}^2}]]]. Menukarkan unit linear dan menukarkan unit persegi ialah operasi yang berbeza, seperti yang dijelaskan oleh bahagian unit." },
+          { "kind": "p", "text": "Braket rata berbentuk segi tiga bersudut tepat mempunyai hipotenus 250 mm dan altitud berserenjang 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] Jawapan dalam milimeter persegi kerana input dalam milimeter. Oleh kerana [[1\\text{ cm}^2=100\\text{ mm}^2]], ini sama dengan [[[\\boxed{150\\text{ cm}^2}]]] Menukarkan unit linear dan menukarkan unit persegi ialah operasi yang berbeza, seperti yang dijelaskan oleh bahagian unit." },
           { "kind": "h3", "text": "Perbandingan Contoh Praktikal" }
         ],
         "table": {
@@ -174,7 +174,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-equal": {
         "h2": "Mengapakah Kedua-dua Formula Luas Segi Tiga Bersudut Tepat Memberi Jawapan yang Sama",
         "blocks": [
-          { "kind": "p", "text": "Segi tiga bersudut tepat boleh diukur melalui dua kaki berserenjangnya atau melalui hipotenus dan altitudnya. Formula kaki ialah [[K=ab/2]] dan formula altitud ialah [[K=ch/2]]. Oleh kerana kedua-duanya menggambarkan luas segi tiga yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Darabkan kedua-dua sisi dengan dua: [[ab=ch]]. Selesaikan untuk [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. Altitud ialah hasil darab kaki dibahagi dengan hipotenus, itulah sebabnya kedua-dua formula tidak boleh berselisih pada segi tiga yang konsisten." },
+          { "kind": "p", "text": "Segi tiga bersudut tepat boleh diukur melalui dua kaki berserenjangnya atau melalui hipotenus dan altitudnya. Formula kaki ialah [[K=ab/2]] dan formula altitud ialah [[K=ch/2]]. Oleh kerana kedua-duanya menggambarkan luas segi tiga yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Darabkan kedua-dua sisi dengan dua: [[ab=ch]]. Selesaikan untuk [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] Altitud ialah hasil darab kaki dibahagi dengan hipotenus, itulah sebabnya kedua-dua formula tidak boleh berselisih pada segi tiga yang konsisten." },
           { "kind": "p", "text": "Pengesahan berangka: untuk [[a=6]], [[b=8]], [[c=10]], altitud ialah [[h=(6\\times8)/10=4.8]]. Dengan kaki: [[K=(6\\times8)/2=24]]. Dengan altitud: [[K=(10\\times4.8)/2=24]]. Segi tiga yang sama, luas yang sama, dua laluan." },
           { "kind": "p", "text": "Apabila hanya hipotenus dan altitud diketahui, luas sudah tetap: tidak perlu membina semula kaki terlebih dahulu. Panjang kaki masih boleh diperoleh daripada [[c]] dan [[h]] yang sah melalui hubungan segmen di bawah, tetapi itu pengiraan berasingan daripada mencari luas. Apabila kaki ialah data yang diketahui, <a href=\"/right-triangle-area-from-legs-calculator/\">Kalkulator Luas Segi Tiga Bersudut Tepat dari Kaki</a> mengambilnya secara langsung." }
         ]
@@ -186,7 +186,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
           { "kind": "h3", "text": "Dua Segi Tiga Bersudut Tepat yang Lebih Kecil yang Serupa" },
           { "kind": "p", "text": "Altitud membahagikan segi tiga asal kepada dua segi tiga bersudut tepat yang lebih kecil, setiap satu berkongsi satu sudut tirus dengan yang asal dan setiap satu mengandungi sudut tepat. Berkongsi dua ukuran sudut menjadikan ketiga-tiga segi tiga serupa. Keserupaan inilah yang memaksa hubungan kadaran yang bersih antara altitud, segmen, dan kaki." },
           { "kind": "h3", "text": "Teorem Min Geometri Altitud" },
-          { "kind": "p", "text": "Keserupaan memberi [[[\\boxed{h^2=pq}]]], atau setara [[[\\boxed{h=\\sqrt{pq}}]]]. Altitud ialah min geometri dua segmen hipotenus: kuasa duanya sama dengan hasil darab mereka. Contoh terperinci: dengan [[p=6.4]] dan [[q=3.6]], [[c=p+q=10]], dan [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. Luas mengikut: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Teorem segmen mengesahkan altitud yang diukur atau dikira dengan cara lain." },
+          { "kind": "p", "text": "Keserupaan memberi [[[\\boxed{h^2=pq}]]], atau setara [[[\\boxed{h=\\sqrt{pq}}]]] Altitud ialah min geometri dua segmen hipotenus: kuasa duanya sama dengan hasil darab mereka. Contoh terperinci: dengan [[p=6.4]] dan [[q=3.6]], [[c=p+q=10]], dan [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] Luas mengikut: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Teorem segmen mengesahkan altitud yang diukur atau dikira dengan cara lain." },
           { "kind": "h3", "text": "Hubungan antara Segmen dan Kaki" },
           { "kind": "p", "text": "Keserupaan yang sama menghasilkan [[b^2=cp]] dan [[a^2=cq]]. Dengan [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] dan [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Segi tiga 6-8-10 asal diperoleh semula tepat, yang menunjukkan betapa rapat segmen, altitud, dan kaki terikat bersama." }
         ]
@@ -194,11 +194,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-max": {
         "h2": "Seberapa Besar Altitud Segi Tiga Bersudut Tepat Boleh Jadi?",
         "blocks": [
-          { "kind": "p", "text": "Tidak setiap pasangan nombor positif boleh menjadi hipotenus dan altitud. Untuk segi tiga bersudut tepat yang sah dan tidak degenerat, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. Altitud mestilah positif dan tidak boleh melebihi separuh hipotenus." },
+          { "kind": "p", "text": "Tidak setiap pasangan nombor positif boleh menjadi hipotenus dan altitud. Untuk segi tiga bersudut tepat yang sah dan tidak degenerat, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] Altitud mestilah positif dan tidak boleh melebihi separuh hipotenus." },
           { "kind": "h3", "text": "Mengapakah Altitud Tidak Boleh Melebihi Separuh Hipotenus" },
           { "kind": "p", "text": "Dari [[h^2=pq]] dengan [[p+q=c]], hasil darab [[pq]] adalah terbesar apabila kedua-dua segmen sama, [[p=q=c/2]]. Oleh itu [[h^2\\leq c^2/4]], dan untuk panjang positif [[h\\leq c/2]]. Dalam istilah mudah: altitud paling tinggi apabila ia membelah hipotenus kepada dua separuh yang sama, dan walaupun begitu ia hanya mencapai separuh hipotenus." },
           { "kind": "h3", "text": "Luas Maksimum untuk Hipotenus Tetap" },
-          { "kind": "p", "text": "Oleh kerana [[K=ch/2]] dan [[h\\leq c/2]], luas terbesar yang mungkin ialah [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Maksimum ini milik segi tiga bersudut tepat sama kaki, dengan kedua-dua kaki sama. Dengan [[c=10]], altitud sah tertinggi ialah [[h_{\\max}=5]], memberi [[K_{\\max}=(10\\times5)/2=25]]. Altitud 6 dengan hipotenus 10 adalah mustahil untuk segi tiga bersudut tepat." },
+          { "kind": "p", "text": "Oleh kerana [[K=ch/2]] dan [[h\\leq c/2]], luas terbesar yang mungkin ialah [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Maksimum ini milik segi tiga bersudut tepat sama kaki, dengan kedua-dua kaki sama. Dengan [[c=10]], altitud sah tertinggi ialah [[h_{\\max}=5]], memberi [[K_{\\max}=(10\\times5)/2=25]]. Altitud 6 dengan hipotenus 10 adalah mustahil untuk segi tiga bersudut tepat." },
           { "kind": "h3", "text": "Apakah yang Berlaku Jika Altitud Terlalu Besar?" },
           { "kind": "p", "text": "Ambil [[c=10]] dan [[h=6]]: [[6>5]], jadi tiada segi tiga bersudut tepat mempunyai ukuran ini. Aritmetik [[(10\\times6)/2=30]] ialah luas yang sah untuk sesetengah segi tiga dalam tetapan yang lebih umum, tetapi ia tidak menjadikan [[c=10]], [[h=6]] input segi tiga bersudut tepat yang sah. Halaman ini tidak mendakwa kalkulator menolak input sedemikian secara automatik; semakan itu milik anda untuk dijalankan." },
           { "kind": "h3", "text": "Bolehkah Altitud Sama dengan Separuh Hipotenus?" },
@@ -212,11 +212,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
         "blocks": [
           { "kind": "p", "text": "Kalkulator ini mengambil [[h]] sebagai input, jadi altitud yang tidak diketahui mesti ditemui atau diukur terlebih dahulu. Tiga laluan piawai merangkumi kes lazim. Apabila sisi diketahui dan altitud ialah bahagian yang hilang, <a href=\"/right-triangle-altitude-from-sides-calculator/\">Kalkulator Altitud Segi Tiga Bersudut Tepat dari Sisi</a> mengiranya secara langsung." },
           { "kind": "h3", "text": "Kaedah 1: Menggunakan Kedua-dua Kaki dan Hipotenus" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. Dengan [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] Dengan [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "Kaedah 2: Menggunakan Segmen Hipotenus" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. Dengan [[p=6.4]] dan [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] Dengan [[p=6.4]] dan [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "Kaedah 3: Menggunakan Luas dan Hipotenus yang Diketahui" },
-          { "kind": "p", "text": "Menyusun semula [[K=ch/2]] memberi [[[\\boxed{h=\\frac{2K}{c}}]]]. Dengan [[K=24]] dan [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { "kind": "p", "text": "Menyusun semula [[K=ch/2]] memberi [[[\\boxed{h=\\frac{2K}{c}}]]] Dengan [[K=24]] dan [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { "kind": "p", "text": "Ini ialah penyusunan semula matematik, bukan mod kalkulator tambahan: kalkulator luas-dari-altitud itu sendiri masih menjangkakan altitud sebagai input." }
         ]
       },
@@ -277,7 +277,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
           { "kind": "h3", "text": "18. Menganggap Luas Geometri sebagai Bahan Tepat untuk Dibeli" },
           { "kind": "p", "text": "Formula memberi luas geometri yang ideal. Projek sebenar memerlukan sisa, tindihan, dan elaun pemotongan di atasnya. Pembetulan: tambahkan margin projek selepas geometri selesai." },
           { "kind": "h3", "text": "Salah Lawan Betul: Contoh Konkrit" },
-          { "kind": "p", "text": "Diberi [[c=10]] dan [[h=4.8]], pengiraan yang salah melangkau pembahagian dua: [[K=10\\times4.8=48]]. Itu ialah luas segi empat selari yang sepadan. Pengiraan yang betul ialah [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Ilustrasi kedua: menggantikan kaki 8 untuk altitud memberi [[(10\\times8)/2=40]], salah kerana 8 tidak berserenjang dengan hipotenus. Altitud, dan hanya altitud, berpasangan dengan [[c]]." }
+          { "kind": "p", "text": "Diberi [[c=10]] dan [[h=4.8]], pengiraan yang salah melangkau pembahagian dua: [[K=10\\times4.8=48]]. Itu ialah luas segi empat selari yang sepadan. Pengiraan yang betul ialah [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Ilustrasi kedua: menggantikan kaki 8 untuk altitud memberi [[(10\\times8)/2=40]], salah kerana 8 tidak berserenjang dengan hipotenus. Altitud, dan hanya altitud, berpasangan dengan [[c]]." }
         ]
       },
       "sec-verify": {
@@ -377,7 +377,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-intro": {
         "h2": "Jak obliczyć pole trójkąta prostokątnego z wysokości",
         "blocks": [
-          { "kind": "p", "text": "Załóżmy, że trójkąt prostokątny ma przeciwprostokątną 10 m, a prostopadła odległość od wierzchołka kąta prostego do tej przeciwprostokątnej wynosi 4.8 m. Jego pole wynika bezpośrednio: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Trójkąt zamyka 24 metry kwadratowe płaskiej powierzchni." },
+          { "kind": "p", "text": "Załóżmy, że trójkąt prostokątny ma przeciwprostokątną 10 m, a prostopadła odległość od wierzchołka kąta prostego do tej przeciwprostokątnej wynosi 4.8 m. Jego pole wynika bezpośrednio: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Trójkąt zamyka 24 metry kwadratowe płaskiej powierzchni." },
           { "kind": "p", "text": "Ten kalkulator istnieje dokładnie na taką sytuację. Gdy znasz najdłuższy bok trójkąta prostokątnego, przeciwprostokątną [[c]], i wysokość prostopadłą poprowadzoną z wierzchołka kąta prostego do tego boku, [[h]], dwie przyprostokątne nie są potrzebne. Przeciwprostokątna służy jako podstawa, wysokość jest jej odpowiadającą prostopadłą wysokością, a pole każdego trójkąta to połowa iloczynu podstawy i jej odpowiadającej wysokości: [[K=ch/2]]." },
           { "kind": "p", "text": "Wysokość musi spotykać przeciwprostokątną pod kątem prostym; nachylony odcinek, który nie jest prostopadły, daje złą wysokość i złe pole. Wprowadź oba pomiary w zgodnych jednostkach długości, a kalkulator zwróci pole w odpowiadających jednostkach kwadratowych, pokazując każdy krok podstawienia." }
         ]
@@ -403,7 +403,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-formula": {
         "h2": "Wzór na pole trójkąta prostokątnego z wysokości",
         "blocks": [
-          { "kind": "p", "text": "Wzór na pole z wysokości to [[[\\boxed{K=\\frac{ch}{2}}]]]. Tutaj [[K]] to pole, [[c]] to przeciwprostokątna służąca jako podstawa, a [[h]] to wysokość prostopadła do przeciwprostokątnej. Trzy symbole, jedno mnożenie, jedno dzielenie przez dwa." },
+          { "kind": "p", "text": "Wzór na pole z wysokości to [[[\\boxed{K=\\frac{ch}{2}}]]] Tutaj [[K]] to pole, [[c]] to przeciwprostokątna służąca jako podstawa, a [[h]] to wysokość prostopadła do przeciwprostokątnej. Trzy symbole, jedno mnożenie, jedno dzielenie przez dwa." },
           { "kind": "h3", "text": "Dlaczego mnożymy przeciwprostokątną przez wysokość?" },
           { "kind": "p", "text": "Ogólny wzór na pole trójkąta to [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], a podstawa i wysokość muszą być do siebie prostopadłe. Wybór przeciwprostokątnej jako podstawy wymusza, aby wysokością była prostopadła odległość do niej, czyli dokładnie wysokość: [[\\text{base}=c]] i [[\\text{height}=h]], stąd [[K=ch/2]]. Zachodzi to niezależnie od tego, jak trójkąt jest obrócony lub narysowany: prostopadłość to zależność geometryczna, a nie kierunek na ekranie, więc nachylona przeciwprostokątna działa jako podstawa równie dobrze jak pozioma." },
           { "kind": "h3", "text": "Dlaczego wynik dzieli się przez dwa?" },
@@ -426,7 +426,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
           "<strong>Zapisz wzór.</strong> [[K=ch/2]].",
           "<strong>Podstaw pomiary.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Pomnóż.</strong> [[10\\times4.8=48]], więc [[K=48/2]].",
-          "<strong>Podziel przez dwa.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Podziel przez dwa.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Zinterpretuj odpowiedź.</strong> Trójkąt zamyka 24 metry kwadratowe płaskiej powierzchni.",
           "<strong>Sprawdź wykonalność.</strong> Prawidłowy trójkąt prostokątny potrzebuje [[h\\leq c/2]]; tutaj [[4.8\\leq5]], więc pomiary mogą opisywać prawdziwy trójkąt prostokątny.",
           "<strong>Zweryfikuj przy użyciu przyprostokątnych.</strong> Trójkąt 6-8-10 ma tę samą przeciwprostokątną i wysokość, a [[K=(6\\times8)/2=24]]. Obie drogi są zgodne."
@@ -462,13 +462,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
         "blocks": [
           { "kind": "p", "text": "Cztery rozwiązane przykłady budują metodę od znajomych trójkątów w górę. Każdy oblicza wysokość z przyprostokątnych, gdy jest to potrzebne, stosuje [[K=ch/2]] i sprawdza krzyżowo ze wzorem z przyprostokątnymi." },
           { "kind": "h3", "text": "Przykład 1: trójkąt prostokątny 3-4-5" },
-          { "kind": "p", "text": "Dane: [[a=3]], [[b=4]], [[c=5]]. Wysokość to [[h=ab/c]], więc [[h=(3\\times4)/5=2.4]]. Pole to [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Sprawdzając z przyprostokątnymi, [[K=(3\\times4)/2=6]]. Oba wzory opisują ten sam trójkąt, więc muszą być zgodne, i rzeczywiście są." },
+          { "kind": "p", "text": "Dane: [[a=3]], [[b=4]], [[c=5]]. Wysokość to [[h=ab/c]], więc [[h=(3\\times4)/5=2.4]]. Pole to [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Sprawdzając z przyprostokątnymi, [[K=(3\\times4)/2=6]]. Oba wzory opisują ten sam trójkąt, więc muszą być zgodne, i rzeczywiście są." },
           { "kind": "h3", "text": "Przykład 2: trójkąt prostokątny 5-12-13" },
-          { "kind": "p", "text": "Dane: [[a=5]], [[b=12]], [[c=13]]. Wysokość to [[h=(5\\times12)/13=60/13\\approx4.61538]]. Zachowując dokładny ułamek, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Zachowanie [[60/13]] zamiast zaokrąglonej liczby dziesiętnej zapobiega wczesnemu błędowi zaokrąglenia: 13 skraca się dokładnie, zostawiając czyste 30." },
+          { "kind": "p", "text": "Dane: [[a=5]], [[b=12]], [[c=13]]. Wysokość to [[h=(5\\times12)/13=60/13\\approx4.61538]]. Zachowując dokładny ułamek, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Zachowanie [[60/13]] zamiast zaokrąglonej liczby dziesiętnej zapobiega wczesnemu błędowi zaokrąglenia: 13 skraca się dokładnie, zostawiając czyste 30." },
           { "kind": "h3", "text": "Przykład 3: trójkąt prostokątny 6-8-10" },
-          { "kind": "p", "text": "Dane bezpośrednio: [[c=10]] i [[h=4.8]]. Wtedy [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Dla przyprostokątnych 6 i 8, [[K=(6\\times8)/2=24]], co potwierdza drogę z wysokością." },
+          { "kind": "p", "text": "Dane bezpośrednio: [[c=10]] i [[h=4.8]]. Wtedy [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Dla przyprostokątnych 6 i 8, [[K=(6\\times8)/2=24]], co potwierdza drogę z wysokością." },
           { "kind": "h3", "text": "Przykład 4: trójkąt prostokątny równoramienny" },
-          { "kind": "p", "text": "Dane: [[c=10]] i [[h=5]]. Wtedy [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Jest to największe pole, jakie może mieć dowolny trójkąt prostokątny o przeciwprostokątnej 10. Wysokość równa połowie przeciwprostokątnej występuje tylko wtedy, gdy przyprostokątne są równe, czyniąc każdy kąt ostry [[45^\\circ]], a żaden prawidłowy trójkąt prostokątny o tej przeciwprostokątnej nie może przekroczyć 25 jednostek kwadratowych." }
+          { "kind": "p", "text": "Dane: [[c=10]] i [[h=5]]. Wtedy [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Jest to największe pole, jakie może mieć dowolny trójkąt prostokątny o przeciwprostokątnej 10. Wysokość równa połowie przeciwprostokątnej występuje tylko wtedy, gdy przyprostokątne są równe, czyniąc każdy kąt ostry [[45^\\circ]], a żaden prawidłowy trójkąt prostokątny o tej przeciwprostokątnej nie może przekroczyć 25 jednostek kwadratowych." }
         ]
       },
       "sec-applications": {
@@ -476,29 +476,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
         "blocks": [
           { "kind": "p", "text": "Dwanaście rozwiązanych sytuacji pokazuje wzór w różnych skalach i różnych jednostkach. Każda nazywa trójkąt w scenie, dwa pomiary, podstawienie, pole i założenie leżące u podstaw modelu." },
           { "kind": "h3", "text": "Przykład 1: trójkątna grządka ogrodowa" },
-          { "kind": "p", "text": "Trójkątna, prostokątna grządka ogrodowa ma najdłuższą granicę 10 m, a prostopadła odległość od rogu z kątem prostym do tej granicy wynosi 4.8 m. Zatem [[c=10\\text{ m}]] i [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Grządka zajmuje 24 metry kwadratowe. Zakłada to prostą granicę i róg będący prawdziwym kątem prostym." },
+          { "kind": "p", "text": "Trójkątna, prostokątna grządka ogrodowa ma najdłuższą granicę 10 m, a prostopadła odległość od rogu z kątem prostym do tej granicy wynosi 4.8 m. Zatem [[c=10\\text{ m}]] i [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Grządka zajmuje 24 metry kwadratowe. Zakłada to prostą granicę i róg będący prawdziwym kątem prostym." },
           { "kind": "h3", "text": "Przykład 2: trójkątny panel ze sklejki" },
-          { "kind": "p", "text": "Trójkątny, prostokątny panel ze sklejki ma przeciwprostokątną 1 m i wysokość prostopadłą 0.48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. To płaska powierzchnia jednej ściany, przydatna do szacowania pokrycia. Odpady z cięcia i dodatki materiałowe to osobne zagadnienia." },
+          { "kind": "p", "text": "Trójkątny, prostokątny panel ze sklejki ma przeciwprostokątną 1 m i wysokość prostopadłą 0.48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] To płaska powierzchnia jednej ściany, przydatna do szacowania pokrycia. Odpady z cięcia i dodatki materiałowe to osobne zagadnienia." },
           { "kind": "h3", "text": "Przykład 3: trójkątne okno ze szkła" },
-          { "kind": "p", "text": "Trójkątny, prostokątny panel szklany ma przeciwprostokątną 1.3 m i wysokość 0.6 m prostopadłą do tego boku: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Jest to geometryczna powierzchnia szkła, zanim uwzględni się pokrycie ramą lub dodatki montażowe." },
+          { "kind": "p", "text": "Trójkątny, prostokątny panel szklany ma przeciwprostokątną 1.3 m i wysokość 0.6 m prostopadłą do tego boku: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Jest to geometryczna powierzchnia szkła, zanim uwzględni się pokrycie ramą lub dodatki montażowe." },
           { "kind": "h3", "text": "Przykład 4: pomiar geodezyjny trójkątnej sekcji" },
-          { "kind": "p", "text": "Rysunek geodezyjny zawiera trójkąt prostokątny o przeciwprostokątnej 13 m i wysokości [[60/13]] m. Zachowując ułamek: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Rysunek reprezentuje sekcję 30 metrów kwadratowych. Rzeczywiste prace terenowe mogą wciąż wymagać korekt instrumentów wykraczających poza plan." },
+          { "kind": "p", "text": "Rysunek geodezyjny zawiera trójkąt prostokątny o przeciwprostokątnej 13 m i wysokości [[60/13]] m. Zachowując ułamek: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Rysunek reprezentuje sekcję 30 metrów kwadratowych. Rzeczywiste prace terenowe mogą wciąż wymagać korekt instrumentów wykraczających poza plan." },
           { "kind": "h3", "text": "Przykład 5: pomiar trójkątnej płytki" },
-          { "kind": "p", "text": "Trójkątna, prostokątna płytka ma przeciwprostokątną 25 cm i wysokość prostopadłą 6.72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Jedna płytka pokrywa 84 centymetry kwadratowe, co pomaga oszacować, ile płytek potrzebuje powierzchnia. Szczeliny fugowe i straty z cięcia liczy się osobno." },
+          { "kind": "p", "text": "Trójkątna, prostokątna płytka ma przeciwprostokątną 25 cm i wysokość prostopadłą 6.72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Jedna płytka pokrywa 84 centymetry kwadratowe, co pomaga oszacować, ile płytek potrzebuje powierzchnia. Szczeliny fugowe i straty z cięcia liczy się osobno." },
           { "kind": "h3", "text": "Przykład 6: stalowy panel wspornikowy" },
-          { "kind": "p", "text": "Płaski trójkątny, prostokątny panel wspornikowy ma przeciwprostokątną 1.7 m przy przyprostokątnych 0.8 m i 1.5 m. Jego wysokość to [[h=(0.8\\times1.5)/1.7=12/17]] m. Wtedy [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. To geometryczne pole panelu, a nie jego nośność." },
+          { "kind": "p", "text": "Płaski trójkątny, prostokątny panel wspornikowy ma przeciwprostokątną 1.7 m przy przyprostokątnych 0.8 m i 1.5 m. Jego wysokość to [[h=(0.8\\times1.5)/1.7=12/17]] m. Wtedy [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] To geometryczne pole panelu, a nie jego nośność." },
           { "kind": "h3", "text": "Przykład 7: boczny panel trójkątnej rampy" },
-          { "kind": "p", "text": "Uproszczony boczny panel rampy tworzy trójkąt prostokątny o przeciwprostokątnej 5 m i wysokości prostopadłej 2.4 m do tej przeciwprostokątnej: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Jest to płaskie pole trójkątnej sekcji bocznej, a nie nachylonej powierzchni rampy, a obliczenie nie ustala zgodności z dostępnością." },
+          { "kind": "p", "text": "Uproszczony boczny panel rampy tworzy trójkąt prostokątny o przeciwprostokątnej 5 m i wysokości prostopadłej 2.4 m do tej przeciwprostokątnej: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Jest to płaskie pole trójkątnej sekcji bocznej, a nie nachylonej powierzchni rampy, a obliczenie nie ustala zgodności z dostępnością." },
           { "kind": "h3", "text": "Przykład 8: trójkątny szczyt dachu" },
-          { "kind": "p", "text": "Trójkątny, prostokątny przekrój szczytu dachu ma przeciwprostokątną 6.5 m i wysokość prostopadłą [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Wynik opisuje trójkątną płaszczyznę daną pomiarami. Całkowita powierzchnia prawdziwego dachu to osobny problem pomiaru trójwymiarowego." },
+          { "kind": "p", "text": "Trójkątny, prostokątny przekrój szczytu dachu ma przeciwprostokątną 6.5 m i wysokość prostopadłą [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Wynik opisuje trójkątną płaszczyznę daną pomiarami. Całkowita powierzchnia prawdziwego dachu to osobny problem pomiaru trójwymiarowego." },
           { "kind": "h3", "text": "Przykład 9: trójkątna działka gruntu" },
-          { "kind": "p", "text": "Trójkątny, prostokątny fragment gruntu ma przeciwprostokątną 50 m i wysokość prostopadłą 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Zmierzone granice zamykają 600 metrów kwadratowych. Oficjalna wartość pola może wciąż wymagać weryfikacji geodezyjnej." },
+          { "kind": "p", "text": "Trójkątny, prostokątny fragment gruntu ma przeciwprostokątną 50 m i wysokość prostopadłą 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Zmierzone granice zamykają 600 metrów kwadratowych. Oficjalna wartość pola może wciąż wymagać weryfikacji geodezyjnej." },
           { "kind": "h3", "text": "Przykład 10: duża trójkątna działka pomiarowa" },
-          { "kind": "p", "text": "Pomierzona trójkątna, prostokątna sekcja ma przeciwprostokątną 100 m i wysokość prostopadłą 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Jest to planarne pole trójkątnej sekcji. Reprezentuje całą nieruchomość tylko wtedy, gdy nieruchomość składa się wyłącznie z tego trójkąta." },
+          { "kind": "p", "text": "Pomierzona trójkątna, prostokątna sekcja ma przeciwprostokątną 100 m i wysokość prostopadłą 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Jest to planarne pole trójkątnej sekcji. Reprezentuje całą nieruchomość tylko wtedy, gdy nieruchomość składa się wyłącznie z tego trójkąta." },
           { "kind": "h3", "text": "Przykład 11: trójkątna sekcja żagla" },
-          { "kind": "p", "text": "Płaski projekt trójkątnego, prostokątnego żagla ma przeciwprostokątną 15 ft i wysokość prostopadłą 7.2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Jest to planarne pole wyidealizowanego żagla. Zakrzywiona tkanina, szwy i dodatki krawędziowe wymagają osobnego uwzględnienia." },
+          { "kind": "p", "text": "Płaski projekt trójkątnego, prostokątnego żagla ma przeciwprostokątną 15 ft i wysokość prostopadłą 7.2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Jest to planarne pole wyidealizowanego żagla. Zakrzywiona tkanina, szwy i dodatki krawędziowe wymagają osobnego uwzględnienia." },
           { "kind": "h3", "text": "Przykład 12: mały wspornik mechaniczny" },
-          { "kind": "p", "text": "Płaski trójkątny, prostokątny wspornik ma przeciwprostokątną 250 mm i wysokość prostopadłą 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. Odpowiedź jest w milimetrach kwadratowych, ponieważ dane wejściowe są w milimetrach. Ponieważ [[1\\text{ cm}^2=100\\text{ mm}^2]], równa się to [[[\\boxed{150\\text{ cm}^2}]]]. Przeliczenie jednostki liniowej i przeliczenie jednostki kwadratowej to różne operacje, jak wyjaśnia sekcja o jednostkach." },
+          { "kind": "p", "text": "Płaski trójkątny, prostokątny wspornik ma przeciwprostokątną 250 mm i wysokość prostopadłą 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] Odpowiedź jest w milimetrach kwadratowych, ponieważ dane wejściowe są w milimetrach. Ponieważ [[1\\text{ cm}^2=100\\text{ mm}^2]], równa się to [[[\\boxed{150\\text{ cm}^2}]]] Przeliczenie jednostki liniowej i przeliczenie jednostki kwadratowej to różne operacje, jak wyjaśnia sekcja o jednostkach." },
           { "kind": "h3", "text": "Porównanie przykładów praktycznych" }
         ],
         "table": {
@@ -524,7 +524,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-equal": {
         "h2": "Dlaczego oba wzory na pole trójkąta prostokątnego dają tę samą odpowiedź",
         "blocks": [
-          { "kind": "p", "text": "Trójkąt prostokątny można zmierzyć przez jego dwie prostopadłe przyprostokątne lub przez przeciwprostokątną i wysokość. Wzór z przyprostokątnymi to [[K=ab/2]], a wzór z wysokością to [[K=ch/2]]. Ponieważ oba opisują pole tego samego trójkąta, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Pomnóż obie strony przez dwa: [[ab=ch]]. Rozwiąż dla [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. Wysokość to iloczyn przyprostokątnych podzielony przez przeciwprostokątną, dlatego oba wzory nigdy nie mogą być niezgodne dla spójnego trójkąta." },
+          { "kind": "p", "text": "Trójkąt prostokątny można zmierzyć przez jego dwie prostopadłe przyprostokątne lub przez przeciwprostokątną i wysokość. Wzór z przyprostokątnymi to [[K=ab/2]], a wzór z wysokością to [[K=ch/2]]. Ponieważ oba opisują pole tego samego trójkąta, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Pomnóż obie strony przez dwa: [[ab=ch]]. Rozwiąż dla [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] Wysokość to iloczyn przyprostokątnych podzielony przez przeciwprostokątną, dlatego oba wzory nigdy nie mogą być niezgodne dla spójnego trójkąta." },
           { "kind": "p", "text": "Weryfikacja numeryczna: dla [[a=6]], [[b=8]], [[c=10]] wysokość to [[h=(6\\times8)/10=4.8]]. Z przyprostokątnych: [[K=(6\\times8)/2=24]]. Z wysokości: [[K=(10\\times4.8)/2=24]]. Ten sam trójkąt, to samo pole, dwie drogi." },
           { "kind": "p", "text": "Gdy znane są tylko przeciwprostokątna i wysokość, pole jest już ustalone: nie ma potrzeby najpierw odtwarzać przyprostokątnych. Długości przyprostokątnych można wciąż odzyskać z prawidłowych [[c]] i [[h]] przez zależności odcinkowe poniżej, ale to osobne obliczenie od wyznaczania pola. Gdy znanymi danymi są przyprostokątne, <a href=\"/right-triangle-area-from-legs-calculator/\">Kalkulator pola trójkąta prostokątnego z przyprostokątnych</a> przyjmuje je bezpośrednio." }
         ]
@@ -536,7 +536,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
           { "kind": "h3", "text": "Dwa mniejsze podobne trójkąty prostokątne" },
           { "kind": "p", "text": "Wysokość dzieli pierwotny trójkąt na dwa mniejsze trójkąty prostokątne, każdy mający jeden wspólny kąt ostry z pierwotnym i każdy zawierający kąt prosty. Współdzielenie dwóch miar kątów sprawia, że wszystkie trzy trójkąty są podobne. Podobieństwo wymusza czyste zależności proporcjonalne między wysokością, odcinkami i przyprostokątnymi." },
           { "kind": "h3", "text": "Twierdzenie o średniej geometrycznej wysokości" },
-          { "kind": "p", "text": "Podobieństwo daje [[[\\boxed{h^2=pq}]]], lub równoważnie [[[\\boxed{h=\\sqrt{pq}}]]]. Wysokość jest średnią geometryczną dwóch odcinków przeciwprostokątnej: jej kwadrat równa się ich iloczynowi. Rozwiązany przykład: przy [[p=6.4]] i [[q=3.6]], [[c=p+q=10]] oraz [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. Pole wynika: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Twierdzenie odcinkowe weryfikuje wysokość zmierzoną lub obliczoną inną drogą." },
+          { "kind": "p", "text": "Podobieństwo daje [[[\\boxed{h^2=pq}]]], lub równoważnie [[[\\boxed{h=\\sqrt{pq}}]]] Wysokość jest średnią geometryczną dwóch odcinków przeciwprostokątnej: jej kwadrat równa się ich iloczynowi. Rozwiązany przykład: przy [[p=6.4]] i [[q=3.6]], [[c=p+q=10]] oraz [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] Pole wynika: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Twierdzenie odcinkowe weryfikuje wysokość zmierzoną lub obliczoną inną drogą." },
           { "kind": "h3", "text": "Zależność między odcinkami a przyprostokątnymi" },
           { "kind": "p", "text": "To samo podobieństwo daje [[b^2=cp]] i [[a^2=cq]]. Przy [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] i [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Pierwotny trójkąt 6-8-10 jest odtworzony dokładnie, co pokazuje, jak ściśle odcinki, wysokość i przyprostokątne są ze sobą związane." }
         ]
@@ -544,11 +544,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
       "sec-max": {
         "h2": "Jak duża może być wysokość trójkąta prostokątnego?",
         "blocks": [
-          { "kind": "p", "text": "Nie każda para dodatnich liczb może być przeciwprostokątną i wysokością. Dla prawidłowego, niezdegenerowanego trójkąta prostokątnego [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. Wysokość musi być dodatnia i nigdy nie może przekroczyć połowy przeciwprostokątnej." },
+          { "kind": "p", "text": "Nie każda para dodatnich liczb może być przeciwprostokątną i wysokością. Dla prawidłowego, niezdegenerowanego trójkąta prostokątnego [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] Wysokość musi być dodatnia i nigdy nie może przekroczyć połowy przeciwprostokątnej." },
           { "kind": "h3", "text": "Dlaczego wysokość nie może przekroczyć połowy przeciwprostokątnej" },
           { "kind": "p", "text": "Z [[h^2=pq]] przy [[p+q=c]] iloczyn [[pq]] jest największy, gdy oba odcinki są równe, [[p=q=c/2]]. Zatem [[h^2\\leq c^2/4]], a dla dodatnich długości [[h\\leq c/2]]. Mówiąc wprost: wysokość jest najwyższa, gdy dzieli przeciwprostokątną na dwie równe połowy, i nawet wtedy osiąga tylko połowę przeciwprostokątnej." },
           { "kind": "h3", "text": "Maksymalne pole dla ustalonej przeciwprostokątnej" },
-          { "kind": "p", "text": "Ponieważ [[K=ch/2]] i [[h\\leq c/2]], największe możliwe pole to [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. To maksimum należy do trójkąta prostokątnego równoramiennego, w którym obie przyprostokątne są równe. Przy [[c=10]] najwyższą prawidłową wysokością jest [[h_{\\max}=5]], dając [[K_{\\max}=(10\\times5)/2=25]]. Wysokość 6 przy przeciwprostokątnej 10 jest niemożliwa dla trójkąta prostokątnego." },
+          { "kind": "p", "text": "Ponieważ [[K=ch/2]] i [[h\\leq c/2]], największe możliwe pole to [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] To maksimum należy do trójkąta prostokątnego równoramiennego, w którym obie przyprostokątne są równe. Przy [[c=10]] najwyższą prawidłową wysokością jest [[h_{\\max}=5]], dając [[K_{\\max}=(10\\times5)/2=25]]. Wysokość 6 przy przeciwprostokątnej 10 jest niemożliwa dla trójkąta prostokątnego." },
           { "kind": "h3", "text": "Co się dzieje, gdy wysokość jest zbyt duża?" },
           { "kind": "p", "text": "Weź [[c=10]] i [[h=6]]: [[6>5]], więc żaden trójkąt prostokątny nie ma tych pomiarów. Arytmetyka [[(10\\times6)/2=30]] jest prawidłowym polem dla jakiegoś trójkąta w ogólniejszym ujęciu, ale nie czyni [[c=10]], [[h=6]] prawidłowym wejściem trójkąta prostokątnego. Ta strona nie twierdzi, że kalkulator automatycznie odrzuca takie wejście; kontrola należy do Ciebie." },
           { "kind": "h3", "text": "Czy wysokość może równać się połowie przeciwprostokątnej?" },
@@ -562,11 +562,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
         "blocks": [
           { "kind": "p", "text": "Ten kalkulator przyjmuje [[h]] jako dane wejściowe, więc nieznaną wysokość trzeba najpierw wyznaczyć lub zmierzyć. Trzy standardowe drogi obejmują typowe przypadki. Gdy boki są znane, a wysokość jest brakującym elementem, <a href=\"/right-triangle-altitude-from-sides-calculator/\">Kalkulator wysokości trójkąta prostokątnego z boków</a> oblicza ją bezpośrednio." },
           { "kind": "h3", "text": "Metoda 1: użycie obu przyprostokątnych i przeciwprostokątnej" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. Przy [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] Przy [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "Metoda 2: użycie odcinków przeciwprostokątnej" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. Przy [[p=6.4]] i [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] Przy [[p=6.4]] i [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "Metoda 3: użycie znanego pola i przeciwprostokątnej" },
-          { "kind": "p", "text": "Przekształcenie [[K=ch/2]] daje [[[\\boxed{h=\\frac{2K}{c}}]]]. Przy [[K=24]] i [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { "kind": "p", "text": "Przekształcenie [[K=ch/2]] daje [[[\\boxed{h=\\frac{2K}{c}}]]] Przy [[K=24]] i [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { "kind": "p", "text": "To matematyczne przekształcenia, a nie dodatkowe tryby kalkulatora: sam kalkulator pola z wysokości wciąż oczekuje wysokości jako danych wejściowych." }
         ]
       },
@@ -627,7 +627,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2C = {
           { "kind": "h3", "text": "18. Traktowanie pola geometrycznego jako dokładnego materiału do zakupu" },
           { "kind": "p", "text": "Wzór daje idealne pole geometryczne. Prawdziwe projekty potrzebują na to zapasu na odpady, zakładki i dodatki na cięcie. Poprawka: dodaj margines projektu po zakończeniu geometrii." },
           { "kind": "h3", "text": "Błędnie a poprawnie: konkretny przykład" },
-          { "kind": "p", "text": "Przy [[c=10]] i [[h=4.8]] błędne obliczenie pomija dzielenie przez dwa: [[K=10\\times4.8=48]]. To pole odpowiadającego równoległoboku. Poprawne obliczenie to [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Druga ilustracja: podstawienie przyprostokątnej 8 za wysokość daje [[(10\\times8)/2=40]], błędnie, ponieważ 8 nie jest prostopadłe do przeciwprostokątnej. Do [[c]] pasuje wysokość, i tylko wysokość." }
+          { "kind": "p", "text": "Przy [[c=10]] i [[h=4.8]] błędne obliczenie pomija dzielenie przez dwa: [[K=10\\times4.8=48]]. To pole odpowiadającego równoległoboku. Poprawne obliczenie to [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Druga ilustracja: podstawienie przyprostokątnej 8 za wysokość daje [[(10\\times8)/2=40]], błędnie, ponieważ 8 nie jest prostopadłe do przeciwprostokątnej. Do [[c]] pasuje wysokość, i tylko wysokość." }
         ]
       },
       "sec-verify": {

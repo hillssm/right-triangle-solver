@@ -47,7 +47,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Anta att en rätvinklig triangel har en hypotenusa på 10 m, och att det vinkelräta avståndet från det rätvinkliga hörnet till den hypotenusan är 4,8 m. Då följer arean direkt: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Triangeln omsluter 24 kvadratmeter plan yta."
+            "text": "Anta att en rätvinklig triangel har en hypotenusa på 10 m, och att det vinkelräta avståndet från det rätvinkliga hörnet till den hypotenusan är 4,8 m. Då följer arean direkt: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Triangeln omsluter 24 kvadratmeter plan yta."
           },
           {
             "kind": "p",
@@ -115,7 +115,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Höjdens areaformel är [[[\\boxed{K=\\frac{ch}{2}}]]]. Här är [[K]] arean, [[c]] är hypotenusan som fungerar som bas, och [[h]] är den vinkelräta höjden mot hypotenusan. Tre symboler, en multiplikation, en halvering."
+            "text": "Höjdens areaformel är [[[\\boxed{K=\\frac{ch}{2}}]]] Här är [[K]] arean, [[c]] är hypotenusan som fungerar som bas, och [[h]] är den vinkelräta höjden mot hypotenusan. Tre symboler, en multiplikation, en halvering."
           },
           {
             "kind": "h3",
@@ -166,7 +166,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           "<strong>Skriv formeln.</strong> [[K=ch/2]].",
           "<strong>Sätt in mätvärdena.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Multiplicera.</strong> [[10\\times4.8=48]], så [[K=48/2]].",
-          "<strong>Dela med två.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Dela med två.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Tolka svaret.</strong> Triangeln omsluter 24 kvadratmeter plan area.",
           "<strong>Kontrollera genomförbarheten.</strong> En giltig rätvinklig triangel kräver [[h\\leq c/2]]; här gäller [[4.8\\leq5]], så mätvärdena kan beskriva en verklig rätvinklig triangel.",
           "<strong>Verifiera med kateterna.</strong> En 6-8-10-triangel har samma hypotenusa och höjd, och [[K=(6\\times8)/2=24]]. Båda vägarna stämmer överens."
@@ -213,7 +213,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Höjden är [[h=ab/c]], så [[h=(3\\times4)/5=2.4]]. Arean är [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Kontrollerar vi med kateterna får vi [[K=(3\\times4)/2=6]]. Båda formlerna beskriver samma triangel, så de måste stämma överens, och det gör de."
+            "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Höjden är [[h=ab/c]], så [[h=(3\\times4)/5=2.4]]. Arean är [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Kontrollerar vi med kateterna får vi [[K=(3\\times4)/2=6]]. Båda formlerna beskriver samma triangel, så de måste stämma överens, och det gör de."
           },
           {
             "kind": "h3",
@@ -221,7 +221,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=5]], [[b=12]], [[c=13]]. Höjden är [[h=(5\\times12)/13=60/13\\approx4.61538]]. Om vi behåller det exakta bråket får vi [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Att behålla [[60/13]] i stället för ett avrundat decimaltal undviker ett tidigt avrundningsfel: 13 förkortas bort exakt och lämnar ett rent 30."
+            "text": "Givet [[a=5]], [[b=12]], [[c=13]]. Höjden är [[h=(5\\times12)/13=60/13\\approx4.61538]]. Om vi behåller det exakta bråket får vi [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Att behålla [[60/13]] i stället för ett avrundat decimaltal undviker ett tidigt avrundningsfel: 13 förkortas bort exakt och lämnar ett rent 30."
           },
           {
             "kind": "h3",
@@ -229,7 +229,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[c=10]] och [[h=4.8]] direkt. Då är [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Med kateterna 6 och 8 får vi [[K=(6\\times8)/2=24]], vilket bekräftar höjdvägen."
+            "text": "Givet [[c=10]] och [[h=4.8]] direkt. Då är [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Med kateterna 6 och 8 får vi [[K=(6\\times8)/2=24]], vilket bekräftar höjdvägen."
           },
           {
             "kind": "h3",
@@ -237,7 +237,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[c=10]] och [[h=5]]. Då är [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Detta är den största area någon rätvinklig triangel med hypotenusan 10 kan ha. Höjden är lika med halva hypotenusan endast när kateterna är lika, vilket gör varje spetsig vinkel till [[45^\\circ]], och ingen giltig rätvinklig triangel med denna hypotenusa kan överstiga 25 kvadratenheter."
+            "text": "Givet [[c=10]] och [[h=5]]. Då är [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Detta är den största area någon rätvinklig triangel med hypotenusan 10 kan ha. Höjden är lika med halva hypotenusan endast när kateterna är lika, vilket gör varje spetsig vinkel till [[45^\\circ]], och ingen giltig rätvinklig triangel med denna hypotenusa kan överstiga 25 kvadratenheter."
           }
         ]
       },
@@ -254,7 +254,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig trädgårdsdel har en längsta gräns på 10 m, och det vinkelräta avståndet från det rätvinkliga hörnet till den gränsen är 4,8 m. Så [[c=10\\text{ m}]] och [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Delen upptar 24 kvadratmeter. Detta förutsätter att gränsen är rak och att hörnet är en sann rät vinkel."
+            "text": "En rätvinklig trädgårdsdel har en längsta gräns på 10 m, och det vinkelräta avståndet från det rätvinkliga hörnet till den gränsen är 4,8 m. Så [[c=10\\text{ m}]] och [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Delen upptar 24 kvadratmeter. Detta förutsätter att gränsen är rak och att hörnet är en sann rät vinkel."
           },
           {
             "kind": "h3",
@@ -262,7 +262,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig plywoodskiva har en hypotenusa på 1 m och en vinkelrät höjd på 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. Det är den plana ytan av ena sidan, användbar för täckningsuppskattningar. Spill vid kapning och materialtillägg är separata överväganden."
+            "text": "En rätvinklig plywoodskiva har en hypotenusa på 1 m och en vinkelrät höjd på 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] Det är den plana ytan av ena sidan, användbar för täckningsuppskattningar. Spill vid kapning och materialtillägg är separata överväganden."
           },
           {
             "kind": "h3",
@@ -270,7 +270,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig glaspanel har en hypotenusa på 1,3 m och en höjd på 0,6 m vinkelrät mot den sidan: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Detta är den geometriska glasarean innan karmtäckning eller monteringstillägg beaktas."
+            "text": "En rätvinklig glaspanel har en hypotenusa på 1,3 m och en höjd på 0,6 m vinkelrät mot den sidan: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Detta är den geometriska glasarean innan karmtäckning eller monteringstillägg beaktas."
           },
           {
             "kind": "h3",
@@ -278,7 +278,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En mätningsritning innehåller en rätvinklig triangel med hypotenusan 13 m och höjden [[60/13]] m. Om vi behåller bråket: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Ritningen representerar en 30 kvadratmeter stor sektion. Verkligt fältarbete kan ändå behöva instrumentkorrigeringar utöver planen."
+            "text": "En mätningsritning innehåller en rätvinklig triangel med hypotenusan 13 m och höjden [[60/13]] m. Om vi behåller bråket: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Ritningen representerar en 30 kvadratmeter stor sektion. Verkligt fältarbete kan ändå behöva instrumentkorrigeringar utöver planen."
           },
           {
             "kind": "h3",
@@ -286,7 +286,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig platta har en hypotenusa på 25 cm och en vinkelrät höjd på 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. En platta täcker 84 kvadratcentimeter, vilket hjälper till att uppskatta hur många plattor en yta behöver. Fogbredder och kapförluster räknas separat."
+            "text": "En rätvinklig platta har en hypotenusa på 25 cm och en vinkelrät höjd på 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] En platta täcker 84 kvadratcentimeter, vilket hjälper till att uppskatta hur många plattor en yta behöver. Fogbredder och kapförluster räknas separat."
           },
           {
             "kind": "h3",
@@ -294,7 +294,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En plan rätvinklig stödpanel har en hypotenusa på 1,7 m med kateter på 0,8 m och 1,5 m. Dess höjd är [[h=(0.8\\times1.5)/1.7=12/17]] m. Då är [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. Det är panelens geometriska area, inte dess bärförmåga."
+            "text": "En plan rätvinklig stödpanel har en hypotenusa på 1,7 m med kateter på 0,8 m och 1,5 m. Dess höjd är [[h=(0.8\\times1.5)/1.7=12/17]] m. Då är [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] Det är panelens geometriska area, inte dess bärförmåga."
           },
           {
             "kind": "h3",
@@ -302,7 +302,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En förenklad rampsidopanel bildar en rätvinklig triangel med en hypotenusa på 5 m och en vinkelrät höjd på 2,4 m mot den hypotenusan: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Detta är den plana arean av den triangulära sidsektionen, inte den lutande rampytan, och beräkningen fastställer inte tillgänglighetsöverensstämmelse."
+            "text": "En förenklad rampsidopanel bildar en rätvinklig triangel med en hypotenusa på 5 m och en vinkelrät höjd på 2,4 m mot den hypotenusan: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Detta är den plana arean av den triangulära sidsektionen, inte den lutande rampytan, och beräkningen fastställer inte tillgänglighetsöverensstämmelse."
           },
           {
             "kind": "h3",
@@ -310,7 +310,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig takgavelsektion har en hypotenusa på 6,5 m och en vinkelrät höjd på [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Resultatet beskriver det triangulära plan som mätvärdena ger. Ett verkligt taks totala yta är ett separat tredimensionellt mätningsproblem."
+            "text": "En rätvinklig takgavelsektion har en hypotenusa på 6,5 m och en vinkelrät höjd på [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Resultatet beskriver det triangulära plan som mätvärdena ger. Ett verkligt taks totala yta är ett separat tredimensionellt mätningsproblem."
           },
           {
             "kind": "h3",
@@ -318,7 +318,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig marksektion har en hypotenusa på 50 m och en vinkelrät höjd på 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. De uppmätta gränserna omsluter 600 kvadratmeter. En officiell areasiffra kan ändå kräva mätverifiering."
+            "text": "En rätvinklig marksektion har en hypotenusa på 50 m och en vinkelrät höjd på 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] De uppmätta gränserna omsluter 600 kvadratmeter. En officiell areasiffra kan ändå kräva mätverifiering."
           },
           {
             "kind": "h3",
@@ -326,7 +326,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En uppmätt rätvinklig sektion har en hypotenusa på 100 m och en vinkelrät höjd på 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Det är den plana arean av den triangulära sektionen. Den representerar hela fastigheten endast när fastigheten enbart består av den triangeln."
+            "text": "En uppmätt rätvinklig sektion har en hypotenusa på 100 m och en vinkelrät höjd på 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Det är den plana arean av den triangulära sektionen. Den representerar hela fastigheten endast när fastigheten enbart består av den triangeln."
           },
           {
             "kind": "h3",
@@ -334,7 +334,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En plan rätvinklig segeldesign har en hypotenusa på 15 ft och en vinkelrät höjd på 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Detta är den plana arean av det idealiserade seglet. Böjt tyg, sömmar och kanttillägg kräver separat övervägande."
+            "text": "En plan rätvinklig segeldesign har en hypotenusa på 15 ft och en vinkelrät höjd på 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Detta är den plana arean av det idealiserade seglet. Böjt tyg, sömmar och kanttillägg kräver separat övervägande."
           },
           {
             "kind": "h3",
@@ -342,7 +342,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Ett plant rätvinkligt fäste har en hypotenusa på 250 mm och en vinkelrät höjd på 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. Svaret är i kvadratmillimeter eftersom inmatningarna är i millimeter. Eftersom [[1\\text{ cm}^2=100\\text{ mm}^2]] är detta lika med [[[\\boxed{150\\text{ cm}^2}]]]. Att omvandla den linjära enheten och att omvandla den kvadratiska enheten är olika operationer, som enhetsavsnittet förklarar."
+            "text": "Ett plant rätvinkligt fäste har en hypotenusa på 250 mm och en vinkelrät höjd på 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] Svaret är i kvadratmillimeter eftersom inmatningarna är i millimeter. Eftersom [[1\\text{ cm}^2=100\\text{ mm}^2]] är detta lika med [[[\\boxed{150\\text{ cm}^2}]]] Att omvandla den linjära enheten och att omvandla den kvadratiska enheten är olika operationer, som enhetsavsnittet förklarar."
           },
           {
             "kind": "h3",
@@ -374,7 +374,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "En rätvinklig triangel kan mätas genom sina två vinkelräta kateter eller genom sin hypotenusa och höjd. Katetformeln är [[K=ab/2]] och höjdformeln är [[K=ch/2]]. Eftersom båda beskriver samma triangels area gäller [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplicera båda leden med två: [[ab=ch]]. Lös ut [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. Höjden är produkten av kateterna delad med hypotenusan, vilket är anledningen till att de två formlerna aldrig kan vara oense om en konsistent triangel."
+            "text": "En rätvinklig triangel kan mätas genom sina två vinkelräta kateter eller genom sin hypotenusa och höjd. Katetformeln är [[K=ab/2]] och höjdformeln är [[K=ch/2]]. Eftersom båda beskriver samma triangels area gäller [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplicera båda leden med två: [[ab=ch]]. Lös ut [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] Höjden är produkten av kateterna delad med hypotenusan, vilket är anledningen till att de två formlerna aldrig kan vara oense om en konsistent triangel."
           },
           {
             "kind": "p",
@@ -407,7 +407,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Likformighet ger [[[\\boxed{h^2=pq}]]], eller ekvivalent [[[\\boxed{h=\\sqrt{pq}}]]]. Höjden är det geometriska medelvärdet av de två hypotenusasegmenten: dess kvadrat är lika med deras produkt. Genomräknat exempel: med [[p=6.4]] och [[q=3.6]] är [[c=p+q=10]], och [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. Arean följer: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Segmentsatsen verifierar en höjd som mätts eller beräknats på annat sätt."
+            "text": "Likformighet ger [[[\\boxed{h^2=pq}]]], eller ekvivalent [[[\\boxed{h=\\sqrt{pq}}]]] Höjden är det geometriska medelvärdet av de två hypotenusasegmenten: dess kvadrat är lika med deras produkt. Genomräknat exempel: med [[p=6.4]] och [[q=3.6]] är [[c=p+q=10]], och [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] Arean följer: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Segmentsatsen verifierar en höjd som mätts eller beräknats på annat sätt."
           },
           {
             "kind": "h3",
@@ -424,7 +424,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Inte varje par av positiva tal kan vara en hypotenusa och en höjd. För en giltig, icke-degenererad rätvinklig triangel gäller [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. Höjden måste vara positiv och kan aldrig överstiga halva hypotenusan."
+            "text": "Inte varje par av positiva tal kan vara en hypotenusa och en höjd. För en giltig, icke-degenererad rätvinklig triangel gäller [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] Höjden måste vara positiv och kan aldrig överstiga halva hypotenusan."
           },
           {
             "kind": "h3",
@@ -440,7 +440,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Eftersom [[K=ch/2]] och [[h\\leq c/2]] är den största möjliga arean [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Detta maximum tillhör den likbenta rätvinkliga triangeln, där de två kateterna är lika. Med [[c=10]] är den högsta giltiga höjden [[h_{\\max}=5]], vilket ger [[K_{\\max}=(10\\times5)/2=25]]. En höjd på 6 med en hypotenusa på 10 är omöjlig för en rätvinklig triangel."
+            "text": "Eftersom [[K=ch/2]] och [[h\\leq c/2]] är den största möjliga arean [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Detta maximum tillhör den likbenta rätvinkliga triangeln, där de två kateterna är lika. Med [[c=10]] är den högsta giltiga höjden [[h_{\\max}=5]], vilket ger [[K_{\\max}=(10\\times5)/2=25]]. En höjd på 6 med en hypotenusa på 10 är omöjlig för en rätvinklig triangel."
           },
           {
             "kind": "h3",
@@ -475,7 +475,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. Med [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]."
+            "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] Med [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]."
           },
           {
             "kind": "h3",
@@ -483,7 +483,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. Med [[p=6.4]] och [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]."
+            "text": "[[[\\boxed{h=\\sqrt{pq}}]]] Med [[p=6.4]] och [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]."
           },
           {
             "kind": "h3",
@@ -491,7 +491,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Att lösa ut ur [[K=ch/2]] ger [[[\\boxed{h=\\frac{2K}{c}}]]]. Med [[K=24]] och [[c=10]]: [[h=(2\\times24)/10=4.8]]."
+            "text": "Att lösa ut ur [[K=ch/2]] ger [[[\\boxed{h=\\frac{2K}{c}}]]] Med [[K=24]] och [[c=10]]: [[h=(2\\times24)/10=4.8]]."
           }
         ],
         "closingParagraphs": [
@@ -704,7 +704,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[c=10]] och [[h=4.8]] hoppar den felaktiga beräkningen över halveringen: [[K=10\\times4.8=48]]. Det är arean av det motsvarande parallellogrammet. Den korrekta beräkningen är [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. En andra illustration: att sätta in katet 8 för höjden ger [[(10\\times8)/2=40]], felaktigt eftersom 8 inte är vinkelrät mot hypotenusan. Höjden, och endast höjden, paras med [[c]]."
+            "text": "Givet [[c=10]] och [[h=4.8]] hoppar den felaktiga beräkningen över halveringen: [[K=10\\times4.8=48]]. Det är arean av det motsvarande parallellogrammet. Den korrekta beräkningen är [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] En andra illustration: att sätta in katet 8 för höjden ger [[(10\\times8)/2=40]], felaktigt eftersom 8 inte är vinkelrät mot hypotenusan. Höjden, och endast höjden, paras med [[c]]."
           }
         ]
       },

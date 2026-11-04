@@ -1,0 +1,2132 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## 5-12-13 Triangle Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, Pythagorean theorem expert, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/5-12-13-triangle-calculator/
+
+**Page Title:** 5-12-13 Triangle Calculator
+
+**Primary Focus Keyword:** 5-12-13 Triangle Calculator
+
+**Secondary Topic:** Scale a 5-12-13 Right Triangle and Calculate Its Side Lengths, Area, and Perimeter.
+
+**Main Side Ratio:**
+
+\[
+\boxed{5:12:13}
+\]
+
+**Scaling Formulas:**
+
+\[
+\boxed{a=5k,\quad b=12k,\quad c=13k}
+\]
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English.
+
+**Target Audience:**
+- Middle school mathematics students.
+- High school geometry students.
+- College students.
+- Mathematics teachers.
+- Private tutors.
+- Parents helping children with geometry.
+- Students studying Pythagorean triples.
+- Students preparing for mathematics examinations.
+- Construction workers.
+- Builders and contractors.
+- Carpenters.
+- Surveyors.
+- Architects and designers.
+- DIY enthusiasts.
+- Anyone learning right triangle geometry.
+
+**Main Objective:**
+
+Create a detailed educational resource explaining the 5-12-13 right triangle, its Pythagorean relationship, its fixed side ratio, its scale factor, and its practical mathematical applications.
+
+The article must teach readers:
+
+- What a 5-12-13 triangle is.
+- Why it is a Pythagorean triple.
+- Why it always forms a right angle.
+- How to identify its shorter leg, longer leg, and hypotenuse.
+- Why the side ratio is always 5:12:13.
+- What a scale factor means.
+- How to scale a 5-12-13 triangle.
+- How to calculate all three sides.
+- How to calculate its area.
+- How to calculate its perimeter.
+- Why area changes with the square of the scale factor.
+- Why perimeter changes directly with the scale factor.
+- How to find the scale factor from a known side manually.
+- How the 5-12-13 triple can be generated using Euclid's formula.
+- How it differs from the 3-4-5 triangle.
+- How to verify whether three measurements form a 5-12-13 triangle.
+- How to use the calculator correctly.
+- How to solve different scaled triangle examples.
+- How Pythagorean triples are useful in geometry and practical measurement problems.
+
+Write naturally, like an experienced mathematics teacher explaining geometry to students.
+
+Avoid robotic language, unnecessary repetition, keyword stuffing, generic filler, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm the actual calculator mode, input field, unit behavior, buttons, result displays, triangle diagram, instructions, examples, formulas, FAQs, and related calculators.
+
+The existing calculator provides one calculation mode.
+
+#### MODE 1: SCALE A 5-12-13 TRIANGLE
+
+**Input:**
+
+Positive scale factor k.
+
+The calculator multiplies the original 5-12-13 side lengths by the same factor.
+
+**Formula for the shorter leg:**
+
+\[
+a=5k
+\]
+
+**Formula for the longer leg:**
+
+\[
+b=12k
+\]
+
+**Formula for the hypotenuse:**
+
+\[
+c=13k
+\]
+
+**Area formula:**
+
+\[
+A=\frac{a\times b}{2}
+\]
+
+Substitute the scaled sides:
+
+\[
+A=\frac{(5k)(12k)}{2}
+\]
+
+Simplify:
+
+\[
+\boxed{A=30k^2}
+\]
+
+**Perimeter formula:**
+
+\[
+P=a+b+c
+\]
+
+Substitute:
+
+\[
+P=5k+12k+13k
+\]
+
+Simplify:
+
+\[
+\boxed{P=30k}
+\]
+
+**Results:**
+
+- Scaled shorter leg.
+- Scaled longer leg.
+- Scaled hypotenuse.
+- Triangle area.
+- Triangle perimeter.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The live page includes:
+
+- Calculator mode selector.
+- Scale 5-12-13 Triangle mode.
+- Scale factor input.
+- Calculate button.
+- Reset button.
+- Formula explanation.
+- Triangle diagram.
+- Triangle diagram key.
+- Instructions for using the calculator.
+- Three step-by-step examples.
+- Explanation of calculated results.
+- Side ratio explanation.
+- Practical uses.
+- Common mistakes.
+- Six FAQs.
+- Related calculators.
+
+Preserve the existing calculator functionality.
+
+Do not invent additional calculator modes.
+
+Do not claim that the existing calculator directly accepts:
+
+- Three arbitrary side lengths.
+- Two known side lengths.
+- An arbitrary hypotenuse.
+- An arbitrary triangle angle.
+- An arbitrary construction measurement.
+- A scale factor automatically derived from a known side.
+
+The existing calculator takes a scale factor k and calculates the scaled triangle.
+
+You may explain how to determine k from a known side manually, but clearly distinguish that manual calculation from the calculator's actual input functionality.
+
+**Important input validation:**
+
+A valid scale factor must be greater than zero.
+
+- If k = 0, all side lengths become zero, producing a degenerate figure rather than a triangle.
+- Negative scale factors do not represent valid triangle side lengths.
+- Every positive real value of k produces a valid scaled 5-12-13 triangle.
+
+Do not claim that zero or negative scale factors create valid triangles.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Calculate scaled 5-12-13 triangle side lengths.
+2. Understand the 5-12-13 triangle rule.
+3. Learn why 5-12-13 forms a right triangle.
+4. Find the hypotenuse of a scaled triangle.
+5. Calculate the area of a 5-12-13 triangle.
+6. Calculate its perimeter.
+7. Understand how scale factors work.
+8. Learn how the 5-12-13 ratio relates to the Pythagorean theorem.
+9. Understand the difference between 3-4-5 and 5-12-13 triangles.
+10. Learn how Euclid's formula generates this triple.
+11. Solve different scaled triangle examples.
+12. Verify whether measurements follow the 5:12:13 ratio.
+13. Understand the relationship between Pythagorean triples and right triangles.
+
+Answer the main calculation question immediately.
+
+Introduce the 5:12:13 ratio and scale factor near the beginning.
+
+Explain the calculator's single mode before introducing lengthy mathematical theory.
+
+Do not make visitors scroll through extensive theoretical explanations before finding the calculator.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+5-12-13 Triangle Calculator
+
+**Secondary Keywords:**
+
+- 5 12 13 triangle calculator.
+- 5-12-13 triangle formula.
+- 5-12-13 right triangle.
+- 5-12-13 triangle solver.
+- 5-12-13 triangle side lengths.
+- 5-12-13 triangle scale factor.
+- 5-12-13 triangle area.
+- 5-12-13 triangle perimeter.
+- 5-12-13 Pythagorean triple.
+- 5 12 13 right triangle formula.
+- scaled 5-12-13 triangle.
+- Pythagorean triple calculator.
+- 5 12 13 triangle ratio.
+
+**Related Semantic Keywords:**
+
+- Pythagorean theorem.
+- Pythagorean triple.
+- right angle.
+- 90-degree angle.
+- right triangle.
+- hypotenuse.
+- shorter leg.
+- longer leg.
+- scale factor.
+- triangle proportions.
+- similar triangles.
+- side length ratio.
+- triangle area.
+- triangle perimeter.
+- integer triples.
+- primitive Pythagorean triple.
+- Euclid's formula.
+- geometric scaling.
+- proportional side lengths.
+- right triangle measurements.
+- square root.
+- right triangle geometry.
+- 3-4-5 triangle.
+- 8-15-17 triangle.
+- 7-24-25 triangle.
+- 5-12-13 side relationship.
+
+### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords in relevant sections.
+
+Avoid:
+
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repetitive headings.
+
+Prioritize mathematical accuracy, natural language, and genuine search intent.
+
+---
+
+## 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use one consistent triangle throughout the article.
+
+Consider right triangle ABC with:
+
+- Side a = shorter leg.
+- Side b = longer leg.
+- Side c = hypotenuse.
+- The right angle opposite c.
+
+For the basic 5-12-13 triangle:
+
+\[
+a=5,\quad b=12,\quad c=13
+\]
+
+The side ratio is:
+
+\[
+a:b:c=5:12:13
+\]
+
+### A. PYTHAGOREAN RELATIONSHIP
+
+\[
+a^2+b^2=c^2
+\]
+
+Substitute:
+
+\[
+5^2+12^2=13^2
+\]
+
+\[
+25+144=169
+\]
+
+\[
+169=169
+\]
+
+Explain why this confirms that a triangle with side lengths 5, 12, and 13 has a right angle opposite the side of length 13.
+
+### B. SCALING FORMULAS
+
+Multiply all original side lengths by the same positive scale factor k.
+
+\[
+\boxed{a=5k}
+\]
+
+\[
+\boxed{b=12k}
+\]
+
+\[
+\boxed{c=13k}
+\]
+
+Explain why the same factor must be applied to all three sides.
+
+### C. AREA FORMULA
+
+General right triangle area:
+
+\[
+A=\frac{ab}{2}
+\]
+
+Substitute:
+
+\[
+A=\frac{(5k)(12k)}{2}
+\]
+
+\[
+A=\frac{60k^2}{2}
+\]
+
+\[
+\boxed{A=30k^2}
+\]
+
+For the original triangle, k = 1:
+
+\[
+A=30\text{ square units}
+\]
+
+### D. PERIMETER FORMULA
+
+\[
+P=a+b+c
+\]
+
+Substitute:
+
+\[
+P=5k+12k+13k
+\]
+
+\[
+\boxed{P=30k}
+\]
+
+For the original triangle:
+
+\[
+P=30\text{ units}
+\]
+
+### E. SCALE FACTOR FROM A KNOWN SIDE
+
+Explain these relationships as manual mathematical derivations.
+
+If the shorter leg is known:
+
+\[
+k=\frac{a}{5}
+\]
+
+If the longer leg is known:
+
+\[
+k=\frac{b}{12}
+\]
+
+If the hypotenuse is known:
+
+\[
+k=\frac{c}{13}
+\]
+
+Clearly state that the existing calculator accepts k directly. These equations help readers determine k from an already known side.
+
+### F. AREA AND PERIMETER SCALING
+
+Explain:
+
+\[
+P=30k
+\]
+
+and:
+
+\[
+A=30k^2
+\]
+
+Perimeter changes in direct proportion to k.
+
+Area changes in proportion to k squared.
+
+For example, if the scale factor doubles:
+
+- Every side doubles.
+- Perimeter doubles.
+- Area becomes four times as large.
+
+If the scale factor triples:
+
+- Every side becomes three times as large.
+- Perimeter becomes three times as large.
+- Area becomes nine times as large.
+
+### G. ANGLES OF THE 5-12-13 TRIANGLE
+
+Explain that scaling preserves the triangle's angles.
+
+The acute angle opposite the shorter leg is:
+
+\[
+\theta=\sin^{-1}\left(\frac{5}{13}\right)
+\]
+
+\[
+\theta\approx22.62^\circ
+\]
+
+The other acute angle is:
+
+\[
+\phi=\sin^{-1}\left(\frac{12}{13}\right)
+\]
+
+\[
+\phi\approx67.38^\circ
+\]
+
+Their sum is:
+
+\[
+22.62^\circ+67.38^\circ\approx90^\circ
+\]
+
+The third angle is exactly 90°.
+
+Clarify that a 5-12-13 triangle is not a 45-45-90 triangle or a 30-60-90 triangle.
+
+### H. EUCLID'S FORMULA FOR GENERATING THE TRIPLE
+
+Introduce the standard formula for generating primitive Pythagorean triples:
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+\[
+c=m^2+n^2
+\]
+
+Use:
+
+\[
+m=3,\quad n=2
+\]
+
+Calculate:
+
+\[
+a=3^2-2^2=9-4=5
+\]
+
+\[
+b=2(3)(2)=12
+\]
+
+\[
+c=3^2+2^2=9+4=13
+\]
+
+Therefore:
+
+\[
+\boxed{5:12:13}
+\]
+
+Explain the conditions:
+
+- m and n are positive integers.
+- m is greater than n.
+- m and n are coprime.
+- They have opposite parity, meaning one is even and the other is odd.
+
+Explain that these conditions generate a primitive Pythagorean triple.
+
+Do not make Euclid's formula the main calculator explanation. Present it as an advanced educational extension.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The completed article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: 5-12-13 Triangle Calculator
+
+**Suggested length: 130–160 words**
+
+Write a direct and informative introduction.
+
+Explain:
+
+- What a 5-12-13 triangle is.
+- Why it is a right triangle.
+- Why it is a Pythagorean triple.
+- Why its side ratio is always 5:12:13.
+- What a scale factor does.
+- What the calculator calculates.
+- How visitors can use it.
+
+Introduce:
+
+\[
+a=5k,\quad b=12k,\quad c=13k
+\]
+
+Explain that the calculator also determines the area and perimeter of the scaled triangle.
+
+Include a short example:
+
+If k = 2:
+
+\[
+a=10,\quad b=24,\quad c=26
+\]
+
+\[
+A=120\text{ square units}
+\]
+
+\[
+P=60\text{ units}
+\]
+
+Avoid generic introductions.
+
+### H2: Scale a 5-12-13 Triangle and Calculate Its Measurements
+
+**Suggested length: 180–220 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Explain the single available calculator mode.
+
+**Mode: Scale 5-12-13 Triangle**
+
+Required input:
+
+Positive scale factor k.
+
+Calculated outputs:
+
+| Measurement | Formula | Result |
+|---|---|---|
+| Shorter leg | 5k | Scaled side a |
+| Longer leg | 12k | Scaled side b |
+| Hypotenuse | 13k | Scaled side c |
+| Area | 30k² | Triangle area |
+| Perimeter | 30k | Triangle perimeter |
+
+Explain:
+
+- What k represents.
+- Why the calculator asks for a scale factor.
+- Why all sides are multiplied by the same factor.
+- Why the area and perimeter are calculated automatically.
+- How to enter a positive number.
+- How to click Calculate.
+- How to use Reset.
+- How to interpret the five results.
+- Why k must be greater than zero.
+
+Do not invent additional calculator functionality.
+
+### H2: What Is a 5-12-13 Triangle?
+
+**Suggested length: 200–240 words**
+
+Explain the definition.
+
+A 5-12-13 triangle is a right triangle whose side lengths follow the ratio:
+
+\[
+5:12:13
+\]
+
+Explain:
+
+- Why 13 is the hypotenuse.
+- Why 5 and 12 are perpendicular legs.
+- Why it is called a Pythagorean triple.
+- Why the triangle always has a 90-degree angle.
+- Why the ratio can be scaled to create larger or smaller triangles.
+
+Explain that 5-12-13 is a different Pythagorean triple from the more familiar 3-4-5 combination.
+
+Include a labeled diagram.
+
+### H2: Why Is 5-12-13 a Pythagorean Triple?
+
+**Suggested length: 220–260 words**
+
+Explain the Pythagorean theorem.
+
+Introduce:
+
+\[
+a^2+b^2=c^2
+\]
+
+Substitute:
+
+\[
+5^2+12^2=13^2
+\]
+
+Show:
+
+\[
+25+144=169
+\]
+
+\[
+169=169
+\]
+
+Explain:
+
+- Why the equation proves the right-angle relationship.
+- Why 13 must be the hypotenuse.
+- Why 5 and 12 are the legs.
+- Why this integer combination is useful in geometry.
+- Why the theorem remains valid after scaling.
+
+Include an educational Pythagorean diagram.
+
+### H2: Understanding the Three Sides of a 5-12-13 Triangle
+
+**Suggested length: 180–220 words**
+
+Explain each side.
+
+**Shorter leg a:**
+
+Length 5 in the basic triangle.
+
+**Longer leg b:**
+
+Length 12 in the basic triangle.
+
+**Hypotenuse c:**
+
+Length 13 in the basic triangle.
+
+Explain:
+
+- Why the hypotenuse is the longest side.
+- Why the legs meet at the 90-degree angle.
+- Why the side opposite 90° is always the hypotenuse.
+- How side labels change when the triangle is scaled.
+- Why the proportions stay constant.
+
+Include a comparison table.
+
+### H2: Understanding the 5-12-13 Side Ratio
+
+**Suggested length: 200–230 words**
+
+Introduce:
+
+\[
+5:12:13
+\]
+
+Explain each part.
+
+- The shorter leg represents 5 proportional units.
+- The longer leg represents 12 proportional units.
+- The hypotenuse represents 13 proportional units.
+
+Explain that the ratio does not change when the triangle is enlarged or reduced.
+
+Show:
+
+\[
+5k:12k:13k
+\]
+
+Use examples:
+
+- 5, 12, 13.
+- 10, 24, 26.
+- 15, 36, 39.
+- 20, 48, 52.
+- 25, 60, 65.
+
+Explain why all these sets represent the same triangle shape.
+
+### H2: What Is the Scale Factor in a 5-12-13 Triangle?
+
+**Suggested length: 220–260 words**
+
+Explain the meaning of k.
+
+A scale factor multiplies all three original side lengths by the same positive number.
+
+Show:
+
+\[
+a=5k
+\]
+
+\[
+b=12k
+\]
+
+\[
+c=13k
+\]
+
+Explain:
+
+- k = 1 gives the original triangle.
+- k greater than 1 enlarges the triangle.
+- k between 0 and 1 reduces the triangle.
+- k must be positive.
+- The scale factor changes size, not shape.
+- All corresponding side lengths remain proportional.
+
+Include a simple scale comparison table.
+
+### H2: Formula to Calculate the Shorter Leg
+
+**Suggested length: 130–160 words**
+
+Introduce:
+
+\[
+a=5k
+\]
+
+Explain that the shorter leg is five times the scale factor.
+
+Use:
+
+k = 4
+
+\[
+a=5\times4
+\]
+
+\[
+a=20
+\]
+
+Explain the result.
+
+### H2: Formula to Calculate the Longer Leg
+
+**Suggested length: 130–160 words**
+
+Introduce:
+
+\[
+b=12k
+\]
+
+Explain that the longer leg is twelve times the scale factor.
+
+Use:
+
+k = 4
+
+\[
+b=12\times4
+\]
+
+\[
+b=48
+\]
+
+Explain why this side is longer than the shorter leg.
+
+### H2: Formula to Calculate the Hypotenuse
+
+**Suggested length: 150–180 words**
+
+Introduce:
+
+\[
+c=13k
+\]
+
+Explain why the hypotenuse is thirteen times the scale factor.
+
+Use:
+
+k = 4
+
+\[
+c=13\times4
+\]
+
+\[
+c=52
+\]
+
+Explain why the hypotenuse remains the longest side at every positive scale factor.
+
+### H2: How to Calculate the Area of a Scaled 5-12-13 Triangle
+
+**Suggested length: 200–240 words**
+
+Introduce the right triangle area formula:
+
+\[
+A=\frac{ab}{2}
+\]
+
+Substitute:
+
+\[
+A=\frac{(5k)(12k)}{2}
+\]
+
+Simplify:
+
+\[
+A=\frac{60k^2}{2}
+\]
+
+\[
+A=30k^2
+\]
+
+Explain:
+
+- Why the two legs are used.
+- Why division by two is necessary.
+- Why k is squared.
+- Why area is measured in square units.
+- Why doubling the scale factor quadruples the area.
+
+Use:
+
+k = 3
+
+\[
+A=30(3^2)
+\]
+
+\[
+A=270\text{ square units}
+\]
+
+### H2: How to Calculate the Perimeter of a Scaled 5-12-13 Triangle
+
+**Suggested length: 180–220 words**
+
+Introduce:
+
+\[
+P=a+b+c
+\]
+
+Substitute:
+
+\[
+P=5k+12k+13k
+\]
+
+Simplify:
+
+\[
+P=30k
+\]
+
+Explain:
+
+- Why all three sides must be added.
+- Why perimeter scales directly with k.
+- Why perimeter is expressed in linear units.
+
+Use:
+
+k = 3
+
+\[
+P=30\times3
+\]
+
+\[
+P=90\text{ units}
+\]
+
+### H2: How to Find the Scale Factor From a Known Side
+
+**Suggested length: 200–240 words**
+
+Explain these manual calculations.
+
+If the shorter leg is known:
+
+\[
+k=\frac{a}{5}
+\]
+
+If the longer leg is known:
+
+\[
+k=\frac{b}{12}
+\]
+
+If the hypotenuse is known:
+
+\[
+k=\frac{c}{13}
+\]
+
+Use three short examples.
+
+**Example 1:**
+
+a = 20
+
+\[
+k=20/5=4
+\]
+
+**Example 2:**
+
+b = 36
+
+\[
+k=36/12=3
+\]
+
+**Example 3:**
+
+c = 65
+
+\[
+k=65/13=5
+\]
+
+Explain that the user can then enter the calculated k into the existing calculator.
+
+Do not imply that the calculator directly accepts these side measurements.
+
+### H2: Step-by-Step Example of Scaling a 5-12-13 Triangle
+
+**Suggested length: 220–260 words**
+
+Use:
+
+k = 2
+
+Calculate the shorter leg:
+
+\[
+a=5\times2=10
+\]
+
+Calculate the longer leg:
+
+\[
+b=12\times2=24
+\]
+
+Calculate the hypotenuse:
+
+\[
+c=13\times2=26
+\]
+
+Calculate the area:
+
+\[
+A=30(2^2)=120
+\]
+
+Calculate the perimeter:
+
+\[
+P=30(2)=60
+\]
+
+Present the results in a summary table.
+
+Explain how the new triangle keeps the original 5:12:13 proportions.
+
+### H2: Worked Examples of Different Scale Factors
+
+**Suggested length: 400–500 words**
+
+Provide at least eight varied worked examples.
+
+Every example must include:
+
+- Given scale factor.
+- Relevant formula.
+- Substitution.
+- Intermediate calculation.
+- Final answer.
+- Short interpretation.
+
+**Example 1: Original Triangle**
+
+k = 1
+
+Sides: 5, 12, 13.
+
+Area: 30 square units.
+
+Perimeter: 30 units.
+
+**Example 2: Scale Factor of 2**
+
+k = 2
+
+Sides: 10, 24, 26.
+
+Area: 120 square units.
+
+Perimeter: 60 units.
+
+**Example 3: Scale Factor of 3**
+
+k = 3
+
+Sides: 15, 36, 39.
+
+Area: 270 square units.
+
+Perimeter: 90 units.
+
+**Example 4: Scale Factor of 4**
+
+k = 4
+
+Sides: 20, 48, 52.
+
+Area: 480 square units.
+
+Perimeter: 120 units.
+
+**Example 5: Scale Factor of 0.5**
+
+k = 0.5
+
+Sides: 2.5, 6, 6.5.
+
+Area: 7.5 square units.
+
+Perimeter: 15 units.
+
+**Example 6: Scale Factor of 1.5**
+
+k = 1.5
+
+Sides: 7.5, 18, 19.5.
+
+Area: 67.5 square units.
+
+Perimeter: 45 units.
+
+**Example 7: Scale Factor of 5**
+
+k = 5
+
+Sides: 25, 60, 65.
+
+Area: 750 square units.
+
+Perimeter: 150 units.
+
+**Example 8: Scale Factor of 10**
+
+k = 10
+
+Sides: 50, 120, 130.
+
+Area: 3,000 square units.
+
+Perimeter: 300 units.
+
+Avoid repeating identical explanations.
+
+Explain how different scale factors affect the resulting measurements.
+
+### H2: Why Does the 5-12-13 Triangle Always Keep a 90-Degree Angle?
+
+**Suggested length: 180–220 words**
+
+Explain that the scaled sides are:
+
+\[
+5k,\quad12k,\quad13k
+\]
+
+Apply Pythagoras:
+
+\[
+(5k)^2+(12k)^2=(13k)^2
+\]
+
+Expand:
+
+\[
+25k^2+144k^2=169k^2
+\]
+
+\[
+169k^2=169k^2
+\]
+
+Explain why the relationship remains valid for every positive k.
+
+Discuss triangle similarity and proportional scaling.
+
+### H2: How Is the 5-12-13 Triple Generated Using Euclid's Formula?
+
+**Suggested length: 220–260 words**
+
+Introduce the Pythagorean triple generation formula:
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+\[
+c=m^2+n^2
+\]
+
+Use:
+
+\[
+m=3,\quad n=2
+\]
+
+Calculate:
+
+\[
+a=9-4=5
+\]
+
+\[
+b=2(3)(2)=12
+\]
+
+\[
+c=9+4=13
+\]
+
+Explain:
+
+- What m and n represent.
+- Why m must be greater than n.
+- Why they must be coprime.
+- Why one must be even and the other odd for a primitive triple.
+- Why the resulting values satisfy the Pythagorean theorem.
+- How this connects the 5-12-13 triangle to the wider family of Pythagorean triples.
+
+Keep the explanation accessible to intermediate students.
+
+### H2: Applications of the 5-12-13 Triangle in Geometry and Measurement
+
+**Suggested length: 220–260 words**
+
+Discuss practical mathematical applications:
+
+- Checking right-angle relationships.
+- Geometry homework.
+- Pythagorean theorem exercises.
+- Triangle similarity problems.
+- Construction layout calculations.
+- Surveying and measurement examples.
+- Technical drawing.
+- Scale drawings.
+- Mathematical modeling.
+- Classroom demonstrations.
+
+Explain how the ratio helps when three proportional measurements are involved.
+
+Use realistic hypothetical examples.
+
+For practical construction use, explain that measurement accuracy and site conditions matter.
+
+Do not suggest that this ratio replaces professional surveying or construction standards.
+
+### H2: Difference Between 5-12-13 and Other Pythagorean Triples
+
+**Suggested length: 220–260 words**
+
+Use a comparison table.
+
+| Pythagorean triple | Side ratio | Hypotenuse |
+|---|---|---|
+| 3-4-5 | 3:4:5 | 5 |
+| 5-12-13 | 5:12:13 | 13 |
+| 8-15-17 | 8:15:17 | 17 |
+| 7-24-25 | 7:24:25 | 25 |
+| 9-40-41 | 9:40:41 | 41 |
+
+Explain:
+
+- All listed triples satisfy the Pythagorean theorem.
+- Their side proportions differ.
+- Their acute angles differ.
+- Each primitive triple creates its own triangle shape.
+- Scaling a triple creates similar triangles.
+
+Explain that 10-24-26 is a scaled version of 5-12-13, whereas 3-4-5 is a different triangle shape.
+
+### H2: Difference Between 5-12-13, 45-45-90, and 30-60-90 Triangles
+
+**Suggested length: 200–240 words**
+
+Use a comparison table.
+
+| Feature | 5-12-13 | 45-45-90 | 30-60-90 |
+|---|---|---|---|
+| Side ratio | 5:12:13 | 1:1:√2 | 1:√3:2 |
+| Angles | 22.62°, 67.38°, 90° approximately | 45°, 45°, 90° | 30°, 60°, 90° |
+| Equal legs | No | Yes | No |
+| Main property | Pythagorean triple | Isosceles right triangle | Special angle ratio |
+| Hypotenuse | 13k | a√2 | 2a |
+
+Explain why a 5-12-13 triangle is not one of the two standard special-angle triangle families.
+
+Link contextually to the relevant dedicated calculators.
+
+### H2: Common Mistakes When Using the 5-12-13 Triangle Calculator
+
+**Suggested length: 280–330 words**
+
+Discuss at least fourteen mistakes.
+
+1. Treating 13 as a leg instead of the hypotenuse.
+2. Confusing the shorter leg with the longer leg.
+3. Scaling only one or two sides.
+4. Confusing the scale factor with a side length.
+5. Using zero as a valid scale factor.
+6. Entering a negative scale factor.
+7. Forgetting to square k in the area formula.
+8. Confusing area and perimeter.
+9. Adding only two sides when calculating perimeter.
+10. Mixing measurement units.
+11. Assuming that only 5, 12, and 13 work.
+12. Assuming every right triangle follows the 5:12:13 ratio.
+13. Confusing the 5-12-13 and 3-4-5 triples.
+14. Rounding measurements unnecessarily.
+
+For each mistake:
+
+- Explain why it is incorrect.
+- Show the correct relationship.
+- Provide a short example where useful.
+
+Avoid repetitive warnings.
+
+### H2: How to Verify a Scaled 5-12-13 Triangle
+
+**Suggested length: 180–220 words**
+
+Explain four verification methods.
+
+**Check 1: Side Ratio**
+
+\[
+a:b:c=5:12:13
+\]
+
+**Check 2: Pythagorean Theorem**
+
+\[
+a^2+b^2=c^2
+\]
+
+**Check 3: Scale Factor Consistency**
+
+\[
+\frac{a}{5}=\frac{b}{12}=\frac{c}{13}=k
+\]
+
+**Check 4: Side Ordering**
+
+\[
+a<b<c
+\]
+
+Use one example:
+
+10, 24, 26.
+
+Verify:
+
+\[
+10^2+24^2=26^2
+\]
+
+\[
+100+576=676
+\]
+
+Explain how these checks help identify incorrect measurements.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create eight original practice problems.
+
+Include:
+
+1. Scale a triangle using k = 2.
+2. Scale a triangle using k = 4.
+3. Find the area using k = 3.
+4. Find the perimeter using k = 5.
+5. Find k when the shorter leg is 25.
+6. Find k when the longer leg is 48.
+7. Find k when the hypotenuse is 78.
+8. Verify whether 15, 36, and 39 form a scaled 5-12-13 triangle.
+
+Provide complete worked solutions.
+
+Use correct units and clearly distinguish between side measurements, area, and perimeter.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What is a 5-12-13 triangle?
+2. Why is 5-12-13 a right triangle?
+3. What is the 5-12-13 triangle side ratio?
+4. How does the 5-12-13 triangle calculator work?
+5. What is the scale factor in a 5-12-13 triangle?
+6. How do I calculate the sides of a scaled 5-12-13 triangle?
+7. How do I calculate its area?
+8. How do I calculate its perimeter?
+9. Can I use 10-24-26 instead of 5-12-13?
+10. How is the 5-12-13 triple generated?
+11. What is the difference between 3-4-5 and 5-12-13?
+12. Is every scaled 5-12-13 triangle a right triangle?
+
+Keep answers approximately 35–65 words.
+
+Avoid copying entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- Pythagorean Triples Calculator.
+- 3-4-5 Triangle Calculator.
+- 8-15-17 Triangle Calculator.
+- Right Triangle Side Calculator.
+- Pythagorean Theorem Calculator.
+- Right Triangle Area Calculator.
+- Right Triangle Perimeter Calculator.
+
+Explain which tool is useful for each different problem.
+
+Verify all destination URLs before including them.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least eight mathematically accurate diagrams.
+
+### Diagram 1: Basic 5-12-13 Triangle
+
+Show:
+
+- Right triangle ABC.
+- Shorter leg = 5.
+- Longer leg = 12.
+- Hypotenuse = 13.
+- Right-angle marker.
+- Side labels a, b, and c.
+
+Clearly identify the hypotenuse.
+
+### Diagram 2: Pythagorean Theorem Proof
+
+Show:
+
+\[
+5^2+12^2=13^2
+\]
+
+Use squares constructed on all three sides or a clearly labeled right triangle.
+
+Show:
+
+- 25 square units.
+- 144 square units.
+- 169 square units.
+
+Explain visually how:
+
+\[
+25+144=169
+\]
+
+### Diagram 3: Three Scaled Triangles
+
+Show three similar triangles:
+
+- 5-12-13.
+- 10-24-26.
+- 15-36-39.
+
+Use different sizes but identical proportions.
+
+### Diagram 4: Scale Factor Illustration
+
+Show:
+
+\[
+a=5k,\quad b=12k,\quad c=13k
+\]
+
+Use k = 2.
+
+Label:
+
+- a = 10.
+- b = 24.
+- c = 26.
+
+### Diagram 5: Area Calculation
+
+Show:
+
+- Base = 5k.
+- Height = 12k.
+- Area = 30k².
+
+Use k = 2.
+
+Show:
+
+\[
+A=120\text{ square units}
+\]
+
+### Diagram 6: Perimeter Calculation
+
+Show:
+
+- All three scaled sides.
+- P = 5k + 12k + 13k.
+- P = 30k.
+
+Use k = 2.
+
+### Diagram 7: Angle Relationship
+
+Show:
+
+- The 90° angle.
+- The acute angle approximately 22.62°.
+- The other acute angle approximately 67.38°.
+- The shorter leg opposite the smaller acute angle.
+- The longer leg opposite the larger acute angle.
+
+Explain that the two acute angles sum to 90°.
+
+### Diagram 8: Euclid's Formula Construction
+
+Show:
+
+\[
+m=3,\quad n=2
+\]
+
+\[
+m^2-n^2=5
+\]
+
+\[
+2mn=12
+\]
+
+\[
+m^2+n^2=13
+\]
+
+Present the derivation as a simple educational flow diagram.
+
+**Diagram requirements:**
+
+For every diagram provide:
+
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer mathematically accurate SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+Ensure:
+
+- The right angle is correctly positioned.
+- The hypotenuse is the longest side.
+- The side proportions are accurate.
+- The scale factor is consistent.
+- The angle labels are correct.
+- The area diagram distinguishes base and height.
+- The perimeter diagram labels all three sides.
+- The Euclidean derivation uses m = 3 and n = 2 correctly.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/pythagorean-triples-calculator/
+
+2. https://www.righttrianglesolver.com/3-4-5-triangle-calculator/
+
+3. https://www.righttrianglesolver.com/8-15-17-triangle-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+5. https://www.righttrianglesolver.com/pythagorean-theorem-calculator/
+
+6. https://www.righttrianglesolver.com/right-triangle-area-calculator/
+
+7. https://www.righttrianglesolver.com/right-triangle-perimeter-calculator/
+
+Verify every destination URL before including it.
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Avoid repeating identical exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**5-12-13 Triangle Calculator**
+
+Its main purpose is to explain and scale the 5-12-13 Pythagorean triple.
+
+Keep the article focused on:
+
+- The 5:12:13 side ratio.
+- Pythagorean theorem.
+- Scale factor.
+- Three scaled side lengths.
+- Area calculation.
+- Perimeter calculation.
+- Similar triangles.
+- Euclid's formula.
+- Primitive Pythagorean triples.
+- Verification of scaled measurements.
+- Comparison with other Pythagorean triples.
+
+Do not turn this page into a duplicate of:
+
+- General Right Triangle Calculator.
+- General Pythagorean Theorem Calculator.
+- Pythagorean Triples Calculator.
+- 3-4-5 Triangle Calculator.
+- Special Right Triangle Calculator.
+- 45-45-90 Triangle Calculator.
+- 30-60-90 Triangle Calculator.
+
+Explain the Pythagorean theorem only as it supports the 5-12-13 relationship.
+
+The 3-4-5 page should focus on:
+
+- The 3:4:5 ratio.
+- Its scaling.
+- Its practical square-corner method.
+- Its area and perimeter formulas.
+
+This page should focus on:
+
+- The 5:12:13 ratio.
+- Its scaling.
+- Its unique triangle proportions.
+- Its Pythagorean derivation.
+- Its Euclidean triple generation.
+- Its area and perimeter formulas.
+
+Use contextual internal links when readers need general right triangle calculations or different Pythagorean triples.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation across multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+**Original side ratio:**
+
+\[
+5:12:13
+\]
+
+**Scaled sides:**
+
+\[
+a=5k
+\]
+
+\[
+b=12k
+\]
+
+\[
+c=13k
+\]
+
+**Area:**
+
+\[
+A=\frac{ab}{2}
+\]
+
+\[
+A=30k^2
+\]
+
+**Perimeter:**
+
+\[
+P=a+b+c
+\]
+
+\[
+P=30k
+\]
+
+**Scale factor from shorter leg:**
+
+\[
+k=\frac{a}{5}
+\]
+
+**Scale factor from longer leg:**
+
+\[
+k=\frac{b}{12}
+\]
+
+**Scale factor from hypotenuse:**
+
+\[
+k=\frac{c}{13}
+\]
+
+**Pythagorean theorem:**
+
+\[
+a^2+b^2=c^2
+\]
+
+**Angle values:**
+
+\[
+\theta\approx22.62^\circ
+\]
+
+\[
+\phi\approx67.38^\circ
+\]
+
+\[
+C=90^\circ
+\]
+
+**Euclid's formula:**
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+\[
+c=m^2+n^2
+\]
+
+Ensure:
+
+- All three sides are multiplied by the same positive k.
+- The shorter leg is 5k.
+- The longer leg is 12k.
+- The hypotenuse is 13k.
+- The area formula uses k².
+- The perimeter formula uses k.
+- Exact integer relationships are preserved.
+- Decimal approximations are correct.
+- All examples are recalculated.
+- All unit conversions are correct.
+- Area is expressed in square units.
+- Perimeter is expressed in linear units.
+- The side ratio remains 5:12:13.
+- Diagrams use consistent labeling.
+- The Euclid formula conditions are accurately explained.
+
+Never write:
+
+\[
+c=12k
+\]
+
+Never write:
+
+\[
+b=13k
+\]
+
+Never calculate area as:
+
+\[
+A=30k
+\]
+
+Never calculate perimeter as:
+
+\[
+P=30k^2
+\]
+
+Never claim that a 5-12-13 triangle has 45°, 45°, and 90° angles.
+
+Never claim that the calculator accepts three arbitrary side lengths.
+
+Never claim that the calculator automatically finds k from a known side.
+
+Never use zero or negative k as a valid triangle scale factor.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO Title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Explain that the calculator scales a 5-12-13 triangle and calculates its sides, area, and perimeter.
+
+### Primary Focus Keyword
+
+5-12-13 Triangle Calculator
+
+### Secondary Keywords
+
+Provide 8–12 relevant keyword variations.
+
+### Existing URL Slug
+
+5-12-13-triangle-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all eight diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual visible calculator.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the 5:12:13 ratio.
+- Verify all scaled side formulas.
+- Verify the area formula.
+- Verify the perimeter formula.
+- Verify the scale factor equations.
+- Recalculate all eight examples.
+- Verify the Pythagorean theorem.
+- Verify the approximate acute angles.
+- Verify Euclid's formula.
+- Check the relationship between scaling and area.
+- Check all unit conversions.
+- Verify every diagram.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- The scale factor is explained clearly.
+- All calculator outputs are explained.
+- The difference between the 5-12-13 and 3-4-5 triples is clear.
+- Exact and approximate values are distinguished.
+- Examples cover different scale factors.
+- Mathematical proofs are understandable to beginners.
+- Advanced material is explained without overwhelming beginners.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from other triangle calculator pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- The 5:12:13 ratio is immediately visible.
+- Calculator instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+- Mathematical terminology is explained clearly.
+
+Remove weak, repetitive, or irrelevant material before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding that range only when additional information genuinely improves educational value.
+
+Include:
+
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Eight worked examples.
+- Comparison tables.
+- Contextual internal links.
+- Euclid's formula explanation.
+- Practice questions.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all eight diagram specifications.
+
+Include:
+
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the 5-12-13 Triangle Calculator.
+
+The primary purpose must remain explaining and scaling the 5-12-13 Pythagorean triple.
+
+Give particular attention to:
+
+- What makes a 5-12-13 triangle a right triangle.
+- Why 5² + 12² = 13².
+- How the scale factor works.
+- How all three side lengths are calculated.
+- How to calculate area.
+- How to calculate perimeter.
+- Why area grows with k².
+- Why perimeter grows with k.
+- How to find k manually from a known side.
+- How Euclid's formula generates the 5-12-13 triple.
+- How scaled 5-12-13 triangles relate to similar triangles.
+- How to distinguish this triple from 3-4-5 and other Pythagorean triples.
+- How to verify calculated measurements.
+
+Use accurate mathematical diagrams, varied numerical examples, and clear step-by-step proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, and anyone learning Pythagorean triples and right triangle geometry.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

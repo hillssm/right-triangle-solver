@@ -27,7 +27,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-intro": {
         "h2": "Как вычислить площадь прямоугольного треугольника по высоте",
         "blocks": [
-          { "kind": "p", "text": "Представьте, что у прямоугольного треугольника гипотенуза равна 10 м, а перпендикулярное расстояние от вершины прямого угла до этой гипотенузы составляет 4,8 м. Его площадь находится напрямую: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Треугольник занимает 24 квадратных метра плоской поверхности." },
+          { "kind": "p", "text": "Представьте, что у прямоугольного треугольника гипотенуза равна 10 м, а перпендикулярное расстояние от вершины прямого угла до этой гипотенузы составляет 4,8 м. Его площадь находится напрямую: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Треугольник занимает 24 квадратных метра плоской поверхности." },
           { "kind": "p", "text": "Этот калькулятор создан именно для такой ситуации. Когда известна самая длинная сторона прямоугольного треугольника, гипотенуза [[c]], и перпендикулярная высота из вершины прямого угла к этой стороне, [[h]], два катета не нужны. Гипотенуза служит основанием, высота, это соответствующий ей перпендикуляр, а площадь любого треугольника равна половине произведения основания на соответствующую высоту: [[K=ch/2]]." },
           { "kind": "p", "text": "Высота должна встречать гипотенузу под прямым углом; наклонный отрезок, не являющийся перпендикуляром, даст неверную высоту и неверную площадь. Введите оба измерения в совпадающих единицах длины, и калькулятор вернёт площадь в соответствующих квадратных единицах, показав каждый шаг подстановки." }
         ]
@@ -53,7 +53,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-formula": {
         "h2": "Формула площади прямоугольного треугольника по высоте",
         "blocks": [
-          { "kind": "p", "text": "Формула площади через высоту: [[[\\boxed{K=\\frac{ch}{2}}]]]. Здесь [[K]], площадь, [[c]], гипотенуза, служащая основанием, а [[h]], перпендикулярная высота к гипотенузе. Три символа, одно умножение, одно деление пополам." },
+          { "kind": "p", "text": "Формула площади через высоту: [[[\\boxed{K=\\frac{ch}{2}}]]] Здесь [[K]], площадь, [[c]], гипотенуза, служащая основанием, а [[h]], перпендикулярная высота к гипотенузе. Три символа, одно умножение, одно деление пополам." },
           { "kind": "h3", "text": "Почему мы умножаем гипотенузу на высоту?" },
           { "kind": "p", "text": "Общая формула площади треугольника: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], причём основание и высота должны быть перпендикулярны друг другу. Выбор гипотенузы в качестве основания заставляет взять высотой перпендикулярное расстояние до неё, а это и есть высота: [[\\text{base}=c]] и [[\\text{height}=h]], следовательно, [[K=ch/2]]. Это верно, как бы треугольник ни был повёрнут или нарисован: перпендикулярность, это геометрическое отношение, а не направление на экране, поэтому наклонная гипотенуза работает основанием ничуть не хуже горизонтальной." },
           { "kind": "h3", "text": "Почему результат делится на два?" },
@@ -76,7 +76,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
           "<strong>Запишите формулу.</strong> [[K=ch/2]].",
           "<strong>Подставьте измерения.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Умножьте.</strong> [[10\\times4.8=48]], значит, [[K=48/2]].",
-          "<strong>Разделите на два.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Разделите на два.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Истолкуйте ответ.</strong> Треугольник занимает 24 квадратных метра плоской площади.",
           "<strong>Проверьте допустимость.</strong> Для допустимого прямоугольного треугольника нужно [[h\\leq c/2]]; здесь [[4.8\\leq5]], поэтому измерения могут описывать настоящий прямоугольный треугольник.",
           "<strong>Проверьте по катетам.</strong> Треугольник 6-8-10 имеет ту же гипотенузу и высоту, и [[K=(6\\times8)/2=24]]. Оба пути согласуются."
@@ -112,13 +112,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
         "blocks": [
           { "kind": "p", "text": "Четыре разобранных примера выстраивают метод от знакомых треугольников к более сложным. Каждый вычисляет высоту по катетам, где это нужно, применяет [[K=ch/2]] и сверяется с формулой через катеты." },
           { "kind": "h3", "text": "Пример 1: Прямоугольный треугольник 3-4-5" },
-          { "kind": "p", "text": "Дано: [[a=3]], [[b=4]], [[c=5]]. Высота равна [[h=ab/c]], то есть [[h=(3\\times4)/5=2.4]]. Площадь: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Проверка по катетам: [[K=(3\\times4)/2=6]]. Обе формулы описывают один и тот же треугольник, поэтому они обязаны согласовываться, и они согласуются." },
+          { "kind": "p", "text": "Дано: [[a=3]], [[b=4]], [[c=5]]. Высота равна [[h=ab/c]], то есть [[h=(3\\times4)/5=2.4]]. Площадь: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Проверка по катетам: [[K=(3\\times4)/2=6]]. Обе формулы описывают один и тот же треугольник, поэтому они обязаны согласовываться, и они согласуются." },
           { "kind": "h3", "text": "Пример 2: Прямоугольный треугольник 5-12-13" },
-          { "kind": "p", "text": "Дано: [[a=5]], [[b=12]], [[c=13]]. Высота: [[h=(5\\times12)/13=60/13\\approx4.61538]]. Сохраняя точную дробь: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Сохранение [[60/13]] вместо округлённого десятичного числа избавляет от ошибки раннего округления: 13 сокращается точно, оставляя аккуратные 30." },
+          { "kind": "p", "text": "Дано: [[a=5]], [[b=12]], [[c=13]]. Высота: [[h=(5\\times12)/13=60/13\\approx4.61538]]. Сохраняя точную дробь: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Сохранение [[60/13]] вместо округлённого десятичного числа избавляет от ошибки раннего округления: 13 сокращается точно, оставляя аккуратные 30." },
           { "kind": "h3", "text": "Пример 3: Прямоугольный треугольник 6-8-10" },
-          { "kind": "p", "text": "Дано напрямую: [[c=10]] и [[h=4.8]]. Тогда [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. При катетах 6 и 8: [[K=(6\\times8)/2=24]], что подтверждает путь через высоту." },
+          { "kind": "p", "text": "Дано напрямую: [[c=10]] и [[h=4.8]]. Тогда [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] При катетах 6 и 8: [[K=(6\\times8)/2=24]], что подтверждает путь через высоту." },
           { "kind": "h3", "text": "Пример 4: Равнобедренный прямоугольный треугольник" },
-          { "kind": "p", "text": "Дано: [[c=10]] и [[h=5]]. Тогда [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Это наибольшая площадь, которую может иметь прямоугольный треугольник с гипотенузой 10. Высота равна половине гипотенузы только когда катеты равны, при этом каждый острый угол составляет [[45^\\circ]], и ни один допустимый прямоугольный треугольник с такой гипотенузой не может превысить 25 квадратных единиц." }
+          { "kind": "p", "text": "Дано: [[c=10]] и [[h=5]]. Тогда [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Это наибольшая площадь, которую может иметь прямоугольный треугольник с гипотенузой 10. Высота равна половине гипотенузы только когда катеты равны, при этом каждый острый угол составляет [[45^\\circ]], и ни один допустимый прямоугольный треугольник с такой гипотенузой не может превысить 25 квадратных единиц." }
         ]
       },
       "sec-applications": {
@@ -126,29 +126,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
         "blocks": [
           { "kind": "p", "text": "Двенадцать разобранных ситуаций показывают формулу в разных масштабах и единицах. Каждая называет треугольник в задаче, два измерения, подстановку, площадь и допущение, лежащее в основе модели." },
           { "kind": "h3", "text": "Пример 1: Треугольный участок сада" },
-          { "kind": "p", "text": "Прямоугольный участок сада имеет самую длинную границу 10 м, а перпендикулярное расстояние от вершины прямого угла до этой границы составляет 4,8 м. Значит, [[c=10\\text{ m}]] и [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Участок занимает 24 квадратных метра. При этом предполагается, что граница прямая, а угол, действительно прямой." },
+          { "kind": "p", "text": "Прямоугольный участок сада имеет самую длинную границу 10 м, а перпендикулярное расстояние от вершины прямого угла до этой границы составляет 4,8 м. Значит, [[c=10\\text{ m}]] и [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Участок занимает 24 квадратных метра. При этом предполагается, что граница прямая, а угол, действительно прямой." },
           { "kind": "h3", "text": "Пример 2: Треугольная фанерная панель" },
-          { "kind": "p", "text": "Прямоугольная фанерная панель имеет гипотенузу 1 м и перпендикулярную высоту 0,48 м: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. Это плоская поверхность одной стороны, полезная для оценки расхода материала. Отходы резки и припуски на материал учитываются отдельно." },
+          { "kind": "p", "text": "Прямоугольная фанерная панель имеет гипотенузу 1 м и перпендикулярную высоту 0,48 м: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] Это плоская поверхность одной стороны, полезная для оценки расхода материала. Отходы резки и припуски на материал учитываются отдельно." },
           { "kind": "h3", "text": "Пример 3: Прямоугольное стеклянное окно" },
-          { "kind": "p", "text": "Прямоугольная стеклянная панель имеет гипотенузу 1,3 м и высоту 0,6 м, перпендикулярную этой стороне: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Это геометрическая площадь стекла до учёта покрытия рамой или монтажных допусков." },
+          { "kind": "p", "text": "Прямоугольная стеклянная панель имеет гипотенузу 1,3 м и высоту 0,6 м, перпендикулярную этой стороне: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Это геометрическая площадь стекла до учёта покрытия рамой или монтажных допусков." },
           { "kind": "h3", "text": "Пример 4: Съёмка треугольного участка" },
-          { "kind": "p", "text": "Геодезический чертёж содержит прямоугольный треугольник с гипотенузой 13 м и высотой [[60/13]] м. Сохраняя дробь: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Чертёж представляет участок площадью 30 квадратных метров. В реальных полевых работах всё равно могут понадобиться инструментальные поправки сверх плана." },
+          { "kind": "p", "text": "Геодезический чертёж содержит прямоугольный треугольник с гипотенузой 13 м и высотой [[60/13]] м. Сохраняя дробь: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Чертёж представляет участок площадью 30 квадратных метров. В реальных полевых работах всё равно могут понадобиться инструментальные поправки сверх плана." },
           { "kind": "h3", "text": "Пример 5: Измерение треугольной плитки" },
-          { "kind": "p", "text": "Прямоугольная плитка имеет гипотенузу 25 см и перпендикулярную высоту 6,72 см: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Одна плитка покрывает 84 квадратных сантиметра, что помогает оценить, сколько плиток нужно для поверхности. Швы и потери на резку считаются отдельно." },
+          { "kind": "p", "text": "Прямоугольная плитка имеет гипотенузу 25 см и перпендикулярную высоту 6,72 см: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Одна плитка покрывает 84 квадратных сантиметра, что помогает оценить, сколько плиток нужно для поверхности. Швы и потери на резку считаются отдельно." },
           { "kind": "h3", "text": "Пример 6: Стальная опорная панель" },
-          { "kind": "p", "text": "Плоская прямоугольная опорная панель имеет гипотенузу 1,7 м при катетах 0,8 м и 1,5 м. Её высота: [[h=(0.8\\times1.5)/1.7=12/17]] м. Тогда [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. Это геометрическая площадь панели, а не её несущая способность." },
+          { "kind": "p", "text": "Плоская прямоугольная опорная панель имеет гипотенузу 1,7 м при катетах 0,8 м и 1,5 м. Её высота: [[h=(0.8\\times1.5)/1.7=12/17]] м. Тогда [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] Это геометрическая площадь панели, а не её несущая способность." },
           { "kind": "h3", "text": "Пример 7: Боковая панель треугольного пандуса" },
-          { "kind": "p", "text": "Упрощённая боковая панель пандуса образует прямоугольный треугольник с гипотенузой 5 м и перпендикулярной высотой 2,4 м к этой гипотенузе: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Это плоская площадь треугольной боковой секции, а не наклонной поверхности пандуса, и расчёт не подтверждает соответствие нормам доступности." },
+          { "kind": "p", "text": "Упрощённая боковая панель пандуса образует прямоугольный треугольник с гипотенузой 5 м и перпендикулярной высотой 2,4 м к этой гипотенузе: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Это плоская площадь треугольной боковой секции, а не наклонной поверхности пандуса, и расчёт не подтверждает соответствие нормам доступности." },
           { "kind": "h3", "text": "Пример 8: Секция фронтона крыши" },
-          { "kind": "p", "text": "Прямоугольная секция фронтона крыши имеет гипотенузу 6,5 м и перпендикулярную высоту [[30/13]] м: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Результат описывает треугольную плоскость, заданную измерениями. Общая площадь поверхности настоящей крыши, это отдельная трёхмерная измерительная задача." },
+          { "kind": "p", "text": "Прямоугольная секция фронтона крыши имеет гипотенузу 6,5 м и перпендикулярную высоту [[30/13]] м: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Результат описывает треугольную плоскость, заданную измерениями. Общая площадь поверхности настоящей крыши, это отдельная трёхмерная измерительная задача." },
           { "kind": "h3", "text": "Пример 9: Прямоугольный земельный участок" },
-          { "kind": "p", "text": "Прямоугольный земельный участок имеет гипотенузу 50 м и перпендикулярную высоту 24 м: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Измеренные границы охватывают 600 квадратных метров. Официальная цифра площади всё равно может требовать геодезической проверки." },
+          { "kind": "p", "text": "Прямоугольный земельный участок имеет гипотенузу 50 м и перпендикулярную высоту 24 м: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Измеренные границы охватывают 600 квадратных метров. Официальная цифра площади всё равно может требовать геодезической проверки." },
           { "kind": "h3", "text": "Пример 10: Большой треугольный участок съёмки" },
-          { "kind": "p", "text": "Обследованный прямоугольный участок имеет гипотенузу 100 м и перпендикулярную высоту 48 м: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Это плоская площадь треугольной секции. Она представляет весь участок только когда участок состоит исключительно из этого треугольника." },
+          { "kind": "p", "text": "Обследованный прямоугольный участок имеет гипотенузу 100 м и перпендикулярную высоту 48 м: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Это плоская площадь треугольной секции. Она представляет весь участок только когда участок состоит исключительно из этого треугольника." },
           { "kind": "h3", "text": "Пример 11: Секция треугольного паруса" },
-          { "kind": "p", "text": "Плоский прямоугольный парус в проекте имеет гипотенузу 15 футов и перпендикулярную высоту 7,2 фута: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Это плоская площадь идеализированного паруса. Изогнутая ткань, швы и припуски на края требуют отдельного учёта." },
+          { "kind": "p", "text": "Плоский прямоугольный парус в проекте имеет гипотенузу 15 футов и перпендикулярную высоту 7,2 фута: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Это плоская площадь идеализированного паруса. Изогнутая ткань, швы и припуски на края требуют отдельного учёта." },
           { "kind": "h3", "text": "Пример 12: Небольшой механический кронштейн" },
-          { "kind": "p", "text": "Плоский прямоугольный кронштейн имеет гипотенузу 250 мм и перпендикулярную высоту 120 мм: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. Ответ в квадратных миллиметрах, потому что входные данные в миллиметрах. Поскольку [[1\\text{ cm}^2=100\\text{ mm}^2]], это равно [[[\\boxed{150\\text{ cm}^2}]]]. Перевод линейной единицы и перевод квадратной единицы, это разные операции, как объясняется в разделе о единицах." },
+          { "kind": "p", "text": "Плоский прямоугольный кронштейн имеет гипотенузу 250 мм и перпендикулярную высоту 120 мм: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] Ответ в квадратных миллиметрах, потому что входные данные в миллиметрах. Поскольку [[1\\text{ cm}^2=100\\text{ mm}^2]], это равно [[[\\boxed{150\\text{ cm}^2}]]] Перевод линейной единицы и перевод квадратной единицы, это разные операции, как объясняется в разделе о единицах." },
           { "kind": "h3", "text": "Сравнение практических примеров" }
         ],
         "table": {
@@ -174,7 +174,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-equal": {
         "h2": "Почему обе формулы площади прямоугольного треугольника дают один ответ",
         "blocks": [
-          { "kind": "p", "text": "Прямоугольный треугольник можно измерить через два перпендикулярных катета или через гипотенузу и высоту. Формула через катеты: [[K=ab/2]], а формула через высоту: [[K=ch/2]]. Поскольку обе описывают площадь одного треугольника, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Умножим обе части на два: [[ab=ch]]. Выразим [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. Высота равна произведению катетов, делённому на гипотенузу, поэтому две формулы никогда не могут разойтись на согласованном треугольнике." },
+          { "kind": "p", "text": "Прямоугольный треугольник можно измерить через два перпендикулярных катета или через гипотенузу и высоту. Формула через катеты: [[K=ab/2]], а формула через высоту: [[K=ch/2]]. Поскольку обе описывают площадь одного треугольника, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Умножим обе части на два: [[ab=ch]]. Выразим [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] Высота равна произведению катетов, делённому на гипотенузу, поэтому две формулы никогда не могут разойтись на согласованном треугольнике." },
           { "kind": "p", "text": "Численная проверка: при [[a=6]], [[b=8]], [[c=10]] высота равна [[h=(6\\times8)/10=4.8]]. По катетам: [[K=(6\\times8)/2=24]]. По высоте: [[K=(10\\times4.8)/2=24]]. Один треугольник, одна площадь, два пути." },
           { "kind": "p", "text": "Когда известны только гипотенуза и высота, площадь уже определена: восстанавливать катеты сначала не нужно. Длины катетов всё равно можно восстановить по допустимым [[c]] и [[h]] через соотношения отрезков ниже, но это отдельное вычисление, а не поиск площади. Когда вместо этого известны катеты, <a href=\"/right-triangle-area-from-legs-calculator/\">калькулятор площади прямоугольного треугольника по катетам</a> принимает их напрямую." }
         ]
@@ -186,7 +186,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
           { "kind": "h3", "text": "Два меньших подобных прямоугольных треугольника" },
           { "kind": "p", "text": "Высота делит исходный треугольник на два меньших прямоугольных треугольника, каждый из которых имеет один общий острый угол с исходным и каждый содержит прямой угол. Совпадение двух углов делает все три треугольника подобными. Именно подобие и заставляет работать чистые пропорциональные соотношения между высотой, отрезками и катетами." },
           { "kind": "h3", "text": "Теорема о среднем геометрическом для высоты" },
-          { "kind": "p", "text": "Из подобия следует [[[\\boxed{h^2=pq}]]], или, что то же самое, [[[\\boxed{h=\\sqrt{pq}}]]]. Высота, это среднее геометрическое двух отрезков гипотенузы: её квадрат равен их произведению. Разобранный пример: при [[p=6.4]] и [[q=3.6]] имеем [[c=p+q=10]], а [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. Далее площадь: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Теорема об отрезках проверяет высоту, измеренную или вычисленную другим способом." },
+          { "kind": "p", "text": "Из подобия следует [[[\\boxed{h^2=pq}]]], или, что то же самое, [[[\\boxed{h=\\sqrt{pq}}]]] Высота, это среднее геометрическое двух отрезков гипотенузы: её квадрат равен их произведению. Разобранный пример: при [[p=6.4]] и [[q=3.6]] имеем [[c=p+q=10]], а [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] Далее площадь: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Теорема об отрезках проверяет высоту, измеренную или вычисленную другим способом." },
           { "kind": "h3", "text": "Связь отрезков с катетами" },
           { "kind": "p", "text": "То же подобие даёт [[b^2=cp]] и [[a^2=cq]]. При [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] и [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Исходный треугольник 6-8-10 восстанавливается точно, что показывает, насколько тесно связаны отрезки, высота и катеты." }
         ]
@@ -194,11 +194,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-max": {
         "h2": "Насколько большой может быть высота прямоугольного треугольника?",
         "blocks": [
-          { "kind": "p", "text": "Не каждая пара положительных чисел может быть гипотенузой и высотой. Для допустимого невырожденного прямоугольного треугольника [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. Высота должна быть положительной и никогда не может превышать половину гипотенузы." },
+          { "kind": "p", "text": "Не каждая пара положительных чисел может быть гипотенузой и высотой. Для допустимого невырожденного прямоугольного треугольника [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] Высота должна быть положительной и никогда не может превышать половину гипотенузы." },
           { "kind": "h3", "text": "Почему высота не может превышать половину гипотенузы" },
           { "kind": "p", "text": "Из [[h^2=pq]] при [[p+q=c]] произведение [[pq]] наибольшее, когда два отрезка равны, [[p=q=c/2]]. Следовательно, [[h^2\\leq c^2/4]], а для положительных длин [[h\\leq c/2]]. Простыми словами: высота самая высокая, когда она делит гипотенузу на две равные половины, и даже тогда она достигает лишь половины гипотенузы." },
           { "kind": "h3", "text": "Наибольшая площадь при фиксированной гипотенузе" },
-          { "kind": "p", "text": "Поскольку [[K=ch/2]] и [[h\\leq c/2]], наибольшая возможная площадь равна [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Этот максимум принадлежит равнобедренному прямоугольному треугольнику, у которого два катета равны. При [[c=10]] самая высокая допустимая высота равна [[h_{\\max}=5]], давая [[K_{\\max}=(10\\times5)/2=25]]. Высота 6 при гипотенузе 10 невозможна для прямоугольного треугольника." },
+          { "kind": "p", "text": "Поскольку [[K=ch/2]] и [[h\\leq c/2]], наибольшая возможная площадь равна [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Этот максимум принадлежит равнобедренному прямоугольному треугольнику, у которого два катета равны. При [[c=10]] самая высокая допустимая высота равна [[h_{\\max}=5]], давая [[K_{\\max}=(10\\times5)/2=25]]. Высота 6 при гипотенузе 10 невозможна для прямоугольного треугольника." },
           { "kind": "h3", "text": "Что будет, если высота слишком велика?" },
           { "kind": "p", "text": "Возьмите [[c=10]] и [[h=6]]: [[6>5]], поэтому прямоугольного треугольника с такими измерениями не существует. Арифметика [[(10\\times6)/2=30]] даёт допустимую площадь для некоторого треугольника в более общей постановке, но она не делает [[c=10]], [[h=6]] допустимым входом для прямоугольного треугольника. Эта страница не утверждает, что калькулятор отклоняет такой ввод автоматически; проверка остаётся за вами." },
           { "kind": "h3", "text": "Может ли высота равняться половине гипотенузы?" },
@@ -212,11 +212,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
         "blocks": [
           { "kind": "p", "text": "Этот калькулятор принимает [[h]] как входное значение, поэтому неизвестную высоту нужно сначала найти или измерить. Три стандартных пути покрывают распространённые случаи. Когда стороны известны, а высоты не хватает, <a href=\"/right-triangle-altitude-from-sides-calculator/\">калькулятор высоты прямоугольного треугольника по сторонам</a> вычисляет её напрямую." },
           { "kind": "h3", "text": "Способ 1: По обоим катетам и гипотенузе" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. При [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] При [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "Способ 2: По отрезкам гипотенузы" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. При [[p=6.4]] и [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] При [[p=6.4]] и [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "Способ 3: По известной площади и гипотенузе" },
-          { "kind": "p", "text": "Преобразуя [[K=ch/2]], получаем [[[\\boxed{h=\\frac{2K}{c}}]]]. При [[K=24]] и [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { "kind": "p", "text": "Преобразуя [[K=ch/2]], получаем [[[\\boxed{h=\\frac{2K}{c}}]]] При [[K=24]] и [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { "kind": "p", "text": "Это математические преобразования, а не дополнительные режимы калькулятора: сам калькулятор площади по высоте по-прежнему ожидает высоту на входе." }
         ]
       },
@@ -262,7 +262,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
           "<strong>Восприятие геометрической площади как точного материала к покупке.</strong> Формула даёт идеальную геометрическую площадь. Реальным проектам нужны отходы, нахлёсты и припуски на резку сверх неё. Исправление: добавляйте запас проекта после завершения геометрии."
         ],
         "closingParagraphs": [
-          "<strong>Неверно и верно: конкретный пример.</strong> Дано: [[c=10]] и [[h=4.8]]; неверный расчёт пропускает деление пополам: [[K=10\\times4.8=48]]. Это площадь соответствующего параллелограмма. Верный расчёт: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Вторая иллюстрация: подстановка катета 8 вместо высоты даёт [[(10\\times8)/2=40]], неверно, потому что 8 не перпендикулярна гипотенузе. С [[c]] сочетается только высота, и ничего больше."
+          "<strong>Неверно и верно: конкретный пример.</strong> Дано: [[c=10]] и [[h=4.8]]; неверный расчёт пропускает деление пополам: [[K=10\\times4.8=48]]. Это площадь соответствующего параллелограмма. Верный расчёт: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Вторая иллюстрация: подстановка катета 8 вместо высоты даёт [[(10\\times8)/2=40]], неверно, потому что 8 не перпендикулярна гипотенузе. С [[c]] сочетается только высота, и ничего больше."
         ]
       },
       "sec-verify": {
@@ -362,7 +362,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-intro": {
         "h2": "Comment calculer l'aire d'un triangle rectangle à partir de la hauteur",
         "blocks": [
-          { "kind": "p", "text": "Supposons qu'un triangle rectangle ait une hypoténuse de 10 m, et que la distance perpendiculaire du sommet de l'angle droit à cette hypoténuse mesure 4,8 m. Son aire s'obtient directement : [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Le triangle renferme 24 mètres carrés de surface plane." },
+          { "kind": "p", "text": "Supposons qu'un triangle rectangle ait une hypoténuse de 10 m, et que la distance perpendiculaire du sommet de l'angle droit à cette hypoténuse mesure 4,8 m. Son aire s'obtient directement : [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Le triangle renferme 24 mètres carrés de surface plane." },
           { "kind": "p", "text": "Ce calculateur existe exactement pour cette situation. Quand on connaît le côté le plus long d'un triangle rectangle, l'hypoténuse [[c]], et la hauteur perpendiculaire issue du sommet de l'angle droit vers ce côté, [[h]], les deux côtés ne sont pas nécessaires. L'hypoténuse sert de base, la hauteur est sa hauteur perpendiculaire correspondante, et l'aire de tout triangle vaut la moitié du produit d'une base par sa hauteur correspondante : [[K=ch/2]]." },
           { "kind": "p", "text": "La hauteur doit rencontrer l'hypoténuse à angle droit ; un segment oblique qui n'est pas perpendiculaire donne une hauteur fausse et une aire fausse. Saisissez les deux mesures dans des unités de longueur compatibles, et le calculateur renvoie l'aire dans les unités carrées correspondantes, avec chaque étape de substitution affichée." }
         ]
@@ -388,7 +388,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-formula": {
         "h2": "Formule de l'aire d'un triangle rectangle à partir de la hauteur",
         "blocks": [
-          { "kind": "p", "text": "La formule d'aire à partir de la hauteur est [[[\\boxed{K=\\frac{ch}{2}}]]]. Ici, [[K]] est l'aire, [[c]] est l'hypoténuse servant de base, et [[h]] est la hauteur perpendiculaire à l'hypoténuse. Trois symboles, une multiplication, une division par deux." },
+          { "kind": "p", "text": "La formule d'aire à partir de la hauteur est [[[\\boxed{K=\\frac{ch}{2}}]]] Ici, [[K]] est l'aire, [[c]] est l'hypoténuse servant de base, et [[h]] est la hauteur perpendiculaire à l'hypoténuse. Trois symboles, une multiplication, une division par deux." },
           { "kind": "h3", "text": "Pourquoi multiplie-t-on l'hypoténuse par la hauteur ?" },
           { "kind": "p", "text": "La formule générale de l'aire d'un triangle est [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], et la base et la hauteur doivent être perpendiculaires l'une à l'autre. Choisir l'hypoténuse comme base impose comme hauteur la distance perpendiculaire à celle-ci, qui est exactement la hauteur : [[\\text{base}=c]] et [[\\text{height}=h]], donc [[K=ch/2]]. Cela vaut quelle que soit la rotation ou le dessin du triangle : la perpendicularité est une relation géométrique, pas une direction à l'écran, donc une hypoténuse oblique fonctionne comme base aussi bien qu'une hypoténuse horizontale." },
           { "kind": "h3", "text": "Pourquoi divise-t-on le résultat par deux ?" },
@@ -411,7 +411,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
           "<strong>Écrivez la formule.</strong> [[K=ch/2]].",
           "<strong>Substituez les mesures.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Multipliez.</strong> [[10\\times4.8=48]], donc [[K=48/2]].",
-          "<strong>Divisez par deux.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Divisez par deux.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Interprétez la réponse.</strong> Le triangle renferme 24 mètres carrés d'aire plane.",
           "<strong>Vérifiez la faisabilité.</strong> Un triangle rectangle valide exige [[h\\leq c/2]] ; ici [[4.8\\leq5]], donc les mesures peuvent décrire un vrai triangle rectangle.",
           "<strong>Vérifiez avec les côtés.</strong> Un triangle 6-8-10 a la même hypoténuse et la même hauteur, et [[K=(6\\times8)/2=24]]. Les deux routes concordent."
@@ -447,13 +447,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
         "blocks": [
           { "kind": "p", "text": "Quatre exemples résolus construisent la méthode à partir de triangles familiers. Chacun calcule la hauteur à partir des côtés quand c'est nécessaire, applique [[K=ch/2]], et contrôle avec la formule des côtés." },
           { "kind": "h3", "text": "Exemple 1 : Un triangle rectangle 3-4-5" },
-          { "kind": "p", "text": "Données : [[a=3]], [[b=4]], [[c=5]]. La hauteur vaut [[h=ab/c]], donc [[h=(3\\times4)/5=2.4]]. L'aire est [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Contrôle avec les côtés : [[K=(3\\times4)/2=6]]. Les deux formules décrivent le même triangle, donc elles doivent concorder, et c'est le cas." },
+          { "kind": "p", "text": "Données : [[a=3]], [[b=4]], [[c=5]]. La hauteur vaut [[h=ab/c]], donc [[h=(3\\times4)/5=2.4]]. L'aire est [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Contrôle avec les côtés : [[K=(3\\times4)/2=6]]. Les deux formules décrivent le même triangle, donc elles doivent concorder, et c'est le cas." },
           { "kind": "h3", "text": "Exemple 2 : Un triangle rectangle 5-12-13" },
-          { "kind": "p", "text": "Données : [[a=5]], [[b=12]], [[c=13]]. La hauteur vaut [[h=(5\\times12)/13=60/13\\approx4.61538]]. En gardant la fraction exacte : [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Conserver [[60/13]] au lieu d'un décimal arrondi évite une erreur d'arrondi précoce : le 13 s'annule exactement, laissant un 30 net." },
+          { "kind": "p", "text": "Données : [[a=5]], [[b=12]], [[c=13]]. La hauteur vaut [[h=(5\\times12)/13=60/13\\approx4.61538]]. En gardant la fraction exacte : [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Conserver [[60/13]] au lieu d'un décimal arrondi évite une erreur d'arrondi précoce : le 13 s'annule exactement, laissant un 30 net." },
           { "kind": "h3", "text": "Exemple 3 : Un triangle rectangle 6-8-10" },
-          { "kind": "p", "text": "Données directes : [[c=10]] et [[h=4.8]]. Alors [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Avec des côtés de 6 et 8, [[K=(6\\times8)/2=24]], ce qui confirme la route de la hauteur." },
+          { "kind": "p", "text": "Données directes : [[c=10]] et [[h=4.8]]. Alors [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Avec des côtés de 6 et 8, [[K=(6\\times8)/2=24]], ce qui confirme la route de la hauteur." },
           { "kind": "h3", "text": "Exemple 4 : Un triangle rectangle isocèle" },
-          { "kind": "p", "text": "Données : [[c=10]] et [[h=5]]. Alors [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. C'est la plus grande aire que puisse avoir un triangle rectangle d'hypoténuse 10. La hauteur égale la moitié de l'hypoténuse seulement quand les côtés sont égaux, chaque angle aigu valant alors [[45^\\circ]], et aucun triangle rectangle valide avec cette hypoténuse ne peut dépasser 25 unités carrées." }
+          { "kind": "p", "text": "Données : [[c=10]] et [[h=5]]. Alors [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] C'est la plus grande aire que puisse avoir un triangle rectangle d'hypoténuse 10. La hauteur égale la moitié de l'hypoténuse seulement quand les côtés sont égaux, chaque angle aigu valant alors [[45^\\circ]], et aucun triangle rectangle valide avec cette hypoténuse ne peut dépasser 25 unités carrées." }
         ]
       },
       "sec-applications": {
@@ -461,29 +461,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
         "blocks": [
           { "kind": "p", "text": "Douze situations résolues montrent la formule à différentes échelles et dans différentes unités. Chacune nomme le triangle de la scène, les deux mesures, la substitution, l'aire, et l'hypothèse derrière le modèle." },
           { "kind": "h3", "text": "Exemple 1 : Section triangulaire de jardin" },
-          { "kind": "p", "text": "Une section de jardin en triangle rectangle a une limite la plus longue de 10 m, et la distance perpendiculaire du coin à angle droit à cette limite est de 4,8 m. Donc [[c=10\\text{ m}]] et [[h=4.8\\text{ m}]] : [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. La section occupe 24 mètres carrés. Cela suppose que la limite est droite et que le coin est un vrai angle droit." },
+          { "kind": "p", "text": "Une section de jardin en triangle rectangle a une limite la plus longue de 10 m, et la distance perpendiculaire du coin à angle droit à cette limite est de 4,8 m. Donc [[c=10\\text{ m}]] et [[h=4.8\\text{ m}]] : [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] La section occupe 24 mètres carrés. Cela suppose que la limite est droite et que le coin est un vrai angle droit." },
           { "kind": "h3", "text": "Exemple 2 : Panneau triangulaire en contreplaqué" },
-          { "kind": "p", "text": "Un panneau triangulaire rectangle en contreplaqué a une hypoténuse de 1 m et une hauteur perpendiculaire de 0,48 m : [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. C'est la surface plane d'une face, utile pour les estimations de couverture. Les chutes de découpe et les marges de matériau sont des considérations distinctes." },
+          { "kind": "p", "text": "Un panneau triangulaire rectangle en contreplaqué a une hypoténuse de 1 m et une hauteur perpendiculaire de 0,48 m : [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] C'est la surface plane d'une face, utile pour les estimations de couverture. Les chutes de découpe et les marges de matériau sont des considérations distinctes." },
           { "kind": "h3", "text": "Exemple 3 : Fenêtre triangulaire rectangle en verre" },
-          { "kind": "p", "text": "Un panneau de verre en triangle rectangle a une hypoténuse de 1,3 m et une hauteur de 0,6 m perpendiculaire à ce côté : [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. C'est l'aire géométrique du verre avant la couverture du cadre ou les marges d'installation." },
+          { "kind": "p", "text": "Un panneau de verre en triangle rectangle a une hypoténuse de 1,3 m et une hauteur de 0,6 m perpendiculaire à ce côté : [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] C'est l'aire géométrique du verre avant la couverture du cadre ou les marges d'installation." },
           { "kind": "h3", "text": "Exemple 4 : Arpentage d'une section triangulaire" },
-          { "kind": "p", "text": "Un plan d'arpentage contient un triangle rectangle d'hypoténuse 13 m et de hauteur [[60/13]] m. En gardant la fraction : [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Le dessin représente une section de 30 mètres carrés. Le travail réel sur le terrain peut encore exiger des corrections d'instruments au-delà du plan." },
+          { "kind": "p", "text": "Un plan d'arpentage contient un triangle rectangle d'hypoténuse 13 m et de hauteur [[60/13]] m. En gardant la fraction : [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Le dessin représente une section de 30 mètres carrés. Le travail réel sur le terrain peut encore exiger des corrections d'instruments au-delà du plan." },
           { "kind": "h3", "text": "Exemple 5 : Mesure d'un carreau triangulaire" },
-          { "kind": "p", "text": "Un carreau en triangle rectangle a une hypoténuse de 25 cm et une hauteur perpendiculaire de 6,72 cm : [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Un carreau couvre 84 centimètres carrés, ce qui aide à estimer le nombre de carreaux nécessaires pour une surface. Les joints et les pertes de découpe se comptent séparément." },
+          { "kind": "p", "text": "Un carreau en triangle rectangle a une hypoténuse de 25 cm et une hauteur perpendiculaire de 6,72 cm : [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Un carreau couvre 84 centimètres carrés, ce qui aide à estimer le nombre de carreaux nécessaires pour une surface. Les joints et les pertes de découpe se comptent séparément." },
           { "kind": "h3", "text": "Exemple 6 : Panneau d'acier de support" },
-          { "kind": "p", "text": "Un panneau de support plat en triangle rectangle a une hypoténuse de 1,7 m avec des côtés de 0,8 m et 1,5 m. Sa hauteur vaut [[h=(0.8\\times1.5)/1.7=12/17]] m. Alors [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. C'est l'aire géométrique du panneau, et non sa capacité de charge." },
+          { "kind": "p", "text": "Un panneau de support plat en triangle rectangle a une hypoténuse de 1,7 m avec des côtés de 0,8 m et 1,5 m. Sa hauteur vaut [[h=(0.8\\times1.5)/1.7=12/17]] m. Alors [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] C'est l'aire géométrique du panneau, et non sa capacité de charge." },
           { "kind": "h3", "text": "Exemple 7 : Panneau latéral triangulaire de rampe" },
-          { "kind": "p", "text": "Un panneau latéral de rampe simplifié forme un triangle rectangle d'hypoténuse 5 m et de hauteur perpendiculaire 2,4 m vers cette hypoténuse : [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. C'est l'aire plane de la section triangulaire latérale, et non la surface inclinée de la rampe, et le calcul n'établit pas la conformité d'accessibilité." },
+          { "kind": "p", "text": "Un panneau latéral de rampe simplifié forme un triangle rectangle d'hypoténuse 5 m et de hauteur perpendiculaire 2,4 m vers cette hypoténuse : [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] C'est l'aire plane de la section triangulaire latérale, et non la surface inclinée de la rampe, et le calcul n'établit pas la conformité d'accessibilité." },
           { "kind": "h3", "text": "Exemple 8 : Section de pignon de toit" },
-          { "kind": "p", "text": "Une section de pignon de toit en triangle rectangle a une hypoténuse de 6,5 m et une hauteur perpendiculaire de [[30/13]] m : [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Le résultat décrit le plan triangulaire donné par les mesures. L'aire totale de la surface d'un vrai toit est un problème de mesure tridimensionnelle distinct." },
+          { "kind": "p", "text": "Une section de pignon de toit en triangle rectangle a une hypoténuse de 6,5 m et une hauteur perpendiculaire de [[30/13]] m : [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Le résultat décrit le plan triangulaire donné par les mesures. L'aire totale de la surface d'un vrai toit est un problème de mesure tridimensionnelle distinct." },
           { "kind": "h3", "text": "Exemple 9 : Parcelle de terrain en triangle rectangle" },
-          { "kind": "p", "text": "Une section de terrain en triangle rectangle a une hypoténuse de 50 m et une hauteur perpendiculaire de 24 m : [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Les limites mesurées renferment 600 mètres carrés. Un chiffre d'aire officiel peut encore exiger une vérification d'arpentage." },
+          { "kind": "p", "text": "Une section de terrain en triangle rectangle a une hypoténuse de 50 m et une hauteur perpendiculaire de 24 m : [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Les limites mesurées renferment 600 mètres carrés. Un chiffre d'aire officiel peut encore exiger une vérification d'arpentage." },
           { "kind": "h3", "text": "Exemple 10 : Grande parcelle d'arpentage triangulaire" },
-          { "kind": "p", "text": "Une section arpentée en triangle rectangle a une hypoténuse de 100 m et une hauteur perpendiculaire de 48 m : [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. C'est l'aire plane de la section triangulaire. Elle ne représente toute la propriété que si la propriété consiste uniquement en ce triangle." },
+          { "kind": "p", "text": "Une section arpentée en triangle rectangle a une hypoténuse de 100 m et une hauteur perpendiculaire de 48 m : [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] C'est l'aire plane de la section triangulaire. Elle ne représente toute la propriété que si la propriété consiste uniquement en ce triangle." },
           { "kind": "h3", "text": "Exemple 11 : Section de voile triangulaire" },
-          { "kind": "p", "text": "Une voile plate en triangle rectangle, dans sa conception, a une hypoténuse de 15 pieds et une hauteur perpendiculaire de 7,2 pieds : [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. C'est l'aire plane de la voile idéalisée. La courbure du tissu, les coutures et les marges de bord exigent une considération distincte." },
+          { "kind": "p", "text": "Une voile plate en triangle rectangle, dans sa conception, a une hypoténuse de 15 pieds et une hauteur perpendiculaire de 7,2 pieds : [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] C'est l'aire plane de la voile idéalisée. La courbure du tissu, les coutures et les marges de bord exigent une considération distincte." },
           { "kind": "h3", "text": "Exemple 12 : Petite équerre mécanique" },
-          { "kind": "p", "text": "Une équerre plate en triangle rectangle a une hypoténuse de 250 mm et une hauteur perpendiculaire de 120 mm : [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. La réponse est en millimètres carrés parce que les entrées sont en millimètres. Comme [[1\\text{ cm}^2=100\\text{ mm}^2]], cela vaut [[[\\boxed{150\\text{ cm}^2}]]]. Convertir l'unité linéaire et convertir l'unité carrée sont des opérations différentes, comme l'explique la section sur les unités." },
+          { "kind": "p", "text": "Une équerre plate en triangle rectangle a une hypoténuse de 250 mm et une hauteur perpendiculaire de 120 mm : [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] La réponse est en millimètres carrés parce que les entrées sont en millimètres. Comme [[1\\text{ cm}^2=100\\text{ mm}^2]], cela vaut [[[\\boxed{150\\text{ cm}^2}]]] Convertir l'unité linéaire et convertir l'unité carrée sont des opérations différentes, comme l'explique la section sur les unités." },
           { "kind": "h3", "text": "Comparaison des exemples concrets" }
         ],
         "table": {
@@ -509,7 +509,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-equal": {
         "h2": "Pourquoi les deux formules d'aire du triangle rectangle donnent la même réponse",
         "blocks": [
-          { "kind": "p", "text": "Un triangle rectangle peut être mesuré par ses deux côtés perpendiculaires ou par son hypoténuse et sa hauteur. La formule des côtés est [[K=ab/2]] et la formule de la hauteur est [[K=ch/2]]. Comme les deux décrivent l'aire du même triangle, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multipliez les deux membres par deux : [[ab=ch]]. Résolvez pour [[h]] : [[[\\boxed{h=\\frac{ab}{c}}]]]. La hauteur est le produit des côtés divisé par l'hypoténuse, ce qui explique pourquoi les deux formules ne peuvent jamais être en désaccord sur un triangle cohérent." },
+          { "kind": "p", "text": "Un triangle rectangle peut être mesuré par ses deux côtés perpendiculaires ou par son hypoténuse et sa hauteur. La formule des côtés est [[K=ab/2]] et la formule de la hauteur est [[K=ch/2]]. Comme les deux décrivent l'aire du même triangle, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multipliez les deux membres par deux : [[ab=ch]]. Résolvez pour [[h]] : [[[\\boxed{h=\\frac{ab}{c}}]]] La hauteur est le produit des côtés divisé par l'hypoténuse, ce qui explique pourquoi les deux formules ne peuvent jamais être en désaccord sur un triangle cohérent." },
           { "kind": "p", "text": "Vérification numérique : pour [[a=6]], [[b=8]], [[c=10]], la hauteur vaut [[h=(6\\times8)/10=4.8]]. Par les côtés : [[K=(6\\times8)/2=24]]. Par la hauteur : [[K=(10\\times4.8)/2=24]]. Le même triangle, la même aire, deux routes." },
           { "kind": "p", "text": "Quand seuls l'hypoténuse et la hauteur sont connus, l'aire est déjà fixée : il n'est pas nécessaire de reconstituer d'abord les côtés. Les longueurs des côtés peuvent encore être retrouvées à partir de [[c]] et [[h]] valides grâce aux relations de segments ci-dessous, mais c'est un calcul distinct de la recherche de l'aire. Quand les côtés sont plutôt les données connues, le <a href=\"/right-triangle-area-from-legs-calculator/\">calculateur d'aire d'un triangle rectangle à partir des côtés</a> les prend directement." }
         ]
@@ -521,7 +521,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
           { "kind": "h3", "text": "Deux triangles rectangles semblables plus petits" },
           { "kind": "p", "text": "La hauteur divise le triangle d'origine en deux triangles rectangles plus petits, chacun partageant un angle aigu avec l'original et contenant chacun un angle droit. Partager deux mesures d'angles rend les trois triangles semblables. C'est la similitude qui force les relations proportionnelles nettes entre la hauteur, les segments et les côtés." },
           { "kind": "h3", "text": "Le théorème de la moyenne géométrique de la hauteur" },
-          { "kind": "p", "text": "La similitude donne [[[\\boxed{h^2=pq}]]], ou de façon équivalente [[[\\boxed{h=\\sqrt{pq}}]]]. La hauteur est la moyenne géométrique des deux segments d'hypoténuse : son carré égale leur produit. Exemple résolu : avec [[p=6.4]] et [[q=3.6]], [[c=p+q=10]], et [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. L'aire suit : [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Le théorème des segments vérifie une hauteur mesurée ou calculée autrement." },
+          { "kind": "p", "text": "La similitude donne [[[\\boxed{h^2=pq}]]], ou de façon équivalente [[[\\boxed{h=\\sqrt{pq}}]]] La hauteur est la moyenne géométrique des deux segments d'hypoténuse : son carré égale leur produit. Exemple résolu : avec [[p=6.4]] et [[q=3.6]], [[c=p+q=10]], et [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] L'aire suit : [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Le théorème des segments vérifie une hauteur mesurée ou calculée autrement." },
           { "kind": "h3", "text": "Relation entre les segments et les côtés" },
           { "kind": "p", "text": "La même similitude donne [[b^2=cp]] et [[a^2=cq]]. Avec [[c=10]], [[p=6.4]], [[q=3.6]] : [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] et [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Le triangle 6-8-10 d'origine est retrouvé exactement, ce qui montre à quel point les segments, la hauteur et les côtés sont étroitement liés." }
         ]
@@ -529,11 +529,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
       "sec-max": {
         "h2": "Jusqu'où peut aller la hauteur d'un triangle rectangle ?",
         "blocks": [
-          { "kind": "p", "text": "Toutes les paires de nombres positifs ne peuvent pas être une hypoténuse et une hauteur. Pour un triangle rectangle valide et non dégénéré, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. La hauteur doit être positive et ne peut jamais dépasser la moitié de l'hypoténuse." },
+          { "kind": "p", "text": "Toutes les paires de nombres positifs ne peuvent pas être une hypoténuse et une hauteur. Pour un triangle rectangle valide et non dégénéré, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] La hauteur doit être positive et ne peut jamais dépasser la moitié de l'hypoténuse." },
           { "kind": "h3", "text": "Pourquoi la hauteur ne peut pas dépasser la moitié de l'hypoténuse" },
           { "kind": "p", "text": "De [[h^2=pq]] avec [[p+q=c]], le produit [[pq]] est maximal quand les deux segments sont égaux, [[p=q=c/2]]. Donc [[h^2\\leq c^2/4]], et pour des longueurs positives [[h\\leq c/2]]. En termes simples : la hauteur est la plus grande quand elle partage l'hypoténuse en deux moitiés égales, et même alors elle n'atteint que la moitié de l'hypoténuse." },
           { "kind": "h3", "text": "Aire maximale pour une hypoténuse fixée" },
-          { "kind": "p", "text": "Comme [[K=ch/2]] et [[h\\leq c/2]], la plus grande aire possible est [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Ce maximum appartient au triangle rectangle isocèle, où les deux côtés sont égaux. Avec [[c=10]], la plus grande hauteur valide est [[h_{\\max}=5]], donnant [[K_{\\max}=(10\\times5)/2=25]]. Une hauteur de 6 avec une hypoténuse de 10 est impossible pour un triangle rectangle." },
+          { "kind": "p", "text": "Comme [[K=ch/2]] et [[h\\leq c/2]], la plus grande aire possible est [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Ce maximum appartient au triangle rectangle isocèle, où les deux côtés sont égaux. Avec [[c=10]], la plus grande hauteur valide est [[h_{\\max}=5]], donnant [[K_{\\max}=(10\\times5)/2=25]]. Une hauteur de 6 avec une hypoténuse de 10 est impossible pour un triangle rectangle." },
           { "kind": "h3", "text": "Que se passe-t-il si la hauteur est trop grande ?" },
           { "kind": "p", "text": "Prenez [[c=10]] et [[h=6]] : [[6>5]], donc aucun triangle rectangle n'a ces mesures. Le calcul [[(10\\times6)/2=30]] est une aire valide pour un certain triangle dans un cadre plus général, mais il ne fait pas de [[c=10]], [[h=6]] une entrée valide de triangle rectangle. Cette page ne prétend pas que le calculateur rejette une telle entrée automatiquement ; le contrôle vous appartient." },
           { "kind": "h3", "text": "La hauteur peut-elle égaler la moitié de l'hypoténuse ?" },
@@ -547,11 +547,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
         "blocks": [
           { "kind": "p", "text": "Ce calculateur prend [[h]] comme entrée, donc une hauteur inconnue doit d'abord être trouvée ou mesurée. Trois routes standard couvrent les cas courants. Quand les côtés sont connus et que la hauteur est la pièce manquante, le <a href=\"/right-triangle-altitude-from-sides-calculator/\">calculateur de hauteur d'un triangle rectangle à partir des côtés</a> la calcule directement." },
           { "kind": "h3", "text": "Méthode 1 : Avec les deux côtés et l'hypoténuse" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. Avec [[a=6]], [[b=8]], [[c=10]] : [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] Avec [[a=6]], [[b=8]], [[c=10]] : [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "Méthode 2 : Avec les segments d'hypoténuse" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. Avec [[p=6.4]] et [[q=3.6]] : [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] Avec [[p=6.4]] et [[q=3.6]] : [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "Méthode 3 : Avec l'aire connue et l'hypoténuse" },
-          { "kind": "p", "text": "Réarranger [[K=ch/2]] donne [[[\\boxed{h=\\frac{2K}{c}}]]]. Avec [[K=24]] et [[c=10]] : [[h=(2\\times24)/10=4.8]]." },
+          { "kind": "p", "text": "Réarranger [[K=ch/2]] donne [[[\\boxed{h=\\frac{2K}{c}}]]] Avec [[K=24]] et [[c=10]] : [[h=(2\\times24)/10=4.8]]." },
           { "kind": "p", "text": "Ce sont des réarrangements mathématiques, pas des modes supplémentaires du calculateur : le calculateur d'aire à partir de la hauteur lui-même attend toujours la hauteur en entrée." }
         ]
       },
@@ -597,7 +597,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1B = {
           "<strong>Traiter l'aire géométrique comme du matériau exact à acheter.</strong> La formule donne une aire géométrique idéale. Les projets réels exigent des chutes, des recouvrements et des marges de découpe en plus. Correction : ajoutez une marge de projet une fois la géométrie terminée."
         ],
         "closingParagraphs": [
-          "<strong>Faux contre juste : un exemple concret.</strong> Données : [[c=10]] et [[h=4.8]] ; le calcul incorrect saute la division par deux : [[K=10\\times4.8=48]]. C'est l'aire du parallélogramme correspondant. Le calcul correct est [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Seconde illustration : substituer le côté 8 à la hauteur donne [[(10\\times8)/2=40]], faux parce que 8 n'est pas perpendiculaire à l'hypoténuse. La hauteur, et seulement la hauteur, s'associe à [[c]]."
+          "<strong>Faux contre juste : un exemple concret.</strong> Données : [[c=10]] et [[h=4.8]] ; le calcul incorrect saute la division par deux : [[K=10\\times4.8=48]]. C'est l'aire du parallélogramme correspondant. Le calcul correct est [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Seconde illustration : substituer le côté 8 à la hauteur donne [[(10\\times8)/2=40]], faux parce que 8 n'est pas perpendiculaire à l'hypoténuse. La hauteur, et seulement la hauteur, s'associe à [[c]]."
         ]
       },
       "sec-verify": {

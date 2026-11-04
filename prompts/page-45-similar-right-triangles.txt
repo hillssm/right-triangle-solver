@@ -1,0 +1,2059 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## Similar Right Triangles Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, similarity and proportion expert, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/similar-right-triangles-calculator/
+
+**Page Title:** Similar Right Triangles Calculator
+
+**Primary Focus Keyword:** Similar Right Triangles Calculator
+
+**Main Topic:** Find Scale Factors, Calculate Missing Corresponding Sides, and Recover Original Side Lengths in Similar Right Triangles.
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English.
+
+**Target Audience:**
+
+- Middle school mathematics students.
+- High school geometry students.
+- College students.
+- Mathematics teachers.
+- Private tutors.
+- Parents helping children with geometry.
+- Students preparing for mathematics examinations.
+- Students learning proportions and ratios.
+- Architecture students.
+- Construction workers and builders.
+- Surveyors.
+- Engineers and designers.
+- Anyone learning triangle similarity.
+
+**Main Objective:**
+
+Create a detailed educational resource explaining how similar right triangles work, how corresponding sides relate, how to calculate scale factors, and how to find unknown side lengths using proportional relationships.
+
+The article must teach readers:
+
+- What similar right triangles are.
+- Why two right triangles can have different sizes but identical shapes.
+- What corresponding sides mean.
+- Why corresponding angles are equal.
+- What the AA similarity rule means.
+- How to calculate the scale factor.
+- How to enlarge or reduce a triangle.
+- How to find a missing corresponding side.
+- How to recover an original side length.
+- Why the same scale factor applies to all corresponding sides.
+- How to identify incorrectly matched sides.
+- How similar triangles relate to proportions.
+- How similar triangles relate to the Pythagorean theorem.
+- How perimeter changes with scale factor.
+- How area changes with the square of the scale factor.
+- How to solve practical geometry problems involving shadows, models, and blueprints.
+- How to use all three calculator modes correctly.
+
+Write naturally, like an experienced mathematics teacher explaining geometry to students.
+
+Avoid robotic language, unnecessary repetition, keyword stuffing, generic filler, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm the actual calculator modes, input fields, validation rules, buttons, results, triangle diagram, formula explanations, instructions, examples, FAQs, and related calculators.
+
+The existing calculator has three calculation modes.
+
+#### MODE 1: FIND SCALE FACTOR
+
+**Purpose:**
+
+Calculate the scale factor between two similar right triangles when one pair of corresponding sides is known.
+
+**Inputs:**
+
+- Original side length.
+- Corresponding similar side length.
+
+**Formula:**
+
+\[
+\boxed{k=\frac{\text{Similar Side}}{\text{Original Side}}}
+\]
+
+Where:
+
+- k = scale factor.
+- Original side = corresponding side in the original triangle.
+- Similar side = matching side in the scaled triangle.
+
+**Example:**
+
+Original side:
+
+\[
+6
+\]
+
+Similar side:
+
+\[
+18
+\]
+
+Calculation:
+
+\[
+k=\frac{18}{6}
+\]
+
+\[
+\boxed{k=3}
+\]
+
+Interpretation:
+
+The similar triangle is three times as large in corresponding linear dimensions as the original triangle.
+
+Explain that k = 3 does not mean the angles change. The triangle keeps the same shape.
+
+#### MODE 2: FIND MISSING SIMILAR SIDE
+
+**Purpose:**
+
+Calculate a missing corresponding side in the similar triangle.
+
+**Inputs:**
+
+- Original side length.
+- Scale factor k.
+
+**Formula:**
+
+\[
+\boxed{\text{Similar Side}=\text{Original Side}\times k}
+\]
+
+**Example:**
+
+Original side:
+
+\[
+8
+\]
+
+Scale factor:
+
+\[
+k=2.5
+\]
+
+Calculation:
+
+\[
+\text{Similar Side}=8\times2.5
+\]
+
+\[
+\boxed{20}
+\]
+
+Interpretation:
+
+The matching side of the similar triangle is 20 units.
+
+Explain why multiplication is used when moving from the original triangle to the scaled triangle.
+
+#### MODE 3: FIND ORIGINAL SIDE
+
+**Purpose:**
+
+Work backward to find an original side when the corresponding similar side and scale factor are known.
+
+**Inputs:**
+
+- Similar side length.
+- Scale factor k.
+
+**Formula:**
+
+\[
+\boxed{\text{Original Side}=\frac{\text{Similar Side}}{k}}
+\]
+
+**Example:**
+
+Similar side:
+
+\[
+15
+\]
+
+Scale factor:
+
+\[
+k=3
+\]
+
+Calculation:
+
+\[
+\text{Original Side}=\frac{15}{3}
+\]
+
+\[
+\boxed{5}
+\]
+
+Interpretation:
+
+The corresponding side of the original triangle is 5 units.
+
+Explain why division is used when reversing a scaling operation.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The live page includes:
+
+- Calculator mode selector.
+- Find scale factor mode.
+- Find missing similar side mode.
+- Find original side mode.
+- Input fields appropriate to each mode.
+- Calculate button.
+- Reset button.
+- Formula explanations.
+- Triangle diagram.
+- Triangle diagram key.
+- Calculator instructions.
+- Three step-by-step examples.
+- Explanation of results.
+- Side ratio explanation.
+- Practical applications.
+- Common mistakes.
+- Six FAQs.
+- Related calculators.
+
+Preserve the existing functionality.
+
+Do not invent additional calculator modes.
+
+Do not claim that the current calculator directly:
+
+- Solves all three sides of two arbitrary triangles at once.
+- Calculates all six angles.
+- Calculates a missing angle.
+- Automatically identifies corresponding sides from uploaded images.
+- Calculates triangle area or perimeter as a separate calculator mode.
+- Calculates scale factors from angles alone.
+- Handles non-similar triangles by forcing a proportional relationship.
+- Automatically determines whether two entered triangles are similar from every possible measurement.
+
+You may explain these concepts mathematically as educational information, but distinguish them from actual calculator functionality.
+
+**Important input validation:**
+
+- All side lengths must be positive.
+- The scale factor must be greater than zero.
+- A zero scale factor would collapse the triangle.
+- A negative scale factor is not a valid geometric enlargement or reduction.
+- The two compared sides must correspond to one another.
+- All side measurements must use compatible units.
+- The same scale factor must apply to all corresponding side pairs.
+
+Do not suggest that arbitrary side pairs can be compared without first establishing that they correspond.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Calculate the scale factor between similar right triangles.
+2. Find a missing side in a similar triangle.
+3. Find the original side length from a scaled measurement.
+4. Understand what similar right triangles are.
+5. Learn how corresponding sides work.
+6. Understand the AA similarity rule.
+7. Solve right triangle proportion problems.
+8. Understand how enlargement and reduction work.
+9. Learn why all corresponding sides share one ratio.
+10. Solve geometry homework.
+11. Apply triangle similarity to real-world measurement problems.
+12. Understand the difference between similar and congruent triangles.
+13. Calculate perimeter and area relationships between similar triangles.
+14. Learn how similar right triangles relate to the Pythagorean theorem.
+
+Answer the main calculator question immediately.
+
+Introduce all three calculator modes near the beginning.
+
+Explain how to find k, calculate a missing similar side, and recover an original side before introducing lengthy geometry theory.
+
+Do not make visitors scroll through extensive theoretical explanations before learning how to use the calculator.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+Similar Right Triangles Calculator
+
+**Secondary Keywords:**
+
+- Similar right triangle calculator.
+- Similar triangles calculator.
+- Similar triangle scale factor calculator.
+- Similar right triangles.
+- Find scale factor between triangles.
+- Missing side similar triangles.
+- Corresponding sides calculator.
+- Similar triangle proportions.
+- Right triangle similarity.
+- Similar triangle side lengths.
+- Scale factor in similar triangles.
+- Original side length calculator.
+- Triangle enlargement calculator.
+- Triangle reduction calculator.
+- Similarity ratio calculator.
+
+**Related Semantic Keywords:**
+
+- Triangle similarity.
+- Corresponding sides.
+- Corresponding angles.
+- Equal angles.
+- Proportional sides.
+- Scale factor.
+- Original triangle.
+- Similar triangle.
+- Enlarged triangle.
+- Reduced triangle.
+- Triangle proportions.
+- AA similarity criterion.
+- Angle-angle similarity.
+- Right angle.
+- 90-degree angle.
+- Acute angles.
+- Hypotenuse.
+- Triangle legs.
+- Similar figures.
+- Congruent triangles.
+- Geometric transformation.
+- Linear scale factor.
+- Area ratio.
+- Perimeter ratio.
+- Pythagorean theorem.
+- Shadow measurement.
+- Indirect measurement.
+- Scale drawing.
+- Architectural blueprint.
+- Mathematical proportions.
+
+### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords in relevant sections.
+
+Avoid:
+
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repetitive headings.
+
+Prioritize mathematical accuracy, natural language, and genuine search intent.
+
+---
+
+## 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use consistent notation throughout the article.
+
+Consider two similar right triangles.
+
+**Original triangle ABC:**
+
+- Side a = first leg.
+- Side b = second leg.
+- Side c = hypotenuse.
+
+**Similar triangle DEF:**
+
+- Side a' = corresponding first leg.
+- Side b' = corresponding second leg.
+- Side c' = corresponding hypotenuse.
+
+Use the following correspondence:
+
+\[
+a\leftrightarrow a'
+\]
+
+\[
+b\leftrightarrow b'
+\]
+
+\[
+c\leftrightarrow c'
+\]
+
+The scale factor from the original triangle to the similar triangle is k.
+
+### A. DEFINITION OF SIMILAR TRIANGLES
+
+Two triangles are similar when:
+
+- Their corresponding angles are equal.
+- Their corresponding side lengths are proportional.
+- They have the same shape.
+- They may have different sizes.
+
+Explain that similar triangles do not need to have identical side lengths.
+
+### B. AA SIMILARITY RULE
+
+Both triangles are right triangles.
+
+Therefore, each has one angle measuring:
+
+\[
+90^\circ
+\]
+
+If one additional acute angle in one triangle equals an acute angle in the other, the third angles must also match.
+
+Therefore, the triangles are similar by the Angle-Angle (AA) criterion.
+
+Explain why only one additional equal angle is needed when both triangles are already known to be right triangles.
+
+### C. SCALE FACTOR FORMULA
+
+\[
+\boxed{k=\frac{\text{Similar Side}}{\text{Original Side}}}
+\]
+
+For corresponding side pairs:
+
+\[
+k=\frac{a'}{a}
+\]
+
+\[
+k=\frac{b'}{b}
+\]
+
+\[
+k=\frac{c'}{c}
+\]
+
+Explain that all three ratios must be equal.
+
+### D. FIND A MISSING SIMILAR SIDE
+
+\[
+\boxed{\text{Similar Side}=\text{Original Side}\times k}
+\]
+
+For each corresponding side:
+
+\[
+a'=ak
+\]
+
+\[
+b'=bk
+\]
+
+\[
+c'=ck
+\]
+
+### E. FIND AN ORIGINAL SIDE
+
+\[
+\boxed{\text{Original Side}=\frac{\text{Similar Side}}{k}}
+\]
+
+For each corresponding side:
+
+\[
+a=\frac{a'}{k}
+\]
+
+\[
+b=\frac{b'}{k}
+\]
+
+\[
+c=\frac{c'}{k}
+\]
+
+Explain why division reverses multiplication.
+
+### F. UNDERSTANDING THE SCALE FACTOR
+
+Explain:
+
+- k = 1 means both triangles have the same corresponding side lengths and are congruent.
+- k greater than 1 means the similar triangle is larger.
+- 0 less than k less than 1 means the similar triangle is smaller.
+- k must always be positive.
+
+Use examples:
+
+k = 2:
+
+Every corresponding side doubles.
+
+k = 3:
+
+Every corresponding side triples.
+
+k = 0.5:
+
+Every corresponding side becomes half as long.
+
+k = 0.25:
+
+Every corresponding side becomes one-quarter as long.
+
+Explain that a scale factor describes the direction from the original triangle to the similar triangle. Reversing the direction requires using the reciprocal.
+
+### G. PROPORTION BETWEEN CORRESPONDING SIDES
+
+Show:
+
+\[
+\boxed{\frac{a'}{a}=\frac{b'}{b}=\frac{c'}{c}=k}
+\]
+
+Explain that the relationship must be consistent across all corresponding side pairs.
+
+Use an example:
+
+Original triangle:
+
+\[
+3,\ 4,\ 5
+\]
+
+Similar triangle:
+
+\[
+6,\ 8,\ 10
+\]
+
+Check:
+
+\[
+\frac{6}{3}=\frac{8}{4}=\frac{10}{5}=2
+\]
+
+Explain why the triangles are similar with a scale factor of 2.
+
+### H. ANGLE RELATIONSHIP
+
+Explain that similar triangles have equal corresponding angles.
+
+For right triangles:
+
+- Both right angles measure 90°.
+- Their corresponding acute angles must match.
+- The sum of the two acute angles in each triangle is 90°.
+
+For example:
+
+\[
+30^\circ,\ 60^\circ,\ 90^\circ
+\]
+
+and another triangle with:
+
+\[
+30^\circ,\ 60^\circ,\ 90^\circ
+\]
+
+are similar.
+
+Do not claim that all right triangles are similar.
+
+### I. PERIMETER RELATIONSHIP
+
+Explain that the perimeter of a similar triangle changes by the same linear scale factor.
+
+If:
+
+\[
+P_1=a+b+c
+\]
+
+and:
+
+\[
+P_2=a'+b'+c'
+\]
+
+then:
+
+\[
+\boxed{\frac{P_2}{P_1}=k}
+\]
+
+Example:
+
+Original perimeter:
+
+\[
+3+4+5=12
+\]
+
+Scale factor:
+
+\[
+k=2
+\]
+
+New perimeter:
+
+\[
+6+8+10=24
+\]
+
+Explain why perimeter doubles.
+
+### J. AREA RELATIONSHIP
+
+Explain that the area of a similar triangle changes by the square of the scale factor.
+
+\[
+\boxed{\frac{A_2}{A_1}=k^2}
+\]
+
+For example, if:
+
+\[
+k=2
+\]
+
+then:
+
+\[
+A_2=4A_1
+\]
+
+If:
+
+\[
+k=3
+\]
+
+then:
+
+\[
+A_2=9A_1
+\]
+
+If:
+
+\[
+k=0.5
+\]
+
+then:
+
+\[
+A_2=0.25A_1
+\]
+
+Explain that doubling the side lengths does not merely double the area. It makes the area four times as large.
+
+Make clear that area and perimeter are educational mathematical relationships, not additional modes of the existing calculator.
+
+### K. CONNECTION WITH THE PYTHAGOREAN THEOREM
+
+Explain that both triangles can satisfy:
+
+\[
+a^2+b^2=c^2
+\]
+
+For the similar triangle:
+
+\[
+(ka)^2+(kb)^2=(kc)^2
+\]
+
+Simplify:
+
+\[
+k^2(a^2+b^2)=k^2c^2
+\]
+
+Explain why similarity preserves the right-triangle relationship.
+
+Do not turn this page into a general Pythagorean theorem guide.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The completed article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: Similar Right Triangles Calculator
+
+**Suggested length: 140–170 words**
+
+Write a direct and informative introduction.
+
+Explain:
+
+- What similar right triangles are.
+- Why their angles are equal.
+- Why their corresponding sides are proportional.
+- What the calculator does.
+- What the scale factor means.
+- How visitors can find missing side lengths.
+
+Introduce all three calculator modes:
+
+1. Find scale factor.
+2. Find missing similar side.
+3. Find original side.
+
+Include a short example:
+
+Original triangle side = 6.
+
+Similar triangle corresponding side = 18.
+
+\[
+k=\frac{18}{6}=3
+\]
+
+Explain that the similar triangle is three times larger in corresponding linear dimensions.
+
+Avoid generic introductions.
+
+### H2: Calculate Similar Triangle Measurements With the Calculator
+
+**Suggested length: 220–260 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Explain all three actual modes.
+
+**Mode 1: Find Scale Factor**
+
+Inputs:
+
+- Original side.
+- Similar side.
+
+Formula:
+
+\[
+k=\frac{\text{Similar Side}}{\text{Original Side}}
+\]
+
+Explain the output.
+
+**Mode 2: Find Missing Similar Side**
+
+Inputs:
+
+- Original side.
+- Scale factor.
+
+Formula:
+
+\[
+\text{Similar Side}=\text{Original Side}\times k
+\]
+
+Explain the output.
+
+**Mode 3: Find Original Side**
+
+Inputs:
+
+- Similar side.
+- Scale factor.
+
+Formula:
+
+\[
+\text{Original Side}=\frac{\text{Similar Side}}{k}
+\]
+
+Explain the output.
+
+Also explain:
+
+- How to choose the correct mode.
+- How to enter the required measurements.
+- Why matching sides matter.
+- How to click Calculate.
+- How to interpret the formula-based result.
+- How to switch between modes.
+- How to use Reset.
+
+Do not invent additional calculator functionality.
+
+### H2: What Are Similar Right Triangles?
+
+**Suggested length: 200–240 words**
+
+Explain the definition.
+
+Two right triangles are similar when their corresponding angles are equal and their corresponding side lengths are proportional.
+
+Discuss:
+
+- Same shape.
+- Different possible sizes.
+- Equal corresponding angles.
+- Proportional corresponding sides.
+- Shared 90-degree angle.
+- Equal acute angles.
+
+Use a simple example with two 3-4-5 triangles, one twice the size of the other.
+
+Include a diagram.
+
+### H2: What Makes Two Right Triangles Similar?
+
+**Suggested length: 200–240 words**
+
+Explain the AA similarity rule.
+
+Both triangles already contain a 90-degree angle.
+
+If one acute angle in the first triangle matches one acute angle in the second, the remaining acute angles must also be equal.
+
+Therefore, the triangles are similar.
+
+Explain:
+
+- Why equal angles matter.
+- Why the third angle is automatically equal.
+- Why the corresponding sides must be proportional.
+- Why the same rule works regardless of triangle size.
+
+Use a 30-60-90 right triangle comparison as an example.
+
+### H2: Understanding Corresponding Sides in Similar Right Triangles
+
+**Suggested length: 200–240 words**
+
+Explain what corresponding sides mean.
+
+Use two triangles with clearly labeled vertices.
+
+Explain how to match:
+
+- Shorter leg to shorter corresponding leg.
+- Longer leg to longer corresponding leg.
+- Hypotenuse to hypotenuse.
+
+Explain that corresponding sides must be identified by their position relative to equal angles.
+
+Discuss why matching the wrong sides leads to incorrect ratios.
+
+Include a labeled diagram.
+
+### H2: What Is the Scale Factor in Similar Triangles?
+
+**Suggested length: 200–240 words**
+
+Explain the meaning of k.
+
+The scale factor tells how much the corresponding side lengths change when moving from the original triangle to the similar triangle.
+
+Introduce:
+
+\[
+k=\frac{\text{Similar Side}}{\text{Original Side}}
+\]
+
+Explain:
+
+- k = 1.
+- k greater than 1.
+- k between 0 and 1.
+- Why k must be positive.
+- Why the scale factor does not change the triangle's angles.
+- Why all corresponding sides use the same k.
+
+Include a scale factor comparison table.
+
+### H2: Formula to Find the Scale Factor
+
+**Suggested length: 180–220 words**
+
+Introduce:
+
+\[
+k=\frac{\text{Similar Side}}{\text{Original Side}}
+\]
+
+Use an example:
+
+Original side = 5.
+
+Similar side = 15.
+
+\[
+k=\frac{15}{5}=3
+\]
+
+Explain why the answer is 3.
+
+Show how the same calculation works using the corresponding hypotenuse or other leg.
+
+Clarify that the sides must correspond.
+
+### H2: Formula to Find a Missing Similar Side
+
+**Suggested length: 180–220 words**
+
+Introduce:
+
+\[
+\text{Similar Side}=\text{Original Side}\times k
+\]
+
+Use:
+
+Original side = 7.
+
+Scale factor = 2.5.
+
+\[
+7\times2.5=17.5
+\]
+
+Explain how the result represents the corresponding side in the enlarged triangle.
+
+Include one additional example with a scale factor smaller than 1.
+
+### H2: Formula to Find the Original Side
+
+**Suggested length: 180–220 words**
+
+Introduce:
+
+\[
+\text{Original Side}=\frac{\text{Similar Side}}{k}
+\]
+
+Use:
+
+Similar side = 24.
+
+Scale factor = 3.
+
+\[
+\frac{24}{3}=8
+\]
+
+Explain why division reverses multiplication.
+
+Include an example where the scale factor is a decimal.
+
+### H2: Understanding Enlargement and Reduction
+
+**Suggested length: 220–260 words**
+
+Explain how the scale factor changes triangle size.
+
+Use a table:
+
+| Scale factor | Effect |
+|---|---|
+| 0.25 | One-quarter size |
+| 0.5 | Half size |
+| 0.75 | Three-quarters size |
+| 1 | Same size |
+| 1.5 | 1.5 times larger |
+| 2 | Twice as large |
+| 3 | Three times larger |
+
+Explain:
+
+- Enlargement.
+- Reduction.
+- Why angles remain equal.
+- Why proportions remain constant.
+- Why the original triangle and similar triangle retain the same shape.
+
+Clarify that the direction of comparison determines whether the scale factor is greater or less than 1.
+
+### H2: How to Set Up Proportions Between Similar Right Triangles
+
+**Suggested length: 230–270 words**
+
+Introduce:
+
+\[
+\frac{a'}{a}=\frac{b'}{b}=\frac{c'}{c}=k
+\]
+
+Explain how to build proportions using corresponding sides.
+
+Use an example:
+
+Original triangle:
+
+\[
+3,\ 4,\ 5
+\]
+
+Similar triangle:
+
+\[
+6,\ 8,\ 10
+\]
+
+Show:
+
+\[
+\frac{6}{3}=\frac{8}{4}=\frac{10}{5}=2
+\]
+
+Explain how proportions can be rearranged to calculate a missing side.
+
+Use a missing-side example:
+
+\[
+\frac{x}{6}=\frac{15}{10}
+\]
+
+Solve:
+
+\[
+x=6\times1.5=9
+\]
+
+Explain how this method relates to the calculator's missing similar side mode.
+
+### H2: How to Check Whether Two Right Triangles Are Similar
+
+**Suggested length: 220–260 words**
+
+Explain a practical verification process.
+
+1. Confirm that both triangles are right triangles.
+2. Identify their acute angles.
+3. Check whether one corresponding acute angle is equal.
+4. Match the corresponding sides.
+5. Compare the ratios of corresponding side lengths.
+6. Confirm that the scale factor is consistent.
+
+Use an example:
+
+Triangle 1:
+
+3, 4, 5.
+
+Triangle 2:
+
+6, 8, 10.
+
+Show:
+
+\[
+6/3=8/4=10/5=2
+\]
+
+Explain why the side proportions confirm similarity.
+
+Also explain that equal angles establish similarity through AA, while consistent side ratios provide another way to verify it.
+
+### H2: Worked Examples Using the Similar Right Triangles Calculator
+
+**Suggested length: 400–500 words**
+
+Provide at least eight varied worked examples.
+
+Every example must include:
+
+- Problem statement.
+- Calculator mode.
+- Given values.
+- Formula.
+- Substitution.
+- Intermediate calculation.
+- Final answer.
+- Short interpretation.
+
+**Example 1: Find the Scale Factor**
+
+Original side = 6.
+
+Similar side = 18.
+
+\[
+k=18/6=3
+\]
+
+**Example 2: Find the Scale Factor From a Different Pair**
+
+Original side = 4.
+
+Similar side = 10.
+
+\[
+k=10/4=2.5
+\]
+
+**Example 3: Find a Missing Similar Side**
+
+Original side = 8.
+
+Scale factor = 2.5.
+
+\[
+8\times2.5=20
+\]
+
+**Example 4: Find a Reduced Similar Side**
+
+Original side = 12.
+
+Scale factor = 0.5.
+
+\[
+12\times0.5=6
+\]
+
+**Example 5: Find an Original Side**
+
+Similar side = 15.
+
+Scale factor = 3.
+
+\[
+15/3=5
+\]
+
+**Example 6: Find an Original Side With a Decimal Scale Factor**
+
+Similar side = 18.
+
+Scale factor = 1.5.
+
+\[
+18/1.5=12
+\]
+
+**Example 7: Compare Complete Similar Triangles**
+
+Original:
+
+3, 4, 5.
+
+Scale factor = 2.
+
+Similar:
+
+6, 8, 10.
+
+Show all corresponding ratios.
+
+**Example 8: Work Backward From the Hypotenuse**
+
+Similar hypotenuse = 26.
+
+Scale factor = 2.
+
+Original hypotenuse:
+
+\[
+26/2=13
+\]
+
+Explain each result clearly.
+
+Do not claim the calculator accepts complete triangles in a single calculation if its actual mode only accepts the relevant side values.
+
+### H2: Relationship Between Similar Triangles and the Pythagorean Theorem
+
+**Suggested length: 200–240 words**
+
+Explain how similar right triangles also satisfy:
+
+\[
+a^2+b^2=c^2
+\]
+
+If the original triangle has sides a, b, and c, the scaled triangle has:
+
+\[
+ka,\quad kb,\quad kc
+\]
+
+Show:
+
+\[
+(ka)^2+(kb)^2=(kc)^2
+\]
+
+Explain why scaling preserves the right-angle relationship.
+
+Use 3-4-5 and 6-8-10 as the example.
+
+Keep this section focused on the connection rather than repeating a complete Pythagorean theorem lesson.
+
+### H2: Perimeter and Area Relationships in Similar Triangles
+
+**Suggested length: 220–260 words**
+
+Explain the difference between linear and square scaling.
+
+**Perimeter:**
+
+\[
+\frac{P_2}{P_1}=k
+\]
+
+**Area:**
+
+\[
+\frac{A_2}{A_1}=k^2
+\]
+
+Use the 3-4-5 triangle.
+
+Original perimeter:
+
+\[
+3+4+5=12
+\]
+
+Original area:
+
+\[
+\frac{3\times4}{2}=6
+\]
+
+Scale factor:
+
+\[
+k=2
+\]
+
+New sides:
+
+6, 8, 10.
+
+New perimeter:
+
+\[
+6+8+10=24
+\]
+
+New area:
+
+\[
+\frac{6\times8}{2}=24
+\]
+
+Explain:
+
+- Perimeter doubles.
+- Area becomes four times as large.
+- Why the area relationship uses k squared.
+
+Clearly state that these are educational geometric relationships, not additional calculator modes.
+
+### H2: Difference Between Similar and Congruent Right Triangles
+
+**Suggested length: 200–240 words**
+
+Use a comparison table.
+
+| Feature | Similar triangles | Congruent triangles |
+|---|---|---|
+| Shape | Same | Same |
+| Corresponding angles | Equal | Equal |
+| Corresponding sides | Proportional | Equal |
+| Size | May differ | Same |
+| Scale factor | Any positive value | 1 |
+| Example | 3-4-5 and 6-8-10 | Two 3-4-5 triangles |
+
+Explain:
+
+- Every pair of congruent triangles is similar.
+- Not every pair of similar triangles is congruent.
+- A scale factor of 1 means equal corresponding side lengths.
+
+### H2: Real-Life Applications of Similar Right Triangles
+
+**Suggested length: 230–270 words**
+
+Discuss realistic applications.
+
+**1. Measuring building heights using shadows**
+
+Explain how a smaller known object and a taller object can form similar triangles under the same sunlight angle.
+
+**2. Architectural blueprints**
+
+Explain how a scale drawing represents a larger building through proportional dimensions.
+
+**3. Construction and engineering**
+
+Explain how matching proportions help with scaled designs and technical drawings.
+
+**4. Model building**
+
+Explain how a model's dimensions can be calculated from the actual object's scale.
+
+**5. Surveying and indirect measurement**
+
+Explain how triangle proportions can help estimate inaccessible distances or heights.
+
+**6. Classroom geometry**
+
+Explain how students use similar triangles to calculate missing lengths.
+
+Use realistic hypothetical examples.
+
+Do not imply that the calculator itself performs advanced surveying or automatically measures real-world objects.
+
+### H2: Common Mistakes When Solving Similar Right Triangle Problems
+
+**Suggested length: 280–330 words**
+
+Discuss at least fourteen mistakes.
+
+1. Matching the wrong corresponding sides.
+2. Dividing in the wrong direction when finding k.
+3. Multiplying when the original side is required.
+4. Dividing when finding a larger similar side.
+5. Using different scale factors for different side pairs.
+6. Assuming every right triangle is similar.
+7. Confusing similarity with congruence.
+8. Forgetting that the scale factor must be positive.
+9. Using zero as a scale factor.
+10. Mixing measurement units.
+11. Assuming that a larger triangle has different angles.
+12. Confusing the hypotenuse with a leg.
+13. Using an inconsistent vertex correspondence.
+14. Assuming that doubling side lengths doubles the area.
+15. Comparing non-corresponding sides.
+
+For each mistake:
+
+- Explain why it is incorrect.
+- Show the correct relationship.
+- Provide a short example where useful.
+
+Avoid repetitive warnings.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create eight original practice problems.
+
+Include:
+
+1. Find k when an original side is 5 and the matching similar side is 20.
+2. Find a similar side when the original side is 9 and k = 2.
+3. Find a reduced side when the original side is 16 and k = 0.5.
+4. Find an original side when the similar side is 30 and k = 3.
+5. Determine whether 3-4-5 and 6-8-10 are similar.
+6. Find the scale factor when the original hypotenuse is 13 and the similar hypotenuse is 39.
+7. Calculate the perimeter ratio when k = 4.
+8. Calculate the area ratio when k = 3.
+
+Provide complete worked solutions.
+
+Clearly distinguish calculator-based side calculations from additional mathematical relationships.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What are similar right triangles?
+2. How does the Similar Right Triangles Calculator work?
+3. What makes two right triangles similar?
+4. How do I find the scale factor between two similar triangles?
+5. How do I calculate a missing side in a similar triangle?
+6. How do I find the original side length?
+7. Can the scale factor be a decimal?
+8. What does a scale factor of 1 mean?
+9. Are all right triangles similar?
+10. What is the difference between similar and congruent triangles?
+11. Do similar triangles have equal angles?
+12. Does the area change by the same factor as the side lengths?
+
+Keep answers approximately 35–65 words.
+
+Avoid copying entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- Right Triangle Side Calculator.
+- Right Triangle Angle Calculator.
+- Pythagorean Triples Calculator.
+- Special Right Triangle Calculator.
+- Right Triangle Projection Calculator.
+
+Explain which tool is useful for each different problem.
+
+Verify every destination URL before including it.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least eight mathematically accurate diagrams.
+
+### Diagram 1: Two Similar Right Triangles
+
+Show two right triangles:
+
+Original:
+
+3-4-5.
+
+Similar:
+
+6-8-10.
+
+Label:
+
+- Corresponding shorter legs.
+- Corresponding longer legs.
+- Corresponding hypotenuses.
+- Both right angles.
+
+Show that the second triangle is twice as large in linear dimensions.
+
+### Diagram 2: Corresponding Side Identification
+
+Show two triangles ABC and DEF.
+
+Use:
+
+\[
+AB\leftrightarrow DE
+\]
+
+\[
+BC\leftrightarrow EF
+\]
+
+\[
+AC\leftrightarrow DF
+\]
+
+Use matching colors or markings to identify corresponding sides.
+
+Include the right-angle markers and equal acute-angle markers.
+
+### Diagram 3: AA Similarity Rule
+
+Show two right triangles.
+
+Label:
+
+- Both right angles as 90°.
+- One matching acute angle as 30°.
+- The remaining acute angle as 60°.
+
+Explain why the triangles are similar.
+
+### Diagram 4: Finding the Scale Factor
+
+Show:
+
+Original side = 6.
+
+Similar side = 18.
+
+\[
+k=18/6=3
+\]
+
+Use arrows to indicate the direction from original to similar triangle.
+
+### Diagram 5: Finding a Missing Similar Side
+
+Show:
+
+Original side = 8.
+
+Scale factor = 2.5.
+
+\[
+8\times2.5=20
+\]
+
+Label the missing corresponding side as 20.
+
+### Diagram 6: Finding an Original Side
+
+Show:
+
+Similar side = 15.
+
+Scale factor = 3.
+
+\[
+15/3=5
+\]
+
+Show the reverse direction from the enlarged triangle to the original triangle.
+
+### Diagram 7: Enlargement and Reduction
+
+Show three similar right triangles:
+
+- Scale factor 0.5.
+- Scale factor 1.
+- Scale factor 2.
+
+Explain how all three maintain identical angles and proportions.
+
+### Diagram 8: Perimeter and Area Scaling
+
+Show:
+
+Original triangle:
+
+3-4-5.
+
+Enlarged triangle:
+
+6-8-10.
+
+Show:
+
+- Side lengths double.
+- Perimeter changes from 12 to 24.
+- Area changes from 6 to 24.
+
+Explain visually why area becomes four times larger.
+
+**Diagram requirements:**
+
+For every diagram provide:
+
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer mathematically accurate SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+Ensure:
+
+- The right angle is correctly positioned.
+- The hypotenuse is the longest side.
+- Corresponding sides are correctly matched.
+- Equal angles are clearly identified.
+- Scale factor directions are correct.
+- All side labels are mathematically accurate.
+- Enlarged and reduced triangles preserve proportions.
+- The area and perimeter comparison is correct.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Verified related destinations from the live page include:
+
+1. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+2. https://www.righttrianglesolver.com/right-triangle-angle-calculator/
+
+3. https://www.righttrianglesolver.com/pythagorean-triples-calculator/
+
+4. https://www.righttrianglesolver.com/special-right-triangle-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-projection-calculator/
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeatedly use the same exact-match anchor text.
+
+Do not link to the current page itself.
+
+Verify any additional destination before including it.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**Similar Right Triangles Calculator**
+
+Its main purpose is to explain similarity, corresponding sides, scale factors, and proportional side calculations.
+
+Keep the article focused on:
+
+- Similar right triangles.
+- Corresponding sides.
+- Corresponding angles.
+- AA similarity.
+- Scale factor.
+- Finding missing corresponding sides.
+- Finding original sides.
+- Enlargement and reduction.
+- Triangle proportions.
+- Similarity and congruence.
+- Perimeter and area scaling.
+- Real-world applications of similarity.
+
+Do not turn this page into a duplicate of:
+
+- General Right Triangle Calculator.
+- Right Triangle Side Calculator.
+- Right Triangle Angle Calculator.
+- Pythagorean Theorem Calculator.
+- Pythagorean Triples Calculator.
+- Special Right Triangle Calculator.
+
+### Distinguish the related pages
+
+**Right Triangle Side Calculator:**
+
+Focus on calculating missing sides using known side lengths and the Pythagorean theorem.
+
+**Right Triangle Angle Calculator:**
+
+Focus on calculating missing angles.
+
+**Pythagorean Triples Calculator:**
+
+Focus on checking and generating integer triples.
+
+**Special Right Triangle Calculator:**
+
+Focus on 30-60-90 and 45-45-90 triangle relationships.
+
+**Similar Right Triangles Calculator:**
+
+Focus on comparing two triangles, identifying corresponding sides, calculating scale factors, and finding missing matching side lengths.
+
+Use contextual internal links when readers need general side or angle calculations.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+- Accessible to beginners.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation across multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+**Scale factor:**
+
+\[
+k=\frac{\text{Similar Side}}{\text{Original Side}}
+\]
+
+**Find similar side:**
+
+\[
+\text{Similar Side}=\text{Original Side}\times k
+\]
+
+**Find original side:**
+
+\[
+\text{Original Side}=\frac{\text{Similar Side}}{k}
+\]
+
+**Corresponding side ratios:**
+
+\[
+\frac{a'}{a}=\frac{b'}{b}=\frac{c'}{c}=k
+\]
+
+**Perimeter ratio:**
+
+\[
+\frac{P_2}{P_1}=k
+\]
+
+**Area ratio:**
+
+\[
+\frac{A_2}{A_1}=k^2
+\]
+
+**Pythagorean theorem:**
+
+\[
+a^2+b^2=c^2
+\]
+
+Ensure:
+
+- The scale factor direction is always clear.
+- All corresponding sides use the same k.
+- Original and similar sides are not confused.
+- Division is used when finding the original side.
+- Multiplication is used when finding the similar side.
+- The scale factor is positive.
+- Zero is not accepted as a valid scale factor.
+- Corresponding sides are matched correctly.
+- Both triangles maintain their angle relationships.
+- Perimeter scales linearly.
+- Area scales quadratically.
+- All numerical examples are recalculated.
+- All units are consistent.
+- The hypotenuse is correctly identified.
+- All diagrams use consistent labels.
+
+Never write:
+
+\[
+k=\frac{\text{Original Side}}{\text{Similar Side}}
+\]
+
+when k is defined from the original triangle to the similar triangle.
+
+Never multiply by k when the task is to recover the original side from the similar side.
+
+Never assume that all right triangles are similar.
+
+Never claim that similar triangles must have identical side lengths.
+
+Never confuse similar triangles with congruent triangles.
+
+Never claim that doubling the side lengths only doubles the area.
+
+Never imply that the calculator has separate area, perimeter, or angle calculation modes.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO Title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Explain that visitors can find scale factors, missing corresponding sides, and original side lengths.
+
+### Primary Focus Keyword
+
+Similar Right Triangles Calculator
+
+### Secondary Keywords
+
+Provide 8–12 relevant keyword variations.
+
+### Existing URL Slug
+
+similar-right-triangles-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all eight diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual visible calculator.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the scale factor formula.
+- Verify all corresponding side relationships.
+- Verify all missing-side examples.
+- Verify all original-side examples.
+- Verify the AA similarity explanation.
+- Verify the area relationship.
+- Verify the perimeter relationship.
+- Verify all worked examples.
+- Verify the Pythagorean theorem connection.
+- Verify all diagrams.
+- Check every unit and decimal calculation.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- All three calculator modes are explained accurately.
+- The scale factor direction is clear.
+- Corresponding sides are explained properly.
+- Similarity and congruence are distinguished.
+- Examples cover enlargement and reduction.
+- Mathematical proofs and relationships are understandable.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from other right-triangle pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- All three modes are explained.
+- Instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+- Mathematical terminology is explained clearly.
+
+Remove weak, repetitive, or irrelevant material before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding that range only when additional information genuinely improves educational value.
+
+Include:
+
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Eight worked examples.
+- Comparison tables.
+- Contextual internal links.
+- AA similarity explanation.
+- Corresponding-side proportions.
+- Scale factor calculations.
+- Area and perimeter relationships.
+- Practice questions.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all eight diagram specifications.
+
+Include:
+
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the Similar Right Triangles Calculator.
+
+The primary purpose must remain calculating scale factors and missing corresponding sides between similar right triangles.
+
+Give particular attention to:
+
+- What makes two right triangles similar.
+- Why corresponding angles are equal.
+- How the AA similarity rule works.
+- How to identify corresponding sides.
+- How to calculate the scale factor.
+- How to calculate a missing similar side.
+- How to recover an original side.
+- Why all corresponding side ratios are equal.
+- How enlargement and reduction work.
+- Why perimeter changes by k.
+- Why area changes by k².
+- How similarity relates to the Pythagorean theorem.
+- How similar triangles are used in shadows, blueprints, and indirect measurements.
+- How to use all three calculator modes correctly.
+
+Use accurate mathematical diagrams, varied numerical examples, comparison tables, and clear step-by-step explanations.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, and anyone learning geometric similarity and proportions.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

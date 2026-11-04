@@ -1,0 +1,2005 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## Pythagorean Triples Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, number theory researcher, Pythagorean theorem expert, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/pythagorean-triples-calculator/
+
+**Page Title:** Pythagorean Triples Calculator
+
+**Primary Focus Keyword:** Pythagorean Triples Calculator
+
+**Main Topic:** Check, Verify, Generate, and Understand Pythagorean Triples.
+
+**Core Mathematical Formula:**
+
+\[
+\boxed{a^2+b^2=c^2}
+\]
+
+**Euclid's Formula:**
+
+\[
+\boxed{a=m^2-n^2}
+\]
+
+\[
+\boxed{b=2mn}
+\]
+
+\[
+\boxed{c=m^2+n^2}
+\]
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English.
+
+**Target Audience:**
+
+- Middle school mathematics students.
+- High school geometry students.
+- College students.
+- Mathematics teachers.
+- Private tutors.
+- Parents helping children with geometry.
+- Students preparing for mathematics examinations.
+- Mathematics competition participants.
+- Number theory beginners.
+- Construction workers and builders.
+- Carpenters and surveyors.
+- Anyone learning the Pythagorean theorem.
+
+**Main Objective:**
+
+Create a detailed educational resource explaining what Pythagorean triples are, how to verify them, how to generate them using Euclid's formula, and how to identify primitive and non-primitive triples.
+
+The article must teach readers:
+
+- What a Pythagorean triple is.
+- Why three whole numbers can represent the sides of a right triangle.
+- How the Pythagorean theorem works.
+- How to check whether three numbers form a valid triple.
+- How to identify the hypotenuse.
+- How to use the calculator's checking mode.
+- How to generate triples using Euclid's formula.
+- What the parameters m and n represent.
+- Why m must be greater than n.
+- What makes a triple primitive.
+- What makes a triple non-primitive.
+- How to identify common factors.
+- How multiples of existing triples are generated.
+- Why infinitely many Pythagorean triples exist.
+- How to distinguish integer triples from ordinary right triangles.
+- How to solve different numerical examples.
+- How to recognize common Pythagorean triples.
+- How to use the calculator correctly.
+- How to avoid common calculation mistakes.
+
+Write naturally, like an experienced mathematics teacher explaining number theory and geometry to students.
+
+Avoid robotic language, unnecessary repetition, keyword stuffing, generic filler, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm both calculator modes, input fields, validation rules, buttons, results, triangle diagram, formula explanations, instructions, examples, FAQs, and related calculators.
+
+The existing calculator has two modes.
+
+#### MODE 1: CHECK A PYTHAGOREAN TRIPLE
+
+**Purpose:**
+
+Check whether three entered positive whole numbers form a valid Pythagorean triple.
+
+**Inputs:**
+
+- Side a: First leg.
+- Side b: Second leg.
+- Side c: Hypotenuse.
+
+The hypotenuse c must be the largest value.
+
+**Formula:**
+
+\[
+a^2+b^2=c^2
+\]
+
+**Calculation process:**
+
+1. Take the first side and square it.
+2. Take the second side and square it.
+3. Add both squared values.
+4. Square the hypotenuse.
+5. Compare both results.
+6. If they are equal, the three positive integers form a valid Pythagorean triple.
+7. If they are not equal, the entered values do not form a Pythagorean triple.
+
+**Example:**
+
+Input:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+Calculate:
+
+\[
+3^2+4^2=5^2
+\]
+
+\[
+9+16=25
+\]
+
+\[
+25=25
+\]
+
+Result: Valid Pythagorean triple.
+
+**Important distinction:**
+
+A decimal or fractional right triangle can satisfy the Pythagorean theorem, but a Pythagorean triple specifically consists of positive integers.
+
+Do not confuse the general Pythagorean theorem with the narrower definition of a Pythagorean triple.
+
+#### MODE 2: GENERATE PYTHAGOREAN TRIPLES
+
+**Purpose:**
+
+Generate a valid Pythagorean triple using two positive integer parameters.
+
+**Inputs:**
+
+- m: Larger positive integer.
+- n: Smaller positive integer.
+
+**Required condition:**
+
+\[
+m>n>0
+\]
+
+**Euclid's formulas:**
+
+First leg:
+
+\[
+a=m^2-n^2
+\]
+
+Second leg:
+
+\[
+b=2mn
+\]
+
+Hypotenuse:
+
+\[
+c=m^2+n^2
+\]
+
+The generated values always satisfy the Pythagorean theorem.
+
+**Example:**
+
+\[
+m=2,\quad n=1
+\]
+
+Calculate:
+
+\[
+a=2^2-1^2=4-1=3
+\]
+
+\[
+b=2(2)(1)=4
+\]
+
+\[
+c=2^2+1^2=4+1=5
+\]
+
+Result:
+
+\[
+\boxed{3,4,5}
+\]
+
+**Primitive triple condition:**
+
+A generated triple is primitive when:
+
+\[
+\gcd(m,n)=1
+\]
+
+and m and n have opposite parity, meaning one is even and the other is odd.
+
+Equivalently, m and n must be coprime and must not both be odd.
+
+Examples:
+
+- m = 2, n = 1 produces 3-4-5, a primitive triple.
+- m = 3, n = 2 produces 5-12-13, a primitive triple.
+- m = 4, n = 2 produces 12-16-20, a non-primitive triple because the parameters share a common factor.
+- m = 3, n = 1 produces 8-6-10, a non-primitive triple because both parameters are odd.
+
+Explain that the generated leg values can appear in either order. The two legs are interchangeable, but c must always be the hypotenuse.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The live page includes:
+
+- Calculator mode selector.
+- Check a Pythagorean triple mode.
+- Generate Pythagorean triples mode.
+- Side a input.
+- Side b input.
+- Side c input.
+- m input.
+- n input.
+- Calculate button.
+- Reset button.
+- Formula explanations.
+- Triangle diagram.
+- Triangle diagram key.
+- Calculator instructions.
+- Three worked examples.
+- Explanation of the result.
+- Side ratio explanation.
+- Practical uses.
+- Common mistakes.
+- Six FAQs.
+- Related calculator links.
+
+Preserve the existing functionality.
+
+Do not invent additional calculator modes.
+
+Do not claim that the current calculator provides:
+
+- A maximum hypotenuse search.
+- A complete database of all triples.
+- An adjustable triple-count limit.
+- An independent multiplier k input.
+- An automatic downloadable CSV.
+- A graph of every generated triple.
+- A search for triples within an arbitrary range.
+- A decimal-triple generation mode.
+- An automatic factorization tool unless visibly supported.
+
+You may explain these concepts mathematically, but distinguish educational manual calculations from actual calculator functionality.
+
+**Important input validation:**
+
+For checking:
+
+- All three values must be positive whole numbers.
+- c must be the largest value.
+- All measurements must use the same unit.
+- The equation must hold exactly.
+
+For generating:
+
+- m and n must be positive integers.
+- m must be greater than n.
+- Decimal parameters are not valid Euclidean integer parameters.
+- m = n produces a zero leg and not a valid triangle.
+- m less than n produces an invalid ordering for the stated formula.
+
+Do not suggest that invalid parameters create valid Pythagorean triples.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Check whether three numbers form a Pythagorean triple.
+2. Generate a Pythagorean triple.
+3. Understand the Pythagorean theorem.
+4. Learn Euclid's formula.
+5. Find the hypotenuse of integer right triangles.
+6. Understand primitive Pythagorean triples.
+7. Distinguish primitive and non-primitive triples.
+8. Find examples of common Pythagorean triples.
+9. Understand how to generate infinitely many triples.
+10. Verify mathematical homework.
+11. Understand the relationship between integer triples and right triangles.
+12. Learn why the generated numbers always satisfy the theorem.
+13. Explore multiples of known triples.
+14. Understand how m and n affect generated side lengths.
+
+Answer the main calculator question immediately.
+
+Introduce both calculator modes near the beginning.
+
+Explain how to check and generate triples before introducing advanced mathematical theory.
+
+Do not make visitors scroll through lengthy theoretical explanations before learning how to use the calculator.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+Pythagorean Triples Calculator
+
+**Secondary Keywords:**
+
+- Pythagorean triple calculator.
+- Pythagorean triples.
+- Pythagorean triple generator.
+- Check Pythagorean triple.
+- Generate Pythagorean triples.
+- Pythagorean triple formula.
+- Euclid's formula.
+- Primitive Pythagorean triple.
+- Non-primitive Pythagorean triple.
+- Pythagorean theorem calculator.
+- Integer right triangle.
+- Pythagorean triple examples.
+- Pythagorean triple checker.
+- Whole number right triangle.
+- Generate right triangle triples.
+
+**Related Semantic Keywords:**
+
+- Right triangle.
+- Hypotenuse.
+- Triangle legs.
+- Integer solutions.
+- Positive integers.
+- Number theory.
+- Euclidean formula.
+- Greatest common divisor.
+- GCD.
+- Coprime numbers.
+- Relatively prime integers.
+- Odd and even numbers.
+- Opposite parity.
+- Common factors.
+- Integer multiples.
+- Primitive solutions.
+- Non-primitive solutions.
+- Square numbers.
+- Perfect squares.
+- Right angle.
+- 90-degree angle.
+- Mathematical identity.
+- Side length verification.
+- Triangle similarity.
+- Pythagorean equation.
+- Integer triples.
+- 3-4-5 triangle.
+- 5-12-13 triangle.
+- 8-15-17 triangle.
+- 7-24-25 triangle.
+- 20-21-29 triangle.
+
+### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords in relevant sections.
+
+Avoid:
+
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repetitive headings.
+
+Prioritize mathematical accuracy, natural language, and genuine search intent.
+
+---
+
+## 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use one consistent notation throughout the article.
+
+Consider a right triangle with:
+
+- a = first leg.
+- b = second leg.
+- c = hypotenuse.
+
+The hypotenuse is opposite the 90-degree angle.
+
+### A. PYTHAGOREAN THEOREM
+
+\[
+\boxed{a^2+b^2=c^2}
+\]
+
+Explain:
+
+- a and b are the two perpendicular sides.
+- c is the longest side.
+- The squares of the legs add to the square of the hypotenuse.
+- The equation is valid for every right triangle.
+- A Pythagorean triple is a special case where all three side lengths are positive integers.
+
+### B. DEFINITION OF A PYTHAGOREAN TRIPLE
+
+A Pythagorean triple is an ordered or unordered set of three positive integers satisfying:
+
+\[
+a^2+b^2=c^2
+\]
+
+Use the standard notation:
+
+\[
+(a,b,c)
+\]
+
+Example:
+
+\[
+(3,4,5)
+\]
+
+Verification:
+
+\[
+9+16=25
+\]
+
+Explain why all three values must be positive integers for the set to qualify as a Pythagorean triple.
+
+### C. EUCLID'S FORMULA
+
+Introduce:
+
+\[
+\boxed{a=m^2-n^2}
+\]
+
+\[
+\boxed{b=2mn}
+\]
+
+\[
+\boxed{c=m^2+n^2}
+\]
+
+Where:
+
+- m is the larger positive integer.
+- n is the smaller positive integer.
+- m > n > 0.
+
+Explain how these equations produce a Pythagorean triple.
+
+### D. PROOF OF EUCLID'S FORMULA
+
+Start with:
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+Calculate:
+
+\[
+a^2+b^2=(m^2-n^2)^2+(2mn)^2
+\]
+
+Expand:
+
+\[
+=m^4-2m^2n^2+n^4+4m^2n^2
+\]
+
+Combine:
+
+\[
+=m^4+2m^2n^2+n^4
+\]
+
+Factor:
+
+\[
+=(m^2+n^2)^2
+\]
+
+Since:
+
+\[
+c=m^2+n^2
+\]
+
+Therefore:
+
+\[
+\boxed{a^2+b^2=c^2}
+\]
+
+Explain the proof step by step in accessible language.
+
+### E. PRIMITIVE PYTHAGOREAN TRIPLES
+
+A primitive triple is one where:
+
+\[
+\gcd(a,b,c)=1
+\]
+
+This means the three side lengths have no common positive integer factor greater than 1.
+
+For Euclid's formula, a primitive triple is generated when:
+
+1. m and n are coprime.
+2. m and n have opposite parity.
+
+Explain that these conditions are both necessary for a primitive triple from this formula.
+
+Examples:
+
+- (3, 4, 5) is primitive.
+- (5, 12, 13) is primitive.
+- (8, 15, 17) is primitive.
+- (6, 8, 10) is not primitive.
+- (9, 12, 15) is not primitive.
+
+### F. NON-PRIMITIVE PYTHAGOREAN TRIPLES
+
+A non-primitive triple is a positive integer triple whose three values share a common factor greater than 1.
+
+Example:
+
+\[
+(3,4,5)
+\]
+
+Multiply every side by 2:
+
+\[
+(6,8,10)
+\]
+
+Multiply every side by 3:
+
+\[
+(9,12,15)
+\]
+
+Explain:
+
+- Why both remain valid triples.
+- Why neither scaled example is primitive.
+- How to find the common factor.
+- How dividing by the common factor recovers the primitive triple.
+
+### G. SCALING A PYTHAGOREAN TRIPLE
+
+For any positive integer k:
+
+\[
+\boxed{ka,\ kb,\ kc}
+\]
+
+is another Pythagorean triple whenever (a,b,c) is one.
+
+Explain:
+
+\[
+(ka)^2+(kb)^2=(kc)^2
+\]
+
+\[
+k^2a^2+k^2b^2=k^2c^2
+\]
+
+Factor:
+
+\[
+k^2(a^2+b^2)=k^2c^2
+\]
+
+Since the original triple satisfies the theorem, the scaled triple does too.
+
+Important distinction:
+
+A positive integer multiplier preserves the whole-number property. An arbitrary positive real multiplier preserves a right triangle's proportions but may not produce integer side lengths.
+
+### H. PRIMITIVE TRIPLES AND EUCLID'S PARAMETERS
+
+Explain the parameter conditions carefully.
+
+A primitive triple is generated when:
+
+\[
+\gcd(m,n)=1
+\]
+
+and m and n have opposite parity.
+
+Examples:
+
+**Example 1:**
+
+m = 2, n = 1.
+
+They are coprime and have opposite parity.
+
+Result: 3-4-5, primitive.
+
+**Example 2:**
+
+m = 3, n = 2.
+
+They are coprime and have opposite parity.
+
+Result: 5-12-13, primitive.
+
+**Example 3:**
+
+m = 3, n = 1.
+
+They are coprime but both odd.
+
+Result: 8-6-10, non-primitive.
+
+**Example 4:**
+
+m = 4, n = 2.
+
+They share a common factor of 2.
+
+Result: 12-16-20, non-primitive.
+
+Do not claim that every m,n pair produces a primitive triple.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The completed article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: Pythagorean Triples Calculator
+
+**Suggested length: 140–170 words**
+
+Write a direct and informative introduction.
+
+Explain:
+
+- What a Pythagorean triple is.
+- Why it represents a right triangle.
+- What the calculator does.
+- Why checking and generating are two different tasks.
+- What Euclid's formula is used for.
+- What a primitive triple means.
+
+Introduce:
+
+\[
+a^2+b^2=c^2
+\]
+
+Briefly explain both modes.
+
+Give a simple example:
+
+3, 4, 5 is a valid triple because:
+
+\[
+9+16=25
+\]
+
+Explain that visitors can also enter m and n to generate new integer triples.
+
+Avoid generic introductions.
+
+### H2: Check or Generate Pythagorean Triples With the Calculator
+
+**Suggested length: 200–250 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Explain both actual modes.
+
+**Mode 1: Check a Pythagorean Triple**
+
+Inputs:
+
+- a.
+- b.
+- c.
+
+Explain that c must be the largest side.
+
+Show how the calculator verifies:
+
+\[
+a^2+b^2=c^2
+\]
+
+Explain what happens when both sides are equal and what happens when they are not.
+
+**Mode 2: Generate Pythagorean Triples**
+
+Inputs:
+
+- m.
+- n.
+
+Required:
+
+\[
+m>n>0
+\]
+
+Explain how the calculator applies Euclid's formula.
+
+Show that the results are three whole-number side lengths.
+
+Explain:
+
+- How to select a mode.
+- How to enter valid numbers.
+- How to click Calculate.
+- How to interpret the result.
+- How to read the step-by-step working.
+- How to use Reset.
+
+Do not invent additional inputs or outputs.
+
+### H2: What Is a Pythagorean Triple?
+
+**Suggested length: 220–260 words**
+
+Explain the definition.
+
+A Pythagorean triple is a set of three positive integers satisfying:
+
+\[
+a^2+b^2=c^2
+\]
+
+Explain:
+
+- What a and b represent.
+- What c represents.
+- Why c is the hypotenuse.
+- Why the equation must hold exactly.
+- Why all three numbers must be whole positive integers.
+- Why decimal right-triangle side lengths are not classified as integer triples.
+
+Use 3-4-5 as the introductory example.
+
+### H2: Understanding the Pythagorean Theorem
+
+**Suggested length: 220–260 words**
+
+Explain the theorem from a beginner's perspective.
+
+Show:
+
+\[
+a^2+b^2=c^2
+\]
+
+Explain the relationship between the areas of squares drawn on the three sides.
+
+Use:
+
+\[
+3^2+4^2=5^2
+\]
+
+Show:
+
+\[
+9+16=25
+\]
+
+Explain why this is a valid right triangle.
+
+Clarify that every Pythagorean triple satisfies the theorem, but not every right triangle has integer side lengths.
+
+Include a mathematical diagram.
+
+### H2: How to Check Whether Three Numbers Form a Pythagorean Triple
+
+**Suggested length: 220–260 words**
+
+Explain the checking process step by step.
+
+1. Identify the largest value.
+2. Assign the largest value to c.
+3. Identify the other two values as a and b.
+4. Square a.
+5. Square b.
+6. Add the squares.
+7. Square c.
+8. Compare both results.
+
+Show a valid example:
+
+\[
+7^2+24^2=25^2
+\]
+
+\[
+49+576=625
+\]
+
+\[
+625=625
+\]
+
+Then show an invalid example:
+
+\[
+4^2+5^2\neq6^2
+\]
+
+\[
+16+25=41
+\]
+
+\[
+6^2=36
+\]
+
+Since 41 does not equal 36, the values do not form a Pythagorean triple.
+
+Explain that the same checking process works for all positive integer inputs.
+
+### H2: How to Generate Pythagorean Triples Using Euclid's Formula
+
+**Suggested length: 250–300 words**
+
+Introduce:
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+\[
+c=m^2+n^2
+\]
+
+Explain:
+
+- What m represents.
+- What n represents.
+- Why m must be greater than n.
+- Why both must be positive integers.
+- How the formula calculates the two legs.
+- How the formula calculates the hypotenuse.
+- Why the resulting values satisfy the Pythagorean theorem.
+
+Use:
+
+m = 2, n = 1.
+
+Show all three calculations.
+
+Explain why the result is 3-4-5.
+
+### H2: Mathematical Proof of Euclid's Formula
+
+**Suggested length: 220–260 words**
+
+Provide the complete proof.
+
+Start with:
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+Substitute:
+
+\[
+a^2+b^2=(m^2-n^2)^2+(2mn)^2
+\]
+
+Expand:
+
+\[
+=m^4-2m^2n^2+n^4+4m^2n^2
+\]
+
+Simplify:
+
+\[
+=m^4+2m^2n^2+n^4
+\]
+
+Factor:
+
+\[
+=(m^2+n^2)^2
+\]
+
+Since:
+
+\[
+c=m^2+n^2
+\]
+
+Therefore:
+
+\[
+a^2+b^2=c^2
+\]
+
+Explain why the formula guarantees a valid right triangle.
+
+Include a formula-flow diagram.
+
+### H2: What Is a Primitive Pythagorean Triple?
+
+**Suggested length: 200–240 words**
+
+Explain the definition.
+
+A primitive triple has no common divisor greater than 1 across all three side lengths.
+
+Use:
+
+- 3-4-5.
+- 5-12-13.
+- 8-15-17.
+- 7-24-25.
+
+Explain:
+
+\[
+\gcd(3,4,5)=1
+\]
+
+Explain why these are primitive.
+
+Use a comparison table showing common divisors.
+
+Clarify that primitive does not mean the triple is the smallest possible in every mathematical sense. It means the three values have no common factor other than 1.
+
+### H2: What Is a Non-Primitive Pythagorean Triple?
+
+**Suggested length: 180–220 words**
+
+Explain that non-primitive triples have a common integer factor greater than 1.
+
+Use:
+
+\[
+(3,4,5)
+\]
+
+Multiply by 2:
+
+\[
+(6,8,10)
+\]
+
+Multiply by 3:
+
+\[
+(9,12,15)
+\]
+
+Explain:
+
+- Why both remain valid triples.
+- Why neither scaled example is primitive.
+- How to find the common factor.
+- How dividing by the common factor recovers the primitive triple.
+
+### H2: Conditions for Generating Primitive Pythagorean Triples
+
+**Suggested length: 200–240 words**
+
+Explain the two conditions.
+
+**Condition 1: Coprime parameters**
+
+\[
+\gcd(m,n)=1
+\]
+
+**Condition 2: Opposite parity**
+
+One parameter must be even and the other odd.
+
+Explain:
+
+- Why sharing a factor creates common factors in the generated sides.
+- Why two odd parameters produce an even triple.
+- Why opposite parity is needed for primitive generation.
+- Why these conditions work together.
+
+Use three parameter examples:
+
+- (2,1): primitive.
+- (3,2): primitive.
+- (3,1): non-primitive.
+
+### H2: Difference Between Primitive and Non-Primitive Triples
+
+**Suggested length: 180–220 words**
+
+Create a comparison table.
+
+| Feature | Primitive | Non-primitive |
+|---|---|---|
+| Common divisor | Only 1 | Greater than 1 |
+| Side lengths | Cannot be reduced to a smaller integer triple | Can be divided by a common factor |
+| Example | 3, 4, 5 | 6, 8, 10 |
+| Generation | Coprime m,n with opposite parity | Other parameter combinations or integer multiples |
+| Relationship | Base integer triple | Often a multiple of a primitive triple |
+
+Explain why both categories satisfy the Pythagorean theorem.
+
+### H2: How to Generate More Triples by Scaling Existing Ones
+
+**Suggested length: 180–220 words**
+
+Explain the scaling rule.
+
+For an existing triple:
+
+\[
+(a,b,c)
+\]
+
+Multiply every side by a positive integer k:
+
+\[
+(ka,kb,kc)
+\]
+
+Use:
+
+- 3-4-5 multiplied by 2.
+- 3-4-5 multiplied by 3.
+- 5-12-13 multiplied by 2.
+- 8-15-17 multiplied by 3.
+
+Explain why the new sets remain Pythagorean triples.
+
+Clarify that an integer multiplier preserves whole-number side lengths.
+
+Do not imply that the existing calculator has a separate multiplier field.
+
+### H2: Common Pythagorean Triple Examples
+
+**Suggested length: 250–300 words**
+
+Provide a useful table.
+
+| First leg | Second leg | Hypotenuse |
+|---:|---:|---:|
+| 3 | 4 | 5 |
+| 5 | 12 | 13 |
+| 8 | 15 | 17 |
+| 7 | 24 | 25 |
+| 20 | 21 | 29 |
+| 12 | 35 | 37 |
+| 9 | 40 | 41 |
+| 28 | 45 | 53 |
+| 11 | 60 | 61 |
+| 16 | 63 | 65 |
+
+Verify every row using the Pythagorean theorem.
+
+Explain that the legs can be listed in either order.
+
+Distinguish the primitive examples from their scaled multiples.
+
+### H2: Step-by-Step Worked Examples Using the Calculator
+
+**Suggested length: 350–450 words**
+
+Provide at least eight varied worked examples.
+
+Every example must include:
+
+- Problem statement.
+- Inputs.
+- Formula.
+- Substitution.
+- Intermediate calculations.
+- Final result.
+- Brief interpretation.
+
+**Example 1: Check 3, 4, 5**
+
+\[
+9+16=25
+\]
+
+Valid primitive triple.
+
+**Example 2: Check 5, 12, 13**
+
+\[
+25+144=169
+\]
+
+Valid primitive triple.
+
+**Example 3: Check 6, 8, 10**
+
+\[
+36+64=100
+\]
+
+Valid non-primitive triple.
+
+**Example 4: Check 7, 24, 25**
+
+\[
+49+576=625
+\]
+
+Valid primitive triple.
+
+**Example 5: Generate using m = 2, n = 1**
+
+Result: 3, 4, 5.
+
+**Example 6: Generate using m = 3, n = 2**
+
+Result: 5, 12, 13.
+
+**Example 7: Generate using m = 4, n = 1**
+
+\[
+a=15,\quad b=8,\quad c=17
+\]
+
+Result: 8, 15, 17 when the legs are listed in ascending order.
+
+**Example 8: Generate using m = 3, n = 1**
+
+\[
+a=8,\quad b=6,\quad c=10
+\]
+
+Result: 6, 8, 10 when the legs are listed in ascending order. This is non-primitive.
+
+Explain why the final example is non-primitive.
+
+### H2: Why Are There Infinitely Many Pythagorean Triples?
+
+**Suggested length: 180–220 words**
+
+Explain that Euclid's formula can use infinitely many valid integer parameter pairs.
+
+Use examples:
+
+- m = 2, n = 1.
+- m = 3, n = 2.
+- m = 4, n = 1.
+- m = 4, n = 3.
+- m = 5, n = 2.
+
+Explain that different parameter pairs produce different triples.
+
+Also explain that integer multiples create additional triples.
+
+Avoid claiming that every arbitrary pair of positive numbers produces a primitive triple.
+
+### H2: How to Recognize a Pythagorean Triple Without Guessing
+
+**Suggested length: 180–220 words**
+
+Explain practical recognition techniques.
+
+Discuss:
+
+- Check the largest value as the hypotenuse.
+- Compare squared values.
+- Memorize common triples for quick recognition.
+- Look for common factors.
+- Reduce a non-primitive triple to its primitive form.
+- Use Euclid's formula when generating a new triple.
+
+Use a short example of recognizing 6-8-10 as twice 3-4-5.
+
+Explain that recognition is helpful but exact verification is always reliable.
+
+### H2: Pythagorean Triples and Ordinary Right Triangles
+
+**Suggested length: 180–220 words**
+
+Explain the difference.
+
+A right triangle can have:
+
+- Integer side lengths.
+- Decimal side lengths.
+- Irrational side lengths.
+
+Only the first category can form a Pythagorean triple.
+
+Use examples:
+
+- 3-4-5: integer triple.
+- 1-1-√2: right triangle but not an integer triple.
+- 3-4-5.1: does not form the same right triangle.
+
+Explain that the Pythagorean theorem applies to all right triangles, while the term Pythagorean triple refers specifically to positive integer solutions.
+
+### H2: Common Mistakes When Using the Pythagorean Triples Calculator
+
+**Suggested length: 280–330 words**
+
+Discuss at least fourteen mistakes.
+
+1. Entering c as a smaller side.
+2. Forgetting to square the values.
+3. Adding the sides instead of their squares.
+4. Using a + b = c instead of a² + b² = c².
+5. Confusing the hypotenuse with a leg.
+6. Using decimal values and expecting an integer triple.
+7. Entering zero or negative side lengths.
+8. Using m equal to n.
+9. Using m smaller than n.
+10. Entering decimal m and n values.
+11. Assuming every generated triple is primitive.
+12. Assuming all primitive triples are multiples of 3-4-5.
+13. Forgetting the opposite-parity condition.
+14. Forgetting to check common factors.
+15. Confusing a valid right triangle with an integer Pythagorean triple.
+
+For each mistake:
+
+- Explain why it is incorrect.
+- Show the correct mathematical relationship.
+- Provide a short example where useful.
+
+Avoid repetitive warnings.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create eight original practice problems.
+
+Include:
+
+1. Check whether 8, 15, and 17 form a triple.
+2. Check whether 6, 8, and 11 form a triple.
+3. Identify whether 9, 12, and 15 are primitive.
+4. Generate a triple using m = 2 and n = 1.
+5. Generate a triple using m = 3 and n = 2.
+6. Generate a triple using m = 4 and n = 1.
+7. Identify whether m = 3 and n = 1 produce a primitive triple.
+8. Find the common multiplier between 3-4-5 and 15-20-25.
+
+Provide complete worked solutions.
+
+Clearly distinguish between checking and generating questions.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What is a Pythagorean triple?
+2. How does the Pythagorean Triples Calculator work?
+3. How can I check whether three numbers form a Pythagorean triple?
+4. What is Euclid's formula?
+5. What are m and n in the Pythagorean triple formula?
+6. What is a primitive Pythagorean triple?
+7. What is a non-primitive Pythagorean triple?
+8. How do I know if a generated triple is primitive?
+9. Can decimal numbers form a Pythagorean triple?
+10. Are there infinitely many Pythagorean triples?
+11. Can every Pythagorean triple be generated using Euclid's formula?
+12. What is the most common Pythagorean triple?
+
+Keep answers approximately 35–65 words.
+
+Avoid copying entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- Right Triangle Calculator.
+- Pythagorean Theorem Calculator.
+- 3-4-5 Triangle Calculator.
+- 5-12-13 Triangle Calculator.
+- 8-15-17 Triangle Calculator.
+- Right Triangle Side Calculator.
+
+Explain which tool is useful for each different problem.
+
+Verify every destination URL before including it.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least eight mathematically accurate diagrams.
+
+### Diagram 1: Basic Pythagorean Theorem Diagram
+
+Show:
+
+- Right triangle ABC.
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+- Right-angle marker.
+- Formula a² + b² = c².
+
+Use 3-4-5 as the example.
+
+### Diagram 2: Square Area Proof
+
+Show:
+
+- A square on side 3.
+- A square on side 4.
+- A square on side 5.
+- Areas 9, 16, and 25.
+
+Explain visually:
+
+\[
+9+16=25
+\]
+
+### Diagram 3: Checking a Pythagorean Triple
+
+Show a step-by-step mathematical flow:
+
+Input: 7, 24, 25.
+
+Square the legs:
+
+\[
+49,\quad576
+\]
+
+Add:
+
+\[
+49+576=625
+\]
+
+Square hypotenuse:
+
+\[
+25^2=625
+\]
+
+Show the equality result.
+
+### Diagram 4: Euclid's Formula Flowchart
+
+Show:
+
+Inputs:
+
+\[
+m=3,\quad n=2
+\]
+
+Then:
+
+\[
+m^2-n^2=5
+\]
+
+\[
+2mn=12
+\]
+
+\[
+m^2+n^2=13
+\]
+
+Final result:
+
+\[
+5,12,13
+\]
+
+### Diagram 5: Primitive vs Non-Primitive Triples
+
+Show two triangles:
+
+- 3-4-5.
+- 6-8-10.
+
+Explain that the second is twice the first.
+
+Show that:
+
+\[
+\gcd(3,4,5)=1
+\]
+
+and:
+
+\[
+\gcd(6,8,10)=2
+\]
+
+### Diagram 6: Generating Multiple Triples
+
+Show:
+
+\[
+3:4:5
+\]
+
+Multiplied by:
+
+- 2.
+- 3.
+- 4.
+
+Show the resulting triples:
+
+- 6-8-10.
+- 9-12-15.
+- 12-16-20.
+
+Clearly distinguish scaled versions from different primitive triples.
+
+### Diagram 7: Comparing Different Pythagorean Triples
+
+Show three separate right triangles:
+
+- 3-4-5.
+- 5-12-13.
+- 8-15-17.
+
+Use accurate side proportions.
+
+Explain that these triangles have different shapes and angle measurements.
+
+### Diagram 8: Primitive Triple Generation Conditions
+
+Show two parameter examples.
+
+**Valid primitive parameters:**
+
+m = 3, n = 2.
+
+- Coprime.
+- Opposite parity.
+- Result: 5-12-13.
+
+**Non-primitive example:**
+
+m = 3, n = 1.
+
+- Coprime.
+- Both odd.
+- Result: 6-8-10 when legs are sorted.
+
+Explain why opposite parity matters.
+
+**Diagram requirements:**
+
+For every diagram provide:
+
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer mathematically accurate SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+Ensure:
+
+- The hypotenuse is always the longest side.
+- The right angle is correctly positioned.
+- The two legs are correctly labeled.
+- Every square area is mathematically accurate.
+- Euclid's formula values are correct.
+- Primitive and non-primitive examples are correctly classified.
+- Triangle proportions are appropriate.
+- Mathematical flowcharts show the correct sequence.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/right-triangle-calculator/
+
+2. https://www.righttrianglesolver.com/pythagorean-theorem-calculator/
+
+3. https://www.righttrianglesolver.com/3-4-5-triangle-calculator/
+
+4. https://www.righttrianglesolver.com/5-12-13-triangle-calculator/
+
+5. https://www.righttrianglesolver.com/8-15-17-triangle-calculator/
+
+6. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+Verify every destination URL before including it.
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeatedly use the same exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**Pythagorean Triples Calculator**
+
+Its main purpose is to explain the general process of checking and generating integer Pythagorean triples.
+
+Keep the article focused on:
+
+- The definition of Pythagorean triples.
+- Checking integer side combinations.
+- The Pythagorean theorem.
+- Euclid's formula.
+- Primitive triples.
+- Non-primitive triples.
+- Parameter conditions.
+- Integer multiples.
+- Common triples.
+- Mathematical verification.
+- Number theory fundamentals.
+
+Do not turn this page into a duplicate of:
+
+- General Right Triangle Calculator.
+- General Pythagorean Theorem Calculator.
+- 3-4-5 Triangle Calculator.
+- 5-12-13 Triangle Calculator.
+- 8-15-17 Triangle Calculator.
+- Special Right Triangle Calculator.
+
+### Distinguish the individual calculator pages
+
+**3-4-5 Triangle Calculator:**
+
+Focus on the fixed 3:4:5 ratio, scale factor, side lengths, area, perimeter, and practical square-corner applications.
+
+**5-12-13 Triangle Calculator:**
+
+Focus on the fixed 5:12:13 ratio, scale factor, side lengths, area, perimeter, and its mathematical properties.
+
+**Pythagorean Triples Calculator:**
+
+Focus on checking any valid integer triple, generating new triples with Euclid's formula, primitive classification, and number theory.
+
+Use contextual internal links when readers need an individual triple or general right triangle calculations.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+- Accessible to beginners.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation across multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, proof, example, and diagram.
+
+**Pythagorean theorem:**
+
+\[
+a^2+b^2=c^2
+\]
+
+**Euclid's formula:**
+
+\[
+a=m^2-n^2
+\]
+
+\[
+b=2mn
+\]
+
+\[
+c=m^2+n^2
+\]
+
+**Parameter requirements:**
+
+\[
+m>n>0
+\]
+
+**Primitive triple conditions:**
+
+\[
+\gcd(m,n)=1
+\]
+
+and m and n must have opposite parity.
+
+**Primitive triple definition:**
+
+\[
+\gcd(a,b,c)=1
+\]
+
+**Scaling rule:**
+
+\[
+(ka,kb,kc)
+\]
+
+where k is a positive integer.
+
+Ensure:
+
+- The hypotenuse is always the largest side.
+- The generated legs are not incorrectly assumed to be in ascending order.
+- The Pythagorean equation is verified.
+- The primitive conditions are correct.
+- Both coprimality and opposite parity are explained.
+- All generated values are whole positive integers.
+- All examples are recalculated.
+- All diagrams use accurate labels.
+- The difference between integer triples and decimal right triangles is clear.
+- The use of the word triple is mathematically accurate.
+
+Never claim that all right triangles have integer sides.
+
+Never claim that every pair of positive m and n produces a primitive triple.
+
+Never claim that m and n merely being coprime is sufficient for primitive generation.
+
+Never claim that two odd parameters produce a primitive triple.
+
+Never claim that every non-primitive triple has a unique generator pair without explaining scaling and representation.
+
+Never confuse the two legs with the hypotenuse.
+
+Never use a + b = c as the Pythagorean theorem.
+
+Never describe decimal values as Pythagorean triples.
+
+Never invent a multiplier input in the existing calculator.
+
+Never invent a maximum-hypotenuse search feature.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Explain that visitors can check integer triples and generate new triples using Euclid's formula.
+
+### Primary Focus Keyword
+
+Pythagorean Triples Calculator
+
+### Secondary Keywords
+
+Provide 8–12 relevant keyword variations.
+
+### Existing URL Slug
+
+pythagorean-triples-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all eight diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual visible calculator.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the Pythagorean theorem.
+- Verify Euclid's formula.
+- Verify all generated examples.
+- Verify primitive triple conditions.
+- Verify non-primitive examples.
+- Check all common factors.
+- Verify all worked examples.
+- Verify the hypotenuse ordering.
+- Verify the scaling explanation.
+- Verify the proof of Euclid's formula.
+- Verify all diagrams.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- Both calculator modes are explained accurately.
+- All inputs are described correctly.
+- Primitive and non-primitive triples are distinguished.
+- Advanced concepts are explained clearly.
+- Examples cover both checking and generation.
+- Mathematical proofs are understandable to beginners.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from individual triangle calculator pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- Both modes are explained clearly.
+- Instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+- Mathematical terminology is explained.
+
+Remove weak, repetitive, or irrelevant material before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding that range only when additional information genuinely improves educational value.
+
+Include:
+
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Eight worked examples.
+- Comparison tables.
+- Contextual internal links.
+- Euclid's formula proof.
+- Primitive and non-primitive explanations.
+- Practice questions.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all eight diagram specifications.
+
+Include:
+
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the Pythagorean Triples Calculator.
+
+The primary purpose must remain checking and generating Pythagorean triples.
+
+Give particular attention to:
+
+- What makes three integers a Pythagorean triple.
+- Why a² + b² = c².
+- How to verify an existing triple.
+- How Euclid's formula generates new triples.
+- Why m must be greater than n.
+- How to identify primitive triples.
+- How to identify non-primitive triples.
+- Why coprimality and opposite parity matter.
+- How integer multiples generate additional triples.
+- Why infinitely many triples exist.
+- How to distinguish integer triples from ordinary right triangles.
+- How to use both calculator modes correctly.
+
+Use accurate mathematical diagrams, varied numerical examples, comparison tables, and clear step-by-step proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, mathematics enthusiasts, and anyone learning number theory and right triangle geometry.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

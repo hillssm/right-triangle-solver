@@ -25,7 +25,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-intro": {
         h2: "So berechnen Sie die Fläche eines rechtwinkligen Dreiecks aus der Höhe",
         blocks: [
-          { kind: "p", text: "Angenommen, ein rechtwinkliges Dreieck hat eine Hypotenuse von 10 m, und der senkrechte Abstand von der Ecke des rechten Winkels zu dieser Hypotenuse misst 4,8 m. Seine Fläche folgt direkt: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Das Dreieck schließt 24 Quadratmeter ebener Fläche ein." },
+          { kind: "p", text: "Angenommen, ein rechtwinkliges Dreieck hat eine Hypotenuse von 10 m, und der senkrechte Abstand von der Ecke des rechten Winkels zu dieser Hypotenuse misst 4,8 m. Seine Fläche folgt direkt: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Das Dreieck schließt 24 Quadratmeter ebener Fläche ein." },
           { kind: "p", text: "Der Rechner auf dieser Seite existiert genau für diese Situation. Wenn Sie die längste Seite eines rechtwinkligen Dreiecks kennen, die Hypotenuse [[c]], und die senkrechte Höhe vom Scheitel des rechten Winkels zu dieser Seite, [[h]], dann werden die zwei Katheten nicht benötigt. Die Hypotenuse dient als Basis, die Höhe ist ihre zugehörige senkrechte Höhe, und die Fläche jedes Dreiecks beträgt die Hälfte des Produkts einer Basis mit ihrer zugehörigen Höhe: [[K=ch/2]]." },
           { kind: "p", text: "Die Höhe muss die Hypotenuse im rechten Winkel treffen; ein schräges Segment, das nicht senkrecht steht, ergibt eine falsche Höhe und eine falsche Fläche. Geben Sie beide Maße in übereinstimmenden Längeneinheiten ein, und der Rechner liefert die Fläche in den entsprechenden Quadratmaßen, wobei jeder Einsetzungsschritt angezeigt wird." }
         ]
@@ -51,7 +51,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-formula": {
         h2: "Die Formel für die Fläche eines rechtwinkligen Dreiecks aus der Höhe",
         blocks: [
-          { kind: "p", text: "Die Höhenflächenformel lautet [[[\\boxed{K=\\frac{ch}{2}}]]]. Dabei ist [[K]] die Fläche, [[c]] die Hypotenuse, die als Basis dient, und [[h]] die senkrechte Höhe zur Hypotenuse. Drei Symbole, eine Multiplikation, eine Halbierung." },
+          { kind: "p", text: "Die Höhenflächenformel lautet [[[\\boxed{K=\\frac{ch}{2}}]]] Dabei ist [[K]] die Fläche, [[c]] die Hypotenuse, die als Basis dient, und [[h]] die senkrechte Höhe zur Hypotenuse. Drei Symbole, eine Multiplikation, eine Halbierung." },
           { kind: "h3", text: "Warum multiplizieren wir Hypotenuse und Höhe?" },
           { kind: "p", text: "Die allgemeine Dreiecksflächenformel lautet [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], und Basis und Höhe müssen senkrecht aufeinander stehen. Die Wahl der Hypotenuse als Basis zwingt die Höhe, der senkrechte Abstand zu ihr zu sein, was genau die Höhe ist: [[\\text{base}=c]] und [[\\text{height}=h]], also [[K=ch/2]]. Dies gilt, egal wie das Dreieck gedreht oder gezeichnet ist: Senkrechtstehen ist eine geometrische Beziehung, keine Bildschirmrichtung, also funktioniert eine schräge Hypotenuse als Basis genauso gut wie eine waagerechte." },
           { kind: "h3", text: "Warum wird das Ergebnis durch zwei geteilt?" },
@@ -74,7 +74,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           "<strong>Die Formel aufschreiben.</strong> [[K=ch/2]].",
           "<strong>Die Maße einsetzen.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Multiplizieren.</strong> [[10\\times4.8=48]], also [[K=48/2]].",
-          "<strong>Durch zwei teilen.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Durch zwei teilen.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Die Antwort deuten.</strong> Das Dreieck schließt 24 Quadratmeter ebener Fläche ein.",
           "<strong>Die Machbarkeit prüfen.</strong> Ein gültiges rechtwinkliges Dreieck braucht [[h\\leq c/2]]; hier gilt [[4.8\\leq5]], also können die Maße ein echtes rechtwinkliges Dreieck beschreiben.",
           "<strong>Mit den Katheten verifizieren.</strong> Ein 6-8-10-Dreieck hat dieselbe Hypotenuse und Höhe, und [[K=(6\\times8)/2=24]]. Beide Wege stimmen überein."
@@ -110,13 +110,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
         blocks: [
           { kind: "p", text: "Vier durchgerechnete Beispiele bauen die Methode von vertrauten Dreiecken aufwärts auf. Jedes berechnet bei Bedarf die Höhe aus den Katheten, wendet [[K=ch/2]] an und prüft gegen die Kathetenformel." },
           { kind: "h3", text: "Beispiel 1: Ein 3-4-5-rechtwinkliges Dreieck" },
-          { kind: "p", text: "Gegeben [[a=3]], [[b=4]], [[c=5]]. Die Höhe ist [[h=ab/c]], also [[h=(3\\times4)/5=2.4]]. Die Fläche ist [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Prüfen mit den Katheten: [[K=(3\\times4)/2=6]]. Beide Formeln beschreiben dasselbe Dreieck, also müssen sie übereinstimmen, und das tun sie." },
+          { kind: "p", text: "Gegeben [[a=3]], [[b=4]], [[c=5]]. Die Höhe ist [[h=ab/c]], also [[h=(3\\times4)/5=2.4]]. Die Fläche ist [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Prüfen mit den Katheten: [[K=(3\\times4)/2=6]]. Beide Formeln beschreiben dasselbe Dreieck, also müssen sie übereinstimmen, und das tun sie." },
           { kind: "h3", text: "Beispiel 2: Ein 5-12-13-rechtwinkliges Dreieck" },
-          { kind: "p", text: "Gegeben [[a=5]], [[b=12]], [[c=13]]. Die Höhe ist [[h=(5\\times12)/13=60/13\\approx4.61538]]. Bei Beibehaltung des exakten Bruchs: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Das Beibehalten von [[60/13]] statt einer gerundeten Dezimalzahl vermeidet einen frühen Rundungsfehler: Die 13 kürzt sich exakt heraus und lässt eine saubere 30 übrig." },
+          { kind: "p", text: "Gegeben [[a=5]], [[b=12]], [[c=13]]. Die Höhe ist [[h=(5\\times12)/13=60/13\\approx4.61538]]. Bei Beibehaltung des exakten Bruchs: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Das Beibehalten von [[60/13]] statt einer gerundeten Dezimalzahl vermeidet einen frühen Rundungsfehler: Die 13 kürzt sich exakt heraus und lässt eine saubere 30 übrig." },
           { kind: "h3", text: "Beispiel 3: Ein 6-8-10-rechtwinkliges Dreieck" },
-          { kind: "p", text: "Gegeben [[c=10]] und [[h=4.8]] direkt. Dann [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Mit den Katheten 6 und 8 gilt [[K=(6\\times8)/2=24]], was den Höhenweg bestätigt." },
+          { kind: "p", text: "Gegeben [[c=10]] und [[h=4.8]] direkt. Dann [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Mit den Katheten 6 und 8 gilt [[K=(6\\times8)/2=24]], was den Höhenweg bestätigt." },
           { kind: "h3", text: "Beispiel 4: Ein gleichschenkliges rechtwinkliges Dreieck" },
-          { kind: "p", text: "Gegeben [[c=10]] und [[h=5]]. Dann [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Dies ist die größte Fläche, die ein rechtwinkliges Dreieck mit Hypotenuse 10 haben kann. Die Höhe gleicht der halben Hypotenuse nur, wenn die Katheten gleich sind, was jeden spitzen Winkel [[45^\\circ]] macht, und kein gültiges rechtwinkliges Dreieck mit dieser Hypotenuse kann 25 Quadrateinheiten übersteigen." }
+          { kind: "p", text: "Gegeben [[c=10]] und [[h=5]]. Dann [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Dies ist die größte Fläche, die ein rechtwinkliges Dreieck mit Hypotenuse 10 haben kann. Die Höhe gleicht der halben Hypotenuse nur, wenn die Katheten gleich sind, was jeden spitzen Winkel [[45^\\circ]] macht, und kein gültiges rechtwinkliges Dreieck mit dieser Hypotenuse kann 25 Quadrateinheiten übersteigen." }
         ]
       },
       "sec-applications": {
@@ -124,29 +124,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
         blocks: [
           { kind: "p", text: "Zwölf durchgerechnete Situationen zeigen die Formel in verschiedenen Maßstäben und Einheiten. Jede nennt das Dreieck in der Szene, die zwei Maße, die Einsetzung, die Fläche und die Annahme hinter dem Modell." },
           { kind: "h3", text: "Beispiel 1: Dreieckiger Gartenabschnitt" },
-          { kind: "p", text: "Ein rechtwinkliger Gartenabschnitt hat eine längste Begrenzung von 10 m, und der senkrechte Abstand von der Ecke des rechten Winkels zu dieser Begrenzung beträgt 4,8 m. Also [[c=10\\text{ m}]] und [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Der Abschnitt nimmt 24 Quadratmeter ein. Dies setzt voraus, dass die Begrenzung gerade ist und die Ecke ein echter rechter Winkel ist." },
+          { kind: "p", text: "Ein rechtwinkliger Gartenabschnitt hat eine längste Begrenzung von 10 m, und der senkrechte Abstand von der Ecke des rechten Winkels zu dieser Begrenzung beträgt 4,8 m. Also [[c=10\\text{ m}]] und [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Der Abschnitt nimmt 24 Quadratmeter ein. Dies setzt voraus, dass die Begrenzung gerade ist und die Ecke ein echter rechter Winkel ist." },
           { kind: "h3", text: "Beispiel 2: Dreieckige Sperrholzplatte" },
-          { kind: "p", text: "Eine rechtwinklige Sperrholzplatte hat eine Hypotenuse von 1 m und eine senkrechte Höhe von 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. Das ist die ebene Oberfläche einer Seite, nützlich für Deckungsschätzungen. Schnittverschnitt und Materialzugaben sind separate Überlegungen." },
+          { kind: "p", text: "Eine rechtwinklige Sperrholzplatte hat eine Hypotenuse von 1 m und eine senkrechte Höhe von 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] Das ist die ebene Oberfläche einer Seite, nützlich für Deckungsschätzungen. Schnittverschnitt und Materialzugaben sind separate Überlegungen." },
           { kind: "h3", text: "Beispiel 3: Rechtwinkliges Glasfenster" },
-          { kind: "p", text: "Eine rechtwinklige Glasscheibe hat eine Hypotenuse von 1,3 m und eine Höhe von 0,6 m senkrecht zu dieser Seite: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Dies ist die geometrische Glasfläche vor Rahmenabdeckung oder Montagezugaben." },
+          { kind: "p", text: "Eine rechtwinklige Glasscheibe hat eine Hypotenuse von 1,3 m und eine Höhe von 0,6 m senkrecht zu dieser Seite: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Dies ist die geometrische Glasfläche vor Rahmenabdeckung oder Montagezugaben." },
           { kind: "h3", text: "Beispiel 4: Vermessung eines dreieckigen Abschnitts" },
-          { kind: "p", text: "Eine Vermessungszeichnung enthält ein rechtwinkliges Dreieck mit Hypotenuse 13 m und Höhe [[60/13]] m. Bei Beibehaltung des Bruchs: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Die Zeichnung stellt einen 30-Quadratmeter-Abschnitt dar. Die eigentliche Feldarbeit kann über den Plan hinaus noch Instrumentenkorrekturen erfordern." },
+          { kind: "p", text: "Eine Vermessungszeichnung enthält ein rechtwinkliges Dreieck mit Hypotenuse 13 m und Höhe [[60/13]] m. Bei Beibehaltung des Bruchs: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Die Zeichnung stellt einen 30-Quadratmeter-Abschnitt dar. Die eigentliche Feldarbeit kann über den Plan hinaus noch Instrumentenkorrekturen erfordern." },
           { kind: "h3", text: "Beispiel 5: Vermessen einer dreieckigen Fliese" },
-          { kind: "p", text: "Eine rechtwinklige Fliese hat eine Hypotenuse von 25 cm und eine senkrechte Höhe von 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Eine Fliese deckt 84 Quadratzentimeter ab, was hilft abzuschätzen, wie viele Fliesen eine Fläche braucht. Fugen und Schnittverluste werden separat gezählt." },
+          { kind: "p", text: "Eine rechtwinklige Fliese hat eine Hypotenuse von 25 cm und eine senkrechte Höhe von 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Eine Fliese deckt 84 Quadratzentimeter ab, was hilft abzuschätzen, wie viele Fliesen eine Fläche braucht. Fugen und Schnittverluste werden separat gezählt." },
           { kind: "h3", text: "Beispiel 6: Stahlstützplatte" },
-          { kind: "p", text: "Eine flache rechtwinklige Stützplatte hat eine Hypotenuse von 1,7 m mit Katheten von 0,8 m und 1,5 m. Ihre Höhe ist [[h=(0.8\\times1.5)/1.7=12/17]] m. Dann [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. Das ist die geometrische Plattenfläche, nicht ihre Tragfähigkeit." },
+          { kind: "p", text: "Eine flache rechtwinklige Stützplatte hat eine Hypotenuse von 1,7 m mit Katheten von 0,8 m und 1,5 m. Ihre Höhe ist [[h=(0.8\\times1.5)/1.7=12/17]] m. Dann [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] Das ist die geometrische Plattenfläche, nicht ihre Tragfähigkeit." },
           { kind: "h3", text: "Beispiel 7: Dreieckiges Rampenseitenteil" },
-          { kind: "p", text: "Ein vereinfachtes Rampenseitenteil bildet ein rechtwinkliges Dreieck mit einer Hypotenuse von 5 m und einer senkrechten Höhe von 2,4 m zu dieser Hypotenuse: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Dies ist die ebene Fläche des dreieckigen Seitenteils, nicht die schräge Rampenfläche, und die Berechnung stellt keine Barrierefreiheit fest." },
+          { kind: "p", text: "Ein vereinfachtes Rampenseitenteil bildet ein rechtwinkliges Dreieck mit einer Hypotenuse von 5 m und einer senkrechten Höhe von 2,4 m zu dieser Hypotenuse: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Dies ist die ebene Fläche des dreieckigen Seitenteils, nicht die schräge Rampenfläche, und die Berechnung stellt keine Barrierefreiheit fest." },
           { kind: "h3", text: "Beispiel 8: Dachgiebelabschnitt" },
-          { kind: "p", text: "Ein rechtwinkliger Dachgiebelabschnitt hat eine Hypotenuse von 6,5 m und eine senkrechte Höhe von [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Das Ergebnis beschreibt die dreieckige Ebene, die durch die Maße gegeben ist. Die Gesamtoberfläche eines echten Dachs ist ein separates dreidimensionales Messproblem." },
+          { kind: "p", text: "Ein rechtwinkliger Dachgiebelabschnitt hat eine Hypotenuse von 6,5 m und eine senkrechte Höhe von [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Das Ergebnis beschreibt die dreieckige Ebene, die durch die Maße gegeben ist. Die Gesamtoberfläche eines echten Dachs ist ein separates dreidimensionales Messproblem." },
           { kind: "h3", text: "Beispiel 9: Rechtwinkliges Grundstück" },
-          { kind: "p", text: "Ein rechtwinkliger Grundstücksabschnitt hat eine Hypotenuse von 50 m und eine senkrechte Höhe von 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Die gemessenen Grenzen schließen 600 Quadratmeter ein. Eine amtliche Flächenangabe kann dennoch eine Vermessungsprüfung erfordern." },
+          { kind: "p", text: "Ein rechtwinkliger Grundstücksabschnitt hat eine Hypotenuse von 50 m und eine senkrechte Höhe von 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Die gemessenen Grenzen schließen 600 Quadratmeter ein. Eine amtliche Flächenangabe kann dennoch eine Vermessungsprüfung erfordern." },
           { kind: "h3", text: "Beispiel 10: Großer vermessener Grundstücksabschnitt" },
-          { kind: "p", text: "Ein vermessener rechtwinkliger Abschnitt hat eine Hypotenuse von 100 m und eine senkrechte Höhe von 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Das ist die ebene Fläche des dreieckigen Abschnitts. Sie stellt das ganze Grundstück nur dar, wenn das Grundstück ausschließlich aus diesem Dreieck besteht." },
+          { kind: "p", text: "Ein vermessener rechtwinkliger Abschnitt hat eine Hypotenuse von 100 m und eine senkrechte Höhe von 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Das ist die ebene Fläche des dreieckigen Abschnitts. Sie stellt das ganze Grundstück nur dar, wenn das Grundstück ausschließlich aus diesem Dreieck besteht." },
           { kind: "h3", text: "Beispiel 11: Dreieckiger Segelabschnitt" },
-          { kind: "p", text: "Ein flacher rechtwinkliger Segelentwurf hat eine Hypotenuse von 15 ft und eine senkrechte Höhe von 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Dies ist die ebene Fläche des idealisierten Segels. Gebogenes Tuch, Nähte und Kantenzugaben erfordern separate Betrachtung." },
+          { kind: "p", text: "Ein flacher rechtwinkliger Segelentwurf hat eine Hypotenuse von 15 ft und eine senkrechte Höhe von 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Dies ist die ebene Fläche des idealisierten Segels. Gebogenes Tuch, Nähte und Kantenzugaben erfordern separate Betrachtung." },
           { kind: "h3", text: "Beispiel 12: Kleiner mechanischer Halter" },
-          { kind: "p", text: "Ein flacher rechtwinkliger Halter hat eine Hypotenuse von 250 mm und eine senkrechte Höhe von 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. Die Antwort ist in Quadratmillimetern, weil die Eingaben in Millimetern sind. Da [[1\\text{ cm}^2=100\\text{ mm}^2]] gilt, entspricht dies [[[\\boxed{150\\text{ cm}^2}]]]. Die Umrechnung der linearen Einheit und die Umrechnung der Quadrateinheit sind verschiedene Operationen, wie der Einheitenabschnitt erklärt." },
+          { kind: "p", text: "Ein flacher rechtwinkliger Halter hat eine Hypotenuse von 250 mm und eine senkrechte Höhe von 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] Die Antwort ist in Quadratmillimetern, weil die Eingaben in Millimetern sind. Da [[1\\text{ cm}^2=100\\text{ mm}^2]] gilt, entspricht dies [[[\\boxed{150\\text{ cm}^2}]]] Die Umrechnung der linearen Einheit und die Umrechnung der Quadrateinheit sind verschiedene Operationen, wie der Einheitenabschnitt erklärt." },
           { kind: "h3", text: "Praktischer Beispielvergleich" }
         ],
         table: {
@@ -172,7 +172,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-equal": {
         h2: "Warum beide Flächenformeln für rechtwinklige Dreiecke dasselbe Ergebnis liefern",
         blocks: [
-          { kind: "p", text: "Ein rechtwinkliges Dreieck lässt sich über seine zwei senkrechten Katheten oder über seine Hypotenuse und Höhe messen. Die Kathetenformel ist [[K=ab/2]] und die Höhenformel ist [[K=ch/2]]. Da beide die Fläche desselben Dreiecks beschreiben, gilt [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplizieren Sie beide Seiten mit zwei: [[ab=ch]]. Lösen Sie nach [[h]] auf: [[[\\boxed{h=\\frac{ab}{c}}]]]. Die Höhe ist das Produkt der Katheten geteilt durch die Hypotenuse, weshalb die zwei Formeln bei einem konsistenten Dreieck niemals voneinander abweichen können." },
+          { kind: "p", text: "Ein rechtwinkliges Dreieck lässt sich über seine zwei senkrechten Katheten oder über seine Hypotenuse und Höhe messen. Die Kathetenformel ist [[K=ab/2]] und die Höhenformel ist [[K=ch/2]]. Da beide die Fläche desselben Dreiecks beschreiben, gilt [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplizieren Sie beide Seiten mit zwei: [[ab=ch]]. Lösen Sie nach [[h]] auf: [[[\\boxed{h=\\frac{ab}{c}}]]] Die Höhe ist das Produkt der Katheten geteilt durch die Hypotenuse, weshalb die zwei Formeln bei einem konsistenten Dreieck niemals voneinander abweichen können." },
           { kind: "p", text: "Numerische Prüfung: Für [[a=6]], [[b=8]], [[c=10]] ist die Höhe [[h=(6\\times8)/10=4.8]]. Nach Katheten: [[K=(6\\times8)/2=24]]. Nach Höhe: [[K=(10\\times4.8)/2=24]]. Dasselbe Dreieck, dieselbe Fläche, zwei Wege." },
           { kind: "p", text: "Wenn nur Hypotenuse und Höhe bekannt sind, ist die Fläche bereits festgelegt: Es ist nicht nötig, zuerst die Katheten zu rekonstruieren. Die Kathetenlängen lassen sich aus gültigen [[c]] und [[h]] über die Abschnittsbeziehungen unten immer noch zurückgewinnen, aber das ist eine separate Berechnung von der Flächenbestimmung. Wenn stattdessen die Katheten die bekannten Daten sind, nimmt der <a href=\"/right-triangle-area-from-legs-calculator/\">Rechner für die Fläche eines rechtwinkligen Dreiecks aus den Katheten</a> sie direkt." }
         ]
@@ -184,7 +184,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           { kind: "h3", text: "Zwei kleinere ähnliche rechtwinklige Dreiecke" },
           { kind: "p", text: "Die Höhe teilt das ursprüngliche Dreieck in zwei kleinere rechtwinklige Dreiecke, von denen jedes einen spitzen Winkel mit dem ursprünglichen teilt und jedes einen rechten Winkel enthält. Die Übereinstimmung in zwei Winkelmaßen macht alle drei Dreiecke einander ähnlich. Die Ähnlichkeit ist es, die die sauberen proportionalen Beziehungen zwischen der Höhe, den Abschnitten und den Katheten erzwingt." },
           { kind: "h3", text: "Der Höhensatz des geometrischen Mittels" },
-          { kind: "p", text: "Die Ähnlichkeit liefert [[[\\boxed{h^2=pq}]]], oder äquivalent [[[\\boxed{h=\\sqrt{pq}}]]]. Die Höhe ist das geometrische Mittel der zwei Hypotenusenabschnitte: Ihr Quadrat gleicht ihrem Produkt. Durchgerechnetes Beispiel: Mit [[p=6.4]] und [[q=3.6]] gilt [[c=p+q=10]], und [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. Die Fläche folgt: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Der Abschnittssatz verifiziert eine Höhe, die auf andere Weise gemessen oder berechnet wurde." },
+          { kind: "p", text: "Die Ähnlichkeit liefert [[[\\boxed{h^2=pq}]]], oder äquivalent [[[\\boxed{h=\\sqrt{pq}}]]] Die Höhe ist das geometrische Mittel der zwei Hypotenusenabschnitte: Ihr Quadrat gleicht ihrem Produkt. Durchgerechnetes Beispiel: Mit [[p=6.4]] und [[q=3.6]] gilt [[c=p+q=10]], und [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] Die Fläche folgt: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Der Abschnittssatz verifiziert eine Höhe, die auf andere Weise gemessen oder berechnet wurde." },
           { kind: "h3", text: "Beziehung zwischen den Abschnitten und den Katheten" },
           { kind: "p", text: "Dieselbe Ähnlichkeit liefert [[b^2=cp]] und [[a^2=cq]]. Mit [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] und [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Das ursprüngliche 6-8-10-Dreieck wird exakt zurückgewonnen, was zeigt, wie eng Abschnitte, Höhe und Katheten miteinander verbunden sind." }
         ]
@@ -192,11 +192,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-max": {
         h2: "Wie groß kann die Höhe eines rechtwinkligen Dreiecks sein?",
         blocks: [
-          { kind: "p", text: "Nicht jedes Paar positiver Zahlen kann Hypotenuse und Höhe sein. Für ein gültiges, nicht entartetes rechtwinkliges Dreieck gilt [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. Die Höhe muss positiv sein und kann niemals die Hälfte der Hypotenuse übersteigen." },
+          { kind: "p", text: "Nicht jedes Paar positiver Zahlen kann Hypotenuse und Höhe sein. Für ein gültiges, nicht entartetes rechtwinkliges Dreieck gilt [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] Die Höhe muss positiv sein und kann niemals die Hälfte der Hypotenuse übersteigen." },
           { kind: "h3", text: "Warum die Höhe die Hälfte der Hypotenuse nicht übersteigen kann" },
           { kind: "p", text: "Aus [[h^2=pq]] mit [[p+q=c]] ist das Produkt [[pq]] am größten, wenn die zwei Abschnitte gleich sind, [[p=q=c/2]]. Daher [[h^2\\leq c^2/4]], und für positive Längen [[h\\leq c/2]]. Klar ausgedrückt: Die Höhe ist am höchsten, wenn sie die Hypotenuse in zwei gleiche Hälften teilt, und selbst dann erreicht sie nur die Hälfte der Hypotenuse." },
           { kind: "h3", text: "Maximale Fläche bei fester Hypotenuse" },
-          { kind: "p", text: "Da [[K=ch/2]] und [[h\\leq c/2]] gilt, ist die größtmögliche Fläche [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Dieses Maximum gehört zum gleichschenkligen rechtwinkligen Dreieck, bei dem die zwei Katheten gleich sind. Mit [[c=10]] ist die höchste gültige Höhe [[h_{\\max}=5]], was [[K_{\\max}=(10\\times5)/2=25]] ergibt. Eine Höhe von 6 bei einer Hypotenuse von 10 ist für ein rechtwinkliges Dreieck unmöglich." },
+          { kind: "p", text: "Da [[K=ch/2]] und [[h\\leq c/2]] gilt, ist die größtmögliche Fläche [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Dieses Maximum gehört zum gleichschenkligen rechtwinkligen Dreieck, bei dem die zwei Katheten gleich sind. Mit [[c=10]] ist die höchste gültige Höhe [[h_{\\max}=5]], was [[K_{\\max}=(10\\times5)/2=25]] ergibt. Eine Höhe von 6 bei einer Hypotenuse von 10 ist für ein rechtwinkliges Dreieck unmöglich." },
           { kind: "h3", text: "Was passiert, wenn die Höhe zu groß ist?" },
           { kind: "p", text: "Nehmen Sie [[c=10]] und [[h=6]]: [[6>5]], also hat kein rechtwinkliges Dreieck diese Maße. Die Rechnung [[(10\\times6)/2=30]] ist eine gültige Fläche für irgendein Dreieck in einem allgemeineren Rahmen, aber sie macht [[c=10]], [[h=6]] nicht zu einer gültigen rechtwinkligen Dreieckseingabe. Diese Seite behauptet nicht, dass der Rechner solche Eingaben automatisch ablehnt; die Prüfung liegt bei Ihnen." },
           { kind: "h3", text: "Kann die Höhe gleich der halben Hypotenuse sein?" },
@@ -210,11 +210,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
         blocks: [
           { kind: "p", text: "Dieser Rechner nimmt [[h]] als Eingabe, also muss eine unbekannte Höhe zuerst gefunden oder gemessen werden. Drei Standardwege decken die üblichen Fälle ab. Wenn die Seiten bekannt sind und die Höhe das fehlende Stück ist, berechnet der <a href=\"/right-triangle-altitude-from-sides-calculator/\">Rechner für die Höhe eines rechtwinkligen Dreiecks aus den Seiten</a> sie direkt." },
           { kind: "h3", text: "Methode 1: Mit beiden Katheten und der Hypotenuse" },
-          { kind: "p", text: "[[[\\boxed{h=\\frac{ab}{c}}]]]. Mit [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { kind: "p", text: "[[[\\boxed{h=\\frac{ab}{c}}]]] Mit [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { kind: "h3", text: "Methode 2: Mit Hypotenusenabschnitten" },
-          { kind: "p", text: "[[[\\boxed{h=\\sqrt{pq}}]]]. Mit [[p=6.4]] und [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { kind: "p", text: "[[[\\boxed{h=\\sqrt{pq}}]]] Mit [[p=6.4]] und [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { kind: "h3", text: "Methode 3: Mit bekannter Fläche und Hypotenuse" },
-          { kind: "p", text: "Umstellen von [[K=ch/2]] ergibt [[[\\boxed{h=\\frac{2K}{c}}]]]. Mit [[K=24]] und [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { kind: "p", text: "Umstellen von [[K=ch/2]] ergibt [[[\\boxed{h=\\frac{2K}{c}}]]] Mit [[K=24]] und [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { kind: "p", text: "Dies sind mathematische Umstellungen, keine zusätzlichen Rechnermodi: Der Flächen-aus-Höhe-Rechner selbst erwartet die Höhe weiterhin als Eingabe." }
         ]
       },
@@ -225,9 +225,9 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           { kind: "h3", text: "Quadratmeter" },
           { kind: "p", text: "Mit [[c=10\\text{ m}]] und [[h=4.8\\text{ m}]] gilt [[K=24\\text{ m}^2]]. Lesen Sie es als 24 Quadratmeter Fläche." },
           { kind: "h3", text: "Quadratzentimeter" },
-          { kind: "p", text: "Mit [[c=25\\text{ cm}]] und [[h=6.72\\text{ cm}]] gilt [[K=84\\text{ cm}^2]]]." },
+          { kind: "p", text: "Mit [[c=25\\text{ cm}]] und [[h=6.72\\text{ cm}]] gilt [[K=84\\text{ cm}^2]]]" },
           { kind: "h3", text: "Quadratmillimeter" },
-          { kind: "p", text: "Mit [[c=250\\text{ mm}]] und [[h=120\\text{ mm}]] gilt [[K=15000\\text{ mm}^2]]]." },
+          { kind: "p", text: "Mit [[c=250\\text{ mm}]] und [[h=120\\text{ mm}]] gilt [[K=15000\\text{ mm}^2]]]" },
           { kind: "h3", text: "Flächeneinheiten umrechnen" },
           { kind: "p", text: "[[1\\text{ m}^2=10000\\text{ cm}^2]] und [[1\\text{ cm}^2=100\\text{ mm}^2]]. Eine lineare Umrechnung multipliziert mit 10, 100 oder 1000, aber eine Flächenumrechnung quadriert diesen Faktor: 100 cm in einem Meter werden zu [[100^2=10000]] Quadratzentimetern in einem Quadratmeter. Die Umrechnung der Länge und die Umrechnung der Fläche sind verschiedene Operationen." },
           { kind: "h3", text: "Was, wenn die Eingaben verschiedene Einheiten verwenden?" },
@@ -275,7 +275,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           { kind: "h3", text: "18. Geometrische Fläche als exaktes Kaufmaterial behandeln" },
           { kind: "p", text: "Die Formel liefert die ideale geometrische Fläche. Reale Projekte brauchen Verschnitt, Überlappungen und Schnittzugaben obendrauf. Abhilfe: Fügen Sie nach der Geometrie einen Projektzuschlag hinzu." },
           { kind: "h3", text: "Falsch gegen richtig: Ein konkretes Beispiel" },
-          { kind: "p", text: "Gegeben [[c=10]] und [[h=4.8]]: Die falsche Rechnung lässt die Halbierung aus: [[K=10\\times4.8=48]]. Das ist die Fläche des entsprechenden Parallelogramms. Die richtige Rechnung ist [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Eine zweite Veranschaulichung: Das Einsetzen der Kathete 8 für die Höhe ergibt [[(10\\times8)/2=40]], falsch, weil 8 nicht senkrecht zur Hypotenuse steht. Die Höhe, und nur die Höhe, passt zu [[c]]." }
+          { kind: "p", text: "Gegeben [[c=10]] und [[h=4.8]]: Die falsche Rechnung lässt die Halbierung aus: [[K=10\\times4.8=48]]. Das ist die Fläche des entsprechenden Parallelogramms. Die richtige Rechnung ist [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Eine zweite Veranschaulichung: Das Einsetzen der Kathete 8 für die Höhe ergibt [[(10\\times8)/2=40]], falsch, weil 8 nicht senkrecht zur Hypotenuse steht. Die Höhe, und nur die Höhe, passt zu [[c]]." }
         ]
       },
       "sec-verify": {
@@ -411,7 +411,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-intro": {
         h2: "Come calcolare l'area di un triangolo rettangolo dall'altezza",
         blocks: [
-          { kind: "p", text: "Supponiamo che un triangolo rettangolo abbia un'ipotenusa di 10 m e che la distanza perpendicolare dal vertice dell'angolo retto a quell'ipotenusa misuri 4,8 m. La sua area segue direttamente: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Il triangolo racchiude 24 metri quadrati di superficie piana." },
+          { kind: "p", text: "Supponiamo che un triangolo rettangolo abbia un'ipotenusa di 10 m e che la distanza perpendicolare dal vertice dell'angolo retto a quell'ipotenusa misuri 4,8 m. La sua area segue direttamente: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Il triangolo racchiude 24 metri quadrati di superficie piana." },
           { kind: "p", text: "Il calcolatore di questa pagina esiste proprio per questa situazione. Quando conosci il lato più lungo di un triangolo rettangolo, l'ipotenusa [[c]], e l'altezza perpendicolare dal vertice dell'angolo retto a quel lato, [[h]], i due cateti non servono. L'ipotenusa funge da base, l'altezza è la sua altezza perpendicolare corrispondente, e l'area di ogni triangolo è metà del prodotto di una base per la sua altezza corrispondente: [[K=ch/2]]." },
           { kind: "p", text: "L'altezza deve incontrare l'ipotenusa ad angolo retto; un segmento obliquo che non è perpendicolare dà un'altezza sbagliata e un'area sbagliata. Inserisci entrambe le misure in unità di lunghezza compatibili, e il calcolatore restituisce l'area nelle corrispondenti unità quadrate, mostrando ogni passaggio di sostituzione." }
         ]
@@ -437,7 +437,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-formula": {
         h2: "La formula dell'area del triangolo rettangolo dall'altezza",
         blocks: [
-          { kind: "p", text: "La formula dell'area dall'altezza è [[[\\boxed{K=\\frac{ch}{2}}]]]. Qui [[K]] è l'area, [[c]] è l'ipotenusa che funge da base, e [[h]] è l'altezza perpendicolare all'ipotenusa. Tre simboli, una moltiplicazione, un dimezzamento." },
+          { kind: "p", text: "La formula dell'area dall'altezza è [[[\\boxed{K=\\frac{ch}{2}}]]] Qui [[K]] è l'area, [[c]] è l'ipotenusa che funge da base, e [[h]] è l'altezza perpendicolare all'ipotenusa. Tre simboli, una moltiplicazione, un dimezzamento." },
           { kind: "h3", text: "Perché moltiplichiamo ipotenusa e altezza?" },
           { kind: "p", text: "La formula generale dell'area di un triangolo è [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], e base e altezza devono essere perpendicolari tra loro. Scegliere l'ipotenusa come base costringe l'altezza a essere la distanza perpendicolare a essa, che è esattamente l'altezza: [[\\text{base}=c]] e [[\\text{height}=h]], quindi [[K=ch/2]]. Questo vale comunque il triangolo sia ruotato o disegnato: la perpendicolarità è una relazione geometrica, non una direzione sullo schermo, quindi un'ipotenusa obliqua funziona come base tanto bene quanto una orizzontale." },
           { kind: "h3", text: "Perché il risultato si divide per due?" },
@@ -460,7 +460,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           "<strong>Scrivi la formula.</strong> [[K=ch/2]].",
           "<strong>Sostituisci le misure.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Moltiplica.</strong> [[10\\times4.8=48]], quindi [[K=48/2]].",
-          "<strong>Dividi per due.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Dividi per due.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Interpreta la risposta.</strong> Il triangolo racchiude 24 metri quadrati di area piana.",
           "<strong>Verifica la fattibilità.</strong> Un triangolo rettangolo valido richiede [[h\\leq c/2]]; qui [[4.8\\leq5]], quindi le misure possono descrivere un vero triangolo rettangolo.",
           "<strong>Verifica usando i cateti.</strong> Un triangolo 6-8-10 ha la stessa ipotenusa e altezza, e [[K=(6\\times8)/2=24]]. Entrambe le vie concordano."
@@ -496,13 +496,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
         blocks: [
           { kind: "p", text: "Quattro esempi svolti costruiscono il metodo a partire da triangoli familiari. Ciascuno calcola l'altezza dai cateti dove serve, applica [[K=ch/2]] e controlla con la formula dei cateti." },
           { kind: "h3", text: "Esempio 1: un triangolo rettangolo 3-4-5" },
-          { kind: "p", text: "Dati [[a=3]], [[b=4]], [[c=5]]. L'altezza è [[h=ab/c]], quindi [[h=(3\\times4)/5=2.4]]. L'area è [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Verificando con i cateti, [[K=(3\\times4)/2=6]]. Entrambe le formule descrivono lo stesso triangolo, quindi devono concordare, e concordano." },
+          { kind: "p", text: "Dati [[a=3]], [[b=4]], [[c=5]]. L'altezza è [[h=ab/c]], quindi [[h=(3\\times4)/5=2.4]]. L'area è [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Verificando con i cateti, [[K=(3\\times4)/2=6]]. Entrambe le formule descrivono lo stesso triangolo, quindi devono concordare, e concordano." },
           { kind: "h3", text: "Esempio 2: un triangolo rettangolo 5-12-13" },
-          { kind: "p", text: "Dati [[a=5]], [[b=12]], [[c=13]]. L'altezza è [[h=(5\\times12)/13=60/13\\approx4.61538]]. Mantenendo la frazione esatta, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Mantenere [[60/13]] invece di un decimale arrotondato evita un errore di arrotondamento precoce: il 13 si semplifica esattamente, lasciando un pulito 30." },
+          { kind: "p", text: "Dati [[a=5]], [[b=12]], [[c=13]]. L'altezza è [[h=(5\\times12)/13=60/13\\approx4.61538]]. Mantenendo la frazione esatta, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Mantenere [[60/13]] invece di un decimale arrotondato evita un errore di arrotondamento precoce: il 13 si semplifica esattamente, lasciando un pulito 30." },
           { kind: "h3", text: "Esempio 3: un triangolo rettangolo 6-8-10" },
-          { kind: "p", text: "Dati [[c=10]] e [[h=4.8]] direttamente. Allora [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Con cateti 6 e 8, [[K=(6\\times8)/2=24]], che conferma la via dell'altezza." },
+          { kind: "p", text: "Dati [[c=10]] e [[h=4.8]] direttamente. Allora [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Con cateti 6 e 8, [[K=(6\\times8)/2=24]], che conferma la via dell'altezza." },
           { kind: "h3", text: "Esempio 4: un triangolo rettangolo isoscele" },
-          { kind: "p", text: "Dati [[c=10]] e [[h=5]]. Allora [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Questa è l'area più grande che un triangolo rettangolo con ipotenusa 10 possa avere. L'altezza è uguale a metà dell'ipotenusa solo quando i cateti sono uguali, rendendo ciascun angolo acuto di [[45^\\circ]], e nessun triangolo rettangolo valido con questa ipotenusa può superare 25 unità quadrate." }
+          { kind: "p", text: "Dati [[c=10]] e [[h=5]]. Allora [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Questa è l'area più grande che un triangolo rettangolo con ipotenusa 10 possa avere. L'altezza è uguale a metà dell'ipotenusa solo quando i cateti sono uguali, rendendo ciascun angolo acuto di [[45^\\circ]], e nessun triangolo rettangolo valido con questa ipotenusa può superare 25 unità quadrate." }
         ]
       },
       "sec-applications": {
@@ -510,29 +510,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
         blocks: [
           { kind: "p", text: "Dodici situazioni svolte mostrano la formula a scale diverse e in unità diverse. Ciascuna nomina il triangolo nella scena, le due misure, la sostituzione, l'area e l'assunzione dietro il modello." },
           { kind: "h3", text: "Esempio 1: sezione triangolare di giardino" },
-          { kind: "p", text: "Una sezione di giardino a triangolo rettangolo ha un confine più lungo di 10 m, e la distanza perpendicolare dal vertice dell'angolo retto a quel confine è di 4,8 m. Quindi [[c=10\\text{ m}]] e [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. La sezione occupa 24 metri quadrati. Questo assume che il confine sia rettilineo e che l'angolo sia un vero angolo retto." },
+          { kind: "p", text: "Una sezione di giardino a triangolo rettangolo ha un confine più lungo di 10 m, e la distanza perpendicolare dal vertice dell'angolo retto a quel confine è di 4,8 m. Quindi [[c=10\\text{ m}]] e [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] La sezione occupa 24 metri quadrati. Questo assume che il confine sia rettilineo e che l'angolo sia un vero angolo retto." },
           { kind: "h3", text: "Esempio 2: pannello triangolare di compensato" },
-          { kind: "p", text: "Un pannello di compensato a triangolo rettangolo ha un'ipotenusa di 1 m e un'altezza perpendicolare di 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. È la superficie piana di una faccia, utile per stime di copertura. Scarti di taglio e margini di materiale sono considerazioni separate." },
+          { kind: "p", text: "Un pannello di compensato a triangolo rettangolo ha un'ipotenusa di 1 m e un'altezza perpendicolare di 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] È la superficie piana di una faccia, utile per stime di copertura. Scarti di taglio e margini di materiale sono considerazioni separate." },
           { kind: "h3", text: "Esempio 3: finestra di vetro a triangolo rettangolo" },
-          { kind: "p", text: "Un pannello di vetro a triangolo rettangolo ha un'ipotenusa di 1,3 m e un'altezza di 0,6 m perpendicolare a quel lato: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. È l'area geometrica del vetro prima che si considerino copertura del telaio o margini di installazione." },
+          { kind: "p", text: "Un pannello di vetro a triangolo rettangolo ha un'ipotenusa di 1,3 m e un'altezza di 0,6 m perpendicolare a quel lato: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] È l'area geometrica del vetro prima che si considerino copertura del telaio o margini di installazione." },
           { kind: "h3", text: "Esempio 4: rilievo di una sezione triangolare" },
-          { kind: "p", text: "Un disegno di rilievo contiene un triangolo rettangolo con ipotenusa 13 m e altezza [[60/13]] m. Mantenendo la frazione: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Il disegno rappresenta una sezione di 30 metri quadrati. Il lavoro sul campo vero e proprio può comunque richiedere correzioni strumentali oltre il progetto." },
+          { kind: "p", text: "Un disegno di rilievo contiene un triangolo rettangolo con ipotenusa 13 m e altezza [[60/13]] m. Mantenendo la frazione: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Il disegno rappresenta una sezione di 30 metri quadrati. Il lavoro sul campo vero e proprio può comunque richiedere correzioni strumentali oltre il progetto." },
           { kind: "h3", text: "Esempio 5: misura di una piastrella triangolare" },
-          { kind: "p", text: "Una piastrella a triangolo rettangolo ha un'ipotenusa di 25 cm e un'altezza perpendicolare di 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Una piastrella copre 84 centimetri quadrati, il che aiuta a stimare quante piastrelle servono per una superficie. Fughe e perdite di taglio si contano separatamente." },
+          { kind: "p", text: "Una piastrella a triangolo rettangolo ha un'ipotenusa di 25 cm e un'altezza perpendicolare di 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Una piastrella copre 84 centimetri quadrati, il che aiuta a stimare quante piastrelle servono per una superficie. Fughe e perdite di taglio si contano separatamente." },
           { kind: "h3", text: "Esempio 6: pannello di supporto in acciaio" },
-          { kind: "p", text: "Un pannello di supporto piatto a triangolo rettangolo ha un'ipotenusa di 1,7 m con cateti di 0,8 m e 1,5 m. La sua altezza è [[h=(0.8\\times1.5)/1.7=12/17]] m. Allora [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. È l'area geometrica del pannello, non la sua capacità portante." },
+          { kind: "p", text: "Un pannello di supporto piatto a triangolo rettangolo ha un'ipotenusa di 1,7 m con cateti di 0,8 m e 1,5 m. La sua altezza è [[h=(0.8\\times1.5)/1.7=12/17]] m. Allora [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] È l'area geometrica del pannello, non la sua capacità portante." },
           { kind: "h3", text: "Esempio 7: pannello laterale triangolare di rampa" },
-          { kind: "p", text: "Un pannello laterale di rampa semplificato forma un triangolo rettangolo con un'ipotenusa di 5 m e un'altezza perpendicolare di 2,4 m a quell'ipotenusa: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. È l'area piana della sezione laterale triangolare, non la superficie inclinata della rampa, e il calcolo non stabilisce la conformità di accessibilità." },
+          { kind: "p", text: "Un pannello laterale di rampa semplificato forma un triangolo rettangolo con un'ipotenusa di 5 m e un'altezza perpendicolare di 2,4 m a quell'ipotenusa: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] È l'area piana della sezione laterale triangolare, non la superficie inclinata della rampa, e il calcolo non stabilisce la conformità di accessibilità." },
           { kind: "h3", text: "Esempio 8: sezione di timpano del tetto" },
-          { kind: "p", text: "Una sezione di timpano del tetto a triangolo rettangolo ha un'ipotenusa di 6,5 m e un'altezza perpendicolare di [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Il risultato descrive il piano triangolare dato dalle misure. La superficie totale di un tetto reale è un problema di misura tridimensionale separato." },
+          { kind: "p", text: "Una sezione di timpano del tetto a triangolo rettangolo ha un'ipotenusa di 6,5 m e un'altezza perpendicolare di [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Il risultato descrive il piano triangolare dato dalle misure. La superficie totale di un tetto reale è un problema di misura tridimensionale separato." },
           { kind: "h3", text: "Esempio 9: appezzamento di terreno a triangolo rettangolo" },
-          { kind: "p", text: "Una sezione di terreno a triangolo rettangolo ha un'ipotenusa di 50 m e un'altezza perpendicolare di 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. I confini misurati racchiudono 600 metri quadrati. Un dato di area ufficiale può comunque richiedere una verifica di rilievo." },
+          { kind: "p", text: "Una sezione di terreno a triangolo rettangolo ha un'ipotenusa di 50 m e un'altezza perpendicolare di 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] I confini misurati racchiudono 600 metri quadrati. Un dato di area ufficiale può comunque richiedere una verifica di rilievo." },
           { kind: "h3", text: "Esempio 10: grande appezzamento di rilievo triangolare" },
-          { kind: "p", text: "Una sezione rilevata a triangolo rettangolo ha un'ipotenusa di 100 m e un'altezza perpendicolare di 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. È l'area piana della sezione triangolare. Rappresenta l'intera proprietà solo quando la proprietà consiste unicamente di quel triangolo." },
+          { kind: "p", text: "Una sezione rilevata a triangolo rettangolo ha un'ipotenusa di 100 m e un'altezza perpendicolare di 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] È l'area piana della sezione triangolare. Rappresenta l'intera proprietà solo quando la proprietà consiste unicamente di quel triangolo." },
           { kind: "h3", text: "Esempio 11: sezione triangolare di vela" },
-          { kind: "p", text: "Un progetto di vela piatto a triangolo rettangolo ha un'ipotenusa di 15 ft e un'altezza perpendicolare di 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. È l'area piana della vela idealizzata. Tessuto curvo, cuciture e margini di bordo richiedono una considerazione separata." },
+          { kind: "p", text: "Un progetto di vela piatto a triangolo rettangolo ha un'ipotenusa di 15 ft e un'altezza perpendicolare di 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] È l'area piana della vela idealizzata. Tessuto curvo, cuciture e margini di bordo richiedono una considerazione separata." },
           { kind: "h3", text: "Esempio 12: piccola staffa meccanica" },
-          { kind: "p", text: "Una staffa piatta a triangolo rettangolo ha un'ipotenusa di 250 mm e un'altezza perpendicolare di 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. La risposta è in millimetri quadrati perché gli input sono in millimetri. Poiché [[1\\text{ cm}^2=100\\text{ mm}^2]], questo equivale a [[[\\boxed{150\\text{ cm}^2}]]]. Convertire l'unità lineare e convertire l'unità quadrata sono operazioni diverse, come spiega la sezione sulle unità." },
+          { kind: "p", text: "Una staffa piatta a triangolo rettangolo ha un'ipotenusa di 250 mm e un'altezza perpendicolare di 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] La risposta è in millimetri quadrati perché gli input sono in millimetri. Poiché [[1\\text{ cm}^2=100\\text{ mm}^2]], questo equivale a [[[\\boxed{150\\text{ cm}^2}]]] Convertire l'unità lineare e convertire l'unità quadrata sono operazioni diverse, come spiega la sezione sulle unità." },
           { kind: "h3", text: "Confronto degli esempi pratici" }
         ],
         table: {
@@ -558,7 +558,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-equal": {
         h2: "Perché entrambe le formule dell'area del triangolo rettangolo danno la stessa risposta",
         blocks: [
-          { kind: "p", text: "Un triangolo rettangolo può essere misurato attraverso i suoi due cateti perpendicolari o attraverso la sua ipotenusa e altezza. La formula dei cateti è [[K=ab/2]] e la formula dell'altezza è [[K=ch/2]]. Poiché entrambe descrivono l'area dello stesso triangolo, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Moltiplica entrambi i lati per due: [[ab=ch]]. Risolvi per [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. L'altezza è il prodotto dei cateti diviso per l'ipotenusa, ed è per questo che le due formule non possono mai discordare su un triangolo coerente." },
+          { kind: "p", text: "Un triangolo rettangolo può essere misurato attraverso i suoi due cateti perpendicolari o attraverso la sua ipotenusa e altezza. La formula dei cateti è [[K=ab/2]] e la formula dell'altezza è [[K=ch/2]]. Poiché entrambe descrivono l'area dello stesso triangolo, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Moltiplica entrambi i lati per due: [[ab=ch]]. Risolvi per [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] L'altezza è il prodotto dei cateti diviso per l'ipotenusa, ed è per questo che le due formule non possono mai discordare su un triangolo coerente." },
           { kind: "p", text: "Verifica numerica: per [[a=6]], [[b=8]], [[c=10]], l'altezza è [[h=(6\\times8)/10=4.8]]. Dai cateti: [[K=(6\\times8)/2=24]]. Dall'altezza: [[K=(10\\times4.8)/2=24]]. Lo stesso triangolo, la stessa area, due vie." },
           { kind: "p", text: "Quando sono noti solo ipotenusa e altezza, l'area è già fissata: non serve ricostruire prima i cateti. Le lunghezze dei cateti possono comunque essere recuperate da [[c]] e [[h]] validi attraverso le relazioni dei segmenti qui sotto, ma è un calcolo separato dal trovare l'area. Quando invece i dati noti sono i cateti, il <a href=\"/right-triangle-area-from-legs-calculator/\">calcolatore dell'area del triangolo rettangolo dai cateti</a> li prende direttamente." }
         ]
@@ -570,7 +570,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           { kind: "h3", text: "Due triangoli rettangoli più piccoli simili" },
           { kind: "p", text: "L'altezza divide il triangolo originale in due triangoli rettangoli più piccoli, ciascuno dei quali condivide un angolo acuto con l'originale e ciascuno contenente un angolo retto. Condividere due misure angolari rende tutti e tre i triangoli simili. La similitudine è ciò che forza le pulite relazioni proporzionali tra altezza, segmenti e cateti." },
           { kind: "h3", text: "Il teorema del medio geometrico dell'altezza" },
-          { kind: "p", text: "La similitudine dà [[[\\boxed{h^2=pq}]]], o equivalentemente [[[\\boxed{h=\\sqrt{pq}}]]]. L'altezza è il medio geometrico dei due segmenti di ipotenusa: il suo quadrato è uguale al loro prodotto. Esempio svolto: con [[p=6.4]] e [[q=3.6]], [[c=p+q=10]], e [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. L'area segue: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Il teorema dei segmenti verifica un'altezza misurata o calcolata in altro modo." },
+          { kind: "p", text: "La similitudine dà [[[\\boxed{h^2=pq}]]], o equivalentemente [[[\\boxed{h=\\sqrt{pq}}]]] L'altezza è il medio geometrico dei due segmenti di ipotenusa: il suo quadrato è uguale al loro prodotto. Esempio svolto: con [[p=6.4]] e [[q=3.6]], [[c=p+q=10]], e [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] L'area segue: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Il teorema dei segmenti verifica un'altezza misurata o calcolata in altro modo." },
           { kind: "h3", text: "Relazione tra i segmenti e i cateti" },
           { kind: "p", text: "La stessa similitudine dà [[b^2=cp]] e [[a^2=cq]]. Con [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] e [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Il triangolo 6-8-10 originale viene recuperato esattamente, il che mostra quanto strettamente segmenti, altezza e cateti siano legati insieme." }
         ]
@@ -578,11 +578,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
       "sec-max": {
         h2: "Quanto può essere grande l'altezza di un triangolo rettangolo?",
         blocks: [
-          { kind: "p", text: "Non ogni coppia di numeri positivi può essere ipotenusa e altezza. Per un triangolo rettangolo valido e non degenere, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. L'altezza deve essere positiva e non può mai superare metà dell'ipotenusa." },
+          { kind: "p", text: "Non ogni coppia di numeri positivi può essere ipotenusa e altezza. Per un triangolo rettangolo valido e non degenere, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] L'altezza deve essere positiva e non può mai superare metà dell'ipotenusa." },
           { kind: "h3", text: "Perché l'altezza non può superare metà dell'ipotenusa" },
           { kind: "p", text: "Da [[h^2=pq]] con [[p+q=c]], il prodotto [[pq]] è massimo quando i due segmenti sono uguali, [[p=q=c/2]]. Quindi [[h^2\\leq c^2/4]], e per lunghezze positive [[h\\leq c/2]]. In parole povere: l'altezza è più alta quando divide l'ipotenusa in due metà uguali, e anche allora raggiunge solo metà dell'ipotenusa." },
           { kind: "h3", text: "Area massima per un'ipotenusa fissa" },
-          { kind: "p", text: "Poiché [[K=ch/2]] e [[h\\leq c/2]], l'area più grande possibile è [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Questo massimo appartiene al triangolo rettangolo isoscele, dove i due cateti sono uguali. Con [[c=10]], l'altezza valida più alta è [[h_{\\max}=5]], dando [[K_{\\max}=(10\\times5)/2=25]]. Un'altezza di 6 con un'ipotenusa di 10 è impossibile per un triangolo rettangolo." },
+          { kind: "p", text: "Poiché [[K=ch/2]] e [[h\\leq c/2]], l'area più grande possibile è [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Questo massimo appartiene al triangolo rettangolo isoscele, dove i due cateti sono uguali. Con [[c=10]], l'altezza valida più alta è [[h_{\\max}=5]], dando [[K_{\\max}=(10\\times5)/2=25]]. Un'altezza di 6 con un'ipotenusa di 10 è impossibile per un triangolo rettangolo." },
           { kind: "h3", text: "Cosa succede se l'altezza è troppo grande?" },
           { kind: "p", text: "Prendi [[c=10]] e [[h=6]]: [[6>5]], quindi nessun triangolo rettangolo ha queste misure. Il calcolo [[(10\\times6)/2=30]] è un'area valida per qualche triangolo in un contesto più generale, ma non rende [[c=10]], [[h=6]] un input valido di triangolo rettangolo. Questa pagina non afferma che il calcolatore rifiuti automaticamente tali input; la verifica spetta a te." },
           { kind: "h3", text: "L'altezza può essere uguale a metà dell'ipotenusa?" },
@@ -596,11 +596,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
         blocks: [
           { kind: "p", text: "Questo calcolatore prende [[h]] come input, quindi un'altezza sconosciuta va prima trovata o misurata. Tre vie standard coprono i casi comuni. Quando i lati sono noti e l'altezza è il pezzo mancante, il <a href=\"/right-triangle-altitude-from-sides-calculator/\">calcolatore dell'altezza del triangolo rettangolo dai lati</a> la calcola direttamente." },
           { kind: "h3", text: "Metodo 1: usando entrambi i cateti e l'ipotenusa" },
-          { kind: "p", text: "[[[\\boxed{h=\\frac{ab}{c}}]]]. Con [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { kind: "p", text: "[[[\\boxed{h=\\frac{ab}{c}}]]] Con [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { kind: "h3", text: "Metodo 2: usando i segmenti di ipotenusa" },
-          { kind: "p", text: "[[[\\boxed{h=\\sqrt{pq}}]]]. Con [[p=6.4]] e [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { kind: "p", text: "[[[\\boxed{h=\\sqrt{pq}}]]] Con [[p=6.4]] e [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { kind: "h3", text: "Metodo 3: usando area nota e ipotenusa" },
-          { kind: "p", text: "Riordinando [[K=ch/2]] si ottiene [[[\\boxed{h=\\frac{2K}{c}}]]]. Con [[K=24]] e [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { kind: "p", text: "Riordinando [[K=ch/2]] si ottiene [[[\\boxed{h=\\frac{2K}{c}}]]] Con [[K=24]] e [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { kind: "p", text: "Questi sono riordinamenti matematici, non modalità extra del calcolatore: il calcolatore dell'area dall'altezza in sé si aspetta comunque l'altezza come input." }
         ]
       },
@@ -611,9 +611,9 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           { kind: "h3", text: "Metri quadrati" },
           { kind: "p", text: "Con [[c=10\\text{ m}]] e [[h=4.8\\text{ m}]], [[K=24\\text{ m}^2]]. Leggilo come 24 metri quadrati di superficie." },
           { kind: "h3", text: "Centimetri quadrati" },
-          { kind: "p", text: "Con [[c=25\\text{ cm}]] e [[h=6.72\\text{ cm}]], [[K=84\\text{ cm}^2]]]." },
+          { kind: "p", text: "Con [[c=25\\text{ cm}]] e [[h=6.72\\text{ cm}]], [[K=84\\text{ cm}^2]]]" },
           { kind: "h3", text: "Millimetri quadrati" },
-          { kind: "p", text: "Con [[c=250\\text{ mm}]] e [[h=120\\text{ mm}]], [[K=15000\\text{ mm}^2]]]." },
+          { kind: "p", text: "Con [[c=250\\text{ mm}]] e [[h=120\\text{ mm}]], [[K=15000\\text{ mm}^2]]]" },
           { kind: "h3", text: "Conversione delle unità di area" },
           { kind: "p", text: "[[1\\text{ m}^2=10000\\text{ cm}^2]] e [[1\\text{ cm}^2=100\\text{ mm}^2]]. Una conversione lineare moltiplica per 10, 100 o 1000, ma una conversione di area eleva quel fattore al quadrato: 100 cm in un metro diventano [[100^2=10000]] centimetri quadrati in un metro quadrato. Convertire la lunghezza e convertire l'area sono operazioni diverse." },
           { kind: "h3", text: "E se gli input usano unità diverse?" },
@@ -661,7 +661,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH1C = {
           { kind: "h3", text: "18. Trattare l'area geometrica come materiale esatto da acquistare" },
           { kind: "p", text: "La formula dà l'area geometrica ideale. I progetti reali hanno bisogno di scarti, sovrapposizioni e margini di taglio in più. Rimedi: aggiungi un margine di progetto dopo che la geometria è fatta." },
           { kind: "h3", text: "Sbagliato contro giusto: un esempio concreto" },
-          { kind: "p", text: "Dati [[c=10]] e [[h=4.8]], il calcolo errato salta il dimezzamento: [[K=10\\times4.8=48]]. È l'area del parallelogramma corrispondente. Il calcolo corretto è [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Una seconda illustrazione: sostituire il cateto 8 all'altezza dà [[(10\\times8)/2=40]], sbagliato perché 8 non è perpendicolare all'ipotenusa. L'altezza, e solo l'altezza, si abbina a [[c]]." }
+          { kind: "p", text: "Dati [[c=10]] e [[h=4.8]], il calcolo errato salta il dimezzamento: [[K=10\\times4.8=48]]. È l'area del parallelogramma corrispondente. Il calcolo corretto è [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Una seconda illustrazione: sostituire il cateto 8 all'altezza dà [[(10\\times8)/2=40]], sbagliato perché 8 non è perpendicolare all'ipotenusa. L'altezza, e solo l'altezza, si abbina a [[c]]." }
         ]
       },
       "sec-verify": {

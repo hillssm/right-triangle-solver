@@ -26,7 +26,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-intro": {
         "h2": "Cara Menghitung Luas Segitiga Siku-Siku dari Tinggi",
         "blocks": [
-          { "kind": "p", "text": "Misalkan sebuah segitiga siku-siku memiliki sisi miring 10 m, dan jarak tegak lurus dari sudut siku-siku ke sisi miring itu berukuran 4,8 m. Luasnya langsung diperoleh: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Segitiga itu menutupi 24 meter persegi permukaan datar." },
+          { "kind": "p", "text": "Misalkan sebuah segitiga siku-siku memiliki sisi miring 10 m, dan jarak tegak lurus dari sudut siku-siku ke sisi miring itu berukuran 4,8 m. Luasnya langsung diperoleh: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Segitiga itu menutupi 24 meter persegi permukaan datar." },
           { "kind": "p", "text": "Kalkulator ini ada tepat untuk situasi tersebut. Ketika Anda mengetahui sisi terpanjang segitiga siku-siku, yaitu sisi miring [[c]], dan tinggi tegak lurus dari titik sudut siku-siku ke sisi itu, [[h]], kedua sisi siku-siku tidak diperlukan. Sisi miring berfungsi sebagai alas, tinggi berfungsi sebagai tinggi tegak lurus yang bersesuaian, dan luas setiap segitiga adalah setengah hasil kali alas dan tinggi yang bersesuaian: [[K=ch/2]]." },
           { "kind": "p", "text": "Tinggi harus bertemu sisi miring pada sudut siku-siku; ruas garis miring yang tidak tegak lurus menghasilkan tinggi yang salah dan luas yang salah. Masukkan kedua ukuran dalam satuan panjang yang sama, dan kalkulator mengembalikan luas dalam satuan persegi yang bersesuaian, lengkap dengan setiap langkah substitusi yang ditampilkan." }
         ]
@@ -52,7 +52,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-formula": {
         "h2": "Rumus Luas Segitiga Siku-Siku dari Tinggi",
         "blocks": [
-          { "kind": "p", "text": "Rumus luas dari tinggi adalah [[[\\boxed{K=\\frac{ch}{2}}]]]. Di sini [[K]] adalah luas, [[c]] adalah sisi miring yang berfungsi sebagai alas, dan [[h]] adalah tinggi tegak lurus ke sisi miring. Tiga simbol, satu perkalian, satu pembagian dua." },
+          { "kind": "p", "text": "Rumus luas dari tinggi adalah [[[\\boxed{K=\\frac{ch}{2}}]]] Di sini [[K]] adalah luas, [[c]] adalah sisi miring yang berfungsi sebagai alas, dan [[h]] adalah tinggi tegak lurus ke sisi miring. Tiga simbol, satu perkalian, satu pembagian dua." },
           { "kind": "h3", "text": "Mengapa Kita Mengalikan Sisi Miring dengan Tinggi?" },
           { "kind": "p", "text": "Rumus umum luas segitiga adalah [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], dan alas serta tinggi harus saling tegak lurus. Memilih sisi miring sebagai alas memaksa tinggi menjadi jarak tegak lurus ke sisi itu, yang tepat adalah tinggi: [[\\text{base}=c]] dan [[\\text{height}=h]], sehingga [[K=ch/2]]. Ini berlaku bagaimanapun segitiga diputar atau digambar: ketegaklurusan adalah hubungan geometris, bukan arah layar, sehingga sisi miring yang miring berfungsi sebagai alas sama baiknya dengan yang horizontal." },
           { "kind": "h3", "text": "Mengapa Hasilnya Dibagi Dua?" },
@@ -75,7 +75,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
           "<strong>Tulis rumusnya.</strong> [[K=ch/2]].",
           "<strong>Substitusikan ukurannya.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Kalikan.</strong> [[10\\times4.8=48]], sehingga [[K=48/2]].",
-          "<strong>Bagi dua.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Bagi dua.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Tafsirkan jawabannya.</strong> Segitiga itu menutupi 24 meter persegi luas datar.",
           "<strong>Periksa kelayakannya.</strong> Segitiga siku-siku yang valid memerlukan [[h\\leq c/2]]; di sini [[4.8\\leq5]], sehingga ukuran-ukuran itu dapat menggambarkan segitiga siku-siku nyata.",
           "<strong>Verifikasi menggunakan sisi siku-siku.</strong> Segitiga 6-8-10 memiliki sisi miring dan tinggi yang sama, dan [[K=(6\\times8)/2=24]]. Kedua rute sepakat."
@@ -111,13 +111,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Empat contoh soal membangun metode ini dari segitiga-segitiga yang sudah dikenal ke atas. Masing-masing menghitung tinggi dari sisi siku-siku bila diperlukan, menerapkan [[K=ch/2]], dan memeriksa silang terhadap rumus sisi siku-siku." },
           { "kind": "h3", "text": "Contoh 1: Segitiga Siku-Siku 3-4-5" },
-          { "kind": "p", "text": "Diketahui [[a=3]], [[b=4]], [[c=5]]. Tingginya adalah [[h=ab/c]], sehingga [[h=(3\\times4)/5=2.4]]. Luasnya adalah [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Memeriksa dengan sisi siku-siku, [[K=(3\\times4)/2=6]]. Kedua rumus menggambarkan segitiga yang sama, sehingga keduanya harus sepakat, dan memang sepakat." },
+          { "kind": "p", "text": "Diketahui [[a=3]], [[b=4]], [[c=5]]. Tingginya adalah [[h=ab/c]], sehingga [[h=(3\\times4)/5=2.4]]. Luasnya adalah [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Memeriksa dengan sisi siku-siku, [[K=(3\\times4)/2=6]]. Kedua rumus menggambarkan segitiga yang sama, sehingga keduanya harus sepakat, dan memang sepakat." },
           { "kind": "h3", "text": "Contoh 2: Segitiga Siku-Siku 5-12-13" },
-          { "kind": "p", "text": "Diketahui [[a=5]], [[b=12]], [[c=13]]. Tingginya adalah [[h=(5\\times12)/13=60/13\\approx4.61538]]. Dengan mempertahankan pecahan eksak, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Mempertahankan [[60/13]] alih-alih desimal yang dibulatkan menghindari kesalahan pembulatan dini: angka 13 saling meniadakan secara eksak, menyisakan 30 yang bersih." },
+          { "kind": "p", "text": "Diketahui [[a=5]], [[b=12]], [[c=13]]. Tingginya adalah [[h=(5\\times12)/13=60/13\\approx4.61538]]. Dengan mempertahankan pecahan eksak, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Mempertahankan [[60/13]] alih-alih desimal yang dibulatkan menghindari kesalahan pembulatan dini: angka 13 saling meniadakan secara eksak, menyisakan 30 yang bersih." },
           { "kind": "h3", "text": "Contoh 3: Segitiga Siku-Siku 6-8-10" },
-          { "kind": "p", "text": "Diketahui [[c=10]] dan [[h=4.8]] secara langsung. Maka [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Dengan sisi siku-siku 6 dan 8, [[K=(6\\times8)/2=24]], yang mengonfirmasi rute tinggi." },
+          { "kind": "p", "text": "Diketahui [[c=10]] dan [[h=4.8]] secara langsung. Maka [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Dengan sisi siku-siku 6 dan 8, [[K=(6\\times8)/2=24]], yang mengonfirmasi rute tinggi." },
           { "kind": "h3", "text": "Contoh 4: Segitiga Siku-Siku Sama Kaki" },
-          { "kind": "p", "text": "Diketahui [[c=10]] dan [[h=5]]. Maka [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Ini adalah luas terbesar yang dapat dimiliki segitiga siku-siku dengan sisi miring 10. Tinggi sama dengan setengah sisi miring hanya ketika sisi siku-sikunya sama panjang, membuat setiap sudut lancip [[45^\\circ]], dan tidak ada segitiga siku-siku valid dengan sisi miring ini yang dapat melebihi 25 satuan persegi." }
+          { "kind": "p", "text": "Diketahui [[c=10]] dan [[h=5]]. Maka [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Ini adalah luas terbesar yang dapat dimiliki segitiga siku-siku dengan sisi miring 10. Tinggi sama dengan setengah sisi miring hanya ketika sisi siku-sikunya sama panjang, membuat setiap sudut lancip [[45^\\circ]], dan tidak ada segitiga siku-siku valid dengan sisi miring ini yang dapat melebihi 25 satuan persegi." }
         ]
       },
       "sec-applications": {
@@ -125,29 +125,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Dua belas situasi yang dikerjakan menunjukkan rumus ini pada skala dan satuan yang berbeda. Masing-masing menyebutkan segitiga dalam adegannya, kedua ukuran, substitusi, luas, dan asumsi di balik modelnya." },
           { "kind": "h3", "text": "Contoh 1: Bagian Taman Segitiga" },
-          { "kind": "p", "text": "Bagian taman berbentuk segitiga siku-siku memiliki batas terpanjang 10 m, dan jarak tegak lurus dari sudut siku-siku ke batas itu adalah 4,8 m. Jadi [[c=10\\text{ m}]] dan [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Bagian itu menempati 24 meter persegi. Ini mengasumsikan batasnya lurus dan sudutnya benar-benar siku-siku." },
+          { "kind": "p", "text": "Bagian taman berbentuk segitiga siku-siku memiliki batas terpanjang 10 m, dan jarak tegak lurus dari sudut siku-siku ke batas itu adalah 4,8 m. Jadi [[c=10\\text{ m}]] dan [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Bagian itu menempati 24 meter persegi. Ini mengasumsikan batasnya lurus dan sudutnya benar-benar siku-siku." },
           { "kind": "h3", "text": "Contoh 2: Panel Tripleks Segitiga" },
-          { "kind": "p", "text": "Panel tripleks berbentuk segitiga siku-siku memiliki sisi miring 1 m dan tinggi tegak lurus 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. Itu adalah permukaan datar satu sisi, berguna untuk estimasi cakupan. Sisa potongan dan kelonggaran bahan adalah pertimbangan terpisah." },
+          { "kind": "p", "text": "Panel tripleks berbentuk segitiga siku-siku memiliki sisi miring 1 m dan tinggi tegak lurus 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] Itu adalah permukaan datar satu sisi, berguna untuk estimasi cakupan. Sisa potongan dan kelonggaran bahan adalah pertimbangan terpisah." },
           { "kind": "h3", "text": "Contoh 3: Jendela Kaca Segitiga Siku-Siku" },
-          { "kind": "p", "text": "Panel kaca berbentuk segitiga siku-siku memiliki sisi miring 1,3 m dan tinggi 0,6 m yang tegak lurus terhadap sisi itu: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Ini adalah luas kaca geometris sebelum cakupan bingkai atau kelonggaran pemasangan diperhitungkan." },
+          { "kind": "p", "text": "Panel kaca berbentuk segitiga siku-siku memiliki sisi miring 1,3 m dan tinggi 0,6 m yang tegak lurus terhadap sisi itu: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Ini adalah luas kaca geometris sebelum cakupan bingkai atau kelonggaran pemasangan diperhitungkan." },
           { "kind": "h3", "text": "Contoh 4: Survei Bagian Segitiga" },
-          { "kind": "p", "text": "Gambar survei memuat segitiga siku-siku dengan sisi miring 13 m dan tinggi [[60/13]] m. Dengan mempertahankan pecahan: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Gambar itu mewakili bagian seluas 30 meter persegi. Pekerjaan lapangan aktual mungkin masih memerlukan koreksi instrumen di luar gambar." },
+          { "kind": "p", "text": "Gambar survei memuat segitiga siku-siku dengan sisi miring 13 m dan tinggi [[60/13]] m. Dengan mempertahankan pecahan: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Gambar itu mewakili bagian seluas 30 meter persegi. Pekerjaan lapangan aktual mungkin masih memerlukan koreksi instrumen di luar gambar." },
           { "kind": "h3", "text": "Contoh 5: Mengukur Ubin Segitiga" },
-          { "kind": "p", "text": "Ubin berbentuk segitiga siku-siku memiliki sisi miring 25 cm dan tinggi tegak lurus 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Satu ubin menutupi 84 sentimeter persegi, yang membantu memperkirakan berapa banyak ubin yang dibutuhkan sebuah permukaan. Celah nat dan susut potongan dihitung terpisah." },
+          { "kind": "p", "text": "Ubin berbentuk segitiga siku-siku memiliki sisi miring 25 cm dan tinggi tegak lurus 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Satu ubin menutupi 84 sentimeter persegi, yang membantu memperkirakan berapa banyak ubin yang dibutuhkan sebuah permukaan. Celah nat dan susut potongan dihitung terpisah." },
           { "kind": "h3", "text": "Contoh 6: Panel Penyangga Baja" },
-          { "kind": "p", "text": "Panel penyangga datar berbentuk segitiga siku-siku memiliki sisi miring 1,7 m dengan sisi siku-siku 0,8 m dan 1,5 m. Tingginya adalah [[h=(0.8\\times1.5)/1.7=12/17]] m. Maka [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. Itu adalah luas panel geometris, bukan kapasitas dukung bebannya." },
+          { "kind": "p", "text": "Panel penyangga datar berbentuk segitiga siku-siku memiliki sisi miring 1,7 m dengan sisi siku-siku 0,8 m dan 1,5 m. Tingginya adalah [[h=(0.8\\times1.5)/1.7=12/17]] m. Maka [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] Itu adalah luas panel geometris, bukan kapasitas dukung bebannya." },
           { "kind": "h3", "text": "Contoh 7: Panel Sisi Jalan Miring Segitiga" },
-          { "kind": "p", "text": "Panel sisi jalan miring yang disederhanakan membentuk segitiga siku-siku dengan sisi miring 5 m dan tinggi tegak lurus 2,4 m ke sisi miring itu: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Ini adalah luas datar bagian sisi segitiga, bukan permukaan jalan miringnya, dan perhitungan ini tidak menetapkan kepatuhan aksesibilitas." },
+          { "kind": "p", "text": "Panel sisi jalan miring yang disederhanakan membentuk segitiga siku-siku dengan sisi miring 5 m dan tinggi tegak lurus 2,4 m ke sisi miring itu: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Ini adalah luas datar bagian sisi segitiga, bukan permukaan jalan miringnya, dan perhitungan ini tidak menetapkan kepatuhan aksesibilitas." },
           { "kind": "h3", "text": "Contoh 8: Bagian Atap Pelana" },
-          { "kind": "p", "text": "Bagian atap pelana berbentuk segitiga siku-siku memiliki sisi miring 6,5 m dan tinggi tegak lurus [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. Hasilnya menggambarkan bidang segitiga yang diberikan oleh ukuran-ukurannya. Total luas permukaan atap nyata adalah soal pengukuran tiga dimensi yang terpisah." },
+          { "kind": "p", "text": "Bagian atap pelana berbentuk segitiga siku-siku memiliki sisi miring 6,5 m dan tinggi tegak lurus [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] Hasilnya menggambarkan bidang segitiga yang diberikan oleh ukuran-ukurannya. Total luas permukaan atap nyata adalah soal pengukuran tiga dimensi yang terpisah." },
           { "kind": "h3", "text": "Contoh 9: Petak Tanah Segitiga Siku-Siku" },
-          { "kind": "p", "text": "Bagian tanah berbentuk segitiga siku-siku memiliki sisi miring 50 m dan tinggi tegak lurus 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Batas-batas yang terukur menutupi 600 meter persegi. Angka luas resmi mungkin masih memerlukan verifikasi survei." },
+          { "kind": "p", "text": "Bagian tanah berbentuk segitiga siku-siku memiliki sisi miring 50 m dan tinggi tegak lurus 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Batas-batas yang terukur menutupi 600 meter persegi. Angka luas resmi mungkin masih memerlukan verifikasi survei." },
           { "kind": "h3", "text": "Contoh 10: Petak Survei Segitiga Besar" },
-          { "kind": "p", "text": "Bagian segitiga siku-siku hasil survei memiliki sisi miring 100 m dan tinggi tegak lurus 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Itu adalah luas planar bagian segitiga. Ia mewakili seluruh properti hanya jika properti itu semata-mata terdiri dari segitiga tersebut." },
+          { "kind": "p", "text": "Bagian segitiga siku-siku hasil survei memiliki sisi miring 100 m dan tinggi tegak lurus 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Itu adalah luas planar bagian segitiga. Ia mewakili seluruh properti hanya jika properti itu semata-mata terdiri dari segitiga tersebut." },
           { "kind": "h3", "text": "Contoh 11: Bagian Layar Segitiga" },
-          { "kind": "p", "text": "Desain layar datar berbentuk segitiga siku-siku memiliki sisi miring 15 ft dan tinggi tegak lurus 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Ini adalah luas planar layar yang diidealkan. Kain melengkung, jahitan, dan kelonggaran tepi memerlukan pertimbangan terpisah." },
+          { "kind": "p", "text": "Desain layar datar berbentuk segitiga siku-siku memiliki sisi miring 15 ft dan tinggi tegak lurus 7,2 ft: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Ini adalah luas planar layar yang diidealkan. Kain melengkung, jahitan, dan kelonggaran tepi memerlukan pertimbangan terpisah." },
           { "kind": "h3", "text": "Contoh 12: Braket Mekanis Kecil" },
-          { "kind": "p", "text": "Braket datar berbentuk segitiga siku-siku memiliki sisi miring 250 mm dan tinggi tegak lurus 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. Jawabannya dalam milimeter persegi karena masukannya dalam milimeter. Karena [[1\\text{ cm}^2=100\\text{ mm}^2]], ini sama dengan [[[\\boxed{150\\text{ cm}^2}]]]. Mengonversi satuan linear dan mengonversi satuan persegi adalah operasi yang berbeda, seperti yang dijelaskan bagian satuan." },
+          { "kind": "p", "text": "Braket datar berbentuk segitiga siku-siku memiliki sisi miring 250 mm dan tinggi tegak lurus 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] Jawabannya dalam milimeter persegi karena masukannya dalam milimeter. Karena [[1\\text{ cm}^2=100\\text{ mm}^2]], ini sama dengan [[[\\boxed{150\\text{ cm}^2}]]] Mengonversi satuan linear dan mengonversi satuan persegi adalah operasi yang berbeda, seperti yang dijelaskan bagian satuan." },
           { "kind": "h3", "text": "Perbandingan Contoh Praktis" }
         ],
         "table": {
@@ -173,7 +173,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-equal": {
         "h2": "Mengapa Kedua Rumus Luas Segitiga Siku-Siku Memberi Jawaban Sama",
         "blocks": [
-          { "kind": "p", "text": "Segitiga siku-siku dapat diukur melalui dua sisi siku-siku yang tegak lurus atau melalui sisi miring dan tingginya. Rumus sisi siku-siku adalah [[K=ab/2]] dan rumus tinggi adalah [[K=ch/2]]. Karena keduanya menggambarkan luas segitiga yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Kalikan kedua ruas dengan dua: [[ab=ch]]. Selesaikan untuk [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. Tinggi adalah hasil kali sisi siku-siku dibagi sisi miring, itulah sebabnya kedua rumus tidak pernah bisa berbeda pada segitiga yang konsisten." },
+          { "kind": "p", "text": "Segitiga siku-siku dapat diukur melalui dua sisi siku-siku yang tegak lurus atau melalui sisi miring dan tingginya. Rumus sisi siku-siku adalah [[K=ab/2]] dan rumus tinggi adalah [[K=ch/2]]. Karena keduanya menggambarkan luas segitiga yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Kalikan kedua ruas dengan dua: [[ab=ch]]. Selesaikan untuk [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] Tinggi adalah hasil kali sisi siku-siku dibagi sisi miring, itulah sebabnya kedua rumus tidak pernah bisa berbeda pada segitiga yang konsisten." },
           { "kind": "p", "text": "Verifikasi numerik: untuk [[a=6]], [[b=8]], [[c=10]], tingginya adalah [[h=(6\\times8)/10=4.8]]. Dengan sisi siku-siku: [[K=(6\\times8)/2=24]]. Dengan tinggi: [[K=(10\\times4.8)/2=24]]. Segitiga yang sama, luas yang sama, dua rute." },
           { "kind": "p", "text": "Ketika hanya sisi miring dan tinggi yang diketahui, luasnya sudah tetap: tidak perlu merekonstruksi sisi siku-siku terlebih dahulu. Panjang sisi siku-siku masih dapat dipulihkan dari [[c]] dan [[h]] yang valid melalui hubungan ruas di bawah, tetapi itu adalah perhitungan terpisah dari mencari luas. Ketika sisi siku-siku adalah data yang diketahui, <a href=\"/right-triangle-area-from-legs-calculator/\">Kalkulator Luas Segitiga Siku-Siku dari Sisi Siku-Siku</a> menerimanya secara langsung." }
         ]
@@ -185,7 +185,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
           { "kind": "h3", "text": "Dua Segitiga Siku-Siku Kecil yang Sebangun" },
           { "kind": "p", "text": "Tinggi membagi segitiga semula menjadi dua segitiga siku-siku yang lebih kecil, masing-masing berbagi satu sudut lancip dengan segitiga semula dan masing-masing memuat sudut siku-siku. Berbagi dua ukuran sudut membuat ketiga segitiga sebangun. Kesebangunan inilah yang memaksa hubungan proporsional yang bersih antara tinggi, ruas-ruas, dan sisi siku-siku." },
           { "kind": "h3", "text": "Teorema Rata-Rata Geometris Tinggi" },
-          { "kind": "p", "text": "Kesebangunan menghasilkan [[[\\boxed{h^2=pq}]]], atau setara [[[\\boxed{h=\\sqrt{pq}}]]]. Tinggi adalah rata-rata geometris dari dua ruas sisi miring: kuadratnya sama dengan hasil kali keduanya. Contoh soal: dengan [[p=6.4]] dan [[q=3.6]], [[c=p+q=10]], dan [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. Luasnya mengikuti: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Teorema ruas memverifikasi tinggi yang diukur atau dihitung dengan cara lain." },
+          { "kind": "p", "text": "Kesebangunan menghasilkan [[[\\boxed{h^2=pq}]]], atau setara [[[\\boxed{h=\\sqrt{pq}}]]] Tinggi adalah rata-rata geometris dari dua ruas sisi miring: kuadratnya sama dengan hasil kali keduanya. Contoh soal: dengan [[p=6.4]] dan [[q=3.6]], [[c=p+q=10]], dan [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] Luasnya mengikuti: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Teorema ruas memverifikasi tinggi yang diukur atau dihitung dengan cara lain." },
           { "kind": "h3", "text": "Hubungan Antara Ruas dan Sisi Siku-Siku" },
           { "kind": "p", "text": "Kesebangunan yang sama menghasilkan [[b^2=cp]] dan [[a^2=cq]]. Dengan [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] dan [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. Segitiga 6-8-10 semula dipulihkan secara eksak, yang menunjukkan betapa eratnya ruas-ruas, tinggi, dan sisi siku-siku terikat bersama." }
         ]
@@ -193,11 +193,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-max": {
         "h2": "Seberapa Besar Tinggi Segitiga Siku-Siku Bisa?",
         "blocks": [
-          { "kind": "p", "text": "Tidak setiap pasangan bilangan positif dapat menjadi sisi miring dan tinggi. Untuk segitiga siku-siku yang valid dan tidak degenerat, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. Tinggi harus positif dan tidak pernah dapat melebihi setengah sisi miring." },
+          { "kind": "p", "text": "Tidak setiap pasangan bilangan positif dapat menjadi sisi miring dan tinggi. Untuk segitiga siku-siku yang valid dan tidak degenerat, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] Tinggi harus positif dan tidak pernah dapat melebihi setengah sisi miring." },
           { "kind": "h3", "text": "Mengapa Tinggi Tidak Dapat Melebihi Setengah Sisi Miring" },
           { "kind": "p", "text": "Dari [[h^2=pq]] dengan [[p+q=c]], hasil kali [[pq]] terbesar ketika kedua ruas sama, [[p=q=c/2]]. Oleh karena itu [[h^2\\leq c^2/4]], dan untuk panjang positif [[h\\leq c/2]]. Dengan kata sederhana: tinggi paling tinggi ketika membagi sisi miring menjadi dua bagian sama, dan bahkan saat itu ia hanya mencapai setengah sisi miring." },
           { "kind": "h3", "text": "Luas Maksimum untuk Sisi Miring Tetap" },
-          { "kind": "p", "text": "Karena [[K=ch/2]] dan [[h\\leq c/2]], luas terbesar yang mungkin adalah [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Maksimum ini dimiliki segitiga siku-siku sama kaki, yang kedua sisi siku-sikunya sama. Dengan [[c=10]], tinggi valid tertinggi adalah [[h_{\\max}=5]], menghasilkan [[K_{\\max}=(10\\times5)/2=25]]. Tinggi 6 dengan sisi miring 10 mustahil untuk segitiga siku-siku." },
+          { "kind": "p", "text": "Karena [[K=ch/2]] dan [[h\\leq c/2]], luas terbesar yang mungkin adalah [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Maksimum ini dimiliki segitiga siku-siku sama kaki, yang kedua sisi siku-sikunya sama. Dengan [[c=10]], tinggi valid tertinggi adalah [[h_{\\max}=5]], menghasilkan [[K_{\\max}=(10\\times5)/2=25]]. Tinggi 6 dengan sisi miring 10 mustahil untuk segitiga siku-siku." },
           { "kind": "h3", "text": "Apa yang Terjadi Jika Tingginya Terlalu Besar?" },
           { "kind": "p", "text": "Ambil [[c=10]] dan [[h=6]]: [[6>5]], sehingga tidak ada segitiga siku-siku yang memiliki ukuran-ukuran ini. Aritmetika [[(10\\times6)/2=30]] adalah luas yang valid untuk suatu segitiga dalam konteks yang lebih umum, tetapi tidak menjadikan [[c=10]], [[h=6]] masukan segitiga siku-siku yang valid. Halaman ini tidak mengklaim kalkulator otomatis menolak masukan semacam itu; pemeriksaan itu tugas Anda untuk dijalankan." },
           { "kind": "h3", "text": "Bisakah Tinggi Sama dengan Setengah Sisi Miring?" },
@@ -211,11 +211,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "Kalkulator ini menerima [[h]] sebagai masukan, sehingga tinggi yang belum diketahui harus dicari atau diukur terlebih dahulu. Tiga rute standar mencakup kasus-kasus umum. Ketika sisi-sisinya diketahui dan tinggi adalah bagian yang hilang, <a href=\"/right-triangle-altitude-from-sides-calculator/\">Kalkulator Tinggi Segitiga Siku-Siku dari Sisi</a> menghitungnya secara langsung." },
           { "kind": "h3", "text": "Metode 1: Menggunakan Kedua Sisi Siku-Siku dan Sisi Miring" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. Dengan [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] Dengan [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "Metode 2: Menggunakan Ruas-Ruas Sisi Miring" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. Dengan [[p=6.4]] dan [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] Dengan [[p=6.4]] dan [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "Metode 3: Menggunakan Luas dan Sisi Miring yang Diketahui" },
-          { "kind": "p", "text": "Menyusun ulang [[K=ch/2]] menghasilkan [[[\\boxed{h=\\frac{2K}{c}}]]]. Dengan [[K=24]] dan [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { "kind": "p", "text": "Menyusun ulang [[K=ch/2]] menghasilkan [[[\\boxed{h=\\frac{2K}{c}}]]] Dengan [[K=24]] dan [[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { "kind": "p", "text": "Ini adalah penyusunan ulang matematis, bukan mode kalkulator tambahan: kalkulator luas-dari-tinggi itu sendiri tetap mengharapkan tinggi sebagai masukan." }
         ]
       },
@@ -276,7 +276,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
           { "kind": "h3", "text": "18. Memperlakukan Luas Geometris sebagai Bahan Tepat untuk Dibeli" },
           { "kind": "p", "text": "Rumus memberikan luas geometris ideal. Proyek nyata memerlukan sisa, tumpang tindih, dan kelonggaran potongan di atasnya. Perbaikan: tambahkan margin proyek setelah geometrinya selesai." },
           { "kind": "h3", "text": "Salah vs. Benar: Contoh Konkret" },
-          { "kind": "p", "text": "Diketahui [[c=10]] dan [[h=4.8]], perhitungan yang salah melewatkan pembagian dua: [[K=10\\times4.8=48]]. Itu adalah luas jajar genjang yang bersesuaian. Perhitungan yang benar adalah [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Ilustrasi kedua: mensubstitusikan sisi siku-siku 8 untuk tinggi menghasilkan [[(10\\times8)/2=40]], salah karena 8 tidak tegak lurus terhadap sisi miring. Tinggi, dan hanya tinggi, yang berpasangan dengan [[c]]." }
+          { "kind": "p", "text": "Diketahui [[c=10]] dan [[h=4.8]], perhitungan yang salah melewatkan pembagian dua: [[K=10\\times4.8=48]]. Itu adalah luas jajar genjang yang bersesuaian. Perhitungan yang benar adalah [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Ilustrasi kedua: mensubstitusikan sisi siku-siku 8 untuk tinggi menghasilkan [[(10\\times8)/2=40]], salah karena 8 tidak tegak lurus terhadap sisi miring. Tinggi, dan hanya tinggi, yang berpasangan dengan [[c]]." }
         ]
       },
       "sec-verify": {
@@ -378,7 +378,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-intro": {
         "h2": "كيفية حساب مساحة المثلث القائم الزاوية من الارتفاع",
         "blocks": [
-          { "kind": "p", "text": "لنفترض أن مثلثًا قائم الزاوية له وتر طوله 10 م، وأن المسافة العمودية من زاوية القائمة إلى ذلك الوتر تساوي 4.8 م. فإن مساحته تُحسب مباشرة: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ m}^2}]]]. يغطي المثلث 24 مترًا مربعًا من السطح المستوي." },
+          { "kind": "p", "text": "لنفترض أن مثلثًا قائم الزاوية له وتر طوله 10 م، وأن المسافة العمودية من زاوية القائمة إلى ذلك الوتر تساوي 4.8 م. فإن مساحته تُحسب مباشرة: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ m}^2}]]] يغطي المثلث 24 مترًا مربعًا من السطح المستوي." },
           { "kind": "p", "text": "هذه الحاسبة موجودة لهذه الحالة بالضبط. عندما تعرف أطول ضلع في المثلث القائم الزاوية، أي الوتر [[c]]، والارتفاع العمودي من رأس الزاوية القائمة إلى ذلك الضلع، [[h]]، فلن تحتاج إلى الضلعين القائمين. يعمل الوتر كقاعدة، ويعمل الارتفاع كالارتفاع العمودي المقابل له، ومساحة أي مثلث هي نصف حاصل ضرب قاعدة في ارتفاعها المقابل: [[K=ch/2]]." },
           { "kind": "p", "text": "يجب أن يلتقي الارتفاع بالوتر بزاوية قائمة؛ فأي قطعة مائلة غير عمودية تعطي ارتفاعًا خاطئًا ومساحة خاطئة. أدخل القياسين بوحدتي طول متطابقتين، وستعيد الحاسبة المساحة بالوحدات المربعة المقابلة، مع عرض كل خطوة تعويض." }
         ]
@@ -404,7 +404,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-formula": {
         "h2": "صيغة مساحة المثلث القائم الزاوية من الارتفاع",
         "blocks": [
-          { "kind": "p", "text": "صيغة المساحة من الارتفاع هي [[[\\boxed{K=\\frac{ch}{2}}]]]. هنا [[K]] هي المساحة، و[[c]] هو الوتر الذي يعمل كقاعدة، و[[h]] هو الارتفاع العمودي على الوتر. ثلاثة رموز، وضرب واحد، وقسمة على اثنين." },
+          { "kind": "p", "text": "صيغة المساحة من الارتفاع هي [[[\\boxed{K=\\frac{ch}{2}}]]] هنا [[K]] هي المساحة، و[[c]] هو الوتر الذي يعمل كقاعدة، و[[h]] هو الارتفاع العمودي على الوتر. ثلاثة رموز، وضرب واحد، وقسمة على اثنين." },
           { "kind": "h3", "text": "لماذا نضرب الوتر في الارتفاع؟" },
           { "kind": "p", "text": "الصيغة العامة لمساحة المثلث هي [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]، ويجب أن تكون القاعدة والارتفاع عموديين على بعضهما. اختيار الوتر كقاعدة يجبر الارتفاع على أن يكون المسافة العمودية إليه، وهو الارتفاع نفسه بالضبط: [[\\text{base}=c]] و[[\\text{height}=h]]، ومن ثم [[K=ch/2]]. وهذا صحيح مهما كان دوران المثلث أو رسمه: التعامد علاقة هندسية وليس اتجاه شاشة، فوتر مائل يعمل كقاعدة بنفس كفاءة الوتر الأفقي." },
           { "kind": "h3", "text": "لماذا نقسم الناتج على اثنين؟" },
@@ -427,7 +427,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
           "<strong>اكتب الصيغة.</strong> [[K=ch/2]].",
           "<strong>عوض بالقياسات.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>اضرب.</strong> [[10\\times4.8=48]]، أي أن [[K=48/2]].",
-          "<strong>اقسم على اثنين.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>اقسم على اثنين.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>فسّر الإجابة.</strong> يغطي المثلث 24 مترًا مربعًا من المساحة المستوية.",
           "<strong>تحقق من الإمكانية.</strong> يتطلب المثلث القائم الزاوية الصحيح [[h\\leq c/2]]؛ وهنا [[4.8\\leq5]]، لذا يمكن أن تصف القياسات مثلثًا قائم الزاوية حقيقيًا.",
           "<strong>تحقق باستخدام الضلعين.</strong> مثلث 6-8-10 له الوتر والارتفاع نفسهما، و[[K=(6\\times8)/2=24]]. يتفق الطريقان."
@@ -463,13 +463,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "تبني أربعة أمثلة محلولة هذه الطريقة انطلاقًا من مثلثات مألوفة. يحسب كل مثال الارتفاع من الضلعين عند الحاجة، ويطبق [[K=ch/2]]، ويتحقق تقاطعيًا مقابل صيغة الضلعين." },
           { "kind": "h3", "text": "المثال 1: مثلث قائم الزاوية 3-4-5" },
-          { "kind": "p", "text": "المعطى [[a=3]]، و[[b=4]]، و[[c=5]]. الارتفاع هو [[h=ab/c]]، أي أن [[h=(3\\times4)/5=2.4]]. والمساحة هي [[K=(5\\times2.4)/2]]، [[[\\boxed{K=6\\text{ square units}}]]]. وبالتحقق بالضلعين، [[K=(3\\times4)/2=6]]. تصف الصيغتان المثلث نفسه، لذا يجب أن تتفقا، وهما متفقتان فعلًا." },
+          { "kind": "p", "text": "المعطى [[a=3]]، و[[b=4]]، و[[c=5]]. الارتفاع هو [[h=ab/c]]، أي أن [[h=(3\\times4)/5=2.4]]. والمساحة هي [[K=(5\\times2.4)/2]]، [[[\\boxed{K=6\\text{ square units}}]]] وبالتحقق بالضلعين، [[K=(3\\times4)/2=6]]. تصف الصيغتان المثلث نفسه، لذا يجب أن تتفقا، وهما متفقتان فعلًا." },
           { "kind": "h3", "text": "المثال 2: مثلث قائم الزاوية 5-12-13" },
-          { "kind": "p", "text": "المعطى [[a=5]]، و[[b=12]]، و[[c=13]]. الارتفاع هو [[h=(5\\times12)/13=60/13\\approx4.61538]]. وبالاحتفاظ بالكسر الدقيق، [[K=(13\\times(60/13))/2]]، [[[\\boxed{K=30\\text{ square units}}]]]. إن الاحتفاظ بـ [[60/13]] بدلًا من عشري مقرب يجنّب خطأ التقريب المبكر: يلغي العدد 13 بعضه بعضًا تمامًا، فيبقى 30 نظيفة." },
+          { "kind": "p", "text": "المعطى [[a=5]]، و[[b=12]]، و[[c=13]]. الارتفاع هو [[h=(5\\times12)/13=60/13\\approx4.61538]]. وبالاحتفاظ بالكسر الدقيق، [[K=(13\\times(60/13))/2]]، [[[\\boxed{K=30\\text{ square units}}]]] إن الاحتفاظ بـ [[60/13]] بدلًا من عشري مقرب يجنّب خطأ التقريب المبكر: يلغي العدد 13 بعضه بعضًا تمامًا، فيبقى 30 نظيفة." },
           { "kind": "h3", "text": "المثال 3: مثلث قائم الزاوية 6-8-10" },
-          { "kind": "p", "text": "المعطى [[c=10]] و[[h=4.8]] مباشرة. إذن [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ square units}}]]]. ومع الضلعين 6 و8، [[K=(6\\times8)/2=24]]، مما يؤكد طريق الارتفاع." },
+          { "kind": "p", "text": "المعطى [[c=10]] و[[h=4.8]] مباشرة. إذن [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ square units}}]]] ومع الضلعين 6 و8، [[K=(6\\times8)/2=24]]، مما يؤكد طريق الارتفاع." },
           { "kind": "h3", "text": "المثال 4: مثلث قائم الزاوية متساوي الساقين" },
-          { "kind": "p", "text": "المعطى [[c=10]] و[[h=5]]. إذن [[K=(10\\times5)/2]]، [[[\\boxed{K=25\\text{ square units}}]]]. هذه أكبر مساحة يمكن أن يمتلكها مثلث قائم الزاوية بوتر 10. ويساوي الارتفاع نصف الوتر فقط عندما يتساوى الضلعان، فتصبح كل زاوية حادة [[45^\\circ]]، ولا يمكن لأي مثلث قائم الزاوية صحيح بهذا الوتر أن يتجاوز 25 وحدة مربعة." }
+          { "kind": "p", "text": "المعطى [[c=10]] و[[h=5]]. إذن [[K=(10\\times5)/2]]، [[[\\boxed{K=25\\text{ square units}}]]] هذه أكبر مساحة يمكن أن يمتلكها مثلث قائم الزاوية بوتر 10. ويساوي الارتفاع نصف الوتر فقط عندما يتساوى الضلعان، فتصبح كل زاوية حادة [[45^\\circ]]، ولا يمكن لأي مثلث قائم الزاوية صحيح بهذا الوتر أن يتجاوز 25 وحدة مربعة." }
         ]
       },
       "sec-applications": {
@@ -477,29 +477,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "تعرض اثنتا عشرة حالة محلولة الصيغة بمقاييس ووحدات مختلفة. تسمي كل حالة المثلث في المشهد، والقياسين، والتعويض، والمساحة، والافتراض الكامن وراء النموذج." },
           { "kind": "h3", "text": "المثال 1: قسم حديقة مثلث" },
-          { "kind": "p", "text": "لقسم حديقة مثلث قائم الزاوية حدٌّ أطول طوله 10 م، والمسافة العمودية من زاوية القائمة إلى ذلك الحد 4.8 م. إذن [[c=10\\text{ m}]] و[[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ m}^2}]]]. يحتل القسم 24 مترًا مربعًا. وهذا يفترض أن الحد مستقيم وأن الزاوية قائمة حقًا." },
+          { "kind": "p", "text": "لقسم حديقة مثلث قائم الزاوية حدٌّ أطول طوله 10 م، والمسافة العمودية من زاوية القائمة إلى ذلك الحد 4.8 م. إذن [[c=10\\text{ m}]] و[[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ m}^2}]]] يحتل القسم 24 مترًا مربعًا. وهذا يفترض أن الحد مستقيم وأن الزاوية قائمة حقًا." },
           { "kind": "h3", "text": "المثال 2: لوح خشب رقائقي مثلث" },
-          { "kind": "p", "text": "للوح خشب رقائقي مثلث قائم الزاوية وتر طوله 1 م وارتفاع عمودي 0.48 م: [[K=(1\\times0.48)/2]]، [[[\\boxed{K=0.24\\text{ m}^2}]]]. هذه هي سطح الوجه الواحد المستوي، وهي مفيدة لتقديرات التغطية. أما هدر القطع وبدلات المواد فاعتبارات منفصلة." },
+          { "kind": "p", "text": "للوح خشب رقائقي مثلث قائم الزاوية وتر طوله 1 م وارتفاع عمودي 0.48 م: [[K=(1\\times0.48)/2]]، [[[\\boxed{K=0.24\\text{ m}^2}]]] هذه هي سطح الوجه الواحد المستوي، وهي مفيدة لتقديرات التغطية. أما هدر القطع وبدلات المواد فاعتبارات منفصلة." },
           { "kind": "h3", "text": "المثال 3: نافذة زجاجية مثلثة قائمة" },
-          { "kind": "p", "text": "للوح زجاجي مثلث قائم الزاوية وتر طوله 1.3 م وارتفاع 0.6 م عمودي على ذلك الضلع: [[K=(1.3\\times0.6)/2]]، [[[\\boxed{K=0.39\\text{ m}^2}]]]. هذه هي مساحة الزجاج الهندسية قبل احتساب تغطية الإطار أو بدلات التركيب." },
+          { "kind": "p", "text": "للوح زجاجي مثلث قائم الزاوية وتر طوله 1.3 م وارتفاع 0.6 م عمودي على ذلك الضلع: [[K=(1.3\\times0.6)/2]]، [[[\\boxed{K=0.39\\text{ m}^2}]]] هذه هي مساحة الزجاج الهندسية قبل احتساب تغطية الإطار أو بدلات التركيب." },
           { "kind": "h3", "text": "المثال 4: مسح قسم مثلث" },
-          { "kind": "p", "text": "يحتوي رسم مساحي على مثلث قائم الزاوية بوتر 13 م وارتفاع [[60/13]] م. وبالاحتفاظ بالكسر: [[K=(13\\times(60/13))/2]]، [[[\\boxed{K=30\\text{ m}^2}]]]. يمثل الرسم قسمًا مساحته 30 مترًا مربعًا. وقد يظل العمل الميداني الفعلي بحاجة إلى تصحيحات الأجهزة تتجاوز المخطط." },
+          { "kind": "p", "text": "يحتوي رسم مساحي على مثلث قائم الزاوية بوتر 13 م وارتفاع [[60/13]] م. وبالاحتفاظ بالكسر: [[K=(13\\times(60/13))/2]]، [[[\\boxed{K=30\\text{ m}^2}]]] يمثل الرسم قسمًا مساحته 30 مترًا مربعًا. وقد يظل العمل الميداني الفعلي بحاجة إلى تصحيحات الأجهزة تتجاوز المخطط." },
           { "kind": "h3", "text": "المثال 5: قياس بلاطة مثلثة" },
-          { "kind": "p", "text": "لبلاطة مثلثة قائمة الزاوية وتر طوله 25 سم وارتفاع عمودي 6.72 سم: [[K=(25\\times6.72)/2]]، [[[\\boxed{K=84\\text{ cm}^2}]]]. تغطي البلاطة الواحدة 84 سنتيمترًا مربعًا، مما يساعد على تقدير عدد البلاطات التي يحتاجها سطح ما. وتُحسب فجوات الجص وخسائر القطع على حدة." },
+          { "kind": "p", "text": "لبلاطة مثلثة قائمة الزاوية وتر طوله 25 سم وارتفاع عمودي 6.72 سم: [[K=(25\\times6.72)/2]]، [[[\\boxed{K=84\\text{ cm}^2}]]] تغطي البلاطة الواحدة 84 سنتيمترًا مربعًا، مما يساعد على تقدير عدد البلاطات التي يحتاجها سطح ما. وتُحسب فجوات الجص وخسائر القطع على حدة." },
           { "kind": "h3", "text": "المثال 6: لوح دعم فولاذي" },
-          { "kind": "p", "text": "للوح دعم مسطح مثلث قائم الزاوية وتر طوله 1.7 م وضلعاه 0.8 م و1.5 م. وارتفاعه هو [[h=(0.8\\times1.5)/1.7=12/17]] م. إذن [[K=(1.7\\times(12/17))/2]]، [[[\\boxed{K=0.6\\text{ m}^2}]]]. هذه هي مساحة اللوح الهندسية، لا قدرته على تحمل الأحمال." },
+          { "kind": "p", "text": "للوح دعم مسطح مثلث قائم الزاوية وتر طوله 1.7 م وضلعاه 0.8 م و1.5 م. وارتفاعه هو [[h=(0.8\\times1.5)/1.7=12/17]] م. إذن [[K=(1.7\\times(12/17))/2]]، [[[\\boxed{K=0.6\\text{ m}^2}]]] هذه هي مساحة اللوح الهندسية، لا قدرته على تحمل الأحمال." },
           { "kind": "h3", "text": "المثال 7: لوح جانبي لمنحدر مثلث" },
-          { "kind": "p", "text": "يشكل لوح جانبي مبسط لمنحدر مثلثًا قائم الزاوية بوتر طوله 5 م وارتفاع عمودي 2.4 م على ذلك الوتر: [[K=(5\\times2.4)/2]]، [[[\\boxed{K=6\\text{ m}^2}]]]. هذه هي المساحة المستوية للمقطع الجانبي المثلث، لا سطح المنحدر المائل، والحساب لا يثبت الامتثال لمعايير إمكانية الوصول." },
+          { "kind": "p", "text": "يشكل لوح جانبي مبسط لمنحدر مثلثًا قائم الزاوية بوتر طوله 5 م وارتفاع عمودي 2.4 م على ذلك الوتر: [[K=(5\\times2.4)/2]]، [[[\\boxed{K=6\\text{ m}^2}]]] هذه هي المساحة المستوية للمقطع الجانبي المثلث، لا سطح المنحدر المائل، والحساب لا يثبت الامتثال لمعايير إمكانية الوصول." },
           { "kind": "h3", "text": "المثال 8: قسم جملون سقف" },
-          { "kind": "p", "text": "لقسم جملون سقف مثلث قائم الزاوية وتر طوله 6.5 م وارتفاع عمودي [[30/13]] م: [[K=(6.5\\times(30/13))/2]]، [[[\\boxed{K=7.5\\text{ m}^2}]]]. تصف النتيجة المستوي المثلث الذي تحددها القياسات. أما المساحة السطحية الكلية لسقف حقيقي فهي مسألة قياس ثلاثية الأبعاد منفصلة." },
+          { "kind": "p", "text": "لقسم جملون سقف مثلث قائم الزاوية وتر طوله 6.5 م وارتفاع عمودي [[30/13]] م: [[K=(6.5\\times(30/13))/2]]، [[[\\boxed{K=7.5\\text{ m}^2}]]] تصف النتيجة المستوي المثلث الذي تحددها القياسات. أما المساحة السطحية الكلية لسقف حقيقي فهي مسألة قياس ثلاثية الأبعاد منفصلة." },
           { "kind": "h3", "text": "المثال 9: قطعة أرض مثلثة قائمة" },
-          { "kind": "p", "text": "لقسم أرض مثلث قائم الزاوية وتر طوله 50 م وارتفاع عمودي 24 م: [[K=(50\\times24)/2]]، [[[\\boxed{K=600\\text{ m}^2}]]]. تحصر الحدود المقاسة 600 متر مربع. وقد يظل الرقم الرسمي للمساحة بحاجة إلى تحقق مساحي." },
+          { "kind": "p", "text": "لقسم أرض مثلث قائم الزاوية وتر طوله 50 م وارتفاع عمودي 24 م: [[K=(50\\times24)/2]]، [[[\\boxed{K=600\\text{ m}^2}]]] تحصر الحدود المقاسة 600 متر مربع. وقد يظل الرقم الرسمي للمساحة بحاجة إلى تحقق مساحي." },
           { "kind": "h3", "text": "المثال 10: قطعة مسح مثلثة كبيرة" },
-          { "kind": "p", "text": "لقسم مثلث قائم الزاوية ممسوح وتره 100 م وارتفاعه العمودي 48 م: [[K=(100\\times48)/2]]، [[[\\boxed{K=2400\\text{ m}^2}]]]. هذه هي المساحة المستوية للمقطع المثلث. وهي تمثل العقار كله فقط عندما يتكون العقار من ذلك المثلث وحده." },
+          { "kind": "p", "text": "لقسم مثلث قائم الزاوية ممسوح وتره 100 م وارتفاعه العمودي 48 م: [[K=(100\\times48)/2]]، [[[\\boxed{K=2400\\text{ m}^2}]]] هذه هي المساحة المستوية للمقطع المثلث. وهي تمثل العقار كله فقط عندما يتكون العقار من ذلك المثلث وحده." },
           { "kind": "h3", "text": "المثال 11: قسم شراع مثلث" },
-          { "kind": "p", "text": "لتصميم شراع مسطح مثلث قائم الزاوية وتره 15 قدمًا وارتفاعه العمودي 7.2 قدم: [[K=(15\\times7.2)/2]]، [[[\\boxed{K=54\\text{ ft}^2}]]]. هذه هي المساحة المستوية للشراع المثالي. أما القماش المنحني والدرزات وبدلات الحواف فتتطلب اعتبارًا منفصلًا." },
+          { "kind": "p", "text": "لتصميم شراع مسطح مثلث قائم الزاوية وتره 15 قدمًا وارتفاعه العمودي 7.2 قدم: [[K=(15\\times7.2)/2]]، [[[\\boxed{K=54\\text{ ft}^2}]]] هذه هي المساحة المستوية للشراع المثالي. أما القماش المنحني والدرزات وبدلات الحواف فتتطلب اعتبارًا منفصلًا." },
           { "kind": "h3", "text": "المثال 12: دعامة ميكانيكية صغيرة" },
-          { "kind": "p", "text": "لدعامة مسطحة مثلثة قائمة الزاوية وترها 250 مم وارتفاعها العمودي 120 مم: [[K=(250\\times120)/2]]، [[[\\boxed{K=15000\\text{ mm}^2}]]]. والإجابة بالمليمترات المربعة لأن المدخلات بالمليمترات. وبما أن [[1\\text{ cm}^2=100\\text{ mm}^2]]، فهذا يساوي [[[\\boxed{150\\text{ cm}^2}]]]. تحويل الوحدة الخطية وتحويل الوحدة المربعة عمليتان مختلفتان، كما يشرح قسم الوحدات." },
+          { "kind": "p", "text": "لدعامة مسطحة مثلثة قائمة الزاوية وترها 250 مم وارتفاعها العمودي 120 مم: [[K=(250\\times120)/2]]، [[[\\boxed{K=15000\\text{ mm}^2}]]] والإجابة بالمليمترات المربعة لأن المدخلات بالمليمترات. وبما أن [[1\\text{ cm}^2=100\\text{ mm}^2]]، فهذا يساوي [[[\\boxed{150\\text{ cm}^2}]]] تحويل الوحدة الخطية وتحويل الوحدة المربعة عمليتان مختلفتان، كما يشرح قسم الوحدات." },
           { "kind": "h3", "text": "مقارنة الأمثلة العملية" }
         ],
         "table": {
@@ -525,7 +525,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-equal": {
         "h2": "لماذا تعطي صيغتا مساحة المثلث القائم الزاوية الإجابة نفسها",
         "blocks": [
-          { "kind": "p", "text": "يمكن قياس المثلث القائم الزاوية عبر ضلعيه القائمين المتعامدين أو عبر وتره وارتفاعه. صيغة الضلعين هي [[K=ab/2]] وصيغة الارتفاع هي [[K=ch/2]]. وبما أن كليهما يصف مساحة المثلث نفسه، فإن [[\\frac{ab}{2}=\\frac{ch}{2}]]. وبضرب الطرفين في اثنين: [[ab=ch]]. وبحل المعادلة لـ [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. الارتفاع هو حاصل ضرب الضلعين مقسومًا على الوتر، ولهذا لا يمكن أن تختلف الصيغتان أبدًا على مثلث متسق." },
+          { "kind": "p", "text": "يمكن قياس المثلث القائم الزاوية عبر ضلعيه القائمين المتعامدين أو عبر وتره وارتفاعه. صيغة الضلعين هي [[K=ab/2]] وصيغة الارتفاع هي [[K=ch/2]]. وبما أن كليهما يصف مساحة المثلث نفسه، فإن [[\\frac{ab}{2}=\\frac{ch}{2}]]. وبضرب الطرفين في اثنين: [[ab=ch]]. وبحل المعادلة لـ [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] الارتفاع هو حاصل ضرب الضلعين مقسومًا على الوتر، ولهذا لا يمكن أن تختلف الصيغتان أبدًا على مثلث متسق." },
           { "kind": "p", "text": "تحقق عددي: عند [[a=6]]، و[[b=8]]، و[[c=10]]، يكون الارتفاع [[h=(6\\times8)/10=4.8]]. بالضلعين: [[K=(6\\times8)/2=24]]. بالارتفاع: [[K=(10\\times4.8)/2=24]]. المثلث نفسه، والمساحة نفسها، وطريقان." },
           { "kind": "p", "text": "عندما يكون الوتر والارتفاع فقط هما المعروفين، تكون المساحة محددة سلفًا: لا حاجة لإعادة بناء الضلعين أولًا. ولا يزال بالإمكان استعادة طولي الضلعين من [[c]] و[[h]] الصحيحين عبر علاقات القطع أدناه، لكنه حساب منفصل عن إيجاد المساحة. وعندما يكون الضلعان هما البيانات المعروفة بدلًا من ذلك، فإن <a href=\"/right-triangle-area-from-legs-calculator/\">حاسبة مساحة المثلث القائم الزاوية من الضلعين</a> تأخذهما مباشرة." }
         ]
@@ -537,7 +537,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
           { "kind": "h3", "text": "مثلثان قائما الزاوية أصغر متشابهان" },
           { "kind": "p", "text": "يقسم الارتفاع المثلث الأصلي إلى مثلثين قائمي الزاوية أصغر، يشترك كل منهما مع المثلث الأصلي في زاوية حادة واحدة ويحتوي على زاوية قائمة. ويجعل اشتراك قياسي زاويتين المثلثات الثلاثة متشابهة. وهذا التشابه هو ما يفرض العلاقات النسبية النظيفة بين الارتفاع والقطع والضلعين." },
           { "kind": "h3", "text": "نظرية الوسط الهندسي للارتفاع" },
-          { "kind": "p", "text": "يعطي التشابه [[[\\boxed{h^2=pq}]]]، أو ما يكافئه [[[\\boxed{h=\\sqrt{pq}}]]]. الارتفاع هو الوسط الهندسي لقطعتي الوتر: مربعه يساوي حاصل ضربهما. مثال محلول: مع [[p=6.4]] و[[q=3.6]]، [[c=p+q=10]]، و[[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]]، [[[\\boxed{h=4.8}]]]. وتتبع المساحة: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ square units}}]]]. تتحقق نظرية القطع من ارتفاع قيس أو حُسب بطريقة أخرى." },
+          { "kind": "p", "text": "يعطي التشابه [[[\\boxed{h^2=pq}]]]، أو ما يكافئه [[[\\boxed{h=\\sqrt{pq}}]]] الارتفاع هو الوسط الهندسي لقطعتي الوتر: مربعه يساوي حاصل ضربهما. مثال محلول: مع [[p=6.4]] و[[q=3.6]]، [[c=p+q=10]]، و[[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]]، [[[\\boxed{h=4.8}]]] وتتبع المساحة: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ square units}}]]] تتحقق نظرية القطع من ارتفاع قيس أو حُسب بطريقة أخرى." },
           { "kind": "h3", "text": "العلاقة بين القطع والضلعين" },
           { "kind": "p", "text": "ينتج عن التشابه نفسه [[b^2=cp]] و[[a^2=cq]]. ومع [[c=10]]، و[[p=6.4]]، و[[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] و[[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. يُستعاد مثلث 6-8-10 الأصلي بدقة، مما يبين مدى الترابط الوثيق بين القطع والارتفاع والضلعين." }
         ]
@@ -545,11 +545,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
       "sec-max": {
         "h2": "كم يمكن أن يكون ارتفاع المثلث القائم الزاوية؟",
         "blocks": [
-          { "kind": "p", "text": "ليس كل زوج من الأعداد الموجبة يمكن أن يكون وترًا وارتفاعًا. ففي المثلث القائم الزاوية الصحيح غير المنحل، [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. يجب أن يكون الارتفاع موجبًا ولا يمكن أن يتجاوز نصف الوتر أبدًا." },
+          { "kind": "p", "text": "ليس كل زوج من الأعداد الموجبة يمكن أن يكون وترًا وارتفاعًا. ففي المثلث القائم الزاوية الصحيح غير المنحل، [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] يجب أن يكون الارتفاع موجبًا ولا يمكن أن يتجاوز نصف الوتر أبدًا." },
           { "kind": "h3", "text": "لماذا لا يمكن أن يتجاوز الارتفاع نصف الوتر" },
           { "kind": "p", "text": "من [[h^2=pq]] مع [[p+q=c]]، يكون الحاصل [[pq]] أكبر ما يمكن عندما تتساوى القطعتان، [[p=q=c/2]]. ومن ثم [[h^2\\leq c^2/4]]، وللأطوال الموجبة [[h\\leq c/2]]. وبعبارة بسيطة: يكون الارتفاع أطول ما يمكن عندما يقسم الوتر إلى نصفين متساويين، وحتى حينها لا يبلغ إلا نصف الوتر." },
           { "kind": "h3", "text": "المساحة القصوى لوتر ثابت" },
-          { "kind": "p", "text": "بما أن [[K=ch/2]] و[[h\\leq c/2]]، فإن أكبر مساحة ممكنة هي [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. تنتمي هذه القصوى إلى المثلث القائم الزاوية متساوي الساقين، حيث يتساوى الضلعان. ومع [[c=10]]، يكون أطول ارتفاع صحيح [[h_{\\max}=5]]، فيعطي [[K_{\\max}=(10\\times5)/2=25]]. وارتفاع 6 مع وتر 10 مستحيل في مثلث قائم الزاوية." },
+          { "kind": "p", "text": "بما أن [[K=ch/2]] و[[h\\leq c/2]]، فإن أكبر مساحة ممكنة هي [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] تنتمي هذه القصوى إلى المثلث القائم الزاوية متساوي الساقين، حيث يتساوى الضلعان. ومع [[c=10]]، يكون أطول ارتفاع صحيح [[h_{\\max}=5]]، فيعطي [[K_{\\max}=(10\\times5)/2=25]]. وارتفاع 6 مع وتر 10 مستحيل في مثلث قائم الزاوية." },
           { "kind": "h3", "text": "ماذا يحدث إذا كان الارتفاع كبيرًا جدًا؟" },
           { "kind": "p", "text": "خذ [[c=10]] و[[h=6]]: [[6>5]]، فلا يوجد مثلث قائم الزاوية بهذه القياسات. الحساب [[(10\\times6)/2=30]] مساحة صحيحة لمثلث ما في سياق أعم، لكنه لا يجعل [[c=10]] و[[h=6]] مدخلًا صحيحًا لمثلث قائم الزاوية. لا تدعي هذه الصفحة أن الحاسبة ترفض مثل هذا الإدخال تلقائيًا؛ فالتحقق مهمتك أنت." },
           { "kind": "h3", "text": "هل يمكن أن يساوي الارتفاع نصف الوتر؟" },
@@ -563,11 +563,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
         "blocks": [
           { "kind": "p", "text": "تأخذ هذه الحاسبة [[h]] كمدخل، لذا يجب إيجاد الارتفاع المجهول أو قياسه أولًا. تغطي ثلاثة طرق معيارية الحالات الشائعة. وعندما تكون الأضلاع معروفة والارتفاع هو القطعة المفقودة، فإن <a href=\"/right-triangle-altitude-from-sides-calculator/\">حاسبة ارتفاع المثلث القائم الزاوية من الأضلاع</a> تحسبه مباشرة." },
           { "kind": "h3", "text": "الطريقة 1: باستخدام الضلعين والوتر" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. مع [[a=6]]، و[[b=8]]، و[[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] مع [[a=6]]، و[[b=8]]، و[[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "الطريقة 2: باستخدام قطعتي الوتر" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. مع [[p=6.4]] و[[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] مع [[p=6.4]] و[[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "الطريقة 3: باستخدام المساحة والوتر المعروفين" },
-          { "kind": "p", "text": "إعادة ترتيب [[K=ch/2]] تعطي [[[\\boxed{h=\\frac{2K}{c}}]]]. مع [[K=24]] و[[c=10]]: [[h=(2\\times24)/10=4.8]]." },
+          { "kind": "p", "text": "إعادة ترتيب [[K=ch/2]] تعطي [[[\\boxed{h=\\frac{2K}{c}}]]] مع [[K=24]] و[[c=10]]: [[h=(2\\times24)/10=4.8]]." },
           { "kind": "p", "text": "هذه إعادة ترتيبات رياضية، لا أوضاع حاسبة إضافية: فحاسبة المساحة من الارتفاع نفسها ما زالت تتوقع الارتفاع كمدخل." }
         ]
       },
@@ -628,7 +628,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH3A = {
           { "kind": "h3", "text": "18. معاملة المساحة الهندسية كمادة دقيقة للشراء" },
           { "kind": "p", "text": "تعطي الصيغة المساحة الهندسية المثالية. تحتاج المشاريع الحقيقية إلى الهدر والتداخلات وبدلات القطع فوقها. الحل: أضف هامش المشروع بعد انتهاء الهندسة." },
           { "kind": "h3", "text": "خطأ مقابل صواب: مثال ملموس" },
-          { "kind": "p", "text": "مع [[c=10]] و[[h=4.8]]، يتخطى الحساب الخاطئ القسمة على اثنين: [[K=10\\times4.8=48]]. تلك هي مساحة متوازي الأضلاع المقابل. والحساب الصحيح هو [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24}]]]. وتوضيح ثانٍ: تعويض الضلع 8 مكان الارتفاع يعطي [[(10\\times8)/2=40]]، وهو خطأ لأن 8 ليست عمودية على الوتر. الارتفاع، وحده الارتفاع، هو الذي يقترن بـ [[c]]." }
+          { "kind": "p", "text": "مع [[c=10]] و[[h=4.8]]، يتخطى الحساب الخاطئ القسمة على اثنين: [[K=10\\times4.8=48]]. تلك هي مساحة متوازي الأضلاع المقابل. والحساب الصحيح هو [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24}]]] وتوضيح ثانٍ: تعويض الضلع 8 مكان الارتفاع يعطي [[(10\\times8)/2=40]]، وهو خطأ لأن 8 ليست عمودية على الوتر. الارتفاع، وحده الارتفاع، هو الذي يقترن بـ [[c]]." }
         ]
       },
       "sec-verify": {

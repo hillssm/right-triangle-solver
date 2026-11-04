@@ -60,7 +60,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
 <!-- Section 1: Introduction -->
 <section id="sec-intro" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>How to Calculate the Perimeter of a Right Triangle</h2>
-  <p>Take a right triangle with sides <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, and <span set:html={rich('[[c=5]].')} /> Its perimeter is <span set:html={rich('[[P=3+4+5]]')} />, or <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} />. The number 12 tells you the complete distance around the triangular boundary: walk all three edges and you have travelled 12 units.</p>
+  <p>Take a right triangle with sides <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, and <span set:html={rich('[[c=5]].')} /> Its perimeter is <span set:html={rich('[[P=3+4+5]]')} />, or <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} /> The number 12 tells you the complete distance around the triangular boundary: walk all three edges and you have travelled 12 units.</p>
   <p>This calculator does exactly that addition for any right triangle. You enter the two legs and the hypotenuse, and it returns the total boundary length with step-by-step work and a live diagram. Three side lengths are required because the boundary has three edges, and the hypotenuse must be included: it is one of those three edges even though it never touches the right angle. The two legs form the square corner, and the hypotenuse stretches across from it to close the shape.</p>
   <p>Perimeter is a linear measurement, not an area measurement. It answers "how much edging do I need?" rather than "how much surface is inside?" That distinction makes it the right number whenever you estimate fencing, trim, frames, wire, rope, or fabric borders around a right-triangular shape.</p>
 </section>
@@ -77,7 +77,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p>Leg <span set:html={rich('[[a]]')} /> and leg <span set:html={rich('[[b]]')} /> are the two sides that meet at the right-angle vertex, perpendicular to each other. Either one can be drawn horizontal or vertical depending on the triangle's orientation; what defines them is the 90-degree corner they form, not their direction on the page. They differ from the hypotenuse in position and in length: each leg touches the right angle, and each leg is shorter than the hypotenuse. In perimeter work their role is simple: both are boundary edges, so both enter the sum.</p>
 
   <h3>What Is the Hypotenuse?</h3>
-  <p>The hypotenuse is the side opposite the right angle, always the longest side of the triangle. It never forms the right angle; it spans across from it, joining the far ends of the two legs. It differs from the legs in both position and length: the legs meet at 90 degrees, while the hypotenuse meets each leg at an acute angle. It completes the triangular boundary, which is why it must be included in perimeter calculations. When both legs are known, the Pythagorean theorem recovers it: <span set:html={rich('[[[\\boxed{c=\\sqrt{a^2+b^2}}]]]')} />.</p>
+  <p>The hypotenuse is the side opposite the right angle, always the longest side of the triangle. It never forms the right angle; it spans across from it, joining the far ends of the two legs. It differs from the legs in both position and length: the legs meet at 90 degrees, while the hypotenuse meets each leg at an acute angle. It completes the triangular boundary, which is why it must be included in perimeter calculations. When both legs are known, the Pythagorean theorem recovers it: <span set:html={rich('[[[\\boxed{c=\\sqrt{a^2+b^2}}]]]')} /></p>
 
   <h3>How to Identify the Correct Side Labels</h3>
   <p><span set:html={rich('[[a]]')} /> and <span set:html={rich('[[b]]')} /> are the two sides meeting at 90 degrees, and <span set:html={rich('[[c]]')} /> is opposite the right angle. In a non-degenerate right triangle <span set:html={rich('[[c]]')} /> is the longest side. The right-angle marker tells you which side is <span set:html={rich('[[c]]')} />: it is the one that does not touch that vertex. A quick ordering check helps: sort the three numbers, and the largest must play the role of <span set:html={rich('[[c]].')} /> If the largest side does not sit opposite the square corner, the labels are wrong, and every calculation built on them will be wrong too.</p>
@@ -96,7 +96,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <h2>What Is the Perimeter of a Right Triangle?</h2>
 
   <h3>Definition of Perimeter</h3>
-  <p>Perimeter is the total distance around the outer boundary of a two-dimensional shape. For a triangle it is the sum of its three side lengths: <span set:html={rich('[[[\\boxed{P=a+b+c}]]]')} />. All three sides must be included because the boundary is not complete until every edge has been counted. Leaving one out does not give a shorter perimeter; it gives a different, wrong quantity.</p>
+  <p>Perimeter is the total distance around the outer boundary of a two-dimensional shape. For a triangle it is the sum of its three side lengths: <span set:html={rich('[[[\\boxed{P=a+b+c}]]]')} /> All three sides must be included because the boundary is not complete until every edge has been counted. Leaving one out does not give a shorter perimeter; it gives a different, wrong quantity.</p>
 
   <h3>Why Does the Hypotenuse Count Toward the Perimeter?</h3>
   <p>Perimeter measures the complete outer boundary, and the hypotenuse is not an optional or internal measurement. It is one of the three outer edges. Take <span set:html={rich('[[a=3]]')} />, <span set:html={rich('[[b=4]]')} />, <span set:html={rich('[[c=5]].')} /> The incorrect calculation <span set:html={rich('[[3+4=7]]')} /> counts only the two legs, the sides of the square corner. The correct calculation <span set:html={rich('[[3+4+5=12]]')} /> walks the full triangle and returns to the start. The value 7 is the combined length of the two legs, not the full perimeter, because the path from the end of leg <span set:html={rich('[[b]]')} /> back to the start of leg <span set:html={rich('[[a]]')} /> runs along the hypotenuse.</p>
@@ -119,7 +119,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p><strong>Step 5: Write the formula.</strong> <span set:html={rich('[[P=a+b+c]].')} /> Writing it down keeps the structure visible while substituting.</p>
   <p><strong>Step 6: Substitute the known measurements.</strong> <span set:html={rich('[[P=3+4+5]].')} /> Each symbol is replaced by its number.</p>
   <p><strong>Step 7: Add the three values.</strong> <span set:html={rich('[[P=12]].')} /> One addition is the whole arithmetic.</p>
-  <p><strong>Step 8: Attach the correct linear measurement unit.</strong> <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} />. Perimeter is a length, so it takes linear units, never square units.</p>
+  <p><strong>Step 8: Attach the correct linear measurement unit.</strong> <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} /> Perimeter is a length, so it takes linear units, never square units.</p>
   <p><strong>Step 9: Verify the result.</strong> Check <span set:html={rich('[[3^2+4^2=5^2]]')} />: <span set:html={rich('[[9+16=25]].')} /> The sides satisfy the Pythagorean theorem, so the triangle is genuinely right-angled and the perimeter is trustworthy.</p>
 
   <h3>Why Is It Important to Identify the Sides Correctly?</h3>
@@ -223,7 +223,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p><span set:html={rich('[[c=\\sqrt{6^2+8^2}]]')} /></p>
   <p><span set:html={rich('[[c=\\sqrt{36+64}]]')} /></p>
   <p><span set:html={rich('[[[\\boxed{c=10}]]]')} /></p>
-  <p>Now calculate: <span set:html={rich('[[P=6+8+10]]')} />, so <span set:html={rich('[[[\\boxed{P=24\\text{ units}}]]]')} />.</p>
+  <p>Now calculate: <span set:html={rich('[[P=6+8+10]]')} />, so <span set:html={rich('[[[\\boxed{P=24\\text{ units}}]]]')} /></p>
 
   <h3>Case 2: Finding a Missing Leg</h3>
   <p>When hypotenuse <span set:html={rich('[[c]]')} /> and leg <span set:html={rich('[[a]]')} /> are known: <span set:html={rich('[[[\\boxed{b=\\sqrt{c^2-a^2}}]]]')} /></p>
@@ -231,7 +231,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p><span set:html={rich('[[b=\\sqrt{13^2-5^2}]]')} /></p>
   <p><span set:html={rich('[[b=\\sqrt{169-25}]]')} /></p>
   <p><span set:html={rich('[[[\\boxed{b=12}]]]')} /></p>
-  <p>Now calculate: <span set:html={rich('[[P=5+12+13]]')} />, so <span set:html={rich('[[[\\boxed{P=30\\text{ units}}]]]')} />.</p>
+  <p>Now calculate: <span set:html={rich('[[P=5+12+13]]')} />, so <span set:html={rich('[[[\\boxed{P=30\\text{ units}}]]]')} /></p>
 
   <h3>Case 3: Finding the Other Missing Leg</h3>
   <p>When hypotenuse <span set:html={rich('[[c]]')} /> and leg <span set:html={rich('[[b]]')} /> are known: <span set:html={rich('[[[\\boxed{a=\\sqrt{c^2-b^2}}]]]')} /></p>
@@ -239,7 +239,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p><span set:html={rich('[[a=\\sqrt{17^2-15^2}]]')} /></p>
   <p><span set:html={rich('[[a=\\sqrt{289-225}]]')} /></p>
   <p><span set:html={rich('[[[\\boxed{a=8}]]]')} /></p>
-  <p>Now calculate: <span set:html={rich('[[P=8+15+17]]')} />, so <span set:html={rich('[[[\\boxed{P=40\\text{ units}}]]]')} />.</p>
+  <p>Now calculate: <span set:html={rich('[[P=8+15+17]]')} />, so <span set:html={rich('[[[\\boxed{P=40\\text{ units}}]]]')} /></p>
 
   <h3>Why Must You Find the Missing Side First?</h3>
   <p>Perimeter represents the complete boundary. Ignoring an unknown side produces an incomplete result: two known sides give a partial path, not the perimeter. These missing-side calculations are supporting mathematical methods, not additional modes in the existing perimeter calculator. When you know only two sides, the <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">Right Triangle Side Calculator</a> recovers the third, and then the perimeter calculator finishes the job.</p>
@@ -256,40 +256,40 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p>Twelve realistic, fully worked examples follow. Each one names a situation, gives three side measurements, shows the addition, and explains what the result helps estimate. Treat each as a simplified right-triangular geometric model: real objects are rarely perfect triangles, so material allowances, cutting waste, and construction verification sit outside the perimeter number itself.</p>
 
   <h3>Example 1: Triangular Glass Window Frame</h3>
-  <p>A triangular window frame has <span set:html={rich('[[a=3\\text{ m},\\;b=4\\text{ m},\\;c=5\\text{ m}]].')} /> Then <span set:html={rich('[[P=3+4+5]]')} />, so <span set:html={rich('[[[\\boxed{P=12\\text{ m}}]]]')} />. The 12 metres represent the total length around the window's triangular outline, the length of frame stock to cut. Frame joints and cutting allowances may require additional material beyond the 12 metres.</p>
+  <p>A triangular window frame has <span set:html={rich('[[a=3\\text{ m},\\;b=4\\text{ m},\\;c=5\\text{ m}]].')} /> Then <span set:html={rich('[[P=3+4+5]]')} />, so <span set:html={rich('[[[\\boxed{P=12\\text{ m}}]]]')} /> The 12 metres represent the total length around the window's triangular outline, the length of frame stock to cut. Frame joints and cutting allowances may require additional material beyond the 12 metres.</p>
 
   <h3>Example 2: Roof Edge Trim</h3>
-  <p>A right-triangular roof section has <span set:html={rich('[[a=6\\text{ ft},\\;b=8\\text{ ft},\\;c=10\\text{ ft}]].')} /> Then <span set:html={rich('[[P=6+8+10]]')} />, so <span set:html={rich('[[[\\boxed{P=24\\text{ ft}}]]]')} />. The perimeter estimates the trim around the triangular roof-end outline. Corners and overlap at the eaves add to the purchase length.</p>
+  <p>A right-triangular roof section has <span set:html={rich('[[a=6\\text{ ft},\\;b=8\\text{ ft},\\;c=10\\text{ ft}]].')} /> Then <span set:html={rich('[[P=6+8+10]]')} />, so <span set:html={rich('[[[\\boxed{P=24\\text{ ft}}]]]')} /> The perimeter estimates the trim around the triangular roof-end outline. Corners and overlap at the eaves add to the purchase length.</p>
 
   <h3>Example 3: Triangular Garden Fence</h3>
-  <p>A triangular garden section has <span set:html={rich('[[a=5\\text{ m},\\;b=12\\text{ m},\\;c=13\\text{ m}]].')} /> Then <span set:html={rich('[[P=5+12+13]]')} />, so <span set:html={rich('[[[\\boxed{P=30\\text{ m}}]]]')} />. The total boundary length estimates the fencing required around the garden. Gates, posts, overlaps, and installation allowances are counted separately from the 30 metres of fence line.</p>
+  <p>A triangular garden section has <span set:html={rich('[[a=5\\text{ m},\\;b=12\\text{ m},\\;c=13\\text{ m}]].')} /> Then <span set:html={rich('[[P=5+12+13]]')} />, so <span set:html={rich('[[[\\boxed{P=30\\text{ m}}]]]')} /> The total boundary length estimates the fencing required around the garden. Gates, posts, overlaps, and installation allowances are counted separately from the 30 metres of fence line.</p>
 
   <h3>Example 4: Steel Support Bracket</h3>
-  <p>A right-triangular metal bracket has <span set:html={rich('[[a=8\\text{ cm},\\;b=15\\text{ cm},\\;c=17\\text{ cm}]].')} /> Then <span set:html={rich('[[P=8+15+17]]')} />, so <span set:html={rich('[[[\\boxed{P=40\\text{ cm}}]]]')} />. The perimeter describes the bracket's outer edge and helps estimate protective edge material. It does not determine structural strength, which depends on thickness, alloy, and load paths rather than edge length.</p>
+  <p>A right-triangular metal bracket has <span set:html={rich('[[a=8\\text{ cm},\\;b=15\\text{ cm},\\;c=17\\text{ cm}]].')} /> Then <span set:html={rich('[[P=8+15+17]]')} />, so <span set:html={rich('[[[\\boxed{P=40\\text{ cm}}]]]')} /> The perimeter describes the bracket's outer edge and helps estimate protective edge material. It does not determine structural strength, which depends on thickness, alloy, and load paths rather than edge length.</p>
 
   <h3>Example 5: Triangular Fabric Banner</h3>
-  <p>A fabric banner has <span set:html={rich('[[a=9\\text{ ft},\\;b=12\\text{ ft},\\;c=15\\text{ ft}]].')} /> Then <span set:html={rich('[[P=9+12+15]]')} />, so <span set:html={rich('[[[\\boxed{P=36\\text{ ft}}]]]')} />. The perimeter estimates the total edge length requiring hemming or binding. Additional fabric for seams and folds is excluded from the 36 feet.</p>
+  <p>A fabric banner has <span set:html={rich('[[a=9\\text{ ft},\\;b=12\\text{ ft},\\;c=15\\text{ ft}]].')} /> Then <span set:html={rich('[[P=9+12+15]]')} />, so <span set:html={rich('[[[\\boxed{P=36\\text{ ft}}]]]')} /> The perimeter estimates the total edge length requiring hemming or binding. Additional fabric for seams and folds is excluded from the 36 feet.</p>
 
   <h3>Example 6: Triangular Sign Frame</h3>
-  <p>A right-triangular sign panel has <span set:html={rich('[[a=12\\text{ in},\\;b=16\\text{ in},\\;c=20\\text{ in}]].')} /> Then <span set:html={rich('[[P=12+16+20]]')} />, so <span set:html={rich('[[[\\boxed{P=48\\text{ in}}]]]')} />. The perimeter estimates the frame or decorative border around the panel.</p>
+  <p>A right-triangular sign panel has <span set:html={rich('[[a=12\\text{ in},\\;b=16\\text{ in},\\;c=20\\text{ in}]].')} /> Then <span set:html={rich('[[P=12+16+20]]')} />, so <span set:html={rich('[[[\\boxed{P=48\\text{ in}}]]]')} /> The perimeter estimates the frame or decorative border around the panel.</p>
 
   <h3>Example 7: Landscaping Border</h3>
-  <p>A right-triangular landscaping section has <span set:html={rich('[[a=7\\text{ m},\\;b=24\\text{ m},\\;c=25\\text{ m}]].')} /> Then <span set:html={rich('[[P=7+24+25]]')} />, so <span set:html={rich('[[[\\boxed{P=56\\text{ m}}]]]')} />. This result estimates the full length of landscaping edging for the section, before waste and joint overlap.</p>
+  <p>A right-triangular landscaping section has <span set:html={rich('[[a=7\\text{ m},\\;b=24\\text{ m},\\;c=25\\text{ m}]].')} /> Then <span set:html={rich('[[P=7+24+25]]')} />, so <span set:html={rich('[[[\\boxed{P=56\\text{ m}}]]]')} /> This result estimates the full length of landscaping edging for the section, before waste and joint overlap.</p>
 
   <h3>Example 8: Solar Panel Support Frame</h3>
-  <p>A small right-triangular support frame has <span set:html={rich('[[a=9\\text{ cm},\\;b=40\\text{ cm},\\;c=41\\text{ cm}]].')} /> Then <span set:html={rich('[[P=9+40+41]]')} />, so <span set:html={rich('[[[\\boxed{P=90\\text{ cm}}]]]')} />. The perimeter describes the frame's complete triangular outline.</p>
+  <p>A small right-triangular support frame has <span set:html={rich('[[a=9\\text{ cm},\\;b=40\\text{ cm},\\;c=41\\text{ cm}]].')} /> Then <span set:html={rich('[[P=9+40+41]]')} />, so <span set:html={rich('[[[\\boxed{P=90\\text{ cm}}]]]')} /> The perimeter describes the frame's complete triangular outline.</p>
 
   <h3>Example 9: Triangular Awning Border</h3>
-  <p>A right-triangular awning section has <span set:html={rich('[[a=15\\text{ ft},\\;b=20\\text{ ft},\\;c=25\\text{ ft}]].')} /> Then <span set:html={rich('[[P=15+20+25]]')} />, so <span set:html={rich('[[[\\boxed{P=60\\text{ ft}}]]]')} />. The perimeter estimates the border material required around the fabric, excluding attachment hardware.</p>
+  <p>A right-triangular awning section has <span set:html={rich('[[a=15\\text{ ft},\\;b=20\\text{ ft},\\;c=25\\text{ ft}]].')} /> Then <span set:html={rich('[[P=15+20+25]]')} />, so <span set:html={rich('[[[\\boxed{P=60\\text{ ft}}]]]')} /> The perimeter estimates the border material required around the fabric, excluding attachment hardware.</p>
 
   <h3>Example 10: Warehouse Roof-End Trim</h3>
-  <p>A simplified warehouse roof-end section has <span set:html={rich('[[a=11\\text{ ft},\\;b=60\\text{ ft},\\;c=61\\text{ ft}]].')} /> Then <span set:html={rich('[[P=11+60+61]]')} />, so <span set:html={rich('[[[\\boxed{P=132\\text{ ft}}]]]')} />. The total perimeter represents the three outer edges of the modeled triangular section.</p>
+  <p>A simplified warehouse roof-end section has <span set:html={rich('[[a=11\\text{ ft},\\;b=60\\text{ ft},\\;c=61\\text{ ft}]].')} /> Then <span set:html={rich('[[P=11+60+61]]')} />, so <span set:html={rich('[[[\\boxed{P=132\\text{ ft}}]]]')} /> The total perimeter represents the three outer edges of the modeled triangular section.</p>
 
   <h3>Example 11: Industrial Fabrication Panel</h3>
-  <p>A right-triangular fabrication panel has <span set:html={rich('[[a=13\\text{ cm},\\;b=84\\text{ cm},\\;c=85\\text{ cm}]].')} /> Then <span set:html={rich('[[P=13+84+85]]')} />, so <span set:html={rich('[[[\\boxed{P=182\\text{ cm}}]]]')} />. The result helps estimate protective edge profiles or border material for the panel.</p>
+  <p>A right-triangular fabrication panel has <span set:html={rich('[[a=13\\text{ cm},\\;b=84\\text{ cm},\\;c=85\\text{ cm}]].')} /> Then <span set:html={rich('[[P=13+84+85]]')} />, so <span set:html={rich('[[[\\boxed{P=182\\text{ cm}}]]]')} /> The result helps estimate protective edge profiles or border material for the panel.</p>
 
   <h3>Example 12: Plywood Support Gusset</h3>
-  <p>A right-triangular plywood support plate has <span set:html={rich('[[a=28\\text{ cm},\\;b=45\\text{ cm},\\;c=53\\text{ cm}]].')} /> Then <span set:html={rich('[[P=28+45+53]]')} />, so <span set:html={rich('[[[\\boxed{P=126\\text{ cm}}]]]')} />. The perimeter represents the complete outer edge of the plywood plate.</p>
+  <p>A right-triangular plywood support plate has <span set:html={rich('[[a=28\\text{ cm},\\;b=45\\text{ cm},\\;c=53\\text{ cm}]].')} /> Then <span set:html={rich('[[P=28+45+53]]')} />, so <span set:html={rich('[[[\\boxed{P=126\\text{ cm}}]]]')} /> The perimeter represents the complete outer edge of the plywood plate.</p>
 
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full min-w-[560px] border-collapse text-sm">
@@ -334,16 +334,16 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p>Beyond simple addition, the perimeter of a right triangle obeys several sharp inequalities. They double as quick sanity checks on any computed result.</p>
 
   <h3>The Perimeter Is Greater Than Twice the Hypotenuse</h3>
-  <p>For every valid triangle, the triangle inequality gives <span set:html={rich('[[a+b>c]].')} /> Add <span set:html={rich('[[c]]')} /> to both sides: <span set:html={rich('[[a+b+c>2c]].')} /> Therefore <span set:html={rich('[[[\\boxed{P>2c}]]]')} />. In plain language: the two legs together are always longer than the hypotenuse, so adding the hypotenuse to both sides keeps the inequality pointing the same way. For the 3-4-5 triangle, <span set:html={rich('[[P=12]]')} /> and <span set:html={rich('[[2c=10]]')} />, and 12 is indeed greater than 10.</p>
+  <p>For every valid triangle, the triangle inequality gives <span set:html={rich('[[a+b>c]].')} /> Add <span set:html={rich('[[c]]')} /> to both sides: <span set:html={rich('[[a+b+c>2c]].')} /> Therefore <span set:html={rich('[[[\\boxed{P>2c}]]]')} /> In plain language: the two legs together are always longer than the hypotenuse, so adding the hypotenuse to both sides keeps the inequality pointing the same way. For the 3-4-5 triangle, <span set:html={rich('[[P=12]]')} /> and <span set:html={rich('[[2c=10]]')} />, and 12 is indeed greater than 10.</p>
 
   <h3>The Perimeter Is Less Than Three Times the Hypotenuse</h3>
-  <p>Since the hypotenuse is longer than either leg, <span set:html={rich('[[a<c]]')} /> and <span set:html={rich('[[b<c]].')} /> Therefore <span set:html={rich('[[a+b<2c]].')} /> Adding <span set:html={rich('[[c]]')} /> gives <span set:html={rich('[[[\\boxed{P<3c}]]]')} />. This is a useful quick check: any claimed perimeter at or above three times the hypotenuse cannot belong to a valid right triangle. For the 3-4-5 triangle, <span set:html={rich('[[3c=15]]')} />, and 12 is comfortably below it.</p>
+  <p>Since the hypotenuse is longer than either leg, <span set:html={rich('[[a<c]]')} /> and <span set:html={rich('[[b<c]].')} /> Therefore <span set:html={rich('[[a+b<2c]].')} /> Adding <span set:html={rich('[[c]]')} /> gives <span set:html={rich('[[[\\boxed{P<3c}]]]')} /> This is a useful quick check: any claimed perimeter at or above three times the hypotenuse cannot belong to a valid right triangle. For the 3-4-5 triangle, <span set:html={rich('[[3c=15]]')} />, and 12 is comfortably below it.</p>
 
   <h3>Perimeter of a 45-45-90 Triangle</h3>
-  <p>In a 45-45-90 triangle both legs have the same length. Let each leg equal <span set:html={rich('[[k]].')} /> The hypotenuse is <span set:html={rich('[[c=k\\sqrt{2}]].')} /> Therefore <span set:html={rich('[[P=k+k+k\\sqrt{2}]]')} />, or <span set:html={rich('[[[\\boxed{P=k(2+\\sqrt{2})}]]]')} />. With <span set:html={rich('[[k=5]]')} />, the perimeter is <span set:html={rich('[[5(2+\\sqrt{2})\\approx17.07]]')} />: two legs of 5 plus a hypotenuse of about 7.07.</p>
+  <p>In a 45-45-90 triangle both legs have the same length. Let each leg equal <span set:html={rich('[[k]].')} /> The hypotenuse is <span set:html={rich('[[c=k\\sqrt{2}]].')} /> Therefore <span set:html={rich('[[P=k+k+k\\sqrt{2}]]')} />, or <span set:html={rich('[[[\\boxed{P=k(2+\\sqrt{2})}]]]')} /> With <span set:html={rich('[[k=5]]')} />, the perimeter is <span set:html={rich('[[5(2+\\sqrt{2})\\approx17.07]]')} />: two legs of 5 plus a hypotenuse of about 7.07.</p>
 
   <h3>Perimeter of a 30-60-90 Triangle</h3>
-  <p>If the shortest leg is <span set:html={rich('[[k]]')} />, then the longer leg is <span set:html={rich('[[k\\sqrt{3}]]')} /> and the hypotenuse is <span set:html={rich('[[2k]].')} /> Therefore <span set:html={rich('[[P=k+k\\sqrt{3}+2k]]')} />, or <span set:html={rich('[[[\\boxed{P=k(3+\\sqrt{3})}]]]')} />. With <span set:html={rich('[[k=4]]')} />, the sides are 4, about 6.93, and 8, giving a perimeter of about 18.93.</p>
+  <p>If the shortest leg is <span set:html={rich('[[k]]')} />, then the longer leg is <span set:html={rich('[[k\\sqrt{3}]]')} /> and the hypotenuse is <span set:html={rich('[[2k]].')} /> Therefore <span set:html={rich('[[P=k+k\\sqrt{3}+2k]]')} />, or <span set:html={rich('[[[\\boxed{P=k(3+\\sqrt{3})}]]]')} /> With <span set:html={rich('[[k=4]]')} />, the sides are 4, about 6.93, and 8, giving a perimeter of about 18.93.</p>
 
   <h3>Which Right Triangle Has the Largest Perimeter for a Fixed Hypotenuse?</h3>
   <p>Intuitively, when the hypotenuse stays fixed, the perimeter grows as the two legs grow together, and it is largest when neither leg is starved: when both legs are equal. That is the 45-45-90 triangle. The precise statement uses the inequality <span set:html={rich('[[a+b\\leq\\sqrt{2(a^2+b^2)}]].')} /> Since <span set:html={rich('[[a^2+b^2=c^2]]')} />, it follows that <span set:html={rich('[[[\\boxed{P\\leq c(1+\\sqrt{2})}]]]')} />, with equality exactly when <span set:html={rich('[[a=b]].')} /> So among all right triangles sharing one hypotenuse, the isosceles right triangle wins the perimeter contest.</p>
@@ -358,11 +358,11 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p><span set:html={rich('[[[\\boxed{P=a+b+c}]]]')} /> measures the total distance around the triangle. Its units are linear: metres, centimetres, millimetres, feet, inches. It tells you how much material traces the edge.</p>
 
   <h3>Area Measures the Enclosed Surface</h3>
-  <p>For a right triangle, <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} />. The two perpendicular legs serve as base and height, so no hypotenuse appears in the formula. Area uses square units: square metres, square centimetres, square feet, square inches. It tells you how much surface lies inside the boundary.</p>
+  <p>For a right triangle, <span set:html={rich('[[[\\boxed{K=\\frac{ab}{2}}]]]')} /> The two perpendicular legs serve as base and height, so no hypotenuse appears in the formula. Area uses square units: square metres, square centimetres, square feet, square inches. It tells you how much surface lies inside the boundary.</p>
 
   <h3>Worked Comparison Using a 3-4-5 Triangle</h3>
-  <p>Perimeter: <span set:html={rich('[[P=3+4+5]]')} />, so <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} />.</p>
-  <p>Area: <span set:html={rich('[[K=\\frac{3\\times4}{2}]]')} />, so <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} />.</p>
+  <p>Perimeter: <span set:html={rich('[[P=3+4+5]]')} />, so <span set:html={rich('[[[\\boxed{P=12\\text{ units}}]]]')} /></p>
+  <p>Area: <span set:html={rich('[[K=\\frac{3\\times4}{2}]]')} />, so <span set:html={rich('[[[\\boxed{K=6\\text{ square units}}]]]')} /></p>
   <p>The numbers 12 and 6 describe completely different properties of the same triangle: one is the walk around it, the other is the ground it covers.</p>
 
   <h3>Can Two Right Triangles Have the Same Perimeter but Different Areas?</h3>
@@ -377,7 +377,7 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
 <!-- Section 10: Semiperimeter relationship -->
 <section id="sec-semiperimeter" class="mx-auto mt-12 w-full max-w-4xl section-shell prose-shell scroll-mt-24">
   <h2>What Is the Relationship Between Perimeter and Semiperimeter?</h2>
-  <p>Semiperimeter is half the full perimeter: <span set:html={rich('[[[\\boxed{s=\\frac{P}{2}}]]]')} />. For a right triangle that is <span set:html={rich('[[[\\boxed{s=\\frac{a+b+c}{2}}]]]')} />. It stays a supporting measurement on this page, not a second main subject.</p>
+  <p>Semiperimeter is half the full perimeter: <span set:html={rich('[[[\\boxed{s=\\frac{P}{2}}]]]')} /> For a right triangle that is <span set:html={rich('[[[\\boxed{s=\\frac{a+b+c}{2}}]]]')} /> It stays a supporting measurement on this page, not a second main subject.</p>
 
   <h3>Numerical Example</h3>
   <p>Use <span set:html={rich('[[a=3,\\;b=4,\\;c=5]].')} /> The perimeter is <span set:html={rich('[[P=12]]')} />, so the semiperimeter is <span set:html={rich('[[s=\\frac{12}{2}=6]].')} /> Both are linear measurements in the same units; one is simply half the other.</p>
@@ -395,13 +395,13 @@ const imgSrc = (name: string): string => `/images/perimeter/${name}`;
   <p>Perimeter is calculated through addition, and addition only makes sense between like quantities. Adding 3 feet to 48 inches without conversion mixes two scales and produces a meaningless total. Convert every side to one common unit first, then add.</p>
 
   <h3>Worked Unit Conversion Example</h3>
-  <p>Given <span set:html={rich('[[a=3\\text{ ft}]]')} />, <span set:html={rich('[[b=48\\text{ inches}]]')} />, <span set:html={rich('[[c=5\\text{ ft}]].')} /> Convert inches to feet: <span set:html={rich('[[48\\text{ inches}=4\\text{ ft}]].')} /> Now all three sides are in feet, so <span set:html={rich('[[P=3+4+5]]')} /> and <span set:html={rich('[[[\\boxed{P=12\\text{ ft}}]]]')} />. The conversion must happen before the addition, not after.</p>
+  <p>Given <span set:html={rich('[[a=3\\text{ ft}]]')} />, <span set:html={rich('[[b=48\\text{ inches}]]')} />, <span set:html={rich('[[c=5\\text{ ft}]].')} /> Convert inches to feet: <span set:html={rich('[[48\\text{ inches}=4\\text{ ft}]].')} /> Now all three sides are in feet, so <span set:html={rich('[[P=3+4+5]]')} /> and <span set:html={rich('[[[\\boxed{P=12\\text{ ft}}]]]')} /> The conversion must happen before the addition, not after.</p>
 
   <h3>How the Calculator's Unit Selectors Help</h3>
   <p>Each of the three inputs on this page carries its own unit selector. When you pick different units for different sides, the calculator converts every input into the common unit automatically before adding: it reads the unit chosen for the first side and scales the other two to match, using exact length ratios (1 inch = 0.0254 m, 1 foot = 0.3048 m, and so on). The result is reported in that common unit. You can still convert by hand as shown above, but the selectors remove the arithmetic.</p>
 
   <h3>Working With Decimal Measurements</h3>
-  <p>Use <span set:html={rich('[[a=2.5,\\;b=6,\\;c=6.5]].')} /> Then <span set:html={rich('[[P=2.5+6+6.5]]')} />, so <span set:html={rich('[[[\\boxed{P=15\\text{ units}}]]]')} />. Decimal values are added in exactly the same way as whole numbers; the decimal points simply line up in the sum.</p>
+  <p>Use <span set:html={rich('[[a=2.5,\\;b=6,\\;c=6.5]].')} /> Then <span set:html={rich('[[P=2.5+6+6.5]]')} />, so <span set:html={rich('[[[\\boxed{P=15\\text{ units}}]]]')} /> Decimal values are added in exactly the same way as whole numbers; the decimal points simply line up in the sum.</p>
 
   <h3>Working With Irrational Side Lengths</h3>
   <p>Take a triangle with <span set:html={rich('[[a=1,\\;b=1,\\;c=\\sqrt{2}]].')} /> Then <span set:html={rich('[[P=1+1+\\sqrt{2}]]')} />, so <span set:html={rich('[[[\\boxed{P=2+\\sqrt{2}}]]]')} />, approximately <span set:html={rich('[[P\\approx3.4142]].')} /> Keeping the exact radical form is useful in mathematical problems because it preserves full precision; the decimal approximation is for final reporting.</p>

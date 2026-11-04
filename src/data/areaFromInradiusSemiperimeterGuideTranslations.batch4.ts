@@ -98,7 +98,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-intro": {
         "h2": "내접원 반지름과 반둘레로 직각삼각형의 넓이 구하는 방법",
         "blocks": [
-          { "kind": "p", "text": "직각삼각형의 내접원 반지름이 [[r=2]]이고 반둘레가 [[s=12]]입니다. [[K=r\\times s]]를 적용하세요: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. 이 삼각형은 24제곱단위의 평평한 넓이를 차지합니다. 이것이 계산기가 자동화하는 완전한 방법입니다: 두 개의 측정값, 한 번의 곱셈, 하나의 답." },
+          { "kind": "p", "text": "직각삼각형의 내접원 반지름이 [[r=2]]이고 반둘레가 [[s=12]]입니다. [[K=r\\times s]]를 적용하세요: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] 이 삼각형은 24제곱단위의 평평한 넓이를 차지합니다. 이것이 계산기가 자동화하는 완전한 방법입니다: 두 개의 측정값, 한 번의 곱셈, 하나의 답." },
           { "kind": "p", "text": "내접원 반지름은 삼각형 안에 꼭 맞게 들어가 세 변에 모두 닿는 원의 반지름입니다. 반둘레는 삼각형 둘레의 절반입니다. 이 두 값만으로 넓이를 구할 수 있는 이유는, 원의 반지름이 밑변이 삼각형의 변인 세 작은 삼각형의 높이가 되기 때문입니다. 이 항등식은 직각삼각형뿐 아니라 모든 퇴화되지 않은 삼각형에 성립합니다. 직각삼각형이 특별한 이유는 내접원 반지름 자체를 세 변으로부터 빠르게 구할 수 있기 때문입니다. 내접원이 직접 측정되었거나, 내접원 반지름과 반둘레를 이미 알고 있을 때 가장 유용합니다." }
         ]
       },
@@ -124,7 +124,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "h2": "삼각형의 반둘레란 무엇인가요?",
         "blocks": [
           { "kind": "h3", "text": "반둘레의 정의" },
-          { "kind": "p", "text": "반둘레는 삼각형 전체 둘레의 절반입니다: [[[\\boxed{s=\\frac{a+b+c}{2}}]]]. 여기서 [[a]]와 [[b]]는 직각변, [[c]]는 빗변입니다. 반둘레는 한 변처럼 길이이며, 세 변을 하나의 수로 합치기 때문에 넓이 공식에서 자리를 차지합니다." },
+          { "kind": "p", "text": "반둘레는 삼각형 전체 둘레의 절반입니다: [[[\\boxed{s=\\frac{a+b+c}{2}}]]] 여기서 [[a]]와 [[b]]는 직각변, [[c]]는 빗변입니다. 반둘레는 한 변처럼 길이이며, 세 변을 하나의 수로 합치기 때문에 넓이 공식에서 자리를 차지합니다." },
           { "kind": "h3", "text": "둘레와 반둘레의 차이" },
           { "kind": "p", "text": "둘레는 삼각형 둘레의 전체 거리 [[P=a+b+c]]이고, 반둘레는 그 절반 [[s=\\frac{P}{2}]]입니다. 3-4-5 삼각형에서는 [[P=3+4+5=12]]이고 [[s=\\frac{12}{2}=6]]입니다. 반둘레는 경계의 길이가 아니라 그 절반이며, [[K=rs]]에 전체 둘레를 넣으면 실제 넓이의 두 배가 됩니다." },
           { "kind": "h3", "text": "넓이 공식에 반둘레가 쓰이는 이유" },
@@ -138,11 +138,11 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "표준 삼각형 넓이 규칙에서 시작합니다: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]. 내심 [[I]]에서 세 꼭짓점으로 선분을 그으면 원래 삼각형이 세 작은 삼각형으로 나뉩니다. 각 작은 삼각형은 밑변이 원래 삼각형의 한 변과 같고, 반지름이 각 변에 직각으로 만나므로 수직 높이가 내접원 반지름 [[r]]과 같습니다. 이는 모든 퇴화되지 않은 삼각형에 성립합니다. 이 계산기의 삼각형은 직각삼각형이지만, 넓이 항등식 자체는 완전히 일반적입니다." },
           { "kind": "h3", "text": "첫 번째 작은 삼각형의 넓이" },
-          { "kind": "p", "text": "변 [[a]] 위에 선 작은 삼각형은 밑변이 [[a]], 높이가 [[r]]입니다: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "변 [[a]] 위에 선 작은 삼각형은 밑변이 [[a]], 높이가 [[r]]입니다: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "두 번째 작은 삼각형의 넓이" },
-          { "kind": "p", "text": "변 [[b]] 위에 선 작은 삼각형은 밑변이 [[b]], 높이가 [[r]]입니다: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "변 [[b]] 위에 선 작은 삼각형은 밑변이 [[b]], 높이가 [[r]]입니다: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "세 번째 작은 삼각형의 넓이" },
-          { "kind": "p", "text": "변 [[c]] 위에 선 작은 삼각형은 밑변이 [[c]], 높이가 [[r]]입니다: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "변 [[c]] 위에 선 작은 삼각형은 밑변이 [[c]], 높이가 [[r]]입니다: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "세 넓이를 더하기" },
           { "kind": "p", "text": "세 작은 삼각형은 겹치지 않고 원래 삼각형을 채우므로 [[K=K_1+K_2+K_3]]입니다. 대입하면 [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]가 됩니다. [[\\frac{r}{2}]]로 묶으면 [[K=\\frac{r(a+b+c)}{2}]]가 됩니다. [[s=\\frac{a+b+c}{2}]]임을 떠올리면 [[[\\boxed{K=r\\times s}]]]가 됩니다. 모든 전환이 정당합니다: 채우기가 정확하고, 높이 [[r]]이 공통이며, 반둘레가 2로 나누는 것을 흡수합니다." },
           { "kind": "h3", "text": "이 공식에 2로 나누는 과정이 또 필요 없는 이유" },
@@ -154,13 +154,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-inradius": {
         "h2": "세 변의 길이로 내접원 반지름 구하는 방법",
         "blocks": [
-          { "kind": "p", "text": "세 변을 알 때 직각삼각형의 내접원 반지름은 내접원을 그릴 필요 없이 구하는 단축 공식이 있습니다: [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. 여기서 [[a]]와 [[b]]는 서로 수직인 직각변, [[c]]는 빗변입니다. 이는 직각삼각형 기하학에서 가장 유용한 사실 중 하나입니다." },
+          { "kind": "p", "text": "세 변을 알 때 직각삼각형의 내접원 반지름은 내접원을 그릴 필요 없이 구하는 단축 공식이 있습니다: [[[\\boxed{r=\\frac{a+b-c}{2}}]]] 여기서 [[a]]와 [[b]]는 서로 수직인 직각변, [[c]]는 빗변입니다. 이는 직각삼각형 기하학에서 가장 유용한 사실 중 하나입니다." },
           { "kind": "h3", "text": "직각삼각형 내접원 반지름 공식 유도" },
           { "kind": "p", "text": "유도는 접선 길이 정리를 사용합니다: 외부 한 점에서 원에 그은 두 접선 구간의 길이는 같습니다. 세 꼭짓점에서의 접선 길이를 [[A]]에서 [[x]], [[B]]에서 [[y]], [[C]]에서 [[z]]라 하세요. 직각 [[C]]에서는 내접원의 두 접선이 수직인 직각변을 따라 뻗으며 각각 길이가 [[r]]이어서 두 반지름과 함께 작은 정사각형을 이루므로 [[z=r]]입니다. 그러면 변은 [[a=y+r]], [[b=x+r]], [[c=x+y]]가 됩니다. 빼면 [[a+b-c=(y+r)+(x+r)-(x+y)]]이므로 [[a+b-c=2r]]이 되어 [[[\\boxed{r=\\frac{a+b-c}{2}}]]]를 얻습니다. 직각에서 생기는 정사각형이 이 단축 공식을 직각삼각형만의 것으로 만드는 이유입니다." },
           { "kind": "h3", "text": "3-4-5 삼각형을 이용한 예제" },
-          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]]가 주어졌습니다: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. 작도 없이 내접원의 반지름이 정확히 1이 됩니다." },
+          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]]가 주어졌습니다: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] 작도 없이 내접원의 반지름이 정확히 1이 됩니다." },
           { "kind": "h3", "text": "5-12-13 삼각형을 이용한 예제" },
-          { "kind": "p", "text": "[[a=5]], [[b=12]], [[c=13]]이 주어졌습니다: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. 역시 내접원 반지름이 변의 길이에서 바로 나옵니다." },
+          { "kind": "p", "text": "[[a=5]], [[b=12]], [[c=13]]이 주어졌습니다: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] 역시 내접원 반지름이 변의 길이에서 바로 나옵니다." },
           { "kind": "h3", "text": "반둘레를 함께 구하기" },
           { "kind": "p", "text": "같은 세 변으로 [[r]]과 함께 [[s=\\frac{a+b+c}{2}]]를 계산하세요. 5-12-13 삼각형에서는 [[s=\\frac{5+12+13}{2}=15]]이고, 그다음 [[K=rs=2\\times15=30]]입니다. 세 변을 한 번 훑으면 계산기의 두 입력과 넓이 자체를 모두 얻을 수 있습니다." },
           { "kind": "h3", "text": "이 단축 공식은 언제 사용해야 하나요?" },
@@ -198,13 +198,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "네 개의 풀이 예제가 친숙한 것부터 차근차근 방법을 쌓아 올립니다. 각 예제는 세 변으로부터 반둘레와 내접원 반지름을 구하고, [[K=rs]]를 모든 대입 과정을 보여주며 적용한 뒤, 직각변 공식으로 검증합니다." },
           { "kind": "h3", "text": "예제 1: 3-4-5 직각삼각형" },
-          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]]가 주어졌습니다. 1단계: 반둘레, [[s=\\frac{3+4+5}{2}=6]]. 2단계: 내접원 반지름, [[r=\\frac{3+4-5}{2}=1]]. 3단계: 공식 적용, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. 검증: [[K=\\frac{3\\times4}{2}=6]]." },
+          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]]가 주어졌습니다. 1단계: 반둘레, [[s=\\frac{3+4+5}{2}=6]]. 2단계: 내접원 반지름, [[r=\\frac{3+4-5}{2}=1]]. 3단계: 공식 적용, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] 검증: [[K=\\frac{3\\times4}{2}=6]]." },
           { "kind": "h3", "text": "예제 2: 6-8-10 직각삼각형" },
-          { "kind": "p", "text": "[[a=6]], [[b=8]], [[c=10]]이 주어졌습니다. 그러면 [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]]이고, [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. 검증: [[K=\\frac{6\\times8}{2}=24]]." },
+          { "kind": "p", "text": "[[a=6]], [[b=8]], [[c=10]]이 주어졌습니다. 그러면 [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]]이고, [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] 검증: [[K=\\frac{6\\times8}{2}=24]]." },
           { "kind": "h3", "text": "예제 3: 5-12-13 직각삼각형" },
-          { "kind": "p", "text": "[[a=5]], [[b=12]], [[c=13]]이 주어졌습니다. 그러면 [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]]이고, [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. 검증: [[K=\\frac{5\\times12}{2}=30]]." },
+          { "kind": "p", "text": "[[a=5]], [[b=12]], [[c=13]]이 주어졌습니다. 그러면 [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]]이고, [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] 검증: [[K=\\frac{5\\times12}{2}=30]]." },
           { "kind": "h3", "text": "예제 4: 8-15-17 직각삼각형" },
-          { "kind": "p", "text": "[[a=8]], [[b=15]], [[c=17]]이 주어졌습니다. 그러면 [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]]이고, [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. 검증: [[K=\\frac{8\\times15}{2}=60]]." },
+          { "kind": "p", "text": "[[a=8]], [[b=15]], [[c=17]]이 주어졌습니다. 그러면 [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]]이고, [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] 검증: [[K=\\frac{8\\times15}{2}=60]]." },
           { "kind": "h3", "text": "기초 예제 비교" }
         ],
         "table": {
@@ -222,29 +222,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "열두 가지 풀이 상황은 다양한 규모와 단위에서 공식을 보여줍니다. 각 예제는 삼각형 물체의 이름을 밝히고, 세 변의 측정값을 주고, 내접원 반지름과 반둘레를 구한 뒤, 주요 공식을 단계별로 적용하고, 그 뒤에 숨은 가정을 밝힙니다. 모든 예제는 직각삼각형 패널, 단면, 프로파일, 또는 단순화된 기하 모델이며, 실제 물체가 곡선이거나 불규칙할 때는 계산이 모델링된 삼각형에만 적용됩니다." },
           { "kind": "h3", "text": "예제 1: 삼각형 유리창" },
-          { "kind": "p", "text": "직각삼각형 유리창의 [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]입니다. 내접원 반지름: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. 반둘레: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. 넓이: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. 이는 프레임 치수를 고려하기 전의 평평한 유리 넓이입니다." },
+          { "kind": "p", "text": "직각삼각형 유리창의 [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]입니다. 내접원 반지름: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. 반둘레: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. 넓이: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] 이는 프레임 치수를 고려하기 전의 평평한 유리 넓이입니다." },
           { "kind": "h3", "text": "예제 2: 강철 지지 브래킷" },
-          { "kind": "p", "text": "삼각형 강철 지지판의 [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]입니다. 그러면 [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. 넓이만으로는 판의 하중 지지 능력을 알 수 없습니다." },
+          { "kind": "p", "text": "삼각형 강철 지지판의 [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]입니다. 그러면 [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] 넓이만으로는 판의 하중 지지 능력을 알 수 없습니다." },
           { "kind": "h3", "text": "예제 3: 삼각형 경사로 측면 프로파일" },
-          { "kind": "p", "text": "단순화된 직각삼각형 경사로 프로파일의 [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]입니다. 그러면 [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. 이는 경사진 보행면이 아니라 측면 프로파일을 나타냅니다." },
+          { "kind": "p", "text": "단순화된 직각삼각형 경사로 프로파일의 [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]입니다. 그러면 [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] 이는 경사진 보행면이 아니라 측면 프로파일을 나타냅니다." },
           { "kind": "h3", "text": "예제 4: 삼각형 지붕 지지 패널" },
-          { "kind": "p", "text": "직각삼각형 지붕 지지 패널의 [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]입니다. 그러면 [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. 결과는 추정된 평평한 삼각형 패널 넓이입니다." },
+          { "kind": "p", "text": "직각삼각형 지붕 지지 패널의 [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]입니다. 그러면 [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] 결과는 추정된 평평한 삼각형 패널 넓이입니다." },
           { "kind": "h3", "text": "예제 5: 측량된 정원 구역" },
-          { "kind": "p", "text": "직각삼각형 정원 구역의 [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]입니다. 그러면 [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. 이 공식은 세 경계 측정값에서 삼각형 구역의 넓이를 직접 구해줍니다." },
+          { "kind": "p", "text": "직각삼각형 정원 구역의 [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]입니다. 그러면 [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] 이 공식은 세 경계 측정값에서 삼각형 구역의 넓이를 직접 구해줍니다." },
           { "kind": "h3", "text": "예제 6: 삼각형 천 돛" },
-          { "kind": "p", "text": "직각삼각형 천 패널의 [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]입니다. 그러면 [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. 이 평평한 패널 수치에는 솔기와 천 여유분이 제외됩니다." },
+          { "kind": "p", "text": "직각삼각형 천 패널의 [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]입니다. 그러면 [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] 이 평평한 패널 수치에는 솔기와 천 여유분이 제외됩니다." },
           { "kind": "h3", "text": "예제 7: 넓은 삼각형 토지 구역" },
-          { "kind": "p", "text": "직각삼각형으로 모델링된 측량 토지 구역의 [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]입니다. 그러면 [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. 단순화된 직각삼각형 모델은 평평한 지면 위의 직선 경계를 가정합니다." },
+          { "kind": "p", "text": "직각삼각형으로 모델링된 측량 토지 구역의 [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]입니다. 그러면 [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] 단순화된 직각삼각형 모델은 평평한 지면 위의 직선 경계를 가정합니다." },
           { "kind": "h3", "text": "예제 8: 합판 절단 템플릿" },
-          { "kind": "p", "text": "삼각형 합판 템플릿의 [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]입니다. 그러면 [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. 이 넓이는 절단 손실 전에 재료 소요량을 추정하는 데 도움이 됩니다." },
+          { "kind": "p", "text": "삼각형 합판 템플릿의 [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]입니다. 그러면 [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] 이 넓이는 절단 손실 전에 재료 소요량을 추정하는 데 도움이 됩니다." },
           { "kind": "h3", "text": "예제 9: 대형 삼각형 간판 패널" },
-          { "kind": "p", "text": "직각삼각형 간판 패널의 [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]입니다. 그러면 [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. 결과는 보는 사람을 향한 평평한 삼각형 표면을 나타냅니다." },
+          { "kind": "p", "text": "직각삼각형 간판 패널의 [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]입니다. 그러면 [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] 결과는 보는 사람을 향한 평평한 삼각형 표면을 나타냅니다." },
           { "kind": "h3", "text": "예제 10: 삼각형 어닝 지지대" },
-          { "kind": "p", "text": "직각삼각형 어닝 지지 구역의 [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]입니다. 그러면 [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. 이는 모델링된 삼각형 구역의 계산된 넓이입니다." },
+          { "kind": "p", "text": "직각삼각형 어닝 지지 구역의 [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]입니다. 그러면 [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] 이는 모델링된 삼각형 구역의 계산된 넓이입니다." },
           { "kind": "h3", "text": "예제 11: 산업용 지지 패널" },
-          { "kind": "p", "text": "직각삼각형 산업용 지지 패널의 [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]입니다. 그러면 [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. 이 기하 계산은 패널의 평평한 넓이를 나타내며, 구조적 성능이 아닙니다." },
+          { "kind": "p", "text": "직각삼각형 산업용 지지 패널의 [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]입니다. 그러면 [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] 이 기하 계산은 패널의 평평한 넓이를 나타내며, 구조적 성능이 아닙니다." },
           { "kind": "h3", "text": "예제 12: 대형 삼각형 지붕 끝단 구역" },
-          { "kind": "p", "text": "직각삼각형 지붕 끝단 구역의 [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]입니다. 그러면 [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. 계산된 넓이는 평평한 삼각형 적용 범위를 추정하는 데 도움이 됩니다." },
+          { "kind": "p", "text": "직각삼각형 지붕 끝단 구역의 [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]입니다. 그러면 [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] 계산된 넓이는 평평한 삼각형 적용 범위를 추정하는 데 도움이 됩니다." },
           { "kind": "h3", "text": "실용 예제 비교" }
         ],
         "table": {
@@ -270,7 +270,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "직각삼각형에서 내접원 반지름과 반둘레는 변과 무관하지 않습니다. 변으로부터 만들어집니다. [[r=\\frac{a+b-c}{2}]]와 [[s=\\frac{a+b+c}{2}]]에서 출발해 두 식을 더하고 빼면, 더하면 [[[\\boxed{s+r=a+b}]]]가 되고 빼면 [[[\\boxed{s-r=c}]]]가 됩니다. 이 두 항등식은 주어진 표기법 아래 직각삼각형에만 해당하며, 계산기의 두 입력을 삼각형 자체에 대한 놀라울 만큼 많은 정보로 바꿔줍니다." },
           { "kind": "h3", "text": "빗변 복원하기" },
-          { "kind": "p", "text": "[[s-r=c]]에서 [[r]]과 [[s]]를 알면 빗변을 복원할 수 있습니다. [[r=2]], [[s=12]]인 경우: [[c=12-2]], [[[\\boxed{c=10}]]]. 두 입력만으로 추가 측정 없이 가장 긴 변이 드러납니다." },
+          { "kind": "p", "text": "[[s-r=c]]에서 [[r]]과 [[s]]를 알면 빗변을 복원할 수 있습니다. [[r=2]], [[s=12]]인 경우: [[c=12-2]], [[[\\boxed{c=10}]]] 두 입력만으로 추가 측정 없이 가장 긴 변이 드러납니다." },
           { "kind": "h3", "text": "두 직각변의 합 복원하기" },
           { "kind": "p", "text": "[[a+b=s+r]]에서 직각변의 합이 바로 나옵니다. [[r=2]], [[s=12]]인 경우: [[a+b=14]]입니다. 합만으로는 각 직각변을 따로 알 수 없습니다. 개별 길이를 알려면 정보가 하나 더 필요합니다." },
           { "kind": "h3", "text": "두 직각변의 곱 복원하기" },
@@ -296,13 +296,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-heron": {
         "h2": "내접원 공식은 헤론의 공식과 어떻게 비교되나요?",
         "blocks": [
-          { "kind": "p", "text": "헤론의 공식은 세 변 모두에서 넓이를 구합니다: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]. 세 변의 길이와 반둘레를 사용하고, 모든 퇴화되지 않은 삼각형에 성립하며, 별도 입력으로 내접원 반지름이 필요 없습니다. [[[\\boxed{K=rs}]]]와 비교해 보세요. 둘은 가까운 친척입니다. 반둘레 [[s]]가 둘 다에 등장하며, 둘이 일치함을 증명하는 것은 [[K=rs]]가 옳다는 것을 보는 가장 깔끔한 방법 중 하나입니다." },
+          { "kind": "p", "text": "헤론의 공식은 세 변 모두에서 넓이를 구합니다: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]] 세 변의 길이와 반둘레를 사용하고, 모든 퇴화되지 않은 삼각형에 성립하며, 별도 입력으로 내접원 반지름이 필요 없습니다. [[[\\boxed{K=rs}]]]와 비교해 보세요. 둘은 가까운 친척입니다. 반둘레 [[s]]가 둘 다에 등장하며, 둘이 일치함을 증명하는 것은 [[K=rs]]가 옳다는 것을 보는 가장 깔끔한 방법 중 하나입니다." },
           { "kind": "h3", "text": "내접원 공식이 더 쉬운 경우" },
           { "kind": "p", "text": "내접원 반지름과 반둘레를 이미 알고 있을 때 [[K=rs]]가 특히 편리합니다. 한 번의 곱셈만으로 끝나며, 제곱근도, 변 차이의 인수분해도 필요 없습니다. 내접원이 측정되었거나, 앞선 단계에서 이미 [[r]]과 [[s]]가 나왔다면 이것이 넓이로 가는 가장 짧은 길입니다." },
           { "kind": "h3", "text": "헤론의 공식이 더 유용한 경우" },
           { "kind": "p", "text": "헤론의 공식은 세 변의 길이를 알지만 내접원 반지름을 구하지 않았을 때 더 나은 선택입니다. [[r]]을 거치는 우회 없이 [[a]], [[b]], [[c]]에서 직접 넓이에 도달합니다. 어느 공식도 보편적으로 더 정확한 것은 아닙니다. 일관된 입력에서는 정확하며, 둘이 다르게 나오는 경우는 입력이 일관되지 않을 때뿐입니다." },
           { "kind": "h3", "text": "3-4-5 삼각형으로 두 공식 검증하기" },
-          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]]가 주어지고 [[s=6]], [[r=1]]입니다. 내접원으로: [[K=1\\times6=6]]. 헤론의 공식으로: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]]이므로 [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. 두 결과가 일치하는 것은 두 공식이 같은 영역을 재기 때문입니다. 하나의 넓이를 두 식으로 표현한 것이며, 둘 사이의 일치는 계산이 옳다는 강한 신호입니다." }
+          { "kind": "p", "text": "[[a=3]], [[b=4]], [[c=5]]가 주어지고 [[s=6]], [[r=1]]입니다. 내접원으로: [[K=1\\times6=6]]. 헤론의 공식으로: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]]이므로 [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] 두 결과가 일치하는 것은 두 공식이 같은 영역을 재기 때문입니다. 하나의 넓이를 두 식으로 표현한 것이며, 둘 사이의 일치는 계산이 옳다는 강한 신호입니다." }
         ]
       },
       "sec-legs": {
@@ -491,7 +491,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-intro": {
         "h2": "Cara Mengira Luas Segi Tiga Bersudut Tepat Menggunakan Jejari Dalam dan Separuh Perimeter",
         "blocks": [
-          { "kind": "p", "text": "Sebuah segi tiga bersudut tepat mempunyai jejari dalam [[r=2]] dan separuh perimeter [[s=12]]. Gunakan [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Segi tiga ini meliputi 24 unit persegi luas rata. Ini ialah kaedah lengkap yang diautomasikan oleh kalkulator: dua ukuran, sekali darab, satu jawapan." },
+          { "kind": "p", "text": "Sebuah segi tiga bersudut tepat mempunyai jejari dalam [[r=2]] dan separuh perimeter [[s=12]]. Gunakan [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Segi tiga ini meliputi 24 unit persegi luas rata. Ini ialah kaedah lengkap yang diautomasikan oleh kalkulator: dua ukuran, sekali darab, satu jawapan." },
           { "kind": "p", "text": "Jejari dalam ialah jejari bulatan yang muat kemas di dalam segi tiga sambil menyentuh ketiga-tiga sisinya. Separuh perimeter ialah separuh jarak mengelilingi segi tiga. Bersama-sama ia mencukupi untuk menentukan luas kerana jejari bulatan bertindak sebagai tinggi bagi tiga segi tiga kecil yang bertapak pada sisi-sisi segi tiga itu. Identiti ini sah untuk setiap segi tiga tak merosot, bukan hanya segi tiga bersudut tepat; yang istimewa tentang segi tiga bersudut tepat ialah cara pantas jejari dalam itu sendiri boleh dikira daripada ketiga-tiga sisi. Ia paling berguna apabila bulatan dalam telah diukur secara langsung, atau apabila jejari dalam dan separuh perimeter sudah diketahui daripada kerja terdahulu." }
         ]
       },
@@ -508,7 +508,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "Memahami Pusat Bulatan Dalam" },
           { "kind": "p", "text": "Pusat bulatan dalam [[I]] ialah titik di mana tiga pembahagi dua sama sudut dalaman segi tiga bertemu. Setiap pembahagi dua sama sudut ialah set titik yang sama jarak dari dua sisi yang membentuk sudut itu, jadi titik yang terletak pada ketiga-tiga pembahagi dua sama jarak dari ketiga-tiga sisi, dan ia mesti terletak di dalam segi tiga. Jarak sepunya itu ialah tepat jejari dalam, dan bulatan berpusat di [[I]] dengan jejari [[r]] menyentuh setiap sisi sekali: bulatan dalam." },
           { "kind": "h3", "text": "Adakah Jejari Dalam Sama dengan Jejari Luar?" },
-          { "kind": "p", "text": "Tidak. Jejari dalam [[r]] ialah jejari bulatan di dalam segi tiga, manakala jejari luar [[R]] ialah jejari bulatan yang melalui ketiga-tiga bucu, iaitu bulatan luar. Untuk segi tiga bersudut tepat, pusat bulatan luar ialah titik tengah hipotenus, jadi [[[\\boxed{R=\\frac{c}{2}}]]]. Kedua-dua jejari itu memerihalkan bulatan yang berbeza sama sekali: satu terterap dalam segi tiga, satu lagi dilukis mengelilinginya. Mencampuradukkannya ialah antara kesilapan paling biasa dalam topik ini, jadi asingkan: [[r]] untuk dalam, [[R]] untuk luar." }
+          { "kind": "p", "text": "Tidak. Jejari dalam [[r]] ialah jejari bulatan di dalam segi tiga, manakala jejari luar [[R]] ialah jejari bulatan yang melalui ketiga-tiga bucu, iaitu bulatan luar. Untuk segi tiga bersudut tepat, pusat bulatan luar ialah titik tengah hipotenus, jadi [[[\\boxed{R=\\frac{c}{2}}]]] Kedua-dua jejari itu memerihalkan bulatan yang berbeza sama sekali: satu terterap dalam segi tiga, satu lagi dilukis mengelilinginya. Mencampuradukkannya ialah antara kesilapan paling biasa dalam topik ini, jadi asingkan: [[r]] untuk dalam, [[R]] untuk luar." }
         ],
         "imgAlt": "Segi tiga ABC dengan bulatan dalam, pusat I, jejari dalam r, titik sentuhan dan bulatan luar",
         "figcaption": "Segi tiga ABC dan bulatan dalamnya: pusat I, jejari dalam r = ID dengan ID serenjang dengan setiap sisi, serta bulatan luar untuk perbandingan."
@@ -531,13 +531,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Mulakan daripada peraturan luas segi tiga piawai: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]. Melukis segmen dari pusat bulatan dalam [[I]] ke tiga bucu membahagikan segi tiga asal kepada tiga segi tiga kecil. Setiap segi tiga kecil mempunyai tapak sama dengan satu sisi segi tiga asal dan ketinggian serenjang sama dengan jejari dalam [[r]], kerana jejari bertemu setiap sisi pada sudut tepat. Ini berfungsi untuk setiap segi tiga tak merosot; untuk kalkulator ini segi tiganya bersudut tepat, tetapi identiti luas itu sendiri adalah umum sepenuhnya." },
           { "kind": "h3", "text": "Luas Segi Tiga Kecil Pertama" },
-          { "kind": "p", "text": "Segi tiga kecil yang berdiri pada sisi [[a]] mempunyai tapak [[a]] dan tinggi [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "Segi tiga kecil yang berdiri pada sisi [[a]] mempunyai tapak [[a]] dan tinggi [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "Luas Segi Tiga Kecil Kedua" },
-          { "kind": "p", "text": "Segi tiga kecil yang berdiri pada sisi [[b]] mempunyai tapak [[b]] dan tinggi [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "Segi tiga kecil yang berdiri pada sisi [[b]] mempunyai tapak [[b]] dan tinggi [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "Luas Segi Tiga Kecil Ketiga" },
-          { "kind": "p", "text": "Segi tiga kecil yang berdiri pada sisi [[c]] mempunyai tapak [[c]] dan tinggi [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "Segi tiga kecil yang berdiri pada sisi [[c]] mempunyai tapak [[c]] dan tinggi [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "Tambahkan Ketiga-tiga Luas" },
-          { "kind": "p", "text": "Ketiga-tiga segi tiga kecil menjubin yang asal tanpa bertindih, jadi [[K=K_1+K_2+K_3]]. Gantikan: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Faktorkan [[\\frac{r}{2}]]: [[K=\\frac{r(a+b+c)}{2}]]. Ingat [[s=\\frac{a+b+c}{2}]], maka [[[\\boxed{K=r\\times s}]]]. Setiap peralihan adalah berasas: jubinannya tepat, tinggi [[r]] adalah sepunya, dan separuh perimeter menyerap pembahagian dengan dua." },
+          { "kind": "p", "text": "Ketiga-tiga segi tiga kecil menjubin yang asal tanpa bertindih, jadi [[K=K_1+K_2+K_3]]. Gantikan: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Faktorkan [[\\frac{r}{2}]]: [[K=\\frac{r(a+b+c)}{2}]]. Ingat [[s=\\frac{a+b+c}{2}]], maka [[[\\boxed{K=r\\times s}]]] Setiap peralihan adalah berasas: jubinannya tepat, tinggi [[r]] adalah sepunya, dan separuh perimeter menyerap pembahagian dengan dua." },
           { "kind": "h3", "text": "Mengapa Formula Ini Tidak Perlu Dibahagi Dua Lagi?" },
           { "kind": "p", "text": "Kerana satu perdua sudah dilipat ke dalam separuh perimeter. Ketiga-tiga perdua bergabung menjadi [[\\frac{r(a+b+c)}{2}]], dan [[s]] ialah tepat separuh perimeter, jadi membahagi dua buat kali kedua akan menjadikan ungkapan yang betul itu suku. Kira [[r\\times s]] dan berhenti di situ; pembahagian separuh lagi ialah kesilapan, bukan pembetulan." }
         ],
@@ -549,11 +549,11 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Apabila ketiga-tiga sisi diketahui, jejari dalam segi tiga bersudut tepat mengikut jalan pintas yang mengelakkan melukis bulatan dalam sama sekali: [[[\\boxed{r=\\frac{a+b-c}{2}}]]], dengan [[a]] dan [[b]] ialah kaki-kaki yang berserenjang dan [[c]] ialah hipotenus. Ini ialah antara fakta paling berguna dalam geometri segi tiga bersudut tepat." },
           { "kind": "h3", "text": "Menerbitkan Formula Jejari Dalam Segi Tiga Bersudut Tepat" },
-          { "kind": "p", "text": "Penerbitan menggunakan teorem segmen tangen sama: dari satu titik luaran yang sepunya, dua segmen tangen yang dilukis ke bulatan mempunyai panjang yang sama. Biarkan panjang tangen dari tiga bucu ialah [[x]] dari bucu [[A]], [[y]] dari bucu [[B]], dan [[z]] dari bucu [[C]]. Pada sudut tepat [[C]], dua tangen bulatan dalam berjalan sepanjang kaki-kaki yang berserenjang dan masing-masing berpanjang [[r]], membentuk segi empat sama kecil dengan dua jejari, jadi [[z=r]]. Sisi-sisinya pula ialah [[a=y+r]], [[b=x+r]], dan [[c=x+y]]. Tolak: [[a+b-c=(y+r)+(x+r)-(x+y)]], jadi [[a+b-c=2r]], memberi [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. Segi empat sama pada sudut tepat inilah sebabnya jalan pintas ini hanya milik segi tiga bersudut tepat." },
+          { "kind": "p", "text": "Penerbitan menggunakan teorem segmen tangen sama: dari satu titik luaran yang sepunya, dua segmen tangen yang dilukis ke bulatan mempunyai panjang yang sama. Biarkan panjang tangen dari tiga bucu ialah [[x]] dari bucu [[A]], [[y]] dari bucu [[B]], dan [[z]] dari bucu [[C]]. Pada sudut tepat [[C]], dua tangen bulatan dalam berjalan sepanjang kaki-kaki yang berserenjang dan masing-masing berpanjang [[r]], membentuk segi empat sama kecil dengan dua jejari, jadi [[z=r]]. Sisi-sisinya pula ialah [[a=y+r]], [[b=x+r]], dan [[c=x+y]]. Tolak: [[a+b-c=(y+r)+(x+r)-(x+y)]], jadi [[a+b-c=2r]], memberi [[[\\boxed{r=\\frac{a+b-c}{2}}]]] Segi empat sama pada sudut tepat inilah sebabnya jalan pintas ini hanya milik segi tiga bersudut tepat." },
           { "kind": "h3", "text": "Contoh Menggunakan Segi Tiga 3-4-5" },
-          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. Jejari bulatan dalam ialah tepat 1, tanpa pembinaan diperlukan." },
+          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] Jejari bulatan dalam ialah tepat 1, tanpa pembinaan diperlukan." },
           { "kind": "h3", "text": "Contoh Menggunakan Segi Tiga 5-12-13" },
-          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. Sekali lagi, jejari dalam terbit terus daripada panjang sisi." },
+          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] Sekali lagi, jejari dalam terbit terus daripada panjang sisi." },
           { "kind": "h3", "text": "Mencari Separuh Perimeter Serentak" },
           { "kind": "p", "text": "Dengan tiga sisi yang sama, kira [[s=\\frac{a+b+c}{2}]] serentak dengan [[r]]. Untuk segi tiga 5-12-13: [[s=\\frac{5+12+13}{2}=15]], dan kemudian [[K=rs=2\\times15=30]]. Sekali lalu pada tiga sisi membekalkan kedua-dua input kalkulator dan luas itu sendiri." },
           { "kind": "h3", "text": "Bilakah Anda Patut Menggunakan Jalan Pintas Ini?" },
@@ -591,13 +591,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Empat contoh kerja membina kaedah dari yang biasa ke atas. Setiap satunya mengira separuh perimeter dan jejari dalam daripada tiga sisi, menggunakan [[K=rs]] dengan setiap penggantian ditunjukkan, dan mengesahkan dengan formula kaki." },
           { "kind": "h3", "text": "Contoh 1: Segi Tiga Bersudut Tepat 3-4-5" },
-          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]]. Langkah 1: separuh perimeter, [[s=\\frac{3+4+5}{2}=6]]. Langkah 2: jejari dalam, [[r=\\frac{3+4-5}{2}=1]]. Langkah 3: gunakan formula, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Sahkan: [[K=\\frac{3\\times4}{2}=6]]." },
+          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]]. Langkah 1: separuh perimeter, [[s=\\frac{3+4+5}{2}=6]]. Langkah 2: jejari dalam, [[r=\\frac{3+4-5}{2}=1]]. Langkah 3: gunakan formula, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Sahkan: [[K=\\frac{3\\times4}{2}=6]]." },
           { "kind": "h3", "text": "Contoh 2: Segi Tiga Bersudut Tepat 6-8-10" },
-          { "kind": "p", "text": "Diberi [[a=6]], [[b=8]], [[c=10]]. Maka [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]], dan [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Sahkan: [[K=\\frac{6\\times8}{2}=24]]." },
+          { "kind": "p", "text": "Diberi [[a=6]], [[b=8]], [[c=10]]. Maka [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]], dan [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Sahkan: [[K=\\frac{6\\times8}{2}=24]]." },
           { "kind": "h3", "text": "Contoh 3: Segi Tiga Bersudut Tepat 5-12-13" },
-          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]], [[c=13]]. Maka [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]], dan [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Sahkan: [[K=\\frac{5\\times12}{2}=30]]." },
+          { "kind": "p", "text": "Diberi [[a=5]], [[b=12]], [[c=13]]. Maka [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]], dan [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Sahkan: [[K=\\frac{5\\times12}{2}=30]]." },
           { "kind": "h3", "text": "Contoh 4: Segi Tiga Bersudut Tepat 8-15-17" },
-          { "kind": "p", "text": "Diberi [[a=8]], [[b=15]], [[c=17]]. Maka [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]], dan [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. Sahkan: [[K=\\frac{8\\times15}{2}=60]]." },
+          { "kind": "p", "text": "Diberi [[a=8]], [[b=15]], [[c=17]]. Maka [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]], dan [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] Sahkan: [[K=\\frac{8\\times15}{2}=60]]." },
           { "kind": "h3", "text": "Perbandingan Contoh Asas" }
         ],
         "table": {
@@ -615,29 +615,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Dua belas situasi kerja menunjukkan formula pada skala dan unit yang berbeza. Setiap satunya menamakan objek segi tiga, memberi tiga ukuran sisi, mengira jejari dalam dan separuh perimeter, menggunakan formula utama langkah demi langkah, dan menyatakan andaian di sebaliknya. Setiap contoh ialah panel, keratan, profil, atau model geometri ringkas berbentuk segi tiga bersudut tepat; apabila objek sebenar melengkung atau tidak sekata, pengiraan hanya meliputi segi tiga yang dimodelkan." },
           { "kind": "h3", "text": "Contoh 1: Tingkap Kaca Segi Tiga" },
-          { "kind": "p", "text": "Tingkap kaca segi tiga bersudut tepat mempunyai [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Jejari dalam: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Separuh perimeter: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Luas: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. Ini ialah luas kaca rata sebelum mengambil kira dimensi bingkai." },
+          { "kind": "p", "text": "Tingkap kaca segi tiga bersudut tepat mempunyai [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Jejari dalam: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Separuh perimeter: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Luas: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] Ini ialah luas kaca rata sebelum mengambil kira dimensi bingkai." },
           { "kind": "h3", "text": "Contoh 2: Pendakap Sokongan Keluli" },
-          { "kind": "p", "text": "Plat sokongan keluli segi tiga mempunyai [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Maka [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. Luas sahaja tidak menentukan kapasiti menanggung beban plat." },
+          { "kind": "p", "text": "Plat sokongan keluli segi tiga mempunyai [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Maka [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] Luas sahaja tidak menentukan kapasiti menanggung beban plat." },
           { "kind": "h3", "text": "Contoh 3: Profil Sisi Tanjakan Segi Tiga" },
-          { "kind": "p", "text": "Profil tanjakan segi tiga bersudut tepat yang dipermudahkan mempunyai [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Maka [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Ini mewakili profil sisi dan bukan permukaan berjalan yang condong." },
+          { "kind": "p", "text": "Profil tanjakan segi tiga bersudut tepat yang dipermudahkan mempunyai [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Maka [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] Ini mewakili profil sisi dan bukan permukaan berjalan yang condong." },
           { "kind": "h3", "text": "Contoh 4: Panel Sokongan Bumbung Segi Tiga" },
-          { "kind": "p", "text": "Panel sokongan bumbung segi tiga bersudut tepat mempunyai [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Maka [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. Hasilnya ialah anggaran luas panel segi tiga rata." },
+          { "kind": "p", "text": "Panel sokongan bumbung segi tiga bersudut tepat mempunyai [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Maka [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] Hasilnya ialah anggaran luas panel segi tiga rata." },
           { "kind": "h3", "text": "Contoh 5: Seksyen Taman yang Diukur" },
-          { "kind": "p", "text": "Seksyen taman segi tiga bersudut tepat mempunyai [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Maka [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. Formula memberi luas seksyen segi tiga terus daripada tiga ukuran sempadannya." },
+          { "kind": "p", "text": "Seksyen taman segi tiga bersudut tepat mempunyai [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Maka [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] Formula memberi luas seksyen segi tiga terus daripada tiga ukuran sempadannya." },
           { "kind": "h3", "text": "Contoh 6: Layar Kain Segi Tiga" },
-          { "kind": "p", "text": "Panel kain segi tiga bersudut tepat mempunyai [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Maka [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Jahitan dan elaun kain dikecualikan daripada angka panel rata ini." },
+          { "kind": "p", "text": "Panel kain segi tiga bersudut tepat mempunyai [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Maka [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Jahitan dan elaun kain dikecualikan daripada angka panel rata ini." },
           { "kind": "h3", "text": "Contoh 7: Seksyen Tanah Segi Tiga yang Besar" },
-          { "kind": "p", "text": "Seksyen tanah yang diukur yang dimodelkan sebagai segi tiga bersudut tepat mempunyai [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Maka [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. Model segi tiga bersudut tepat yang dipermudahkan mengandaikan sempadan lurus di atas tanah rata." },
+          { "kind": "p", "text": "Seksyen tanah yang diukur yang dimodelkan sebagai segi tiga bersudut tepat mempunyai [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Maka [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] Model segi tiga bersudut tepat yang dipermudahkan mengandaikan sempadan lurus di atas tanah rata." },
           { "kind": "h3", "text": "Contoh 8: Templat Potongan Papan Lapis" },
-          { "kind": "p", "text": "Templat papan lapis segi tiga mempunyai [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Maka [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. Luas membantu menganggar keperluan bahan sebelum sisa potongan." },
+          { "kind": "p", "text": "Templat papan lapis segi tiga mempunyai [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Maka [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] Luas membantu menganggar keperluan bahan sebelum sisa potongan." },
           { "kind": "h3", "text": "Contoh 9: Panel Papan Tanda Segi Tiga yang Besar" },
-          { "kind": "p", "text": "Panel papan tanda segi tiga bersudut tepat mempunyai [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Maka [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. Hasilnya mewakili permukaan segi tiga rata yang menghadap penonton." },
+          { "kind": "p", "text": "Panel papan tanda segi tiga bersudut tepat mempunyai [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Maka [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] Hasilnya mewakili permukaan segi tiga rata yang menghadap penonton." },
           { "kind": "h3", "text": "Contoh 10: Sokongan Awning Segi Tiga" },
-          { "kind": "p", "text": "Seksyen sokongan awning segi tiga bersudut tepat mempunyai [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Maka [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. Ini ialah luas yang dikira bagi seksyen segi tiga yang dimodelkan." },
+          { "kind": "p", "text": "Seksyen sokongan awning segi tiga bersudut tepat mempunyai [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Maka [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] Ini ialah luas yang dikira bagi seksyen segi tiga yang dimodelkan." },
           { "kind": "h3", "text": "Contoh 11: Panel Sokongan Perindustrian" },
-          { "kind": "p", "text": "Panel sokongan perindustrian segi tiga bersudut tepat mempunyai [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Maka [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. Pengiraan geometri ini memerihalkan luas rata panel, bukan prestasi strukturnya." },
+          { "kind": "p", "text": "Panel sokongan perindustrian segi tiga bersudut tepat mempunyai [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Maka [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] Pengiraan geometri ini memerihalkan luas rata panel, bukan prestasi strukturnya." },
           { "kind": "h3", "text": "Contoh 12: Seksyen Hujung Bumbung Segi Tiga yang Besar" },
-          { "kind": "p", "text": "Seksyen hujung bumbung segi tiga bersudut tepat mempunyai [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Maka [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. Luas yang dikira membantu menganggar liputan segi tiga rata." },
+          { "kind": "p", "text": "Seksyen hujung bumbung segi tiga bersudut tepat mempunyai [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Maka [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] Luas yang dikira membantu menganggar liputan segi tiga rata." },
           { "kind": "h3", "text": "Perbandingan Contoh Praktikal" }
         ],
         "table": {
@@ -661,15 +661,15 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-relationship": {
         "h2": "Bagaimana Jejari Dalam dan Separuh Perimeter Berkait dengan Tiga Sisi?",
         "blocks": [
-          { "kind": "p", "text": "Dalam segi tiga bersudut tepat, jejari dalam dan separuh perimeter tidak bebas daripada sisi; ia dibina daripadanya. Bermula daripada [[r=\\frac{a+b-c}{2}]] dan [[s=\\frac{a+b+c}{2}]], tambahkan dan tolakkan kedua-dua ungkapan. Menambah memberi [[[\\boxed{s+r=a+b}]]], dan menolak memberi [[[\\boxed{s-r=c}]]]. Kedua-dua identiti ini khusus untuk segi tiga bersudut tepat di bawah tatatanda yang diberi, dan ia menukarkan dua input kalkulator menjadi maklumat yang mengejutkan banyaknya tentang segi tiga itu sendiri." },
+          { "kind": "p", "text": "Dalam segi tiga bersudut tepat, jejari dalam dan separuh perimeter tidak bebas daripada sisi; ia dibina daripadanya. Bermula daripada [[r=\\frac{a+b-c}{2}]] dan [[s=\\frac{a+b+c}{2}]], tambahkan dan tolakkan kedua-dua ungkapan. Menambah memberi [[[\\boxed{s+r=a+b}]]], dan menolak memberi [[[\\boxed{s-r=c}]]] Kedua-dua identiti ini khusus untuk segi tiga bersudut tepat di bawah tatatanda yang diberi, dan ia menukarkan dua input kalkulator menjadi maklumat yang mengejutkan banyaknya tentang segi tiga itu sendiri." },
           { "kind": "h3", "text": "Memulihkan Hipotenus" },
-          { "kind": "p", "text": "Daripada [[s-r=c]], hipotenus boleh dipulihkan apabila [[r]] dan [[s]] diketahui. Untuk [[r=2]] dan [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]]. Dua input mendedahkan sisi terpanjang tanpa sebarang ukuran lanjut." },
+          { "kind": "p", "text": "Daripada [[s-r=c]], hipotenus boleh dipulihkan apabila [[r]] dan [[s]] diketahui. Untuk [[r=2]] dan [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]] Dua input mendedahkan sisi terpanjang tanpa sebarang ukuran lanjut." },
           { "kind": "h3", "text": "Memulihkan Hasil Tambah Dua Kaki" },
           { "kind": "p", "text": "Daripada [[a+b=s+r]], hasil tambah kaki-kaki diperoleh terus. Untuk [[r=2]] dan [[s=12]]: [[a+b=14]]. Hasil tambah sahaja tidak dapat mengenal pasti setiap kaki secara individu; panjang individu memerlukan satu lagi maklumat." },
           { "kind": "h3", "text": "Memulihkan Hasil Darab Dua Kaki" },
-          { "kind": "p", "text": "Oleh kerana [[K=\\frac{ab}{2}]] dan [[K=rs]], maka [[[\\boxed{ab=2rs}]]]. Untuk [[r=2]] dan [[s=12]]: [[ab=48]]. Dengan [[a+b=14]] dan [[ab=48]], dua kaki ialah 6 dan 8: [[6+8=14]] dan [[6\\times8=48]]. Kedua-dua kaki boleh ditukar ganti tanpa mengubah luas segi tiga." },
+          { "kind": "p", "text": "Oleh kerana [[K=\\frac{ab}{2}]] dan [[K=rs]], maka [[[\\boxed{ab=2rs}]]] Untuk [[r=2]] dan [[s=12]]: [[ab=48]]. Dengan [[a+b=14]] dan [[ab=48]], dua kaki ialah 6 dan 8: [[6+8=14]] dan [[6\\times8=48]]. Kedua-dua kaki boleh ditukar ganti tanpa mengubah luas segi tiga." },
           { "kind": "h3", "text": "Memulihkan Kedua-dua Panjang Kaki" },
-          { "kind": "p", "text": "Hasil tambah dan hasil darab menjadikan [[a]] dan [[b]] dua punca bagi [[t^2-(s+r)t+2rs=0]], memberi [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]]. Kedua-dua tanda sepadan dengan dua tugasan kaki yang mungkin. Dengan [[r=2]] dan [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], jadi [[a,b=\\frac{14\\pm2}{2}]], kaki 6 dan 8. Ini ialah deduksi matematik lanjutan, bukan ciri kalkulator tambahan." }
+          { "kind": "p", "text": "Hasil tambah dan hasil darab menjadikan [[a]] dan [[b]] dua punca bagi [[t^2-(s+r)t+2rs=0]], memberi [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]] Kedua-dua tanda sepadan dengan dua tugasan kaki yang mungkin. Dengan [[r=2]] dan [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], jadi [[a,b=\\frac{14\\pm2}{2}]], kaki 6 dan 8. Ini ialah deduksi matematik lanjutan, bukan ciri kalkulator tambahan." }
         ]
       },
       "sec-valid": {
@@ -679,7 +679,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "Syarat Input Asas" },
           { "kind": "p", "text": "Input mesti memenuhi [[r>0]] dan [[s>0]]. Untuk segi tiga bersudut tepat, [[s>r]] juga diperlukan, kerana [[c=s-r]] dan hipotenus mesti positif. Ketiga-tiga syarat ini perlu tetapi tidak mencukupi." },
           { "kind": "h3", "text": "Semakan Ketekalan Segi Tiga Bersudut Tepat Lanjutan" },
-          { "kind": "p", "text": "Daripada [[a+b=s+r]] dan [[ab=2rs]], dua kaki adalah nyata tepat apabila diskriminan [[\\Delta=(s+r)^2-8rs]] tidak negatif. Dipermudahkan: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]]. Untuk panjang kaki nyata, [[\\Delta\\geq0]]. Oleh kerana [[s]] mesti melebihi [[r]], syarat segi tiga bersudut tepat yang setara ialah [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], atau [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]. Kesamaan berlaku untuk segi tiga bersudut tepat sama kaki, padanan paling ketat yang mungkin. Ini ialah ujian keserasian matematik lanjutan, diasingkan dengan jelas daripada semakan asas di atas." },
+          { "kind": "p", "text": "Daripada [[a+b=s+r]] dan [[ab=2rs]], dua kaki adalah nyata tepat apabila diskriminan [[\\Delta=(s+r)^2-8rs]] tidak negatif. Dipermudahkan: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]] Untuk panjang kaki nyata, [[\\Delta\\geq0]]. Oleh kerana [[s]] mesti melebihi [[r]], syarat segi tiga bersudut tepat yang setara ialah [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], atau [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]] Kesamaan berlaku untuk segi tiga bersudut tepat sama kaki, padanan paling ketat yang mungkin. Ini ialah ujian keserasian matematik lanjutan, diasingkan dengan jelas daripada semakan asas di atas." },
           { "kind": "h3", "text": "Contoh Sah" },
           { "kind": "p", "text": "Diberi [[r=2]] dan [[s=12]], nisbahnya ialah [[\\frac{s}{r}=6]]. Oleh kerana [[6>3+2\\sqrt2]] (kira-kira 5.83), nilai-nilai itu boleh memerihalkan segi tiga bersudut tepat yang sah, dan sisi-sisi yang sepadan ialah 6, 8, dan 10." },
           { "kind": "h3", "text": "Contoh Tidak Serasi" },
@@ -689,19 +689,19 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-heron": {
         "h2": "Bagaimana Formula Jejari Dalam Berbanding dengan Formula Heron?",
         "blocks": [
-          { "kind": "p", "text": "Formula Heron mengira luas daripada ketiga-tiga sisi: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]. Ia menggunakan tiga panjang sisi dan separuh perimeter, ia berfungsi untuk mana-mana segi tiga tak merosot, dan ia tidak memerlukan jejari dalam sebagai input berasingan. Bandingkan dengan [[[\\boxed{K=rs}]]]. Kedua-duanya saudara dekat: separuh perimeter [[s]] muncul dalam kedua-duanya, dan membuktikan ia sehaluan ialah antara cara paling kemas untuk melihat bahawa [[K=rs]] adalah betul." },
+          { "kind": "p", "text": "Formula Heron mengira luas daripada ketiga-tiga sisi: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]] Ia menggunakan tiga panjang sisi dan separuh perimeter, ia berfungsi untuk mana-mana segi tiga tak merosot, dan ia tidak memerlukan jejari dalam sebagai input berasingan. Bandingkan dengan [[[\\boxed{K=rs}]]] Kedua-duanya saudara dekat: separuh perimeter [[s]] muncul dalam kedua-duanya, dan membuktikan ia sehaluan ialah antara cara paling kemas untuk melihat bahawa [[K=rs]] adalah betul." },
           { "kind": "h3", "text": "Bilakah Formula Jejari Dalam Lebih Mudah?" },
           { "kind": "p", "text": "[[K=rs]] amat mudah apabila jejari dalam dan separuh perimeter sudah diketahui: sekali darab, tiada punca kuasa dua, tiada pemfaktoran beza sisi. Apabila bulatan dalam telah diukur, atau apabila langkah terdahulu sudah menghasilkan [[r]] dan [[s]], ini ialah laluan terpendek ke luas." },
           { "kind": "h3", "text": "Bilakah Formula Heron Lebih Berguna?" },
           { "kind": "p", "text": "Formula Heron ialah pilihan lebih baik apabila tiga panjang sisi diketahui tetapi jejari dalam belum dikira. Ia mencapai luas terus daripada [[a]], [[b]], dan [[c]] tanpa lencongan melalui [[r]]. Tiada formula yang lebih tepat secara sejagat; kedua-duanya tepat pada input yang konsisten, dan ia berselisih hanya apabila input tidak konsisten." },
           { "kind": "h3", "text": "Sahkan Kedua-dua Formula Menggunakan Segi Tiga 3-4-5" },
-          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]], dengan [[s=6]] dan [[r=1]]. Menggunakan jejari dalam: [[K=1\\times6=6]]. Menggunakan formula Heron: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], jadi [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. Hasilnya sehaluan kerana kedua-dua formula mengukur rantau yang sama; ia dua ungkapan bagi satu luas, dan persetujuan antara keduanya ialah tanda kukuh aritmetiknya betul." }
+          { "kind": "p", "text": "Diberi [[a=3]], [[b=4]], [[c=5]], dengan [[s=6]] dan [[r=1]]. Menggunakan jejari dalam: [[K=1\\times6=6]]. Menggunakan formula Heron: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], jadi [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] Hasilnya sehaluan kerana kedua-dua formula mengukur rantau yang sama; ia dua ungkapan bagi satu luas, dan persetujuan antara keduanya ialah tanda kukuh aritmetiknya betul." }
         ]
       },
       "sec-legs": {
         "h2": "Mengapa Formula Jejari Dalam Menghasilkan Luas yang Sama dengan Formula Kaki?",
         "blocks": [
-          { "kind": "p", "text": "Dua formula mendakwa luas yang sama: [[K=\\frac{ab}{2}]] dan [[K=rs]]. Menulis [[r]] dan [[s]] dalam sebutan sisi memberi [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], jadi [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Pengangka ialah beza kuasa dua: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Gunakan teorem Pythagoras [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], maka [[[\\boxed{rs=\\frac{ab}{2}}]]]. Kedua-dua formula adalah seiras pada setiap segi tiga bersudut tepat; ia tidak boleh berselisih pada input yang konsisten." },
+          { "kind": "p", "text": "Dua formula mendakwa luas yang sama: [[K=\\frac{ab}{2}]] dan [[K=rs]]. Menulis [[r]] dan [[s]] dalam sebutan sisi memberi [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], jadi [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Pengangka ialah beza kuasa dua: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Gunakan teorem Pythagoras [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], maka [[[\\boxed{rs=\\frac{ab}{2}}]]] Kedua-dua formula adalah seiras pada setiap segi tiga bersudut tepat; ia tidak boleh berselisih pada input yang konsisten." },
           { "kind": "p", "text": "Semak dengan segi tiga 3-4-5: [[r=1]], [[s=6]], [[rs=6]], dan [[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]. Dengan segi tiga 6-8-10: [[r=2]], [[s=12]], [[rs=24]], dan [[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]. Formula kaki yang biasa dan formula jejari dalam ialah kuantiti yang sama memakai pakaian berbeza." }
         ]
       },
@@ -769,7 +769,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Luas adalah dua dimensi, jadi unitnya ialah kuasa dua unit panjang. Dalam simbol, [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]. Begitu juga untuk meter dan meter persegi, milimeter dan milimeter persegi, kaki dan kaki persegi, inci dan inci persegi. Pemilih unit wujud supaya hasilnya boleh dilabel dengan betul." },
           { "kind": "h3", "text": "Mengapa Kedua-dua Input Mesti Menggunakan Unit yang Serasi" },
-          { "kind": "p", "text": "Jejari dalam dan separuh perimeter mesti dinyatakan dalam unit yang sama sebelum formula digunakan. Jika [[r=20\\text{ cm}]] dan [[s=1\\text{ m}]], tukar dahulu: [[1\\text{ m}=100\\text{ cm}]]. Kemudian [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]], atau setara [[[\\boxed{K=0.2\\text{ m}^2}]]]. Mendarab ukuran dalam unit berbeza menghasilkan nombor tanpa unit yang kemas, jadi tukar dahulu dan kira kemudian." },
+          { "kind": "p", "text": "Jejari dalam dan separuh perimeter mesti dinyatakan dalam unit yang sama sebelum formula digunakan. Jika [[r=20\\text{ cm}]] dan [[s=1\\text{ m}]], tukar dahulu: [[1\\text{ m}=100\\text{ cm}]]. Kemudian [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]], atau setara [[[\\boxed{K=0.2\\text{ m}^2}]]] Mendarab ukuran dalam unit berbeza menghasilkan nombor tanpa unit yang kemas, jadi tukar dahulu dan kira kemudian." },
           { "kind": "h3", "text": "Mengapa Anda Patut Elakkan Pembundaran Awal" },
           { "kind": "p", "text": "Nilai [[r]] atau [[s]] yang dibundarkan mungkin sedikit menjejaskan luas akhir, kerana jejari dalam didarab terus ke dalamnya. Kekalkan ketepatan yang mencukupi melalui pengiraan perantaraan dan bundarkan hanya jawapan akhir. Panduan ini tidak membuat sebarang dakwaan tentang ketepatan dalaman kalkulator melebihi apa yang ditunjukkan antara mukanya." },
           { "kind": "h3", "text": "Ukuran Tepat Lawan Ukuran Praktikal" },
@@ -884,7 +884,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-intro": {
         "h2": "Jak obliczyć pole trójkąta prostokątnego z promienia okręgu wpisanego i półobwodu",
         "blocks": [
-          { "kind": "p", "text": "Trójkąt prostokątny ma promień okręgu wpisanego [[r=2]] i półobwód [[s=12]]. Zastosuj [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Trójkąt obejmuje 24 jednostki kwadratowe płaskiego pola. To pełna metoda, którą automatyzuje kalkulator: dwa pomiary, jedno mnożenie, jedna odpowiedź." },
+          { "kind": "p", "text": "Trójkąt prostokątny ma promień okręgu wpisanego [[r=2]] i półobwód [[s=12]]. Zastosuj [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Trójkąt obejmuje 24 jednostki kwadratowe płaskiego pola. To pełna metoda, którą automatyzuje kalkulator: dwa pomiary, jedno mnożenie, jedna odpowiedź." },
           { "kind": "p", "text": "Promień okręgu wpisanego to promień koła, które ściśle mieści się wewnątrz trójkąta, dotykając wszystkich trzech boków. Półobwód to połowa odległości wokół trójkąta. Razem wystarczają do wyznaczenia pola, ponieważ promień koła pełni rolę wysokości trzech mniejszych trójkątów, których podstawami są boki trójkąta. Ta tożsamość obowiązuje dla każdego niezdegenerowanego trójkąta, nie tylko prostokątnego; wyjątkowość trójkątów prostokątnych polega na szybkim sposobie obliczania samego promienia okręgu wpisanego z trzech boków. Jest najbardziej przydatna, gdy okrąg wpisany został zmierzony bezpośrednio albo gdy promień i półobwód są już znane z wcześniejszych obliczeń." }
         ]
       },
@@ -901,7 +901,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "Zrozumienie środka okręgu wpisanego" },
           { "kind": "p", "text": "Środek okręgu wpisanego [[I]] to punkt, w którym spotykają się trzy wewnętrzne dwusieczne kątów trójkąta. Każda dwusieczna kąta to zbiór punktów równoodległych od dwóch boków tworzących ten kąt, więc punkt leżący na wszystkich trzech dwusiecznych jest równoodległy od wszystkich trzech boków i musi leżeć wewnątrz trójkąta. Ta wspólna odległość to dokładnie promień okręgu wpisanego, a okrąg o środku w [[I]] i promieniu [[r]] dotyka każdego boku raz: to okrąg wpisany." },
           { "kind": "h3", "text": "Czy promień okręgu wpisanego to to samo co promień okręgu opisanego?" },
-          { "kind": "p", "text": "Nie. Promień okręgu wpisanego [[r]] to promień okręgu wewnątrz trójkąta, natomiast promień okręgu opisanego [[R]] to promień okręgu przechodzącego przez wszystkie trzy wierzchołki, czyli okręgu opisanego. Dla trójkąta prostokątnego środek okręgu opisanego leży w środku przeciwprostokątnej, więc [[[\\boxed{R=\\frac{c}{2}}]]]. Te dwa promienie opisują zupełnie różne okręgi: jeden jest wpisany w trójkąt, drugi jest opisany na nim. Mylenie ich to jeden z najczęstszych błędów w tym temacie, więc trzymaj je osobno: [[r]] dla wewnątrz, [[R]] dla zewnątrz." }
+          { "kind": "p", "text": "Nie. Promień okręgu wpisanego [[r]] to promień okręgu wewnątrz trójkąta, natomiast promień okręgu opisanego [[R]] to promień okręgu przechodzącego przez wszystkie trzy wierzchołki, czyli okręgu opisanego. Dla trójkąta prostokątnego środek okręgu opisanego leży w środku przeciwprostokątnej, więc [[[\\boxed{R=\\frac{c}{2}}]]] Te dwa promienie opisują zupełnie różne okręgi: jeden jest wpisany w trójkąt, drugi jest opisany na nim. Mylenie ich to jeden z najczęstszych błędów w tym temacie, więc trzymaj je osobno: [[r]] dla wewnątrz, [[R]] dla zewnątrz." }
         ],
         "imgAlt": "Trójkąt ABC z okręgiem wpisanym, środkiem I, promieniem r, punktami styczności i okręgiem opisanym",
         "figcaption": "Trójkąt ABC i jego okrąg wpisany: środek I, promień r = ID, przy czym ID jest prostopadłe do każdego boku, oraz okrąg opisany dla porównania."
@@ -924,13 +924,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Zacznij od standardowej reguły pola trójkąta: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]. Poprowadzenie odcinków od środka okręgu wpisanego [[I]] do trzech wierzchołków dzieli pierwotny trójkąt na trzy mniejsze trójkąty. Każdy mniejszy trójkąt ma podstawę równą jednemu bokowi pierwotnego trójkąta i prostopadłą wysokość równą promieniowi okręgu wpisanego [[r]], ponieważ promień spotyka każdy bok pod kątem prostym. Działa to dla każdego niezdegenerowanego trójkąta; w tym kalkulatorze trójkąt jest prostokątny, ale sama tożsamość pola jest w pełni ogólna." },
           { "kind": "h3", "text": "Pole pierwszego mniejszego trójkąta" },
-          { "kind": "p", "text": "Mniejszy trójkąt stojący na boku [[a]] ma podstawę [[a]] i wysokość [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "Mniejszy trójkąt stojący na boku [[a]] ma podstawę [[a]] i wysokość [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "Pole drugiego mniejszego trójkąta" },
-          { "kind": "p", "text": "Mniejszy trójkąt stojący na boku [[b]] ma podstawę [[b]] i wysokość [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "Mniejszy trójkąt stojący na boku [[b]] ma podstawę [[b]] i wysokość [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "Pole trzeciego mniejszego trójkąta" },
-          { "kind": "p", "text": "Mniejszy trójkąt stojący na boku [[c]] ma podstawę [[c]] i wysokość [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "Mniejszy trójkąt stojący na boku [[c]] ma podstawę [[c]] i wysokość [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "Dodaj trzy pola" },
-          { "kind": "p", "text": "Trzy mniejsze trójkąty wypełniają pierwotny bez nakładania się, więc [[K=K_1+K_2+K_3]]. Po podstawieniu: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Wyciągnij [[\\frac{r}{2}]] przed nawias: [[K=\\frac{r(a+b+c)}{2}]]. Przypomnij [[s=\\frac{a+b+c}{2}]], zatem [[[\\boxed{K=r\\times s}]]]. Każde przejście jest uzasadnione: wypełnienie jest dokładne, wysokość [[r]] jest wspólna, a półobwód pochłania dzielenie przez dwa." },
+          { "kind": "p", "text": "Trzy mniejsze trójkąty wypełniają pierwotny bez nakładania się, więc [[K=K_1+K_2+K_3]]. Po podstawieniu: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Wyciągnij [[\\frac{r}{2}]] przed nawias: [[K=\\frac{r(a+b+c)}{2}]]. Przypomnij [[s=\\frac{a+b+c}{2}]], zatem [[[\\boxed{K=r\\times s}]]] Każde przejście jest uzasadnione: wypełnienie jest dokładne, wysokość [[r]] jest wspólna, a półobwód pochłania dzielenie przez dwa." },
           { "kind": "h3", "text": "Dlaczego ten wzór nie wymaga kolejnego dzielenia przez dwa?" },
           { "kind": "p", "text": "Bo jedna druga jest już złożona w półobwodzie. Trzy połowy łączą się w [[\\frac{r(a+b+c)}{2}]], a [[s]] to dokładnie połowa obwodu, więc podzielenie przez dwa po raz drugi dałoby ćwiartkę poprawnego wyrażenia. Oblicz [[r\\times s]] i zatrzymaj się; dalsze dzielenie na pół to błąd, nie poprawka." }
         ],
@@ -942,11 +942,11 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Gdy znane są trzy boki, promień okręgu wpisanego w trójkąt prostokątny podlega skrótowi, który w ogóle omija rysowanie okręgu wpisanego: [[[\\boxed{r=\\frac{a+b-c}{2}}]]], gdzie [[a]] i [[b]] to prostopadłe przyprostokątne, a [[c]] to przeciwprostokątna. To jeden z najbardziej poręcznych faktów geometrii trójkąta prostokątnego." },
           { "kind": "h3", "text": "Wyprowadzenie wzoru na promień okręgu wpisanego w trójkąt prostokątny" },
-          { "kind": "p", "text": "Wyprowadzenie korzysta z twierdzenia o równych odcinkach stycznych: z jednego wspólnego punktu zewnętrznego dwa odcinki styczne poprowadzone do okręgu mają równe długości. Niech długości stycznych z trzech wierzchołków będą [[x]] z wierzchołka [[A]], [[y]] z wierzchołka [[B]] i [[z]] z wierzchołka [[C]]. Przy kącie prostym [[C]] dwie styczne okręgu wpisanego biegną wzdłuż prostopadłych przyprostokątnych i każda ma długość [[r]], tworząc z dwoma promieniami mały kwadrat, więc [[z=r]]. Boki wynoszą wtedy [[a=y+r]], [[b=x+r]] i [[c=x+y]]. Odejmij: [[a+b-c=(y+r)+(x+r)-(x+y)]], więc [[a+b-c=2r]], co daje [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. Kwadrat przy kącie prostym to powód, dla którego ten skrót należy wyłącznie do trójkątów prostokątnych." },
+          { "kind": "p", "text": "Wyprowadzenie korzysta z twierdzenia o równych odcinkach stycznych: z jednego wspólnego punktu zewnętrznego dwa odcinki styczne poprowadzone do okręgu mają równe długości. Niech długości stycznych z trzech wierzchołków będą [[x]] z wierzchołka [[A]], [[y]] z wierzchołka [[B]] i [[z]] z wierzchołka [[C]]. Przy kącie prostym [[C]] dwie styczne okręgu wpisanego biegną wzdłuż prostopadłych przyprostokątnych i każda ma długość [[r]], tworząc z dwoma promieniami mały kwadrat, więc [[z=r]]. Boki wynoszą wtedy [[a=y+r]], [[b=x+r]] i [[c=x+y]]. Odejmij: [[a+b-c=(y+r)+(x+r)-(x+y)]], więc [[a+b-c=2r]], co daje [[[\\boxed{r=\\frac{a+b-c}{2}}]]] Kwadrat przy kącie prostym to powód, dla którego ten skrót należy wyłącznie do trójkątów prostokątnych." },
           { "kind": "h3", "text": "Przykład z trójkątem 3-4-5" },
-          { "kind": "p", "text": "Dane [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. Promień okręgu wpisanego wynosi dokładnie 1, bez żadnej konstrukcji." },
+          { "kind": "p", "text": "Dane [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] Promień okręgu wpisanego wynosi dokładnie 1, bez żadnej konstrukcji." },
           { "kind": "h3", "text": "Przykład z trójkątem 5-12-13" },
-          { "kind": "p", "text": "Dane [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. Znowu promień okręgu wpisanego wynika bezpośrednio z długości boków." },
+          { "kind": "p", "text": "Dane [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] Znowu promień okręgu wpisanego wynika bezpośrednio z długości boków." },
           { "kind": "h3", "text": "Jednoczesne znajdowanie półobwodu" },
           { "kind": "p", "text": "Przy tych samych trzech bokach oblicz [[s=\\frac{a+b+c}{2}]] obok [[r]]. Dla trójkąta 5-12-13: [[s=\\frac{5+12+13}{2}=15]], a potem [[K=rs=2\\times15=30]]. Jedno przejście po trzech bokach dostarcza obu danych wejściowych kalkulatora i samego pola." },
           { "kind": "h3", "text": "Kiedy stosować ten skrót?" },
@@ -984,13 +984,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Cztery rozwiązane przykłady budują metodę od znanego w górę. Każdy oblicza półobwód i promień okręgu wpisanego z trzech boków, stosuje [[K=rs]] z pokazanym każdym podstawieniem i weryfikuje wzorem z przyprostokątnymi." },
           { "kind": "h3", "text": "Przykład 1: Trójkąt prostokątny 3-4-5" },
-          { "kind": "p", "text": "Dane [[a=3]], [[b=4]], [[c=5]]. Krok 1: półobwód, [[s=\\frac{3+4+5}{2}=6]]. Krok 2: promień okręgu wpisanego, [[r=\\frac{3+4-5}{2}=1]]. Krok 3: zastosuj wzór, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Weryfikacja: [[K=\\frac{3\\times4}{2}=6]]." },
+          { "kind": "p", "text": "Dane [[a=3]], [[b=4]], [[c=5]]. Krok 1: półobwód, [[s=\\frac{3+4+5}{2}=6]]. Krok 2: promień okręgu wpisanego, [[r=\\frac{3+4-5}{2}=1]]. Krok 3: zastosuj wzór, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Weryfikacja: [[K=\\frac{3\\times4}{2}=6]]." },
           { "kind": "h3", "text": "Przykład 2: Trójkąt prostokątny 6-8-10" },
-          { "kind": "p", "text": "Dane [[a=6]], [[b=8]], [[c=10]]. Wtedy [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] i [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Weryfikacja: [[K=\\frac{6\\times8}{2}=24]]." },
+          { "kind": "p", "text": "Dane [[a=6]], [[b=8]], [[c=10]]. Wtedy [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] i [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Weryfikacja: [[K=\\frac{6\\times8}{2}=24]]." },
           { "kind": "h3", "text": "Przykład 3: Trójkąt prostokątny 5-12-13" },
-          { "kind": "p", "text": "Dane [[a=5]], [[b=12]], [[c=13]]. Wtedy [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] i [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Weryfikacja: [[K=\\frac{5\\times12}{2}=30]]." },
+          { "kind": "p", "text": "Dane [[a=5]], [[b=12]], [[c=13]]. Wtedy [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] i [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Weryfikacja: [[K=\\frac{5\\times12}{2}=30]]." },
           { "kind": "h3", "text": "Przykład 4: Trójkąt prostokątny 8-15-17" },
-          { "kind": "p", "text": "Dane [[a=8]], [[b=15]], [[c=17]]. Wtedy [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] i [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. Weryfikacja: [[K=\\frac{8\\times15}{2}=60]]." },
+          { "kind": "p", "text": "Dane [[a=8]], [[b=15]], [[c=17]]. Wtedy [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] i [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] Weryfikacja: [[K=\\frac{8\\times15}{2}=60]]." },
           { "kind": "h3", "text": "Porównanie przykładów podstawowych" }
         ],
         "table": {
@@ -1008,29 +1008,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Dwanaście rozwiązanych sytuacji pokazuje wzór w różnych skalach i jednostkach. Każda nazywa trójkątny obiekt, podaje trzy pomiary boków, oblicza promień okręgu wpisanego i półobwód, stosuje główny wzór krok po kroku i podaje stojące za nim założenie. Każdy przykład to trójkątny panel, przekrój, profil lub uproszczony model geometryczny; gdy prawdziwy obiekt jest zakrzywiony lub nieregularny, obliczenie obejmuje tylko zamodelowany trójkąt." },
           { "kind": "h3", "text": "Przykład 1: Trójkątne okno szklane" },
-          { "kind": "p", "text": "Trójkątne prostokątne okno szklane ma [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Promień okręgu wpisanego: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Półobwód: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Pole: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. To płaskie pole szkła przed uwzględnieniem wymiarów ramy." },
+          { "kind": "p", "text": "Trójkątne prostokątne okno szklane ma [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Promień okręgu wpisanego: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Półobwód: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Pole: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] To płaskie pole szkła przed uwzględnieniem wymiarów ramy." },
           { "kind": "h3", "text": "Przykład 2: Stalowy wspornik" },
-          { "kind": "p", "text": "Trójkątna stalowa płyta wspornika ma [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Wtedy [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. Samo pole nie określa nośności płyty." },
+          { "kind": "p", "text": "Trójkątna stalowa płyta wspornika ma [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Wtedy [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] Samo pole nie określa nośności płyty." },
           { "kind": "h3", "text": "Przykład 3: Trójkątny profil boczny rampy" },
-          { "kind": "p", "text": "Uproszczony trójkątny prostokątny profil rampy ma [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Wtedy [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Opisuje to profil boczny, a nie nachyloną powierzchnię do chodzenia." },
+          { "kind": "p", "text": "Uproszczony trójkątny prostokątny profil rampy ma [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Wtedy [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] Opisuje to profil boczny, a nie nachyloną powierzchnię do chodzenia." },
           { "kind": "h3", "text": "Przykład 4: Trójkątny panel wspornika dachu" },
-          { "kind": "p", "text": "Trójkątny prostokątny panel wspornika dachu ma [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Wtedy [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. Wynik to szacunkowe płaskie pole trójkątnego panelu." },
+          { "kind": "p", "text": "Trójkątny prostokątny panel wspornika dachu ma [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Wtedy [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] Wynik to szacunkowe płaskie pole trójkątnego panelu." },
           { "kind": "h3", "text": "Przykład 5: Zmierzona działka ogrodowa" },
-          { "kind": "p", "text": "Trójkątna prostokątna działka ogrodowa ma [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Wtedy [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. Wzór daje pole trójkątnej działki bezpośrednio z trzech pomiarów jej granic." },
+          { "kind": "p", "text": "Trójkątna prostokątna działka ogrodowa ma [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Wtedy [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] Wzór daje pole trójkątnej działki bezpośrednio z trzech pomiarów jej granic." },
           { "kind": "h3", "text": "Przykład 6: Trójkątny żagiel z tkaniny" },
-          { "kind": "p", "text": "Trójkątny prostokątny panel z tkaniny ma [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Wtedy [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Szwy i zapasy tkaniny są wyłączone z tej płaskiej liczby." },
+          { "kind": "p", "text": "Trójkątny prostokątny panel z tkaniny ma [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Wtedy [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Szwy i zapasy tkaniny są wyłączone z tej płaskiej liczby." },
           { "kind": "h3", "text": "Przykład 7: Duża trójkątna działka gruntu" },
-          { "kind": "p", "text": "Zmierzona działka gruntu zamodelowana jako trójkąt prostokątny ma [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Wtedy [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. Uproszczony model trójkąta prostokątnego zakłada proste granice na płaskim terenie." },
+          { "kind": "p", "text": "Zmierzona działka gruntu zamodelowana jako trójkąt prostokątny ma [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Wtedy [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] Uproszczony model trójkąta prostokątnego zakłada proste granice na płaskim terenie." },
           { "kind": "h3", "text": "Przykład 8: Szablon do cięcia sklejki" },
-          { "kind": "p", "text": "Trójkątny szablon ze sklejki ma [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Wtedy [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. Pole pomaga oszacować zapotrzebowanie na materiał przed odpadami z cięcia." },
+          { "kind": "p", "text": "Trójkątny szablon ze sklejki ma [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Wtedy [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] Pole pomaga oszacować zapotrzebowanie na materiał przed odpadami z cięcia." },
           { "kind": "h3", "text": "Przykład 9: Duży trójkątny panel reklamowy" },
-          { "kind": "p", "text": "Trójkątny prostokątny panel reklamowy ma [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Wtedy [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. Wynik opisuje płaską trójkątną powierzchnię zwróconą ku widzowi." },
+          { "kind": "p", "text": "Trójkątny prostokątny panel reklamowy ma [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Wtedy [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] Wynik opisuje płaską trójkątną powierzchnię zwróconą ku widzowi." },
           { "kind": "h3", "text": "Przykład 10: Trójkątny wspornik markizy" },
-          { "kind": "p", "text": "Trójkątna prostokątna sekcja wspornika markizy ma [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Wtedy [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. To obliczone pole zamodelowanej trójkątnej sekcji." },
+          { "kind": "p", "text": "Trójkątna prostokątna sekcja wspornika markizy ma [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Wtedy [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] To obliczone pole zamodelowanej trójkątnej sekcji." },
           { "kind": "h3", "text": "Przykład 11: Przemysłowy panel wspornika" },
-          { "kind": "p", "text": "Trójkątny prostokątny przemysłowy panel wspornika ma [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Wtedy [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. To obliczenie geometryczne opisuje płaskie pole panelu, a nie jego wytrzymałość." },
+          { "kind": "p", "text": "Trójkątny prostokątny przemysłowy panel wspornika ma [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Wtedy [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] To obliczenie geometryczne opisuje płaskie pole panelu, a nie jego wytrzymałość." },
           { "kind": "h3", "text": "Przykład 12: Duża trójkątna sekcja szczytu dachu" },
-          { "kind": "p", "text": "Trójkątna prostokątna sekcja szczytu dachu ma [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Wtedy [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. Obliczone pole pomaga oszacować płaskie trójkątne pokrycie." },
+          { "kind": "p", "text": "Trójkątna prostokątna sekcja szczytu dachu ma [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Wtedy [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] Obliczone pole pomaga oszacować płaskie trójkątne pokrycie." },
           { "kind": "h3", "text": "Porównanie przykładów praktycznych" }
         ],
         "table": {
@@ -1054,15 +1054,15 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-relationship": {
         "h2": "Jak promień okręgu wpisanego i półobwód wiążą się z trzema bokami?",
         "blocks": [
-          { "kind": "p", "text": "W trójkącie prostokątnym promień okręgu wpisanego i półobwód nie są niezależne od boków; są z nich zbudowane. Wychodząc od [[r=\\frac{a+b-c}{2}]] i [[s=\\frac{a+b+c}{2}]], dodaj i odejmij oba wyrażenia. Dodawanie daje [[[\\boxed{s+r=a+b}]]], a odejmowanie daje [[[\\boxed{s-r=c}]]]. Te dwie tożsamości są specyficzne dla trójkątów prostokątnych przy podanych oznaczeniach i zamieniają dwa dane wejściowe kalkulatora w zaskakująco dużo informacji o samym trójkącie." },
+          { "kind": "p", "text": "W trójkącie prostokątnym promień okręgu wpisanego i półobwód nie są niezależne od boków; są z nich zbudowane. Wychodząc od [[r=\\frac{a+b-c}{2}]] i [[s=\\frac{a+b+c}{2}]], dodaj i odejmij oba wyrażenia. Dodawanie daje [[[\\boxed{s+r=a+b}]]], a odejmowanie daje [[[\\boxed{s-r=c}]]] Te dwie tożsamości są specyficzne dla trójkątów prostokątnych przy podanych oznaczeniach i zamieniają dwa dane wejściowe kalkulatora w zaskakująco dużo informacji o samym trójkącie." },
           { "kind": "h3", "text": "Odtwarzanie przeciwprostokątnej" },
-          { "kind": "p", "text": "Z [[s-r=c]] przeciwprostokątną można odtworzyć, gdy znane są [[r]] i [[s]]. Dla [[r=2]] i [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]]. Dwa dane wejściowe ujawniają najdłuższy bok bez dalszych pomiarów." },
+          { "kind": "p", "text": "Z [[s-r=c]] przeciwprostokątną można odtworzyć, gdy znane są [[r]] i [[s]]. Dla [[r=2]] i [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]] Dwa dane wejściowe ujawniają najdłuższy bok bez dalszych pomiarów." },
           { "kind": "h3", "text": "Odtwarzanie sumy dwóch przyprostokątnych" },
           { "kind": "p", "text": "Z [[a+b=s+r]] suma przyprostokątnych wynika bezpośrednio. Dla [[r=2]] i [[s=12]]: [[a+b=14]]. Sama suma nie identyfikuje każdej przyprostokątnej z osobna; do pojedynczych długości potrzebna jest jeszcze jedna informacja." },
           { "kind": "h3", "text": "Odtwarzanie iloczynu dwóch przyprostokątnych" },
-          { "kind": "p", "text": "Ponieważ [[K=\\frac{ab}{2}]] i [[K=rs]], wynika stąd [[[\\boxed{ab=2rs}]]]. Dla [[r=2]] i [[s=12]]: [[ab=48]]. Przy [[a+b=14]] i [[ab=48]] dwie przyprostokątne to 6 i 8: [[6+8=14]] i [[6\\times8=48]]. Obie przyprostokątne można zamieniać bez zmiany pola trójkąta." },
+          { "kind": "p", "text": "Ponieważ [[K=\\frac{ab}{2}]] i [[K=rs]], wynika stąd [[[\\boxed{ab=2rs}]]] Dla [[r=2]] i [[s=12]]: [[ab=48]]. Przy [[a+b=14]] i [[ab=48]] dwie przyprostokątne to 6 i 8: [[6+8=14]] i [[6\\times8=48]]. Obie przyprostokątne można zamieniać bez zmiany pola trójkąta." },
           { "kind": "h3", "text": "Odtwarzanie obu długości przyprostokątnych" },
-          { "kind": "p", "text": "Suma i iloczyn czynią [[a]] i [[b]] dwoma pierwiastkami równania [[t^2-(s+r)t+2rs=0]], dając [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]]. Dwa znaki odpowiadają dwóm możliwym przypisaniom przyprostokątnych. Przy [[r=2]] i [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], więc [[a,b=\\frac{14\\pm2}{2}]], przyprostokątne 6 i 8. To zaawansowana dedukcja matematyczna, a nie dodatkowa funkcja kalkulatora." }
+          { "kind": "p", "text": "Suma i iloczyn czynią [[a]] i [[b]] dwoma pierwiastkami równania [[t^2-(s+r)t+2rs=0]], dając [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]] Dwa znaki odpowiadają dwóm możliwym przypisaniom przyprostokątnych. Przy [[r=2]] i [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], więc [[a,b=\\frac{14\\pm2}{2}]], przyprostokątne 6 i 8. To zaawansowana dedukcja matematyczna, a nie dodatkowa funkcja kalkulatora." }
         ]
       },
       "sec-valid": {
@@ -1072,7 +1072,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
           { "kind": "h3", "text": "Podstawowe warunki wejściowe" },
           { "kind": "p", "text": "Dane wejściowe muszą spełniać [[r>0]] i [[s>0]]. Dla trójkąta prostokątnego wymagane jest też [[s>r]], ponieważ [[c=s-r]], a przeciwprostokątna musi być dodatnia. Te trzy warunki są konieczne, ale niewystarczające." },
           { "kind": "h3", "text": "Zaawansowana kontrola spójności trójkąta prostokątnego" },
-          { "kind": "p", "text": "Z [[a+b=s+r]] i [[ab=2rs]] dwie przyprostokątne są rzeczywiste dokładnie wtedy, gdy wyróżnik [[\\Delta=(s+r)^2-8rs]] jest nieujemny. Po uproszczeniu: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]]. Dla rzeczywistych długości przyprostokątnych [[\\Delta\\geq0]]. Ponieważ [[s]] musi przewyższać [[r]], równoważny warunek trójkąta prostokątnego to [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]] albo [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]. Równość zachodzi dla trójkąta prostokątnego równoramiennego, najciaśniejszego możliwego dopasowania. To zaawansowany matematyczny test zgodności, wyraźnie oddzielony od podstawowych kontroli powyżej." },
+          { "kind": "p", "text": "Z [[a+b=s+r]] i [[ab=2rs]] dwie przyprostokątne są rzeczywiste dokładnie wtedy, gdy wyróżnik [[\\Delta=(s+r)^2-8rs]] jest nieujemny. Po uproszczeniu: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]] Dla rzeczywistych długości przyprostokątnych [[\\Delta\\geq0]]. Ponieważ [[s]] musi przewyższać [[r]], równoważny warunek trójkąta prostokątnego to [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]] albo [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]] Równość zachodzi dla trójkąta prostokątnego równoramiennego, najciaśniejszego możliwego dopasowania. To zaawansowany matematyczny test zgodności, wyraźnie oddzielony od podstawowych kontroli powyżej." },
           { "kind": "h3", "text": "Poprawny przykład" },
           { "kind": "p", "text": "Dane [[r=2]] i [[s=12]], stosunek wynosi [[\\frac{s}{r}=6]]. Ponieważ [[6>3+2\\sqrt2]] (około 5,83), wartości mogą opisywać poprawny trójkąt prostokątny, a odpowiadające boki to 6, 8 i 10." },
           { "kind": "h3", "text": "Przykład niezgodny" },
@@ -1082,19 +1082,19 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
       "sec-heron": {
         "h2": "Jak wzór z promieniem okręgu wpisanego wypada wobec wzoru Herona?",
         "blocks": [
-          { "kind": "p", "text": "Wzór Herona oblicza pole ze wszystkich trzech boków: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]. Używa trzech długości boków i półobwodu, działa dla każdego niezdegenerowanego trójkąta i nie potrzebuje promienia okręgu wpisanego jako osobnego wejścia. Porównaj z [[[\\boxed{K=rs}]]]. Te dwa to bliscy krewni: półobwód [[s]] pojawia się w obu, a udowodnienie ich zgodności to jeden z najczystszych sposobów, by zobaczyć, że [[K=rs]] jest poprawne." },
+          { "kind": "p", "text": "Wzór Herona oblicza pole ze wszystkich trzech boków: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]] Używa trzech długości boków i półobwodu, działa dla każdego niezdegenerowanego trójkąta i nie potrzebuje promienia okręgu wpisanego jako osobnego wejścia. Porównaj z [[[\\boxed{K=rs}]]] Te dwa to bliscy krewni: półobwód [[s]] pojawia się w obu, a udowodnienie ich zgodności to jeden z najczystszych sposobów, by zobaczyć, że [[K=rs]] jest poprawne." },
           { "kind": "h3", "text": "Kiedy wzór z promieniem okręgu wpisanego jest łatwiejszy?" },
           { "kind": "p", "text": "[[K=rs]] jest szczególnie wygodne, gdy promień okręgu wpisanego i półobwód są już znane: jedno mnożenie, bez pierwiastków kwadratowych, bez rozkładania różnic boków. Gdy okrąg wpisany został zmierzony albo gdy wcześniejsze kroki dały już [[r]] i [[s]], to najkrótsza droga do pola." },
           { "kind": "h3", "text": "Kiedy wzór Herona jest bardziej przydatny?" },
           { "kind": "p", "text": "Wzór Herona to lepszy wybór, gdy znane są trzy długości boków, ale promień okręgu wpisanego nie został obliczony. Sięga po pole bezpośrednio z [[a]], [[b]] i [[c]], bez objazdu przez [[r]]. Żaden wzór nie jest uniwersalnie dokładniejszy; oba są ścisłe przy spójnych danych i rozjeżdżają się tylko wtedy, gdy dane są niespójne." },
           { "kind": "h3", "text": "Weryfikacja obu wzorów na trójkącie 3-4-5" },
-          { "kind": "p", "text": "Dane [[a=3]], [[b=4]], [[c=5]], przy [[s=6]] i [[r=1]]. Z promieniem okręgu wpisanego: [[K=1\\times6=6]]. Ze wzorem Herona: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], więc [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. Wyniki są zgodne, bo oba wzory mierzą ten sam obszar; to dwa wyrażenia jednego pola, a zgodność między nimi to mocny znak, że obliczenia są poprawne." }
+          { "kind": "p", "text": "Dane [[a=3]], [[b=4]], [[c=5]], przy [[s=6]] i [[r=1]]. Z promieniem okręgu wpisanego: [[K=1\\times6=6]]. Ze wzorem Herona: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], więc [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] Wyniki są zgodne, bo oba wzory mierzą ten sam obszar; to dwa wyrażenia jednego pola, a zgodność między nimi to mocny znak, że obliczenia są poprawne." }
         ]
       },
       "sec-legs": {
         "h2": "Dlaczego wzór z promieniem okręgu wpisanego daje to samo pole co wzór z przyprostokątnymi?",
         "blocks": [
-          { "kind": "p", "text": "Dwa wzory roszczą sobie to samo pole: [[K=\\frac{ab}{2}]] i [[K=rs]]. Zapisanie [[r]] i [[s]] przez boki daje [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], więc [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Licznik to różnica kwadratów: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Zastosuj twierdzenie Pitagorasa [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], zatem [[[\\boxed{rs=\\frac{ab}{2}}]]]. Oba wzory są identyczne na każdym trójkącie prostokątnym; przy spójnych danych nie mogą się rozjechać." },
+          { "kind": "p", "text": "Dwa wzory roszczą sobie to samo pole: [[K=\\frac{ab}{2}]] i [[K=rs]]. Zapisanie [[r]] i [[s]] przez boki daje [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], więc [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Licznik to różnica kwadratów: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Zastosuj twierdzenie Pitagorasa [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], zatem [[[\\boxed{rs=\\frac{ab}{2}}]]] Oba wzory są identyczne na każdym trójkącie prostokątnym; przy spójnych danych nie mogą się rozjechać." },
           { "kind": "p", "text": "Sprawdź na trójkącie 3-4-5: [[r=1]], [[s=6]], [[rs=6]] oraz [[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]. Na trójkącie 6-8-10: [[r=2]], [[s=12]], [[rs=24]] oraz [[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]. Znany wzór z przyprostokątnymi i wzór z promieniem okręgu wpisanego to ta sama wielkość w innym stroju." }
         ]
       },
@@ -1162,7 +1162,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH4 = {
         "blocks": [
           { "kind": "p", "text": "Pole jest dwuwymiarowe, więc jego jednostka to kwadrat jednostki długości. W symbolach: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]. To samo dotyczy metrów i metrów kwadratowych, milimetrów i milimetrów kwadratowych, stóp i stóp kwadratowych, cali i cali kwadratowych. Selektory jednostek istnieją po to, by wynik mógł być poprawnie oznaczony." },
           { "kind": "h3", "text": "Dlaczego oba dane wejściowe muszą używać zgodnych jednostek" },
-          { "kind": "p", "text": "Promień okręgu wpisanego i półobwód muszą być wyrażone w tej samej jednostce, zanim zastosuje się wzór. Jeśli [[r=20\\text{ cm}]] i [[s=1\\text{ m}]], najpierw przelicz: [[1\\text{ m}=100\\text{ cm}]]. Wtedy [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]] lub równoważnie [[[\\boxed{K=0.2\\text{ m}^2}]]]. Mnożenie pomiarów w różnych jednostkach daje liczbę bez czystej jednostki, więc najpierw przelicz, a potem oblicz." },
+          { "kind": "p", "text": "Promień okręgu wpisanego i półobwód muszą być wyrażone w tej samej jednostce, zanim zastosuje się wzór. Jeśli [[r=20\\text{ cm}]] i [[s=1\\text{ m}]], najpierw przelicz: [[1\\text{ m}=100\\text{ cm}]]. Wtedy [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]] lub równoważnie [[[\\boxed{K=0.2\\text{ m}^2}]]] Mnożenie pomiarów w różnych jednostkach daje liczbę bez czystej jednostki, więc najpierw przelicz, a potem oblicz." },
           { "kind": "h3", "text": "Dlaczego należy unikać wczesnego zaokrąglania" },
           { "kind": "p", "text": "Zaokrąglone wartości [[r]] lub [[s]] mogą nieznacznie wpłynąć na końcowe pole, ponieważ promień okręgu wpisanego jest mnożony bezpośrednio w nie. Zachowaj wystarczającą precyzję w obliczeniach pośrednich i zaokrąglaj tylko końcową odpowiedź. Ten przewodnik nie rości sobie żadnych twierdzeń o wewnętrznej precyzji kalkulatora poza tym, co pokazuje jego interfejs." },
           { "kind": "h3", "text": "Pomiary dokładne kontra pomiary praktyczne" },

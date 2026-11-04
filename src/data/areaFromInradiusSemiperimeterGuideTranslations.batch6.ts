@@ -89,7 +89,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
       "sec-intro": {
         "h2": "İç Yarıçap ve Yarı Çevre Kullanarak Dik Üçgenin Alanı Nasıl Hesaplanır",
         "blocks": [
-          { "kind": "p", "text": "Bir dik üçgenin iç yarıçapı [[r=2]] ve yarı çevresi [[s=12]]'dir. [[K=r\\times s]] uygulayın: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Üçgen, 24 birim karelik düz bir alanı kapsar. Hesaplayıcının otomatikleştirdiği yöntemin tamamı budur: iki ölçüm, bir çarpma, bir cevap." },
+          { "kind": "p", "text": "Bir dik üçgenin iç yarıçapı [[r=2]] ve yarı çevresi [[s=12]]'dir. [[K=r\\times s]] uygulayın: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Üçgen, 24 birim karelik düz bir alanı kapsar. Hesaplayıcının otomatikleştirdiği yöntemin tamamı budur: iki ölçüm, bir çarpma, bir cevap." },
           { "kind": "p", "text": "İç yarıçap, üçgenin içine tam oturan ve üç kenara da değen çemberin yarıçapıdır. Yarı çevre, üçgenin çevresinin yarısıdır. İkisi birlikte alanı belirlemeye yeter, çünkü çemberin yarıçapı, tabanları üçgenin kenarları olan üç küçük üçgenin yüksekliği görevini görür. Bu özdeşlik yalnızca dik üçgenler için değil, dejenere olmayan her üçgen için geçerlidir; dik üçgenleri özel kılan, iç yarıçapın kendisinin üç kenardan hesaplanabilmesindeki hızlı yoldur. En çok, iç teğet çember doğrudan ölçüldüğünde ya da iç yarıçap ve yarı çevre önceki çalışmalardan zaten bilindiğinde işe yarar." }
         ]
       },
@@ -106,7 +106,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "İç Merkezi Anlamak" },
           { "kind": "p", "text": "İç merkez [[I]], üçgenin üç iç açıortayının kesiştiği noktadır. Her açıortay, o açıyı oluşturan iki kenara eşit uzaklıktaki noktaların kümesidir; bu yüzden üç açıortayın üzerinde bulunan bir nokta üç kenara da eşit uzaklıktadır ve üçgenin içinde olmak zorundadır. Bu ortak uzaklık tam olarak iç yarıçaptır ve merkezi [[I]] olan, yarıçapı [[r]] olan çember her kenara bir kez değer: iç teğet çember budur." },
           { "kind": "h3", "text": "İç Yarıçap Çevrel Yarıçapla Aynı Şey midir?" },
-          { "kind": "p", "text": "Hayır. İç yarıçap [[r]], üçgenin içindeki çemberin yarıçapıyken çevrel yarıçap [[R]], üç köşeden de geçen çemberin, yani çevrel çemberin yarıçapıdır. Dik üçgende çevrel çemberin merkezi hipotenüsün orta noktasıdır, dolayısıyla [[[\\boxed{R=\\frac{c}{2}}]]]. İki yarıçap bütünüyle farklı çemberleri tanımlar: biri üçgenin içine çizilmiştir, diğeri çevresine çizilmiştir. Bunları karıştırmak bu konudaki en yaygın hatalardan biridir, o yüzden ayrı tutun: içerdeki için [[r]], çevredeki için [[R]]." }
+          { "kind": "p", "text": "Hayır. İç yarıçap [[r]], üçgenin içindeki çemberin yarıçapıyken çevrel yarıçap [[R]], üç köşeden de geçen çemberin, yani çevrel çemberin yarıçapıdır. Dik üçgende çevrel çemberin merkezi hipotenüsün orta noktasıdır, dolayısıyla [[[\\boxed{R=\\frac{c}{2}}]]] İki yarıçap bütünüyle farklı çemberleri tanımlar: biri üçgenin içine çizilmiştir, diğeri çevresine çizilmiştir. Bunları karıştırmak bu konudaki en yaygın hatalardan biridir, o yüzden ayrı tutun: içerdeki için [[r]], çevredeki için [[R]]." }
         ],
         "imgAlt": "İç teğet çemberli ABC dik üçgeni: iç merkez I, iç yarıçap r, değme noktaları ve çevrel çember",
         "figcaption": "ABC üçgeni ve iç teğet çemberi: iç merkez I, her kenara dik olan ID = r iç yarıçapı ve karşılaştırma için çevrel çember."
@@ -129,13 +129,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Standart üçgen alan kuralından başlayın: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]. İç merkezden [[I]] üç köşeye çizilen doğru parçaları, asıl üçgeni üç küçük üçgene böler. Her küçük üçgenin tabanı asıl üçgenin bir kenarına, dik yüksekliği ise iç yarıçap [[r]]'ye eşittir, çünkü yarıçap her kenara dik açıyla ulaşır. Bu, dejenere olmayan her üçgen için çalışır; bu hesaplayıcıda üçgen dik açılıdır ama alan özdeşliğinin kendisi tamamen geneldir." },
           { "kind": "h3", "text": "Birinci Küçük Üçgenin Alanı" },
-          { "kind": "p", "text": "[[a]] kenarı üzerinde duran küçük üçgenin tabanı [[a]], yüksekliği [[r]]'dir: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "[[a]] kenarı üzerinde duran küçük üçgenin tabanı [[a]], yüksekliği [[r]]'dir: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "İkinci Küçük Üçgenin Alanı" },
-          { "kind": "p", "text": "[[b]] kenarı üzerinde duran küçük üçgenin tabanı [[b]], yüksekliği [[r]]'dir: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "[[b]] kenarı üzerinde duran küçük üçgenin tabanı [[b]], yüksekliği [[r]]'dir: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "Üçüncü Küçük Üçgenin Alanı" },
-          { "kind": "p", "text": "[[c]] kenarı üzerinde duran küçük üçgenin tabanı [[c]], yüksekliği [[r]]'dir: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "[[c]] kenarı üzerinde duran küçük üçgenin tabanı [[c]], yüksekliği [[r]]'dir: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "Üç Alanı Toplayın" },
-          { "kind": "p", "text": "Üç küçük üçgen, asıl üçgeni örtüşmeden kaplar; dolayısıyla [[K=K_1+K_2+K_3]]. Yerine koyun: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. [[\\frac{r}{2}]] parantezine alın: [[K=\\frac{r(a+b+c)}{2}]]. [[s=\\frac{a+b+c}{2}]] olduğunu hatırlayın; o halde [[[\\boxed{K=r\\times s}]]]. Her geçiş gerekçelidir: kaplama tamdır, [[r]] yüksekliği ortaktır ve yarı çevre ikiye bölmeyi içine alır." },
+          { "kind": "p", "text": "Üç küçük üçgen, asıl üçgeni örtüşmeden kaplar; dolayısıyla [[K=K_1+K_2+K_3]]. Yerine koyun: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. [[\\frac{r}{2}]] parantezine alın: [[K=\\frac{r(a+b+c)}{2}]]. [[s=\\frac{a+b+c}{2}]] olduğunu hatırlayın; o halde [[[\\boxed{K=r\\times s}]]] Her geçiş gerekçelidir: kaplama tamdır, [[r]] yüksekliği ortaktır ve yarı çevre ikiye bölmeyi içine alır." },
           { "kind": "h3", "text": "Bu Formül Neden Bir Kez Daha İkiye Bölme Gerektirmez?" },
           { "kind": "p", "text": "Çünkü bir bölü iki, yarı çevrenin içinde zaten katlanmıştır. Üç yarı, [[\\frac{r(a+b+c)}{2}]] içinde birleşir ve [[s]] tam olarak çevrenin yarısıdır; bu yüzden ikinci kez ikiye bölmek doğru ifadeyi dörtte bire indirir. [[r\\times s]]'yi hesaplayın ve orada durun; daha fazla yarıya indirmek düzeltme değil hatadır." }
         ],
@@ -149,9 +149,9 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Dik Üçgen İç Yarıçap Formülünün Türetilmesi" },
           { "kind": "p", "text": "Türetimde eşit teğet parçası teoremi kullanılır: ortak bir dış noktadan çembere çizilen iki teğet parçasının uzunlukları eşittir. Üç köşeden gelen teğet uzunlukları [[A]] köşesinden [[x]], [[B]] köşesinden [[y]] ve [[C]] köşesinden [[z]] olsun. [[C]] dik açısında, iç teğet çemberin iki teğeti dik kenarlar boyunca uzanır ve her birinin uzunluğu [[r]]'dir; iki yarıçapla birlikte küçük bir kare oluştururlar, dolayısıyla [[z=r]]. Kenarlar o zaman [[a=y+r]], [[b=x+r]] ve [[c=x+y]] olur. Çıkarın: [[a+b-c=(y+r)+(x+r)-(x+y)]]; buradan [[a+b-c=2r]] ve [[[\\boxed{r=\\frac{a+b-c}{2}}]]] elde edilir. Dik açıdaki kare, bu kestirmenin yalnızca dik üçgenlere ait olmasının nedenidir." },
           { "kind": "h3", "text": "3-4-5 Üçgeniyle Örnek" },
-          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. İç teğet çemberin yarıçapı tam olarak 1'dir; çizim gerekmez." },
+          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] İç teğet çemberin yarıçapı tam olarak 1'dir; çizim gerekmez." },
           { "kind": "h3", "text": "5-12-13 Üçgeniyle Örnek" },
-          { "kind": "p", "text": "Verilenler [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. Yine iç yarıçap doğrudan kenar uzunluklarından çıkar." },
+          { "kind": "p", "text": "Verilenler [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] Yine iç yarıçap doğrudan kenar uzunluklarından çıkar." },
           { "kind": "h3", "text": "Yarı Çevreyi Aynı Anda Bulmak" },
           { "kind": "p", "text": "Aynı üç kenarla [[r]]'nin yanında [[s=\\frac{a+b+c}{2}]]'yi de hesaplayın. 5-12-13 üçgeni için: [[s=\\frac{5+12+13}{2}=15]] ve ardından [[K=rs=2\\times15=30]]. Üç kenar üzerinden tek geçiş, hem hesaplayıcının iki girdisini hem de alanın kendisini verir." },
           { "kind": "h3", "text": "Bu Kestirme Ne Zaman Kullanılmalıdır?" },
@@ -189,13 +189,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Dört çözülmüş örnek, yöntemi bilinenden yukarı doğru kurar. Her biri yarı çevreyi ve iç yarıçapı üç kenardan hesaplar, her yerine koyma gösterilecek şekilde [[K=rs]]'yi uygular ve dik kenar formülüyle doğrular." },
           { "kind": "h3", "text": "Örnek 1: 3-4-5 Dik Üçgeni" },
-          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]. Adım 1: yarı çevre, [[s=\\frac{3+4+5}{2}=6]]. Adım 2: iç yarıçap, [[r=\\frac{3+4-5}{2}=1]]. Adım 3: formülü uygulayın, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Doğrulayın: [[K=\\frac{3\\times4}{2}=6]]." },
+          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]. Adım 1: yarı çevre, [[s=\\frac{3+4+5}{2}=6]]. Adım 2: iç yarıçap, [[r=\\frac{3+4-5}{2}=1]]. Adım 3: formülü uygulayın, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Doğrulayın: [[K=\\frac{3\\times4}{2}=6]]." },
           { "kind": "h3", "text": "Örnek 2: 6-8-10 Dik Üçgeni" },
-          { "kind": "p", "text": "Verilenler [[a=6]], [[b=8]], [[c=10]]. O zaman [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] ve [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Doğrulayın: [[K=\\frac{6\\times8}{2}=24]]." },
+          { "kind": "p", "text": "Verilenler [[a=6]], [[b=8]], [[c=10]]. O zaman [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] ve [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Doğrulayın: [[K=\\frac{6\\times8}{2}=24]]." },
           { "kind": "h3", "text": "Örnek 3: 5-12-13 Dik Üçgeni" },
-          { "kind": "p", "text": "Verilenler [[a=5]], [[b=12]], [[c=13]]. O zaman [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] ve [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Doğrulayın: [[K=\\frac{5\\times12}{2}=30]]." },
+          { "kind": "p", "text": "Verilenler [[a=5]], [[b=12]], [[c=13]]. O zaman [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] ve [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Doğrulayın: [[K=\\frac{5\\times12}{2}=30]]." },
           { "kind": "h3", "text": "Örnek 4: 8-15-17 Dik Üçgeni" },
-          { "kind": "p", "text": "Verilenler [[a=8]], [[b=15]], [[c=17]]. O zaman [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] ve [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. Doğrulayın: [[K=\\frac{8\\times15}{2}=60]]." },
+          { "kind": "p", "text": "Verilenler [[a=8]], [[b=15]], [[c=17]]. O zaman [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] ve [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] Doğrulayın: [[K=\\frac{8\\times15}{2}=60]]." },
           { "kind": "h3", "text": "Temel Örneklerin Karşılaştırılması" }
         ],
         "table": {
@@ -213,29 +213,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "On iki çözülmüş durum, formülü farklı ölçeklerde ve farklı birimlerde gösterir. Her biri üçgensel nesneyi adlandırır, üç kenar ölçüsünü verir, iç yarıçapı ve yarı çevreyi hesaplar, ana formülü adım adım uygular ve arkasındaki varsayımı belirtir. Her örnek dik üçgensel bir panel, kesit, profil ya da basitleştirilmiş geometrik modeldir; gerçek nesne eğri ya da düzensizse hesaplama yalnızca modellenen üçgeni kapsar." },
           { "kind": "h3", "text": "Örnek 1: Üçgen Cam Pencere" },
-          { "kind": "p", "text": "Dik üçgen biçiminde bir cam pencerenin ölçüleri [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]'dir. İç yarıçap: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Yarı çevre: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Alan: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. Bu, çerçeve ölçülerine yer bırakılmadan önceki düz cam alanıdır." },
+          { "kind": "p", "text": "Dik üçgen biçiminde bir cam pencerenin ölçüleri [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]'dir. İç yarıçap: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Yarı çevre: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Alan: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] Bu, çerçeve ölçülerine yer bırakılmadan önceki düz cam alanıdır." },
           { "kind": "h3", "text": "Örnek 2: Çelik Destek Braketi" },
-          { "kind": "p", "text": "Üçgen bir çelik destek plakasının ölçüleri [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]'dir. O zaman [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. Yalnızca alan, plakanın yük taşıma kapasitesini belirlemez." },
+          { "kind": "p", "text": "Üçgen bir çelik destek plakasının ölçüleri [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]'dir. O zaman [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] Yalnızca alan, plakanın yük taşıma kapasitesini belirlemez." },
           { "kind": "h3", "text": "Örnek 3: Üçgen Rampa Yan Profili" },
-          { "kind": "p", "text": "Basitleştirilmiş dik üçgen bir rampa profilinin ölçüleri [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]'dir. O zaman [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Bu, eğimli yürüme yüzeyini değil yan profili temsil eder." },
+          { "kind": "p", "text": "Basitleştirilmiş dik üçgen bir rampa profilinin ölçüleri [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]'dir. O zaman [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] Bu, eğimli yürüme yüzeyini değil yan profili temsil eder." },
           { "kind": "h3", "text": "Örnek 4: Üçgen Çatı Destek Paneli" },
-          { "kind": "p", "text": "Dik üçgen bir çatı destek panelinin ölçüleri [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]'dir. O zaman [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. Sonuç, tahmini düz üçgen panel alanıdır." },
+          { "kind": "p", "text": "Dik üçgen bir çatı destek panelinin ölçüleri [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]'dir. O zaman [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] Sonuç, tahmini düz üçgen panel alanıdır." },
           { "kind": "h3", "text": "Örnek 5: Ölçülmüş Bahçe Parseli" },
-          { "kind": "p", "text": "Dik üçgen bir bahçe parselinin ölçüleri [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]'dir. O zaman [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. Formül, üçgensel parselin alanını üç sınır ölçüsünden doğrudan verir." },
+          { "kind": "p", "text": "Dik üçgen bir bahçe parselinin ölçüleri [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]'dir. O zaman [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] Formül, üçgensel parselin alanını üç sınır ölçüsünden doğrudan verir." },
           { "kind": "h3", "text": "Örnek 6: Üçgen Kumaş Yelken" },
-          { "kind": "p", "text": "Dik üçgen bir kumaş panelin ölçüleri [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]'dir. O zaman [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Dikiş ve kumaş payları bu düz panel değerine dahil değildir." },
+          { "kind": "p", "text": "Dik üçgen bir kumaş panelin ölçüleri [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]'dir. O zaman [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Dikiş ve kumaş payları bu düz panel değerine dahil değildir." },
           { "kind": "h3", "text": "Örnek 7: Büyük Üçgen Arazi Parseli" },
-          { "kind": "p", "text": "Dik üçgen olarak modellenen, ölçülmüş bir arazi parselinin ölçüleri [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]'dir. O zaman [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. Basitleştirilmiş dik üçgen model, düz zeminde doğru sınırlar varsayar." },
+          { "kind": "p", "text": "Dik üçgen olarak modellenen, ölçülmüş bir arazi parselinin ölçüleri [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]'dir. O zaman [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] Basitleştirilmiş dik üçgen model, düz zeminde doğru sınırlar varsayar." },
           { "kind": "h3", "text": "Örnek 8: Kontrplak Kesim Şablonu" },
-          { "kind": "p", "text": "Üçgen bir kontrplak şablonun ölçüleri [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]'dir. O zaman [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. Alan, kesim firesinden önce malzeme ihtiyacını tahmin etmeye yardımcı olur." },
+          { "kind": "p", "text": "Üçgen bir kontrplak şablonun ölçüleri [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]'dir. O zaman [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] Alan, kesim firesinden önce malzeme ihtiyacını tahmin etmeye yardımcı olur." },
           { "kind": "h3", "text": "Örnek 9: Büyük Üçgen Tabela Paneli" },
-          { "kind": "p", "text": "Dik üçgen bir tabela panelinin ölçüleri [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]'dir. O zaman [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. Sonuç, izleyiciye bakan düz üçgensel yüzeyi temsil eder." },
+          { "kind": "p", "text": "Dik üçgen bir tabela panelinin ölçüleri [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]'dir. O zaman [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] Sonuç, izleyiciye bakan düz üçgensel yüzeyi temsil eder." },
           { "kind": "h3", "text": "Örnek 10: Üçgen Tente Desteği" },
-          { "kind": "p", "text": "Dik üçgen bir tente destek kesitinin ölçüleri [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]'dir. O zaman [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. Bu, modellenen üçgensel kesitin hesaplanan alanıdır." },
+          { "kind": "p", "text": "Dik üçgen bir tente destek kesitinin ölçüleri [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]'dir. O zaman [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] Bu, modellenen üçgensel kesitin hesaplanan alanıdır." },
           { "kind": "h3", "text": "Örnek 11: Endüstriyel Destek Paneli" },
-          { "kind": "p", "text": "Dik üçgen bir endüstriyel destek panelinin ölçüleri [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]'dir. O zaman [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. Bu geometrik hesaplama panelin düz alanını açıklar, yapısal performansını değil." },
+          { "kind": "p", "text": "Dik üçgen bir endüstriyel destek panelinin ölçüleri [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]'dir. O zaman [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] Bu geometrik hesaplama panelin düz alanını açıklar, yapısal performansını değil." },
           { "kind": "h3", "text": "Örnek 12: Büyük Üçgen Çatı Uç Kesiti" },
-          { "kind": "p", "text": "Dik üçgen bir çatı uç kesitinin ölçüleri [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]'dir. O zaman [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. Hesaplanan alan, düz üçgensel kaplamayı tahmin etmeye yardımcı olur." },
+          { "kind": "p", "text": "Dik üçgen bir çatı uç kesitinin ölçüleri [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]'dir. O zaman [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] Hesaplanan alan, düz üçgensel kaplamayı tahmin etmeye yardımcı olur." },
           { "kind": "h3", "text": "Pratik Örneklerin Karşılaştırılması" }
         ],
         "table": {
@@ -261,7 +261,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Dik üçgende iç yarıçap ve yarı çevre kenarlardan bağımsız değildir; onlardan kurulur. [[r=\\frac{a+b-c}{2}]] ve [[s=\\frac{a+b+c}{2}]] ifadelerinden başlayarak iki ifadeyi toplayın ve çıkarın. Toplamak [[[\\boxed{s+r=a+b}]]] verir, çıkarmak [[[\\boxed{s-r=c}]]] verir. Bu iki özdeşlik, verilen gösterim altında dik üçgenlere özgüdür ve hesaplayıcının iki girdisini üçgenin kendisi hakkında şaşırtıcı miktarda bilgiye dönüştürür." },
           { "kind": "h3", "text": "Hipotenüsü Geri Elde Etmek" },
-          { "kind": "p", "text": "[[s-r=c]] ifadesinden, [[r]] ve [[s]] bilindiğinde hipotenüs geri elde edilebilir. [[r=2]] ve [[s=12]] için: [[c=12-2]], [[[\\boxed{c=10}]]]. Böylece iki girdi, başka ölçüme gerek kalmadan en uzun kenarı ortaya çıkarır." },
+          { "kind": "p", "text": "[[s-r=c]] ifadesinden, [[r]] ve [[s]] bilindiğinde hipotenüs geri elde edilebilir. [[r=2]] ve [[s=12]] için: [[c=12-2]], [[[\\boxed{c=10}]]] Böylece iki girdi, başka ölçüme gerek kalmadan en uzun kenarı ortaya çıkarır." },
           { "kind": "h3", "text": "İki Dik Kenarın Toplamını Geri Elde Etmek" },
           { "kind": "p", "text": "[[a+b=s+r]] ifadesinden dik kenarların toplamı doğrudan bulunur. [[r=2]] ve [[s=12]] için: [[a+b=14]]. Yalnızca toplam, her kenarı tek tek belirleyemez; tekil uzunluklar için bir bilgi parçası daha gerekir." },
           { "kind": "h3", "text": "İki Dik Kenarın Çarpımını Geri Elde Etmek" },
@@ -277,7 +277,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Temel Girdi Koşulları" },
           { "kind": "p", "text": "Girdiler [[r>0]] ve [[s>0]] koşullarını sağlamalıdır. Dik üçgen için [[s>r]] de gerekir, çünkü [[c=s-r]] ve hipotenüs pozitif olmalıdır. Bu üç koşul gereklidir ama yeterli değildir." },
           { "kind": "h3", "text": "İleri Düzey Dik Üçgen Tutarlılık Kontrolü" },
-          { "kind": "p", "text": "[[a+b=s+r]] ve [[ab=2rs]] ifadelerinden, iki dik kenar ancak ve ancak diskriminant [[\\Delta=(s+r)^2-8rs]] negatif olmadığında gerçeldir. Sadeleştirilmiş hali: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]]. Gerçel dik kenar uzunlukları için [[\\Delta\\geq0]]. [[s]]'nin [[r]]'yi aşması gerektiğinden, eşdeğer dik üçgen koşulu [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]] ya da [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]] olur. Eşitlik, olası en sıkı uyum olan ikizkenar dik üçgende gerçekleşir. Bu, yukarıdaki temel kontrollerden açıkça ayrılmış, ileri düzey bir matematiksel uyumluluk testidir." },
+          { "kind": "p", "text": "[[a+b=s+r]] ve [[ab=2rs]] ifadelerinden, iki dik kenar ancak ve ancak diskriminant [[\\Delta=(s+r)^2-8rs]] negatif olmadığında gerçeldir. Sadeleştirilmiş hali: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]] Gerçel dik kenar uzunlukları için [[\\Delta\\geq0]]. [[s]]'nin [[r]]'yi aşması gerektiğinden, eşdeğer dik üçgen koşulu [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]] ya da [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]] olur. Eşitlik, olası en sıkı uyum olan ikizkenar dik üçgende gerçekleşir. Bu, yukarıdaki temel kontrollerden açıkça ayrılmış, ileri düzey bir matematiksel uyumluluk testidir." },
           { "kind": "h3", "text": "Geçerli Örnek" },
           { "kind": "p", "text": "[[r=2]] ve [[s=12]] verildiğinde oran [[\\frac{s}{r}=6]] olur. [[6>3+2\\sqrt2]] (yaklaşık 5,83) olduğundan bu değerler geçerli bir dik üçgeni tanımlayabilir ve karşılık gelen kenarlar 6, 8 ve 10'dur." },
           { "kind": "h3", "text": "Uyumsuz Örnek" },
@@ -287,19 +287,19 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
       "sec-heron": {
         "h2": "İç Yarıçap Formülü Heron Formülü ile Nasıl Karşılaştırılır?",
         "blocks": [
-          { "kind": "p", "text": "Heron formülü alanı üç kenardan hesaplar: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]. Üç kenar uzunluğunu ve yarı çevreyi kullanır, dejenere olmayan her üçgen için çalışır ve ayrı bir girdi olarak iç yarıçapa ihtiyaç duymaz. Bunu [[[\\boxed{K=rs}]]] ile karşılaştırın. İkisi yakın akrabadır: yarı çevre [[s]] ikisinde de görünür ve uyuştuklarını kanıtlamak, [[K=rs]]'nin doğru olduğunu görmenin en temiz yollarından biridir." },
+          { "kind": "p", "text": "Heron formülü alanı üç kenardan hesaplar: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]] Üç kenar uzunluğunu ve yarı çevreyi kullanır, dejenere olmayan her üçgen için çalışır ve ayrı bir girdi olarak iç yarıçapa ihtiyaç duymaz. Bunu [[[\\boxed{K=rs}]]] ile karşılaştırın. İkisi yakın akrabadır: yarı çevre [[s]] ikisinde de görünür ve uyuştuklarını kanıtlamak, [[K=rs]]'nin doğru olduğunu görmenin en temiz yollarından biridir." },
           { "kind": "h3", "text": "İç Yarıçap Formülü Ne Zaman Daha Kolaydır?" },
           { "kind": "p", "text": "İç yarıçap ve yarı çevre zaten biliniyorsa [[K=rs]] özellikle elverişlidir: tek çarpma, karekök yok, kenar farklarını çarpanlarına ayırma yok. İç teğet çember ölçülmüşse ya da önceki adımlar [[r]] ve [[s]]'yi zaten üretmişse alana giden en kısa yol budur." },
           { "kind": "h3", "text": "Heron Formülü Ne Zaman Daha Yararlıdır?" },
           { "kind": "p", "text": "Üç kenar uzunluğu biliniyor ama iç yarıçap hesaplanmamışsa Heron formülü daha iyi seçimdir. [[a]], [[b]] ve [[c]]'den, [[r]] üzerinden dolanmadan alana doğrudan ulaşır. İki formülden biri evrensel olarak daha doğru değildir; tutarlı girdilerde ikisi de kesindir ve yalnızca girdiler tutarsızsa anlaşmazlar." },
           { "kind": "h3", "text": "İki Formülü 3-4-5 Üçgeniyle Doğrulayın" },
-          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]; [[s=6]] ve [[r=1]] ile. İç yarıçapla: [[K=1\\times6=6]]. Heron formülüyle: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], yani [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. Sonuçlar uyuşur, çünkü iki formül de aynı bölgeyi ölçer; tek alanın iki ifadesidirler ve aralarındaki uyum, aritmetiğin doğru olduğunun güçlü bir işaretidir." }
+          { "kind": "p", "text": "Verilenler [[a=3]], [[b=4]], [[c=5]]; [[s=6]] ve [[r=1]] ile. İç yarıçapla: [[K=1\\times6=6]]. Heron formülüyle: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], yani [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] Sonuçlar uyuşur, çünkü iki formül de aynı bölgeyi ölçer; tek alanın iki ifadesidirler ve aralarındaki uyum, aritmetiğin doğru olduğunun güçlü bir işaretidir." }
         ]
       },
       "sec-legs": {
         "h2": "İç Yarıçap Formülü Neden Dik Kenar Formülüyle Aynı Alanı Üretir?",
         "blocks": [
-          { "kind": "p", "text": "İki formül aynı alanı iddia eder: [[K=\\frac{ab}{2}]] ve [[K=rs]]. [[r]] ve [[s]]'yi kenarlar cinsinden yazmak [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]] verir; buradan [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Pay, karelerin farkıdır: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Pisagor teoremi [[c^2=a^2+b^2]] uygulansın: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]]; o halde [[[\\boxed{rs=\\frac{ab}{2}}]]]. İki formül her dik üçgende özdeştir; tutarlı girdilerde anlaşmazlığa düşemezler." },
+          { "kind": "p", "text": "İki formül aynı alanı iddia eder: [[K=\\frac{ab}{2}]] ve [[K=rs]]. [[r]] ve [[s]]'yi kenarlar cinsinden yazmak [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]] verir; buradan [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Pay, karelerin farkıdır: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Pisagor teoremi [[c^2=a^2+b^2]] uygulansın: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]]; o halde [[[\\boxed{rs=\\frac{ab}{2}}]]] İki formül her dik üçgende özdeştir; tutarlı girdilerde anlaşmazlığa düşemezler." },
           { "kind": "p", "text": "3-4-5 üçgeniyle kontrol edin: [[r=1]], [[s=6]], [[rs=6]] ve [[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]. 6-8-10 üçgeniyle: [[r=2]], [[s=12]], [[rs=24]] ve [[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]. Bilinen dik kenar formülüyle iç yarıçap formülü, farklı kıyafetler giymiş aynı büyüklüktür." }
         ]
       },
@@ -367,7 +367,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Alan iki boyutludur; bu yüzden birimi uzunluk biriminin karesidir. Sembollerle: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]. Aynı durum metre ile metrekare, milimetre ile milimetrekare, fit ile fit kare, inç ile inç kare için geçerlidir. Birim seçiciler, sonucun doğru etiketlenebilmesi için vardır." },
           { "kind": "h3", "text": "Her İki Girdi Neden Uyumlu Birimler Kullanmalıdır?" },
-          { "kind": "p", "text": "Formül uygulanmadan önce iç yarıçap ve yarı çevre aynı birimle ifade edilmelidir. [[r=20\\text{ cm}]] ve [[s=1\\text{ m}]] ise önce dönüştürün: [[1\\text{ m}=100\\text{ cm}]]. Sonra [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]] ya da eşdeğer olarak [[[\\boxed{K=0.2\\text{ m}^2}]]]. Farklı birimlerdeki ölçüleri çarpmak, temiz bir birimi olmayan bir sayı üretir; o yüzden önce dönüştürün, sonra hesaplayın." },
+          { "kind": "p", "text": "Formül uygulanmadan önce iç yarıçap ve yarı çevre aynı birimle ifade edilmelidir. [[r=20\\text{ cm}]] ve [[s=1\\text{ m}]] ise önce dönüştürün: [[1\\text{ m}=100\\text{ cm}]]. Sonra [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]] ya da eşdeğer olarak [[[\\boxed{K=0.2\\text{ m}^2}]]] Farklı birimlerdeki ölçüleri çarpmak, temiz bir birimi olmayan bir sayı üretir; o yüzden önce dönüştürün, sonra hesaplayın." },
           { "kind": "h3", "text": "Erken Yuvarlamadan Neden Kaçınmalısınız?" },
           { "kind": "p", "text": "[[r]] ya da [[s]]'nin yuvarlanmış değerleri son alanı biraz etkileyebilir, çünkü iç yarıçap doğrudan onunla çarpılır. Ara hesaplamalarda yeterli duyarlılığı koruyun ve yalnızca son cevabı yuvarlayın. Bu kılavuz, hesaplayıcının arayüzünün gösterdiğinin ötesinde iç duyarlılığı hakkında bir iddiada bulunmaz." },
           { "kind": "h3", "text": "Tam Ölçümler ve Pratik Ölçümler" },
@@ -482,7 +482,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
       "sec-intro": {
         "h2": "Så beräknar du arean av en rätvinklig triangel med inradie och semiperimeter",
         "blocks": [
-          { "kind": "p", "text": "En rätvinklig triangel har inradien [[r=2]] och semiperimetern [[s=12]]. Tillämpa [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Triangeln omsluter 24 kvadratenheter plan area. Detta är hela metoden som kalkylatorn automatiserar: två mätningar, en multiplikation, ett svar." },
+          { "kind": "p", "text": "En rätvinklig triangel har inradien [[r=2]] och semiperimetern [[s=12]]. Tillämpa [[K=r\\times s]]: [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Triangeln omsluter 24 kvadratenheter plan area. Detta är hela metoden som kalkylatorn automatiserar: två mätningar, en multiplikation, ett svar." },
           { "kind": "p", "text": "Inradien är radien hos cirkeln som passar tätt inuti triangeln och tangerar alla tre sidor. Semiperimetern är halva avståndet runt triangeln. Tillsammans räcker de för att bestämma arean, eftersom cirkelns radie fungerar som höjden i tre mindre trianglar vars baser är triangelns sidor. Denna identitet gäller för varje icke-degenererad triangel, inte bara rätvinkliga; det som är speciellt med rätvinkliga trianglar är det snabba sättet som inradien själv kan beräknas ur de tre sidorna. Den är mest användbar när den inskrivna cirkeln har mätts direkt, eller när inradien och semiperimetern redan är kända från tidigare arbete." }
         ]
       },
@@ -499,7 +499,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Att förstå incentrum" },
           { "kind": "p", "text": "Incentrum [[I]] är punkten där triangelns tre inre vinkelbisektriser möts. Varje bisektris är mängden av punkter med lika avstånd till de två sidor som bildar vinkeln, så en punkt som ligger på alla tre bisektriser har lika avstånd till alla tre sidor, och den måste ligga inuti triangeln. Det gemensamma avståndet är exakt inradien, och cirkeln med centrum i [[I]] och radien [[r]] tangerar varje sida en gång: den inskrivna cirkeln." },
           { "kind": "h3", "text": "Är inradien samma sak som den omskrivna cirkelns radie?" },
-          { "kind": "p", "text": "Nej. Inradien [[r]] är radien hos cirkeln inuti triangeln, medan den omskrivna cirkelns radie [[R]] är radien hos cirkeln som går genom alla tre hörnen, den omskrivna cirkeln. För en rätvinklig triangel ligger den omskrivna cirkelns centrum i hypotenusans mittpunkt, så [[[\\boxed{R=\\frac{c}{2}}]]]. De två radierna beskriver helt olika cirklar: den ena är inskriven i triangeln, den andra är ritad runt den. Att blanda ihop dem är ett av de vanligaste felen i detta ämne, så håll dem isär: [[r]] för inuti, [[R]] för runt." }
+          { "kind": "p", "text": "Nej. Inradien [[r]] är radien hos cirkeln inuti triangeln, medan den omskrivna cirkelns radie [[R]] är radien hos cirkeln som går genom alla tre hörnen, den omskrivna cirkeln. För en rätvinklig triangel ligger den omskrivna cirkelns centrum i hypotenusans mittpunkt, så [[[\\boxed{R=\\frac{c}{2}}]]] De två radierna beskriver helt olika cirklar: den ena är inskriven i triangeln, den andra är ritad runt den. Att blanda ihop dem är ett av de vanligaste felen i detta ämne, så håll dem isär: [[r]] för inuti, [[R]] för runt." }
         ],
         "imgAlt": "Rätvinklig triangel ABC med inskriven cirkel: incentrum I, inradie r, tangeringspunkter och omskriven cirkel",
         "figcaption": "Triangel ABC och dess inskrivna cirkel: incentrum I, inradie r = ID med ID vinkelrät mot varje sida, plus den omskrivna cirkeln som jämförelse."
@@ -522,13 +522,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Utgå från den vanliga triangelarearegeln: [[K=\\frac12\\times\\text{base}\\times\\text{height}]]. Att dra sträckor från incentrum [[I]] till de tre hörnen delar den ursprungliga triangeln i tre mindre trianglar. Varje mindre triangel har en bas lika med en sida i den ursprungliga triangeln och en vinkelrät höjd lika med inradien [[r]], eftersom radien möter varje sida i rät vinkel. Detta fungerar för varje icke-degenererad triangel; för denna kalkylator är triangeln rätvinklig, men areaidentiteten i sig är helt allmän." },
           { "kind": "h3", "text": "Arean av den första mindre triangeln" },
-          { "kind": "p", "text": "Den mindre triangeln som står på sidan [[a]] har basen [[a]] och höjden [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]." },
+          { "kind": "p", "text": "Den mindre triangeln som står på sidan [[a]] har basen [[a]] och höjden [[r]]: [[[\\boxed{K_1=\\frac{ar}{2}}]]]" },
           { "kind": "h3", "text": "Arean av den andra mindre triangeln" },
-          { "kind": "p", "text": "Den mindre triangeln som står på sidan [[b]] har basen [[b]] och höjden [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]." },
+          { "kind": "p", "text": "Den mindre triangeln som står på sidan [[b]] har basen [[b]] och höjden [[r]]: [[[\\boxed{K_2=\\frac{br}{2}}]]]" },
           { "kind": "h3", "text": "Arean av den tredje mindre triangeln" },
-          { "kind": "p", "text": "Den mindre triangeln som står på sidan [[c]] har basen [[c]] och höjden [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]." },
+          { "kind": "p", "text": "Den mindre triangeln som står på sidan [[c]] har basen [[c]] och höjden [[r]]: [[[\\boxed{K_3=\\frac{cr}{2}}]]]" },
           { "kind": "h3", "text": "Addera de tre areorna" },
-          { "kind": "p", "text": "De tre mindre trianglarna täcker tillsammans exakt den ursprungliga utan överlapp, så [[K=K_1+K_2+K_3]]. Substituera: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Bryt ut [[\\frac{r}{2}]]: [[K=\\frac{r(a+b+c)}{2}]]. Kom ihåg att [[s=\\frac{a+b+c}{2}]], alltså [[[\\boxed{K=r\\times s}]]]. Varje övergång är motiverad: täckningen är exakt, höjden [[r]] är gemensam, och semiperimetern absorberar divisionen med två." },
+          { "kind": "p", "text": "De tre mindre trianglarna täcker tillsammans exakt den ursprungliga utan överlapp, så [[K=K_1+K_2+K_3]]. Substituera: [[K=\\frac{ar}{2}+\\frac{br}{2}+\\frac{cr}{2}]]. Bryt ut [[\\frac{r}{2}]]: [[K=\\frac{r(a+b+c)}{2}]]. Kom ihåg att [[s=\\frac{a+b+c}{2}]], alltså [[[\\boxed{K=r\\times s}]]] Varje övergång är motiverad: täckningen är exakt, höjden [[r]] är gemensam, och semiperimetern absorberar divisionen med två." },
           { "kind": "h3", "text": "Varför behöver denna formel ingen ytterligare division med två?" },
           { "kind": "p", "text": "Eftersom en halv redan är invikt i semiperimetern. De tre halvorna kombineras till [[\\frac{r(a+b+c)}{2}]], och [[s]] är exakt halva omkretsen, så att dividera med två en andra gång skulle reducera det korrekta uttrycket till en fjärdedel. Beräkna [[r\\times s]] och stanna där; en ytterligare halvering är ett misstag, inte en korrigering." }
         ],
@@ -540,11 +540,11 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "När de tre sidorna är kända följer den rätvinkliga triangelns inradie en genväg som helt undviker att rita den inskrivna cirkeln: [[[\\boxed{r=\\frac{a+b-c}{2}}]]], där [[a]] och [[b]] är de vinkelräta kateterna och [[c]] är hypotenusan. Detta är ett av de mest användbara faktumen i rätvinklig triangels geometri." },
           { "kind": "h3", "text": "Härledning av den rätvinkliga triangelns inradieformel" },
-          { "kind": "p", "text": "Härledningen använder satsen om lika tangentstycken: från en gemensam yttre punkt har de två tangentstycken som dras till en cirkel lika längd. Låt tangentlängderna från de tre hörnen vara [[x]] från hörnet [[A]], [[y]] från hörnet [[B]] och [[z]] från hörnet [[C]]. Vid den räta vinkeln [[C]] löper den inskrivna cirkelns två tangenter längs de vinkelräta kateterna och har vardera längden [[r]], och bildar en liten kvadrat med de två radierna, så [[z=r]]. Sidorna blir då [[a=y+r]], [[b=x+r]] och [[c=x+y]]. Subtrahera: [[a+b-c=(y+r)+(x+r)-(x+y)]], så [[a+b-c=2r]], vilket ger [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. Kvadraten vid den räta vinkeln är anledningen till att denna genväg tillhör de rätvinkliga trianglarna ensamma." },
+          { "kind": "p", "text": "Härledningen använder satsen om lika tangentstycken: från en gemensam yttre punkt har de två tangentstycken som dras till en cirkel lika längd. Låt tangentlängderna från de tre hörnen vara [[x]] från hörnet [[A]], [[y]] från hörnet [[B]] och [[z]] från hörnet [[C]]. Vid den räta vinkeln [[C]] löper den inskrivna cirkelns två tangenter längs de vinkelräta kateterna och har vardera längden [[r]], och bildar en liten kvadrat med de två radierna, så [[z=r]]. Sidorna blir då [[a=y+r]], [[b=x+r]] och [[c=x+y]]. Subtrahera: [[a+b-c=(y+r)+(x+r)-(x+y)]], så [[a+b-c=2r]], vilket ger [[[\\boxed{r=\\frac{a+b-c}{2}}]]] Kvadraten vid den räta vinkeln är anledningen till att denna genväg tillhör de rätvinkliga trianglarna ensamma." },
           { "kind": "h3", "text": "Exempel med en 3-4-5-triangel" },
-          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]]. Den inskrivna cirkelns radie är exakt 1, ingen konstruktion behövs." },
+          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]]: [[r=\\frac{3+4-5}{2}]], [[[\\boxed{r=1}]]] Den inskrivna cirkelns radie är exakt 1, ingen konstruktion behövs." },
           { "kind": "h3", "text": "Exempel med en 5-12-13-triangel" },
-          { "kind": "p", "text": "Givet [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]]. Återigen faller inradien direkt ur sidlängderna." },
+          { "kind": "p", "text": "Givet [[a=5]], [[b=12]], [[c=13]]: [[r=\\frac{5+12-13}{2}]], [[[\\boxed{r=2}]]] Återigen faller inradien direkt ur sidlängderna." },
           { "kind": "h3", "text": "Att hitta semiperimetern samtidigt" },
           { "kind": "p", "text": "Med samma tre sidor, beräkna [[s=\\frac{a+b+c}{2}]] vid sidan av [[r]]. För 5-12-13-triangeln: [[s=\\frac{5+12+13}{2}=15]], och sedan [[K=rs=2\\times15=30]]. En genomgång av de tre sidorna ger både kalkylatorns indata och själva arean." },
           { "kind": "h3", "text": "När ska du använda denna genväg?" },
@@ -582,13 +582,13 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Fyra lösta exempel bygger metoden uppåt från det bekanta. Var och ett beräknar semiperimetern och inradien ur de tre sidorna, tillämpar [[K=rs]] med varje substitution visad, och verifierar med kateterformeln." },
           { "kind": "h3", "text": "Exempel 1: Rätvinklig 3-4-5-triangel" },
-          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Steg 1: semiperimetern, [[s=\\frac{3+4+5}{2}=6]]. Steg 2: inradien, [[r=\\frac{3+4-5}{2}=1]]. Steg 3: tillämpa formeln, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Verifiera: [[K=\\frac{3\\times4}{2}=6]]." },
+          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Steg 1: semiperimetern, [[s=\\frac{3+4+5}{2}=6]]. Steg 2: inradien, [[r=\\frac{3+4-5}{2}=1]]. Steg 3: tillämpa formeln, [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Verifiera: [[K=\\frac{3\\times4}{2}=6]]." },
           { "kind": "h3", "text": "Exempel 2: Rätvinklig 6-8-10-triangel" },
-          { "kind": "p", "text": "Givet [[a=6]], [[b=8]], [[c=10]]. Då är [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] och [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]]. Verifiera: [[K=\\frac{6\\times8}{2}=24]]." },
+          { "kind": "p", "text": "Givet [[a=6]], [[b=8]], [[c=10]]. Då är [[s=\\frac{6+8+10}{2}=12]], [[r=\\frac{6+8-10}{2}=2]] och [[K=2\\times12]], [[[\\boxed{K=24\\text{ square units}}]]] Verifiera: [[K=\\frac{6\\times8}{2}=24]]." },
           { "kind": "h3", "text": "Exempel 3: Rätvinklig 5-12-13-triangel" },
-          { "kind": "p", "text": "Givet [[a=5]], [[b=12]], [[c=13]]. Då är [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] och [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Verifiera: [[K=\\frac{5\\times12}{2}=30]]." },
+          { "kind": "p", "text": "Givet [[a=5]], [[b=12]], [[c=13]]. Då är [[s=\\frac{5+12+13}{2}=15]], [[r=\\frac{5+12-13}{2}=2]] och [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Verifiera: [[K=\\frac{5\\times12}{2}=30]]." },
           { "kind": "h3", "text": "Exempel 4: Rätvinklig 8-15-17-triangel" },
-          { "kind": "p", "text": "Givet [[a=8]], [[b=15]], [[c=17]]. Då är [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] och [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]]. Verifiera: [[K=\\frac{8\\times15}{2}=60]]." },
+          { "kind": "p", "text": "Givet [[a=8]], [[b=15]], [[c=17]]. Då är [[s=\\frac{8+15+17}{2}=20]], [[r=\\frac{8+15-17}{2}=3]] och [[K=3\\times20]], [[[\\boxed{K=60\\text{ square units}}]]] Verifiera: [[K=\\frac{8\\times15}{2}=60]]." },
           { "kind": "h3", "text": "Jämförelse av grundläggande exempel" }
         ],
         "table": {
@@ -606,29 +606,29 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Tolv lösta situationer visar formeln i olika skalor och olika enheter. Var och en namnger det triangulära föremålet, ger de tre sidmätningarna, beräknar inradien och semiperimetern, tillämpar huvudformeln steg för steg och anger antagandet bakom den. Varje exempel är en rätvinklig triangulär panel, sektion, profil eller förenklad geometrisk modell; där det verkliga föremålet är böjt eller oregelbundet täcker beräkningen endast den modellerade triangeln." },
           { "kind": "h3", "text": "Exempel 1: Triangulärt glasfönster" },
-          { "kind": "p", "text": "Ett rätvinkligt triangulärt glasfönster har [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Inradie: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Semiperimeter: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Area: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]]. Detta är den plana glasarean innan utrymme lämnats för karmmått." },
+          { "kind": "p", "text": "Ett rätvinkligt triangulärt glasfönster har [[a=3\\text{ m}]], [[b=4\\text{ m}]], [[c=5\\text{ m}]]. Inradie: [[r=\\frac{3+4-5}{2}=1\\text{ m}]]. Semiperimeter: [[s=\\frac{3+4+5}{2}=6\\text{ m}]]. Area: [[K=1\\times6]], [[[\\boxed{K=6\\text{ m}^2}]]] Detta är den plana glasarean innan utrymme lämnats för karmmått." },
           { "kind": "h3", "text": "Exempel 2: Fäste av stål" },
-          { "kind": "p", "text": "En triangulär stödplatta av stål har [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Då är [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. Arean ensam bestämmer inte plattans bärförmåga." },
+          { "kind": "p", "text": "En triangulär stödplatta av stål har [[a=5\\text{ cm}]], [[b=12\\text{ cm}]], [[c=13\\text{ cm}]]. Då är [[r=2\\text{ cm}]], [[s=15\\text{ cm}]], [[[\\boxed{K=30\\text{ cm}^2}]]] Arean ensam bestämmer inte plattans bärförmåga." },
           { "kind": "h3", "text": "Exempel 3: Triangulär sidoprofil av ramp" },
-          { "kind": "p", "text": "En förenklad rätvinklig triangulär rampprofil har [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Då är [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Detta representerar sidoprofilen snarare än den lutande gångytan." },
+          { "kind": "p", "text": "En förenklad rätvinklig triangulär rampprofil har [[a=6\\text{ m}]], [[b=8\\text{ m}]], [[c=10\\text{ m}]]. Då är [[r=2\\text{ m}]], [[s=12\\text{ m}]], [[[\\boxed{K=24\\text{ m}^2}]]] Detta representerar sidoprofilen snarare än den lutande gångytan." },
           { "kind": "h3", "text": "Exempel 4: Triangulär takstödspanel" },
-          { "kind": "p", "text": "En rätvinklig triangulär takstödspanel har [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Då är [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. Resultatet är den uppskattade plana triangulära panelarean." },
+          { "kind": "p", "text": "En rätvinklig triangulär takstödspanel har [[a=8\\text{ ft}]], [[b=15\\text{ ft}]], [[c=17\\text{ ft}]]. Då är [[r=3\\text{ ft}]], [[s=20\\text{ ft}]], [[[\\boxed{K=60\\text{ ft}^2}]]] Resultatet är den uppskattade plana triangulära panelarean." },
           { "kind": "h3", "text": "Exempel 5: Uppmätt trädgårdssektion" },
-          { "kind": "p", "text": "En rätvinklig triangulär trädgårdssektion har [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Då är [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]]. Formeln ger den triangulära sektionens area direkt ur dess tre gränsmätningar." },
+          { "kind": "p", "text": "En rätvinklig triangulär trädgårdssektion har [[a=7\\text{ m}]], [[b=24\\text{ m}]], [[c=25\\text{ m}]]. Då är [[r=3\\text{ m}]], [[s=28\\text{ m}]], [[[\\boxed{K=84\\text{ m}^2}]]] Formeln ger den triangulära sektionens area direkt ur dess tre gränsmätningar." },
           { "kind": "h3", "text": "Exempel 6: Triangulärt tygsegel" },
-          { "kind": "p", "text": "En rätvinklig triangulär tygpanel har [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Då är [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Sömmar och tygmån exkluderas från denna plana panelsiffra." },
+          { "kind": "p", "text": "En rätvinklig triangulär tygpanel har [[a=9\\text{ ft}]], [[b=12\\text{ ft}]], [[c=15\\text{ ft}]]. Då är [[r=3\\text{ ft}]], [[s=18\\text{ ft}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Sömmar och tygmån exkluderas från denna plana panelsiffra." },
           { "kind": "h3", "text": "Exempel 7: Stor triangulär marksektion" },
-          { "kind": "p", "text": "En uppmätt marksektion modellerad som en rätvinklig triangel har [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Då är [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]]. Den förenklade rätvinkliga triangulära modellen antar raka gränser på plan mark." },
+          { "kind": "p", "text": "En uppmätt marksektion modellerad som en rätvinklig triangel har [[a=9\\text{ m}]], [[b=40\\text{ m}]], [[c=41\\text{ m}]]. Då är [[r=4\\text{ m}]], [[s=45\\text{ m}]], [[[\\boxed{K=180\\text{ m}^2}]]] Den förenklade rätvinkliga triangulära modellen antar raka gränser på plan mark." },
           { "kind": "h3", "text": "Exempel 8: Skärmall av plywood" },
-          { "kind": "p", "text": "En triangulär plywoodmall har [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Då är [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. Arean hjälper till att uppskatta materialbehovet före kapspill." },
+          { "kind": "p", "text": "En triangulär plywoodmall har [[a=12\\text{ cm}]], [[b=16\\text{ cm}]], [[c=20\\text{ cm}]]. Då är [[r=4\\text{ cm}]], [[s=24\\text{ cm}]], [[[\\boxed{K=96\\text{ cm}^2}]]] Arean hjälper till att uppskatta materialbehovet före kapspill." },
           { "kind": "h3", "text": "Exempel 9: Stor triangulär skyltpanel" },
-          { "kind": "p", "text": "En rätvinklig triangulär skyltpanel har [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Då är [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]]. Resultatet representerar den plana triangulära ytan som vetter mot betraktaren." },
+          { "kind": "p", "text": "En rätvinklig triangulär skyltpanel har [[a=20\\text{ m}]], [[b=21\\text{ m}]], [[c=29\\text{ m}]]. Då är [[r=6\\text{ m}]], [[s=35\\text{ m}]], [[[\\boxed{K=210\\text{ m}^2}]]] Resultatet representerar den plana triangulära ytan som vetter mot betraktaren." },
           { "kind": "h3", "text": "Exempel 10: Triangulärt markisstöd" },
-          { "kind": "p", "text": "En rätvinklig triangulär markisstödsektion har [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Då är [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. Detta är den beräknade arean av den modellerade triangulära sektionen." },
+          { "kind": "p", "text": "En rätvinklig triangulär markisstödsektion har [[a=15\\text{ ft}]], [[b=20\\text{ ft}]], [[c=25\\text{ ft}]]. Då är [[r=5\\text{ ft}]], [[s=30\\text{ ft}]], [[[\\boxed{K=150\\text{ ft}^2}]]] Detta är den beräknade arean av den modellerade triangulära sektionen." },
           { "kind": "h3", "text": "Exempel 11: Industriell stödpanel" },
-          { "kind": "p", "text": "En rätvinklig triangulär industriell stödpanel har [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Då är [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]]. Denna geometriska beräkning beskriver panelens plana area, inte dess strukturella prestanda." },
+          { "kind": "p", "text": "En rätvinklig triangulär industriell stödpanel har [[a=11\\text{ m}]], [[b=60\\text{ m}]], [[c=61\\text{ m}]]. Då är [[r=5\\text{ m}]], [[s=66\\text{ m}]], [[[\\boxed{K=330\\text{ m}^2}]]] Denna geometriska beräkning beskriver panelens plana area, inte dess strukturella prestanda." },
           { "kind": "h3", "text": "Exempel 12: Stor triangulär takgavelsektion" },
-          { "kind": "p", "text": "En rätvinklig triangulär takgavelsektion har [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Då är [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. Den beräknade arean hjälper till att uppskatta plan triangulär täckning." },
+          { "kind": "p", "text": "En rätvinklig triangulär takgavelsektion har [[a=13\\text{ ft}]], [[b=84\\text{ ft}]], [[c=85\\text{ ft}]]. Då är [[r=6\\text{ ft}]], [[s=91\\text{ ft}]], [[[\\boxed{K=546\\text{ ft}^2}]]] Den beräknade arean hjälper till att uppskatta plan triangulär täckning." },
           { "kind": "h3", "text": "Jämförelse av praktiska exempel" }
         ],
         "table": {
@@ -652,15 +652,15 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
       "sec-relationship": {
         "h2": "Hur hänger inradie och semiperimeter ihop med de tre sidorna?",
         "blocks": [
-          { "kind": "p", "text": "I en rätvinklig triangel är inradien och semiperimetern inte oberoende av sidorna; de är byggda av dem. Utgå från [[r=\\frac{a+b-c}{2}]] och [[s=\\frac{a+b+c}{2}]], addera och subtrahera de två uttrycken. Addition ger [[[\\boxed{s+r=a+b}]]], och subtraktion ger [[[\\boxed{s-r=c}]]]. Dessa två identiteter är specifika för rätvinkliga trianglar under den givna beteckningen, och de förvandlar kalkylatorns två indata till en förvånande mängd information om själva triangeln." },
+          { "kind": "p", "text": "I en rätvinklig triangel är inradien och semiperimetern inte oberoende av sidorna; de är byggda av dem. Utgå från [[r=\\frac{a+b-c}{2}]] och [[s=\\frac{a+b+c}{2}]], addera och subtrahera de två uttrycken. Addition ger [[[\\boxed{s+r=a+b}]]], och subtraktion ger [[[\\boxed{s-r=c}]]] Dessa två identiteter är specifika för rätvinkliga trianglar under den givna beteckningen, och de förvandlar kalkylatorns två indata till en förvånande mängd information om själva triangeln." },
           { "kind": "h3", "text": "Att återskapa hypotenusan" },
-          { "kind": "p", "text": "Ur [[s-r=c]] kan hypotenusan återskapas när [[r]] och [[s]] är kända. För [[r=2]] och [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]]. Två indata avslöjar alltså den längsta sidan utan någon ytterligare mätning." },
+          { "kind": "p", "text": "Ur [[s-r=c]] kan hypotenusan återskapas när [[r]] och [[s]] är kända. För [[r=2]] och [[s=12]]: [[c=12-2]], [[[\\boxed{c=10}]]] Två indata avslöjar alltså den längsta sidan utan någon ytterligare mätning." },
           { "kind": "h3", "text": "Att återskapa de två kateternas summa" },
           { "kind": "p", "text": "Ur [[a+b=s+r]] följer kateternas summa direkt. För [[r=2]] och [[s=12]]: [[a+b=14]]. Summan ensam kan inte identifiera varje katet individuellt; de individuella längderna behöver ytterligare en informationsbit." },
           { "kind": "h3", "text": "Att återskapa de två kateternas produkt" },
-          { "kind": "p", "text": "Eftersom [[K=\\frac{ab}{2}]] och [[K=rs]] följer [[[\\boxed{ab=2rs}]]]. För [[r=2]] och [[s=12]]: [[ab=48]]. Med [[a+b=14]] och [[ab=48]] är de två kateterna 6 och 8: [[6+8=14]] och [[6\\times8=48]]. De två kateterna kan bytas utan att triangelns area ändras." },
+          { "kind": "p", "text": "Eftersom [[K=\\frac{ab}{2}]] och [[K=rs]] följer [[[\\boxed{ab=2rs}]]] För [[r=2]] och [[s=12]]: [[ab=48]]. Med [[a+b=14]] och [[ab=48]] är de två kateterna 6 och 8: [[6+8=14]] och [[6\\times8=48]]. De två kateterna kan bytas utan att triangelns area ändras." },
           { "kind": "h3", "text": "Att återskapa båda kateterlängderna" },
-          { "kind": "p", "text": "Summan och produkten gör [[a]] och [[b]] till de två rötterna av [[t^2-(s+r)t+2rs=0]], vilket ger [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]]. De två tecknen motsvarar de två möjliga katettilldelningarna. Med [[r=2]] och [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], så [[a,b=\\frac{14\\pm2}{2}]], kateterna 6 och 8. Detta är en avancerad matematisk slutledning, inte en ytterligare kalkylatorfunktion." }
+          { "kind": "p", "text": "Summan och produkten gör [[a]] och [[b]] till de två rötterna av [[t^2-(s+r)t+2rs=0]], vilket ger [[[\\boxed{a,b=\\frac{(s+r)\\pm\\sqrt{(s+r)^2-8rs}}{2}}]]] De två tecknen motsvarar de två möjliga katettilldelningarna. Med [[r=2]] och [[s=12]]: [[a,b=\\frac{14\\pm\\sqrt{196-192}}{2}]], så [[a,b=\\frac{14\\pm2}{2}]], kateterna 6 och 8. Detta är en avancerad matematisk slutledning, inte en ytterligare kalkylatorfunktion." }
         ]
       },
       "sec-valid": {
@@ -670,7 +670,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
           { "kind": "h3", "text": "Grundläggande indatavillkor" },
           { "kind": "p", "text": "Indata måste uppfylla [[r>0]] och [[s>0]]. För en rätvinklig triangel krävs också [[s>r]], eftersom [[c=s-r]] och hypotenusan måste vara positiv. Dessa tre villkor är nödvändiga men inte tillräckliga." },
           { "kind": "h3", "text": "En avancerad konsistenskontroll för rätvinkliga trianglar" },
-          { "kind": "p", "text": "Ur [[a+b=s+r]] och [[ab=2rs]] är de två kateterna reella exakt när diskriminanten [[\\Delta=(s+r)^2-8rs]] är icke-negativ. Förenklat: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]]. För reella kateterlängder gäller [[\\Delta\\geq0]]. Eftersom [[s]] måste överstiga [[r]] är det ekvivalenta rätvinkliga triangelvillkoret [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], eller [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]]. Likhet inträffar för en likbent rätvinklig triangel, den tätaste möjliga passformen. Detta är ett avancerat matematiskt kompatibilitetstest, tydligt avskilt från de grundläggande kontrollerna ovan." },
+          { "kind": "p", "text": "Ur [[a+b=s+r]] och [[ab=2rs]] är de två kateterna reella exakt när diskriminanten [[\\Delta=(s+r)^2-8rs]] är icke-negativ. Förenklat: [[[\\boxed{\\Delta=s^2-6rs+r^2}]]] För reella kateterlängder gäller [[\\Delta\\geq0]]. Eftersom [[s]] måste överstiga [[r]] är det ekvivalenta rätvinkliga triangelvillkoret [[[\\boxed{\\frac{s}{r}\\geq3+2\\sqrt2}]]], eller [[[\\boxed{\\frac{r}{s}\\leq3-2\\sqrt2}]]] Likhet inträffar för en likbent rätvinklig triangel, den tätaste möjliga passformen. Detta är ett avancerat matematiskt kompatibilitetstest, tydligt avskilt från de grundläggande kontrollerna ovan." },
           { "kind": "h3", "text": "Giltigt exempel" },
           { "kind": "p", "text": "Givet [[r=2]] och [[s=12]] är kvoten [[\\frac{s}{r}=6]]. Eftersom [[6>3+2\\sqrt2]] (cirka 5,83) kan värdena beskriva en giltig rätvinklig triangel, och motsvarande sidor är 6, 8 och 10." },
           { "kind": "h3", "text": "Inkompatibelt exempel" },
@@ -680,19 +680,19 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
       "sec-heron": {
         "h2": "Hur står sig inradieformeln mot Herons formel?",
         "blocks": [
-          { "kind": "p", "text": "Herons formel beräknar arean ur alla tre sidor: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]]. Den använder de tre sidlängderna och semiperimetern, den fungerar för varje icke-degenererad triangel, och den behöver inte inradien som separat indata. Jämför den med [[[\\boxed{K=rs}]]]. De två är nära släktingar: semiperimetern [[s]] förekommer i båda, och att bevisa att de stämmer överens är ett av de renaste sätten att se att [[K=rs]] är korrekt." },
+          { "kind": "p", "text": "Herons formel beräknar arean ur alla tre sidor: [[[\\boxed{K=\\sqrt{s(s-a)(s-b)(s-c)}}]]] Den använder de tre sidlängderna och semiperimetern, den fungerar för varje icke-degenererad triangel, och den behöver inte inradien som separat indata. Jämför den med [[[\\boxed{K=rs}]]] De två är nära släktingar: semiperimetern [[s]] förekommer i båda, och att bevisa att de stämmer överens är ett av de renaste sätten att se att [[K=rs]] är korrekt." },
           { "kind": "h3", "text": "När är inradieformeln enklare?" },
           { "kind": "p", "text": "[[K=rs]] är särskilt bekväm när inradien och semiperimetern redan är kända: en enda multiplikation, inga kvadratrötter, ingen faktorisering av siddifferenser. När en inskriven cirkel har mätts, eller när tidigare steg redan gett [[r]] och [[s]], är detta den kortaste vägen till arean." },
           { "kind": "h3", "text": "När är Herons formel mer användbar?" },
           { "kind": "p", "text": "Herons formel är det bättre valet när de tre sidlängderna är kända men inradien inte har beräknats. Den når arean direkt från [[a]], [[b]] och [[c]] utan omvägen via [[r]]. Ingen av formlerna är universellt mer exakt; de är exakta vid konsistenta indata, och de är oense endast när indata är inkonsistenta." },
           { "kind": "h3", "text": "Verifiera båda formlerna med en 3-4-5-triangel" },
-          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]], med [[s=6]] och [[r=1]]. Med inradien: [[K=1\\times6=6]]. Med Herons formel: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], så [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]]. Resultaten stämmer överens eftersom båda formlerna mäter samma region; de är två uttryck för en area, och överensstämmelse mellan dem är ett starkt tecken på att räkningarna stämmer." }
+          { "kind": "p", "text": "Givet [[a=3]], [[b=4]], [[c=5]], med [[s=6]] och [[r=1]]. Med inradien: [[K=1\\times6=6]]. Med Herons formel: [[K=\\sqrt{6(6-3)(6-4)(6-5)}]], så [[K=\\sqrt{6\\times3\\times2\\times1}]], [[[\\boxed{K=6}]]] Resultaten stämmer överens eftersom båda formlerna mäter samma region; de är två uttryck för en area, och överensstämmelse mellan dem är ett starkt tecken på att räkningarna stämmer." }
         ]
       },
       "sec-legs": {
         "h2": "Varför ger inradieformeln samma area som kateterformeln?",
         "blocks": [
-          { "kind": "p", "text": "Två formler gör anspråk på samma area: [[K=\\frac{ab}{2}]] och [[K=rs]]. Att skriva [[r]] och [[s]] i termer av sidorna ger [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], så [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Täljaren är en differens av kvadrater: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Tillämpa Pythagoras sats [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], alltså [[[\\boxed{rs=\\frac{ab}{2}}]]]. De två formlerna är identiska på varje rätvinklig triangel; de kan inte vara oense vid konsistenta indata." },
+          { "kind": "p", "text": "Två formler gör anspråk på samma area: [[K=\\frac{ab}{2}]] och [[K=rs]]. Att skriva [[r]] och [[s]] i termer av sidorna ger [[rs=\\frac{a+b-c}{2}\\times\\frac{a+b+c}{2}]], så [[rs=\\frac{(a+b-c)(a+b+c)}{4}]]. Täljaren är en differens av kvadrater: [[rs=\\frac{(a+b)^2-c^2}{4}]]. Tillämpa Pythagoras sats [[c^2=a^2+b^2]]: [[rs=\\frac{a^2+2ab+b^2-a^2-b^2}{4}]], alltså [[[\\boxed{rs=\\frac{ab}{2}}]]] De två formlerna är identiska på varje rätvinklig triangel; de kan inte vara oense vid konsistenta indata." },
           { "kind": "p", "text": "Kontrollera med en 3-4-5-triangel: [[r=1]], [[s=6]], [[rs=6]] och [[\\frac{ab}{2}=\\frac{3\\times4}{2}=6]]. Med en 6-8-10-triangel: [[r=2]], [[s=12]], [[rs=24]] och [[\\frac{ab}{2}=\\frac{6\\times8}{2}=24]]. Den bekanta kateterformeln och inradieformeln är samma storhet i olika kläder." }
         ]
       },
@@ -760,7 +760,7 @@ export const AREA_FROM_INRADIUS_SEMIPERIMETER_TRANSLATIONS_BATCH6 = {
         "blocks": [
           { "kind": "p", "text": "Area är tvådimensionell, så dess enhet är kvadraten av längdenheten. I symboler: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]. Detsamma gäller för meter och kvadratmeter, millimeter och kvadratmillimeter, fot och kvadratfot, tum och kvadrattum. Enhetsväljarna finns så att resultatet kan märkas korrekt." },
           { "kind": "h3", "text": "Varför båda indata måste använda kompatibla enheter" },
-          { "kind": "p", "text": "Inradien och semiperimetern måste uttryckas i samma enhet innan formeln tillämpas. Om [[r=20\\text{ cm}]] och [[s=1\\text{ m}]], omvandla först: [[1\\text{ m}=100\\text{ cm}]]. Sedan [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]], eller ekvivalent [[[\\boxed{K=0.2\\text{ m}^2}]]]. Att multiplicera mätningar i olika enheter ger ett tal utan ren enhet, så omvandla först och beräkna sedan." },
+          { "kind": "p", "text": "Inradien och semiperimetern måste uttryckas i samma enhet innan formeln tillämpas. Om [[r=20\\text{ cm}]] och [[s=1\\text{ m}]], omvandla först: [[1\\text{ m}=100\\text{ cm}]]. Sedan [[K=20\\times100]], [[[\\boxed{K=2,000\\text{ cm}^2}]]], eller ekvivalent [[[\\boxed{K=0.2\\text{ m}^2}]]] Att multiplicera mätningar i olika enheter ger ett tal utan ren enhet, så omvandla först och beräkna sedan." },
           { "kind": "h3", "text": "Varför du bör undvika tidig avrundning" },
           { "kind": "p", "text": "Avrundade värden av [[r]] eller [[s]] kan påverka den slutliga arean något, eftersom inradien multipliceras direkt in i den. Behåll tillräcklig precision genom mellanberäkningarna och avrunda endast det slutliga svaret. Denna guide gör inget påstående om kalkylatorns interna precision utöver vad dess gränssnitt visar." },
           { "kind": "h3", "text": "Exakta mätningar mot praktiska mätningar" },

@@ -1,0 +1,2029 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## 3-4-5 Triangle Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, construction mathematics expert, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/3-4-5-triangle-calculator/
+
+**Page Title:** 3-4-5 Triangle Calculator
+
+**Primary Focus Keyword:** 3-4-5 Triangle Calculator
+
+**Secondary Topic:** Scale a 3-4-5 Right Triangle and Calculate Its Side Lengths, Area, and Perimeter.
+
+**Main Side Ratio:**
+
+\[
+\boxed{3:4:5}
+\]
+
+**Scaling Formulas:**
+
+\[
+\boxed{a=3k,\quad b=4k,\quad c=5k}
+\]
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English.
+
+**Target Audience:**
+- Middle school mathematics students.
+- High school geometry students.
+- College students.
+- Mathematics teachers.
+- Private tutors.
+- Parents helping children with geometry.
+- Construction workers.
+- Builders and contractors.
+- Carpenters.
+- Surveyors.
+- Architects and designers.
+- DIY enthusiasts.
+- Anyone learning the Pythagorean theorem.
+
+**Main Objective:**
+
+Create a detailed educational resource explaining the 3-4-5 right triangle, its Pythagorean relationship, its fixed side ratio, and its practical applications.
+
+The article must teach readers:
+
+- What a 3-4-5 triangle is.
+- Why it is a Pythagorean triple.
+- Why it always forms a 90-degree angle.
+- How to identify its two legs and hypotenuse.
+- Why the side ratio is always 3:4:5.
+- What a scale factor means.
+- How to scale a 3-4-5 triangle.
+- How to find all three sides using a scale factor.
+- How to calculate the area of a scaled 3-4-5 triangle.
+- How to calculate its perimeter.
+- Why area changes with the square of the scale factor.
+- Why perimeter changes directly with the scale factor.
+- How builders use the 3-4-5 rule to check square corners.
+- How to use the calculator correctly.
+- How to solve numerical examples manually.
+- How to verify whether measurements form a 3-4-5 triangle.
+- How the 3-4-5 triangle relates to other Pythagorean triples.
+
+Write naturally, like an experienced mathematics teacher explaining geometry to students and practical users.
+
+Avoid robotic language, unnecessary repetition, keyword stuffing, generic filler, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm the actual calculator mode, input field, unit behavior, buttons, result displays, triangle diagram, instructions, examples, formulas, FAQs, and related calculators.
+
+The existing calculator provides one calculation mode.
+
+#### MODE 1: SCALE A 3-4-5 TRIANGLE
+
+**Input:**
+
+Positive scale factor k.
+
+The calculator multiplies the original 3-4-5 side lengths by the same factor.
+
+**Formula for the first leg:**
+
+\[
+a=3k
+\]
+
+**Formula for the second leg:**
+
+\[
+b=4k
+\]
+
+**Formula for the hypotenuse:**
+
+\[
+c=5k
+\]
+
+**Area formula:**
+
+\[
+A=\frac{a\times b}{2}
+\]
+
+Substitute the scaled sides:
+
+\[
+A=\frac{(3k)(4k)}{2}
+\]
+
+Simplify:
+
+\[
+\boxed{A=6k^2}
+\]
+
+**Perimeter formula:**
+
+\[
+P=a+b+c
+\]
+
+Substitute:
+
+\[
+P=3k+4k+5k
+\]
+
+Simplify:
+
+\[
+\boxed{P=12k}
+\]
+
+**Results:**
+
+- Scaled first leg.
+- Scaled second leg.
+- Scaled hypotenuse.
+- Triangle area.
+- Triangle perimeter.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The live page includes:
+
+- Calculator mode selector.
+- Scale 3-4-5 Triangle mode.
+- Scale factor input.
+- Calculate button.
+- Reset button.
+- Formula explanation.
+- Triangle diagram.
+- Triangle diagram key.
+- Instructions for using the calculator.
+- Three step-by-step examples.
+- Explanation of calculated results.
+- Side ratio explanation.
+- Practical uses.
+- Common mistakes.
+- Six FAQs.
+- Links to related area, perimeter, and right triangle calculators.
+
+Preserve the existing calculator functionality.
+
+Do not invent additional calculator modes.
+
+Do not claim that the existing calculator directly accepts:
+
+- Three arbitrary side lengths.
+- Two known side lengths.
+- An arbitrary hypotenuse.
+- An arbitrary triangle angle.
+- A construction measurement.
+- A scale factor expressed as a separate measurement unit.
+
+The existing calculator takes a scale factor k and calculates the scaled triangle.
+
+You may explain how to manually determine k from a known side, but clearly distinguish that manual calculation from the calculator's actual input functionality.
+
+**Important input validation:**
+
+A valid scale factor must be greater than zero.
+
+- If k = 0, all three side lengths become zero, so the result is a degenerate figure rather than a triangle.
+- Negative scale factors do not represent valid triangle side lengths.
+- Any positive real value of k produces a valid scaled 3-4-5 triangle.
+
+Do not claim that zero or negative scale factors create valid triangles.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Calculate scaled 3-4-5 triangle side lengths.
+2. Understand the 3-4-5 triangle rule.
+3. Learn why 3-4-5 forms a right angle.
+4. Find the hypotenuse of a scaled triangle.
+5. Calculate the area of a 3-4-5 triangle.
+6. Calculate the perimeter.
+7. Understand how scale factors work.
+8. Learn how to use the 3-4-5 method in construction.
+9. Check whether a corner is square.
+10. Understand the relationship with the Pythagorean theorem.
+11. Solve different scaled triangle examples.
+12. Understand how 6-8-10, 9-12-15, and 15-20-25 relate to 3-4-5.
+
+Answer the main calculation question immediately.
+
+Introduce the 3:4:5 ratio and scale factor near the beginning.
+
+Explain the calculator's single mode before introducing lengthy mathematical theory.
+
+Do not make users scroll through extensive theoretical explanations before finding the calculator.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+**Primary Focus Keyword:**
+
+3-4-5 Triangle Calculator
+
+**Secondary Keywords:**
+
+- 3 4 5 triangle calculator.
+- 3-4-5 triangle formula.
+- 3-4-5 triangle rule.
+- 3-4-5 triangle solver.
+- 3-4-5 right triangle.
+- 3-4-5 triangle side lengths.
+- 3-4-5 triangle scale factor.
+- 3-4-5 triangle area.
+- 3-4-5 triangle perimeter.
+- 3-4-5 triangle construction method.
+- 3-4-5 rule for square corners.
+- Pythagorean triple calculator.
+- scaled 3-4-5 triangle.
+
+**Related Semantic Keywords:**
+
+- Pythagorean theorem.
+- Pythagorean triple.
+- right angle.
+- 90-degree corner.
+- right triangle.
+- hypotenuse.
+- shorter leg.
+- longer leg.
+- scale factor.
+- triangle proportions.
+- similar triangles.
+- side length ratio.
+- triangle area.
+- triangle perimeter.
+- square corner method.
+- construction layout.
+- carpenter square.
+- building layout.
+- surveying measurements.
+- perpendicular lines.
+- diagonal measurement.
+- geometric scaling.
+- proportional side lengths.
+- 6-8-10 triangle.
+- 9-12-15 triangle.
+- 15-20-25 triangle.
+
+### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords in relevant sections.
+
+Avoid:
+
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repetitive headings.
+
+Prioritize mathematical accuracy, natural language, and genuine search intent.
+
+---
+
+## 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use one consistent triangle throughout the article.
+
+Consider right triangle ABC with:
+
+- ∠A opposite side a.
+- ∠B opposite side b.
+- ∠C = 90° opposite hypotenuse c.
+
+Use the following side notation:
+
+- a = shorter leg.
+- b = longer leg.
+- c = hypotenuse.
+
+For the basic 3-4-5 triangle:
+
+\[
+a=3,\quad b=4,\quad c=5
+\]
+
+The side ratio is:
+
+\[
+a:b:c=3:4:5
+\]
+
+### A. PYTHAGOREAN RELATIONSHIP
+
+\[
+a^2+b^2=c^2
+\]
+
+Substitute:
+
+\[
+3^2+4^2=5^2
+\]
+
+\[
+9+16=25
+\]
+
+\[
+25=25
+\]
+
+Explain why this proves that a triangle with side lengths 3, 4, and 5 has a right angle opposite the side of length 5.
+
+### B. SCALING FORMULAS
+
+Multiply all original side lengths by the same positive scale factor k.
+
+\[
+\boxed{a=3k}
+\]
+
+\[
+\boxed{b=4k}
+\]
+
+\[
+\boxed{c=5k}
+\]
+
+Explain why the same factor must be applied to all three sides.
+
+### C. AREA FORMULA
+
+General right triangle area:
+
+\[
+A=\frac{ab}{2}
+\]
+
+Substitute:
+
+\[
+A=\frac{(3k)(4k)}{2}
+\]
+
+\[
+A=\frac{12k^2}{2}
+\]
+
+\[
+\boxed{A=6k^2}
+\]
+
+For the original triangle, k = 1:
+
+\[
+A=6\text{ square units}
+\]
+
+### D. PERIMETER FORMULA
+
+\[
+P=a+b+c
+\]
+
+Substitute:
+
+\[
+P=3k+4k+5k
+\]
+
+\[
+\boxed{P=12k}
+\]
+
+For the original triangle:
+
+\[
+P=12\text{ units}
+\]
+
+### E. SCALE FACTOR FROM A KNOWN SIDE
+
+Explain these relationships as manual mathematical derivations.
+
+If the shorter leg is known:
+
+\[
+k=\frac{a}{3}
+\]
+
+If the longer leg is known:
+
+\[
+k=\frac{b}{4}
+\]
+
+If the hypotenuse is known:
+
+\[
+k=\frac{c}{5}
+\]
+
+Clearly state that the existing calculator accepts k directly. These equations help readers determine k from an already known side.
+
+### F. AREA AND PERIMETER SCALING
+
+Explain:
+
+\[
+P=12k
+\]
+
+and:
+
+\[
+A=6k^2
+\]
+
+Perimeter changes in direct proportion to k.
+
+Area changes in proportion to k squared.
+
+For example, if the scale factor doubles:
+
+- Every side doubles.
+- Perimeter doubles.
+- Area becomes four times as large.
+
+If the scale factor triples:
+
+- Every side becomes three times as large.
+- Perimeter becomes three times as large.
+- Area becomes nine times as large.
+
+### G. ANGLES OF THE 3-4-5 TRIANGLE
+
+Explain that scaling preserves the triangle's angles.
+
+The two acute angles are approximately:
+
+\[
+A=\sin^{-1}\left(\frac{3}{5}\right)
+\]
+
+\[
+A\approx36.87^\circ
+\]
+
+And:
+
+\[
+B=\sin^{-1}\left(\frac{4}{5}\right)
+\]
+
+\[
+B\approx53.13^\circ
+\]
+
+Their sum is:
+
+\[
+36.87^\circ+53.13^\circ\approx90^\circ
+\]
+
+The third angle is exactly 90°.
+
+Clarify that a 3-4-5 triangle is not a 45-45-90 triangle or a 30-60-90 triangle.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The completed article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: 3-4-5 Triangle Calculator
+
+**Suggested length: 130–160 words**
+
+Write a direct and informative introduction.
+
+Explain:
+
+- What a 3-4-5 triangle is.
+- Why it is a right triangle.
+- Why it is a famous Pythagorean triple.
+- Why its side ratio is always 3:4:5.
+- What a scale factor does.
+- What the calculator calculates.
+- How visitors can use it.
+
+Introduce:
+
+\[
+a=3k,\quad b=4k,\quad c=5k
+\]
+
+Explain that the calculator also determines the area and perimeter of the scaled triangle.
+
+Include a short example:
+
+If k = 2:
+
+\[
+a=6
+\]
+
+\[
+b=8
+\]
+
+\[
+c=10
+\]
+
+\[
+A=24\text{ square units}
+\]
+
+\[
+P=24\text{ units}
+\]
+
+Avoid generic introductions.
+
+### H2: Scale a 3-4-5 Triangle and Calculate Its Measurements
+
+**Suggested length: 180–220 words**
+
+Place this section immediately above or beside the existing calculator.
+
+Explain the single available calculator mode.
+
+**Mode: Scale 3-4-5 Triangle**
+
+Required input:
+
+Positive scale factor k.
+
+Calculated outputs:
+
+| Measurement | Formula | Result |
+|---|---|---|
+| First leg | 3k | Scaled side a |
+| Second leg | 4k | Scaled side b |
+| Hypotenuse | 5k | Scaled side c |
+| Area | 6k² | Triangle area |
+| Perimeter | 12k | Triangle perimeter |
+
+Explain:
+
+- What k represents.
+- Why the calculator asks for a scale factor.
+- Why all sides are multiplied by the same factor.
+- Why the area and perimeter are calculated automatically.
+- How to enter a positive number.
+- How to click Calculate.
+- How to use Reset.
+- How to interpret the five results.
+- Why k must be greater than zero.
+
+Do not invent additional calculator modes.
+
+### H2: What Is a 3-4-5 Triangle?
+
+**Suggested length: 200–240 words**
+
+Explain the definition.
+
+A 3-4-5 triangle is a right triangle whose side lengths follow the ratio:
+
+\[
+3:4:5
+\]
+
+Explain:
+
+- Why 5 is the hypotenuse.
+- Why 3 and 4 are the perpendicular legs.
+- Why it is called a Pythagorean triple.
+- Why the triangle always has a 90-degree angle.
+- Why the ratio can be scaled to create larger or smaller triangles.
+
+Use the basic triangle as the reference example.
+
+Include a labeled diagram.
+
+### H2: Why Is 3-4-5 a Pythagorean Triple?
+
+**Suggested length: 220–260 words**
+
+Explain the Pythagorean theorem.
+
+Introduce:
+
+\[
+a^2+b^2=c^2
+\]
+
+Substitute:
+
+\[
+3^2+4^2=5^2
+\]
+
+Show:
+
+\[
+9+16=25
+\]
+
+\[
+25=25
+\]
+
+Explain:
+
+- Why the equation proves the right-angle relationship.
+- Why the side of length 5 must be the hypotenuse.
+- Why 3 and 4 are the legs.
+- Why this integer combination is useful in geometry.
+- Why the theorem remains valid after scaling.
+
+Include a square-area illustration or an educational Pythagorean diagram.
+
+### H2: Understanding the Three Sides of a 3-4-5 Triangle
+
+**Suggested length: 180–220 words**
+
+Explain each side.
+
+**Shorter leg a:**
+
+Length 3 in the basic triangle.
+
+**Longer leg b:**
+
+Length 4 in the basic triangle.
+
+**Hypotenuse c:**
+
+Length 5 in the basic triangle.
+
+Explain:
+
+- Why the hypotenuse is the longest side.
+- Why the legs meet at the 90-degree angle.
+- Why the side opposite 90° is always the hypotenuse.
+- How side labels change when the triangle is scaled.
+- Why the proportions stay constant.
+
+Include a comparison table.
+
+### H2: Understanding the 3-4-5 Side Ratio
+
+**Suggested length: 200–230 words**
+
+Introduce:
+
+\[
+3:4:5
+\]
+
+Explain each part.
+
+- The shorter leg represents 3 proportional units.
+- The longer leg represents 4 proportional units.
+- The hypotenuse represents 5 proportional units.
+
+Explain that the ratio does not change when the triangle is enlarged or reduced.
+
+Show:
+
+\[
+3k:4k:5k
+\]
+
+Use examples:
+
+- 3, 4, 5.
+- 6, 8, 10.
+- 9, 12, 15.
+- 15, 20, 25.
+
+Explain why all these sets represent the same triangle shape.
+
+### H2: What Is the Scale Factor in a 3-4-5 Triangle?
+
+**Suggested length: 220–260 words**
+
+Explain the meaning of k.
+
+A scale factor multiplies all three original side lengths by the same positive number.
+
+Show:
+
+\[
+a=3k
+\]
+
+\[
+b=4k
+\]
+
+\[
+c=5k
+\]
+
+Explain:
+
+- k = 1 gives the original triangle.
+- k greater than 1 enlarges the triangle.
+- k between 0 and 1 reduces the triangle.
+- k must be positive.
+- The scale factor changes size, not shape.
+- All corresponding side lengths remain proportional.
+
+Include a simple scale comparison table.
+
+### H2: Formula to Calculate the First Leg
+
+**Suggested length: 130–160 words**
+
+Introduce:
+
+\[
+a=3k
+\]
+
+Explain that the shorter leg is three times the scale factor.
+
+Use:
+
+k = 4
+
+\[
+a=3\times4
+\]
+
+\[
+a=12
+\]
+
+Explain that the result is a scaled measurement, not an angle or a scale factor.
+
+### H2: Formula to Calculate the Second Leg
+
+**Suggested length: 130–160 words**
+
+Introduce:
+
+\[
+b=4k
+\]
+
+Explain that the longer leg is four times the scale factor.
+
+Use:
+
+k = 4
+
+\[
+b=4\times4
+\]
+
+\[
+b=16
+\]
+
+Explain why this side remains longer than the first leg.
+
+### H2: Formula to Calculate the Hypotenuse
+
+**Suggested length: 150–180 words**
+
+Introduce:
+
+\[
+c=5k
+\]
+
+Explain why the hypotenuse is five times the scale factor.
+
+Use:
+
+k = 4
+
+\[
+c=5\times4
+\]
+
+\[
+c=20
+\]
+
+Explain why the hypotenuse remains the longest side at every positive scale factor.
+
+### H2: How to Calculate the Area of a Scaled 3-4-5 Triangle
+
+**Suggested length: 200–240 words**
+
+Introduce the right triangle area formula:
+
+\[
+A=\frac{ab}{2}
+\]
+
+Substitute:
+
+\[
+A=\frac{(3k)(4k)}{2}
+\]
+
+Simplify:
+
+\[
+A=6k^2
+\]
+
+Explain:
+
+- Why the two legs are used.
+- Why division by two is necessary.
+- Why k is squared.
+- Why area is measured in square units.
+- Why doubling the scale factor quadruples the area.
+
+Use:
+
+k = 3
+
+\[
+A=6(3^2)
+\]
+
+\[
+A=54\text{ square units}
+\]
+
+### H2: How to Calculate the Perimeter of a Scaled 3-4-5 Triangle
+
+**Suggested length: 180–220 words**
+
+Introduce:
+
+\[
+P=a+b+c
+\]
+
+Substitute:
+
+\[
+P=3k+4k+5k
+\]
+
+Simplify:
+
+\[
+P=12k
+\]
+
+Explain:
+
+- Why all three sides must be added.
+- Why the perimeter scales directly with k.
+- Why perimeter is expressed in linear units.
+
+Use:
+
+k = 3
+
+\[
+P=12\times3
+\]
+
+\[
+P=36\text{ units}
+\]
+
+### H2: How to Find the Scale Factor From a Known Side
+
+**Suggested length: 200–240 words**
+
+Explain these manual calculations.
+
+If the shorter leg is known:
+
+\[
+k=\frac{a}{3}
+\]
+
+If the longer leg is known:
+
+\[
+k=\frac{b}{4}
+\]
+
+If the hypotenuse is known:
+
+\[
+k=\frac{c}{5}
+\]
+
+Use three short examples.
+
+**Example 1:**
+
+a = 12
+
+\[
+k=12/3=4
+\]
+
+**Example 2:**
+
+b = 20
+
+\[
+k=20/4=5
+\]
+
+**Example 3:**
+
+c = 30
+
+\[
+k=30/5=6
+\]
+
+Explain that the user can then enter the calculated k into the existing calculator.
+
+Do not imply that the calculator directly accepts these side measurements.
+
+### H2: Step-by-Step Example of Scaling a 3-4-5 Triangle
+
+**Suggested length: 220–260 words**
+
+Use:
+
+k = 2
+
+Calculate the first leg:
+
+\[
+a=3\times2=6
+\]
+
+Calculate the second leg:
+
+\[
+b=4\times2=8
+\]
+
+Calculate the hypotenuse:
+
+\[
+c=5\times2=10
+\]
+
+Calculate the area:
+
+\[
+A=6(2^2)=24
+\]
+
+Calculate the perimeter:
+
+\[
+P=12(2)=24
+\]
+
+Present the results in a summary table.
+
+Explain how the new triangle keeps the original 3:4:5 proportions.
+
+### H2: Worked Examples of Different Scale Factors
+
+**Suggested length: 400–500 words**
+
+Provide at least eight varied worked examples.
+
+Every example must include:
+- Given scale factor.
+- Relevant formula.
+- Substitution.
+- Intermediate calculation.
+- Final answer.
+- Short interpretation.
+
+**Example 1: Original Triangle**
+
+k = 1
+
+Sides: 3, 4, 5.
+
+Area: 6 square units.
+
+Perimeter: 12 units.
+
+**Example 2: Scale Factor of 2**
+
+k = 2
+
+Sides: 6, 8, 10.
+
+Area: 24 square units.
+
+Perimeter: 24 units.
+
+**Example 3: Scale Factor of 3**
+
+k = 3
+
+Sides: 9, 12, 15.
+
+Area: 54 square units.
+
+Perimeter: 36 units.
+
+**Example 4: Scale Factor of 5**
+
+k = 5
+
+Sides: 15, 20, 25.
+
+Area: 150 square units.
+
+Perimeter: 60 units.
+
+**Example 5: Scale Factor of 0.5**
+
+k = 0.5
+
+Sides: 1.5, 2, 2.5.
+
+Area: 1.5 square units.
+
+Perimeter: 6 units.
+
+**Example 6: Scale Factor of 1.5**
+
+k = 1.5
+
+Sides: 4.5, 6, 7.5.
+
+Area: 13.5 square units.
+
+Perimeter: 18 units.
+
+**Example 7: Scale Factor of 4**
+
+k = 4
+
+Sides: 12, 16, 20.
+
+Area: 96 square units.
+
+Perimeter: 48 units.
+
+**Example 8: Scale Factor of 10**
+
+k = 10
+
+Sides: 30, 40, 50.
+
+Area: 600 square units.
+
+Perimeter: 120 units.
+
+Avoid repeating identical explanations.
+
+Explain how different scale factors affect the resulting measurements.
+
+### H2: Why Does the 3-4-5 Triangle Always Keep a 90-Degree Angle?
+
+**Suggested length: 180–220 words**
+
+Explain that the scaled sides are:
+
+\[
+3k,\quad4k,\quad5k
+\]
+
+Apply Pythagoras:
+
+\[
+(3k)^2+(4k)^2=(5k)^2
+\]
+
+Expand:
+
+\[
+9k^2+16k^2=25k^2
+\]
+
+\[
+25k^2=25k^2
+\]
+
+Explain why the relationship remains valid for every positive k.
+
+Discuss similarity and proportional scaling.
+
+### H2: How to Use the 3-4-5 Rule to Check a Square Corner
+
+**Suggested length: 250–300 words**
+
+This is one of the most important practical sections.
+
+Explain how the 3-4-5 method can be used to establish or check a 90-degree corner.
+
+Describe the basic process:
+
+1. Select a convenient unit of measurement.
+2. Mark 3 units along one side from the corner.
+3. Mark 4 units along the adjoining side.
+4. Measure the straight-line distance between the two marked endpoints.
+5. If that distance is 5 units, the angle between the two sides is 90 degrees, subject to measurement accuracy.
+
+Explain a practical example:
+
+- First direction: 3 feet.
+- Second direction: 4 feet.
+- Diagonal measurement: 5 feet.
+
+Show that:
+
+\[
+3^2+4^2=5^2
+\]
+
+Explain how larger multiples improve practicality on bigger layouts:
+
+- 6-8-10 feet.
+- 9-12-15 feet.
+- 12-16-20 feet.
+- 15-20-25 feet.
+
+Explain why larger measurements can reduce the relative impact of small measurement errors, provided the measuring equipment and site conditions are suitable.
+
+Important accuracy qualification:
+
+The method checks the right-angle relationship when the measurements are accurate. Real-world measurement errors, uneven surfaces, tape sag, and marking inaccuracies can affect the result.
+
+Do not claim it guarantees perfect construction accuracy.
+
+Include a construction layout diagram.
+
+### H2: Applications of the 3-4-5 Triangle in Construction
+
+**Suggested length: 220–260 words**
+
+Explain practical applications:
+
+- Checking right-angle corners.
+- Laying out building foundations.
+- Establishing perpendicular wall lines.
+- Setting out floor plans.
+- Checking square room layouts.
+- Deck construction.
+- Patio installation.
+- Tile layout.
+- Fence layout.
+- Carpentry.
+- Landscaping.
+- Surveying.
+
+For each relevant example, explain the basic principle rather than simply listing applications.
+
+Use realistic hypothetical examples.
+
+Do not suggest that the method replaces professional surveying or construction requirements.
+
+### H2: Relationship Between Similar Triangles and the 3-4-5 Ratio
+
+**Suggested length: 180–220 words**
+
+Explain that every positive scaled 3-4-5 triangle is similar to the original.
+
+Cover:
+
+- Corresponding angles remain equal.
+- Corresponding sides remain proportional.
+- The scale factor changes the size.
+- The shape remains unchanged.
+- All side ratios remain 3:4:5.
+
+Use the examples 3-4-5 and 6-8-10.
+
+Explain why both triangles have identical angles.
+
+### H2: Difference Between 3-4-5, 45-45-90, and 30-60-90 Triangles
+
+**Suggested length: 220–260 words**
+
+Use a comparison table.
+
+| Feature | 3-4-5 | 45-45-90 | 30-60-90 |
+|---|---|---|---|
+| Side ratio | 3:4:5 | 1:1:√2 | 1:√3:2 |
+| Angles | Approximately 36.87°, 53.13°, 90° | 45°, 45°, 90° | 30°, 60°, 90° |
+| Equal legs | No | Yes | No |
+| Hypotenuse | 5k | a√2 | 2a |
+| Main property | Pythagorean triple | Isosceles right triangle | Special angle ratio |
+| Calculator focus | Scaling | Special triangle calculations | Special triangle calculations |
+
+Explain why a 3-4-5 triangle is not automatically a 45-45-90 or 30-60-90 triangle.
+
+Link contextually to the other dedicated calculators.
+
+### H2: Common Mistakes When Using the 3-4-5 Triangle Calculator
+
+**Suggested length: 280–330 words**
+
+Discuss at least twelve common mistakes.
+
+1. Multiplying only one side by the scale factor.
+2. Forgetting to scale all three sides equally.
+3. Treating 5 as a leg instead of the hypotenuse.
+4. Confusing the scale factor with a side length.
+5. Using zero as a valid scale factor.
+6. Entering a negative scale factor.
+7. Forgetting to square k in the area formula.
+8. Confusing area with perimeter.
+9. Adding only two sides when calculating perimeter.
+10. Mixing measurement units.
+11. Assuming that only 3, 4, and 5 work.
+12. Assuming that every right triangle follows the 3:4:5 ratio.
+13. Confusing a 3-4-5 triangle with a 45-45-90 triangle.
+14. Rounding measurements unnecessarily.
+
+For each mistake:
+- Explain why it is incorrect.
+- Show the correct relationship.
+- Provide a short example where useful.
+
+Avoid repetitive warnings.
+
+### H2: How to Verify a Scaled 3-4-5 Triangle
+
+**Suggested length: 180–220 words**
+
+Explain four verification methods.
+
+**Check 1: Side Ratio**
+
+\[
+a:b:c=3:4:5
+\]
+
+**Check 2: Pythagorean Theorem**
+
+\[
+a^2+b^2=c^2
+\]
+
+**Check 3: Scale Factor Consistency**
+
+\[
+\frac{a}{3}=\frac{b}{4}=\frac{c}{5}=k
+\]
+
+**Check 4: Side Ordering**
+
+\[
+a<b<c
+\]
+
+Use one example:
+
+6, 8, 10.
+
+Verify:
+
+\[
+6^2+8^2=10^2
+\]
+
+\[
+36+64=100
+\]
+
+Explain how these checks help identify incorrect inputs.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create eight original practice problems.
+
+Include:
+
+1. Scale a triangle using k = 2.
+2. Scale a triangle using k = 4.
+3. Find the area using k = 3.
+4. Find the perimeter using k = 5.
+5. Find k when the shorter leg is 15.
+6. Find k when the longer leg is 24.
+7. Find k when the hypotenuse is 35.
+8. Verify whether 12, 16, and 20 form a scaled 3-4-5 triangle.
+
+Provide complete worked solutions.
+
+Use correct units and clearly distinguish between side measurements, area, and perimeter.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What is a 3-4-5 triangle?
+2. Why does a 3-4-5 triangle form a right angle?
+3. What is the 3-4-5 triangle rule?
+4. How does the 3-4-5 triangle calculator work?
+5. What is the scale factor in a 3-4-5 triangle?
+6. How do I calculate the sides of a scaled 3-4-5 triangle?
+7. How do I calculate its area?
+8. How do I calculate its perimeter?
+9. Can I use 6-8-10 instead of 3-4-5?
+10. How do builders use the 3-4-5 rule?
+11. Can the scale factor be a decimal?
+12. Is every 3-4-5 triangle a Pythagorean triple?
+
+Keep answers approximately 35–65 words.
+
+Avoid copying entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- Right Triangle Calculator.
+- Pythagorean Triples Calculator.
+- 5-12-13 Triangle Calculator.
+- Special Right Triangle Calculator.
+- Right Triangle Area Calculator.
+- Right Triangle Perimeter Calculator.
+
+Explain which tool is useful for each different problem.
+
+Verify every destination URL before including it.
+
+Avoid generic promotional conclusions.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least eight mathematically accurate diagrams.
+
+### Diagram 1: Basic 3-4-5 Triangle
+
+Show:
+
+- Right triangle ABC.
+- Shorter leg = 3.
+- Longer leg = 4.
+- Hypotenuse = 5.
+- Right-angle marker.
+- Side labels a, b, and c.
+
+Clearly identify the hypotenuse.
+
+### Diagram 2: Pythagorean Theorem Proof
+
+Show:
+
+\[
+3^2+4^2=5^2
+\]
+
+Use squares constructed on all three sides or a clearly labeled right triangle.
+
+Show:
+
+- 9 square units.
+- 16 square units.
+- 25 square units.
+
+Explain visually how 9 + 16 = 25.
+
+### Diagram 3: Three Scaled Triangles
+
+Show three similar triangles:
+
+- 3-4-5.
+- 6-8-10.
+- 9-12-15.
+
+Use different sizes but identical proportions.
+
+### Diagram 4: Scale Factor Illustration
+
+Show:
+
+\[
+a=3k,\quad b=4k,\quad c=5k
+\]
+
+Use k = 2.
+
+Label:
+
+- a = 6.
+- b = 8.
+- c = 10.
+
+### Diagram 5: Area Calculation
+
+Show:
+
+- Base = 3k.
+- Height = 4k.
+- Area = 6k².
+
+Use k = 2.
+
+Show:
+
+\[
+A=24\text{ square units}
+\]
+
+### Diagram 6: Perimeter Calculation
+
+Show:
+
+- Three scaled sides.
+- P = 3k + 4k + 5k.
+- P = 12k.
+
+Use k = 2.
+
+### Diagram 7: Construction 3-4-5 Method
+
+Show a practical layout with:
+
+- One starting corner.
+- One direction measuring 3 feet.
+- Another adjoining direction measuring 4 feet.
+- A connecting diagonal measuring 5 feet.
+- A right-angle marker at the starting corner.
+
+Make it clear that the measurements are taken from the same starting corner along the two adjoining directions.
+
+### Diagram 8: Comparing Common Pythagorean Triples
+
+Show:
+
+- 3-4-5.
+- 6-8-10.
+- 5-12-13.
+
+Clearly explain that 6-8-10 is a scaled 3-4-5 triple, whereas 5-12-13 is a different Pythagorean triple.
+
+**Diagram requirements:**
+
+For every diagram provide:
+
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer mathematically accurate SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+Ensure:
+
+- The right angle is correctly positioned.
+- The hypotenuse is the longest side.
+- The side proportions are accurate.
+- The scale factor is consistent.
+- The construction layout uses the correct 3-4-5 measurements.
+- The area diagram distinguishes base and height.
+- The perimeter diagram labels all three sides.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/right-triangle-calculator/
+
+2. https://www.righttrianglesolver.com/pythagorean-triples-calculator/
+
+3. https://www.righttrianglesolver.com/5-12-13-triangle-calculator/
+
+4. https://www.righttrianglesolver.com/special-right-triangle-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-area-calculator/
+
+6. https://www.righttrianglesolver.com/right-triangle-perimeter-calculator/
+
+Verify every destination URL before including it.
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeatedly use the same exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**3-4-5 Triangle Calculator**
+
+Its main purpose is to explain and scale the 3-4-5 Pythagorean triple.
+
+Keep the article focused on:
+
+- The 3:4:5 side ratio.
+- Pythagorean theorem.
+- Scale factor.
+- Three scaled side lengths.
+- Area calculation.
+- Perimeter calculation.
+- Similar triangles.
+- Construction applications.
+- The 3-4-5 method for checking square corners.
+- Scaled Pythagorean triples.
+
+Do not turn this page into a duplicate of:
+
+- General Right Triangle Calculator.
+- General Pythagorean Theorem Calculator.
+- Pythagorean Triples Calculator.
+- Special Right Triangle Calculator.
+- 45-45-90 Triangle Calculator.
+- 30-60-90 Triangle Calculator.
+
+Explain the Pythagorean theorem only as it supports the 3-4-5 relationship.
+
+The Special Right Triangle Calculator page should focus on:
+
+- 45-45-90 triangles.
+- 30-60-90 triangles.
+- Their special side ratios.
+
+This page must focus on:
+
+- 3-4-5 scaling.
+- Integer side proportions.
+- Area and perimeter from k.
+- Practical square-corner measurements.
+
+Use contextual internal links when readers need general right triangle calculations or different Pythagorean triples.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+- Practical where construction topics are discussed.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation across multiple sections.
+
+Every section must contribute distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+**Original side ratio:**
+
+\[
+3:4:5
+\]
+
+**Scaled sides:**
+
+\[
+a=3k
+\]
+
+\[
+b=4k
+\]
+
+\[
+c=5k
+\]
+
+**Area:**
+
+\[
+A=\frac{ab}{2}
+\]
+
+\[
+A=6k^2
+\]
+
+**Perimeter:**
+
+\[
+P=a+b+c
+\]
+
+\[
+P=12k
+\]
+
+**Scale factor from first leg:**
+
+\[
+k=\frac{a}{3}
+\]
+
+**Scale factor from second leg:**
+
+\[
+k=\frac{b}{4}
+\]
+
+**Scale factor from hypotenuse:**
+
+\[
+k=\frac{c}{5}
+\]
+
+**Pythagorean theorem:**
+
+\[
+a^2+b^2=c^2
+\]
+
+**Angle values:**
+
+\[
+A\approx36.87^\circ
+\]
+
+\[
+B\approx53.13^\circ
+\]
+
+\[
+C=90^\circ
+\]
+
+Ensure:
+
+- All three sides are multiplied by the same positive k.
+- The shorter leg is 3k.
+- The longer leg is 4k.
+- The hypotenuse is 5k.
+- The area formula uses k².
+- The perimeter formula uses k.
+- Exact integer relationships are preserved.
+- Decimal approximations are correct.
+- All examples are recalculated.
+- All unit conversions are correct.
+- Area is expressed in square units.
+- Perimeter is expressed in linear units.
+- The side ratio remains 3:4:5.
+- Diagrams use consistent labeling.
+
+Never write:
+
+\[
+c=4k
+\]
+
+Never write:
+
+\[
+b=5k
+\]
+
+Never calculate area as:
+
+\[
+A=12k
+\]
+
+Never calculate perimeter as:
+
+\[
+P=6k^2
+\]
+
+Never claim that a 3-4-5 triangle has 45°, 45°, and 90° angles.
+
+Never claim that the calculator accepts three arbitrary side lengths.
+
+Never claim that the calculator automatically finds k from a known side.
+
+Never use zero or negative k as a valid triangle scale factor.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO Title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Explain that the calculator scales a 3-4-5 triangle and calculates its sides, area, and perimeter.
+
+### Primary Focus Keyword
+
+3-4-5 Triangle Calculator
+
+### Secondary Keywords
+
+Provide 8–12 relevant keyword variations.
+
+### Existing URL Slug
+
+3-4-5-triangle-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all eight diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend suitable structured data based on the actual visible calculator.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the 3:4:5 ratio.
+- Verify all scaled side formulas.
+- Verify the area formula.
+- Verify the perimeter formula.
+- Verify the scale factor equations.
+- Recalculate all eight examples.
+- Verify the Pythagorean theorem.
+- Verify the approximate acute angles.
+- Check the relationship between scaling and area.
+- Check all unit conversions.
+- Verify every diagram.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- The scale factor is explained clearly.
+- All calculator outputs are explained.
+- The construction method is mathematically accurate.
+- Exact and approximate values are distinguished.
+- Examples cover different scale factors.
+- Mathematical proofs are understandable to beginners.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from other triangle calculator pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- The 3:4:5 ratio is immediately visible.
+- Calculator instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+- Construction guidance is practical and clear.
+
+Remove weak, repetitive, or irrelevant material before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding that range only when additional information genuinely improves educational value.
+
+Include:
+
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Eight worked examples.
+- Comparison tables.
+- Contextual internal links.
+- Construction applications.
+- Practice questions.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all eight diagram specifications.
+
+Include:
+
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the 3-4-5 Triangle Calculator.
+
+The primary purpose must remain explaining and scaling the famous 3-4-5 Pythagorean triple.
+
+Give particular attention to:
+
+- What makes a 3-4-5 triangle a right triangle.
+- Why 3² + 4² = 5².
+- How the scale factor works.
+- How all three side lengths are calculated.
+- How to calculate area.
+- How to calculate perimeter.
+- Why area grows with k².
+- Why perimeter grows with k.
+- How builders use the 3-4-5 rule to check square corners.
+- How to derive k from a known side manually.
+- How to verify the final measurements.
+- How scaled 3-4-5 triangles relate to similar triangles.
+
+Use accurate mathematical diagrams, varied numerical examples, construction illustrations, and clear step-by-step proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, builders, carpenters, and anyone learning practical right triangle geometry.
+
+Prioritize mathematical accuracy, reader understanding, and genuine usefulness over word count and SEO scoring metrics.

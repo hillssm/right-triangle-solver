@@ -29,7 +29,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
       "sec-intro": {
         "h2": "Como calcular a área de um triângulo retângulo a partir da altura",
         "blocks": [
-          { "kind": "p", "text": "Suponha que um triângulo retângulo tenha uma hipotenusa de 10 m, e que a distância perpendicular do vértice do ângulo reto até essa hipotenusa meça 4,8 m. Sua área segue diretamente: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. O triângulo delimita 24 metros quadrados de superfície plana." },
+          { "kind": "p", "text": "Suponha que um triângulo retângulo tenha uma hipotenusa de 10 m, e que a distância perpendicular do vértice do ângulo reto até essa hipotenusa meça 4,8 m. Sua área segue diretamente: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] O triângulo delimita 24 metros quadrados de superfície plana." },
           { "kind": "p", "text": "Esta calculadora existe exatamente para essa situação. Quando você conhece o lado mais longo de um triângulo retângulo, a hipotenusa [[c]], e a altura perpendicular do vértice do ângulo reto até esse lado, [[h]], os dois catetos não são necessários. A hipotenusa serve de base, a altura é sua altura perpendicular correspondente, e a área de todo triângulo é metade do produto de uma base por sua altura correspondente: [[K=ch/2]]." },
           { "kind": "p", "text": "A altura deve encontrar a hipotenusa em ângulo reto; um segmento inclinado que não seja perpendicular produz uma altura errada e uma área errada. Insira as duas medidas em unidades de comprimento compatíveis, e a calculadora retorna a área nas unidades quadradas correspondentes, com cada etapa de substituição exibida." }
         ]
@@ -55,7 +55,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
       "sec-formula": {
         "h2": "Fórmula da área do triângulo retângulo a partir da altura",
         "blocks": [
-          { "kind": "p", "text": "A fórmula da área pela altura é [[[\\boxed{K=\\frac{ch}{2}}]]]. Aqui [[K]] é a área, [[c]] é a hipotenusa servindo de base, e [[h]] é a altura perpendicular à hipotenusa. Três símbolos, uma multiplicação, uma divisão por dois." },
+          { "kind": "p", "text": "A fórmula da área pela altura é [[[\\boxed{K=\\frac{ch}{2}}]]] Aqui [[K]] é a área, [[c]] é a hipotenusa servindo de base, e [[h]] é a altura perpendicular à hipotenusa. Três símbolos, uma multiplicação, uma divisão por dois." },
           { "kind": "h3", "text": "Por que multiplicamos a hipotenusa pela altura?" },
           { "kind": "p", "text": "A fórmula geral da área de um triângulo é [[K=\\frac{\\text{base}\\times\\text{height}}{2}]], e a base e a altura devem ser perpendiculares entre si. Escolher a hipotenusa como base força a altura a ser a distância perpendicular até ela, que é exatamente a altura: [[\\text{base}=c]] e [[\\text{height}=h]], portanto [[K=ch/2]]. Isso vale como quer que o triângulo seja girado ou desenhado: a perpendicularidade é uma relação geométrica, não uma direção na tela, então uma hipotenusa inclinada funciona como base tão bem quanto uma horizontal." },
           { "kind": "h3", "text": "Por que o resultado é dividido por dois?" },
@@ -78,7 +78,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
           "<strong>Escreva a fórmula.</strong> [[K=ch/2]].",
           "<strong>Substitua as medidas.</strong> [[K=(10\\times4.8)/2]].",
           "<strong>Multiplique.</strong> [[10\\times4.8=48]], então [[K=48/2]].",
-          "<strong>Divida por dois.</strong> [[[\\boxed{K=24\\text{ m}^2}]]].",
+          "<strong>Divida por dois.</strong> [[[\\boxed{K=24\\text{ m}^2}]]]",
           "<strong>Interprete a resposta.</strong> O triângulo delimita 24 metros quadrados de área plana.",
           "<strong>Verifique a viabilidade.</strong> Um triângulo retângulo válido precisa de [[h\\leq c/2]]; aqui [[4.8\\leq5]], então as medidas podem descrever um triângulo retângulo real.",
           "<strong>Verifique usando os catetos.</strong> Um triângulo 6-8-10 tem a mesma hipotenusa e altura, e [[K=(6\\times8)/2=24]]. As duas rotas concordam."
@@ -114,13 +114,13 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
         "blocks": [
           { "kind": "p", "text": "Quatro exemplos resolvidos desenvolvem o método a partir de triângulos familiares. Cada um calcula a altura a partir dos catetos quando necessário, aplica [[K=ch/2]] e confere com a fórmula dos catetos." },
           { "kind": "h3", "text": "Exemplo 1: Um triângulo retângulo 3-4-5" },
-          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]]. A altura é [[h=ab/c]], então [[h=(3\\times4)/5=2.4]]. A área é [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]]. Conferindo com os catetos, [[K=(3\\times4)/2=6]]. As duas fórmulas descrevem o mesmo triângulo, então devem concordar, e concordam." },
+          { "kind": "p", "text": "Dados [[a=3]], [[b=4]], [[c=5]]. A altura é [[h=ab/c]], então [[h=(3\\times4)/5=2.4]]. A área é [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ square units}}]]] Conferindo com os catetos, [[K=(3\\times4)/2=6]]. As duas fórmulas descrevem o mesmo triângulo, então devem concordar, e concordam." },
           { "kind": "h3", "text": "Exemplo 2: Um triângulo retângulo 5-12-13" },
-          { "kind": "p", "text": "Dados [[a=5]], [[b=12]], [[c=13]]. A altura é [[h=(5\\times12)/13=60/13\\approx4.61538]]. Mantendo a fração exata, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]]. Manter [[60/13]] em vez de um decimal arredondado evita um erro de arredondamento precoce: o 13 cancela exatamente, deixando um 30 limpo." },
+          { "kind": "p", "text": "Dados [[a=5]], [[b=12]], [[c=13]]. A altura é [[h=(5\\times12)/13=60/13\\approx4.61538]]. Mantendo a fração exata, [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ square units}}]]] Manter [[60/13]] em vez de um decimal arredondado evita um erro de arredondamento precoce: o 13 cancela exatamente, deixando um 30 limpo." },
           { "kind": "h3", "text": "Exemplo 3: Um triângulo retângulo 6-8-10" },
-          { "kind": "p", "text": "Dados [[c=10]] e [[h=4.8]] diretamente. Então [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. Com catetos 6 e 8, [[K=(6\\times8)/2=24]], o que confirma a rota da altura." },
+          { "kind": "p", "text": "Dados [[c=10]] e [[h=4.8]] diretamente. Então [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] Com catetos 6 e 8, [[K=(6\\times8)/2=24]], o que confirma a rota da altura." },
           { "kind": "h3", "text": "Exemplo 4: Um triângulo retângulo isósceles" },
-          { "kind": "p", "text": "Dados [[c=10]] e [[h=5]]. Então [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]]. Esta é a maior área que qualquer triângulo retângulo com hipotenusa 10 pode ter. A altura é igual à metade da hipotenusa somente quando os catetos são iguais, tornando cada ângulo agudo [[45^\\circ]], e nenhum triângulo retângulo válido com esta hipotenusa pode exceder 25 unidades quadradas." }
+          { "kind": "p", "text": "Dados [[c=10]] e [[h=5]]. Então [[K=(10\\times5)/2]], [[[\\boxed{K=25\\text{ square units}}]]] Esta é a maior área que qualquer triângulo retângulo com hipotenusa 10 pode ter. A altura é igual à metade da hipotenusa somente quando os catetos são iguais, tornando cada ângulo agudo [[45^\\circ]], e nenhum triângulo retângulo válido com esta hipotenusa pode exceder 25 unidades quadradas." }
         ]
       },
       "sec-applications": {
@@ -128,29 +128,29 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
         "blocks": [
           { "kind": "p", "text": "Doze situações resolvidas mostram a fórmula em diferentes escalas e em diferentes unidades. Cada uma nomeia o triângulo da cena, as duas medidas, a substituição, a área e a suposição por trás do modelo." },
           { "kind": "h3", "text": "Exemplo 1: Seção triangular de jardim" },
-          { "kind": "p", "text": "Uma seção de jardim em triângulo retângulo tem um limite mais longo de 10 m, e a distância perpendicular do canto do ângulo reto até esse limite é de 4,8 m. Então [[c=10\\text{ m}]] e [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. A seção ocupa 24 metros quadrados. Isso pressupõe que o limite seja reto e que o canto seja um ângulo reto verdadeiro." },
+          { "kind": "p", "text": "Uma seção de jardim em triângulo retângulo tem um limite mais longo de 10 m, e a distância perpendicular do canto do ângulo reto até esse limite é de 4,8 m. Então [[c=10\\text{ m}]] e [[h=4.8\\text{ m}]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] A seção ocupa 24 metros quadrados. Isso pressupõe que o limite seja reto e que o canto seja um ângulo reto verdadeiro." },
           { "kind": "h3", "text": "Exemplo 2: Painel triangular de compensado" },
-          { "kind": "p", "text": "Um painel de compensado em triângulo retângulo tem uma hipotenusa de 1 m e uma altura perpendicular de 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]]. Essa é a superfície plana de uma face, útil para estimativas de cobertura. Desperdício de corte e margens de material são considerações separadas." },
+          { "kind": "p", "text": "Um painel de compensado em triângulo retângulo tem uma hipotenusa de 1 m e uma altura perpendicular de 0,48 m: [[K=(1\\times0.48)/2]], [[[\\boxed{K=0.24\\text{ m}^2}]]] Essa é a superfície plana de uma face, útil para estimativas de cobertura. Desperdício de corte e margens de material são considerações separadas." },
           { "kind": "h3", "text": "Exemplo 3: Janela de vidro em triângulo retângulo" },
-          { "kind": "p", "text": "Um painel de vidro em triângulo retângulo tem uma hipotenusa de 1,3 m e uma altura de 0,6 m perpendicular a esse lado: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]]. Esta é a área geométrica do vidro antes que a cobertura da moldura ou as margens de instalação sejam consideradas." },
+          { "kind": "p", "text": "Um painel de vidro em triângulo retângulo tem uma hipotenusa de 1,3 m e uma altura de 0,6 m perpendicular a esse lado: [[K=(1.3\\times0.6)/2]], [[[\\boxed{K=0.39\\text{ m}^2}]]] Esta é a área geométrica do vidro antes que a cobertura da moldura ou as margens de instalação sejam consideradas." },
           { "kind": "h3", "text": "Exemplo 4: Medindo uma seção triangular" },
-          { "kind": "p", "text": "Um desenho de levantamento contém um triângulo retângulo com hipotenusa de 13 m e altura de [[60/13]] m. Mantendo a fração: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. O desenho representa uma seção de 30 metros quadrados. O trabalho de campo real ainda pode precisar de correções instrumentais além do plano." },
+          { "kind": "p", "text": "Um desenho de levantamento contém um triângulo retângulo com hipotenusa de 13 m e altura de [[60/13]] m. Mantendo a fração: [[K=(13\\times(60/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] O desenho representa uma seção de 30 metros quadrados. O trabalho de campo real ainda pode precisar de correções instrumentais além do plano." },
           { "kind": "h3", "text": "Exemplo 5: Medindo um azulejo triangular" },
-          { "kind": "p", "text": "Um azulejo em triângulo retângulo tem uma hipotenusa de 25 cm e uma altura perpendicular de 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]]. Um azulejo cobre 84 centímetros quadrados, o que ajuda a estimar de quantos azulejos uma superfície precisa. Juntas de rejunte e perdas de corte são contadas separadamente." },
+          { "kind": "p", "text": "Um azulejo em triângulo retângulo tem uma hipotenusa de 25 cm e uma altura perpendicular de 6,72 cm: [[K=(25\\times6.72)/2]], [[[\\boxed{K=84\\text{ cm}^2}]]] Um azulejo cobre 84 centímetros quadrados, o que ajuda a estimar de quantos azulejos uma superfície precisa. Juntas de rejunte e perdas de corte são contadas separadamente." },
           { "kind": "h3", "text": "Exemplo 6: Painel de suporte de aço" },
-          { "kind": "p", "text": "Um painel de suporte plano em triângulo retângulo tem uma hipotenusa de 1,7 m com catetos de 0,8 m e 1,5 m. Sua altura é [[h=(0.8\\times1.5)/1.7=12/17]] m. Então [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]]. Essa é a área geométrica do painel, não sua capacidade de carga." },
+          { "kind": "p", "text": "Um painel de suporte plano em triângulo retângulo tem uma hipotenusa de 1,7 m com catetos de 0,8 m e 1,5 m. Sua altura é [[h=(0.8\\times1.5)/1.7=12/17]] m. Então [[K=(1.7\\times(12/17))/2]], [[[\\boxed{K=0.6\\text{ m}^2}]]] Essa é a área geométrica do painel, não sua capacidade de carga." },
           { "kind": "h3", "text": "Exemplo 7: Painel lateral de rampa triangular" },
-          { "kind": "p", "text": "Um painel lateral de rampa simplificado forma um triângulo retângulo com uma hipotenusa de 5 m e uma altura perpendicular de 2,4 m até essa hipotenusa: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Esta é a área plana da seção triangular lateral, não a superfície inclinada da rampa, e o cálculo não estabelece conformidade de acessibilidade." },
+          { "kind": "p", "text": "Um painel lateral de rampa simplificado forma um triângulo retângulo com uma hipotenusa de 5 m e uma altura perpendicular de 2,4 m até essa hipotenusa: [[K=(5\\times2.4)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Esta é a área plana da seção triangular lateral, não a superfície inclinada da rampa, e o cálculo não estabelece conformidade de acessibilidade." },
           { "kind": "h3", "text": "Exemplo 8: Seção de empena de telhado" },
-          { "kind": "p", "text": "Uma seção de empena de telhado em triângulo retângulo tem uma hipotenusa de 6,5 m e uma altura perpendicular de [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]]. O resultado descreve o plano triangular dado pelas medidas. A área total da superfície de um telhado real é um problema de medição tridimensional separado." },
+          { "kind": "p", "text": "Uma seção de empena de telhado em triângulo retângulo tem uma hipotenusa de 6,5 m e uma altura perpendicular de [[30/13]] m: [[K=(6.5\\times(30/13))/2]], [[[\\boxed{K=7.5\\text{ m}^2}]]] O resultado descreve o plano triangular dado pelas medidas. A área total da superfície de um telhado real é um problema de medição tridimensional separado." },
           { "kind": "h3", "text": "Exemplo 9: Terreno em triângulo retângulo" },
-          { "kind": "p", "text": "Uma seção de terreno em triângulo retângulo tem uma hipotenusa de 50 m e uma altura perpendicular de 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Os limites medidos delimitam 600 metros quadrados. Um valor oficial de área ainda pode exigir verificação por levantamento." },
+          { "kind": "p", "text": "Uma seção de terreno em triângulo retângulo tem uma hipotenusa de 50 m e uma altura perpendicular de 24 m: [[K=(50\\times24)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Os limites medidos delimitam 600 metros quadrados. Um valor oficial de área ainda pode exigir verificação por levantamento." },
           { "kind": "h3", "text": "Exemplo 10: Grande terreno triangular medido" },
-          { "kind": "p", "text": "Uma seção em triângulo retângulo medida tem uma hipotenusa de 100 m e uma altura perpendicular de 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]]. Essa é a área planar da seção triangular. Ela representa a propriedade inteira somente quando a propriedade consiste unicamente naquele triângulo." },
+          { "kind": "p", "text": "Uma seção em triângulo retângulo medida tem uma hipotenusa de 100 m e uma altura perpendicular de 48 m: [[K=(100\\times48)/2]], [[[\\boxed{K=2400\\text{ m}^2}]]] Essa é a área planar da seção triangular. Ela representa a propriedade inteira somente quando a propriedade consiste unicamente naquele triângulo." },
           { "kind": "h3", "text": "Exemplo 11: Seção triangular de vela" },
-          { "kind": "p", "text": "Um projeto de vela plana em triângulo retângulo tem uma hipotenusa de 15 pés e uma altura perpendicular de 7,2 pés: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Esta é a área planar da vela idealizada. Tecido curvado, costuras e margens de borda exigem consideração separada." },
+          { "kind": "p", "text": "Um projeto de vela plana em triângulo retângulo tem uma hipotenusa de 15 pés e uma altura perpendicular de 7,2 pés: [[K=(15\\times7.2)/2]], [[[\\boxed{K=54\\text{ ft}^2}]]] Esta é a área planar da vela idealizada. Tecido curvado, costuras e margens de borda exigem consideração separada." },
           { "kind": "h3", "text": "Exemplo 12: Pequeno suporte mecânico" },
-          { "kind": "p", "text": "Um suporte plano em triângulo retângulo tem uma hipotenusa de 250 mm e uma altura perpendicular de 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]]. A resposta está em milímetros quadrados porque as entradas estão em milímetros. Como [[1\\text{ cm}^2=100\\text{ mm}^2]], isso equivale a [[[\\boxed{150\\text{ cm}^2}]]]. Converter a unidade linear e converter a unidade quadrada são operações diferentes, como explica a seção de unidades." },
+          { "kind": "p", "text": "Um suporte plano em triângulo retângulo tem uma hipotenusa de 250 mm e uma altura perpendicular de 120 mm: [[K=(250\\times120)/2]], [[[\\boxed{K=15000\\text{ mm}^2}]]] A resposta está em milímetros quadrados porque as entradas estão em milímetros. Como [[1\\text{ cm}^2=100\\text{ mm}^2]], isso equivale a [[[\\boxed{150\\text{ cm}^2}]]] Converter a unidade linear e converter a unidade quadrada são operações diferentes, como explica a seção de unidades." },
           { "kind": "h3", "text": "Comparação de exemplos práticos" }
         ],
         "table": {
@@ -176,7 +176,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
       "sec-equal": {
         "h2": "Por que as duas fórmulas de área do triângulo retângulo dão a mesma resposta",
         "blocks": [
-          { "kind": "p", "text": "Um triângulo retângulo pode ser medido por seus dois catetos perpendiculares ou por sua hipotenusa e altura. A fórmula dos catetos é [[K=ab/2]] e a fórmula da altura é [[K=ch/2]]. Como ambas descrevem a área do mesmo triângulo, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplique os dois lados por dois: [[ab=ch]]. Isole [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]]. A altura é o produto dos catetos dividido pela hipotenusa, por isso as duas fórmulas nunca podem discordar em um triângulo consistente." },
+          { "kind": "p", "text": "Um triângulo retângulo pode ser medido por seus dois catetos perpendiculares ou por sua hipotenusa e altura. A fórmula dos catetos é [[K=ab/2]] e a fórmula da altura é [[K=ch/2]]. Como ambas descrevem a área do mesmo triângulo, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Multiplique os dois lados por dois: [[ab=ch]]. Isole [[h]]: [[[\\boxed{h=\\frac{ab}{c}}]]] A altura é o produto dos catetos dividido pela hipotenusa, por isso as duas fórmulas nunca podem discordar em um triângulo consistente." },
           { "kind": "p", "text": "Verificação numérica: para [[a=6]], [[b=8]], [[c=10]], a altura é [[h=(6\\times8)/10=4.8]]. Pelos catetos: [[K=(6\\times8)/2=24]]. Pela altura: [[K=(10\\times4.8)/2=24]]. O mesmo triângulo, a mesma área, duas rotas." },
           { "kind": "p", "text": "Quando apenas a hipotenusa e a altura são conhecidas, a área já está fixada: não há necessidade de reconstruir os catetos primeiro. Os comprimentos dos catetos ainda podem ser recuperados a partir de [[c]] e [[h]] válidos por meio das relações de segmentos abaixo, mas isso é um cálculo separado de encontrar a área. Quando os catetos são os dados conhecidos, a <a href=\"/right-triangle-area-from-legs-calculator/\">Calculadora de área de triângulo retângulo a partir dos catetos</a> os recebe diretamente." }
         ]
@@ -188,7 +188,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
           { "kind": "h3", "text": "Dois triângulos retângulos menores semelhantes" },
           { "kind": "p", "text": "A altura divide o triângulo original em dois triângulos retângulos menores, cada um compartilhando um ângulo agudo com o original e cada um contendo um ângulo reto. Compartilhar duas medidas de ângulo torna os três triângulos semelhantes. A semelhança é o que força as relações proporcionais limpas entre a altura, os segmentos e os catetos." },
           { "kind": "h3", "text": "O teorema da média geométrica da altura" },
-          { "kind": "p", "text": "A semelhança dá [[[\\boxed{h^2=pq}]]], ou de forma equivalente [[[\\boxed{h=\\sqrt{pq}}]]]. A altura é a média geométrica dos dois segmentos da hipotenusa: seu quadrado é igual ao produto deles. Exemplo resolvido: com [[p=6.4]] e [[q=3.6]], [[c=p+q=10]], e [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]]. A área segue: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]]. O teorema dos segmentos verifica uma altura medida ou calculada de outra forma." },
+          { "kind": "p", "text": "A semelhança dá [[[\\boxed{h^2=pq}]]], ou de forma equivalente [[[\\boxed{h=\\sqrt{pq}}]]] A altura é a média geométrica dos dois segmentos da hipotenusa: seu quadrado é igual ao produto deles. Exemplo resolvido: com [[p=6.4]] e [[q=3.6]], [[c=p+q=10]], e [[h=\\sqrt{6.4\\times3.6}=\\sqrt{23.04}]], [[[\\boxed{h=4.8}]]] A área segue: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ square units}}]]] O teorema dos segmentos verifica uma altura medida ou calculada de outra forma." },
           { "kind": "h3", "text": "Relação entre os segmentos e os catetos" },
           { "kind": "p", "text": "A mesma semelhança produz [[b^2=cp]] e [[a^2=cq]]. Com [[c=10]], [[p=6.4]], [[q=3.6]]: [[b=\\sqrt{10\\times6.4}=\\sqrt{64}=8]] e [[a=\\sqrt{10\\times3.6}=\\sqrt{36}=6]]. O triângulo 6-8-10 original é recuperado exatamente, o que mostra quão fortemente os segmentos, a altura e os catetos estão ligados." }
         ]
@@ -196,11 +196,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
       "sec-max": {
         "h2": "Quão grande pode ser a altura de um triângulo retângulo?",
         "blocks": [
-          { "kind": "p", "text": "Nem todo par de números positivos pode ser uma hipotenusa e uma altura. Para um triângulo retângulo válido e não degenerado, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]]. A altura deve ser positiva e nunca pode exceder metade da hipotenusa." },
+          { "kind": "p", "text": "Nem todo par de números positivos pode ser uma hipotenusa e uma altura. Para um triângulo retângulo válido e não degenerado, [[[\\boxed{0<h\\leq\\frac{c}{2}}]]] A altura deve ser positiva e nunca pode exceder metade da hipotenusa." },
           { "kind": "h3", "text": "Por que a altura não pode exceder metade da hipotenusa" },
           { "kind": "p", "text": "De [[h^2=pq]] com [[p+q=c]], o produto [[pq]] é maior quando os dois segmentos são iguais, [[p=q=c/2]]. Portanto [[h^2\\leq c^2/4]], e para comprimentos positivos [[h\\leq c/2]]. Em termos simples: a altura é mais alta quando divide a hipotenusa em duas metades iguais, e mesmo assim alcança apenas metade da hipotenusa." },
           { "kind": "h3", "text": "Área máxima para uma hipotenusa fixa" },
-          { "kind": "p", "text": "Como [[K=ch/2]] e [[h\\leq c/2]], a maior área possível é [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]]. Esse máximo pertence ao triângulo retângulo isósceles, onde os dois catetos são iguais. Com [[c=10]], a altura válida mais alta é [[h_{\\max}=5]], dando [[K_{\\max}=(10\\times5)/2=25]]. Uma altura de 6 com hipotenusa de 10 é impossível para um triângulo retângulo." },
+          { "kind": "p", "text": "Como [[K=ch/2]] e [[h\\leq c/2]], a maior área possível é [[[\\boxed{K_{\\max}=\\frac{c^2}{4}}]]] Esse máximo pertence ao triângulo retângulo isósceles, onde os dois catetos são iguais. Com [[c=10]], a altura válida mais alta é [[h_{\\max}=5]], dando [[K_{\\max}=(10\\times5)/2=25]]. Uma altura de 6 com hipotenusa de 10 é impossível para um triângulo retângulo." },
           { "kind": "h3", "text": "O que acontece se a altura for grande demais?" },
           { "kind": "p", "text": "Tome [[c=10]] e [[h=6]]: [[6>5]], então nenhum triângulo retângulo tem essas medidas. A aritmética [[(10\\times6)/2=30]] é uma área válida para algum triângulo em um contexto mais geral, mas não torna [[c=10]], [[h=6]] uma entrada válida de triângulo retângulo. Esta página não afirma que a calculadora rejeita tal entrada automaticamente; a verificação é sua." },
           { "kind": "h3", "text": "A altura pode ser igual à metade da hipotenusa?" },
@@ -214,11 +214,11 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
         "blocks": [
           { "kind": "p", "text": "Esta calculadora recebe [[h]] como entrada, então uma altura desconhecida deve ser encontrada ou medida primeiro. Três rotas padrão cobrem os casos comuns. Quando os lados são conhecidos e a altura é a peça que falta, a <a href=\"/right-triangle-altitude-from-sides-calculator/\">Calculadora de altura de triângulo retângulo a partir dos lados</a> a calcula diretamente." },
           { "kind": "h3", "text": "Método 1: Usando os dois catetos e a hipotenusa" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]]. Com [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\frac{ab}{c}}]]] Com [[a=6]], [[b=8]], [[c=10]]: [[h=(6\\times8)/10=4.8]]." },
           { "kind": "h3", "text": "Método 2: Usando os segmentos da hipotenusa" },
-          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]]. Com [[p=6.4]] e [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
+          { "kind": "p", "text": "[[[\\boxed{h=\\sqrt{pq}}]]] Com [[p=6.4]] e [[q=3.6]]: [[h=\\sqrt{23.04}=4.8]]." },
           { "kind": "h3", "text": "Método 3: Usando a área conhecida e a hipotenusa" },
-          { "kind": "p", "text": "Reorganizando [[K=ch/2]] obtém-se [[[\\boxed{h=\\frac{2K}{c}}]]]. Com [[K=24]] e [[c=10]]: [[h=(2\\times24)/10=4.8]]." }
+          { "kind": "p", "text": "Reorganizando [[K=ch/2]] obtém-se [[[\\boxed{h=\\frac{2K}{c}}]]] Com [[K=24]] e [[c=10]]: [[h=(2\\times24)/10=4.8]]." }
         ],
         "closingParagraphs": [
           "Estas são reorganizações matemáticas, não modos extras da calculadora: a calculadora de área a partir da altura em si continua esperando a altura como entrada."
@@ -281,7 +281,7 @@ export const AREA_FROM_ALTITUDE_TRANSLATIONS_BATCH2A = {
           { "kind": "h3", "text": "18. Tratar a área geométrica como material exato a comprar" },
           { "kind": "p", "text": "A fórmula dá a área geométrica ideal. Projetos reais precisam de desperdício, sobreposições e margens de corte por cima. Correção: adicione uma margem de projeto depois que a geometria estiver pronta." },
           { "kind": "h3", "text": "Errado versus correto: um exemplo concreto" },
-          { "kind": "p", "text": "Dados [[c=10]] e [[h=4.8]], o cálculo incorreto pula a divisão por dois: [[K=10\\times4.8=48]]. Essa é a área do paralelogramo correspondente. O cálculo correto é [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]]. Uma segunda ilustração: substituir o cateto 8 pela altura dá [[(10\\times8)/2=40]], errado porque 8 não é perpendicular à hipotenusa. A altura, e somente a altura, se emparelha com [[c]]." }
+          { "kind": "p", "text": "Dados [[c=10]] e [[h=4.8]], o cálculo incorreto pula a divisão por dois: [[K=10\\times4.8=48]]. Essa é a área do paralelogramo correspondente. O cálculo correto é [[K=(10\\times4.8)/2]], [[[\\boxed{K=24}]]] Uma segunda ilustração: substituir o cateto 8 pela altura dá [[(10\\times8)/2=40]], errado porque 8 não é perpendicular à hipotenusa. A altura, e somente a altura, se emparelha com [[c]]." }
         ]
       },
       "sec-verify": {

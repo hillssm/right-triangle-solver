@@ -1,0 +1,1650 @@
+# MASTER SEO CONTENT WRITING PROMPT
+## Right Triangle Radius Calculator — 3,500–4,000+ Words
+
+### 1. ROLE AND OBJECTIVE
+
+Act as a senior mathematics educator, geometry specialist, professional educational content writer, mathematical proofreader, and technical SEO strategist.
+
+Your task is to create a comprehensive, original, mathematically accurate, engaging, human-friendly, and search-engine-optimized educational guide for the following webpage.
+
+**Website:** RightTriangleSolver.com
+
+**Page URL:** https://www.righttrianglesolver.com/right-triangle-radius-calculator/
+
+**Page Title:** Right Triangle Inradius and Circumradius Calculator
+
+**Primary Focus Keyword:** Right Triangle Radius Calculator
+
+**Secondary Keywords:**
+- Right Triangle Inradius Calculator
+- Right Triangle Circumradius Calculator
+
+**Main Topic:** Calculate both the inradius and circumradius of a right triangle using the appropriate calculator mode.
+
+**Target Word Count:** 3,500–4,000 words of meaningful educational content. Exceed 4,000 words only when additional information genuinely improves the reader's understanding.
+
+**Language:** American English
+
+**Target Audience:**
+- Middle school mathematics students
+- High school geometry students
+- College students
+- Mathematics teachers
+- Private tutors
+- Parents helping children with geometry
+- Beginners studying triangle geometry
+- Students learning incircles and circumcircles
+- Anyone solving right triangle radius problems
+
+**Main Objective:**
+
+Create a detailed educational guide explaining both types of radii associated with right triangles.
+
+The article must explain:
+
+- What the inradius of a right triangle is.
+- What the circumradius of a right triangle is.
+- What an incircle represents.
+- What a circumcircle represents.
+- What an incenter represents.
+- What a circumcenter represents.
+- How to calculate the inradius from three side lengths.
+- How to calculate the circumradius from the hypotenuse.
+- Why the two radius formulas are different.
+- Why the incenter lies inside the triangle.
+- Why the circumcenter lies at the midpoint of the hypotenuse.
+- How to use both calculator modes.
+- How to verify the results.
+- How the two radii relate to the triangle's area, perimeter, sides, and circle geometry.
+
+The article must function as an educational resource rather than a thin calculator landing page.
+
+Write naturally, like an experienced mathematics teacher explaining geometry to students.
+
+Avoid robotic writing, generic filler, keyword stuffing, unnecessary repetition, and artificial word-count expansion.
+
+---
+
+### 2. EXISTING PAGE AND CALCULATOR ANALYSIS
+
+Before writing, inspect the existing live webpage carefully.
+
+Confirm its actual calculator functionality and visible content.
+
+The page currently provides two calculator modes.
+
+#### MODE 1: INRADIUS CALCULATOR
+
+The inradius calculator accepts three inputs:
+
+**Input 1: Leg a**
+
+The first perpendicular side.
+
+**Input 2: Leg b**
+
+The second perpendicular side.
+
+**Input 3: Hypotenuse c**
+
+The complete side opposite the right angle.
+
+**Main Formula:**
+
+r = (a + b − c)/2
+
+**Calculate Button:**
+
+Calculate Inradius r.
+
+**Reset Button:**
+
+Clears the calculator inputs.
+
+**Result:**
+
+The inradius of the right triangle.
+
+#### MODE 2: CIRCUMRADIUS CALCULATOR
+
+The circumradius calculator accepts one input:
+
+**Input: Hypotenuse c**
+
+The complete side opposite the right angle.
+
+**Main Formula:**
+
+R = c/2
+
+**Calculate Button:**
+
+Calculate Circumradius R.
+
+**Reset Button:**
+
+Clears the calculator input.
+
+**Result:**
+
+The circumradius of the right triangle.
+
+#### OTHER EXISTING PAGE ELEMENTS
+
+The page includes:
+
+- Calculator mode selector.
+- Inradius Calculator.
+- Circumradius Calculator.
+- Unit selectors.
+- Input fields.
+- Calculate buttons.
+- Reset buttons.
+- Calculator descriptions.
+- Circle relations in right triangles.
+- Input tips.
+- Instructions for using the calculator.
+- Available calculator modes.
+- Common mistakes.
+- Five FAQs.
+- Related calculators.
+- Dedicated inradius and circumradius calculator links.
+
+Inspect the actual interface before describing it.
+
+Do not invent additional calculator functionality.
+
+Do not claim that this page directly calculates:
+
+- Triangle angles.
+- Missing side lengths.
+- Triangle area.
+- Perimeter.
+- Altitude.
+- Circumcenter coordinates.
+- Incenter coordinates.
+- Circumcircle equations.
+- Incircle equations.
+
+These topics may be explained as related mathematical concepts, but must not be presented as existing calculator features.
+
+Preserve the two-mode functionality and explain clearly which mode visitors should choose.
+
+---
+
+### 3. PRIMARY SEARCH INTENT
+
+The primary search intent is calculator-based and informational.
+
+Visitors want to:
+
+1. Calculate the inradius of a right triangle.
+2. Calculate the circumradius of a right triangle.
+3. Understand the difference between inradius and circumradius.
+4. Learn the inradius formula.
+5. Learn the circumradius formula.
+6. Identify the incircle and circumcircle.
+7. Understand where the incenter and circumcenter are located.
+8. Know which triangle measurements are required.
+9. Calculate both radii manually.
+10. Verify their calculations.
+11. Understand the relationship between triangle sides and circle radii.
+12. Use the correct calculator mode for their problem.
+
+Answer the main question immediately.
+
+Introduce both formulas near the beginning of the article.
+
+Explain the two calculator modes before providing lengthy theoretical material.
+
+Do not make users scroll through extensive geometry explanations before learning how to calculate the radii.
+
+---
+
+### 4. SEO KEYWORD STRATEGY
+
+#### Primary Focus Keyword
+
+Right Triangle Radius Calculator
+
+#### Secondary Keywords
+
+- right triangle inradius calculator
+- right triangle circumradius calculator
+- right triangle radius formula
+- calculate inradius of right triangle
+- calculate circumradius of right triangle
+- right triangle incircle radius
+- right triangle circumcircle radius
+- inradius formula for right triangle
+- circumradius formula for right triangle
+- radius of a right triangle
+- right triangle circle geometry
+- inscribed circle in right triangle
+- circumscribed circle around right triangle
+- right triangle incenter
+- right triangle circumcenter
+
+#### Related Semantic Keywords
+
+- inradius r
+- circumradius R
+- incircle
+- circumcircle
+- incenter
+- circumcenter
+- hypotenuse c
+- leg a
+- leg b
+- right angle
+- perpendicular sides
+- tangent to triangle sides
+- circle passing through vertices
+- midpoint of hypotenuse
+- circle diameter
+- circle radius
+- triangle area
+- triangle perimeter
+- semiperimeter
+- Pythagorean theorem
+- Thales' theorem
+- geometric construction
+- equidistant vertices
+
+#### Keyword Placement Rules
+
+Use the primary keyword naturally in:
+
+- SEO title.
+- H1.
+- Opening paragraph.
+- One relevant H2 heading, where appropriate.
+- Meta description.
+
+Use secondary keywords in their relevant sections.
+
+Avoid:
+
+- Keyword stuffing.
+- Artificial keyword-density targets.
+- Repetitive exact-match phrases.
+- Unnecessary keyword variations.
+- Awkward keyword placement.
+- Repeated headings created only for SEO.
+
+Prioritize mathematical accuracy, natural writing, and genuine search intent.
+
+---
+
+### 5. MATHEMATICAL DEFINITIONS AND CONSISTENT NOTATION
+
+Use one consistent right triangle throughout the article.
+
+Consider right triangle ABC with a right angle at C.
+
+Use:
+
+- AC = a: first perpendicular leg.
+- BC = b: second perpendicular leg.
+- AB = c: complete hypotenuse.
+- r: inradius.
+- R: circumradius.
+- I: incenter.
+- O: circumcenter.
+- A: triangle area, when needed.
+- P: triangle perimeter, when needed.
+- s: semiperimeter.
+
+#### INRadius Formula
+
+The main formula is:
+
+r = (a + b − c)/2
+
+An equivalent formula is:
+
+r = (a × b)/(a + b + c)
+
+For a right triangle, these two expressions are equivalent.
+
+The semiperimeter is:
+
+s = (a + b + c)/2
+
+The inradius can also be calculated from:
+
+r = Area/s
+
+Since the area of a right triangle is:
+
+Area = ab/2
+
+Therefore:
+
+r = ab/(a + b + c)
+
+Explain why these formulas give the same result.
+
+#### CIRCUMRADIUS FORMULA
+
+The main formula is:
+
+R = c/2
+
+The equivalent diameter relationship is:
+
+c = 2R
+
+For a right triangle, the hypotenuse is the diameter of the circumcircle.
+
+The circumcenter is located at the midpoint of the hypotenuse.
+
+#### OTHER USEFUL RELATIONSHIPS
+
+Pythagorean theorem:
+
+a² + b² = c²
+
+Area:
+
+Area = ab/2
+
+Perimeter:
+
+P = a + b + c
+
+Semiperimeter:
+
+s = (a + b + c)/2
+
+Altitude:
+
+h = ab/c
+
+Keep notation consistent.
+
+Never confuse:
+
+- r with R.
+- Incenter with circumcenter.
+- Incircle with circumcircle.
+- Radius with diameter.
+- Hypotenuse with perpendicular legs.
+
+---
+
+## 6. REQUIRED ARTICLE STRUCTURE
+
+Follow the outline below.
+
+The suggested word allocations are flexible. The complete article should contain approximately 3,500–4,000 words of genuinely useful educational content.
+
+### H1: Right Triangle Radius Calculator
+
+**Suggested length: 130–160 words**
+
+Write an informative introduction.
+
+Explain that a right triangle has two important associated circles:
+
+1. Incircle: touches all three sides from inside the triangle.
+2. Circumcircle: passes through all three vertices.
+
+Introduce the two formulas:
+
+r = (a + b − c)/2
+
+R = c/2
+
+Explain the difference between the two results.
+
+Give a brief example using a 6–8–10 right triangle:
+
+a = 6 cm
+
+b = 8 cm
+
+c = 10 cm
+
+Inradius:
+
+r = (6 + 8 − 10)/2
+
+r = 2 cm
+
+Circumradius:
+
+R = 10/2
+
+R = 5 cm
+
+Explain that the calculator offers separate modes because the two calculations require different known measurements.
+
+Avoid generic introductions.
+
+### H2: Calculate the Inradius or Circumradius of a Right Triangle
+
+**Suggested length: 180–220 words**
+
+Place this section immediately above or beside the calculator.
+
+Explain the two available modes.
+
+#### Mode 1: Inradius Calculator
+
+Requires:
+
+- Leg a.
+- Leg b.
+- Hypotenuse c.
+
+Formula:
+
+r = (a + b − c)/2
+
+Explain when to select this mode.
+
+#### Mode 2: Circumradius Calculator
+
+Requires:
+
+- Hypotenuse c.
+
+Formula:
+
+R = c/2
+
+Explain when to select this mode.
+
+Explain:
+- How to select the appropriate calculator mode.
+- How to identify the required measurements.
+- How to choose compatible units.
+- How to use the Calculate button.
+- How to use the Reset button.
+- How to interpret the result.
+
+Clarify that the circumradius requires only the hypotenuse, while the inradius requires all three side lengths.
+
+Do not invent additional functionality.
+
+### H2: What Is the Inradius of a Right Triangle?
+
+**Suggested length: 200–250 words**
+
+Explain the meaning of inradius.
+
+Describe a circle placed inside the triangle that touches all three sides.
+
+Explain:
+- What an incircle is.
+- What an inradius is.
+- What the incenter represents.
+- Why the incenter is equidistant from all three sides.
+- Why the inradius is measured perpendicular to each side.
+- Why the incircle stays entirely inside the triangle.
+
+Introduce:
+
+r = (a + b − c)/2
+
+Use a 6–8–10 example.
+
+Clarify that the inradius is not measured from the center to a triangle vertex.
+
+Include a labeled diagram.
+
+### H2: What Is the Circumradius of a Right Triangle?
+
+**Suggested length: 200–250 words**
+
+Explain the circumradius.
+
+Describe a circle passing through all three vertices of the triangle.
+
+Explain:
+- What a circumcircle is.
+- What a circumradius is.
+- What the circumcenter represents.
+- Why all three vertices are equally distant from the circumcenter.
+- Why the circumcenter is located at the midpoint of the hypotenuse in a right triangle.
+
+Introduce:
+
+R = c/2
+
+Use the same 6–8–10 example.
+
+Clarify that the circumradius extends from the circumcenter to any triangle vertex.
+
+Include a labeled diagram.
+
+### H2: Difference Between Inradius and Circumradius
+
+**Suggested length: 250–300 words**
+
+Give this section special importance.
+
+Explain the difference clearly.
+
+The incircle touches the three sides.
+
+The circumcircle passes through the three vertices.
+
+The incenter is the intersection of the angle bisectors.
+
+The circumcenter is the intersection of the perpendicular bisectors of the sides.
+
+Use a comparison table.
+
+| Feature | Inradius r | Circumradius R |
+|---|---|---|
+| Circle | Incircle | Circumcircle |
+| Position | Inside the triangle | Around the triangle |
+| Contact | Tangent to all three sides | Passes through all three vertices |
+| Center | Incenter | Circumcenter |
+| Formula | (a+b-c)/2 | c/2 |
+| Required inputs | a, b, c | c |
+| Measurement | Center to a side | Center to a vertex |
+
+Use a 6–8–10 triangle:
+
+r = 2 cm
+
+R = 5 cm
+
+Explain why the results differ.
+
+Do not suggest that the two radii represent the same geometric measurement.
+
+### H2: Right Triangle Inradius Formula
+
+**Suggested length: 220–260 words**
+
+Introduce:
+
+r = (a + b − c)/2
+
+Define each variable.
+
+Explain why all three side lengths are required.
+
+Show the formula step by step.
+
+Example:
+
+a = 6 cm
+
+b = 8 cm
+
+c = 10 cm
+
+r = (6 + 8 − 10)/2
+
+r = 4/2
+
+r = 2 cm
+
+Explain the mathematical meaning of the result.
+
+Also introduce the equivalent area-based formula:
+
+r = Area/s
+
+Show how it connects to the standard formula.
+
+Avoid repeating the circumradius explanation.
+
+### H2: Why Does the Inradius Formula Work?
+
+**Suggested length: 250–300 words**
+
+Provide a mathematical explanation.
+
+Use the fact that the incenter is equidistant from the three sides.
+
+Explain that the radius drawn to each side is perpendicular to that side.
+
+The area can be divided into three smaller triangles.
+
+Their combined area is:
+
+Area = (r × a)/2 + (r × b)/2 + (r × c)/2
+
+Factor:
+
+Area = r(a + b + c)/2
+
+Since:
+
+s = (a + b + c)/2
+
+Therefore:
+
+Area = rs
+
+Rearrange:
+
+r = Area/s
+
+For a right triangle:
+
+Area = ab/2
+
+Therefore:
+
+r = ab/(a + b + c)
+
+Then demonstrate that this simplifies to:
+
+r = (a + b − c)/2
+
+Use the Pythagorean relationship to explain the equivalence.
+
+Keep the proof accessible.
+
+### H2: Right Triangle Circumradius Formula
+
+**Suggested length: 200–240 words**
+
+Introduce:
+
+R = c/2
+
+Define:
+- R = circumradius.
+- c = complete hypotenuse.
+
+Explain:
+- Why the hypotenuse acts as the diameter.
+- Why the circumcenter is at its midpoint.
+- Why a radius is half the diameter.
+- Why only the hypotenuse is required.
+
+Use:
+
+c = 10 cm
+
+R = 10/2
+
+R = 5 cm
+
+Do not repeat the complete inradius proof.
+
+### H2: Why Is the Hypotenuse the Diameter of the Circumcircle?
+
+**Suggested length: 200–250 words**
+
+Explain the special geometry of right triangles.
+
+Use triangle ABC with right angle at C.
+
+Let O be the midpoint of hypotenuse AB.
+
+Explain:
+
+AO = BO = CO
+
+Therefore, O is the circumcenter.
+
+Since AB passes through O and its endpoints lie on the circumcircle, AB is the diameter.
+
+Show:
+
+AB = 2R
+
+Therefore:
+
+R = c/2
+
+Introduce Thales' theorem as supporting geometry.
+
+Include a clear diagram.
+
+### H2: How to Use the Right Triangle Radius Calculator
+
+**Suggested length: 200–240 words**
+
+Provide separate instructions for both modes.
+
+#### Using the Inradius Mode
+
+Step 1: Identify leg a.
+
+Step 2: Identify leg b.
+
+Step 3: Identify hypotenuse c.
+
+Step 4: Select Inradius Calculator.
+
+Step 5: Enter all three side lengths.
+
+Step 6: Select compatible units.
+
+Step 7: Click Calculate Inradius r.
+
+Step 8: Review the result.
+
+Step 9: Use Reset when starting another calculation.
+
+Explain that the hypotenuse must be longer than either leg and the measurements must form a valid right triangle.
+
+#### Using the Circumradius Mode
+
+Step 1: Identify the hypotenuse.
+
+Step 2: Select Circumradius Calculator.
+
+Step 3: Enter c.
+
+Step 4: Select the unit.
+
+Step 5: Click Calculate Circumradius R.
+
+Step 6: Review the result.
+
+Step 7: Use Reset for a new calculation.
+
+Explain why the circumradius mode requires only one measurement.
+
+### H2: Step-by-Step Example: Calculating Both Radii
+
+**Suggested length: 220–260 words**
+
+Use a 6–8–10 right triangle.
+
+Given:
+
+a = 6 cm
+
+b = 8 cm
+
+c = 10 cm
+
+**Part 1: Calculate Inradius**
+
+Formula:
+
+r = (a + b − c)/2
+
+Substitution:
+
+r = (6 + 8 − 10)/2
+
+r = 4/2
+
+r = 2 cm
+
+Explain that the incircle has a radius of 2 cm.
+
+**Part 2: Calculate Circumradius**
+
+Formula:
+
+R = c/2
+
+Substitution:
+
+R = 10/2
+
+R = 5 cm
+
+Explain that the circumcircle has a radius of 5 cm.
+
+Compare both results.
+
+### H2: Worked Examples of Calculating Inradius
+
+**Suggested length: 350–400 words**
+
+Provide at least six varied examples.
+
+Every example must include:
+- Given values.
+- Formula.
+- Substitution.
+- Intermediate calculation.
+- Final answer.
+- Short explanation.
+
+**Example 1: Basic 3–4–5 Triangle**
+
+a = 3 cm
+
+b = 4 cm
+
+c = 5 cm
+
+r = (3 + 4 − 5)/2
+
+r = 1 cm
+
+**Example 2: 5–12–13 Triangle**
+
+r = (5 + 12 − 13)/2
+
+r = 2 cm
+
+**Example 3: 8–15–17 Triangle**
+
+r = (8 + 15 − 17)/2
+
+r = 3 cm
+
+**Example 4: Decimal Measurements**
+
+a = 6 cm
+
+b = 8 cm
+
+c = 10 cm
+
+r = 2 cm
+
+**Example 5: Larger Measurements**
+
+a = 9 m
+
+b = 12 m
+
+c = 15 m
+
+r = 3 m
+
+**Example 6: Different Units**
+
+Convert all measurements to centimeters before calculating.
+
+Use a valid right triangle and show the conversion.
+
+Do not use invalid combinations of side lengths.
+
+### H2: Worked Examples of Calculating Circumradius
+
+**Suggested length: 300–350 words**
+
+Provide at least six examples.
+
+**Example 1:**
+
+c = 10 cm
+
+R = 5 cm
+
+**Example 2:**
+
+c = 13 cm
+
+R = 6.5 cm
+
+**Example 3:**
+
+c = 24 m
+
+R = 12 m
+
+**Example 4:**
+
+c = 7.5 cm
+
+R = 3.75 cm
+
+**Example 5:**
+
+c = 180 mm
+
+R = 90 mm
+
+**Example 6:**
+
+c = 1.2 m
+
+R = 0.6 m
+
+Show the formula, substitution, calculation, and interpretation in every example.
+
+### H2: How to Check Whether Your Right Triangle Measurements Are Valid
+
+**Suggested length: 180–220 words**
+
+Explain the validity conditions.
+
+For a right triangle:
+
+a² + b² = c²
+
+The hypotenuse must be the longest side.
+
+Therefore:
+
+c > a
+
+c > b
+
+Explain how to verify measurements before using the inradius calculator.
+
+Use a 3–4–5 example:
+
+3² + 4² = 5²
+
+9 + 16 = 25
+
+Explain why invalid measurements may produce a negative or misleading inradius.
+
+Clarify that a valid nondegenerate right triangle must have a positive inradius.
+
+### H2: Relationship Between Inradius, Circumradius, and Triangle Area
+
+**Suggested length: 220–260 words**
+
+Explain:
+
+Area = rs
+
+Therefore:
+
+r = Area/s
+
+Also:
+
+Area = ab/2
+
+For the circumradius:
+
+c = 2R
+
+Use the 6–8–10 example.
+
+Area:
+
+A = (6 × 8)/2 = 24 cm²
+
+Semiperimeter:
+
+s = (6 + 8 + 10)/2 = 12 cm
+
+Inradius:
+
+r = 24/12 = 2 cm
+
+Circumradius:
+
+R = 10/2 = 5 cm
+
+Explain how these values describe different aspects of the same triangle.
+
+### H2: Relationship Between Inradius and Perimeter
+
+**Suggested length: 170–210 words**
+
+Explain:
+
+s = (a + b + c)/2
+
+r = Area/s
+
+Show how the semiperimeter affects the inradius.
+
+Explain that the perimeter alone is not sufficient to determine the inradius without additional information about the triangle.
+
+Use a numerical example.
+
+Do not confuse semiperimeter with perimeter.
+
+### H2: Important Properties of Right Triangle Radii
+
+**Suggested length: 200–240 words**
+
+Explain these properties.
+
+1. The inradius is always positive in a valid nondegenerate triangle.
+2. The incenter lies inside the triangle.
+3. The inradius is perpendicular to each side at the tangency point.
+4. The circumcenter lies at the midpoint of the hypotenuse in a right triangle.
+5. The circumradius is exactly half the hypotenuse.
+6. The circumcircle passes through all three vertices.
+7. The incircle is tangent to all three sides.
+8. The circumradius is greater than the inradius for a nondegenerate right triangle.
+9. The two radius calculations require different input measurements.
+
+Explain the reasoning behind each property.
+
+### H2: Common Mistakes When Calculating Inradius and Circumradius
+
+**Suggested length: 280–330 words**
+
+Discuss at least twelve mistakes.
+
+1. Confusing inradius with circumradius.
+2. Using R = c/2 to calculate the inradius.
+3. Using r = (a+b-c)/2 to calculate the circumradius.
+4. Entering a leg instead of the hypotenuse in circumradius mode.
+5. Forgetting to divide by two in the inradius formula.
+6. Forgetting to divide by two in the circumradius formula.
+7. Entering an invalid triangle.
+8. Mixing units.
+9. Confusing the incenter with the circumcenter.
+10. Assuming the incircle passes through the vertices.
+11. Assuming the circumcircle touches all three sides.
+12. Rounding too early.
+13. Confusing radius with diameter.
+14. Using the wrong calculator mode.
+
+For each mistake:
+- Explain why it is incorrect.
+- Show the correct relationship.
+- Provide a short example where useful.
+
+### H2: Practical Applications of Triangle Radii
+
+**Suggested length: 150–190 words**
+
+Explain relevant applications:
+
+- Geometry homework.
+- Circle construction.
+- Technical drawing.
+- Mathematical proofs.
+- Triangle and circle relationship exercises.
+- Geometric modeling.
+- Design calculations involving triangular shapes.
+- Understanding circular clearances and boundaries.
+
+Use realistic hypothetical examples.
+
+Do not make unsupported claims about engineering precision.
+
+Clarify that practical design work may require additional tolerances and measurements.
+
+### H2: Practice Problems With Answers
+
+**Suggested length: 250–300 words**
+
+Create six original practice questions.
+
+Include:
+1. Find the inradius from three side lengths.
+2. Find the circumradius from the hypotenuse.
+3. Calculate both radii for one triangle.
+4. Verify triangle validity using Pythagoras.
+5. Calculate the inradius using area and semiperimeter.
+6. Identify the correct calculator mode for a given problem.
+
+Provide complete worked solutions.
+
+Use valid triangle measurements.
+
+### H2: Frequently Asked Questions
+
+**Suggested length: 450–500 words**
+
+Include 12 useful FAQs.
+
+Suggested questions:
+
+1. What is the formula for the inradius of a right triangle?
+2. What is the formula for the circumradius of a right triangle?
+3. What is the difference between inradius and circumradius?
+4. Which measurements are required to calculate the inradius?
+5. Why does circumradius require only the hypotenuse?
+6. Where is the incenter located?
+7. Where is the circumcenter located?
+8. Can the inradius be larger than the circumradius?
+9. Is the hypotenuse the diameter of the circumcircle?
+10. How can I verify my inradius result?
+11. Can I calculate the inradius using area and semiperimeter?
+12. Why is the inradius formula different from the circumradius formula?
+
+Keep answers approximately 35–65 words.
+
+Avoid repeating entire article paragraphs.
+
+### H2: Related Right Triangle Calculators
+
+**Suggested length: 90–110 words**
+
+Provide contextual links to:
+
+- Dedicated Right Triangle Inradius Calculator.
+- Dedicated Right Triangle Circumradius Calculator.
+- Right Triangle Area Calculator.
+- Right Triangle Side Calculator.
+- Right Triangle Perimeter and Semiperimeter Calculator.
+
+Explain which calculator is useful for each situation.
+
+Do not add generic promotional filler.
+
+---
+
+## 7. REQUIRED EDUCATIONAL DIAGRAMS
+
+Provide specifications for at least seven mathematically accurate diagrams.
+
+### Diagram 1: Right Triangle With an Incircle
+
+Show:
+- Right triangle ABC.
+- Right angle at C.
+- Legs a and b.
+- Hypotenuse c.
+- Incircle.
+- Incenter I.
+- Inradius r.
+
+Show the circle touching all three sides.
+
+Clearly identify the perpendicular radius from I to one side.
+
+### Diagram 2: Right Triangle With a Circumcircle
+
+Show:
+- Right triangle ABC.
+- Right angle at C.
+- Hypotenuse AB = c.
+- Circumcenter O.
+- Circumradius R.
+- Circumcircle passing through all three vertices.
+
+Show AB as the diameter.
+
+### Diagram 3: Inradius vs. Circumradius
+
+Use a 6–8–10 right triangle.
+
+Show:
+
+r = 2 cm
+
+R = 5 cm
+
+Clearly distinguish:
+- The smaller circle inside the triangle.
+- The larger circle around the triangle.
+
+Label the incenter I and circumcenter O.
+
+### Diagram 4: Inradius Formula Illustration
+
+Show:
+
+r = (a + b − c)/2
+
+Use a labeled right triangle.
+
+Explain the relationship between all three side lengths and the inradius.
+
+### Diagram 5: Circumradius Formula Illustration
+
+Show:
+
+R = c/2
+
+Clearly show the hypotenuse as the circle's diameter.
+
+Identify its midpoint.
+
+### Diagram 6: Incenter and Circumcenter Comparison
+
+Show:
+- Intersection of the three angle bisectors.
+- Intersection of the perpendicular bisectors.
+- Incenter I.
+- Circumcenter O.
+
+Explain why these centers are different.
+
+### Diagram 7: Complete 6–8–10 Example
+
+Show:
+- a = 6 cm.
+- b = 8 cm.
+- c = 10 cm.
+- r = 2 cm.
+- R = 5 cm.
+- Area = 24 cm².
+- Semiperimeter = 12 cm.
+
+Ensure the circle positions and dimensions are geometrically correct.
+
+**Diagram requirements:**
+
+For every diagram provide:
+
+- Suggested article placement.
+- Exact mathematical labels.
+- Construction instructions.
+- Descriptive alt text.
+- Figure caption.
+- Mobile-responsive SVG guidance.
+
+Prefer SVG diagrams.
+
+Do not use inaccurate AI-generated geometry diagrams.
+
+The incircle must be tangent to the three sides.
+
+The circumcircle must pass through all three vertices.
+
+Avoid decorative illustrations without mathematical educational value.
+
+---
+
+## 8. INTERNAL LINKING STRATEGY
+
+Use relevant internal links from RightTriangleSolver.com.
+
+Suggested destinations:
+
+1. https://www.righttrianglesolver.com/right-triangle-inradius-calculator/
+
+2. https://www.righttrianglesolver.com/right-triangle-circumradius-calculator/
+
+3. https://www.righttrianglesolver.com/right-triangle-area-calculator/
+
+4. https://www.righttrianglesolver.com/right-triangle-side-calculator/
+
+5. https://www.righttrianglesolver.com/right-triangle-perimeter-semiperimeter-calculator/
+
+Verify every destination URL before including it.
+
+Use approximately 5–7 contextual internal links.
+
+Use natural, descriptive anchor text.
+
+Do not force links into unrelated paragraphs.
+
+Do not repeatedly use the same exact-match anchor text.
+
+Do not link to the current page itself.
+
+---
+
+## 9. KEYWORD CANNIBALIZATION PREVENTION
+
+This page must primarily target:
+
+**Right Triangle Radius Calculator**
+
+Its main purpose is to introduce and provide access to both radius calculations.
+
+The page must clearly distinguish:
+
+**Inradius:**
+
+r = (a + b − c)/2
+
+**Circumradius:**
+
+R = c/2
+
+Avoid turning this combined calculator into a duplicate of the dedicated pages.
+
+The dedicated Inradius Calculator should focus specifically on:
+- Incircle geometry.
+- Incenter.
+- Tangency.
+- Inradius formula.
+- Detailed inradius examples.
+
+The dedicated Circumradius Calculator should focus specifically on:
+- Circumcircle geometry.
+- Circumcenter.
+- Hypotenuse as diameter.
+- Thales' theorem.
+- Detailed circumradius examples.
+
+This combined page should:
+- Introduce both calculations.
+- Compare their mathematical meaning.
+- Explain when to use each mode.
+- Provide a balanced overview.
+- Link to the dedicated calculators for deeper explanations.
+
+Do not create unnecessary repeated paragraphs between the three pages.
+
+Each page must have its own clear search intent.
+
+---
+
+## 10. HUMAN-LIKE WRITING REQUIREMENTS
+
+Write naturally, as an experienced mathematics teacher would.
+
+### Sentence Structure
+
+- Use short and medium-length sentences.
+- Vary sentence lengths naturally.
+- Avoid comma splices.
+- Use active voice where practical.
+- Break complex mathematical explanations into manageable steps.
+- Explain technical terminology before relying on it.
+
+### Paragraph Structure
+
+- Prefer 2–4 sentences per paragraph.
+- Keep paragraphs focused on one main idea.
+- Avoid walls of text.
+- Avoid repetitive openings.
+- Do not add unnecessary one-sentence paragraphs.
+
+### Tone
+
+- Educational.
+- Friendly.
+- Professional.
+- Clear.
+- Patient.
+- Mathematically accurate.
+
+Avoid generic AI phrases such as:
+
+- Unlock the secrets of geometry.
+- Dive into the fascinating world of mathematics.
+- Revolutionary mathematical calculator.
+- Game-changing solution.
+- Seamlessly calculate.
+- In today's fast-paced digital world.
+- Master geometry effortlessly.
+
+Avoid promotional filler.
+
+Do not repeat the same formula explanation in multiple sections.
+
+Every section must provide distinct educational value.
+
+---
+
+## 11. MATHEMATICAL ACCURACY REQUIREMENTS
+
+Mathematical accuracy is mandatory.
+
+Verify every formula, example, proof, and diagram.
+
+Use:
+
+**Inradius:**
+
+r = (a + b − c)/2
+
+r = Area/s
+
+r = ab/(a + b + c)
+
+**Circumradius:**
+
+R = c/2
+
+c = 2R
+
+**Area:**
+
+Area = ab/2
+
+**Semiperimeter:**
+
+s = (a + b + c)/2
+
+**Perimeter:**
+
+P = a + b + c
+
+**Pythagorean theorem:**
+
+a² + b² = c²
+
+**Altitude:**
+
+h = ab/c
+
+Ensure:
+
+- Inradius and circumradius use the correct symbols.
+- The inradius formula uses all three side lengths.
+- The circumradius formula uses the complete hypotenuse.
+- The incircle touches all three sides.
+- The circumcircle passes through all three vertices.
+- The incenter is the intersection of angle bisectors.
+- The circumcenter is the intersection of perpendicular bisectors.
+- The circumcenter lies at the midpoint of the hypotenuse.
+- All examples use valid right triangles.
+- All units are compatible.
+- Exact and approximate values are distinguished.
+- Every worked example is recalculated.
+- Diagrams follow consistent labeling.
+
+Never confuse r with R.
+
+Never apply the right-triangle circumradius shortcut to arbitrary non-right triangles.
+
+Never use an invalid side combination.
+
+Do not claim that the inradius is half the hypotenuse.
+
+Do not claim that the circumradius is calculated from all three sides using the inradius formula.
+
+---
+
+## 12. SEO METADATA REQUIREMENTS
+
+After completing the article, provide:
+
+### SEO Title
+
+Approximately 50–60 characters where practical.
+
+Include the primary keyword naturally.
+
+### Meta Description
+
+Approximately 145–160 characters.
+
+Mention both inradius and circumradius calculations.
+
+### Primary Focus Keyword
+
+Right Triangle Radius Calculator
+
+### Secondary Keywords
+
+Provide 8–12 natural variations.
+
+### Existing URL Slug
+
+right-triangle-radius-calculator
+
+Keep the existing live URL unchanged.
+
+Do not recommend changing the URL without a compelling technical reason.
+
+### Image SEO
+
+Provide descriptive alt text for all seven diagrams.
+
+Avoid keyword stuffing.
+
+---
+
+## 13. STRUCTURED DATA RECOMMENDATIONS
+
+Recommend appropriate structured data based on actual visible page functionality.
+
+Consider:
+
+- WebPage.
+- BreadcrumbList.
+- WebApplication.
+
+Only include factual properties that match the visible calculator.
+
+Do not invent:
+
+- Ratings.
+- Reviews.
+- Prices.
+- Authors.
+- User counts.
+- Unsupported features.
+- Download functionality.
+
+Keep JSON-LD separate from the visible article.
+
+Do not promise Google rich results.
+
+---
+
+## 14. FINAL QUALITY CONTROL
+
+Before submitting, perform a complete mathematical and editorial review.
+
+### Mathematical Accuracy
+
+- Verify the inradius formula.
+- Verify the circumradius formula.
+- Recalculate every example.
+- Verify the area-based inradius relationship.
+- Check the semiperimeter calculations.
+- Verify Pythagorean relationships.
+- Confirm that all example triangles are valid.
+- Check every unit conversion.
+- Verify all diagram labels.
+- Confirm correct incircle and circumcircle geometry.
+
+### Content Quality
+
+- No duplicated introduction.
+- No repetitive definitions.
+- No generic filler.
+- No artificial word-count expansion.
+- Both formulas are explained clearly.
+- The difference between the two circles is clear.
+- The two calculator modes are explained separately.
+- Examples demonstrate different situations.
+- Mathematical proofs are understandable to beginners.
+
+### SEO Quality
+
+- Primary keyword appears naturally.
+- Both secondary keywords receive appropriate coverage.
+- Search intent is fully addressed.
+- Internal links are contextual.
+- Content is distinct from dedicated radius pages.
+- Heading hierarchy is logical.
+- Metadata is descriptive.
+- No keyword stuffing.
+
+### User Experience
+
+- Calculator remains near the top.
+- Both formulas are immediately visible.
+- Calculator mode instructions are simple.
+- Diagrams are readable on mobile.
+- Worked examples are easy to follow.
+- Tables are responsive.
+- FAQs answer genuine questions.
+
+Remove weak, repetitive, or irrelevant content before finalizing.
+
+---
+
+## 15. REQUIRED FINAL OUTPUT
+
+Deliver the completed work in five parts.
+
+### PART A: SEO METADATA
+
+Provide:
+- SEO title.
+- Meta description.
+- Primary focus keyword.
+- Secondary keywords.
+- Existing URL slug.
+
+### PART B: COMPLETE EDUCATIONAL ARTICLE
+
+Write 3,500–4,000 words, exceeding this range only when additional information genuinely improves educational value.
+
+Include:
+- One H1.
+- Logical H2 and H3 headings.
+- Mathematical formulas.
+- Detailed explanations.
+- Worked examples for both radii.
+- Comparison tables.
+- Contextual internal links.
+- Practice problems.
+- FAQs.
+
+### PART C: EDUCATIONAL DIAGRAMS
+
+Provide all seven diagram specifications.
+
+Include:
+- Exact mathematical labels.
+- Construction instructions.
+- Suggested placement.
+- Alt text.
+- Captions.
+- Responsive SVG guidance.
+
+### PART D: STRUCTURED DATA
+
+Provide suitable schema recommendations and implementation guidance.
+
+Do not invent unsupported information.
+
+### PART E: FINAL EDITORIAL REPORT
+
+Include:
+- Approximate article word count.
+- Mathematical accuracy review.
+- Repetition review.
+- Readability review.
+- Internal linking review.
+- Search intent coverage.
+- Diagram accuracy review.
+- Calculator functionality consistency review.
+
+Keep the editorial report outside the published article.
+
+---
+
+## FINAL INSTRUCTION
+
+Create a comprehensive, original, mathematically accurate, human-friendly, and genuinely useful educational guide for the Right Triangle Radius Calculator.
+
+The main purpose must remain explaining and calculating both the inradius and circumradius of a right triangle.
+
+Give equal educational attention to the two calculator modes.
+
+Explain clearly:
+
+Inradius:
+
+r = (a + b − c)/2
+
+Circumradius:
+
+R = c/2
+
+Give particular attention to:
+
+- What an incircle represents.
+- What a circumcircle represents.
+- Why the incenter and circumcenter are different.
+- How the inradius is calculated from three sides.
+- Why the circumradius is half the hypotenuse.
+- How the two radii differ.
+- Which calculator mode should be selected.
+- How to verify both calculations.
+- How the radii relate to triangle area and perimeter.
+
+Use accurate geometric diagrams, varied numerical examples, and clear step-by-step mathematical proofs.
+
+Avoid keyword stuffing, unnecessary repetition, generic filler, artificial writing patterns, and unsupported mathematical claims.
+
+Every section must contribute unique educational value.
+
+The finished article should be suitable for students, teachers, and anyone learning right triangle and circle geometry.
+
+Prioritize mathematical accuracy, reader understanding, search intent, and genuine usefulness over word count and SEO scoring metrics.

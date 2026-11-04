@@ -87,7 +87,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
       "sec-intro": {
         "h2": "Como calcular a área de um triângulo retângulo usando seus dois catetos",
         "blocks": [
-          { "kind": "p", "text": "Tome [[a=6]], [[b=8]]. Aplique [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. O resultado nomeia a superfície plana total delimitada pelos três lados: vinte e quatro unidades quadradas. É exatamente isso que a Calculadora de Área do Triângulo Retângulo a Partir dos Catetos retorna para essas duas entradas." },
+          { "kind": "p", "text": "Tome [[a=6]], [[b=8]]. Aplique [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] O resultado nomeia a superfície plana total delimitada pelos três lados: vinte e quatro unidades quadradas. É exatamente isso que a Calculadora de Área do Triângulo Retângulo a Partir dos Catetos retorna para essas duas entradas." },
           { "kind": "p", "text": "A calculadora precisa apenas dos dois catetos, os lados que se encontram no ângulo reto. Como esses dois lados são perpendiculares, um serve de base e o outro de altura, então nenhuma outra medida é necessária. A hipotenusa não participa aqui. Multiplique os catetos, divida o produto por dois, e a área segue de [[K=\\frac{ab}{2}]]." },
           { "kind": "p", "text": "Este é um dos cálculos de área mais simples da geometria, porque ambas as medidas perpendiculares já estão em mãos. Ele aparece onde quer que um canto seja reto: layouts de construção, chapas de corte, canteiros de jardim e croquis de topografia se reduzem a dois catetos e um produto dividido por dois." }
         ]
@@ -127,13 +127,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
       "sec-formula": {
         "h2": "Por que a área de um triângulo retângulo é metade do produto de seus catetos?",
         "blocks": [
-          { "kind": "p", "text": "Comece com a regra geral: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. Para um triângulo retângulo, defina [[\\text{Base}=a]] e [[\\text{Height}=b]]. Como os dois catetos são perpendiculares, [[[\\boxed{K=\\frac{a\\times b}{2}}]]]. O restante desta seção mostra de onde vem essa divisão por dois, para que ela seja compreendida, não apenas memorizada." },
+          { "kind": "p", "text": "Comece com a regra geral: [[K=\\frac{\\text{base}\\times\\text{height}}{2}]]. Para um triângulo retângulo, defina [[\\text{Base}=a]] e [[\\text{Height}=b]]. Como os dois catetos são perpendiculares, [[[\\boxed{K=\\frac{a\\times b}{2}}]]] O restante desta seção mostra de onde vem essa divisão por dois, para que ela seja compreendida, não apenas memorizada." },
           { "kind": "h3", "text": "Entendendo o método do retângulo" },
-          { "kind": "p", "text": "Desenhe um retângulo de largura [[a]] e altura [[b]]. Sua área é [[K_{\\text{rectangle}}=a\\times b]]. Agora trace uma diagonal de um canto ao canto oposto. A diagonal corta o retângulo em dois triângulos que são cópias exatas um do outro, cada um com catetos [[a]] e [[b]] e um ângulo reto onde ficava o canto do retângulo. Ambos os triângulos têm áreas iguais, então cada um possui metade do retângulo: [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]." },
+          { "kind": "p", "text": "Desenhe um retângulo de largura [[a]] e altura [[b]]. Sua área é [[K_{\\text{rectangle}}=a\\times b]]. Agora trace uma diagonal de um canto ao canto oposto. A diagonal corta o retângulo em dois triângulos que são cópias exatas um do outro, cada um com catetos [[a]] e [[b]] e um ângulo reto onde ficava o canto do retângulo. Ambos os triângulos têm áreas iguais, então cada um possui metade do retângulo: [[[\\boxed{K_{\\text{triangle}}=\\frac{a\\times b}{2}}]]]" },
           { "kind": "h3", "text": "Por que dois triângulos retângulos idênticos formam um retângulo?" },
           { "kind": "p", "text": "Coloque duas cópias do triângulo de modo que suas hipotenusas se encontrem. Os catetos correspondentes se alinham: [[a]] contra [[a]], [[b]] contra [[b]]. Como os ângulos agudos de um triângulo retângulo são complementares ([[A+B=90^\\circ]]), os ângulos que se juntam em cada canto da forma combinada somam 90 graus em toda a volta. O resultado tem quatro ângulos retos e lados opostos iguais: um retângulo. Seus lados são exatamente os dois catetos, e é por isso que a área do retângulo é [[a\\times b]] e cada triângulo possui metade." },
           { "kind": "h3", "text": "Por que a divisão por dois é necessária?" },
-          { "kind": "p", "text": "Tome o retângulo de 6 por 8. Sua área é [[K=6\\times8=48]]. Cada um dos dois triângulos retângulos idênticos ocupa metade: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]]. Pular a divisão responde a uma pergunta diferente: a área do retângulo, não a do triângulo. A divisão por dois não é um fator de ajuste; é o passo que reduz o retângulo envolvente ao triângulo." },
+          { "kind": "p", "text": "Tome o retângulo de 6 por 8. Sua área é [[K=6\\times8=48]]. Cada um dos dois triângulos retângulos idênticos ocupa metade: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]] Pular a divisão responde a uma pergunta diferente: a área do retângulo, não a do triângulo. A divisão por dois não é um fator de ajuste; é o passo que reduz o retângulo envolvente ao triângulo." },
           { "kind": "h3", "text": "Prova geométrica usando coordenadas" },
           { "kind": "p", "text": "Para leitores à vontade com coordenadas, eis o mesmo resultado a partir da álgebra. Coloque o vértice do ângulo reto na origem e sejam os vértices [[C=(0,0)]], [[A=(a,0)]], [[B=(0,b)]]. O triângulo é a região limitada pelos dois eixos de coordenadas e pela reta que liga [[A]] a [[B]]. A base ao longo do eixo x tem comprimento [[a]], o lado vertical tem comprimento [[b]], e o triângulo retângulo delimitado preenche exatamente metade do retângulo de [[a]] por [[b]] que esses eixos demarcam. Logo [[[\\boxed{K=\\frac{ab}{2}}]]], a mesma fórmula, alcançada sem nenhuma maquinaria nova." }
         ],
@@ -170,13 +170,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Quatro triângulos retângulos clássicos mostram o método em tamanhos crescentes. Cada exemplo substitui na fórmula, e a hipotenusa aparece apenas como verificação opcional, nunca como entrada." },
           { "kind": "h3", "text": "Exemplo 1: triângulo retângulo 3-4-5" },
-          { "kind": "p", "text": "Dados [[a=3]], [[b=4]]. Passo 1: escreva a fórmula, [[K=\\frac{a\\times b}{2}]]. Passo 2: substitua, [[K=\\frac{3\\times4}{2}]]. Passo 3: multiplique, [[K=\\frac{12}{2}]]. Resposta final: [[[\\boxed{K=6\\text{ square units}}]]]. Verificação opcional: [[c=\\sqrt{3^2+4^2}=5]]. A hipotenusa confirma o trio familiar, mas não participa da área." },
+          { "kind": "p", "text": "Dados [[a=3]], [[b=4]]. Passo 1: escreva a fórmula, [[K=\\frac{a\\times b}{2}]]. Passo 2: substitua, [[K=\\frac{3\\times4}{2}]]. Passo 3: multiplique, [[K=\\frac{12}{2}]]. Resposta final: [[[\\boxed{K=6\\text{ square units}}]]] Verificação opcional: [[c=\\sqrt{3^2+4^2}=5]]. A hipotenusa confirma o trio familiar, mas não participa da área." },
           { "kind": "h3", "text": "Exemplo 2: triângulo retângulo 6-8-10" },
-          { "kind": "p", "text": "Dados [[a=6]], [[b=8]]. Então [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. Verificação pelo retângulo: o retângulo envolvente de 6 por 8 tem área 48, e o triângulo possui exatamente metade dela." },
+          { "kind": "p", "text": "Dados [[a=6]], [[b=8]]. Então [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] Verificação pelo retângulo: o retângulo envolvente de 6 por 8 tem área 48, e o triângulo possui exatamente metade dela." },
           { "kind": "h3", "text": "Exemplo 3: triângulo retângulo 5-12-13" },
-          { "kind": "p", "text": "Dados [[a=5]], [[b=12]]. Então [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]]. A hipotenusa de 13 nunca entra no cálculo; ela só importaria se um lado estivesse faltando." },
+          { "kind": "p", "text": "Dados [[a=5]], [[b=12]]. Então [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]] A hipotenusa de 13 nunca entra no cálculo; ela só importaria se um lado estivesse faltando." },
           { "kind": "h3", "text": "Exemplo 4: triângulo retângulo 8-15-17" },
-          { "kind": "p", "text": "Dados [[a=8]], [[b=15]]. Então [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]]. Os mesmos três passos, números maiores, lógica idêntica." },
+          { "kind": "p", "text": "Dados [[a=8]], [[b=15]]. Então [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]] Os mesmos três passos, números maiores, lógica idêntica." },
           { "kind": "h3", "text": "Comparação dos exemplos fundamentais" }
         ],
         "table": {
@@ -194,29 +194,29 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Doze situações resolvidas levam a fórmula da página para a oficina, o canteiro e o estúdio. Cada uma nomeia um painel, seção, perfil ou modelo simplificado em forma de triângulo retângulo, trabalha as duas entradas da calculadora pela fórmula e declara a suposição por trás dos números. Onde o objeto real é curvo ou irregular, o cálculo cobre apenas o triângulo modelado, e a área nunca representa por si só resistência, custo ou segurança." },
           { "kind": "h3", "text": "Exemplo 1: janela de vidro triangular" },
-          { "kind": "p", "text": "Uma janela de vidro triangular tem dimensões perpendiculares de [[a=3\\text{ m}]], [[b=4\\text{ m}]]. Substitua: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]]. O resultado representa a superfície plana de vidro antes da subtração das dimensões do caixilho. Suposição: o painel é um verdadeiro triângulo retângulo; a folga do caixilho é tratada separadamente." },
+          { "kind": "p", "text": "Uma janela de vidro triangular tem dimensões perpendiculares de [[a=3\\text{ m}]], [[b=4\\text{ m}]]. Substitua: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]] O resultado representa a superfície plana de vidro antes da subtração das dimensões do caixilho. Suposição: o painel é um verdadeiro triângulo retângulo; a folga do caixilho é tratada separadamente." },
           { "kind": "h3", "text": "Exemplo 2: suporte de aço" },
-          { "kind": "p", "text": "Um suporte de aço triangular tem [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]. Então [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. A área descreve a chapa plana e não determina sua capacidade de carga. Suposição: a peça do suporte é cortada como um triângulo retângulo; furos e dobras estão excluídos." },
+          { "kind": "p", "text": "Um suporte de aço triangular tem [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]. Então [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]] A área descreve a chapa plana e não determina sua capacidade de carga. Suposição: a peça do suporte é cortada como um triângulo retângulo; furos e dobras estão excluídos." },
           { "kind": "h3", "text": "Exemplo 3: perfil lateral de rampa triangular" },
-          { "kind": "p", "text": "Um perfil lateral de rampa simplificado tem [[a=6\\text{ m}]], [[b=8\\text{ m}]]. Então [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]]. Este é o perfil triangular vertical, não a superfície inclinada de caminhada. Suposição: o perfil é modelado com um canto reto na base." },
+          { "kind": "p", "text": "Um perfil lateral de rampa simplificado tem [[a=6\\text{ m}]], [[b=8\\text{ m}]]. Então [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]] Este é o perfil triangular vertical, não a superfície inclinada de caminhada. Suposição: o perfil é modelado com um canto reto na base." },
           { "kind": "h3", "text": "Exemplo 4: suporte de telhado triangular" },
-          { "kind": "p", "text": "Uma seção de suporte de telhado triangular tem [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]. Então [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. A área representa a seção triangular plana, útil para estimativas de material. Suposição: a seção é modelada como triângulo retângulo; a geometria completa do telhado pode diferir." },
+          { "kind": "p", "text": "Uma seção de suporte de telhado triangular tem [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]. Então [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]] A área representa a seção triangular plana, útil para estimativas de material. Suposição: a seção é modelada como triângulo retângulo; a geometria completa do telhado pode diferir." },
           { "kind": "h3", "text": "Exemplo 5: seção de jardim em triângulo retângulo" },
-          { "kind": "p", "text": "Um jardim contém uma seção em triângulo retângulo com [[a=7\\text{ m}]], [[b=24\\text{ m}]]. Então [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]]. O resultado ajuda a estimar a área disponível para plantio ou grama. Suposição: as bordas do canteiro são retas e se encontram em ângulo reto." },
+          { "kind": "p", "text": "Um jardim contém uma seção em triângulo retângulo com [[a=7\\text{ m}]], [[b=24\\text{ m}]]. Então [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]] O resultado ajuda a estimar a área disponível para plantio ou grama. Suposição: as bordas do canteiro são retas e se encontram em ângulo reto." },
           { "kind": "h3", "text": "Exemplo 6: vela de tecido triangular" },
-          { "kind": "p", "text": "Um painel de tecido em triângulo retângulo tem [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]. Então [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. Isso representa a seção plana de tecido triangular antes das costuras e das folgas de material. Suposição: a vela é modelada plana; velas reais curvam-se sob carga." },
+          { "kind": "p", "text": "Um painel de tecido em triângulo retângulo tem [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]. Então [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]] Isso representa a seção plana de tecido triangular antes das costuras e das folgas de material. Suposição: a vela é modelada plana; velas reais curvam-se sob carga." },
           { "kind": "h3", "text": "Exemplo 7: gabarito de corte em compensado" },
-          { "kind": "p", "text": "Um gabarito de compensado em triângulo retângulo tem [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]. Então [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. O resultado ajuda a estimar as necessidades de material antes do desperdício de corte. Suposição: o gabarito é um verdadeiro triângulo retângulo; a espessura do corte da serra e as sobras são extras." },
+          { "kind": "p", "text": "Um gabarito de compensado em triângulo retângulo tem [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]. Então [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]] O resultado ajuda a estimar as necessidades de material antes do desperdício de corte. Suposição: o gabarito é um verdadeiro triângulo retângulo; a espessura do corte da serra e as sobras são extras." },
           { "kind": "h3", "text": "Exemplo 8: painel de sinalização triangular" },
-          { "kind": "p", "text": "Um painel de sinalização triangular tem dimensões perpendiculares de [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]. Então [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]]. Isso representa a área plana imprimível ou pintável. Suposição: a face do painel é plana e em triângulo retângulo; o hardware de montagem está excluído." },
+          { "kind": "p", "text": "Um painel de sinalização triangular tem dimensões perpendiculares de [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]. Então [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]] Isso representa a área plana imprimível ou pintável. Suposição: a face do painel é plana e em triângulo retângulo; o hardware de montagem está excluído." },
           { "kind": "h3", "text": "Exemplo 9: seção de levantamento topográfico" },
-          { "kind": "p", "text": "Uma seção de terreno simplificada em triângulo retângulo tem [[a=9\\text{ m}]], [[b=40\\text{ m}]]. Então [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]]. A fórmula calcula a área da seção triangular levantada. Suposição: a seção é modelada com um canto reto; um lote irregular precisa ser subdividido em formas mais simples." },
+          { "kind": "p", "text": "Uma seção de terreno simplificada em triângulo retângulo tem [[a=9\\text{ m}]], [[b=40\\text{ m}]]. Então [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]] A fórmula calcula a área da seção triangular levantada. Suposição: a seção é modelada com um canto reto; um lote irregular precisa ser subdividido em formas mais simples." },
           { "kind": "h3", "text": "Exemplo 10: suporte de toldo triangular" },
-          { "kind": "p", "text": "Uma seção de suporte de toldo em triângulo retângulo tem [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]. Então [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. O resultado representa a seção triangular plana modelada, não necessariamente toda a superfície de um toldo irregular. Suposição: a geometria do suporte é simplificada para um triângulo retângulo." },
+          { "kind": "p", "text": "Uma seção de suporte de toldo em triângulo retângulo tem [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]. Então [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]] O resultado representa a seção triangular plana modelada, não necessariamente toda a superfície de um toldo irregular. Suposição: a geometria do suporte é simplificada para um triângulo retângulo." },
           { "kind": "h3", "text": "Exemplo 11: painel industrial de suporte" },
-          { "kind": "p", "text": "Um painel industrial em triângulo retângulo tem [[a=11\\text{ m}]], [[b=60\\text{ m}]]. Então [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]]. A área descreve o painel geométrico plano, e não seu desempenho estrutural. Suposição: o painel é modelado como triângulo retângulo; espessura e fixações são questões à parte." },
+          { "kind": "p", "text": "Um painel industrial em triângulo retângulo tem [[a=11\\text{ m}]], [[b=60\\text{ m}]]. Então [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]] A área descreve o painel geométrico plano, e não seu desempenho estrutural. Suposição: o painel é modelado como triângulo retângulo; espessura e fixações são questões à parte." },
           { "kind": "h3", "text": "Exemplo 12: seção de extremidade de telhado de armazém" },
-          { "kind": "p", "text": "Um armazém tem uma seção simplificada de extremidade de telhado em triângulo retângulo com [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]. Então [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. O resultado ajuda a estimar a área plana da extremidade triangular, por exemplo ao precificar o revestimento. Suposição: a empena é modelada como triângulo retângulo." },
+          { "kind": "p", "text": "Um armazém tem uma seção simplificada de extremidade de telhado em triângulo retângulo com [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]. Então [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]] O resultado ajuda a estimar a área plana da extremidade triangular, por exemplo ao precificar o revestimento. Suposição: a empena é modelada como triângulo retângulo." },
           { "kind": "h3", "text": "Comparação dos exemplos práticos" }
         ],
         "table": {
@@ -242,7 +242,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "O Teorema de Pitágoras afirma [[[\\boxed{a^2+b^2=c^2}]]]: os catetos [[a]] e [[b]] determinam a hipotenusa [[c]]. Ele responde a uma pergunta sobre comprimentos de lados, enquanto a fórmula da área mede a superfície delimitada. Os dois estão relacionados, mas resolvem problemas diferentes, e o cálculo da área aqui nunca depende do teorema." },
           { "kind": "h3", "text": "Calculando a hipotenusa a partir de ambos os catetos" },
-          { "kind": "p", "text": "Com [[a=6]] e [[b=8]], a hipotenusa é [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]]. A área é então calculada separadamente: [[K=\\frac{6\\times8}{2}=24]]. A hipotenusa é uma informação extra opcional para este cálculo de área, um fato útil em vez de um passo obrigatório." },
+          { "kind": "p", "text": "Com [[a=6]] e [[b=8]], a hipotenusa é [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]] A área é então calculada separadamente: [[K=\\frac{6\\times8}{2}=24]]. A hipotenusa é uma informação extra opcional para este cálculo de área, um fato útil em vez de um passo obrigatório." },
           { "kind": "h3", "text": "O Teorema de Pitágoras pode substituir a fórmula da área?" },
           { "kind": "p", "text": "Não. O Teorema de Pitágoras determina relações entre comprimentos de lados; a fórmula da área converte dois lados perpendiculares em superfície delimitada. Um responde quanto mede, o outro responde quanta superfície. Eles cooperam: quando apenas um cateto e a hipotenusa são conhecidos, o teorema recupera primeiro o cateto que falta, e então a fórmula da área assume. Nenhum substitui o outro." },
           { "kind": "h3", "text": "Quando o Teorema de Pitágoras é útil?" },
@@ -252,9 +252,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
       "sec-missing-leg": {
         "h2": "Como encontrar um cateto desconhecido quando a área do triângulo é conhecida",
         "blocks": [
-          { "kind": "p", "text": "A fórmula da área pode ser lida nos dois sentidos. Comece com [[K=\\frac{ab}{2}]]. Multiplique ambos os lados por 2: [[2K=ab]]. Divida por [[a]]: [[[\\boxed{b=\\frac{2K}{a}}]]]. Da mesma forma, [[[\\boxed{a=\\frac{2K}{b}}]]]. A mesma relação, rearranjada, recupera qualquer cateto desconhecido." },
+          { "kind": "p", "text": "A fórmula da área pode ser lida nos dois sentidos. Comece com [[K=\\frac{ab}{2}]]. Multiplique ambos os lados por 2: [[2K=ab]]. Divida por [[a]]: [[[\\boxed{b=\\frac{2K}{a}}]]] Da mesma forma, [[[\\boxed{a=\\frac{2K}{b}}]]] A mesma relação, rearranjada, recupera qualquer cateto desconhecido." },
           { "kind": "h3", "text": "Exemplo resolvido" },
-          { "kind": "p", "text": "Suponha [[K=24\\text{ cm}^2]] e [[a=6\\text{ cm}]]. Então [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]]. As unidades permanecem consistentes: centímetros quadrados divididos por centímetros dão centímetros. Este uso reverso é útil para verificar uma área informada ou recuperar uma dimensão de projetos, mas note que é um rearranjo didático, não um modo de entrada adicional na calculadora acima, que continua recebendo os dois catetos." }
+          { "kind": "p", "text": "Suponha [[K=24\\text{ cm}^2]] e [[a=6\\text{ cm}]]. Então [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]] As unidades permanecem consistentes: centímetros quadrados divididos por centímetros dão centímetros. Este uso reverso é útil para verificar uma área informada ou recuperar uma dimensão de projetos, mas note que é um rearranjo didático, não um modo de entrada adicional na calculadora acima, que continua recebendo os dois catetos." }
         ]
       },
       "sec-scaling": {
@@ -262,11 +262,11 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "Como [[K=\\frac{ab}{2}]] é um produto, esticar os catetos estica a área de maneiras previsíveis. Os padrões abaixo valem a pena conhecer antes de redimensionar qualquer projeto triangular." },
           { "kind": "h3", "text": "O que acontece quando um cateto dobra?" },
-          { "kind": "p", "text": "Mantenha [[a]] fixo e dobre [[b]]. Então [[K_1=\\frac{ab}{2}]] se torna [[K_2=\\frac{a(2b)}{2}]], logo [[[\\boxed{K_2=2K_1}]]]. Dobrar apenas um cateto dobra a área. Uma verificação concreta: o triângulo de 3 por 4 tem [[K=6]]; esticar um cateto para 3 por 8 dá [[K=12]]." },
+          { "kind": "p", "text": "Mantenha [[a]] fixo e dobre [[b]]. Então [[K_1=\\frac{ab}{2}]] se torna [[K_2=\\frac{a(2b)}{2}]], logo [[[\\boxed{K_2=2K_1}]]] Dobrar apenas um cateto dobra a área. Uma verificação concreta: o triângulo de 3 por 4 tem [[K=6]]; esticar um cateto para 3 por 8 dá [[K=12]]." },
           { "kind": "h3", "text": "O que acontece quando ambos os catetos dobram?" },
-          { "kind": "p", "text": "Agora dobre ambos: [[K_2=\\frac{(2a)(2b)}{2}]], o que simplifica para [[[\\boxed{K_2=4K_1}]]]. Dobrar ambas as dimensões perpendiculares torna a área quatro vezes maior, não duas. O triângulo de 3 por 4 ([[K=6]]) escalado para 6 por 8 dá [[K=24]], exatamente quatro vezes o original." },
+          { "kind": "p", "text": "Agora dobre ambos: [[K_2=\\frac{(2a)(2b)}{2}]], o que simplifica para [[[\\boxed{K_2=4K_1}]]] Dobrar ambas as dimensões perpendiculares torna a área quatro vezes maior, não duas. O triângulo de 3 por 4 ([[K=6]]) escalado para 6 por 8 dá [[K=24]], exatamente quatro vezes o original." },
           { "kind": "h3", "text": "O que acontece quando ambos os catetos são escalados?" },
-          { "kind": "p", "text": "Multiplique cada cateto por um fator de escala [[k]]: [[K_2=\\frac{(ka)(kb)}{2}]], portanto [[[\\boxed{K_2=k^2K_1}]]]. A área cresce com o quadrado do fator de escala. Exemplo prático: escale o triângulo de 6 por 8 por 1,5 para obter 9 por 12. Então [[K=\\frac{9\\times12}{2}=54]], e [[24\\times1.5^2=24\\times2.25=54]]. É por isso que as estimativas de material saltam mais rápido que as dimensões lineares: dobre cada comprimento e serão necessárias quatro vezes a chapa." },
+          { "kind": "p", "text": "Multiplique cada cateto por um fator de escala [[k]]: [[K_2=\\frac{(ka)(kb)}{2}]], portanto [[[\\boxed{K_2=k^2K_1}]]] A área cresce com o quadrado do fator de escala. Exemplo prático: escale o triângulo de 6 por 8 por 1,5 para obter 9 por 12. Então [[K=\\frac{9\\times12}{2}=54]], e [[24\\times1.5^2=24\\times2.25=54]]. É por isso que as estimativas de material saltam mais rápido que as dimensões lineares: dobre cada comprimento e serão necessárias quatro vezes a chapa." },
           { "kind": "h3", "text": "Dois triângulos retângulos diferentes podem ter a mesma área?" },
           { "kind": "p", "text": "Sim. Compare o triângulo 1, [[a=3]], [[b=4]]: [[K=\\frac{3\\times4}{2}=6]]. Triângulo 2, [[a=2]], [[b=6]]: [[K=\\frac{2\\times6}{2}=6]]. Formas diferentes delimitam a mesma área sempre que o produto de seus catetos for igual. Um triângulo curto e largo e um alto e estreito podem cobrir superfícies idênticas, o que importa ao encaixar painéis em espaços diferentes." }
         ],
@@ -277,7 +277,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "h2": "Por que não se pode usar a fórmula dos dois catetos em todo triângulo?",
         "blocks": [
           { "kind": "p", "text": "A fórmula [[K=\\frac{ab}{2}]] funciona porque os dois catetos são perpendiculares. Para um triângulo geral, dois comprimentos de lado sozinhos são insuficientes: o ângulo incluído entre eles, ou a altura correspondente, também precisa ser conhecido." },
-          { "kind": "p", "text": "A regra geral é [[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]], onde [[C]] é o ângulo incluído entre os lados [[a]] e [[b]]. Para um triângulo retângulo, [[C=90^\\circ]] e [[\\sin(90^\\circ)=1]]. Portanto [[K=\\frac{ab\\times1}{2}]], que é [[[\\boxed{K=\\frac{ab}{2}}]]]. A fórmula do triângulo retângulo é a fórmula geral com o fator seno igual a 1. Para qualquer outro ângulo, o seno encolhe o produto, e é por isso que a fórmula dos catetos nunca deve ser aplicada a um triângulo não retângulo: ela trata silenciosamente [[\\sin(C)]] como 1 quando não é." }
+          { "kind": "p", "text": "A regra geral é [[[\\boxed{K=\\frac{ab\\sin(C)}{2}}]]], onde [[C]] é o ângulo incluído entre os lados [[a]] e [[b]]. Para um triângulo retângulo, [[C=90^\\circ]] e [[\\sin(90^\\circ)=1]]. Portanto [[K=\\frac{ab\\times1}{2}]], que é [[[\\boxed{K=\\frac{ab}{2}}]]] A fórmula do triângulo retângulo é a fórmula geral com o fator seno igual a 1. Para qualquer outro ângulo, o seno encolhe o produto, e é por isso que a fórmula dos catetos nunca deve ser aplicada a um triângulo não retângulo: ela trata silenciosamente [[\\sin(C)]] como 1 quando não é." }
         ]
       },
       "sec-units": {
@@ -287,9 +287,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "Por que o resultado usa unidades quadradas" },
           { "kind": "p", "text": "A área conta quadrados unitários cobrindo a superfície: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]], [[\\text{m}\\times\\text{m}=\\text{m}^2]], [[\\text{ft}\\times\\text{ft}=\\text{ft}^2]]. A unidade é sempre a unidade de comprimento ao quadrado, porque o produto de dois comprimentos é uma contagem de quadrados. Informar uma área como 24 m é um erro de categoria: 24 m é um comprimento, enquanto 24 m² é uma superfície." },
           { "kind": "h3", "text": "Convertendo unidades diferentes antes de calcular" },
-          { "kind": "p", "text": "Tome [[a=3\\text{ ft}]] e [[b=24\\text{ inches}]]. Converta primeiro: [[24\\text{ inches}=2\\text{ ft}]]. Então [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]]. Sem conversão, o produto bruto 72 não tem significado limpo: não é nem pés quadrados nem polegadas quadradas. Converta primeiro, multiplique depois, e a unidade da resposta segue automaticamente." },
+          { "kind": "p", "text": "Tome [[a=3\\text{ ft}]] e [[b=24\\text{ inches}]]. Converta primeiro: [[24\\text{ inches}=2\\text{ ft}]]. Então [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]] Sem conversão, o produto bruto 72 não tem significado limpo: não é nem pés quadrados nem polegadas quadradas. Converta primeiro, multiplique depois, e a unidade da resposta segue automaticamente." },
           { "kind": "h3", "text": "Calculando com medidas decimais" },
-          { "kind": "p", "text": "A mesma fórmula lida com decimais sem nenhuma mudança. Dados [[a=3.5]] e [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]]. Números inteiros, decimais e medidas finas de oficina passam todos pelo mesmo multiplicar-e-dividir-por-dois. Mantenha as casas decimais que a medição suporta e deixe a calculadora cuidar da aritmética." },
+          { "kind": "p", "text": "A mesma fórmula lida com decimais sem nenhuma mudança. Dados [[a=3.5]] e [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]] Números inteiros, decimais e medidas finas de oficina passam todos pelo mesmo multiplicar-e-dividir-por-dois. Mantenha as casas decimais que a medição suporta e deixe a calculadora cuidar da aritmética." },
           { "kind": "h3", "text": "Por que o arredondamento antecipado deve ser evitado" },
           { "kind": "p", "text": "Arredonde as entradas e o erro atravessa a multiplicação até a resposta. Um cateto medido como 9.2 não deve virar 9 antes de multiplicar; os 0.2 perdidos por unidade se acumulam ao longo do produto. Mantenha a precisão total nos passos intermediários e arredonde apenas o resultado final, conforme a exatidão que as medidas justificam. Precisão mantida cedo é exatidão entregue no fim." }
         ]
@@ -467,7 +467,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
       "sec-intro": {
         "h2": "দুটি পাদ ব্যবহার করে সমকোণী ত্রিভুজের ক্ষেত্রফল কীভাবে নির্ণয় করবেন",
         "blocks": [
-          { "kind": "p", "text": "ধরুন [[a=6]], [[b=8]]। প্রয়োগ করুন [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. ফলাফল তিনটি বাহু দিয়ে আবদ্ধ মোট সমতল পৃষ্ঠের নাম দেয়: চব্বিশ বর্গ একক। এই দুটি ইনপুটের জন্য পাদ থেকে সমকোণী ত্রিভুজ ক্ষেত্রফল ক্যালকুলেটর ঠিক এটাই ফেরত দেয়।" },
+          { "kind": "p", "text": "ধরুন [[a=6]], [[b=8]]। প্রয়োগ করুন [[K=\\frac{6\\times8}{2}]]: [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] ফলাফল তিনটি বাহু দিয়ে আবদ্ধ মোট সমতল পৃষ্ঠের নাম দেয়: চব্বিশ বর্গ একক। এই দুটি ইনপুটের জন্য পাদ থেকে সমকোণী ত্রিভুজ ক্ষেত্রফল ক্যালকুলেটর ঠিক এটাই ফেরত দেয়।" },
           { "kind": "p", "text": "ক্যালকুলেটরের শুধু দুটি পাদ দরকার, সেই বাহু দুটি যা সমকোণে মিলিত হয়। যেহেতু এই দুটি বাহু লম্ব, একটি ভূমি আর অন্যটি উচ্চতা হিসেবে কাজ করে, তাই আর কোনো মাপের প্রয়োজন নেই। অতিভুজ এখানে কোনো ভূমিকা পালন করে না। পাদ দুটি গুণ করুন, গুণফলকে অর্ধেক করুন, আর ক্ষেত্রফল আসে [[K=\\frac{ab}{2}]] থেকে।" },
           { "kind": "p", "text": "জ্যামিতির সবচেয়ে সহজ ক্ষেত্রফল নির্ণয়গুলোর একটি এটি, কারণ দুটি লম্ব মাপই ইতিমধ্যে হাতে আছে। যেখানেই কোনা খাঁটি থাকে সেখানেই এটি দেখা যায়: নির্মাণের লেআউট, কাটিং শিট, বাগানের বেড ও জরিপের স্কেচ সবই দুটি পাদ আর একটি অর্ধেক গুণফলে নেমে আসে।" }
         ]
@@ -513,7 +513,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "দুটি অভিন্ন সমকোণী ত্রিভুজ কেন আয়তক্ষেত্র গঠন করে?" },
           { "kind": "p", "text": "ত্রিভুজের দুটি অনুলিপি এমনভাবে রাখুন যাতে তাদের অতিভুজ মিলে যায়। মিলে যাওয়া পাদগুলো সারিবদ্ধ হয়: [[a]]-এর বিপরীতে [[a]], [[b]]-এর বিপরীতে [[b]]। যেহেতু সমকোণী ত্রিভুজের সূক্ষ্মকোণগুলো পূরক ([[A+B=90^\\circ]]), মিলিত আকৃতির প্রতিটি কোনায় যুক্ত হওয়া কোণগুলো চারদিকে মিলে 90 ডিগ্রি হয়। ফলাফলের চারটি সমকোণ ও বিপরীত বাহু সমান: একটি আয়তক্ষেত্র। এর বাহুগুলো ঠিক দুটি পাদ, আর এ কারণেই আয়তক্ষেত্রের ক্ষেত্রফল [[a\\times b]] এবং প্রতিটি ত্রিভুজ অর্ধেকের মালিক।" },
           { "kind": "h3", "text": "দুই দিয়ে ভাগ কেন প্রয়োজন?" },
-          { "kind": "p", "text": "6-বাই-8 আয়তক্ষেত্রটি নিন। এর ক্ষেত্রফল [[K=6\\times8=48]]। দুটি অভিন্ন সমকোণী ত্রিভুজের প্রতিটি অর্ধেক জায়গা নেয়: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]]. ভাগ এড়িয়ে গেলে ভিন্ন প্রশ্নের উত্তর হয়: ত্রিভুজের নয়, আয়তক্ষেত্রের ক্ষেত্রফল। দুই দিয়ে ভাগ কোনো কৌশলগত গুণক নয়; এটি সেই ধাপ যা আবদ্ধ আয়তক্ষেত্রকে ছেঁটে ত্রিভুজে নামিয়ে আনে।" },
+          { "kind": "p", "text": "6-বাই-8 আয়তক্ষেত্রটি নিন। এর ক্ষেত্রফল [[K=6\\times8=48]]। দুটি অভিন্ন সমকোণী ত্রিভুজের প্রতিটি অর্ধেক জায়গা নেয়: [[K=\\frac{48}{2}]], [[[\\boxed{K=24}]]] ভাগ এড়িয়ে গেলে ভিন্ন প্রশ্নের উত্তর হয়: ত্রিভুজের নয়, আয়তক্ষেত্রের ক্ষেত্রফল। দুই দিয়ে ভাগ কোনো কৌশলগত গুণক নয়; এটি সেই ধাপ যা আবদ্ধ আয়তক্ষেত্রকে ছেঁটে ত্রিভুজে নামিয়ে আনে।" },
           { "kind": "h3", "text": "স্থানাঙ্ক ব্যবহার করে জ্যামিতিক প্রমাণ" },
           { "kind": "p", "text": "স্থানাঙ্কে স্বচ্ছন্দ পাঠকদের জন্য একই ফলাফল বীজগণিত থেকে। সমকোণের শীর্ষবিন্দুকে মূলবিন্দুতে রেখে শীর্ষবিন্দুগুলো ধরুন [[C=(0,0)]], [[A=(a,0)]], [[B=(0,b)]]। ত্রিভুজটি হলো দুটি স্থানাঙ্ক অক্ষ ও [[A]] থেকে [[B]]-এ যুক্ত রেখা দিয়ে আবদ্ধ অঞ্চল। x-অক্ষ বরাবর ভূমির দৈর্ঘ্য [[a]], উল্লম্ব বাহুর দৈর্ঘ্য [[b]], আর আবদ্ধ সমকোণী ত্রিভুজ অক্ষগুলো যে [[a]]-বাই-[[b]] আয়তক্ষেত্র চিহ্নিত করে তার ঠিক অর্ধেক পূর্ণ করে। সুতরাং [[[\\boxed{K=\\frac{ab}{2}}]]], একই সূত্র, কোনো নতুন যন্ত্রপাতি ছাড়াই পৌঁছানো।" }
         ],
@@ -550,13 +550,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "চারটি ক্লাসিক সমকোণী ত্রিভুজ ক্রমবর্ধমান আকারে পদ্ধতি দেখায়। প্রতিটি উদাহরণ সূত্রে প্রতিস্থাপন করে, আর অতিভুজ শুধু ঐচ্ছিক যাচাই হিসেবে আসে, কখনো ইনপুট হিসেবে নয়।" },
           { "kind": "h3", "text": "উদাহরণ 1: 3-4-5 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "দেওয়া আছে [[a=3]], [[b=4]]। ধাপ 1: সূত্রটি লিখুন, [[K=\\frac{a\\times b}{2}]]। ধাপ 2: প্রতিস্থাপন করুন, [[K=\\frac{3\\times4}{2}]]। ধাপ 3: গুণ করুন, [[K=\\frac{12}{2}]]। চূড়ান্ত উত্তর: [[[\\boxed{K=6\\text{ square units}}]]]. ঐচ্ছিক যাচাই: [[c=\\sqrt{3^2+4^2}=5]]। অতিভুজ পরিচিত ত্রয়ীটি নিশ্চিত করে কিন্তু ক্ষেত্রফলে কোনো ভূমিকা রাখে না।" },
+          { "kind": "p", "text": "দেওয়া আছে [[a=3]], [[b=4]]। ধাপ 1: সূত্রটি লিখুন, [[K=\\frac{a\\times b}{2}]]। ধাপ 2: প্রতিস্থাপন করুন, [[K=\\frac{3\\times4}{2}]]। ধাপ 3: গুণ করুন, [[K=\\frac{12}{2}]]। চূড়ান্ত উত্তর: [[[\\boxed{K=6\\text{ square units}}]]] ঐচ্ছিক যাচাই: [[c=\\sqrt{3^2+4^2}=5]]। অতিভুজ পরিচিত ত্রয়ীটি নিশ্চিত করে কিন্তু ক্ষেত্রফলে কোনো ভূমিকা রাখে না।" },
           { "kind": "h3", "text": "উদাহরণ 2: 6-8-10 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "দেওয়া আছে [[a=6]], [[b=8]]। তাহলে [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]]. আয়তক্ষেত্র যাচাই: আবদ্ধ 6-বাই-8 আয়তক্ষেত্রের ক্ষেত্রফল 48, আর ত্রিভুজ তার ঠিক অর্ধেকের মালিক।" },
+          { "kind": "p", "text": "দেওয়া আছে [[a=6]], [[b=8]]। তাহলে [[K=\\frac{6\\times8}{2}]], [[K=\\frac{48}{2}]], [[[\\boxed{K=24\\text{ square units}}]]] আয়তক্ষেত্র যাচাই: আবদ্ধ 6-বাই-8 আয়তক্ষেত্রের ক্ষেত্রফল 48, আর ত্রিভুজ তার ঠিক অর্ধেকের মালিক।" },
           { "kind": "h3", "text": "উদাহরণ 3: 5-12-13 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "দেওয়া আছে [[a=5]], [[b=12]]। তাহলে [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]]. 13 অতিভুজ কখনো হিসাবে ঢোকে না; কোনো বাহু অনুপস্থিত থাকলেই কেবল এটি গুরুত্বপূর্ণ হতো।" },
+          { "kind": "p", "text": "দেওয়া আছে [[a=5]], [[b=12]]। তাহলে [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ square units}}]]] 13 অতিভুজ কখনো হিসাবে ঢোকে না; কোনো বাহু অনুপস্থিত থাকলেই কেবল এটি গুরুত্বপূর্ণ হতো।" },
           { "kind": "h3", "text": "উদাহরণ 4: 8-15-17 সমকোণী ত্রিভুজ" },
-          { "kind": "p", "text": "দেওয়া আছে [[a=8]], [[b=15]]। তাহলে [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]]. একই তিনটি ধাপ, বড় সংখ্যা, অভিন্ন যুক্তি।" },
+          { "kind": "p", "text": "দেওয়া আছে [[a=8]], [[b=15]]। তাহলে [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ square units}}]]] একই তিনটি ধাপ, বড় সংখ্যা, অভিন্ন যুক্তি।" },
           { "kind": "h3", "text": "ভিত্তিমূলক উদাহরণগুলোর তুলনা" }
         ],
         "table": {
@@ -574,29 +574,29 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "বারোটি সমাধানকৃত পরিস্থিতি সূত্রটিকে পৃষ্ঠা থেকে কর্মশালা, সাইট ও স্টুডিওতে নিয়ে যায়। প্রতিটি একটি সমকোণী ত্রিভুজাকার প্যানেল, অংশ, প্রোফাইল বা সরলীকৃত মডেলের নাম দেয়, সূত্রের মাধ্যমে ক্যালকুলেটরের দুটি ইনপুট কাজ করে, এবং সংখ্যাগুলোর পেছনের অনুমানটি বলে। বাস্তব বস্তু বাঁকা বা অনিয়মিত হলে হিসাব শুধু মডেলকৃত ত্রিভুজটিকে কভার করে, আর ক্ষেত্রফল কখনো নিজে থেকে শক্তি, খরচ বা নিরাপত্তার প্রতিনিধি হয় না।" },
           { "kind": "h3", "text": "উদাহরণ 1: ত্রিভুজাকার কাচের জানালা" },
-          { "kind": "p", "text": "একটি ত্রিভুজাকার কাচের জানালার লম্ব মাত্রা [[a=3\\text{ m}]], [[b=4\\text{ m}]]। প্রতিস্থাপন করুন: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]]. ফলাফল ফ্রেমের মাত্রা বাদ দেওয়ার আগের সমতল কাচের পৃষ্ঠ বোঝায়। অনুমান: প্যানটি প্রকৃত সমকোণী ত্রিভুজ; ফ্রেমের ছাড় আলাদাভাবে ধরা হয়।" },
+          { "kind": "p", "text": "একটি ত্রিভুজাকার কাচের জানালার লম্ব মাত্রা [[a=3\\text{ m}]], [[b=4\\text{ m}]]। প্রতিস্থাপন করুন: [[K=\\frac{3\\times4}{2}]], [[[\\boxed{K=6\\text{ m}^2}]]] ফলাফল ফ্রেমের মাত্রা বাদ দেওয়ার আগের সমতল কাচের পৃষ্ঠ বোঝায়। অনুমান: প্যানটি প্রকৃত সমকোণী ত্রিভুজ; ফ্রেমের ছাড় আলাদাভাবে ধরা হয়।" },
           { "kind": "h3", "text": "উদাহরণ 2: ইস্পাতের সাপোর্ট ব্র্যাকেট" },
-          { "kind": "p", "text": "একটি ত্রিভুজাকার ইস্পাত ব্র্যাকেটের [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]। তাহলে [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]]. ক্ষেত্রফল সমতল প্লেট বর্ণনা করে, এর ভারবহন ক্ষমতা নির্ধারণ করে না। অনুমান: ব্র্যাকেটের খালি অংশ সমকোণী ত্রিভুজ হিসেবে কাটা; বোল্টের ছিদ্র ও বাঁক বাদ।" },
+          { "kind": "p", "text": "একটি ত্রিভুজাকার ইস্পাত ব্র্যাকেটের [[a=5\\text{ cm}]], [[b=12\\text{ cm}]]। তাহলে [[K=\\frac{5\\times12}{2}]], [[[\\boxed{K=30\\text{ cm}^2}]]] ক্ষেত্রফল সমতল প্লেট বর্ণনা করে, এর ভারবহন ক্ষমতা নির্ধারণ করে না। অনুমান: ব্র্যাকেটের খালি অংশ সমকোণী ত্রিভুজ হিসেবে কাটা; বোল্টের ছিদ্র ও বাঁক বাদ।" },
           { "kind": "h3", "text": "উদাহরণ 3: ত্রিভুজাকার র‌্যাম্পের পার্শ্ব প্রোফাইল" },
-          { "kind": "p", "text": "একটি সরলীকৃত র‌্যাম্প পার্শ্ব প্রোফাইলের [[a=6\\text{ m}]], [[b=8\\text{ m}]]। তাহলে [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]]. এটি উল্লম্ব ত্রিভুজাকার পার্শ্ব প্রোফাইল, ঢালু হাঁটার পৃষ্ঠ নয়। অনুমান: প্রোফাইলটি গোড়ায় খাঁটি কোনা দিয়ে মডেল করা।" },
+          { "kind": "p", "text": "একটি সরলীকৃত র‌্যাম্প পার্শ্ব প্রোফাইলের [[a=6\\text{ m}]], [[b=8\\text{ m}]]। তাহলে [[K=\\frac{6\\times8}{2}]], [[[\\boxed{K=24\\text{ m}^2}]]] এটি উল্লম্ব ত্রিভুজাকার পার্শ্ব প্রোফাইল, ঢালু হাঁটার পৃষ্ঠ নয়। অনুমান: প্রোফাইলটি গোড়ায় খাঁটি কোনা দিয়ে মডেল করা।" },
           { "kind": "h3", "text": "উদাহরণ 4: ত্রিভুজাকার ছাদের সাপোর্ট" },
-          { "kind": "p", "text": "একটি ত্রিভুজাকার ছাদের সাপোর্ট অংশের [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]। তাহলে [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]]. ক্ষেত্রফল সমতল ত্রিভুজাকার অংশ বোঝায়, উপাদানের অনুমানে কাজে লাগে। অনুমান: অংশটি সমকোণী ত্রিভুজ হিসেবে মডেল করা; পুরো ছাদের জ্যামিতি ভিন্ন হতে পারে।" },
+          { "kind": "p", "text": "একটি ত্রিভুজাকার ছাদের সাপোর্ট অংশের [[a=8\\text{ ft}]], [[b=15\\text{ ft}]]। তাহলে [[K=\\frac{8\\times15}{2}]], [[[\\boxed{K=60\\text{ ft}^2}]]] ক্ষেত্রফল সমতল ত্রিভুজাকার অংশ বোঝায়, উপাদানের অনুমানে কাজে লাগে। অনুমান: অংশটি সমকোণী ত্রিভুজ হিসেবে মডেল করা; পুরো ছাদের জ্যামিতি ভিন্ন হতে পারে।" },
           { "kind": "h3", "text": "উদাহরণ 5: সমকোণী ত্রিভুজাকার বাগানের অংশ" },
-          { "kind": "p", "text": "একটি বাগানে [[a=7\\text{ m}]], [[b=24\\text{ m}]] মাপের সমকোণী ত্রিভুজাকার অংশ আছে। তাহলে [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]]. ফলাফল রোপণ বা ঘাসের জন্য উপলব্ধ ক্ষেত্রফল অনুমানে সাহায্য করে। অনুমান: বেডের সীমানা সোজা এবং সমকোণে মিলিত।" },
+          { "kind": "p", "text": "একটি বাগানে [[a=7\\text{ m}]], [[b=24\\text{ m}]] মাপের সমকোণী ত্রিভুজাকার অংশ আছে। তাহলে [[K=\\frac{7\\times24}{2}]], [[[\\boxed{K=84\\text{ m}^2}]]] ফলাফল রোপণ বা ঘাসের জন্য উপলব্ধ ক্ষেত্রফল অনুমানে সাহায্য করে। অনুমান: বেডের সীমানা সোজা এবং সমকোণে মিলিত।" },
           { "kind": "h3", "text": "উদাহরণ 6: ত্রিভুজাকার কাপড়ের পাল" },
-          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার কাপড়ের প্যানেলের [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]। তাহলে [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]]. এটি সেলাই ও উপাদানের ছাড়ের আগের সমতল ত্রিভুজাকার কাপড়ের অংশ বোঝায়। অনুমান: পালটি সমতল মডেল করা; বাস্তব পাল ভারের নিচে বাঁকে।" },
+          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার কাপড়ের প্যানেলের [[a=9\\text{ ft}]], [[b=12\\text{ ft}]]। তাহলে [[K=\\frac{9\\times12}{2}]], [[[\\boxed{K=54\\text{ ft}^2}]]] এটি সেলাই ও উপাদানের ছাড়ের আগের সমতল ত্রিভুজাকার কাপড়ের অংশ বোঝায়। অনুমান: পালটি সমতল মডেল করা; বাস্তব পাল ভারের নিচে বাঁকে।" },
           { "kind": "h3", "text": "উদাহরণ 7: প্লাইউড কাটিং টেমপ্লেট" },
-          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার প্লাইউড টেমপ্লেটের [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]। তাহলে [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]]. ফলাফল কাটার অপচয়ের আগে উপাদানের চাহিদা অনুমানে সাহায্য করে। অনুমান: টেমপ্লেটটি প্রকৃত সমকোণী ত্রিভুজ; করাতের কাটার পুরুত্ব ও অবশিষ্টাংশ অতিরিক্ত।" },
+          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার প্লাইউড টেমপ্লেটের [[a=12\\text{ cm}]], [[b=16\\text{ cm}]]। তাহলে [[K=\\frac{12\\times16}{2}]], [[[\\boxed{K=96\\text{ cm}^2}]]] ফলাফল কাটার অপচয়ের আগে উপাদানের চাহিদা অনুমানে সাহায্য করে। অনুমান: টেমপ্লেটটি প্রকৃত সমকোণী ত্রিভুজ; করাতের কাটার পুরুত্ব ও অবশিষ্টাংশ অতিরিক্ত।" },
           { "kind": "h3", "text": "উদাহরণ 8: ত্রিভুজাকার সাইন প্যানেল" },
-          { "kind": "p", "text": "একটি ত্রিভুজাকার সাইন প্যানেলের লম্ব মাত্রা [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]। তাহলে [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]]. এটি সমতল ছাপা বা রঙ করার যোগ্য ক্ষেত্রফল বোঝায়। অনুমান: প্যানেলের মুখ সমতল ও সমকোণী ত্রিভুজাকার; বসানোর হার্ডওয়্যার বাদ।" },
+          { "kind": "p", "text": "একটি ত্রিভুজাকার সাইন প্যানেলের লম্ব মাত্রা [[a=20\\text{ cm}]], [[b=21\\text{ cm}]]। তাহলে [[K=\\frac{20\\times21}{2}]], [[[\\boxed{K=210\\text{ cm}^2}]]] এটি সমতল ছাপা বা রঙ করার যোগ্য ক্ষেত্রফল বোঝায়। অনুমান: প্যানেলের মুখ সমতল ও সমকোণী ত্রিভুজাকার; বসানোর হার্ডওয়্যার বাদ।" },
           { "kind": "h3", "text": "উদাহরণ 9: ভূমি জরিপের অংশ" },
-          { "kind": "p", "text": "একটি সরলীকৃত সমকোণী ত্রিভুজাকার ভূমি অংশের [[a=9\\text{ m}]], [[b=40\\text{ m}]]। তাহলে [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]]. সূত্রটি জরিপকৃত ত্রিভুজাকার অংশের ক্ষেত্রফল নির্ণয় করে। অনুমান: অংশটি খাঁটি কোনা দিয়ে মডেল করা; অনিয়মিত প্লটকে সহজ আকৃতিতে ভাগ করতে হবে।" },
+          { "kind": "p", "text": "একটি সরলীকৃত সমকোণী ত্রিভুজাকার ভূমি অংশের [[a=9\\text{ m}]], [[b=40\\text{ m}]]। তাহলে [[K=\\frac{9\\times40}{2}]], [[[\\boxed{K=180\\text{ m}^2}]]] সূত্রটি জরিপকৃত ত্রিভুজাকার অংশের ক্ষেত্রফল নির্ণয় করে। অনুমান: অংশটি খাঁটি কোনা দিয়ে মডেল করা; অনিয়মিত প্লটকে সহজ আকৃতিতে ভাগ করতে হবে।" },
           { "kind": "h3", "text": "উদাহরণ 10: ত্রিভুজাকার শামিয়ানার সাপোর্ট" },
-          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার শামিয়ানার সাপোর্ট অংশের [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]। তাহলে [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]]. ফলাফল মডেলকৃত সমতল ত্রিভুজাকার অংশ বোঝায়, অনিয়মিত শামিয়ানার পুরো পৃষ্ঠ অগত্যা নয়। অনুমান: সাপোর্টের জ্যামিতি সমকোণী ত্রিভুজে সরলীকৃত।" },
+          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার শামিয়ানার সাপোর্ট অংশের [[a=15\\text{ ft}]], [[b=20\\text{ ft}]]। তাহলে [[K=\\frac{15\\times20}{2}]], [[[\\boxed{K=150\\text{ ft}^2}]]] ফলাফল মডেলকৃত সমতল ত্রিভুজাকার অংশ বোঝায়, অনিয়মিত শামিয়ানার পুরো পৃষ্ঠ অগত্যা নয়। অনুমান: সাপোর্টের জ্যামিতি সমকোণী ত্রিভুজে সরলীকৃত।" },
           { "kind": "h3", "text": "উদাহরণ 11: শিল্প সাপোর্ট প্যানেল" },
-          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার শিল্প প্যানেলের [[a=11\\text{ m}]], [[b=60\\text{ m}]]। তাহলে [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]]. ক্ষেত্রফল সমতল জ্যামিতিক প্যানেল বর্ণনা করে, এর কাঠামোগত কার্যকারিতা নয়। অনুমান: প্যানেলটি সমকোণী ত্রিভুজ হিসেবে মডেল করা; পুরুত্ব ও ফিক্সিং আলাদা বিষয়।" },
+          { "kind": "p", "text": "একটি সমকোণী ত্রিভুজাকার শিল্প প্যানেলের [[a=11\\text{ m}]], [[b=60\\text{ m}]]। তাহলে [[K=\\frac{11\\times60}{2}]], [[[\\boxed{K=330\\text{ m}^2}]]] ক্ষেত্রফল সমতল জ্যামিতিক প্যানেল বর্ণনা করে, এর কাঠামোগত কার্যকারিতা নয়। অনুমান: প্যানেলটি সমকোণী ত্রিভুজ হিসেবে মডেল করা; পুরুত্ব ও ফিক্সিং আলাদা বিষয়।" },
           { "kind": "h3", "text": "উদাহরণ 12: গুদামের ছাদ-প্রান্ত অংশ" },
-          { "kind": "p", "text": "একটি গুদামের সরলীকৃত সমকোণী ত্রিভুজাকার ছাদ-প্রান্ত অংশ আছে যার [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]। তাহলে [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]]. ফলাফল সমতল ত্রিভুজাকার প্রান্তের ক্ষেত্রফল অনুমানে সাহায্য করে, যেমন ক্ল্যাডিংয়ের দাম ধরার সময়। অনুমান: গেবল প্রান্ত সমকোণী ত্রিভুজ হিসেবে মডেল করা।" },
+          { "kind": "p", "text": "একটি গুদামের সরলীকৃত সমকোণী ত্রিভুজাকার ছাদ-প্রান্ত অংশ আছে যার [[a=13\\text{ ft}]], [[b=84\\text{ ft}]]। তাহলে [[K=\\frac{13\\times84}{2}]], [[[\\boxed{K=546\\text{ ft}^2}]]] ফলাফল সমতল ত্রিভুজাকার প্রান্তের ক্ষেত্রফল অনুমানে সাহায্য করে, যেমন ক্ল্যাডিংয়ের দাম ধরার সময়। অনুমান: গেবল প্রান্ত সমকোণী ত্রিভুজ হিসেবে মডেল করা।" },
           { "kind": "h3", "text": "বাস্তব উদাহরণগুলোর তুলনা" }
         ],
         "table": {
@@ -622,7 +622,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "পিথাগোরাসের উপপাদ্য বলে [[[\\boxed{a^2+b^2=c^2}]]]: পাদ [[a]] ও [[b]] অতিভুজ [[c]] নির্ধারণ করে। এটি বাহুর দৈর্ঘ্য নিয়ে প্রশ্নের উত্তর দেয়, আর ক্ষেত্রফলের সূত্র আবদ্ধ পৃষ্ঠ মাপে। দুটি সম্পর্কিত কিন্তু ভিন্ন সমস্যার সমাধান করে, এবং এখানকার ক্ষেত্রফল নির্ণয় কখনো উপপাদ্যের ওপর নির্ভর করে না।" },
           { "kind": "h3", "text": "দুটি পাদ থেকে অতিভুজ নির্ণয়" },
-          { "kind": "p", "text": "[[a=6]] ও [[b=8]] হলে অতিভুজ [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]]. ক্ষেত্রফল তারপর আলাদাভাবে নির্ণয় করা হয়: [[K=\\frac{6\\times8}{2}=24]]। এই ক্ষেত্রফল নির্ণয়ের জন্য অতিভুজ ঐচ্ছিক অতিরিক্ত তথ্য, বাধ্যতামূলক ধাপের বদলে দরকারি তথ্য।" },
+          { "kind": "p", "text": "[[a=6]] ও [[b=8]] হলে অতিভুজ [[c=\\sqrt{6^2+8^2}]], [[c=\\sqrt{36+64}]], [[[\\boxed{c=10}]]] ক্ষেত্রফল তারপর আলাদাভাবে নির্ণয় করা হয়: [[K=\\frac{6\\times8}{2}=24]]। এই ক্ষেত্রফল নির্ণয়ের জন্য অতিভুজ ঐচ্ছিক অতিরিক্ত তথ্য, বাধ্যতামূলক ধাপের বদলে দরকারি তথ্য।" },
           { "kind": "h3", "text": "পিথাগোরাসের উপপাদ্য কি ক্ষেত্রফলের সূত্রের বদলে চলতে পারে?" },
           { "kind": "p", "text": "না। পিথাগোরাসের উপপাদ্য বাহুর দৈর্ঘ্যের মধ্যে সম্পর্ক নির্ধারণ করে; ক্ষেত্রফলের সূত্র দুটি লম্ব বাহুকে আবদ্ধ পৃষ্ঠে রূপান্তর করে। একটি উত্তর দেয় কত লম্বা, অন্যটি উত্তর দেয় কত পৃষ্ঠ। এরা সহযোগিতা করে: শুধু একটি পাদ ও অতিভুজ জানা থাকলে উপপাদ্য প্রথমে অনুপস্থিত পাদ উদ্ধার করে, তারপর ক্ষেত্রফলের সূত্র দায়িত্ব নেয়। কেউ অন্যটির বদলে চলে না।" },
           { "kind": "h3", "text": "পিথাগোরাসের উপপাদ্য কখন কাজে লাগে?" },
@@ -632,9 +632,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
       "sec-missing-leg": {
         "h2": "ত্রিভুজের ক্ষেত্রফল জানা থাকলে অনুপস্থিত পাদ কীভাবে বের করবেন",
         "blocks": [
-          { "kind": "p", "text": "ক্ষেত্রফলের সূত্র দুই দিকেই পড়া যায়। [[K=\\frac{ab}{2}]] দিয়ে শুরু করুন। দুই পাশকে 2 দিয়ে গুণ করুন: [[2K=ab]]। [[a]] দিয়ে ভাগ করুন: [[[\\boxed{b=\\frac{2K}{a}}]]]. একইভাবে, [[[\\boxed{a=\\frac{2K}{b}}]]]. একই সম্পর্ক, পুনর্বিন্যাস করে, যে পাদ অজানা তাকে উদ্ধার করে।" },
+          { "kind": "p", "text": "ক্ষেত্রফলের সূত্র দুই দিকেই পড়া যায়। [[K=\\frac{ab}{2}]] দিয়ে শুরু করুন। দুই পাশকে 2 দিয়ে গুণ করুন: [[2K=ab]]। [[a]] দিয়ে ভাগ করুন: [[[\\boxed{b=\\frac{2K}{a}}]]] একইভাবে, [[[\\boxed{a=\\frac{2K}{b}}]]] একই সম্পর্ক, পুনর্বিন্যাস করে, যে পাদ অজানা তাকে উদ্ধার করে।" },
           { "kind": "h3", "text": "কাজ করা উদাহরণ" },
-          { "kind": "p", "text": "ধরুন [[K=24\\text{ cm}^2]] ও [[a=6\\text{ cm}]]। তাহলে [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]]. একক সামঞ্জস্যপূর্ণ থাকে: বর্গ সেন্টিমিটারকে সেন্টিমিটার দিয়ে ভাগ করলে সেন্টিমিটার পাওয়া যায়। এই উল্টো ব্যবহার জানানো ক্ষেত্রফল যাচাই বা নকশা থেকে মাত্রা উদ্ধারে কাজে লাগে, কিন্তু মনে রাখুন এটি শিক্ষামূলক পুনর্বিন্যাস, উপরের ক্যালকুলেটরে অতিরিক্ত ইনপুট মোড নয়, যা এখনো দুটি পাদই নেয়।" }
+          { "kind": "p", "text": "ধরুন [[K=24\\text{ cm}^2]] ও [[a=6\\text{ cm}]]। তাহলে [[b=\\frac{2\\times24}{6}]], [[[\\boxed{b=8\\text{ cm}}]]] একক সামঞ্জস্যপূর্ণ থাকে: বর্গ সেন্টিমিটারকে সেন্টিমিটার দিয়ে ভাগ করলে সেন্টিমিটার পাওয়া যায়। এই উল্টো ব্যবহার জানানো ক্ষেত্রফল যাচাই বা নকশা থেকে মাত্রা উদ্ধারে কাজে লাগে, কিন্তু মনে রাখুন এটি শিক্ষামূলক পুনর্বিন্যাস, উপরের ক্যালকুলেটরে অতিরিক্ত ইনপুট মোড নয়, যা এখনো দুটি পাদই নেয়।" }
         ]
       },
       "sec-scaling": {
@@ -642,11 +642,11 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "যেহেতু [[K=\\frac{ab}{2}]] একটি গুণফল, পাদগুলো প্রসারিত করলে ক্ষেত্রফল অনুমানযোগ্য উপায়ে প্রসারিত হয়। ত্রিভুজাকার নকশার আকার বদলানোর আগে নিচের ধাঁচগুলো জেনে রাখা ভালো।" },
           { "kind": "h3", "text": "একটি পাদ দ্বিগুণ হলে কী হয়?" },
-          { "kind": "p", "text": "[[a]] স্থির রেখে [[b]] দ্বিগুণ করুন। তাহলে [[K_1=\\frac{ab}{2}]] হয় [[K_2=\\frac{a(2b)}{2}]], অর্থাৎ [[[\\boxed{K_2=2K_1}]]]. শুধু একটি পাদ দ্বিগুণ করলে ক্ষেত্রফল দ্বিগুণ হয়। একটি সুনির্দিষ্ট যাচাই: 3-বাই-4 ত্রিভুজের [[K=6]]; একটি পাদ প্রসারিত করে 3-বাই-8 করলে [[K=12]] পাওয়া যায়।" },
+          { "kind": "p", "text": "[[a]] স্থির রেখে [[b]] দ্বিগুণ করুন। তাহলে [[K_1=\\frac{ab}{2}]] হয় [[K_2=\\frac{a(2b)}{2}]], অর্থাৎ [[[\\boxed{K_2=2K_1}]]] শুধু একটি পাদ দ্বিগুণ করলে ক্ষেত্রফল দ্বিগুণ হয়। একটি সুনির্দিষ্ট যাচাই: 3-বাই-4 ত্রিভুজের [[K=6]]; একটি পাদ প্রসারিত করে 3-বাই-8 করলে [[K=12]] পাওয়া যায়।" },
           { "kind": "h3", "text": "দুটি পাদই দ্বিগুণ হলে কী হয়?" },
-          { "kind": "p", "text": "এবার দুটোই দ্বিগুণ করুন: [[K_2=\\frac{(2a)(2b)}{2}]], যা সরলীকৃত হয়ে [[[\\boxed{K_2=4K_1}]]]. দুটি লম্ব মাত্রাই দ্বিগুণ করলে ক্ষেত্রফল দ্বিগুণের বদলে চারগুণ বড় হয়। 3-বাই-4 ত্রিভুজ ([[K=6]]) 6-বাই-8-এ স্কেল করলে [[K=24]] পাওয়া যায়, আসলের ঠিক চারগুণ।" },
+          { "kind": "p", "text": "এবার দুটোই দ্বিগুণ করুন: [[K_2=\\frac{(2a)(2b)}{2}]], যা সরলীকৃত হয়ে [[[\\boxed{K_2=4K_1}]]] দুটি লম্ব মাত্রাই দ্বিগুণ করলে ক্ষেত্রফল দ্বিগুণের বদলে চারগুণ বড় হয়। 3-বাই-4 ত্রিভুজ ([[K=6]]) 6-বাই-8-এ স্কেল করলে [[K=24]] পাওয়া যায়, আসলের ঠিক চারগুণ।" },
           { "kind": "h3", "text": "দুটি পাদই স্কেল করা হলে কী হয়?" },
-          { "kind": "p", "text": "প্রতিটি পাদকে স্কেল গুণক [[k]] দিয়ে গুণ করুন: [[K_2=\\frac{(ka)(kb)}{2}]], অতএব [[[\\boxed{K_2=k^2K_1}]]]. স্কেল গুণকের বর্গের সঙ্গে ক্ষেত্রফল বাড়ে। বাস্তব উদাহরণ: 6-বাই-8 ত্রিভুজকে 1.5 দিয়ে স্কেল করে 9-বাই-12 পান। তাহলে [[K=\\frac{9\\times12}{2}=54]], আর [[24\\times1.5^2=24\\times2.25=54]]। এ কারণেই উপাদানের অনুমান রৈখিক মাত্রার চেয়ে দ্রুত লাফায়: প্রতিটি দৈর্ঘ্য দ্বিগুণ করলে চারগুণ শিট দরকার হয়।" },
+          { "kind": "p", "text": "প্রতিটি পাদকে স্কেল গুণক [[k]] দিয়ে গুণ করুন: [[K_2=\\frac{(ka)(kb)}{2}]], অতএব [[[\\boxed{K_2=k^2K_1}]]] স্কেল গুণকের বর্গের সঙ্গে ক্ষেত্রফল বাড়ে। বাস্তব উদাহরণ: 6-বাই-8 ত্রিভুজকে 1.5 দিয়ে স্কেল করে 9-বাই-12 পান। তাহলে [[K=\\frac{9\\times12}{2}=54]], আর [[24\\times1.5^2=24\\times2.25=54]]। এ কারণেই উপাদানের অনুমান রৈখিক মাত্রার চেয়ে দ্রুত লাফায়: প্রতিটি দৈর্ঘ্য দ্বিগুণ করলে চারগুণ শিট দরকার হয়।" },
           { "kind": "h3", "text": "দুটি ভিন্ন সমকোণী ত্রিভুজের ক্ষেত্রফল কি একই হতে পারে?" },
           { "kind": "p", "text": "হ্যাঁ। ত্রিভুজ 1 তুলনা করুন, [[a=3]], [[b=4]]: [[K=\\frac{3\\times4}{2}=6]]। ত্রিভুজ 2, [[a=2]], [[b=6]]: [[K=\\frac{2\\times6}{2}=6]]। তাদের পাদের গুণফল সমান হলেই ভিন্ন আকৃতি একই ক্ষেত্রফল আবদ্ধ করে। খাটো চওড়া ত্রিভুজ ও লম্বা সরু ত্রিভুজ অভিন্ন পৃষ্ঠ ঢাকতে পারে, যা বিভিন্ন জায়গায় প্যানেল বসানোর সময় গুরুত্বপূর্ণ।" }
         ],
@@ -667,9 +667,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "ফলাফলে বর্গ একক কেন ব্যবহার হয়" },
           { "kind": "p", "text": "ক্ষেত্রফল পৃষ্ঠ ঢেকে রাখা একক বর্গ গণনা করে: [[\\text{cm}\\times\\text{cm}=\\text{cm}^2]], [[\\text{m}\\times\\text{m}=\\text{m}^2]], [[\\text{ft}\\times\\text{ft}=\\text{ft}^2]]। একক সবসময় দৈর্ঘ্যের এককের বর্গ, কারণ দুটি দৈর্ঘ্যের গুণফল বর্গের গণনা। ক্ষেত্রফলকে 24 m হিসেবে জানানো শ্রেণির ভুল: 24 m দৈর্ঘ্য, আর 24 m² পৃষ্ঠ।" },
           { "kind": "h3", "text": "হিসাবের আগে ভিন্ন একক রূপান্তর" },
-          { "kind": "p", "text": "ধরুন [[a=3\\text{ ft}]] ও [[b=24\\text{ inches}]]। প্রথমে রূপান্তর করুন: [[24\\text{ inches}=2\\text{ ft}]]। তাহলে [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]]. রূপান্তর ছাড়া কাঁচা গুণফল 72-এর কোনো পরিষ্কার অর্থ নেই: এটি বর্গফুটও নয়, বর্গইঞ্চিও নয়। প্রথমে রূপান্তর করুন, তারপর গুণ করুন, আর উত্তরের একক স্বয়ংক্রিয়ভাবে অনুসরণ করে।" },
+          { "kind": "p", "text": "ধরুন [[a=3\\text{ ft}]] ও [[b=24\\text{ inches}]]। প্রথমে রূপান্তর করুন: [[24\\text{ inches}=2\\text{ ft}]]। তাহলে [[K=\\frac{3\\times2}{2}]], [[[\\boxed{K=3\\text{ ft}^2}]]] রূপান্তর ছাড়া কাঁচা গুণফল 72-এর কোনো পরিষ্কার অর্থ নেই: এটি বর্গফুটও নয়, বর্গইঞ্চিও নয়। প্রথমে রূপান্তর করুন, তারপর গুণ করুন, আর উত্তরের একক স্বয়ংক্রিয়ভাবে অনুসরণ করে।" },
           { "kind": "h3", "text": "দশমিক মাপ দিয়ে হিসাব" },
-          { "kind": "p", "text": "একই সূত্র কোনো পরিবর্তন ছাড়াই দশমিক সামলায়। দেওয়া আছে [[a=3.5]] ও [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]]. পূর্ণ সংখ্যা, দশমিক ও সূক্ষ্ম কর্মশালার মাপ সব একই গুণ-আর-অর্ধেকে প্রবাহিত হয়। পরিমাপ যত দশমিক স্থান সমর্থন করে তা রাখুন আর পাটিগণিত ক্যালকুলেটরকে সামলাতে দিন।" },
+          { "kind": "p", "text": "একই সূত্র কোনো পরিবর্তন ছাড়াই দশমিক সামলায়। দেওয়া আছে [[a=3.5]] ও [[b=9.2]]: [[K=\\frac{3.5\\times9.2}{2}]], [[K=\\frac{32.2}{2}]], [[[\\boxed{K=16.1\\text{ square units}}]]] পূর্ণ সংখ্যা, দশমিক ও সূক্ষ্ম কর্মশালার মাপ সব একই গুণ-আর-অর্ধেকে প্রবাহিত হয়। পরিমাপ যত দশমিক স্থান সমর্থন করে তা রাখুন আর পাটিগণিত ক্যালকুলেটরকে সামলাতে দিন।" },
           { "kind": "h3", "text": "আগে গোল করা কেন এড়ানো উচিত" },
           { "kind": "p", "text": "ইনপুট গোল করলে ত্রুটি গুণের মধ্য দিয়ে উত্তরে চলে যায়। 9.2 হিসেবে মাপা পাদ গুণের আগে 9 হওয়া উচিত নয়; প্রতি এককে হারানো 0.2 গুণফল জুড়ে জমে ওঠে। মধ্যবর্তী ধাপগুলোতে পূর্ণ নির্ভুলতা রাখুন এবং শুধু চূড়ান্ত ফলাফল গোল করুন, পরিমাপ যে যথার্থতা সমর্থন করে সেই অনুযায়ী। আগে রাখা নির্ভুলতাই শেষে দেওয়া সঠিকতা।" }
         ]
@@ -847,7 +847,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
       "sec-intro": {
         "h2": "2本の脚を使って直角三角形の面積を求める方法",
         "blocks": [
-          { "kind": "p", "text": "[[a=6]]、[[b=8]] とします。[[K=\\frac{6\\times8}{2}]] を適用します。[[K=\\frac{48}{2}]]、[[[\\boxed{K=24\\text{ square units}}]]]. となります。この結果は3辺に囲まれた平らな面全体を表します。すなわち24平方単位です。この2つの入力に対して、脚から求める直角三角形の面積計算機が返すのはまさにこの値です。" },
+          { "kind": "p", "text": "[[a=6]]、[[b=8]] とします。[[K=\\frac{6\\times8}{2}]] を適用します。[[K=\\frac{48}{2}]]、[[[\\boxed{K=24\\text{ square units}}]]] となります。この結果は3辺に囲まれた平らな面全体を表します。すなわち24平方単位です。この2つの入力に対して、脚から求める直角三角形の面積計算機が返すのはまさにこの値です。" },
           { "kind": "p", "text": "この計算機に必要なのは2本の脚、すなわち直角で交わる2辺だけです。この2辺は垂直なので、一方が底辺、他方が高さとなり、それ以上の測定は不要です。斜辺はここでは登場しません。脚同士を掛け、その積を半分にすれば、面積は [[K=\\frac{ab}{2}]] から求まります。" },
           { "kind": "p", "text": "これは幾何学で最も単純な面積計算の1つです。垂直な2つの測定値がすでに手元にあるからです。角が直角になる場所ならどこでも現れます。建設のレイアウト、切り出し板、庭の花壇、測量のスケッチは、すべて2本の脚と半分にした1つの積に帰着します。" }
         ]
@@ -930,13 +930,13 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "4つの典型的な直角三角形で、大きくなる順に方法を示します。各例では公式に代入し、斜辺は任意の確認としてのみ登場し、入力として使われることはありません。" },
           { "kind": "h3", "text": "例1：3-4-5 の直角三角形" },
-          { "kind": "p", "text": "[[a=3]]、[[b=4]] とします。手順1：公式を書きます。[[K=\\frac{a\\times b}{2}]]。手順2：代入します。[[K=\\frac{3\\times4}{2}]]。手順3：掛けます。[[K=\\frac{12}{2}]]。最終答え：[[[\\boxed{K=6\\text{ square units}}]]]. 任意の確認：[[c=\\sqrt{3^2+4^2}=5]]。斜辺はおなじみの三つ組を確認しますが、面積には関与しません。" },
+          { "kind": "p", "text": "[[a=3]]、[[b=4]] とします。手順1：公式を書きます。[[K=\\frac{a\\times b}{2}]]。手順2：代入します。[[K=\\frac{3\\times4}{2}]]。手順3：掛けます。[[K=\\frac{12}{2}]]。最終答え：[[[\\boxed{K=6\\text{ square units}}]]] 任意の確認：[[c=\\sqrt{3^2+4^2}=5]]。斜辺はおなじみの三つ組を確認しますが、面積には関与しません。" },
           { "kind": "h3", "text": "例2：6-8-10 の直角三角形" },
-          { "kind": "p", "text": "[[a=6]]、[[b=8]] とします。すると [[K=\\frac{6\\times8}{2}]]、[[K=\\frac{48}{2}]]、[[[\\boxed{K=24\\text{ square units}}]]]. となります。長方形による確認：外接する6対8の長方形の面積は48で、三角形はそのちょうど半分を占めます。" },
+          { "kind": "p", "text": "[[a=6]]、[[b=8]] とします。すると [[K=\\frac{6\\times8}{2}]]、[[K=\\frac{48}{2}]]、[[[\\boxed{K=24\\text{ square units}}]]] となります。長方形による確認：外接する6対8の長方形の面積は48で、三角形はそのちょうど半分を占めます。" },
           { "kind": "h3", "text": "例3：5-12-13 の直角三角形" },
-          { "kind": "p", "text": "[[a=5]]、[[b=12]] とします。すると [[K=\\frac{5\\times12}{2}]]、[[[\\boxed{K=30\\text{ square units}}]]]. となります。13の斜辺は計算に一切入りません。辺が1本欠けている場合にのみ重要になります。" },
+          { "kind": "p", "text": "[[a=5]]、[[b=12]] とします。すると [[K=\\frac{5\\times12}{2}]]、[[[\\boxed{K=30\\text{ square units}}]]] となります。13の斜辺は計算に一切入りません。辺が1本欠けている場合にのみ重要になります。" },
           { "kind": "h3", "text": "例4：8-15-17 の直角三角形" },
-          { "kind": "p", "text": "[[a=8]]、[[b=15]] とします。すると [[K=\\frac{8\\times15}{2}]]、[[[\\boxed{K=60\\text{ square units}}]]]. となります。同じ3手順、大きな数、同一の論理です。" },
+          { "kind": "p", "text": "[[a=8]]、[[b=15]] とします。すると [[K=\\frac{8\\times15}{2}]]、[[[\\boxed{K=60\\text{ square units}}]]] となります。同じ3手順、大きな数、同一の論理です。" },
           { "kind": "h3", "text": "基礎例題の比較" }
         ],
         "table": {
@@ -954,29 +954,29 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "12の具体例が、この公式をページから作業場、現場、スタジオへ運びます。各例は直角三角形のパネル、部分、断面、または単純化したモデルの名前を挙げ、計算機の2つの入力を公式に通して計算し、数値の背後にある仮定を述べます。実物が曲面や不規則な形の場合、計算はモデル化した三角形のみを対象とし、面積がそれ単独で強度、費用、安全性を表すことはありません。" },
           { "kind": "h3", "text": "例1：三角形のガラス窓" },
-          { "kind": "p", "text": "三角形のガラス窓の垂直な寸法は [[a=3\\text{ m}]]、[[b=4\\text{ m}]] です。代入します。[[K=\\frac{3\\times4}{2}]]、[[[\\boxed{K=6\\text{ m}^2}]]]. となります。この結果は、枠の寸法を差し引く前の平らなガラス面を表します。仮定：ガラス板は真の直角三角形であること。枠の余裕は別に扱います。" },
+          { "kind": "p", "text": "三角形のガラス窓の垂直な寸法は [[a=3\\text{ m}]]、[[b=4\\text{ m}]] です。代入します。[[K=\\frac{3\\times4}{2}]]、[[[\\boxed{K=6\\text{ m}^2}]]] となります。この結果は、枠の寸法を差し引く前の平らなガラス面を表します。仮定：ガラス板は真の直角三角形であること。枠の余裕は別に扱います。" },
           { "kind": "h3", "text": "例2：鋼製サポートブラケット" },
-          { "kind": "p", "text": "三角形の鋼製ブラケットは [[a=5\\text{ cm}]]、[[b=12\\text{ cm}]] です。すると [[K=\\frac{5\\times12}{2}]]、[[[\\boxed{K=30\\text{ cm}^2}]]]. となります。面積は平らな板を表し、耐荷重能力を決めるものではありません。仮定：ブラケットの素材は直角三角形に切り出されていること。ボルト穴や曲げは除きます。" },
+          { "kind": "p", "text": "三角形の鋼製ブラケットは [[a=5\\text{ cm}]]、[[b=12\\text{ cm}]] です。すると [[K=\\frac{5\\times12}{2}]]、[[[\\boxed{K=30\\text{ cm}^2}]]] となります。面積は平らな板を表し、耐荷重能力を決めるものではありません。仮定：ブラケットの素材は直角三角形に切り出されていること。ボルト穴や曲げは除きます。" },
           { "kind": "h3", "text": "例3：三角形スロープの側面断面" },
-          { "kind": "p", "text": "単純化したスロープ側面断面は [[a=6\\text{ m}]]、[[b=8\\text{ m}]] です。すると [[K=\\frac{6\\times8}{2}]]、[[[\\boxed{K=24\\text{ m}^2}]]]. となります。 これは垂直な三角形の側面断面であり、傾斜した歩行面ではありません。仮定：断面は底に直角の角を持つものとしてモデル化されています。" },
+          { "kind": "p", "text": "単純化したスロープ側面断面は [[a=6\\text{ m}]]、[[b=8\\text{ m}]] です。すると [[K=\\frac{6\\times8}{2}]]、[[[\\boxed{K=24\\text{ m}^2}]]] となります。 これは垂直な三角形の側面断面であり、傾斜した歩行面ではありません。仮定：断面は底に直角の角を持つものとしてモデル化されています。" },
           { "kind": "h3", "text": "例4：三角形の屋根サポート" },
-          { "kind": "p", "text": "三角形の屋根サポート部分は [[a=8\\text{ ft}]]、[[b=15\\text{ ft}]] です。すると [[K=\\frac{8\\times15}{2}]]、[[[\\boxed{K=60\\text{ ft}^2}]]]. となります。面積は平らな三角形の部分を表し、材料の見積もりに役立ちます。仮定：その部分は直角三角形としてモデル化されていること。屋根全体の形状は異なる場合があります。" },
+          { "kind": "p", "text": "三角形の屋根サポート部分は [[a=8\\text{ ft}]]、[[b=15\\text{ ft}]] です。すると [[K=\\frac{8\\times15}{2}]]、[[[\\boxed{K=60\\text{ ft}^2}]]] となります。面積は平らな三角形の部分を表し、材料の見積もりに役立ちます。仮定：その部分は直角三角形としてモデル化されていること。屋根全体の形状は異なる場合があります。" },
           { "kind": "h3", "text": "例5：直角三角形の庭の一区画" },
-          { "kind": "p", "text": "庭には [[a=7\\text{ m}]]、[[b=24\\text{ m}]] の直角三角形の一区画があります。すると [[K=\\frac{7\\times24}{2}]]、[[[\\boxed{K=84\\text{ m}^2}]]]. となります。この結果は植栽や芝生に使える面積の見積もりに役立ちます。仮定：花壇の境界は直線で、直角に交わっていること。" },
+          { "kind": "p", "text": "庭には [[a=7\\text{ m}]]、[[b=24\\text{ m}]] の直角三角形の一区画があります。すると [[K=\\frac{7\\times24}{2}]]、[[[\\boxed{K=84\\text{ m}^2}]]] となります。この結果は植栽や芝生に使える面積の見積もりに役立ちます。仮定：花壇の境界は直線で、直角に交わっていること。" },
           { "kind": "h3", "text": "例6：三角形の布製セイル" },
-          { "kind": "p", "text": "直角三角形の布パネルは [[a=9\\text{ ft}]]、[[b=12\\text{ ft}]] です。すると [[K=\\frac{9\\times12}{2}]]、[[[\\boxed{K=54\\text{ ft}^2}]]]. となります。これは縫い代や材料の余裕を除く前の平らな三角形の布部分を表します。仮定：セイルは平面としてモデル化されていること。実際のセイルは荷重で湾曲します。" },
+          { "kind": "p", "text": "直角三角形の布パネルは [[a=9\\text{ ft}]]、[[b=12\\text{ ft}]] です。すると [[K=\\frac{9\\times12}{2}]]、[[[\\boxed{K=54\\text{ ft}^2}]]] となります。これは縫い代や材料の余裕を除く前の平らな三角形の布部分を表します。仮定：セイルは平面としてモデル化されていること。実際のセイルは荷重で湾曲します。" },
           { "kind": "h3", "text": "例7：合板の切り出し型紙" },
-          { "kind": "p", "text": "直角三角形の合板の型紙は [[a=12\\text{ cm}]]、[[b=16\\text{ cm}]] です。すると [[K=\\frac{12\\times16}{2}]]、[[[\\boxed{K=96\\text{ cm}^2}]]]. となります。この結果は切り出しの無駄を出す前の材料所要量の見積もりに役立ちます。仮定：型紙は真の直角三角形であること。のこぎりの切り幅や端材は別です。" },
+          { "kind": "p", "text": "直角三角形の合板の型紙は [[a=12\\text{ cm}]]、[[b=16\\text{ cm}]] です。すると [[K=\\frac{12\\times16}{2}]]、[[[\\boxed{K=96\\text{ cm}^2}]]] となります。この結果は切り出しの無駄を出す前の材料所要量の見積もりに役立ちます。仮定：型紙は真の直角三角形であること。のこぎりの切り幅や端材は別です。" },
           { "kind": "h3", "text": "例8：三角形の看板パネル" },
-          { "kind": "p", "text": "三角形の看板パネルの垂直な寸法は [[a=20\\text{ cm}]]、[[b=21\\text{ cm}]] です。すると [[K=\\frac{20\\times21}{2}]]、[[[\\boxed{K=210\\text{ cm}^2}]]]. となります。これは平らな印刷・塗装可能面積を表します。仮定：パネルの面は平らで直角三角形であること。取り付け金具は除きます。" },
+          { "kind": "p", "text": "三角形の看板パネルの垂直な寸法は [[a=20\\text{ cm}]]、[[b=21\\text{ cm}]] です。すると [[K=\\frac{20\\times21}{2}]]、[[[\\boxed{K=210\\text{ cm}^2}]]] となります。これは平らな印刷・塗装可能面積を表します。仮定：パネルの面は平らで直角三角形であること。取り付け金具は除きます。" },
           { "kind": "h3", "text": "例9：測量区画" },
-          { "kind": "p", "text": "単純化した直角三角形の土地の区画は [[a=9\\text{ m}]]、[[b=40\\text{ m}]] です。すると [[K=\\frac{9\\times40}{2}]]、[[[\\boxed{K=180\\text{ m}^2}]]]. となります。この公式は測量した三角形の区画の面積を求めます。仮定：区画は直角の角を持つものとしてモデル化されていること。不規則な土地は単純な形に分割する必要があります。" },
+          { "kind": "p", "text": "単純化した直角三角形の土地の区画は [[a=9\\text{ m}]]、[[b=40\\text{ m}]] です。すると [[K=\\frac{9\\times40}{2}]]、[[[\\boxed{K=180\\text{ m}^2}]]] となります。この公式は測量した三角形の区画の面積を求めます。仮定：区画は直角の角を持つものとしてモデル化されていること。不規則な土地は単純な形に分割する必要があります。" },
           { "kind": "h3", "text": "例10：三角形の日よけサポート" },
-          { "kind": "p", "text": "直角三角形の日よけサポート部分は [[a=15\\text{ ft}]]、[[b=20\\text{ ft}]] です。すると [[K=\\frac{15\\times20}{2}]]、[[[\\boxed{K=150\\text{ ft}^2}]]]. となります。この結果はモデル化した平らな三角形の部分を表し、不規則な日よけの全面とは限りません。仮定：サポートの形状は直角三角形に単純化されていること。" },
+          { "kind": "p", "text": "直角三角形の日よけサポート部分は [[a=15\\text{ ft}]]、[[b=20\\text{ ft}]] です。すると [[K=\\frac{15\\times20}{2}]]、[[[\\boxed{K=150\\text{ ft}^2}]]] となります。この結果はモデル化した平らな三角形の部分を表し、不規則な日よけの全面とは限りません。仮定：サポートの形状は直角三角形に単純化されていること。" },
           { "kind": "h3", "text": "例11：産業用サポートパネル" },
-          { "kind": "p", "text": "直角三角形の産業用パネルは [[a=11\\text{ m}]]、[[b=60\\text{ m}]] です。すると [[K=\\frac{11\\times60}{2}]]、[[[\\boxed{K=330\\text{ m}^2}]]]. となります。面積は平らな幾何学的パネルを表し、その構造性能ではありません。仮定：パネルは直角三角形としてモデル化されていること。厚みや固定具は別の検討事項です。" },
+          { "kind": "p", "text": "直角三角形の産業用パネルは [[a=11\\text{ m}]]、[[b=60\\text{ m}]] です。すると [[K=\\frac{11\\times60}{2}]]、[[[\\boxed{K=330\\text{ m}^2}]]] となります。面積は平らな幾何学的パネルを表し、その構造性能ではありません。仮定：パネルは直角三角形としてモデル化されていること。厚みや固定具は別の検討事項です。" },
           { "kind": "h3", "text": "例12：倉庫の屋根端部" },
-          { "kind": "p", "text": "倉庫には [[a=13\\text{ ft}]]、[[b=84\\text{ ft}]] の単純化した直角三角形の屋根端部があります。すると [[K=\\frac{13\\times84}{2}]]、[[[\\boxed{K=546\\text{ ft}^2}]]]. となります。この結果は平らな三角形の端部面積の見積もりに役立ちます。たとえば外装材の価格算定に使えます。仮定：切妻端部は直角三角形としてモデル化されていること。" },
+          { "kind": "p", "text": "倉庫には [[a=13\\text{ ft}]]、[[b=84\\text{ ft}]] の単純化した直角三角形の屋根端部があります。すると [[K=\\frac{13\\times84}{2}]]、[[[\\boxed{K=546\\text{ ft}^2}]]] となります。この結果は平らな三角形の端部面積の見積もりに役立ちます。たとえば外装材の価格算定に使えます。仮定：切妻端部は直角三角形としてモデル化されていること。" },
           { "kind": "h3", "text": "実用例の比較" }
         ],
         "table": {
@@ -1014,7 +1014,7 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
         "blocks": [
           { "kind": "p", "text": "面積公式は両方向に読めます。[[K=\\frac{ab}{2}]] から始めます。両辺に2を掛けます。[[2K=ab]] です。[[a]] で割ります。[[[\\boxed{b=\\frac{2K}{a}}]]] となります。同様に、[[[\\boxed{a=\\frac{2K}{b}}]]] です。同じ関係を変形すれば、未知の脚がどちらでも復元できます。" },
           { "kind": "h3", "text": "例題" },
-          { "kind": "p", "text": "[[K=24\\text{ cm}^2]]、[[a=6\\text{ cm}]] とします。すると [[b=\\frac{2\\times24}{6}]]、[[[\\boxed{b=8\\text{ cm}}]]]. となります。単位は一貫しています。平方センチメートルをセンチメートルで割ればセンチメートルになります。この逆の使い方は、報告された面積の確認や図面からの寸法復元に便利ですが、これは教育的な変形であり、上の計算機の追加入力モードではないことに注意してください。計算機は引き続き2本の脚を取ります。" }
+          { "kind": "p", "text": "[[K=24\\text{ cm}^2]]、[[a=6\\text{ cm}]] とします。すると [[b=\\frac{2\\times24}{6}]]、[[[\\boxed{b=8\\text{ cm}}]]] となります。単位は一貫しています。平方センチメートルをセンチメートルで割ればセンチメートルになります。この逆の使い方は、報告された面積の確認や図面からの寸法復元に便利ですが、これは教育的な変形であり、上の計算機の追加入力モードではないことに注意してください。計算機は引き続き2本の脚を取ります。" }
         ]
       },
       "sec-scaling": {
@@ -1047,9 +1047,9 @@ export const AREA_FROM_LEGS_TRANSLATIONS_BATCH3 = {
           { "kind": "h3", "text": "なぜ結果は平方単位になるのか" },
           { "kind": "p", "text": "面積は面を覆う単位正方形を数えます。[[\\text{cm}\\times\\text{cm}=\\text{cm}^2]]、[[\\text{m}\\times\\text{m}=\\text{m}^2]]、[[\\text{ft}\\times\\text{ft}=\\text{ft}^2]] のとおりです。単位は常に長さの単位の2乗です。2つの長さの積は正方形の個数だからです。面積を24 mと報告するのは種類の誤りです。24 mは長さであり、24 m²は面です。" },
           { "kind": "h3", "text": "計算前に異なる単位を換算する" },
-          { "kind": "p", "text": "[[a=3\\text{ ft}]]、[[b=24\\text{ inches}]] とします。まず換算します。[[24\\text{ inches}=2\\text{ ft}]] です。すると [[K=\\frac{3\\times2}{2}]]、[[[\\boxed{K=3\\text{ ft}^2}]]]. となります。換算なしでは、素の積72に明確な意味はありません。平方フィートでも平方インチでもないのです。先に換算し、次に掛け算すれば、答えの単位は自動的についてきます。" },
+          { "kind": "p", "text": "[[a=3\\text{ ft}]]、[[b=24\\text{ inches}]] とします。まず換算します。[[24\\text{ inches}=2\\text{ ft}]] です。すると [[K=\\frac{3\\times2}{2}]]、[[[\\boxed{K=3\\text{ ft}^2}]]] となります。換算なしでは、素の積72に明確な意味はありません。平方フィートでも平方インチでもないのです。先に換算し、次に掛け算すれば、答えの単位は自動的についてきます。" },
           { "kind": "h3", "text": "小数の測定値で計算する" },
-          { "kind": "p", "text": "同じ公式は変更なしで小数も扱えます。[[a=3.5]]、[[b=9.2]] とします。[[K=\\frac{3.5\\times9.2}{2}]]、[[K=\\frac{32.2}{2}]]、[[[\\boxed{K=16.1\\text{ square units}}]]]. となります。整数も小数も細かい作業場の測定値も、同じ掛けて半分にする流れに乗ります。測定が支える小数位を保ち、計算は計算機に任せてください。" },
+          { "kind": "p", "text": "同じ公式は変更なしで小数も扱えます。[[a=3.5]]、[[b=9.2]] とします。[[K=\\frac{3.5\\times9.2}{2}]]、[[K=\\frac{32.2}{2}]]、[[[\\boxed{K=16.1\\text{ square units}}]]] となります。整数も小数も細かい作業場の測定値も、同じ掛けて半分にする流れに乗ります。測定が支える小数位を保ち、計算は計算機に任せてください。" },
           { "kind": "h3", "text": "早い段階での丸めを避けるべき理由" },
           { "kind": "p", "text": "入力を丸めると、その誤差は掛け算を通って答えに乗り移ります。9.2と測った脚を掛ける前に9にしてはいけません。単位あたり失われる0.2が積全体に積み重なります。中間手順では精度を保ち、測定が正当化する正確さに合わせて最終結果だけを丸めてください。早い段階で保った精度が、最後に届ける正確さになります。" }
         ]

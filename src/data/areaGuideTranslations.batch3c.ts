@@ -86,7 +86,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Två identiska rätvinkliga trianglar kan sättas samman längs sina hypotenusor till en rektangel. Om varje triangel har de vinkelräta kateterna [[a]] och [[b]] har rektangeln arean [[ab]]. En triangel upptar exakt hälften av den rektangeln, så [[[\\boxed{K=\\frac{ab}{2}}]]]. Divisionen med två är ingen justeringsfaktor: den är den geometriska konsekvensen av att en triangel är hälften av en rektangel, och den förekommer i varje areametod på den här sidan i en eller annan form."
+            "text": "Två identiska rätvinkliga trianglar kan sättas samman längs sina hypotenusor till en rektangel. Om varje triangel har de vinkelräta kateterna [[a]] och [[b]] har rektangeln arean [[ab]]. En triangel upptar exakt hälften av den rektangeln, så [[[\\boxed{K=\\frac{ab}{2}}]]] Divisionen med två är ingen justeringsfaktor: den är den geometriska konsekvensen av att en triangel är hälften av en rektangel, och den förekommer i varje areametod på den här sidan i en eller annan form."
           },
           {
             "kind": "h3",
@@ -105,7 +105,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Katetformeln är utgångspunkten för rätvinklig triangels area: [[[\\boxed{K=\\frac{ab}{2}}]]]. Den behöver bara de två vinkelräta sidorna, och allt annat på den här sidan kan ses som en variant som återvinner samma storhet från andra indata."
+            "text": "Katetformeln är utgångspunkten för rätvinklig triangels area: [[[\\boxed{K=\\frac{ab}{2}}]]] Den behöver bara de två vinkelräta sidorna, och allt annat på den här sidan kan ses som en variant som återvinner samma storhet från andra indata."
           },
           {
             "kind": "h3",
@@ -129,7 +129,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=3\\text{ m}]] och [[b=4\\text{ m}]]. Steg 1: skriv formeln [[K=ab/2]]. Steg 2: sätt in värdena, [[K=(3\\times4)/2]]. Steg 3: multiplicera, [[K=12/2]]. Steg 4: dividera med två, [[[\\boxed{K=6\\text{ m}^2}]]]. Svaret är sex kvadratmeter, inte sex meter: enheten bär storhetens betydelse."
+            "text": "Givet [[a=3\\text{ m}]] och [[b=4\\text{ m}]]. Steg 1: skriv formeln [[K=ab/2]]. Steg 2: sätt in värdena, [[K=(3\\times4)/2]]. Steg 3: multiplicera, [[K=12/2]]. Steg 4: dividera med två, [[[\\boxed{K=6\\text{ m}^2}]]] Svaret är sex kvadratmeter, inte sex meter: enheten bär storhetens betydelse."
           },
           {
             "kind": "h3",
@@ -145,7 +145,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Decimalmätningar fungerar i samma formel. Med [[a=3.5\\text{ cm}]] och [[b=9.2\\text{ cm}]]: [[K=(3.5\\times9.2)/2]], [[K=32.2/2]], [[[\\boxed{K=16.1\\text{ cm}^2}]]]. Aritmetiken är identisk; bara inmatningarnas precision ändras, så behåll tillräckligt många siffror och avrunda i slutet."
+            "text": "Decimalmätningar fungerar i samma formel. Med [[a=3.5\\text{ cm}]] och [[b=9.2\\text{ cm}]]: [[K=(3.5\\times9.2)/2]], [[K=32.2/2]], [[[\\boxed{K=16.1\\text{ cm}^2}]]] Aritmetiken är identisk; bara inmatningarnas precision ändras, så behåll tillräckligt många siffror och avrunda i slutet."
           },
           {
             "kind": "h3",
@@ -162,7 +162,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Den här metoden är användbar när sidan [[b]], hypotenusan [[c]] och den spetsiga vinkeln [[A]] är kända: [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]]. Det är kalkylatorns läge Area Variation (Angle A)."
+            "text": "Den här metoden är användbar när sidan [[b]], hypotenusan [[c]] och den spetsiga vinkeln [[A]] är kända: [[[\\boxed{K=\\frac{bc\\sin(A)}{2}}]]] Det är kalkylatorns läge Area Variation (Angle A)."
           },
           {
             "kind": "h3",
@@ -178,7 +178,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[b=4\\text{ m}]], [[c=5\\text{ m}]] och [[A\\approx36.87^\\circ]]. Eftersom [[\\sin(36.87^\\circ)\\approx0.6]] blir substitutionen: [[K=(4\\times5\\times0.6)/2]], [[K=12/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Detta stämmer med katetformeln eftersom 0,6 är exakt förhållandet [[a/c=3/5]]: sinusformen är katetformen i förklädnad, där [[c\\sin(A)]] spelar rollen som den andra kateten."
+            "text": "Givet [[b=4\\text{ m}]], [[c=5\\text{ m}]] och [[A\\approx36.87^\\circ]]. Eftersom [[\\sin(36.87^\\circ)\\approx0.6]] blir substitutionen: [[K=(4\\times5\\times0.6)/2]], [[K=12/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Detta stämmer med katetformeln eftersom 0,6 är exakt förhållandet [[a/c=3/5]]: sinusformen är katetformen i förklädnad, där [[c\\sin(A)]] spelar rollen som den andra kateten."
           },
           {
             "kind": "h3",
@@ -203,7 +203,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Det här läget använder den andra spetsiga vinkeln och dess två angränsande sidor: [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]]. Det är kalkylatorns läge Area Variation (Angle B)."
+            "text": "Det här läget använder den andra spetsiga vinkeln och dess två angränsande sidor: [[[\\boxed{K=\\frac{ac\\sin(B)}{2}}]]] Det är kalkylatorns läge Area Variation (Angle B)."
           },
           {
             "kind": "h3",
@@ -219,7 +219,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=3\\text{ m}]], [[c=5\\text{ m}]] och [[B\\approx53.13^\\circ]]. Eftersom [[\\sin(53.13^\\circ)\\approx0.8]] blir beräkningen: [[K=(3\\times5\\times0.8)/2]], [[K=12/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Resultatet stämmer med katetmetoden och metoden för vinkel A, som det måste: alla tre beskriver samma triangel."
+            "text": "Givet [[a=3\\text{ m}]], [[c=5\\text{ m}]] och [[B\\approx53.13^\\circ]]. Eftersom [[\\sin(53.13^\\circ)\\approx0.8]] blir beräkningen: [[K=(3\\times5\\times0.8)/2]], [[K=12/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Resultatet stämmer med katetmetoden och metoden för vinkel A, som det måste: alla tre beskriver samma triangel."
           },
           {
             "kind": "h3",
@@ -227,7 +227,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "De två spetsiga vinklarna är komplementära: [[[\\boxed{A+B=90^\\circ}]]]. Detta ger identiteterna [[\\sin(A)=\\cos(B)]] och [[\\sin(B)=\\cos(A)]]. I 3-4-5-triangeln gäller [[\\sin(A)=0.6=\\cos(B)]] och [[\\sin(B)=0.8=\\cos(A)]]. Dessa samband förklarar varför båda vinkelbaserade lägena beräknar samma area när deras indata är konsekventa: det ena lägets sinus är det andra lägets cosinus, och triangelns geometri är oförändrad oavsett vilken spetsig vinkel man utgår från."
+            "text": "De två spetsiga vinklarna är komplementära: [[[\\boxed{A+B=90^\\circ}]]] Detta ger identiteterna [[\\sin(A)=\\cos(B)]] och [[\\sin(B)=\\cos(A)]]. I 3-4-5-triangeln gäller [[\\sin(A)=0.6=\\cos(B)]] och [[\\sin(B)=0.8=\\cos(A)]]. Dessa samband förklarar varför båda vinkelbaserade lägena beräknar samma area när deras indata är konsekventa: det ena lägets sinus är det andra lägets cosinus, och triangelns geometri är oförändrad oavsett vilken spetsig vinkel man utgår från."
           },
           {
             "kind": "h3",
@@ -244,7 +244,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Den här metoden behöver bara två tal, inradien [[r]] och halvperimetern [[s]]: [[[\\boxed{K=rs}]]]. Inradien är radien för den cirkel som är inskriven i triangeln, den cirkel som tangerar alla tre sidorna. Halvperimetern är halva triangelns omkrets: [[[\\boxed{s=\\frac{a+b+c}{2}}]]]. Det är kalkylatorns läge Area from Semiperimeter."
+            "text": "Den här metoden behöver bara två tal, inradien [[r]] och halvperimetern [[s]]: [[[\\boxed{K=rs}]]] Inradien är radien för den cirkel som är inskriven i triangeln, den cirkel som tangerar alla tre sidorna. Halvperimetern är halva triangelns omkrets: [[[\\boxed{s=\\frac{a+b+c}{2}}]]] Det är kalkylatorns läge Area from Semiperimeter."
           },
           {
             "kind": "h3",
@@ -252,7 +252,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Förbind incentrum, den inskrivna cirkelns mittpunkt, med alla tre hörnen. Detta delar triangeln i tre mindre trianglar. Varje mindre triangel har samma vinkelräta höjd [[r]], eftersom inradien är det vinkelräta avståndet från incentrum till varje sida. Att addera deras areor ger [[K=\\frac12 ar+\\frac12 br+\\frac12 cr]]. Bryt ut [[r/2]]: [[K=\\frac12 r(a+b+c)]]. Eftersom [[s=(a+b+c)/2]] följer det att [[[\\boxed{K=rs}]]]. Detta samband gäller för varje giltig triangel, inte bara en rätvinklig, förutsatt att rätt inradie och halvperimeter är kända."
+            "text": "Förbind incentrum, den inskrivna cirkelns mittpunkt, med alla tre hörnen. Detta delar triangeln i tre mindre trianglar. Varje mindre triangel har samma vinkelräta höjd [[r]], eftersom inradien är det vinkelräta avståndet från incentrum till varje sida. Att addera deras areor ger [[K=\\frac12 ar+\\frac12 br+\\frac12 cr]]. Bryt ut [[r/2]]: [[K=\\frac12 r(a+b+c)]]. Eftersom [[s=(a+b+c)/2]] följer det att [[[\\boxed{K=rs}]]] Detta samband gäller för varje giltig triangel, inte bara en rätvinklig, förutsatt att rätt inradie och halvperimeter är kända."
           },
           {
             "kind": "h3",
@@ -260,7 +260,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "För en rätvinklig triangel finns en praktisk genväg: [[[\\boxed{r=\\frac{a+b-c}{2}}]]]. Betrakta den som en genväg för rätvinkliga trianglar, inte som den allmänna inradieformeln: för en allmän triangel fås inradien från [[r=K/s]], vilket är cirkelresonemang om man försöker hitta arean. Genvägen fungerar eftersom de två tangentlängderna från hörnet med den räta vinkeln är lika och algebran faller snyggt samman för 90-gradersfallet."
+            "text": "För en rätvinklig triangel finns en praktisk genväg: [[[\\boxed{r=\\frac{a+b-c}{2}}]]] Betrakta den som en genväg för rätvinkliga trianglar, inte som den allmänna inradieformeln: för en allmän triangel fås inradien från [[r=K/s]], vilket är cirkelresonemang om man försöker hitta arean. Genvägen fungerar eftersom de två tangentlängderna från hörnet med den räta vinkeln är lika och algebran faller snyggt samman för 90-gradersfallet."
           },
           {
             "kind": "h3",
@@ -268,7 +268,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Först halvperimetern: [[s=(3+4+5)/2]], [[[\\boxed{s=6}]]]. Sedan inradien: [[r=(3+4-5)/2]], [[[\\boxed{r=1}]]]. Arean är [[K=rs]], [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Svaret stämmer med katetformeln, vilket bekräftar att perspektivet med den inskrivna cirkeln och katetperspektivet beskriver samma triangel."
+            "text": "Givet [[a=3]], [[b=4]], [[c=5]]. Först halvperimetern: [[s=(3+4+5)/2]], [[[\\boxed{s=6}]]] Sedan inradien: [[r=(3+4-5)/2]], [[[\\boxed{r=1}]]] Arean är [[K=rs]], [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Svaret stämmer med katetformeln, vilket bekräftar att perspektivet med den inskrivna cirkeln och katetperspektivet beskriver samma triangel."
           },
           {
             "kind": "h3",
@@ -276,7 +276,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=5]], [[b=12]], [[c=13]]. Halvperimeter: [[s=(5+12+13)/2=15]]. Inradie: [[r=(5+12-13)/2=2]]. Area: [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Verifiera med katetformeln: [[K=(5\\times12)/2=30]]. Båda metoderna stämmer överens, vilket är det förväntade utfallet när sidmätningarna är konsekventa."
+            "text": "Givet [[a=5]], [[b=12]], [[c=13]]. Halvperimeter: [[s=(5+12+13)/2=15]]. Inradie: [[r=(5+12-13)/2=2]]. Area: [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Verifiera med katetformeln: [[K=(5\\times12)/2=30]]. Båda metoderna stämmer överens, vilket är det förväntade utfallet när sidmätningarna är konsekventa."
           },
           {
             "kind": "h3",
@@ -293,7 +293,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
         "blocks": [
           {
             "kind": "p",
-            "text": "Den här metoden använder hypotenusan [[c]] som bas och den vinkelräta höjden [[h]] som höjd: [[[\\boxed{K=\\frac{ch}{2}}]]]. Det är kalkylatorns läge Area Variation (Altitude)."
+            "text": "Den här metoden använder hypotenusan [[c]] som bas och den vinkelräta höjden [[h]] som höjd: [[[\\boxed{K=\\frac{ch}{2}}]]] Det är kalkylatorns läge Area Variation (Altitude)."
           },
           {
             "kind": "h3",
@@ -317,7 +317,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[c=10\\text{ m}]] och [[h=4.8\\text{ m}]]. Beräkna: [[K=(10\\times4.8)/2]], [[K=48/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Detta är samma area som en rätvinklig triangel vars kateter mäter 6 m och 8 m, eftersom [[(6\\times8)/2=24]]. Två olika beskrivningar, en area."
+            "text": "Givet [[c=10\\text{ m}]] och [[h=4.8\\text{ m}]]. Beräkna: [[K=(10\\times4.8)/2]], [[K=48/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Detta är samma area som en rätvinklig triangel vars kateter mäter 6 m och 8 m, eftersom [[(6\\times8)/2=24]]. Två olika beskrivningar, en area."
           },
           {
             "kind": "h3",
@@ -325,7 +325,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "När båda kateterna och hypotenusan är kända följer höjden av att likställa de två areaformlerna: [[ab/2=ch/2]], alltså [[[\\boxed{h=\\frac{ab}{c}}]]]. För 6-8-10-triangeln: [[h=(6\\times8)/10=4.8\\text{ m}]]. Höjden är kortare än hypotenusan, som den måste vara: det vinkelräta är den kortaste vägen från hörnet till linjen. Observera att höjdläget inte beräknar en saknad höjd på egen hand; höjden måste vara känd eller härledd först."
+            "text": "När båda kateterna och hypotenusan är kända följer höjden av att likställa de två areaformlerna: [[ab/2=ch/2]], alltså [[[\\boxed{h=\\frac{ab}{c}}]]] För 6-8-10-triangeln: [[h=(6\\times8)/10=4.8\\text{ m}]]. Höjden är kortare än hypotenusan, som den måste vara: det vinkelräta är den kortaste vägen från hörnet till linjen. Observera att höjdläget inte beräknar en saknad höjd på egen hand; höjden måste vara känd eller härledd först."
           }
         ]
       },
@@ -395,7 +395,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Givet [[a=3]], [[b=4]], [[c=5]], med [[A\\approx36.87^\\circ]], [[B\\approx53.13^\\circ]], [[r=1]], [[s=6]] och [[h=2.4]] visar det här vad varje läge behöver och returnerar. Varje läge returnerar [[[\\boxed{K=6\\text{ square units}}]]]."
+            "text": "Givet [[a=3]], [[b=4]], [[c=5]], med [[A\\approx36.87^\\circ]], [[B\\approx53.13^\\circ]], [[r=1]], [[s=6]] och [[h=2.4]] visar det här vad varje läge behöver och returnerar. Varje läge returnerar [[[\\boxed{K=6\\text{ square units}}]]]"
           }
         ],
         "steps": [
@@ -435,7 +435,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En trädgård innehåller en rätvinklig planteringssektion med vinkelräta kateter på 6 m och 8 m. Välj Area from Legs, det naturliga valet när båda kateterna mäts direkt: [[K=(6\\times8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Sektionen täcker 24 kvadratmeter planteringsyta. Detta förutsätter att trädgårdssektionen representeras korrekt av en rätvinklig triangel med raka kanter."
+            "text": "En trädgård innehåller en rätvinklig planteringssektion med vinkelräta kateter på 6 m och 8 m. Välj Area from Legs, det naturliga valet när båda kateterna mäts direkt: [[K=(6\\times8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Sektionen täcker 24 kvadratmeter planteringsyta. Detta förutsätter att trädgårdssektionen representeras korrekt av en rätvinklig triangel med raka kanter."
           },
           {
             "kind": "h3",
@@ -443,7 +443,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En snickare skär till en rätvinklig skiva med kateter som mäter 1,2 m och 0,8 m. Välj Area from Legs: [[K=(1.2\\times0.8)/2]], [[K=0.96/2]], [[[\\boxed{K=0.48\\text{ m}^2}]]]. Skivan täcker knappt en halv kvadratmeter, vilket hjälper till att uppskatta materialtäckning. Skärtillägg och materialspill ingår inte i denna geometriska area."
+            "text": "En snickare skär till en rätvinklig skiva med kateter som mäter 1,2 m och 0,8 m. Välj Area from Legs: [[K=(1.2\\times0.8)/2]], [[K=0.96/2]], [[[\\boxed{K=0.48\\text{ m}^2}]]] Skivan täcker knappt en halv kvadratmeter, vilket hjälper till att uppskatta materialtäckning. Skärtillägg och materialspill ingår inte i denna geometriska area."
           },
           {
             "kind": "h3",
@@ -451,7 +451,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En triangulär segelsektion har vinkelräta kateter på 5 m och 12 m. Välj Area from Legs: [[K=(5\\times12)/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Formeln ger den plana arean av den triangulära sektionen, användbar för tyguppskattningar innan sömmar och krökning beaktas."
+            "text": "En triangulär segelsektion har vinkelräta kateter på 5 m och 12 m. Välj Area from Legs: [[K=(5\\times12)/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Formeln ger den plana arean av den triangulära sektionen, användbar för tyguppskattningar innan sömmar och krökning beaktas."
           },
           {
             "kind": "h3",
@@ -459,7 +459,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En lantmäterimätning identifierar en rätvinklig sektion med vinkelräta sidor på 30 m och 40 m. Välj Area from Legs: [[K=(30\\times40)/2]], [[[\\boxed{K=600\\text{ m}^2}]]]. Detta är arean av den angivna triangulära sektionen, inte nödvändigtvis den totala arean av den omgivande fastigheten. Verkliga markgränser kan kräva mer detaljerad mätning än en enda triangelmodell."
+            "text": "En lantmäterimätning identifierar en rätvinklig sektion med vinkelräta sidor på 30 m och 40 m. Välj Area from Legs: [[K=(30\\times40)/2]], [[[\\boxed{K=600\\text{ m}^2}]]] Detta är arean av den angivna triangulära sektionen, inte nödvändigtvis den totala arean av den omgivande fastigheten. Verkliga markgränser kan kräva mer detaljerad mätning än en enda triangelmodell."
           },
           {
             "kind": "h3",
@@ -467,7 +467,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En förenklad triangulär taksektion har [[b=6\\text{ m}]], [[c=10\\text{ m}]] och [[A\\approx53.13^\\circ]]. Välj Area Variation (Angle A), eftersom en katet, hypotenusan och den mellanliggande vinkeln är de uppmätta data. Med [[\\sin(53.13^\\circ)\\approx0.8]]: [[K=(6\\times10\\times0.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Resultatet är arean av det triangulära tvärsnittet. Ett verkligt taks totala yta beror på dess tredimensionella geometri och andra taksektioner."
+            "text": "En förenklad triangulär taksektion har [[b=6\\text{ m}]], [[c=10\\text{ m}]] och [[A\\approx53.13^\\circ]]. Välj Area Variation (Angle A), eftersom en katet, hypotenusan och den mellanliggande vinkeln är de uppmätta data. Med [[\\sin(53.13^\\circ)\\approx0.8]]: [[K=(6\\times10\\times0.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Resultatet är arean av det triangulära tvärsnittet. Ett verkligt taks totala yta beror på dess tredimensionella geometri och andra taksektioner."
           },
           {
             "kind": "h3",
@@ -475,7 +475,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig markissektion har [[b=4\\text{ m}]], [[c=5\\text{ m}]] och [[A\\approx36.87^\\circ]]. Välj Area Variation (Angle A): [[K=bc\\sin(A)/2]], och med [[\\sin(36.87^\\circ)\\approx0.6]] blir det [[K=(4\\times5\\times0.6)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Detta förutsätter att mätvärdena beskriver en plan rätvinklig triangel, vilket gäller för en spänd rektangulär markis som skurits på diagonalen."
+            "text": "En rätvinklig markissektion har [[b=4\\text{ m}]], [[c=5\\text{ m}]] och [[A\\approx36.87^\\circ]]. Välj Area Variation (Angle A): [[K=bc\\sin(A)/2]], och med [[\\sin(36.87^\\circ)\\approx0.6]] blir det [[K=(4\\times5\\times0.6)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Detta förutsätter att mätvärdena beskriver en plan rätvinklig triangel, vilket gäller för en spänd rektangulär markis som skurits på diagonalen."
           },
           {
             "kind": "h3",
@@ -483,7 +483,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En stödskiva har [[a=3\\text{ m}]], [[c=5\\text{ m}]] och [[B\\approx53.13^\\circ]]. Välj Area Variation (Angle B): [[K=(3\\times5\\times0.8)/2]], [[[\\boxed{K=6\\text{ m}^2}]]]. Den vinkelbaserade formeln hittar arean utan att båda kateterna matas in direkt, vilket hjälper när den andra kateten aldrig mättes."
+            "text": "En stödskiva har [[a=3\\text{ m}]], [[c=5\\text{ m}]] och [[B\\approx53.13^\\circ]]. Välj Area Variation (Angle B): [[K=(3\\times5\\times0.8)/2]], [[[\\boxed{K=6\\text{ m}^2}]]] Den vinkelbaserade formeln hittar arean utan att båda kateterna matas in direkt, vilket hjälper när den andra kateten aldrig mättes."
           },
           {
             "kind": "h3",
@@ -491,7 +491,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig takstolssektion har [[a=5\\text{ m}]], [[c=13\\text{ m}]] och [[B\\approx67.38^\\circ]]. Välj Area Variation (Angle B). Eftersom [[\\sin(67.38^\\circ)\\approx12/13]]: [[K=(5\\times13\\times(12/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]]. Detta är den triangulära sektionens geometriska area, inte en beräkning av strukturell bärförmåga."
+            "text": "En rätvinklig takstolssektion har [[a=5\\text{ m}]], [[c=13\\text{ m}]] och [[B\\approx67.38^\\circ]]. Välj Area Variation (Angle B). Eftersom [[\\sin(67.38^\\circ)\\approx12/13]]: [[K=(5\\times13\\times(12/13))/2]], [[[\\boxed{K=30\\text{ m}^2}]]] Detta är den triangulära sektionens geometriska area, inte en beräkning av strukturell bärförmåga."
           },
           {
             "kind": "h3",
@@ -499,7 +499,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "Betrakta en 3-4-5 rätvinklig triangel med [[r=1]] och [[s=6]]. Välj Area from Semiperimeter: [[K=rs]], [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]]. Inradien och halvperimetern ger en alternativ väg som aldrig multiplicerar de två kateterna, men ändå landar på samma svar."
+            "text": "Betrakta en 3-4-5 rätvinklig triangel med [[r=1]] och [[s=6]]. Välj Area from Semiperimeter: [[K=rs]], [[K=1\\times6]], [[[\\boxed{K=6\\text{ square units}}]]] Inradien och halvperimetern ger en alternativ väg som aldrig multiplicerar de två kateterna, men ändå landar på samma svar."
           },
           {
             "kind": "h3",
@@ -507,7 +507,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig tomt har sidorna [[a=5]], [[b=12]], [[c=13]]. Välj Area from Semiperimeter. Halvperimeter: [[s=(5+12+13)/2=15]]. Inradie: [[r=(5+12-13)/2=2]]. Area: [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]]. Verifiera med katetformeln: [[K=(5\\times12)/2=30]]. Båda metoderna stämmer överens eftersom båda beskriver samma tomt."
+            "text": "En rätvinklig tomt har sidorna [[a=5]], [[b=12]], [[c=13]]. Välj Area from Semiperimeter. Halvperimeter: [[s=(5+12+13)/2=15]]. Inradie: [[r=(5+12-13)/2=2]]. Area: [[K=2\\times15]], [[[\\boxed{K=30\\text{ square units}}]]] Verifiera med katetformeln: [[K=(5\\times12)/2=30]]. Båda metoderna stämmer överens eftersom båda beskriver samma tomt."
           },
           {
             "kind": "h3",
@@ -515,7 +515,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En triangulär skiva representeras av en rätvinklig triangel vars hypotenusa mäter 10 m och vars vinkelräta höjd mot hypotenusan är 4,8 m. Välj Area Variation (Altitude): [[K=ch/2]], [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Höjden måste vara vinkelrät mot hypotenusan: varje annan linje från hörnet till hypotenusan är längre och skulle överdriva arean."
+            "text": "En triangulär skiva representeras av en rätvinklig triangel vars hypotenusa mäter 10 m och vars vinkelräta höjd mot hypotenusan är 4,8 m. Välj Area Variation (Altitude): [[K=ch/2]], [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Höjden måste vara vinkelrät mot hypotenusan: varje annan linje från hörnet till hypotenusan är längre och skulle överdriva arean."
           },
           {
             "kind": "h3",
@@ -523,7 +523,7 @@ export const AREA_TRANSLATIONS_BATCH3C = {
           },
           {
             "kind": "p",
-            "text": "En rätvinklig sektion har en hypotenusa på 20 m och en vinkelrät höjd på 9 m. Välj Area Variation (Altitude): [[K=(20\\times9)/2]], [[[\\boxed{K=90\\text{ m}^2}]]]. Detta är triangelns area när mätvärdena beskriver samma giltiga rätvinkliga triangel, vilket de gör här: 9 m ligger gott och väl under hypotenusans längd, som ett vinkelrätt måste."
+            "text": "En rätvinklig sektion har en hypotenusa på 20 m och en vinkelrät höjd på 9 m. Välj Area Variation (Altitude): [[K=(20\\times9)/2]], [[[\\boxed{K=90\\text{ m}^2}]]] Detta är triangelns area när mätvärdena beskriver samma giltiga rätvinkliga triangel, vilket de gör här: 9 m ligger gott och väl under hypotenusans längd, som ett vinkelrätt måste."
           },
           {
             "kind": "h3",

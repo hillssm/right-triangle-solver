@@ -89,7 +89,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-intro": {
         "h2": "Cara Menghitung Luas Segitiga Siku-siku Menggunakan Hipotenusa dan Garis Tingginya",
         "blocks": [
-          { "kind": "p", "text": "Sebuah segitiga siku-siku memiliki hipotenusa [[10\\text{ m}]] dan garis tinggi yang ditarik ke hipotenusa itu berukuran [[4.8\\text{ m}]]. Terapkan [[K=ch/2]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Segitiga itu melingkupi 24 meter persegi area datar. Inilah metode lengkap yang diotomatisasi kalkulator: satu sisi, tinggi tegak lurusnya, satu perkalian, satu pembagian dua." },
+          { "kind": "p", "text": "Sebuah segitiga siku-siku memiliki hipotenusa [[10\\text{ m}]] dan garis tinggi yang ditarik ke hipotenusa itu berukuran [[4.8\\text{ m}]]. Terapkan [[K=ch/2]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Segitiga itu melingkupi 24 meter persegi area datar. Inilah metode lengkap yang diotomatisasi kalkulator: satu sisi, tinggi tegak lurusnya, satu perkalian, satu pembagian dua." },
           { "kind": "p", "text": "Hipotenusa berfungsi sebagai alas karena sisi mana pun dari segitiga bisa menjadi alas ketika tinggi tegak lurus yang sesuai diketahui. Garis tinggi adalah ruas tegak lurus dari titik sudut siku-siku ke hipotenusa, dan ia harus bertemu hipotenusa membentuk sudut siku-siku; ruas yang miring bukanlah tinggi yang dibutuhkan rumus ini. Karena luas hanya bergantung pada alas dan tingginya, kedua kaki tidak diperlukan sebagai masukan, dan hasilnya selalu dinyatakan dalam satuan luas dari satuan panjang yang digunakan." }
         ]
       },
@@ -106,7 +106,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
           { "kind": "h3", "text": "Memahami Garis Tinggi ke Hipotenusa" },
           { "kind": "p", "text": "Dalam segitiga [[ABC]], [[C]] adalah titik sudut siku-siku dan [[AB]] adalah hipotenusa. Garis tinggi [[h]] adalah ruas [[CD]] yang ditarik dari [[C]] tegak lurus ke [[AB]], sehingga [[CD\\perp AB]], [[CD=h]], dan [[AB=c]], dengan [[D]] sebagai kaki garis tingginya, yang membagi segitiga menjadi dua segitiga siku-siku lebih kecil yang tersarang di dalamnya." },
           { "kind": "h3", "text": "Bagaimana Garis Tinggi Membagi Hipotenusa" },
-          { "kind": "p", "text": "Misalkan garis tinggi memotong hipotenusa menjadi [[AD=x]] dan [[DB=y]]. Maka [[[\\boxed{x+y=c}]]]. Setiap segitiga yang lebih kecil memuat sudut siku-siku dan berbagi satu sudut lancip dengan segitiga aslinya, sehingga ketiga segitiga sebangun. Kesebangunan dua segitiga yang lebih kecil menghasilkan [[x/h=h/y]], dan perkalian silang menghasilkan [[[\\boxed{h^2=xy}]]], hubungan rata-rata geometris: garis tinggi adalah rata-rata geometris dari kedua ruas hipotenusa, dan titik awal untuk aturan garis tinggi maksimum di bawah." }
+          { "kind": "p", "text": "Misalkan garis tinggi memotong hipotenusa menjadi [[AD=x]] dan [[DB=y]]. Maka [[[\\boxed{x+y=c}]]] Setiap segitiga yang lebih kecil memuat sudut siku-siku dan berbagi satu sudut lancip dengan segitiga aslinya, sehingga ketiga segitiga sebangun. Kesebangunan dua segitiga yang lebih kecil menghasilkan [[x/h=h/y]], dan perkalian silang menghasilkan [[[\\boxed{h^2=xy}]]], hubungan rata-rata geometris: garis tinggi adalah rata-rata geometris dari kedua ruas hipotenusa, dan titik awal untuk aturan garis tinggi maksimum di bawah." }
         ],
         "imgAlt": "Segitiga ABC dengan sudut siku-siku di C, hipotenusa AB berlabel c, garis tinggi CD berlabel h, ruas x dan y",
         "figcaption": "Segitiga ABC dengan garis tinggi CD ke hipotenusa: AD = x, DB = y, x + y = c, h² = xy, dan K = ch/2."
@@ -114,7 +114,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-formula": {
         "h2": "Mengapa Rumus Luas Adalah Setengah Hipotenusa Kali Garis Tinggi?",
         "blocks": [
-          { "kind": "p", "text": "Luas setiap segitiga berawal dari satu aturan [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Sisi mana pun boleh menjadi alas jika tinggi yang digunakan tegak lurus terhadapnya. Kalkulator ini memilih hipotenusa sebagai alas, sehingga [[\\text{base}=c]] dan tinggi tegak lurus yang sesuai adalah garis tinggi, [[\\text{height}=h]]. Substitusi menghasilkan [[K=\\frac12\\times c\\times h]], yaitu [[[\\boxed{K=\\frac{ch}{2}}]]]." },
+          { "kind": "p", "text": "Luas setiap segitiga berawal dari satu aturan [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Sisi mana pun boleh menjadi alas jika tinggi yang digunakan tegak lurus terhadapnya. Kalkulator ini memilih hipotenusa sebagai alas, sehingga [[\\text{base}=c]] dan tinggi tegak lurus yang sesuai adalah garis tinggi, [[\\text{height}=h]]. Substitusi menghasilkan [[K=\\frac12\\times c\\times h]], yaitu [[[\\boxed{K=\\frac{ch}{2}}]]]" },
           { "kind": "h3", "text": "Mengapa Hipotenusa Bisa Digunakan sebagai Alas?" },
           { "kind": "p", "text": "Hipotenusa hanyalah alas yang dipilih untuk perhitungan ini. Garis tinggi harus diukur dari titik sudut berhadapan, yaitu titik sudut siku-siku [[C]], dan harus tegak lurus terhadap hipotenusa. Memilih sisi lain sebagai alas dengan garis tinggi pasangannya sendiri menghasilkan luas yang sama. Alas adalah peran yang dimainkan sebuah sisi, bukan label permanen." },
           { "kind": "h3", "text": "Mengapa Rumus Dibagi Dua?" },
@@ -130,11 +130,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-relationship": {
         "h2": "Bagaimana Hipotenusa dan Garis Tinggi Berhubungan dengan Kedua Kaki",
         "blocks": [
-          { "kind": "p", "text": "Dua rumus luas yang valid menggambarkan segitiga yang sama: [[K=ab/2]] dan [[K=ch/2]]. Karena keduanya menghitung luas yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Kalikan kedua sisi dengan dua: [[ab=ch]]. Menyusun ulang untuk garis tinggi menghasilkan [[[\\boxed{h=\\frac{ab}{c}}]]]. Garis tinggi ke hipotenusa adalah hasil kali kedua kaki dibagi hipotenusa, yang menjelaskan mengapa kedua rumus luas tidak pernah bisa berbeda pada segitiga yang konsisten." },
+          { "kind": "p", "text": "Dua rumus luas yang valid menggambarkan segitiga yang sama: [[K=ab/2]] dan [[K=ch/2]]. Karena keduanya menghitung luas yang sama, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Kalikan kedua sisi dengan dua: [[ab=ch]]. Menyusun ulang untuk garis tinggi menghasilkan [[[\\boxed{h=\\frac{ab}{c}}]]] Garis tinggi ke hipotenusa adalah hasil kali kedua kaki dibagi hipotenusa, yang menjelaskan mengapa kedua rumus luas tidak pernah bisa berbeda pada segitiga yang konsisten." },
           { "kind": "h3", "text": "Mengapa Hubungan Ini Berguna" },
           { "kind": "p", "text": "Ia menghubungkan tiga cara menggambarkan geometri yang sama. Kaki-kaki dan hipotenusa menentukan garis tinggi, sehingga segitiga yang diukur dari sisi-sisinya sudah memuatnya. Garis tinggi dan hipotenusa menentukan luas, sehingga luas tidak pernah perlu menemukan kembali kaki-kakinya terlebih dahulu. Menghitung luas melalui salah satu rumus lalu membandingkannya adalah salah satu pemeriksaan terkuat, karena kesalahan pada satu rute jarang terulang dengan cara yang sama pada rute lain." },
           { "kind": "h3", "text": "Menghubungkan Rumus dengan Teorema Pythagoras" },
-          { "kind": "p", "text": "Teorema Pythagoras [[a^2+b^2=c^2]] memverifikasi kaitan antara kaki-kaki dan hipotenusa. Ambil segitiga 3-4-5: [[3^2+4^2=5^2]], [[9+16=25]]. Garis tingginya adalah [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]]. Luas dari hipotenusa dan garis tinggi adalah [[K=\\frac{5\\times2.4}{2}=6]], dan dari kaki-kakinya adalah [[K=\\frac{3\\times4}{2}=6]]. Kedua rumus mengukur daerah tertutup yang sama, dan [[h=ab/c]] adalah penghubung yang menjaminnya." },
+          { "kind": "p", "text": "Teorema Pythagoras [[a^2+b^2=c^2]] memverifikasi kaitan antara kaki-kaki dan hipotenusa. Ambil segitiga 3-4-5: [[3^2+4^2=5^2]], [[9+16=25]]. Garis tingginya adalah [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]] Luas dari hipotenusa dan garis tinggi adalah [[K=\\frac{5\\times2.4}{2}=6]], dan dari kaki-kakinya adalah [[K=\\frac{3\\times4}{2}=6]]. Kedua rumus mengukur daerah tertutup yang sama, dan [[h=ab/c]] adalah penghubung yang menjaminnya." },
           { "kind": "h3", "text": "Bagaimana Garis Tinggi Menciptakan Dua Segitiga Sebangun" },
           { "kind": "p", "text": "Garis tinggi membagi segitiga asli menjadi dua segitiga siku-siku yang lebih kecil, masing-masing berbagi sudut-sudut lancipnya dengan segitiga asli. Dua sudut yang sama membuat ketiga segitiga sebangun, sehingga sisi-sisi yang bersesuaian tetap proporsional. Memasangkan garis tinggi dengan ruas-ruas hipotenusa menghasilkan [[x/h=h/y]], yang bila dikalikan silang menjadi [[h^2=xy]]: hubungan rata-rata geometris adalah kesebangunan yang ditulis sebagai persamaan." }
         ]
@@ -142,13 +142,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-max": {
         "h2": "Mengapa Garis Tinggi Tidak Bisa Lebih Panjang dari Setengah Hipotenusa?",
         "blocks": [
-          { "kind": "p", "text": "Setiap segitiga siku-siku yang valid mematuhi [[[\\boxed{h\\leq\\frac{c}{2}}]]]. Ini adalah fakta geometris, dan layak diturunkan." },
+          { "kind": "p", "text": "Setiap segitiga siku-siku yang valid mematuhi [[[\\boxed{h\\leq\\frac{c}{2}}]]] Ini adalah fakta geometris, dan layak diturunkan." },
           { "kind": "h3", "text": "Memahami Kedua Ruas Hipotenusa" },
           { "kind": "p", "text": "Ingat [[x+y=c]] dan [[h^2=xy]]. Hasil kali [[xy]] paling besar ketika kedua ruas sama, akibat dari ketidaksamaan rata-rata aritmetika-geometris: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. Karena [[x+y=c]], sisi kanan menjadi [[c^2/4]], sehingga [[h^2\\leq\\frac{c^2}{4}]], dan untuk panjang positif [[h\\leq c/2]]. Dengan kata sederhana: pembagian yang tidak seimbang mengecilkan hasil kali dan garis tingginya; garis tinggi tertinggi berasal dari pembagian yang paling seimbang." },
           { "kind": "h3", "text": "Apa yang Terjadi pada Garis Tinggi Maksimum?" },
           { "kind": "p", "text": "Maksimum terjadi ketika [[x=y=c/2]], dan kemudian [[h=c/2]]. Ini menghasilkan segitiga siku-siku sama kaki: kedua kakinya sama, dan sudut-sudut lancipnya adalah [[45^\\circ]] dan [[45^\\circ]]. Garis tinggi kemudian sekaligus menjadi garis berat ke hipotenusa, sebuah segitiga yang valid, bukan yang degenerat." },
           { "kind": "h3", "text": "Contoh Garis Tinggi Maksimum" },
-          { "kind": "p", "text": "Diberikan [[c=10]], garis tinggi maksimum adalah [[h_{\\max}=10/2=5]]. Luas maksimum adalah [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]]. Tidak ada segitiga siku-siku dengan hipotenusa 10 yang bisa memiliki garis tinggi di atas 5, dan karena itu tidak ada yang bisa memiliki luas di atas 25 satuan luas." },
+          { "kind": "p", "text": "Diberikan [[c=10]], garis tinggi maksimum adalah [[h_{\\max}=10/2=5]]. Luas maksimum adalah [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]] Tidak ada segitiga siku-siku dengan hipotenusa 10 yang bisa memiliki garis tinggi di atas 5, dan karena itu tidak ada yang bisa memiliki luas di atas 25 satuan luas." },
           { "kind": "h3", "text": "Apa yang Terjadi Ketika Garis Tinggi Lebih Besar dari c/2?" },
           { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=5.5]], garis tinggi valid maksimum adalah 5, sehingga pengukuran ini tidak bisa menggambarkan segitiga siku-siku. Rumus tetap menghasilkan [[K=\\frac{10\\times5.5}{2}=27.5]], tetapi angka itu tidak mewakili segitiga siku-siku yang valid dengan pengukuran tersebut. Perlakukan sebagai sinyal bahwa suatu pengukuran salah, bukan sebagai luas. Panduan ini tidak mengklaim apakah kalkulator menolak masukan semacam itu secara otomatis." },
           { "kind": "h3", "text": "Apa yang Terjadi Ketika Garis Tinggi Jauh Lebih Kecil?" },
@@ -186,13 +186,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Empat contoh pengerjaan membangun metode dari yang sudah dikenal ke atas. Setiap contoh menerapkan [[K=ch/2]] dengan setiap substitusi ditunjukkan, dan setiap contoh memeriksa bahwa garis tingginya menghormati batas segitiga siku-siku." },
           { "kind": "h3", "text": "Contoh 1: Menggunakan Contoh yang Sudah Ada di Kalkulator" },
-          { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=4.8]]. Langkah 1: tulis rumusnya, [[K=ch/2]]. Langkah 2: substitusikan, [[K=\\frac{10\\times4.8}{2}]]. Langkah 3: kalikan, [[K=\\frac{48}{2}]]. Jawaban akhir: [[[\\boxed{K=24\\text{ square units}}]]]. Garis tinggi valid karena [[4.8<5]], di bawah maksimum setengah hipotenusa." },
+          { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=4.8]]. Langkah 1: tulis rumusnya, [[K=ch/2]]. Langkah 2: substitusikan, [[K=\\frac{10\\times4.8}{2}]]. Langkah 3: kalikan, [[K=\\frac{48}{2}]]. Jawaban akhir: [[[\\boxed{K=24\\text{ square units}}]]] Garis tinggi valid karena [[4.8<5]], di bawah maksimum setengah hipotenusa." },
           { "kind": "h3", "text": "Contoh 2: Segitiga 3-4-5" },
-          { "kind": "p", "text": "Diberikan [[a=3]], [[b=4]], [[c=5]]. Cari dulu garis tingginya: [[h=ab/c]], sehingga [[h=\\frac{3\\times4}{5}=2.4]]. Kemudian [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]]. Verifikasi dengan kaki-kaki: [[K=\\frac{3\\times4}{2}=6]]. Kedua rute sepakat, sebagaimana mestinya." },
+          { "kind": "p", "text": "Diberikan [[a=3]], [[b=4]], [[c=5]]. Cari dulu garis tingginya: [[h=ab/c]], sehingga [[h=\\frac{3\\times4}{5}=2.4]]. Kemudian [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]] Verifikasi dengan kaki-kaki: [[K=\\frac{3\\times4}{2}=6]]. Kedua rute sepakat, sebagaimana mestinya." },
           { "kind": "h3", "text": "Contoh 3: Segitiga Siku-siku Sama Kaki" },
-          { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=5]]. Maka [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]]. Garis tinggi sama dengan setengah hipotenusa, sehingga kaki-kakinya sama dan setiap sudut lancip adalah [[45^\\circ]]. Ini adalah luas maksimum yang mungkin untuk segitiga siku-siku mana pun dengan hipotenusa 10." },
+          { "kind": "p", "text": "Diberikan [[c=10]] dan [[h=5]]. Maka [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]] Garis tinggi sama dengan setengah hipotenusa, sehingga kaki-kakinya sama dan setiap sudut lancip adalah [[45^\\circ]]. Ini adalah luas maksimum yang mungkin untuk segitiga siku-siku mana pun dengan hipotenusa 10." },
           { "kind": "h3", "text": "Contoh 4: Garis Tinggi Segitiga yang Lebih Kecil" },
-          { "kind": "p", "text": "Diberikan [[c=13]] dan [[h=5]]. Maka [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]]. Garis tinggi memenuhi batas karena [[5\\leq6.5]]: setengah hipotenusa adalah 6.5, dan 5 berada jauh di bawahnya." }
+          { "kind": "p", "text": "Diberikan [[c=13]] dan [[h=5]]. Maka [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]] Garis tinggi memenuhi batas karena [[5\\leq6.5]]: setengah hipotenusa adalah 6.5, dan 5 berada jauh di bawahnya." }
         ]
       },
       "sec-applications": {
@@ -200,29 +200,29 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Dua belas situasi pengerjaan menunjukkan rumus pada skala dan satuan yang berbeda. Setiap contoh menyebutkan segitiga dalam adegannya, memberikan dua pengukurannya, mensubstitusikan langkah demi langkah, dan menyatakan asumsi di baliknya. Setiap contoh adalah panel, profil, penampang, atau model sederhana berbentuk segitiga siku-siku; rumus berlaku untuk segitiga yang dimodelkan, bukan untuk setiap benda melengkung atau tak beraturan dengan nama yang sama." },
           { "kind": "h3", "text": "Contoh 1: Jendela Kaca Segitiga" },
-          { "kind": "p", "text": "Panel kaca segitiga siku-siku memiliki hipotenusa [[2.5\\text{ m}]] dan garis tinggi tegak lurus [[1.2\\text{ m}]]. Menggunakan [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]]. Ini adalah luas kaca datar sebelum bingkai, dengan asumsi tepi lurus dan sudut siku-siku sejati." },
+          { "kind": "p", "text": "Panel kaca segitiga siku-siku memiliki hipotenusa [[2.5\\text{ m}]] dan garis tinggi tegak lurus [[1.2\\text{ m}]]. Menggunakan [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]] Ini adalah luas kaca datar sebelum bingkai, dengan asumsi tepi lurus dan sudut siku-siku sejati." },
           { "kind": "h3", "text": "Contoh 2: Panel Sisi Bidang Miring" },
-          { "kind": "p", "text": "Panel sisi segitiga siku-siku dari sebuah bidang miring memiliki hipotenusa [[4\\text{ m}]] dan garis tinggi tegak lurus [[1.5\\text{ m}]]. Maka [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]]. Hasilnya menggambarkan profil sisi segitiga, bukan permukaan jalan." },
+          { "kind": "p", "text": "Panel sisi segitiga siku-siku dari sebuah bidang miring memiliki hipotenusa [[4\\text{ m}]] dan garis tinggi tegak lurus [[1.5\\text{ m}]]. Maka [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]] Hasilnya menggambarkan profil sisi segitiga, bukan permukaan jalan." },
           { "kind": "h3", "text": "Contoh 3: Bagian Layar Perahu" },
-          { "kind": "p", "text": "Bagian layar segitiga siku-siku memiliki hipotenusa [[13\\text{ ft}]] dan garis tinggi [[5\\text{ ft}]]. Maka [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]]. Ini adalah luas kain datar sebelum jahitan atau kelengkungan; layar asli menggembung, sehingga layar dimodelkan datar." },
+          { "kind": "p", "text": "Bagian layar segitiga siku-siku memiliki hipotenusa [[13\\text{ ft}]] dan garis tinggi [[5\\text{ ft}]]. Maka [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]] Ini adalah luas kain datar sebelum jahitan atau kelengkungan; layar asli menggembung, sehingga layar dimodelkan datar." },
           { "kind": "h3", "text": "Contoh 4: Survei Bidang Tanah Segitiga" },
-          { "kind": "p", "text": "Bidang sederhana berbentuk segitiga siku-siku memiliki hipotenusa [[50\\text{ m}]] dan garis tinggi [[12\\text{ m}]]. Maka [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]]. Ini memperkirakan luas di bawah model sederhana yang memperlakukan batas-batas sebagai garis lurus di tanah datar." },
+          { "kind": "p", "text": "Bidang sederhana berbentuk segitiga siku-siku memiliki hipotenusa [[50\\text{ m}]] dan garis tinggi [[12\\text{ m}]]. Maka [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]] Ini memperkirakan luas di bawah model sederhana yang memperlakukan batas-batas sebagai garis lurus di tanah datar." },
           { "kind": "h3", "text": "Contoh 5: Pelat Gusset Baja" },
-          { "kind": "p", "text": "Pelat penyangga baja segitiga siku-siku memiliki hipotenusa [[3.4\\text{ m}]] dan garis tinggi [[1.6\\text{ m}]]. Maka [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]]. Ini hanya luas pelat datar; kapasitas menahan beban adalah pertanyaan terpisah." },
+          { "kind": "p", "text": "Pelat penyangga baja segitiga siku-siku memiliki hipotenusa [[3.4\\text{ m}]] dan garis tinggi [[1.6\\text{ m}]]. Maka [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]] Ini hanya luas pelat datar; kapasitas menahan beban adalah pertanyaan terpisah." },
           { "kind": "h3", "text": "Contoh 6: Profil Sisi Tangga" },
-          { "kind": "p", "text": "Profil sisi tangga sederhana berbentuk segitiga siku-siku memiliki hipotenusa [[5\\text{ m}]] dan garis tinggi [[2\\text{ m}]]. Maka [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]]. Ini menggambarkan profil sisi segitiga, bukan jumlah anak tangga dan tanjakan satu per satu." },
+          { "kind": "p", "text": "Profil sisi tangga sederhana berbentuk segitiga siku-siku memiliki hipotenusa [[5\\text{ m}]] dan garis tinggi [[2\\text{ m}]]. Maka [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]] Ini menggambarkan profil sisi segitiga, bukan jumlah anak tangga dan tanjakan satu per satu." },
           { "kind": "h3", "text": "Contoh 7: Rambu Jalan Segitiga" },
-          { "kind": "p", "text": "Panel rambu segitiga siku-siku memiliki hipotenusa [[1.8\\text{ m}]] dan garis tinggi [[0.8\\text{ m}]]. Maka [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]]. 0.72 meter persegi bahan permukaan rambu; perangkat pemasangan tidak termasuk." },
+          { "kind": "p", "text": "Panel rambu segitiga siku-siku memiliki hipotenusa [[1.8\\text{ m}]] dan garis tinggi [[0.8\\text{ m}]]. Maka [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]] 0.72 meter persegi bahan permukaan rambu; perangkat pemasangan tidak termasuk." },
           { "kind": "h3", "text": "Contoh 8: Panel Penyangga Surya" },
-          { "kind": "p", "text": "Panel penyangga pemasangan segitiga siku-siku memiliki hipotenusa [[3\\text{ m}]] dan garis tinggi [[1.2\\text{ m}]]. Maka [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]]. Hanya luas panel; tidak ada hubungannya dengan listrik yang dihasilkan, karena ini braket pemasangan." },
+          { "kind": "p", "text": "Panel penyangga pemasangan segitiga siku-siku memiliki hipotenusa [[3\\text{ m}]] dan garis tinggi [[1.2\\text{ m}]]. Maka [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]] Hanya luas panel; tidak ada hubungannya dengan listrik yang dihasilkan, karena ini braket pemasangan." },
           { "kind": "h3", "text": "Contoh 9: Templat Potong Kayu Lapis" },
-          { "kind": "p", "text": "Templat kayu lapis segitiga siku-siku memiliki hipotenusa [[2.5\\text{ m}]] dan garis tinggi [[1\\text{ m}]]. Maka [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]]. Potongan segitiga yang dapat dipakai; sisa potongan membutuhkan margin terpisah." },
+          { "kind": "p", "text": "Templat kayu lapis segitiga siku-siku memiliki hipotenusa [[2.5\\text{ m}]] dan garis tinggi [[1\\text{ m}]]. Maka [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]] Potongan segitiga yang dapat dipakai; sisa potongan membutuhkan margin terpisah." },
           { "kind": "h3", "text": "Contoh 10: Spanduk Kain Segitiga" },
-          { "kind": "p", "text": "Spanduk segitiga siku-siku memiliki hipotenusa [[6\\text{ ft}]] dan garis tinggi [[2.4\\text{ ft}]]. Maka [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]]. 7.2 kaki persegi bahan datar; keliman ditambahkan oleh penjahit." },
+          { "kind": "p", "text": "Spanduk segitiga siku-siku memiliki hipotenusa [[6\\text{ ft}]] dan garis tinggi [[2.4\\text{ ft}]]. Maka [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]] 7.2 kaki persegi bahan datar; keliman ditambahkan oleh penjahit." },
           { "kind": "h3", "text": "Contoh 11: Bidang Survei Segitiga Besar" },
-          { "kind": "p", "text": "Bagian lahan segitiga siku-siku memiliki hipotenusa [[80\\text{ m}]] dan garis tinggi [[30\\text{ m}]]. Maka [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]]. Valid hanya jika bidangnya benar-benar segitiga siku-siku di tanah datar." },
+          { "kind": "p", "text": "Bagian lahan segitiga siku-siku memiliki hipotenusa [[80\\text{ m}]] dan garis tinggi [[30\\text{ m}]]. Maka [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]] Valid hanya jika bidangnya benar-benar segitiga siku-siku di tanah datar." },
           { "kind": "h3", "text": "Contoh 12: Panel Penyangga Kanopi Segitiga" },
-          { "kind": "p", "text": "Panel penyangga kanopi segitiga siku-siku memiliki hipotenusa [[8\\text{ m}]] dan garis tinggi [[3.6\\text{ m}]]. Maka [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]]. Luas segitiga datar; beban angin dan pengencang adalah pertanyaan terpisah." },
+          { "kind": "p", "text": "Panel penyangga kanopi segitiga siku-siku memiliki hipotenusa [[8\\text{ m}]] dan garis tinggi [[3.6\\text{ m}]]. Maka [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]] Luas segitiga datar; beban angin dan pengencang adalah pertanyaan terpisah." },
           { "kind": "h3", "text": "Perbandingan Contoh-contoh Praktis" }
         ],
         "table": {
@@ -248,11 +248,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-geomean": {
         "h2": "Mengapa Kuadrat Garis Tinggi Sama dengan Hasil Kali Dua Ruas Hipotenusa?",
         "blocks": [
-          { "kind": "p", "text": "Garis tinggi bertemu hipotenusa di [[D]], membaginya menjadi [[AD=x]] dan [[DB=y]]. Hubungannya adalah [[[\\boxed{h^2=xy}]]]. Di sini [[x]] adalah ruas pertama, [[y]] adalah ruas kedua, dan [[h]] adalah garis tinggi tegak lurus. Sebaiknya lihat dari mana asalnya daripada menghafalnya." },
+          { "kind": "p", "text": "Garis tinggi bertemu hipotenusa di [[D]], membaginya menjadi [[AD=x]] dan [[DB=y]]. Hubungannya adalah [[[\\boxed{h^2=xy}]]] Di sini [[x]] adalah ruas pertama, [[y]] adalah ruas kedua, dan [[h]] adalah garis tinggi tegak lurus. Sebaiknya lihat dari mana asalnya daripada menghafalnya." },
           { "kind": "h3", "text": "Bagaimana Hubungan Ini Bekerja?" },
           { "kind": "p", "text": "Garis tinggi menciptakan dua segitiga siku-siku yang lebih kecil, masing-masing sebangun dengan segitiga asli sehingga sebangun satu sama lain. Memasangkan kaki pendek salah satunya dengan kaki panjang yang lain menghasilkan [[\\frac{x}{h}=\\frac{h}{y}]], yang bila dikalikan silang menjadi [[h^2=xy]]. Mengambil akar kuadrat, [[h=\\sqrt{xy}]]: garis tinggi adalah rata-rata geometris dari kedua ruas hipotenusa, bilangan yang kuadratnya sama dengan hasil kali keduanya." },
           { "kind": "h3", "text": "Contoh Numerik" },
-          { "kind": "p", "text": "Diberikan [[x=4]] dan [[y=9]], maka [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]]. Hipotenusa lengkapnya adalah [[c=4+9=13]], dan luasnya adalah [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]]. Ketika kedua ruas hipotenusa diketahui, garis tinggi mengikutinya tanpa pengukuran kaki apa pun." },
+          { "kind": "p", "text": "Diberikan [[x=4]] dan [[y=9]], maka [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]] Hipotenusa lengkapnya adalah [[c=4+9=13]], dan luasnya adalah [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]] Ketika kedua ruas hipotenusa diketahui, garis tinggi mengikutinya tanpa pengukuran kaki apa pun." },
           { "kind": "h3", "text": "Kapan Hubungan Ini Berguna?" },
           { "kind": "p", "text": "Ia muncul dalam latihan geometri ketika garis tinggi hilang tetapi ruas-ruasnya diberikan, dalam soal kesebangunan, dan kapan pun pengukuran garis tinggi membutuhkan pemeriksaan independen. Ia juga menjelaskan batas garis tinggi: hasil kali [[xy]] dibatasi oleh hipotenusa yang tetap, sehingga garis tinggi pun dibatasi. Kalkulator tidak membutuhkan [[x]] dan [[y]] sebagai masukan; teorema ini adalah pengetahuan pendukung, bukan kolom kalkulator." }
         ]
@@ -260,7 +260,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-legs": {
         "h2": "Cara Menemukan Kembali Kedua Kaki Ketika Hipotenusa dan Garis Tinggi Diketahui",
         "blocks": [
-          { "kind": "p", "text": "Kalkulator hanya membutuhkan [[c]] dan [[h]] untuk luas, tetapi dua pengukuran itu juga memuat cukup informasi untuk menentukan panjang kedua kaki, hingga pertukaran posisinya. Mulai dari [[a^2+b^2=c^2]] dan [[ab=ch]]. Karena [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], substitusi menghasilkan [[(a^2-b^2)^2=c^4-4c^2h^2]], dan karena itu [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. Dua tanda bersesuaian dengan dua penetapan kaki: menukar kaki-kaki tidak mengubah apa pun tentang segitiga maupun luasnya." },
+          { "kind": "p", "text": "Kalkulator hanya membutuhkan [[c]] dan [[h]] untuk luas, tetapi dua pengukuran itu juga memuat cukup informasi untuk menentukan panjang kedua kaki, hingga pertukaran posisinya. Mulai dari [[a^2+b^2=c^2]] dan [[ab=ch]]. Karena [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], substitusi menghasilkan [[(a^2-b^2)^2=c^4-4c^2h^2]], dan karena itu [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]] Dua tanda bersesuaian dengan dua penetapan kaki: menukar kaki-kaki tidak mengubah apa pun tentang segitiga maupun luasnya." },
           { "kind": "p", "text": "Contoh numerik: diberikan [[c=10]] dan [[h=4.8]], maka [[ab=ch=48]] dan [[a^2+b^2=100]]. Kaki-kakinya adalah [[a=6]] dan [[b=8]]. Verifikasi: [[6^2+8^2=10^2]], [[36+64=100]]. Luas terperiksa dua arah: [[K=\\frac{6\\times8}{2}=24]] dan [[K=\\frac{10\\times4.8}{2}=24]]. Ini adalah wawasan matematika tambahan, bukan fungsi tambahan dari kalkulator yang ada, dan tidak boleh mengalihkan dari tujuan kalkulator: luas dari hipotenusa dan garis tinggi." }
         ]
       },
@@ -461,7 +461,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-intro": {
         "h2": "كيفية حساب مساحة المثلث القائم باستخدام الوتر والارتفاع",
         "blocks": [
-          { "kind": "p", "text": "للمثلث القائم وتر [[10\\text{ m}]] والارتفاع المرسوم على ذلك الوتر [[4.8\\text{ m}]]. طبّق [[K=ch/2]]: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ m}^2}]]]. يحيط المثلث بمساحة مستوية قدرها 24 مترًا مربعًا. هذه هي الطريقة الكاملة التي تُؤتمتُها الحاسبة: ضلع واحد، وارتفاعه العمودي، وضرب واحد، وتنصيف واحد." },
+          { "kind": "p", "text": "للمثلث القائم وتر [[10\\text{ m}]] والارتفاع المرسوم على ذلك الوتر [[4.8\\text{ m}]]. طبّق [[K=ch/2]]: [[K=(10\\times4.8)/2]]، [[[\\boxed{K=24\\text{ m}^2}]]] يحيط المثلث بمساحة مستوية قدرها 24 مترًا مربعًا. هذه هي الطريقة الكاملة التي تُؤتمتُها الحاسبة: ضلع واحد، وارتفاعه العمودي، وضرب واحد، وتنصيف واحد." },
           { "kind": "p", "text": "يعمل الوتر كقاعدة لأن أي ضلع من أضلاع المثلث يمكن أن يكون القاعدة عندما يكون الارتفاع العمودي المقابل معروفًا. الارتفاع هو القطعة العمودية من رأس الزاوية القائمة إلى الوتر، ويجب أن يلتقي بالوتر بزاوية قائمة؛ فالقطعة المائلة ليست الارتفاع الذي تحتاجه هذه الصيغة. وبما أن المساحة تعتمد فقط على القاعدة وارتفاعها، فلا حاجة إلى الضلعين كمدخلات، وتُعبَّر النتيجة دائمًا بالوحدات المربعة لوحدة الطول المستخدمة." }
         ]
       },
@@ -478,7 +478,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
           { "kind": "h3", "text": "فهم الارتفاع على الوتر" },
           { "kind": "p", "text": "في المثلث [[ABC]]، [[C]] هو رأس الزاوية القائمة و [[AB]] هو الوتر. الارتفاع [[h]] هو القطعة [[CD]] المرسومة من [[C]] عموديًا على [[AB]]، أي [[CD\\perp AB]]، و [[CD=h]]، و [[AB=c]]، مع [[D]] بوصفها القدم، فيقسم المثلث إلى مثلثين قائمين أصغر متداخلين فيه." },
           { "kind": "h3", "text": "كيف يقسم الارتفاع الوتر" },
-          { "kind": "p", "text": "ليقطع الارتفاع الوتر إلى [[AD=x]] و [[DB=y]]. عندها [[[\\boxed{x+y=c}]]]. يحتوي كل مثلث أصغر على زاوية قائمة ويشترك في زاوية حادة مع الأصل، فتكون المثلثات الثلاثة متشابهة. يعطي تشابه المثلثين الأصغر [[x/h=h/y]]، والضرب التبادلي يعطي [[[\\boxed{h^2=xy}]]]، علاقة الوسط الهندسي: الارتفاع هو الوسط الهندسي لقطعتي الوتر، ونقطة البداية لقاعدة الارتفاع الأقصى أدناه." }
+          { "kind": "p", "text": "ليقطع الارتفاع الوتر إلى [[AD=x]] و [[DB=y]]. عندها [[[\\boxed{x+y=c}]]] يحتوي كل مثلث أصغر على زاوية قائمة ويشترك في زاوية حادة مع الأصل، فتكون المثلثات الثلاثة متشابهة. يعطي تشابه المثلثين الأصغر [[x/h=h/y]]، والضرب التبادلي يعطي [[[\\boxed{h^2=xy}]]]، علاقة الوسط الهندسي: الارتفاع هو الوسط الهندسي لقطعتي الوتر، ونقطة البداية لقاعدة الارتفاع الأقصى أدناه." }
         ],
         "imgAlt": "المثلث ABC بزاوية قائمة عند C، والوتر AB موسوم بـ c، والارتفاع CD موسوم بـ h، والقطعتان x و y",
         "figcaption": "المثلث ABC مع الارتفاع CD على الوتر: AD = x، و DB = y، و x + y = c، و h² = xy، و K = ch/2."
@@ -486,7 +486,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-formula": {
         "h2": "لماذا صيغة المساحة هي نصف الوتر مضروبًا في الارتفاع؟",
         "blocks": [
-          { "kind": "p", "text": "تبدأ مساحة كل مثلث من قاعدة واحدة [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. يجوز أن يكون أي ضلع هو القاعدة إذا كان الارتفاع المستخدم عموديًا عليه. تختار هذه الحاسبة الوتر قاعدة، فيكون [[\\text{base}=c]] والارتفاع العمودي المقابل هو الارتفاع، [[\\text{height}=h]]. يعطي التعويض [[K=\\frac12\\times c\\times h]]، أي [[[\\boxed{K=\\frac{ch}{2}}]]]." },
+          { "kind": "p", "text": "تبدأ مساحة كل مثلث من قاعدة واحدة [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. يجوز أن يكون أي ضلع هو القاعدة إذا كان الارتفاع المستخدم عموديًا عليه. تختار هذه الحاسبة الوتر قاعدة، فيكون [[\\text{base}=c]] والارتفاع العمودي المقابل هو الارتفاع، [[\\text{height}=h]]. يعطي التعويض [[K=\\frac12\\times c\\times h]]، أي [[[\\boxed{K=\\frac{ch}{2}}]]]" },
           { "kind": "h3", "text": "لماذا يمكن استخدام الوتر كقاعدة؟" },
           { "kind": "p", "text": "الوتر ببساطة هو القاعدة المختارة لهذا الحساب. يجب قياس الارتفاع من الرأس المقابل، وهو رأس الزاوية القائمة [[C]]، ويجب أن يكون عموديًا على الوتر. اختيار ضلع آخر قاعدة مع ارتفاعه المقابل يعطي المساحة نفسها. القاعدة دور يلعبه الضلع، وليست تسمية دائمة." },
           { "kind": "h3", "text": "لماذا تُقسم الصيغة على اثنين؟" },
@@ -502,11 +502,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-relationship": {
         "h2": "كيف يرتبط الوتر والارتفاع بالضلعين",
         "blocks": [
-          { "kind": "p", "text": "تصف صيغتا مساحة صحيحتان المثلث نفسه: [[K=ab/2]] و [[K=ch/2]]. وبما أنهما تحسبان المساحة نفسها، فإن [[\\frac{ab}{2}=\\frac{ch}{2}]]. بضرب الطرفين في اثنين: [[ab=ch]]. وإعادة الترتيب للارتفاع تعطي [[[\\boxed{h=\\frac{ab}{c}}]]]. الارتفاع على الوتر هو حاصل ضرب الضلعين مقسومًا على الوتر، وهذا يفسر لماذا لا يمكن لصيغتي المساحة أن تختلفا في مثلث متسق." },
+          { "kind": "p", "text": "تصف صيغتا مساحة صحيحتان المثلث نفسه: [[K=ab/2]] و [[K=ch/2]]. وبما أنهما تحسبان المساحة نفسها، فإن [[\\frac{ab}{2}=\\frac{ch}{2}]]. بضرب الطرفين في اثنين: [[ab=ch]]. وإعادة الترتيب للارتفاع تعطي [[[\\boxed{h=\\frac{ab}{c}}]]] الارتفاع على الوتر هو حاصل ضرب الضلعين مقسومًا على الوتر، وهذا يفسر لماذا لا يمكن لصيغتي المساحة أن تختلفا في مثلث متسق." },
           { "kind": "h3", "text": "لماذا هذه العلاقة مفيدة" },
           { "kind": "p", "text": "إنها تربط ثلاث طرق لوصف الهندسة نفسها. الضلعان والوتر يحددان الارتفاع، فالمثلث المقاس بأضلاعه يحتويه سلفًا. والارتفاع والوتر يحددان المساحة، فلا تحتاج المساحة أبدًا إلى استعادة الضلعين أولًا. حساب المساحة بأي من الصيغتين ثم المقارنة من أقوى عمليات التحقق، لأن الخطأ في طريق نادرًا ما يتكرر في الآخر." },
           { "kind": "h3", "text": "ربط الصيغة بنظرية فيثاغورس" },
-          { "kind": "p", "text": "تتحقق نظرية فيثاغورس [[a^2+b^2=c^2]] من الصلة بين الضلعين والوتر. خذ مثلث 3-4-5: [[3^2+4^2=5^2]]، [[9+16=25]]. الارتفاع هو [[h=\\frac{3\\times4}{5}]]، [[[\\boxed{h=2.4}]]]. المساحة من الوتر والارتفاع هي [[K=\\frac{5\\times2.4}{2}=6]]، ومن الضلعين هي [[K=\\frac{3\\times4}{2}=6]]. تقيس الصيغتان المنطقة المحاطة نفسها، و [[h=ab/c]] هو الرابط الذي يضمن ذلك." },
+          { "kind": "p", "text": "تتحقق نظرية فيثاغورس [[a^2+b^2=c^2]] من الصلة بين الضلعين والوتر. خذ مثلث 3-4-5: [[3^2+4^2=5^2]]، [[9+16=25]]. الارتفاع هو [[h=\\frac{3\\times4}{5}]]، [[[\\boxed{h=2.4}]]] المساحة من الوتر والارتفاع هي [[K=\\frac{5\\times2.4}{2}=6]]، ومن الضلعين هي [[K=\\frac{3\\times4}{2}=6]]. تقيس الصيغتان المنطقة المحاطة نفسها، و [[h=ab/c]] هو الرابط الذي يضمن ذلك." },
           { "kind": "h3", "text": "كيف يخلق الارتفاع مثلثين متشابهين" },
           { "kind": "p", "text": "يقسم الارتفاع المثلث الأصلي إلى مثلثين قائمين أصغر، يشترك كل منهما في زواياه الحادة مع الأصل. زاويتان مشتركتان تجعلان المثلثات الثلاثة متشابهة، فتبقى الأضلاع المتناظرة متناسبة. مطابقة الارتفاع مع قطعتي الوتر تعطي [[x/h=h/y]]، التي بالضرب التبادلي تصبح [[h^2=xy]]: علاقة الوسط الهندسي هي التشابه مكتوبًا معادلة." }
         ]
@@ -514,13 +514,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-max": {
         "h2": "لماذا لا يمكن أن يكون الارتفاع أطول من نصف الوتر أبدًا؟",
         "blocks": [
-          { "kind": "p", "text": "كل مثلث قائم صحيح يخضع لـ [[[\\boxed{h\\leq\\frac{c}{2}}]]]. هذه حقيقة هندسية، وتستحق اشتقاقًا." },
+          { "kind": "p", "text": "كل مثلث قائم صحيح يخضع لـ [[[\\boxed{h\\leq\\frac{c}{2}}]]] هذه حقيقة هندسية، وتستحق اشتقاقًا." },
           { "kind": "h3", "text": "فهم قطعتي الوتر" },
           { "kind": "p", "text": "تذكر [[x+y=c]] و [[h^2=xy]]. يكون حاصل الضرب [[xy]] أكبر ما يمكن عندما تتساوى القطعتان، نتيجة لمتباينة الوسط الحسابي الهندسي: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. وبما أن [[x+y=c]]، يصبح الطرف الأيمن [[c^2/4]]، أي [[h^2\\leq\\frac{c^2}{4}]]، وللأطوال الموجبة [[h\\leq c/2]]. بعبارة بسيطة: التقسيمات غير المتساوية تصغّر حاصل الضرب والارتفاع؛ وأطول ارتفاع يأتي من أكثر تقسيم تساويًا." },
           { "kind": "h3", "text": "ماذا يحدث عند الارتفاع الأقصى؟" },
           { "kind": "p", "text": "يحدث الأقصى عندما [[x=y=c/2]]، وعندها [[h=c/2]]. ينتج عن هذا مثلث قائم متساوي الساقين: ضلعاه متساويان، وزاويتاه الحادتان [[45^\\circ]] و [[45^\\circ]]. يعمل الارتفاع عندها أيضًا كمتوسط إلى الوتر، وهو مثلث صحيح لا منحل." },
           { "kind": "h3", "text": "مثال على الارتفاع الأقصى" },
-          { "kind": "p", "text": "بفرض [[c=10]]، يكون الارتفاع الأقصى [[h_{\\max}=10/2=5]]. والمساحة القصوى هي [[K=\\frac{10\\times5}{2}]]، [[[\\boxed{K_{\\max}=25}]]]. لا يمكن لأي مثلث قائم وتره 10 أن يكون ارتفاعه فوق 5، وبالتالي لا يمكن أن تتجاوز مساحته 25 وحدة مربعة." },
+          { "kind": "p", "text": "بفرض [[c=10]]، يكون الارتفاع الأقصى [[h_{\\max}=10/2=5]]. والمساحة القصوى هي [[K=\\frac{10\\times5}{2}]]، [[[\\boxed{K_{\\max}=25}]]] لا يمكن لأي مثلث قائم وتره 10 أن يكون ارتفاعه فوق 5، وبالتالي لا يمكن أن تتجاوز مساحته 25 وحدة مربعة." },
           { "kind": "h3", "text": "ماذا يحدث عندما يكون الارتفاع أكبر من c/2؟" },
           { "kind": "p", "text": "بفرض [[c=10]] و [[h=5.5]]، فإن الارتفاع الصحيح الأقصى هو 5، فلا يمكن لهذه القياسات أن تصف مثلثًا قائمًا. ما تزال الصيغة تنتج [[K=\\frac{10\\times5.5}{2}=27.5]]، لكن هذا الرقم لا يمثل أي مثلث قائم صحيح بتلك القياسات. تعامل معه كإشارة إلى أن قياسًا ما خاطئ، لا كمساحة. لا يدعي هذا الدليل ما إذا كانت الحاسبة ترفض مثل هذه المدخلات تلقائيًا." },
           { "kind": "h3", "text": "ماذا يحدث عندما يكون الارتفاع أصغر بكثير؟" },
@@ -558,13 +558,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "تبني أربعة أمثلة محلولة الطريقة من المألوف صعودًا. يطبق كل مثال [[K=ch/2]] مع إظهار كل تعويض، ويتحقق كل مثال من أن الارتفاع يحترم حد المثلث القائم." },
           { "kind": "h3", "text": "المثال 1: استخدام مثال الحاسبة الموجود" },
-          { "kind": "p", "text": "بفرض [[c=10]] و [[h=4.8]]. الخطوة 1: اكتب الصيغة، [[K=ch/2]]. الخطوة 2: عوّض، [[K=\\frac{10\\times4.8}{2}]]. الخطوة 3: اضرب، [[K=\\frac{48}{2}]]. الجواب النهائي: [[[\\boxed{K=24\\text{ square units}}]]]. الارتفاع صحيح لأن [[4.8<5]]، دون الحد الأقصى البالغ نصف الوتر." },
+          { "kind": "p", "text": "بفرض [[c=10]] و [[h=4.8]]. الخطوة 1: اكتب الصيغة، [[K=ch/2]]. الخطوة 2: عوّض، [[K=\\frac{10\\times4.8}{2}]]. الخطوة 3: اضرب، [[K=\\frac{48}{2}]]. الجواب النهائي: [[[\\boxed{K=24\\text{ square units}}]]] الارتفاع صحيح لأن [[4.8<5]]، دون الحد الأقصى البالغ نصف الوتر." },
           { "kind": "h3", "text": "المثال 2: مثلث 3-4-5" },
-          { "kind": "p", "text": "بفرض [[a=3]] و [[b=4]] و [[c=5]]. أوجد الارتفاع أولًا: [[h=ab/c]]، أي [[h=\\frac{3\\times4}{5}=2.4]]. ثم [[K=\\frac{5\\times2.4}{2}]]، [[[\\boxed{K=6}]]]. تحقق بالضلعين: [[K=\\frac{3\\times4}{2}=6]]. يتفق الطريقان كما يجب." },
+          { "kind": "p", "text": "بفرض [[a=3]] و [[b=4]] و [[c=5]]. أوجد الارتفاع أولًا: [[h=ab/c]]، أي [[h=\\frac{3\\times4}{5}=2.4]]. ثم [[K=\\frac{5\\times2.4}{2}]]، [[[\\boxed{K=6}]]] تحقق بالضلعين: [[K=\\frac{3\\times4}{2}=6]]. يتفق الطريقان كما يجب." },
           { "kind": "h3", "text": "المثال 3: مثلث قائم متساوي الساقين" },
-          { "kind": "p", "text": "بفرض [[c=10]] و [[h=5]]. عندها [[K=\\frac{10\\times5}{2}]]، [[[\\boxed{K=25}]]]. يساوي الارتفاع نصف الوتر، فتتساوى الساقان وتكون كل زاوية حادة [[45^\\circ]]. هذه هي أكبر مساحة ممكنة لأي مثلث قائم وتره 10." },
+          { "kind": "p", "text": "بفرض [[c=10]] و [[h=5]]. عندها [[K=\\frac{10\\times5}{2}]]، [[[\\boxed{K=25}]]] يساوي الارتفاع نصف الوتر، فتتساوى الساقان وتكون كل زاوية حادة [[45^\\circ]]. هذه هي أكبر مساحة ممكنة لأي مثلث قائم وتره 10." },
           { "kind": "h3", "text": "المثال 4: ارتفاع مثلث أصغر" },
-          { "kind": "p", "text": "بفرض [[c=13]] و [[h=5]]. عندها [[K=\\frac{13\\times5}{2}]]، [[[\\boxed{K=32.5\\text{ square units}}]]]. يحقق الارتفاع الحد لأن [[5\\leq6.5]]: نصف الوتر 6.5، و 5 دونه بارتياح." }
+          { "kind": "p", "text": "بفرض [[c=13]] و [[h=5]]. عندها [[K=\\frac{13\\times5}{2}]]، [[[\\boxed{K=32.5\\text{ square units}}]]] يحقق الارتفاع الحد لأن [[5\\leq6.5]]: نصف الوتر 6.5، و 5 دونه بارتياح." }
         ]
       },
       "sec-applications": {
@@ -572,29 +572,29 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "تُظهر اثنتا عشرة حالة محلولة الصيغة بمقاييس ووحدات مختلفة. يسمي كل مثال المثلث في المشهد، ويعطي القياسين، ويعوض خطوة بخطوة، ويذكر الافتراض وراءه. كل مثال لوح أو مقطع أو نموذج مبسط مثلث قائم؛ وتنطبق الصيغة على المثلث المُنمذج، لا على كل جسم منحنٍ أو غير منتظم يحمل الاسم نفسه." },
           { "kind": "h3", "text": "المثال 1: نافذة زجاجية مثلثة" },
-          { "kind": "p", "text": "لوح زجاجي مثلث قائم وتره [[2.5\\text{ m}]] وارتفاعه العمودي [[1.2\\text{ m}]]. باستخدام [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]]، [[[\\boxed{K=1.5\\text{ m}^2}]]]. هذه مساحة الزجاج المستوية قبل الإطار، بافتراض حواف مستقيمة وزاوية قائمة حقيقية." },
+          { "kind": "p", "text": "لوح زجاجي مثلث قائم وتره [[2.5\\text{ m}]] وارتفاعه العمودي [[1.2\\text{ m}]]. باستخدام [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]]، [[[\\boxed{K=1.5\\text{ m}^2}]]] هذه مساحة الزجاج المستوية قبل الإطار، بافتراض حواف مستقيمة وزاوية قائمة حقيقية." },
           { "kind": "h3", "text": "المثال 2: اللوح الجانبي لمنحدر" },
-          { "kind": "p", "text": "لوح جانبي مثلث قائم لمنحدر وتره [[4\\text{ m}]] وارتفاعه العمودي [[1.5\\text{ m}]]. عندها [[K=\\frac{4\\times1.5}{2}]]، [[[\\boxed{K=3\\text{ m}^2}]]]. تصف النتيجة المقطع الجانبي المثلث، لا سطح السير." },
+          { "kind": "p", "text": "لوح جانبي مثلث قائم لمنحدر وتره [[4\\text{ m}]] وارتفاعه العمودي [[1.5\\text{ m}]]. عندها [[K=\\frac{4\\times1.5}{2}]]، [[[\\boxed{K=3\\text{ m}^2}]]] تصف النتيجة المقطع الجانبي المثلث، لا سطح السير." },
           { "kind": "h3", "text": "المثال 3: مقطع شراع مثلث" },
-          { "kind": "p", "text": "مقطع شراع مثلث قائم وتره [[13\\text{ ft}]] وارتفاعه [[5\\text{ ft}]]. عندها [[K=\\frac{13\\times5}{2}]]، [[[\\boxed{K=32.5\\text{ ft}^2}]]]. هذه مساحة القماش المستوية قبل الدرزات أو الانحناء؛ فالأشرعة الحقيقية تنتفخ، لذا يُنمذج الشراع مسطحًا." },
+          { "kind": "p", "text": "مقطع شراع مثلث قائم وتره [[13\\text{ ft}]] وارتفاعه [[5\\text{ ft}]]. عندها [[K=\\frac{13\\times5}{2}]]، [[[\\boxed{K=32.5\\text{ ft}^2}]]] هذه مساحة القماش المستوية قبل الدرزات أو الانحناء؛ فالأشرعة الحقيقية تنتفخ، لذا يُنمذج الشراع مسطحًا." },
           { "kind": "h3", "text": "المثال 4: مسح قطعة أرض مثلثة" },
-          { "kind": "p", "text": "قطعة أرض مبسطة مثلثة قائمة وترها [[50\\text{ m}]] وارتفاعها [[12\\text{ m}]]. عندها [[K=\\frac{50\\times12}{2}]]، [[[\\boxed{K=300\\text{ m}^2}]]]. يقدّر هذا المساحة ضمن نموذج مبسط يعامل الحدود خطوطًا مستقيمة على أرض مستوية." },
+          { "kind": "p", "text": "قطعة أرض مبسطة مثلثة قائمة وترها [[50\\text{ m}]] وارتفاعها [[12\\text{ m}]]. عندها [[K=\\frac{50\\times12}{2}]]، [[[\\boxed{K=300\\text{ m}^2}]]] يقدّر هذا المساحة ضمن نموذج مبسط يعامل الحدود خطوطًا مستقيمة على أرض مستوية." },
           { "kind": "h3", "text": "المثال 5: لوح تقوية فولاذي" },
-          { "kind": "p", "text": "لوح دعم فولاذي مثلث قائم وتره [[3.4\\text{ m}]] وارتفاعه [[1.6\\text{ m}]]. عندها [[K=\\frac{3.4\\times1.6}{2}]]، [[[\\boxed{K=2.72\\text{ m}^2}]]]. هذه مساحة اللوح المستوية فقط؛ وقدرة التحمل سؤال منفصل." },
+          { "kind": "p", "text": "لوح دعم فولاذي مثلث قائم وتره [[3.4\\text{ m}]] وارتفاعه [[1.6\\text{ m}]]. عندها [[K=\\frac{3.4\\times1.6}{2}]]، [[[\\boxed{K=2.72\\text{ m}^2}]]] هذه مساحة اللوح المستوية فقط؛ وقدرة التحمل سؤال منفصل." },
           { "kind": "h3", "text": "المثال 6: المقطع الجانبي لدرج" },
-          { "kind": "p", "text": "مقطع جانبي مبسط لدرج مثلث قائم وتره [[5\\text{ m}]] وارتفاعه [[2\\text{ m}]]. عندها [[K=\\frac{5\\times2}{2}]]، [[[\\boxed{K=5\\text{ m}^2}]]]. يصف هذا المقطع الجانبي المثلث، لا مجموع الدرجات والقوائم." },
+          { "kind": "p", "text": "مقطع جانبي مبسط لدرج مثلث قائم وتره [[5\\text{ m}]] وارتفاعه [[2\\text{ m}]]. عندها [[K=\\frac{5\\times2}{2}]]، [[[\\boxed{K=5\\text{ m}^2}]]] يصف هذا المقطع الجانبي المثلث، لا مجموع الدرجات والقوائم." },
           { "kind": "h3", "text": "المثال 7: لافتة طريق مثلثة" },
-          { "kind": "p", "text": "لوح لافتة مثلث قائم وتره [[1.8\\text{ m}]] وارتفاعه [[0.8\\text{ m}]]. عندها [[K=\\frac{1.8\\times0.8}{2}]]، [[[\\boxed{K=0.72\\text{ m}^2}]]]. 0.72 متر مربع من مادة وجه اللافتة؛ ومعدات التثبيت مستبعدة." },
+          { "kind": "p", "text": "لوح لافتة مثلث قائم وتره [[1.8\\text{ m}]] وارتفاعه [[0.8\\text{ m}]]. عندها [[K=\\frac{1.8\\times0.8}{2}]]، [[[\\boxed{K=0.72\\text{ m}^2}]]] 0.72 متر مربع من مادة وجه اللافتة؛ ومعدات التثبيت مستبعدة." },
           { "kind": "h3", "text": "المثال 8: لوح دعم شمسي" },
-          { "kind": "p", "text": "لوح دعم تركيب مثلث قائم وتره [[3\\text{ m}]] وارتفاعه [[1.2\\text{ m}]]. عندها [[K=\\frac{3\\times1.2}{2}]]، [[[\\boxed{K=1.8\\text{ m}^2}]]]. مساحة اللوح فقط؛ ولا شيء عن الكهرباء المنتجة، فهذا قوس تركيب." },
+          { "kind": "p", "text": "لوح دعم تركيب مثلث قائم وتره [[3\\text{ m}]] وارتفاعه [[1.2\\text{ m}]]. عندها [[K=\\frac{3\\times1.2}{2}]]، [[[\\boxed{K=1.8\\text{ m}^2}]]] مساحة اللوح فقط؛ ولا شيء عن الكهرباء المنتجة، فهذا قوس تركيب." },
           { "kind": "h3", "text": "المثال 9: قالب قطع من الخشب الرقائقي" },
-          { "kind": "p", "text": "قالب خشب رقائقي مثلث قائم وتره [[2.5\\text{ m}]] وارتفاعه [[1\\text{ m}]]. عندها [[K=\\frac{2.5\\times1}{2}]]، [[[\\boxed{K=1.25\\text{ m}^2}]]]. القطعة المثلثة القابلة للاستخدام؛ ويحتاج هدر القطع إلى هامش منفصل." },
+          { "kind": "p", "text": "قالب خشب رقائقي مثلث قائم وتره [[2.5\\text{ m}]] وارتفاعه [[1\\text{ m}]]. عندها [[K=\\frac{2.5\\times1}{2}]]، [[[\\boxed{K=1.25\\text{ m}^2}]]] القطعة المثلثة القابلة للاستخدام؛ ويحتاج هدر القطع إلى هامش منفصل." },
           { "kind": "h3", "text": "المثال 10: لافتة قماشية مثلثة" },
-          { "kind": "p", "text": "لافتة مثلثة قائمة وترها [[6\\text{ ft}]] وارتفاعها [[2.4\\text{ ft}]]. عندها [[K=\\frac{6\\times2.4}{2}]]، [[[\\boxed{K=7.2\\text{ ft}^2}]]]. 7.2 قدم مربعة من المادة المستوية؛ ويضيف الصانع بدلات الحواشي." },
+          { "kind": "p", "text": "لافتة مثلثة قائمة وترها [[6\\text{ ft}]] وارتفاعها [[2.4\\text{ ft}]]. عندها [[K=\\frac{6\\times2.4}{2}]]، [[[\\boxed{K=7.2\\text{ ft}^2}]]] 7.2 قدم مربعة من المادة المستوية؛ ويضيف الصانع بدلات الحواشي." },
           { "kind": "h3", "text": "المثال 11: قطعة مسح مثلثة كبيرة" },
-          { "kind": "p", "text": "قسم أرض مثلث قائم وتره [[80\\text{ m}]] وارتفاعه [[30\\text{ m}]]. عندها [[K=\\frac{80\\times30}{2}]]، [[[\\boxed{K=1,200\\text{ m}^2}]]]. صحيح فقط حيث تكون القطعة مثلثة قائمة فعلًا على أرض مستوية." },
+          { "kind": "p", "text": "قسم أرض مثلث قائم وتره [[80\\text{ m}]] وارتفاعه [[30\\text{ m}]]. عندها [[K=\\frac{80\\times30}{2}]]، [[[\\boxed{K=1,200\\text{ m}^2}]]] صحيح فقط حيث تكون القطعة مثلثة قائمة فعلًا على أرض مستوية." },
           { "kind": "h3", "text": "المثال 12: لوح دعم مظلة مثلث" },
-          { "kind": "p", "text": "لوح دعم مظلة مثلث قائم وتره [[8\\text{ m}]] وارتفاعه [[3.6\\text{ m}]]. عندها [[K=\\frac{8\\times3.6}{2}]]، [[[\\boxed{K=14.4\\text{ m}^2}]]]. مساحة مثلثة مستوية؛ وأحمال الرياح والتثبيتات أسئلة منفصلة." },
+          { "kind": "p", "text": "لوح دعم مظلة مثلث قائم وتره [[8\\text{ m}]] وارتفاعه [[3.6\\text{ m}]]. عندها [[K=\\frac{8\\times3.6}{2}]]، [[[\\boxed{K=14.4\\text{ m}^2}]]] مساحة مثلثة مستوية؛ وأحمال الرياح والتثبيتات أسئلة منفصلة." },
           { "kind": "h3", "text": "مقارنة الأمثلة العملية" }
         ],
         "table": {
@@ -620,11 +620,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-geomean": {
         "h2": "لماذا يساوي مربع الارتفاع حاصل ضرب قطعتي الوتر؟",
         "blocks": [
-          { "kind": "p", "text": "يلتقي الارتفاع بالوتر عند [[D]]، فيقسمه إلى [[AD=x]] و [[DB=y]]. العلاقة هي [[[\\boxed{h^2=xy}]]]. هنا [[x]] هي القطعة الأولى، و [[y]] هي الثانية، و [[h]] هو الارتفاع العمودي. يجدر أن نرى من أين تأتي بدل حفظها." },
+          { "kind": "p", "text": "يلتقي الارتفاع بالوتر عند [[D]]، فيقسمه إلى [[AD=x]] و [[DB=y]]. العلاقة هي [[[\\boxed{h^2=xy}]]] هنا [[x]] هي القطعة الأولى، و [[y]] هي الثانية، و [[h]] هو الارتفاع العمودي. يجدر أن نرى من أين تأتي بدل حفظها." },
           { "kind": "h3", "text": "كيف تعمل هذه العلاقة؟" },
           { "kind": "p", "text": "يخلق الارتفاع مثلثين قائمين أصغر، كل منهما مشابه للأصل وبالتالي مشابه للآخر. مطابقة الساق القصيرة لأحدهما مع الساق الطويلة للآخر تعطي [[\\frac{x}{h}=\\frac{h}{y}]]، التي بالضرب التبادلي تصبح [[h^2=xy]]. وبأخذ الجذور التربيعية، [[h=\\sqrt{xy}]]: الارتفاع هو الوسط الهندسي لقطعتي الوتر، العدد الذي يساوي مربعه حاصل ضربهما." },
           { "kind": "h3", "text": "مثال عددي" },
-          { "kind": "p", "text": "بفرض [[x=4]] و [[y=9]]، عندها [[h^2=4\\times9=36]]، [[[\\boxed{h=6}]]]. الوتر الكامل هو [[c=4+9=13]]، والمساحة هي [[K=\\frac{13\\times6}{2}]]، [[[\\boxed{K=39}]]]. عندما تكون قطعتا الوتر معروفتين، يتبع الارتفاع دون أي قياس للأضلاع." },
+          { "kind": "p", "text": "بفرض [[x=4]] و [[y=9]]، عندها [[h^2=4\\times9=36]]، [[[\\boxed{h=6}]]] الوتر الكامل هو [[c=4+9=13]]، والمساحة هي [[K=\\frac{13\\times6}{2}]]، [[[\\boxed{K=39}]]] عندما تكون قطعتا الوتر معروفتين، يتبع الارتفاع دون أي قياس للأضلاع." },
           { "kind": "h3", "text": "متى تكون هذه العلاقة مفيدة؟" },
           { "kind": "p", "text": "تظهر في تمارين الهندسة حيث يكون الارتفاع مفقودًا والقطعتان معطاتين، وفي مسائل التشابه، وكلما احتاج قياس الارتفاع إلى تحقق مستقل. كما أنها تفسر حد الارتفاع: حاصل الضرب [[xy]] محدود بالوتر الثابت، فالارتفاع محدود أيضًا. لا تحتاج الحاسبة إلى [[x]] و [[y]] كمدخلات؛ فهذه النظرية معرفة داعمة، لا حقل في الحاسبة." }
         ]
@@ -632,7 +632,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-legs": {
         "h2": "كيفية استعادة الضلعين عندما يكون الوتر والارتفاع معروفين",
         "blocks": [
-          { "kind": "p", "text": "تحتاج الحاسبة إلى [[c]] و [[h]] فقط للمساحة، لكن هذين القياسين يحتويان أيضًا على معلومات كافية لتحديد طولي الضلعين، حتى تبديل موضعيهما. ابدأ من [[a^2+b^2=c^2]] و [[ab=ch]]. وبما أن [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]]، يعطي التعويض [[(a^2-b^2)^2=c^4-4c^2h^2]]، وبالتالي [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. تتوافق الإشارتان مع إسنادي الضلعين: تبديل الضلعين لا يغير شيئًا في المثلث ولا في مساحته." },
+          { "kind": "p", "text": "تحتاج الحاسبة إلى [[c]] و [[h]] فقط للمساحة، لكن هذين القياسين يحتويان أيضًا على معلومات كافية لتحديد طولي الضلعين، حتى تبديل موضعيهما. ابدأ من [[a^2+b^2=c^2]] و [[ab=ch]]. وبما أن [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]]، يعطي التعويض [[(a^2-b^2)^2=c^4-4c^2h^2]]، وبالتالي [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]] تتوافق الإشارتان مع إسنادي الضلعين: تبديل الضلعين لا يغير شيئًا في المثلث ولا في مساحته." },
           { "kind": "p", "text": "مثال عددي: بفرض [[c=10]] و [[h=4.8]]، عندها [[ab=ch=48]] و [[a^2+b^2=100]]. الضلعان هما [[a=6]] و [[b=8]]. تحقق: [[6^2+8^2=10^2]]، [[36+64=100]]. تتحقق المساحة بالاتجاهين: [[K=\\frac{6\\times8}{2}=24]] و [[K=\\frac{10\\times4.8}{2}=24]]. هذه بصيرة رياضية إضافية، ليست وظيفة إضافية للحاسبة الموجودة، ويجب ألا تشتت عن غرض الحاسبة: المساحة من الوتر والارتفاع." }
         ]
       },
@@ -833,7 +833,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-intro": {
         "h2": "Как да изчислим лицето на правоъгълен триъгълник от хипотенузата и височината му",
         "blocks": [
-          { "kind": "p", "text": "Правоъгълен триъгълник има хипотенуза [[10\\text{ m}]], а височината, спусната към тази хипотенуза, е [[4.8\\text{ m}]]. Приложете [[K=ch/2]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]]. Триъгълникът огражда 24 квадратни метра плоска площ. Това е пълният метод, който калкулаторът автоматизира: една страна, нейната перпендикулярна височина, едно умножение, едно разполовяване." },
+          { "kind": "p", "text": "Правоъгълен триъгълник има хипотенуза [[10\\text{ m}]], а височината, спусната към тази хипотенуза, е [[4.8\\text{ m}]]. Приложете [[K=ch/2]]: [[K=(10\\times4.8)/2]], [[[\\boxed{K=24\\text{ m}^2}]]] Триъгълникът огражда 24 квадратни метра плоска площ. Това е пълният метод, който калкулаторът автоматизира: една страна, нейната перпендикулярна височина, едно умножение, едно разполовяване." },
           { "kind": "p", "text": "Хипотенузата работи като основа, защото всяка страна на триъгълника може да е основа, когато съответната ѝ перпендикулярна височина е известна. Височината е перпендикулярната отсечка от върха на правия ъгъл до хипотенузата и трябва да я среща под прав ъгъл; наклонена отсечка не е височината, от която се нуждае тази формула. Тъй като лицето зависи само от основата и нейната височина, двата катета не са нужни като входни данни, а резултатът винаги се изразява в квадратните единици на използваната мерна единица за дължина." }
         ]
       },
@@ -850,7 +850,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
           { "kind": "h3", "text": "Разбиране на височината към хипотенузата" },
           { "kind": "p", "text": "В триъгълник [[ABC]], [[C]] е върхът на правия ъгъл, а [[AB]] е хипотенузата. Височината [[h]] е отсечката [[CD]], спусната от [[C]] перпендикулярно на [[AB]], значи [[CD\\perp AB]], [[CD=h]] и [[AB=c]], с [[D]] като пета, разделяща триъгълника на два по-малки правоъгълни триъгълника, вложени в него." },
           { "kind": "h3", "text": "Как височината разделя хипотенузата" },
-          { "kind": "p", "text": "Нека височината реже хипотенузата на [[AD=x]] и [[DB=y]]. Тогава [[[\\boxed{x+y=c}]]]. Всеки по-малък триъгълник съдържа прав ъгъл и споделя един остър ъгъл с първоначалния, значи и трите триъгълника са подобни. Подобието на двата по-малки триъгълника дава [[x/h=h/y]], а кръстосаното умножение дава [[[\\boxed{h^2=xy}]]], връзката на средното геометрично: височината е средното геометрично на двете отсечки на хипотенузата и отправната точка за правилото за максималната височина по-долу." }
+          { "kind": "p", "text": "Нека височината реже хипотенузата на [[AD=x]] и [[DB=y]]. Тогава [[[\\boxed{x+y=c}]]] Всеки по-малък триъгълник съдържа прав ъгъл и споделя един остър ъгъл с първоначалния, значи и трите триъгълника са подобни. Подобието на двата по-малки триъгълника дава [[x/h=h/y]], а кръстосаното умножение дава [[[\\boxed{h^2=xy}]]], връзката на средното геометрично: височината е средното геометрично на двете отсечки на хипотенузата и отправната точка за правилото за максималната височина по-долу." }
         ],
         "imgAlt": "Триъгълник ABC с прав ъгъл при C, хипотенуза AB означена с c, височина CD означена с h, отсечки x и y",
         "figcaption": "Триъгълник ABC с височината CD към хипотенузата: AD = x, DB = y, x + y = c, h² = xy и K = ch/2."
@@ -858,7 +858,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-formula": {
         "h2": "Защо формулата за лице е половината хипотенуза по височината?",
         "blocks": [
-          { "kind": "p", "text": "Лицето на всеки триъгълник тръгва от едно правило [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Всяка страна може да е основа, ако използваната височина е перпендикулярна на нея. Този калкулатор избира хипотенузата за основа, значи [[\\text{base}=c]], а съответната перпендикулярна височина е височината, [[\\text{height}=h]]. Заместването дава [[K=\\frac12\\times c\\times h]], което е [[[\\boxed{K=\\frac{ch}{2}}]]]." },
+          { "kind": "p", "text": "Лицето на всеки триъгълник тръгва от едно правило [[K=\\frac12\\times\\text{base}\\times\\text{perpendicular height}]]. Всяка страна може да е основа, ако използваната височина е перпендикулярна на нея. Този калкулатор избира хипотенузата за основа, значи [[\\text{base}=c]], а съответната перпендикулярна височина е височината, [[\\text{height}=h]]. Заместването дава [[K=\\frac12\\times c\\times h]], което е [[[\\boxed{K=\\frac{ch}{2}}]]]" },
           { "kind": "h3", "text": "Защо хипотенузата може да се използва като основа?" },
           { "kind": "p", "text": "Хипотенузата е просто избраната основа за това изчисление. Височината трябва да се измерва от срещуположния връх, върха на правия ъгъл [[C]], и трябва да е перпендикулярна на хипотенузата. Избирането на друга страна за основа със собствената ѝ съответна височина дава същото лице. Основата е роля, която страната играе, не постоянен етикет." },
           { "kind": "h3", "text": "Защо формулата се дели на две?" },
@@ -874,11 +874,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-relationship": {
         "h2": "Как хипотенузата и височината са свързани с двата катета",
         "blocks": [
-          { "kind": "p", "text": "Две валидни формули за лице описват един и същ триъгълник: [[K=ab/2]] и [[K=ch/2]]. Тъй като изчисляват едно и също лице, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Умножете двете страни по две: [[ab=ch]]. Преобразуването за височината дава [[[\\boxed{h=\\frac{ab}{c}}]]]. Височината към хипотенузата е произведението на двата катета, разделено на хипотенузата, което обяснява защо двете формули за лице никога не могат да се разминат при последователен триъгълник." },
+          { "kind": "p", "text": "Две валидни формули за лице описват един и същ триъгълник: [[K=ab/2]] и [[K=ch/2]]. Тъй като изчисляват едно и също лице, [[\\frac{ab}{2}=\\frac{ch}{2}]]. Умножете двете страни по две: [[ab=ch]]. Преобразуването за височината дава [[[\\boxed{h=\\frac{ab}{c}}]]] Височината към хипотенузата е произведението на двата катета, разделено на хипотенузата, което обяснява защо двете формули за лице никога не могат да се разминат при последователен триъгълник." },
           { "kind": "h3", "text": "Защо тази връзка е полезна" },
           { "kind": "p", "text": "Тя свързва три начина за описание на една и съща геометрия. Катетите и хипотенузата определят височината, значи триъгълникът, измерен по страните си, вече я съдържа. Височината и хипотенузата определят лицето, значи лицето никога не се нуждае първо да възстановява катетите. Изчисляването на лицето по едната формула и сравняването е една от най-силните проверки, защото грешка в единия път рядко се възпроизвежда в другия." },
           { "kind": "h3", "text": "Свързване на формулата с Питагоровата теорема" },
-          { "kind": "p", "text": "Питагоровата теорема [[a^2+b^2=c^2]] проверява връзката между катетите и хипотенузата. Вземете триъгълник 3-4-5: [[3^2+4^2=5^2]], [[9+16=25]]. Височината е [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]]. Лицето от хипотенуза и височина е [[K=\\frac{5\\times2.4}{2}=6]], а от катетите е [[K=\\frac{3\\times4}{2}=6]]. Двете формули измерват една и съща оградена област, а [[h=ab/c]] е връзката, която го гарантира." },
+          { "kind": "p", "text": "Питагоровата теорема [[a^2+b^2=c^2]] проверява връзката между катетите и хипотенузата. Вземете триъгълник 3-4-5: [[3^2+4^2=5^2]], [[9+16=25]]. Височината е [[h=\\frac{3\\times4}{5}]], [[[\\boxed{h=2.4}]]] Лицето от хипотенуза и височина е [[K=\\frac{5\\times2.4}{2}=6]], а от катетите е [[K=\\frac{3\\times4}{2}=6]]. Двете формули измерват една и съща оградена област, а [[h=ab/c]] е връзката, която го гарантира." },
           { "kind": "h3", "text": "Как височината създава два подобни триъгълника" },
           { "kind": "p", "text": "Височината разделя първоначалния триъгълник на два по-малки правоъгълни триъгълника, всеки от които споделя острите си ъгли с първоначалния. Два споделени ъгъла правят и трите триъгълника подобни, значи съответните страни остават пропорционални. Съпоставянето на височината с отсечките на хипотенузата дава [[x/h=h/y]], което при кръстосано умножение става [[h^2=xy]]: връзката на средното геометрично е подобието, записано като уравнение." }
         ]
@@ -886,13 +886,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-max": {
         "h2": "Защо височината никога не може да е по-дълга от половината хипотенуза?",
         "blocks": [
-          { "kind": "p", "text": "Всеки валиден правоъгълен триъгълник спазва [[[\\boxed{h\\leq\\frac{c}{2}}]]]. Това е геометричен факт и заслужава извеждане." },
+          { "kind": "p", "text": "Всеки валиден правоъгълен триъгълник спазва [[[\\boxed{h\\leq\\frac{c}{2}}]]] Това е геометричен факт и заслужава извеждане." },
           { "kind": "h3", "text": "Разбиране на двете отсечки на хипотенузата" },
           { "kind": "p", "text": "Припомнете си [[x+y=c]] и [[h^2=xy]]. Произведението [[xy]] е най-голямо, когато двете отсечки са равни, следствие от неравенството между средноаритметичното и средногеометричното: [[xy\\leq\\left(\\frac{x+y}{2}\\right)^2]]. Тъй като [[x+y=c]], дясната страна става [[c^2/4]], значи [[h^2\\leq\\frac{c^2}{4}]], а за положителни дължини [[h\\leq c/2]]. С прости думи: неравните разделяния смаляват произведението и височината; най-високата височина идва от най-равномерното разделяне." },
           { "kind": "h3", "text": "Какво се случва при максималната височина?" },
           { "kind": "p", "text": "Максимумът настъпва при [[x=y=c/2]], а тогава [[h=c/2]]. Това дава равнобедрен правоъгълен триъгълник: двата му катета са равни, а острите му ъгли са [[45^\\circ]] и [[45^\\circ]]. Височината тогава служи и като медиана към хипотенузата, валиден триъгълник, не изроден." },
           { "kind": "h3", "text": "Пример за максимална височина" },
-          { "kind": "p", "text": "При [[c=10]] максималната височина е [[h_{\\max}=10/2=5]]. Максималното лице е [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]]. Никой правоъгълен триъгълник с хипотенуза 10 не може да има височина над 5 и следователно никой не може да има лице над 25 квадратни единици." },
+          { "kind": "p", "text": "При [[c=10]] максималната височина е [[h_{\\max}=10/2=5]]. Максималното лице е [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K_{\\max}=25}]]] Никой правоъгълен триъгълник с хипотенуза 10 не може да има височина над 5 и следователно никой не може да има лице над 25 квадратни единици." },
           { "kind": "h3", "text": "Какво се случва, когато височината е по-голяма от c/2?" },
           { "kind": "p", "text": "При [[c=10]] и [[h=5.5]] максималната валидна височина е 5, значи тези измервания не могат да описват правоъгълен триъгълник. Формулата все пак дава [[K=\\frac{10\\times5.5}{2}=27.5]], но това число не представлява валиден правоъгълен триъгълник с тези измервания. Приемете го като сигнал, че някое измерване е грешно, не като лице. Това ръководство не твърди дали калкулаторът отхвърля такива входни данни автоматично." },
           { "kind": "h3", "text": "Какво се случва, когато височината е много по-малка?" },
@@ -930,13 +930,13 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Четири решени примера изграждат метода от познатото нагоре. Всеки прилага [[K=ch/2]] с показано всяко заместване и всеки проверява, че височината спазва границата на правоъгълния триъгълник." },
           { "kind": "h3", "text": "Пример 1: Използване на съществуващия пример на калкулатора" },
-          { "kind": "p", "text": "Дадено [[c=10]] и [[h=4.8]]. Стъпка 1: запишете формулата, [[K=ch/2]]. Стъпка 2: заместете, [[K=\\frac{10\\times4.8}{2}]]. Стъпка 3: умножете, [[K=\\frac{48}{2}]]. Краен отговор: [[[\\boxed{K=24\\text{ square units}}]]]. Височината е валидна, защото [[4.8<5]], под максимума от половината хипотенуза." },
+          { "kind": "p", "text": "Дадено [[c=10]] и [[h=4.8]]. Стъпка 1: запишете формулата, [[K=ch/2]]. Стъпка 2: заместете, [[K=\\frac{10\\times4.8}{2}]]. Стъпка 3: умножете, [[K=\\frac{48}{2}]]. Краен отговор: [[[\\boxed{K=24\\text{ square units}}]]] Височината е валидна, защото [[4.8<5]], под максимума от половината хипотенуза." },
           { "kind": "h3", "text": "Пример 2: Триъгълник 3-4-5" },
-          { "kind": "p", "text": "Дадено [[a=3]], [[b=4]], [[c=5]]. Първо намерете височината: [[h=ab/c]], значи [[h=\\frac{3\\times4}{5}=2.4]]. Тогава [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]]. Проверете с катетите: [[K=\\frac{3\\times4}{2}=6]]. И двата пътя съвпадат, както трябва." },
+          { "kind": "p", "text": "Дадено [[a=3]], [[b=4]], [[c=5]]. Първо намерете височината: [[h=ab/c]], значи [[h=\\frac{3\\times4}{5}=2.4]]. Тогава [[K=\\frac{5\\times2.4}{2}]], [[[\\boxed{K=6}]]] Проверете с катетите: [[K=\\frac{3\\times4}{2}=6]]. И двата пътя съвпадат, както трябва." },
           { "kind": "h3", "text": "Пример 3: Равнобедрен правоъгълен триъгълник" },
-          { "kind": "p", "text": "Дадено [[c=10]] и [[h=5]]. Тогава [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]]. Височината е равна на половината хипотенуза, значи катетите са равни и всеки остър ъгъл е [[45^\\circ]]. Това е максималното възможно лице за всеки правоъгълен триъгълник с хипотенуза 10." },
+          { "kind": "p", "text": "Дадено [[c=10]] и [[h=5]]. Тогава [[K=\\frac{10\\times5}{2}]], [[[\\boxed{K=25}]]] Височината е равна на половината хипотенуза, значи катетите са равни и всеки остър ъгъл е [[45^\\circ]]. Това е максималното възможно лице за всеки правоъгълен триъгълник с хипотенуза 10." },
           { "kind": "h3", "text": "Пример 4: По-малка височина на триъгълник" },
-          { "kind": "p", "text": "Дадено [[c=13]] и [[h=5]]. Тогава [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]]. Височината удовлетворява границата, защото [[5\\leq6.5]]: половината хипотенуза е 6.5, а 5 е удобно под нея." }
+          { "kind": "p", "text": "Дадено [[c=13]] и [[h=5]]. Тогава [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ square units}}]]] Височината удовлетворява границата, защото [[5\\leq6.5]]: половината хипотенуза е 6.5, а 5 е удобно под нея." }
         ]
       },
       "sec-applications": {
@@ -944,29 +944,29 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
         "blocks": [
           { "kind": "p", "text": "Дванадесет решени ситуации показват формулата в различни мащаби и единици. Всеки пример назовава триъгълника в сцената, дава двете измервания, замества стъпка по стъпка и посочва предположението зад него. Всеки пример е правоъгълен триъгълен панел, профил, сечение или опростен модел; формулата се прилага за моделирания триъгълник, не за всеки извит или неправилен обект със същото име." },
           { "kind": "h3", "text": "Пример 1: Триъгълен стъклен прозорец" },
-          { "kind": "p", "text": "Правоъгълен триъгълен стъклен панел има хипотенуза [[2.5\\text{ m}]] и перпендикулярна височина [[1.2\\text{ m}]]. С [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]]. Това е плоското стъклено лице преди рамката, при прави ръбове и истински прав ъгъл." },
+          { "kind": "p", "text": "Правоъгълен триъгълен стъклен панел има хипотенуза [[2.5\\text{ m}]] и перпендикулярна височина [[1.2\\text{ m}]]. С [[K=ch/2]]: [[K=\\frac{2.5\\times1.2}{2}]], [[[\\boxed{K=1.5\\text{ m}^2}]]] Това е плоското стъклено лице преди рамката, при прави ръбове и истински прав ъгъл." },
           { "kind": "h3", "text": "Пример 2: Страничен панел на рампа" },
-          { "kind": "p", "text": "Правоъгълен триъгълен страничен панел на рампа има хипотенуза [[4\\text{ m}]] и перпендикулярна височина [[1.5\\text{ m}]]. Тогава [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]]. Резултатът описва триъгълния страничен профил, не повърхността за ходене." },
+          { "kind": "p", "text": "Правоъгълен триъгълен страничен панел на рампа има хипотенуза [[4\\text{ m}]] и перпендикулярна височина [[1.5\\text{ m}]]. Тогава [[K=\\frac{4\\times1.5}{2}]], [[[\\boxed{K=3\\text{ m}^2}]]] Резултатът описва триъгълния страничен профил, не повърхността за ходене." },
           { "kind": "h3", "text": "Пример 3: Триъгълна секция на платно" },
-          { "kind": "p", "text": "Правоъгълна триъгълна секция на платно има хипотенуза [[13\\text{ ft}]] и височина [[5\\text{ ft}]]. Тогава [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]]. Това е плоското платно преди шевовете или извивката; истинските платна се издуват, затова платното е моделирано плоско." },
+          { "kind": "p", "text": "Правоъгълна триъгълна секция на платно има хипотенуза [[13\\text{ ft}]] и височина [[5\\text{ ft}]]. Тогава [[K=\\frac{13\\times5}{2}]], [[[\\boxed{K=32.5\\text{ ft}^2}]]] Това е плоското платно преди шевовете или извивката; истинските платна се издуват, затова платното е моделирано плоско." },
           { "kind": "h3", "text": "Пример 4: Заснемане на триъгълен поземлен участък" },
-          { "kind": "p", "text": "Опростен правоъгълен триъгълен парцел има хипотенуза [[50\\text{ m}]] и височина [[12\\text{ m}]]. Тогава [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]]. Това оценява лицето при опростен модел, третиращ границите като прави линии върху равна земя." },
+          { "kind": "p", "text": "Опростен правоъгълен триъгълен парцел има хипотенуза [[50\\text{ m}]] и височина [[12\\text{ m}]]. Тогава [[K=\\frac{50\\times12}{2}]], [[[\\boxed{K=300\\text{ m}^2}]]] Това оценява лицето при опростен модел, третиращ границите като прави линии върху равна земя." },
           { "kind": "h3", "text": "Пример 5: Стоманена свързваща планка" },
-          { "kind": "p", "text": "Правоъгълна триъгълна стоманена опорна планка има хипотенуза [[3.4\\text{ m}]] и височина [[1.6\\text{ m}]]. Тогава [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]]. Това е само плоското лице на планката; носимоспособността е отделен въпрос." },
+          { "kind": "p", "text": "Правоъгълна триъгълна стоманена опорна планка има хипотенуза [[3.4\\text{ m}]] и височина [[1.6\\text{ m}]]. Тогава [[K=\\frac{3.4\\times1.6}{2}]], [[[\\boxed{K=2.72\\text{ m}^2}]]] Това е само плоското лице на планката; носимоспособността е отделен въпрос." },
           { "kind": "h3", "text": "Пример 6: Страничен профил на стълбище" },
-          { "kind": "p", "text": "Опростен правоъгълен триъгълен страничен профил на стълбище има хипотенуза [[5\\text{ m}]] и височина [[2\\text{ m}]]. Тогава [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]]. Това описва триъгълния страничен профил, не сбора на отделните стъпала и чела." },
+          { "kind": "p", "text": "Опростен правоъгълен триъгълен страничен профил на стълбище има хипотенуза [[5\\text{ m}]] и височина [[2\\text{ m}]]. Тогава [[K=\\frac{5\\times2}{2}]], [[[\\boxed{K=5\\text{ m}^2}]]] Това описва триъгълния страничен профил, не сбора на отделните стъпала и чела." },
           { "kind": "h3", "text": "Пример 7: Триъгълен пътен знак" },
-          { "kind": "p", "text": "Правоъгълен триъгълен панел за знак има хипотенуза [[1.8\\text{ m}]] и височина [[0.8\\text{ m}]]. Тогава [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]]. 0.72 квадратни метра материал за лице на знак; монтажният хардуер е изключен." },
+          { "kind": "p", "text": "Правоъгълен триъгълен панел за знак има хипотенуза [[1.8\\text{ m}]] и височина [[0.8\\text{ m}]]. Тогава [[K=\\frac{1.8\\times0.8}{2}]], [[[\\boxed{K=0.72\\text{ m}^2}]]] 0.72 квадратни метра материал за лице на знак; монтажният хардуер е изключен." },
           { "kind": "h3", "text": "Пример 8: Опорен панел за солар" },
-          { "kind": "p", "text": "Правоъгълен триъгълен монтажен опорен панел има хипотенуза [[3\\text{ m}]] и височина [[1.2\\text{ m}]]. Тогава [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]]. Само лицето на панела; нищо за произведената електроенергия, тъй като това е монтажна скоба." },
+          { "kind": "p", "text": "Правоъгълен триъгълен монтажен опорен панел има хипотенуза [[3\\text{ m}]] и височина [[1.2\\text{ m}]]. Тогава [[K=\\frac{3\\times1.2}{2}]], [[[\\boxed{K=1.8\\text{ m}^2}]]] Само лицето на панела; нищо за произведената електроенергия, тъй като това е монтажна скоба." },
           { "kind": "h3", "text": "Пример 9: Шаблон за рязане от шперплат" },
-          { "kind": "p", "text": "Правоъгълен триъгълен шаблон от шперплат има хипотенуза [[2.5\\text{ m}]] и височина [[1\\text{ m}]]. Тогава [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]]. Използваемото триъгълно парче; отпадъкът от рязане се нуждае от отделен запас." },
+          { "kind": "p", "text": "Правоъгълен триъгълен шаблон от шперплат има хипотенуза [[2.5\\text{ m}]] и височина [[1\\text{ m}]]. Тогава [[K=\\frac{2.5\\times1}{2}]], [[[\\boxed{K=1.25\\text{ m}^2}]]] Използваемото триъгълно парче; отпадъкът от рязане се нуждае от отделен запас." },
           { "kind": "h3", "text": "Пример 10: Триъгълен рекламен банер от плат" },
-          { "kind": "p", "text": "Правоъгълен триъгълен банер има хипотенуза [[6\\text{ ft}]] и височина [[2.4\\text{ ft}]]. Тогава [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]]. 7.2 квадратни фута плосък материал; подгъвите се добавят от производителя." },
+          { "kind": "p", "text": "Правоъгълен триъгълен банер има хипотенуза [[6\\text{ ft}]] и височина [[2.4\\text{ ft}]]. Тогава [[K=\\frac{6\\times2.4}{2}]], [[[\\boxed{K=7.2\\text{ ft}^2}]]] 7.2 квадратни фута плосък материал; подгъвите се добавят от производителя." },
           { "kind": "h3", "text": "Пример 11: Голям триъгълен заснет участък" },
-          { "kind": "p", "text": "Правоъгълен триъгълен поземлен участък има хипотенуза [[80\\text{ m}]] и височина [[30\\text{ m}]]. Тогава [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]]. Валидно само където парцелът е истински правоъгълен триъгълен върху равна земя." },
+          { "kind": "p", "text": "Правоъгълен триъгълен поземлен участък има хипотенуза [[80\\text{ m}]] и височина [[30\\text{ m}]]. Тогава [[K=\\frac{80\\times30}{2}]], [[[\\boxed{K=1,200\\text{ m}^2}]]] Валидно само където парцелът е истински правоъгълен триъгълен върху равна земя." },
           { "kind": "h3", "text": "Пример 12: Триъгълен опорен панел за навес" },
-          { "kind": "p", "text": "Правоъгълен триъгълен опорен панел за навес има хипотенуза [[8\\text{ m}]] и височина [[3.6\\text{ m}]]. Тогава [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]]. Плоско триъгълно лице; вятърните натоварвания и крепежите са отделни въпроси." },
+          { "kind": "p", "text": "Правоъгълен триъгълен опорен панел за навес има хипотенуза [[8\\text{ m}]] и височина [[3.6\\text{ m}]]. Тогава [[K=\\frac{8\\times3.6}{2}]], [[[\\boxed{K=14.4\\text{ m}^2}]]] Плоско триъгълно лице; вятърните натоварвания и крепежите са отделни въпроси." },
           { "kind": "h3", "text": "Сравнение на практическите примери" }
         ],
         "table": {
@@ -992,11 +992,11 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-geomean": {
         "h2": "Защо квадратът на височината е равен на произведението на двете отсечки на хипотенузата?",
         "blocks": [
-          { "kind": "p", "text": "Височината среща хипотенузата в [[D]], разделяйки я на [[AD=x]] и [[DB=y]]. Връзката е [[[\\boxed{h^2=xy}]]]. Тук [[x]] е първата отсечка, [[y]] е втората, а [[h]] е перпендикулярната височина. Струва си да се види откъде идва, а не да се запомня." },
+          { "kind": "p", "text": "Височината среща хипотенузата в [[D]], разделяйки я на [[AD=x]] и [[DB=y]]. Връзката е [[[\\boxed{h^2=xy}]]] Тук [[x]] е първата отсечка, [[y]] е втората, а [[h]] е перпендикулярната височина. Струва си да се види откъде идва, а не да се запомня." },
           { "kind": "h3", "text": "Как работи тази връзка?" },
           { "kind": "p", "text": "Височината създава два по-малки правоъгълни триъгълника, всеки подобен на първоначалния и следователно подобни един на друг. Съпоставянето на късия катет на единия с дългия катет на другия дава [[\\frac{x}{h}=\\frac{h}{y}]], което при кръстосано умножение става [[h^2=xy]]. Като извадим квадратен корен, [[h=\\sqrt{xy}]]: височината е средното геометрично на двете отсечки на хипотенузата, числото, чийто квадрат е равен на тяхното произведение." },
           { "kind": "h3", "text": "Числов пример" },
-          { "kind": "p", "text": "При [[x=4]] и [[y=9]] тогава [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]]. Цялата хипотенуза е [[c=4+9=13]], а лицето е [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]]. Когато двете отсечки на хипотенузата са известни, височината следва без измервания на катети." },
+          { "kind": "p", "text": "При [[x=4]] и [[y=9]] тогава [[h^2=4\\times9=36]], [[[\\boxed{h=6}]]] Цялата хипотенуза е [[c=4+9=13]], а лицето е [[K=\\frac{13\\times6}{2}]], [[[\\boxed{K=39}]]] Когато двете отсечки на хипотенузата са известни, височината следва без измервания на катети." },
           { "kind": "h3", "text": "Кога е полезна тази връзка?" },
           { "kind": "p", "text": "Тя се появява в геометрични упражнения, където височината липсва, но отсечките са дадени, в задачи за подобие и винаги когато измерване на височината се нуждае от независима проверка. Тя обяснява и границата на височината: произведението [[xy]] е ограничено от фиксираната хипотенуза, значи и височината е ограничена. Калкулаторът не се нуждае от [[x]] и [[y]] като входни данни; тази теорема е поддържащо знание, не поле на калкулатора." }
         ]
@@ -1004,7 +1004,7 @@ export const AREA_FROM_HYPOTENUSE_ALTITUDE_TRANSLATIONS_BATCH5 = {
       "sec-legs": {
         "h2": "Как да възстановим двата катета, когато хипотенузата и височината са известни",
         "blocks": [
-          { "kind": "p", "text": "Калкулаторът се нуждае само от [[c]] и [[h]] за лицето, но тези две измервания съдържат и достатъчно информация за определяне на дължините на двата катета, с точност до размяната им. Започнете от [[a^2+b^2=c^2]] и [[ab=ch]]. Тъй като [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], заместването дава [[(a^2-b^2)^2=c^4-4c^2h^2]] и следователно [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]]. Двата знака съответстват на двете присвоявания на катетите: размяната на катетите не променя нищо нито в триъгълника, нито в лицето му." },
+          { "kind": "p", "text": "Калкулаторът се нуждае само от [[c]] и [[h]] за лицето, но тези две измервания съдържат и достатъчно информация за определяне на дължините на двата катета, с точност до размяната им. Започнете от [[a^2+b^2=c^2]] и [[ab=ch]]. Тъй като [[(a^2-b^2)^2=(a^2+b^2)^2-4a^2b^2]], заместването дава [[(a^2-b^2)^2=c^4-4c^2h^2]] и следователно [[[\\boxed{a^2,b^2=\\frac{c^2\\pm c\\sqrt{c^2-4h^2}}{2}}]]] Двата знака съответстват на двете присвоявания на катетите: размяната на катетите не променя нищо нито в триъгълника, нито в лицето му." },
           { "kind": "p", "text": "Числов пример: при [[c=10]] и [[h=4.8]] тогава [[ab=ch=48]] и [[a^2+b^2=100]]. Катетите са [[a=6]] и [[b=8]]. Проверка: [[6^2+8^2=10^2]], [[36+64=100]]. Лицето се проверява и в двете посоки: [[K=\\frac{6\\times8}{2}=24]] и [[K=\\frac{10\\times4.8}{2}=24]]. Това е допълнителен математически поглед, не допълнителна функция на съществуващия калкулатор, и не бива да отвлича от целта на калкулатора: лице от хипотенуза и височина." }
         ]
       },

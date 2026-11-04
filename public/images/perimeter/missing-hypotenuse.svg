@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="50" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Find the Missing Hypotenuse Before Calculating the Perimeter</text>
+
+<rect x="20" y="64" width="540" height="548" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<polygon points="80,540 432,276 432,540" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="80" y1="540" x2="432" y2="540" stroke="#4ade80" stroke-width="8" stroke-linecap="round"/>
+<line x1="432" y1="540" x2="432" y2="276" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round"/>
+<line x1="80" y1="540" x2="432" y2="276" stroke="#f1c97d" stroke-width="8" stroke-linecap="round" stroke-dasharray="16 10"/>
+<circle cx="54" cy="542" r="9" fill="#f1c97d"/>
+<text x="54" y="551" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">A</text>
+<circle cx="460" cy="542" r="9" fill="#f1c97d"/>
+<text x="460" y="551" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">C</text>
+<circle cx="436" cy="248" r="9" fill="#f1c97d"/>
+<text x="436" y="257" font-size="24" font-weight="700" fill="#131313" text-anchor="middle">B</text>
+<text x="256.0" y="584" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">a = 6</text>
+<text x="466" y="417.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="start">b = 8</text>
+<text x="196.0" y="394.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">c = ?</text>
+<polyline points="408,540 408,516 432,516" fill="none" stroke="#ffffff" stroke-width="3"/>
+<text x="290" y="120" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">Step 1: find c</text>
+<rect x="600" y="64" width="580" height="548" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="890" y="120" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">Step 2: add the sides</text>
+<text x="890" y="200" font-size="26" fill="#ffffff" text-anchor="middle">c = sqrt(a^2 + b^2)</text>
+<text x="890" y="260" font-size="26" fill="#ffffff" text-anchor="middle">c = sqrt(6^2 + 8^2)</text>
+<text x="890" y="320" font-size="26" fill="#ffffff" text-anchor="middle">c = sqrt(36 + 64) = 10</text>
+<text x="890" y="400" font-size="26" fill="#ffffff" text-anchor="middle">P = 6 + 8 + 10</text>
+<text x="890" y="480" font-size="52" font-weight="700" fill="#f1c97d" text-anchor="middle">P = 24</text>
+<text x="890" y="540" font-size="20" fill="#a3a3a3" text-anchor="middle">the missing side comes first,</text>
+<text x="890" y="570" font-size="20" fill="#a3a3a3" text-anchor="middle">then the perimeter follows</text>
+</svg>

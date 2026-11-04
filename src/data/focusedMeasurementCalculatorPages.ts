@@ -349,7 +349,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'What does each variable mean in P = a + b + c?',
-        answer: 'P is the perimeter (total boundary length). a is one leg of the right triangle. b is the other leg. c is the hypotenuse \u2014 the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that sits opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. The two legs form the 90\u00b0 corner.'
+        answer: 'P is the perimeter (total boundary length). a is one leg of the right triangle. b is the other leg. c is the hypotenuse, the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a> that sits opposite the right <a href="/right-triangle-angle-calculator/" class="text-primary hover:underline">angle</a>. The two legs form the 90\u00b0 corner.'
       },
       {
         question: 'Can I find the perimeter with only two sides?',
@@ -377,7 +377,7 @@ export const FOCUSED_MEASUREMENT_CALCULATOR_PAGES: FocusedMeasurementCalculatorP
       },
       {
         question: 'Can the perimeter of a right triangle be an odd number?',
-        answer: 'Yes. The perimeter can be any positive number \u2014 integer, decimal, or irrational. For example, a right triangle with legs 1 and 1 has hypotenuse \u221a2 \u2248 1.414, giving perimeter \u2248 3.414, which is neither an integer nor rational.'
+        answer: 'Yes. The perimeter can be any positive number: integer, decimal, or irrational. For example, a right triangle with legs 1 and 1 has hypotenuse \u221a2 \u2248 1.414, giving perimeter \u2248 3.414, which is neither an integer nor rational.'
       },
       {
         question: 'Why is the hypotenuse always the longest side?',

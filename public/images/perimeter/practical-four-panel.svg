@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="50" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Four Real-World Right Triangle Perimeter Calculations</text>
+
+<rect x="20" y="68" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="44" y="104" font-size="22" font-weight="700" fill="#ffffff">Triangular window frame</text>
+<polygon points="60,268 196,166 196,268" fill="none" stroke="#f1c97d" stroke-width="10" stroke-linejoin="round" opacity="0.22"/>
+<polygon points="60,268 196,166 196,268" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="60" y1="268" x2="196" y2="268" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"/>
+<line x1="196" y1="268" x2="196" y2="166" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
+<line x1="60" y1="268" x2="196" y2="166" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="181,268 181,253 196,253" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="60" cy="268" r="6" fill="#f1c97d"/>
+<circle cx="196" cy="268" r="6" fill="#f1c97d"/>
+<circle cx="196" cy="166" r="6" fill="#f1c97d"/>
+<text x="292" y="140" font-size="19" fill="#ffffff" text-anchor="start">a = 3 m</text>
+<text x="292" y="170" font-size="19" fill="#ffffff" text-anchor="start">b = 4 m</text>
+<text x="292" y="200" font-size="19" fill="#ffffff" text-anchor="start">c = 5 m</text>
+<text x="292" y="244" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">P = 3 + 4 + 5 = 12 m</text>
+<rect x="620" y="68" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="644" y="104" font-size="22" font-weight="700" fill="#ffffff">Roof edge trim</text>
+<polygon points="660,268 820,148 820,268" fill="none" stroke="#f1c97d" stroke-width="10" stroke-linejoin="round" opacity="0.22"/>
+<polygon points="660,268 820,148 820,268" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="660" y1="268" x2="820" y2="268" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"/>
+<line x1="820" y1="268" x2="820" y2="148" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
+<line x1="660" y1="268" x2="820" y2="148" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="805,268 805,253 820,253" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="660" cy="268" r="6" fill="#f1c97d"/>
+<circle cx="820" cy="268" r="6" fill="#f1c97d"/>
+<circle cx="820" cy="148" r="6" fill="#f1c97d"/>
+<text x="892" y="140" font-size="19" fill="#ffffff" text-anchor="start">a = 6 ft</text>
+<text x="892" y="170" font-size="19" fill="#ffffff" text-anchor="start">b = 8 ft</text>
+<text x="892" y="200" font-size="19" fill="#ffffff" text-anchor="start">c = 10 ft</text>
+<text x="892" y="244" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">P = 6 + 8 + 10 = 24 ft</text>
+<rect x="20" y="336" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="44" y="372" font-size="22" font-weight="700" fill="#ffffff">Garden border</text>
+<polygon points="60,536 232.8,485.6 232.8,536" fill="none" stroke="#f1c97d" stroke-width="10" stroke-linejoin="round" opacity="0.22"/>
+<polygon points="60,536 232.8,485.6 232.8,536" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="60" y1="536" x2="232.8" y2="536" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"/>
+<line x1="232.8" y1="536" x2="232.8" y2="485.6" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
+<line x1="60" y1="536" x2="232.8" y2="485.6" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="217.8,536 217.8,521 232.8,521" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="60" cy="536" r="6" fill="#f1c97d"/>
+<circle cx="232.8" cy="536" r="6" fill="#f1c97d"/>
+<circle cx="232.8" cy="485.6" r="6" fill="#f1c97d"/>
+<text x="292" y="408" font-size="19" fill="#ffffff" text-anchor="start">a = 7 m</text>
+<text x="292" y="438" font-size="19" fill="#ffffff" text-anchor="start">b = 24 m</text>
+<text x="292" y="468" font-size="19" fill="#ffffff" text-anchor="start">c = 25 m</text>
+<text x="292" y="512" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">P = 7 + 24 + 25 = 56 m</text>
+<rect x="620" y="336" width="560" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+<text x="644" y="372" font-size="22" font-weight="700" fill="#ffffff">Steel support bracket</text>
+<polygon points="660,536 840,440 840,536" fill="none" stroke="#f1c97d" stroke-width="10" stroke-linejoin="round" opacity="0.22"/>
+<polygon points="660,536 840,440 840,536" fill="#ffffff" fill-opacity="0.05"/>
+<line x1="660" y1="536" x2="840" y2="536" stroke="#7dd3fc" stroke-width="5" stroke-linecap="round"/>
+<line x1="840" y1="536" x2="840" y2="440" stroke="#4ade80" stroke-width="5" stroke-linecap="round"/>
+<line x1="660" y1="536" x2="840" y2="440" stroke="#f1c97d" stroke-width="6" stroke-linecap="round"/>
+<polyline points="825,536 825,521 840,521" fill="none" stroke="#ffffff" stroke-width="3"/>
+<circle cx="660" cy="536" r="6" fill="#f1c97d"/>
+<circle cx="840" cy="536" r="6" fill="#f1c97d"/>
+<circle cx="840" cy="440" r="6" fill="#f1c97d"/>
+<text x="892" y="408" font-size="19" fill="#ffffff" text-anchor="start">a = 8 cm</text>
+<text x="892" y="438" font-size="19" fill="#ffffff" text-anchor="start">b = 15 cm</text>
+<text x="892" y="468" font-size="19" fill="#ffffff" text-anchor="start">c = 17 cm</text>
+<text x="892" y="512" font-size="21" font-weight="700" fill="#f1c97d" text-anchor="start">P = 8 + 15 + 17 = 40 cm</text>
+</svg>

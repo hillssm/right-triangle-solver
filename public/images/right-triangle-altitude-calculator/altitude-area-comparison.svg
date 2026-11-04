@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Two Base-Height Pairs, One Area</text>
+  <polygon points="150,490 405,490 150,150" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="150,490 405,490 150,150" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <polyline points="174,490 174,466 150,466" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="150.0" cy="490.0" r="8" fill="#f1c97d"/>
+  <circle cx="405.0" cy="490.0" r="8" fill="#f1c97d"/>
+  <circle cx="150.0" cy="150.0" r="8" fill="#f1c97d"/>
+  <polygon points="700,480 1125,480 853,276" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="700,480 1125,480 853,276" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="853" y1="276" x2="853" y2="480" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="838.6,295.2 857.8,309.6 872.2,290.4" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="829,480 829,456 853,456" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="700.0" cy="480.0" r="8" fill="#f1c97d"/>
+  <circle cx="1125.0" cy="480.0" r="8" fill="#f1c97d"/>
+  <circle cx="853.0" cy="276.0" r="8" fill="#f1c97d"/>
+  <circle cx="853.0" cy="480.0" r="7" fill="#4ade80"/>
+  <text x="600" y="330" font-size="72" font-weight="700" fill="#f1c97d" text-anchor="middle">=</text>
+  <text x="600" y="368" font-size="20" fill="#a3a3a3" text-anchor="middle">same area</text>
+  <text x="285" y="100" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">base = a, height = b</text>
+  <text x="912" y="100" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">base = c, height = h</text>
+  <text x="278" y="478" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="126" y="320" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <text x="300" y="300" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">c</text>
+  <text x="278" y="524" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">base = a</text>
+  <text x="278" y="552" font-size="22" fill="#a3a3a3" text-anchor="middle">Area = ab/2</text>
+  <text x="912" y="512" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">base = c</text>
+  <text x="912" y="540" font-size="22" fill="#a3a3a3" text-anchor="middle">Area = ch/2</text>
+  <text x="821.0" y="378.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="883.0" y="306.0" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="600" y="578" font-size="22" fill="#a3a3a3" text-anchor="middle">Same triangle, two base-height pairs:</text>
+  <text x="600" y="608" font-size="22" fill="#a3a3a3" text-anchor="middle">area equals ab/2 and ch/2</text>
+</svg>

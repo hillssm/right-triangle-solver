@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Right Triangle Altitude: Main Diagram</text>
+  <polygon points="240,470 955,470 345.8,216.2" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="240,470 955,470 345.8,216.2" fill="none" stroke="#f1c97d" stroke-width="8" stroke-linejoin="round"/>
+  <line x1="345.8" y1="216.2" x2="345.8" y2="470" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="336.5,238.3 358.7,247.5 367.9,225.4" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="321.8,470 321.8,446 345.8,446" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="240.0" cy="470.0" r="9" fill="#f1c97d"/>
+  <circle cx="955.0" cy="470.0" r="9" fill="#f1c97d"/>
+  <circle cx="345.7692307692308" cy="216.1538461538462" r="9" fill="#f1c97d"/>
+  <circle cx="345.7692307692308" cy="470.0" r="7" fill="#4ade80"/>
+  <text x="220.0" y="502.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="975.0" y="502.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="345.7692307692308" y="184.1538461538462" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="369.7692307692308" y="464.0" font-size="20" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="272" y="330" font-size="30" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="668" y="330" font-size="30" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <text x="598" y="536" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">c</text>
+  <text x="311.7692307692308" y="343.0769230769231" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="292.88461538461536" y="504.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">p</text>
+  <text x="650.3846153846154" y="504.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">q</text>
+  <rect x="24" y="110" width="300" height="230" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="174" y="166" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">h = (a × b) / c</text>
+  <text x="174" y="208" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">h = √(p × q)</text>
+  <text x="174" y="252" font-size="19" fill="#a3a3a3" text-anchor="middle">same altitude,</text>
+  <text x="174" y="282" font-size="19" fill="#a3a3a3" text-anchor="middle">two formulas</text>
+  <rect x="862" y="110" width="314" height="360" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="886" y="156" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="start">a = AC</text>
+  <text x="886" y="181" font-size="18" fill="#a3a3a3" text-anchor="start">first leg</text>
+  <text x="886" y="212" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="start">b = BC</text>
+  <text x="886" y="237" font-size="18" fill="#a3a3a3" text-anchor="start">second leg</text>
+  <text x="886" y="268" font-size="22" font-weight="700" fill="#ffffff" text-anchor="start">c = AB</text>
+  <text x="886" y="293" font-size="18" fill="#a3a3a3" text-anchor="start">hypotenuse</text>
+  <text x="886" y="324" font-size="22" font-weight="700" fill="#4ade80" text-anchor="start">h = CD</text>
+  <text x="886" y="349" font-size="18" fill="#a3a3a3" text-anchor="start">altitude, ⊥ AB</text>
+  <text x="886" y="380" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="start">p = AD</text>
+  <text x="886" y="405" font-size="18" fill="#a3a3a3" text-anchor="start">projection of a</text>
+  <text x="886" y="436" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="start">q = DB</text>
+  <text x="886" y="461" font-size="18" fill="#a3a3a3" text-anchor="start">projection of b</text>
+  <text x="600" y="548" font-size="22" fill="#a3a3a3" text-anchor="middle">Altitude CD drops from the right angle C perpendicular to hypotenuse AB,</text>
+  <text x="600" y="578" font-size="22" fill="#a3a3a3" text-anchor="middle">dividing it into projections p and q.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Similar Triangles Proof</text>
+  <text x="600" y="86" font-size="20" fill="#a3a3a3" text-anchor="middle">the altitude splits ABC into two triangles similar to it</text>
+  <polygon points="90,470 490,470 234,278" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="90,470 490,470 234,278" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="234" y1="278" x2="234" y2="470" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="222,294 238,306 250,290" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="214,470 214,450 234,450" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="90.0" cy="470.0" r="8" fill="#f1c97d"/>
+  <circle cx="490.0" cy="470.0" r="8" fill="#f1c97d"/>
+  <circle cx="234.0" cy="278.0" r="8" fill="#f1c97d"/>
+  <circle cx="234.0" cy="470.0" r="6" fill="#4ade80"/>
+  <polygon points="600,470 744,470 600,278" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="600,470 744,470 600,278" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <polyline points="724,470 724,450 744,450" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="600.0" cy="470.0" r="8" fill="#f1c97d"/>
+  <circle cx="744.0" cy="470.0" r="8" fill="#f1c97d"/>
+  <circle cx="600.0" cy="278.0" r="8" fill="#f1c97d"/>
+  <polygon points="830,278 830,470 1086,470" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="830,278 830,470 1086,470" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <polyline points="810,470 810,450 830,450" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="830.0" cy="278.0" r="8" fill="#f1c97d"/>
+  <circle cx="830.0" cy="470.0" r="8" fill="#f1c97d"/>
+  <circle cx="1086.0" cy="470.0" r="8" fill="#f1c97d"/>
+  <text x="290" y="530" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">Δ ABC</text>
+  <text x="680" y="530" font-size="24" font-weight="700" fill="#7dd3fc" text-anchor="middle">Δ ACD</text>
+  <text x="980" y="530" font-size="24" font-weight="700" fill="#7dd3fc" text-anchor="middle">Δ CBD</text>
+  <text x="158" y="340" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="412" y="340" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <text x="290" y="502" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">c</text>
+  <text x="206.0" y="374.0" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="672.0" y="500.0" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">p</text>
+  <text x="574.0" y="374.0" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="690" y="340" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="958.0" y="500.0" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">q</text>
+  <text x="1112.0" y="374.0" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="946" y="340" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <rect x="470" y="110" width="260" height="120" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="600" y="158" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">p / h = h / q</text>
+  <text x="600" y="198" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">Δ ACD ~ Δ CBD</text>
+  <text x="600" y="566" font-size="22" fill="#a3a3a3" text-anchor="middle">Triangles ACD and CBD are similar: p/h = h/q,</text>
+  <text x="600" y="596" font-size="22" fill="#a3a3a3" text-anchor="middle">so h squared equals p times q.</text>
+</svg>

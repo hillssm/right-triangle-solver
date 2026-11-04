@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Equal vs Unequal Projections</text>
+  <text x="600" y="86" font-size="20" fill="#a3a3a3" text-anchor="middle">both hypotenuses drawn at c = 10 (440 px)</text>
+  <polygon points="120,450 560,450 340,230" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="120,450 560,450 340,230" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="340" y1="230" x2="340" y2="450" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="323,247 340,263.9 357,247" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="316,450 316,426 340,426" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="120.0" cy="450.0" r="8" fill="#f1c97d"/>
+  <circle cx="560.0" cy="450.0" r="8" fill="#f1c97d"/>
+  <circle cx="340.0" cy="230.0" r="8" fill="#f1c97d"/>
+  <circle cx="340.0" cy="450.0" r="7" fill="#4ade80"/>
+  <polygon points="660,450 1100,450 748,274" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="660,450 1100,450 748,274" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="748" y1="274" x2="748" y2="450" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="737.3,295.5 758.7,306.2 769.5,284.7" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="724,450 724,426 748,426" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="660.0" cy="450.0" r="8" fill="#f1c97d"/>
+  <circle cx="1100.0" cy="450.0" r="8" fill="#f1c97d"/>
+  <circle cx="748.0" cy="274.0" r="8" fill="#f1c97d"/>
+  <circle cx="748.0" cy="450.0" r="7" fill="#4ade80"/>
+  <text x="100.0" y="480.0" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="580.0" y="480.0" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="340.0" y="202.0" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="640.0" y="480.0" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="1120.0" y="480.0" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="748.0" y="246.0" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="774.0" y="444.0" font-size="18" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="304" y="340" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">h = 5</text>
+  <text x="784" y="350" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">h = 4</text>
+  <text x="340" y="500" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">p = 5,  q = 5</text>
+  <text x="880" y="500" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">p = 2,  q = 8</text>
+  <text x="340" y="524" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">45-45-90: tallest altitude</text>
+  <text x="880" y="524" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle">unequal: shorter altitude</text>
+  <text x="600" y="566" font-size="22" fill="#a3a3a3" text-anchor="middle">Same hypotenuse 10: equal projections</text>
+  <text x="600" y="596" font-size="22" fill="#a3a3a3" text-anchor="middle">give the tallest altitude, 5.</text>
+</svg>

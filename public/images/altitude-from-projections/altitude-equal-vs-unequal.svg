@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Equal vs Unequal Projections</text>
+  <polygon points="120,500 536,500 328,396" fill="#ffffff" fill-opacity="0.04" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="328" y1="396" x2="328" y2="500" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="304,500 304,476 328,476" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polygon points="664,500 1080,500 705.5,416.9" fill="#ffffff" fill-opacity="0.04" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="705.5" y1="416.9" x2="705.5" y2="500" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="681.5,500 681.5,476 705.5,476" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="120" cy="500" r="8" fill="#f1c97d"/>
+  <circle cx="536" cy="500" r="8" fill="#f1c97d"/>
+  <circle cx="328" cy="396" r="8" fill="#f1c97d"/>
+  <circle cx="328" cy="500" r="8" fill="#f1c97d"/>
+  <circle cx="664" cy="500" r="8" fill="#f1c97d"/>
+  <circle cx="1080" cy="500" r="8" fill="#f1c97d"/>
+  <circle cx="705.5" cy="416.9" r="8" fill="#f1c97d"/>
+  <circle cx="705.5" cy="500" r="8" fill="#f1c97d"/>
+  <text x="94" y="528" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="562" y="528" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="328" y="370" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="354" y="494" font-size="18" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="638" y="528" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="1106" y="528" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="705.5" y="392" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="731" y="494" font-size="18" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="294" y="448" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">h = 208</text>
+  <text x="668" y="460" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">h ≈ 166</text>
+  <text x="328" y="536" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">p = q</text>
+  <text x="684" y="536" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">p = 83</text>
+  <text x="893" y="536" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">q = 333</text>
+  <text x="328" y="584" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Equal projections: tallest altitude</text>
+  <text x="872" y="584" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">Unequal projections: shorter altitude</text>
+</svg>

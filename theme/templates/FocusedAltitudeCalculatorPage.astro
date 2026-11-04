@@ -10,6 +10,10 @@ import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHead
 import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
+// Page 27 of 45: full altitude-from-projections guide (EN + 18 locales).
+import AltitudeFromProjectionsGuide from 'theme/components/AltitudeFromProjectionsGuide.astro';
+import AltitudeFromProjectionsGuideLocalized from 'theme/components/AltitudeFromProjectionsGuideLocalized.astro';
+import { ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS } from 'src/data/altitudeFromProjectionsGuideTranslations';
 
 interface Props {
   page: FocusedAltitudeCalculatorPageData;
@@ -101,6 +105,12 @@ const diagramSideEntries = page.diagram
       page.diagram.result
     ]
   : [];
+
+// Page 27 of 45: full guide replaces the old thin template content on the
+// altitude-from-projections page (calculator itself stays untouched).
+const isAltitudeFromProjectionsPage =
+  page.slug === 'right-triangle-altitude-from-projections-calculator' &&
+  (locale === 'en' || ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]);
 ---
 
 <BaseLayout
@@ -161,6 +171,9 @@ const diagramSideEntries = page.diagram
     runtimeTranslations={page.runtimeTranslations}
   />
 
+  {/* Full guide replaces the old thin content on the altitude-from-projections page */}
+  {!isAltitudeFromProjectionsPage && (
+  <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={howItWorksHeading} />
     <p set:html={formatRootBars(page.toolPurpose)} />
@@ -419,6 +432,11 @@ const diagramSideEntries = page.diagram
       ))}
     </div>
   </section>
+  </>
+  )}
+
+  {isAltitudeFromProjectionsPage && locale === 'en' ? <AltitudeFromProjectionsGuide /> : null}
+  {isAltitudeFromProjectionsPage && locale !== 'en' && ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale] ? <AltitudeFromProjectionsGuideLocalized guide={ALTITUDE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

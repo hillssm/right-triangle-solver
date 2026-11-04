@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Altitude From Projections: Main Diagram</text>
+  <polygon points="184,520 1016,520 440,136" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="184,520 1016,520 440,136" fill="none" stroke="#f1c97d" stroke-width="8" stroke-linejoin="round"/>
+  <line x1="440" y1="136" x2="440" y2="520" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="425.6,157.6 447.2,172.1 461.6,150.4" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="416,520 416,496 440,496" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="184" cy="520" r="9" fill="#f1c97d"/>
+  <circle cx="1016" cy="520" r="9" fill="#f1c97d"/>
+  <circle cx="440" cy="136" r="9" fill="#f1c97d"/>
+  <circle cx="440" cy="520" r="7" fill="#4ade80"/>
+  <text x="152" y="552" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="1048" y="552" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="440" y="102" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="466" y="516" font-size="20" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="312" y="562" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">p</text>
+  <text x="728" y="562" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">q</text>
+  <text x="404" y="328" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="282" y="322" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="762" y="322" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <text x="880" y="498" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">c</text>
+  <rect x="24" y="96" width="280" height="180" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="164" y="152" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">h² = p × q</text>
+  <text x="164" y="196" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">h = √(p × q)</text>
+  <text x="164" y="236" font-size="19" fill="#a3a3a3" text-anchor="middle">geometric mean</text>
+  <rect x="876" y="96" width="300" height="270" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="900" y="142" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="start">p = AD</text>
+  <text x="900" y="168" font-size="19" fill="#a3a3a3" text-anchor="start">first projection</text>
+  <text x="900" y="202" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="start">q = DB</text>
+  <text x="900" y="228" font-size="19" fill="#a3a3a3" text-anchor="start">second projection</text>
+  <text x="900" y="262" font-size="22" font-weight="700" fill="#4ade80" text-anchor="start">h = CD</text>
+  <text x="900" y="288" font-size="19" fill="#a3a3a3" text-anchor="start">altitude, √(p × q)</text>
+  <text x="900" y="322" font-size="22" font-weight="700" fill="#ffffff" text-anchor="start">c = p + q</text>
+  <text x="900" y="348" font-size="19" fill="#a3a3a3" text-anchor="start">hypotenuse</text>
+</svg>

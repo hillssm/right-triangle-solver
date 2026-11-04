@@ -1147,6 +1147,8 @@ const calculatorMessages = JSON.stringify(messages);
         else if (lowL.includes('altitude h') || outputLabel === 'Altitude h') outKey = 'h';
         else if (lowL.includes('projection p')) outKey = 'p';
         else if (lowL.includes('projection q')) outKey = 'q';
+        else if (lowL.includes('inradius')) outKey = 'r';
+        else if (lowL.includes('circumradius')) outKey = 'R';
 
         if (outKey && resultVal !== undefined) map[outKey] = resultVal;
 
@@ -1514,6 +1516,45 @@ const calculatorMessages = JSON.stringify(messages);
           updateSvgLabels({}, undefined, '');
         }, 0);
       });
+
+      // Live diagram updates as the user types (tolerant: skips empty/invalid, never throws).
+      const liveUpdateDiagram = () => {
+        try {
+          const data = new FormData(form);
+          const values = {};
+          const units = {};
+          for (const [key, val] of data.entries()) {
+            if (key.endsWith('_unit')) {
+              units[key.replace('_unit', '')] = val;
+            } else {
+              const str = String(val).trim();
+              if (str === '') continue;
+              const num = Number.parseFloat(str);
+              if (!Number.isFinite(num) || num <= 0) continue;
+              if ((key === 'A' || key === 'B') && num >= 90) continue;
+              values[key] = num;
+            }
+          }
+          let primaryUnit = null;
+          for (const k of LENGTH_KEYS) {
+            if (units[k]) { primaryUnit = units[k]; break; }
+          }
+          if (primaryUnit) {
+            for (const k of LENGTH_KEYS) {
+              if (values[k] !== undefined && units[k]) {
+                const scale = UNIT_SCALE[units[k]] / UNIT_SCALE[primaryUnit];
+                values[k] = values[k] * scale;
+              }
+            }
+          }
+          updateSvgLabels(values, undefined, primaryUnit || outputUnit);
+        } catch (e) {
+          // Never break the calculator on live updates.
+        }
+      };
+
+      form.addEventListener('input', liveUpdateDiagram);
+      form.addEventListener('change', liveUpdateDiagram);
     })();
   </script>
 </section>

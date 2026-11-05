@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Equal Projections: Isosceles Right Triangle</text>
+  <polygon points="220,490 980,490 600,110" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="220,490 980,490 600,110" fill="none" stroke="#f1c97d" stroke-width="8" stroke-linejoin="round"/>
+  <line x1="600" y1="110" x2="600" y2="490" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="584,126 600,141 616,126" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="578,490 578,468 600,468" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="220" cy="490" r="9" fill="#f1c97d"/>
+  <circle cx="980" cy="490" r="9" fill="#f1c97d"/>
+  <circle cx="600" cy="110" r="9" fill="#f1c97d"/>
+  <circle cx="600" cy="490" r="7" fill="#4ade80"/>
+  <text x="220" y="522" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="980" y="522" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="638" y="118" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="628" y="522" font-size="20" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="410" y="522" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">p = 10</text>
+  <text x="790" y="522" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">q = 10</text>
+  <text x="572" y="300" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">h = 10</text>
+  <text x="380" y="292" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="820" y="292" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <text x="800" y="468" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">c = 20</text>
+  <rect x="836" y="96" width="340" height="204" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <text x="1006" y="150" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">a = b = 10√2</text>
+  <text x="1006" y="192" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">a = √(20 × 10)</text>
+  <text x="1006" y="236" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">a = √200 = 10√2</text>
+  <text x="1006" y="268" font-size="18" font-weight="400" fill="#a3a3a3" text-anchor="middle">a is about 14.142</text>
+  <text x="600" y="600" font-size="22" fill="#a3a3a3" text-anchor="middle">Equal projections give equal legs: p = q, so a = b.</text>
+</svg>

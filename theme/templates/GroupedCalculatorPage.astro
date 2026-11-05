@@ -35,6 +35,9 @@ import { PERIMETER_SEMIPERIMETER_GUIDE_TRANSLATIONS } from 'src/data/perimeterSe
 import AltitudeGuide from 'theme/components/AltitudeGuide.astro';
 import AltitudeGuideLocalized from 'theme/components/AltitudeGuideLocalized.astro';
 import { ALTITUDE_GUIDE_TRANSLATIONS } from 'src/data/altitudeGuideTranslations';
+import ProjectionGuide from 'theme/components/ProjectionGuide.astro';
+import ProjectionGuideLocalized from 'theme/components/ProjectionGuideLocalized.astro';
+import { PROJECTION_GUIDE_TRANSLATIONS } from 'src/data/projectionGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -68,6 +71,7 @@ const isTrigRatiosPage = slug === 'right-triangle-trig-ratios-calculator';
 const isAreaPage = slug === 'right-triangle-area-calculator';
 const isMeasurementsPage = slug === 'right-triangle-measurements-calculator';
 const isAltitudePage = slug === 'right-triangle-altitude-calculator' && (locale === 'en' || ALTITUDE_GUIDE_TRANSLATIONS[locale]);
+const isProjectionPage = slug === 'right-triangle-projection-calculator' && (locale === 'en' || PROJECTION_GUIDE_TRANSLATIONS[locale]);
 const hideOldSideContent = isSidePage;
 const hideOldSideFromAngleContent = isSideFromAnglePage;
 const hideOldAngleContent = isAnglePage;
@@ -75,6 +79,7 @@ const hideOldTrigRatiosContent = isTrigRatiosPage;
 const hideOldAreaContent = isAreaPage;
 const hideOldMeasurementsContent = isMeasurementsPage;
 const hideOldAltitudeContent = isAltitudePage;
+const hideOldProjectionContent = isProjectionPage;
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -811,7 +816,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         </script>
       </section>
 
-      {!hideOldSideContent && !hideOldSideFromAngleContent && !hideOldAngleContent && !hideOldTrigRatiosContent && !hideOldAreaContent && !hideOldMeasurementsContent && !hideOldAltitudeContent && (
+      {!hideOldSideContent && !hideOldSideFromAngleContent && !hideOldAngleContent && !hideOldTrigRatiosContent && !hideOldAreaContent && !hideOldMeasurementsContent && !hideOldAltitudeContent && !hideOldProjectionContent && (
       <>
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
         <h2>{sectionHeading(activePage.h2[0])}</h2>
@@ -1158,4 +1163,6 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
   {isMeasurementsPage && locale !== 'en' && PERIMETER_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale] ? <PerimeterSemiperimeterGuideLocalized guide={PERIMETER_SEMIPERIMETER_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isAltitudePage && locale === 'en' ? <AltitudeGuide /> : null}
   {isAltitudePage && locale !== 'en' && ALTITUDE_GUIDE_TRANSLATIONS[locale] ? <AltitudeGuideLocalized guide={ALTITUDE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isProjectionPage && locale === 'en' ? <ProjectionGuide /> : null}
+  {isProjectionPage && locale !== 'en' && PROJECTION_GUIDE_TRANSLATIONS[locale] ? <ProjectionGuideLocalized guide={PROJECTION_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

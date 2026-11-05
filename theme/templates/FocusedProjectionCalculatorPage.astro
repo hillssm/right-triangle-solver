@@ -22,6 +22,10 @@ import { LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS } from 'src/data/legAFromProje
 import LegBFromProjectionGuide from 'theme/components/LegBFromProjectionGuide.astro';
 import LegBFromProjectionGuideLocalized from 'theme/components/LegBFromProjectionGuideLocalized.astro';
 import { LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS } from 'src/data/legBFromProjectionGuideTranslations';
+// Page 34 of 45: full projection-p guide (EN + 18 locales).
+import ProjectionPGuide from 'theme/components/ProjectionPGuide.astro';
+import ProjectionPGuideLocalized from 'theme/components/ProjectionPGuideLocalized.astro';
+import { PROJP_GUIDE_TRANSLATIONS } from 'src/data/projectionPGuideTranslations';
 
 interface Props {
   page: FocusedProjectionCalculatorPageData;
@@ -56,6 +60,12 @@ const isLegAFromProjectionPage =
 const isLegBFromProjectionPage =
   page.slug === 'right-triangle-leg-b-from-projection-calculator' &&
   (locale === 'en' || LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]);
+
+// Page 34 of 45: full guide replaces the old thin template content on the
+// projection-p page (calculator itself stays untouched).
+const isProjectionPPage =
+  page.slug === 'right-triangle-projection-p-calculator' &&
+  (locale === 'en' || PROJP_GUIDE_TRANSLATIONS[locale]);
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -429,7 +439,7 @@ const quickSummaryCards = [
     runtimeTranslations={calculatorRuntimeTranslations}
   />
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.howItWorksHeading} />
     <p set:html={howItWorksIntro} />
@@ -449,7 +459,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.formulaHeading} />
     <div class="not-prose mt-4 grid gap-3">
@@ -469,7 +479,7 @@ const quickSummaryCards = [
   </section>
 )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold" set:html={pageStructure.diagramHeading} />
     <p class="mt-3 leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.diagram.intro)} />
@@ -583,7 +593,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.howToHeading} />
     <ol>
@@ -594,7 +604,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.exampleHeading} />
     <p set:html={formatRootBars(page.example.intro)} />
@@ -613,7 +623,7 @@ const quickSummaryCards = [
   </section>
 )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.resultMeaningHeading} />
     {page.resultMeaning.map((paragraph) => (
@@ -633,7 +643,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.whyFormulaWorksHeading} />
     {pageStructure.whyFormulaWorks.map((paragraph) => (
@@ -642,7 +652,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.commonMistakesHeading} />
     <p set:html={pageUi.commonMistakesIntro} />
@@ -654,7 +664,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && !isProjectionPPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.additionalExample.h2} />
@@ -701,4 +711,6 @@ const quickSummaryCards = [
   {isLegAFromProjectionPage && locale !== 'en' && LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale] ? <LegAFromProjectionGuideLocalized guide={LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isLegBFromProjectionPage && locale === 'en' ? <LegBFromProjectionGuide /> : null}
   {isLegBFromProjectionPage && locale !== 'en' && LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale] ? <LegBFromProjectionGuideLocalized guide={LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isProjectionPPage && locale === 'en' ? <ProjectionPGuide /> : null}
+  {isProjectionPPage && locale !== 'en' && PROJP_GUIDE_TRANSLATIONS[locale] ? <ProjectionPGuideLocalized guide={PROJP_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

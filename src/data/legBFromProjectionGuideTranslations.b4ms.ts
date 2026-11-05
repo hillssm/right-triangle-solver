@@ -211,23 +211,23 @@ export const LBP_B4_MS = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "Panjang kaki itu sendiri",
                 "8",
               ],
               [
-                "b kuasa dua",
+                "[[b^2]]",
                 "Panjang kaki didarab dengan dirinya sendiri",
                 "64",
               ],
               [
-                "c darab q",
-                "Hasil darab yang disamakan oleh teorem dengan b kuasa dua",
+                "[[c \\times q]]",
+                "Hasil darab yang disamakan oleh teorem dengan [[b^2]]",
                 "64",
               ],
               [
-                "Punca kuasa dua cq",
-                "Langkah yang memulihkan b daripada b kuasa dua",
+                "[[\\sqrt{cq}]]",
+                "Langkah yang memulihkan b daripada [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B4_MS = {
             "rows": [
               [
                 "Kaki b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hipotenus c dan unjuran q",
               ],
               [
                 "Hipotenus c",
-                "c = b kuasa dua / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Kaki b dan unjuran q",
               ],
               [
                 "Unjuran q",
-                "q = b kuasa dua / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Kaki b dan hipotenus c",
               ],
             ],

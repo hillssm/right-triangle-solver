@@ -163,8 +163,8 @@ const relatedUrls = [
             <tbody>
               {s.table.rows.map((row: string[]) => (
                 <tr>
-                  {row.map((cell: string) => (
-                    <td class="border-gray-600 px-4 py-2" set:html={rich(cell)} />
+                  {row.map((cell: string, ci: number) => (
+                    <td class={ci === 0 ? "border-gray-600 px-4 py-2 whitespace-nowrap" : "border-gray-600 px-4 py-2"} set:html={rich(cell)} />
                   ))}
                 </tr>
               ))}

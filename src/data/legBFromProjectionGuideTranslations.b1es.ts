@@ -211,23 +211,23 @@ export const LBP_B1_ES = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "La longitud del cateto en sí",
                 "8",
               ],
               [
-                "b al cuadrado",
+                "[[b^2]]",
                 "La longitud del cateto multiplicada por sí misma",
                 "64",
               ],
               [
-                "c por q",
-                "El producto que el teorema iguala con b al cuadrado",
+                "[[c \\times q]]",
+                "El producto que el teorema iguala con [[b^2]]",
                 "64",
               ],
               [
-                "Raíz cuadrada de cq",
-                "El paso que recupera b a partir de b al cuadrado",
+                "[[\\sqrt{cq}]]",
+                "El paso que recupera b a partir de [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B1_ES = {
             "rows": [
               [
                 "Cateto b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hipotenusa c y proyección q",
               ],
               [
                 "Hipotenusa c",
-                "c = b al cuadrado / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Cateto b y proyección q",
               ],
               [
                 "Proyección q",
-                "q = b al cuadrado / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Cateto b e hipotenusa c",
               ],
             ],

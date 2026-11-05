@@ -211,23 +211,23 @@ export const LBP_B2_DE = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "Die Kathetenlänge selbst",
                 "8",
               ],
               [
-                "b zum Quadrat",
+                "[[b^2]]",
                 "Die Kathetenlänge mit sich selbst multipliziert",
                 "64",
               ],
               [
-                "c mal q",
-                "Das Produkt, das der Satz mit b zum Quadrat gleichsetzt",
+                "[[c \\times q]]",
+                "Das Produkt, das der Satz mit [[b^2]] gleichsetzt",
                 "64",
               ],
               [
-                "Quadratwurzel aus cq",
-                "Der Schritt, der b aus b zum Quadrat zurückgewinnt",
+                "[[\\sqrt{cq}]]",
+                "Der Schritt, der b aus [[b^2]] zurückgewinnt",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B2_DE = {
             "rows": [
               [
                 "Kathete b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hypotenuse c und Projektion q",
               ],
               [
                 "Hypotenuse c",
-                "c = b zum Quadrat / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Kathete b und Projektion q",
               ],
               [
                 "Projektion q",
-                "q = b zum Quadrat / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Kathete b und Hypotenuse c",
               ],
             ],

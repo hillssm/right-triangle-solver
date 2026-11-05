@@ -123,13 +123,13 @@ const imgSrc = (name: string): string => `/images/leg-b-from-projection/${name}`
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full text-sm my-6 border-collapse">
       <thead>
-        <tr><th class="border-gray-600 px-4 py-2">Quantity</th><th class="border-gray-600 px-4 py-2">Meaning</th><th class="border-gray-600 px-4 py-2">Example with c = 10, q = 6.4</th></tr>
+        <tr><th class="border-gray-600 px-4 py-2">Quantity</th><th class="border-gray-600 px-4 py-2">Meaning</th><th class="border-gray-600 px-4 py-2 text-center">Example with c = 10, q = 6.4</th></tr>
       </thead>
       <tbody>
-        <tr><td class="border-gray-600 px-4 py-2">b</td><td class="border-gray-600 px-4 py-2">The leg length itself</td><td class="border-gray-600 px-4 py-2">8</td></tr>
-        <tr><td class="border-gray-600 px-4 py-2">b squared</td><td class="border-gray-600 px-4 py-2">The leg length multiplied by itself</td><td class="border-gray-600 px-4 py-2">64</td></tr>
-        <tr><td class="border-gray-600 px-4 py-2">c times q</td><td class="border-gray-600 px-4 py-2">The product the theorem equates with b squared</td><td class="border-gray-600 px-4 py-2">64</td></tr>
-        <tr><td class="border-gray-600 px-4 py-2">Square root of cq</td><td class="border-gray-600 px-4 py-2">The step that recovers b from b squared</td><td class="border-gray-600 px-4 py-2">8</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap"><span set:html={rich('[[b]]')} /></td><td class="border-gray-600 px-4 py-2">The leg length itself</td><td class="border-gray-600 px-4 py-2 text-center">8</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap"><span set:html={rich('[[b^2]]')} /></td><td class="border-gray-600 px-4 py-2">The leg length multiplied by itself</td><td class="border-gray-600 px-4 py-2 text-center">64</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap"><span set:html={rich('[[c \\times q]]')} /></td><td class="border-gray-600 px-4 py-2">The product the theorem equates with <span set:html={rich('[[b^2]]')} /></td><td class="border-gray-600 px-4 py-2 text-center">64</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap"><span set:html={rich('[[\\sqrt{cq}]]')} /></td><td class="border-gray-600 px-4 py-2">The step that recovers b from <span set:html={rich('[[b^2]]')} /></td><td class="border-gray-600 px-4 py-2 text-center">8</td></tr>
       </tbody>
     </table>
   </div>
@@ -241,12 +241,12 @@ const imgSrc = (name: string): string => `/images/leg-b-from-projection/${name}`
   <div class="not-prose overflow-x-auto my-6">
     <table class="w-full text-sm my-6 border-collapse">
       <thead>
-        <tr><th class="border-gray-600 px-4 py-2">Missing Quantity</th><th class="border-gray-600 px-4 py-2">Formula</th><th class="border-gray-600 px-4 py-2">Known Values Needed</th></tr>
+        <tr><th class="border-gray-600 px-4 py-2">Missing Quantity</th><th class="border-gray-600 px-4 py-2 text-center">Formula</th><th class="border-gray-600 px-4 py-2">Known Values Needed</th></tr>
       </thead>
       <tbody>
-        <tr><td class="border-gray-600 px-4 py-2">Leg b</td><td class="border-gray-600 px-4 py-2">b = sqrt(cq)</td><td class="border-gray-600 px-4 py-2">Hypotenuse c and projection q</td></tr>
-        <tr><td class="border-gray-600 px-4 py-2">Hypotenuse c</td><td class="border-gray-600 px-4 py-2">c = b squared / q</td><td class="border-gray-600 px-4 py-2">Leg b and projection q</td></tr>
-        <tr><td class="border-gray-600 px-4 py-2">Projection q</td><td class="border-gray-600 px-4 py-2">q = b squared / c</td><td class="border-gray-600 px-4 py-2">Leg b and hypotenuse c</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap">Leg b</td><td class="border-gray-600 px-4 py-2 text-center whitespace-nowrap"><span set:html={rich('[[b = \\sqrt{c \\times q}]]')} /></td><td class="border-gray-600 px-4 py-2">Hypotenuse c and projection q</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap">Hypotenuse c</td><td class="border-gray-600 px-4 py-2 text-center whitespace-nowrap"><span set:html={rich('[[c = \\frac{b^2}{q}]]')} /></td><td class="border-gray-600 px-4 py-2">Leg b and projection q</td></tr>
+        <tr><td class="border-gray-600 px-4 py-2 whitespace-nowrap">Projection q</td><td class="border-gray-600 px-4 py-2 text-center whitespace-nowrap"><span set:html={rich('[[q = \\frac{b^2}{c}]]')} /></td><td class="border-gray-600 px-4 py-2">Leg b and hypotenuse c</td></tr>
       </tbody>
     </table>
   </div>

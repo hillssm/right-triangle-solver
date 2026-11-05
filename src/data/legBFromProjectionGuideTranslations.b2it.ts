@@ -211,23 +211,23 @@ export const LBP_B2_IT = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "La lunghezza del cateto stesso",
                 "8",
               ],
               [
-                "b al quadrato",
+                "[[b^2]]",
                 "La lunghezza del cateto moltiplicata per se stessa",
                 "64",
               ],
               [
-                "c per q",
-                "Il prodotto che il teorema eguaglia a b al quadrato",
+                "[[c \\times q]]",
+                "Il prodotto che il teorema eguaglia a [[b^2]]",
                 "64",
               ],
               [
-                "Radice quadrata di cq",
-                "Il passaggio che ricava b da b al quadrato",
+                "[[\\sqrt{cq}]]",
+                "Il passaggio che ricava b da [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B2_IT = {
             "rows": [
               [
                 "Cateto b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Ipotenusa c e proiezione q",
               ],
               [
                 "Ipotenusa c",
-                "c = b al quadrato / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Cateto b e proiezione q",
               ],
               [
                 "Proiezione q",
-                "q = b al quadrato / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Cateto b e ipotenusa c",
               ],
             ],

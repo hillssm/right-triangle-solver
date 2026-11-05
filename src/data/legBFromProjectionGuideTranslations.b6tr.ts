@@ -211,23 +211,23 @@ export const LBP_B6_TR = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "Dik kenar uzunluğunun kendisi",
                 "8",
               ],
               [
-                "b kare",
+                "[[b^2]]",
                 "Dik kenar uzunluğunun kendisiyle çarpımı",
                 "64",
               ],
               [
-                "c çarpı q",
-                "Teoremin b kareye eşitlediği çarpım",
+                "[[c \\times q]]",
+                "Teoremin [[b^2]]ye eşitlediği çarpım",
                 "64",
               ],
               [
-                "cq'nun karekökü",
-                "b'yi b kareden geri alan adım",
+                "[[\\sqrt{cq}]]",
+                "b'yi [[b^2]]den geri alan adım",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B6_TR = {
             "rows": [
               [
                 "b dik kenarı",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hipotenüs c ve q izdüşümü",
               ],
               [
                 "Hipotenüs c",
-                "c = b karesi / q",
+                "[[c = \frac{b^2}{q}]]",
                 "b dik kenarı ve q izdüşümü",
               ],
               [
                 "q izdüşümü",
-                "q = b karesi / c",
+                "[[q = \frac{b^2}{c}]]",
                 "b dik kenarı ve hipotenüs c",
               ],
             ],

@@ -211,23 +211,23 @@ export const LBP_B4_PL = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "Sama długość przyprostokątnej",
                 "8",
               ],
               [
-                "b do kwadratu",
+                "[[b^2]]",
                 "Długość przyprostokątnej pomnożona przez siebie",
                 "64",
               ],
               [
-                "c razy q",
-                "Iloczyn, który twierdzenie przyrównuje do b do kwadratu",
+                "[[c \\times q]]",
+                "Iloczyn, który twierdzenie przyrównuje do [[b^2]]",
                 "64",
               ],
               [
-                "Pierwiastek kwadratowy z cq",
-                "Krok, który odtwarza b z b do kwadratu",
+                "[[\\sqrt{cq}]]",
+                "Krok, który odtwarza b z [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B4_PL = {
             "rows": [
               [
                 "Przyprostokątna b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Przeciwprostokątna c i rzut q",
               ],
               [
                 "Przeciwprostokątna c",
-                "c = b do kwadratu / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Przyprostokątna b i rzut q",
               ],
               [
                 "Rzut q",
-                "q = b do kwadratu / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Przyprostokątna b i przeciwprostokątna c",
               ],
             ],

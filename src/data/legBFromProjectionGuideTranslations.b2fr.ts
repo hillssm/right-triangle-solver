@@ -211,23 +211,23 @@ export const LBP_B2_FR = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "La longueur de la jambe elle-même",
                 "8",
               ],
               [
-                "b au carré",
+                "[[b^2]]",
                 "La longueur de la jambe multipliée par elle-même",
                 "64",
               ],
               [
-                "c fois q",
-                "Le produit que le théorème égalise avec b au carré",
+                "[[c \\times q]]",
+                "Le produit que le théorème égalise avec [[b^2]]",
                 "64",
               ],
               [
-                "Racine carrée de cq",
-                "L'étape qui retrouve b à partir de b au carré",
+                "[[\\sqrt{cq}]]",
+                "L'étape qui retrouve b à partir de [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B2_FR = {
             "rows": [
               [
                 "Jambe b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hypoténuse c et projection q",
               ],
               [
                 "Hypoténuse c",
-                "c = b au carré / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Jambe b et projection q",
               ],
               [
                 "Projection q",
-                "q = b au carré / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Jambe b et hypoténuse c",
               ],
             ],

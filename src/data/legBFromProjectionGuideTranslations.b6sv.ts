@@ -211,23 +211,23 @@ export const LBP_B6_SV = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "Själva katetlängden",
                 "8",
               ],
               [
-                "b i kvadrat",
+                "[[b^2]]",
                 "Katetlängden multiplicerad med sig själv",
                 "64",
               ],
               [
-                "c gånger q",
-                "Produkten som satsen likställer med b i kvadrat",
+                "[[c \\times q]]",
+                "Produkten som satsen likställer med [[b^2]]",
                 "64",
               ],
               [
-                "Kvadratroten ur cq",
-                "Steget som återställer b från b i kvadrat",
+                "[[\\sqrt{cq}]]",
+                "Steget som återställer b från [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B6_SV = {
             "rows": [
               [
                 "Katet b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hypotenusa c och projektion q",
               ],
               [
                 "Hypotenusa c",
-                "c = b i kvadrat / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Katet b och projektion q",
               ],
               [
                 "Projektion q",
-                "q = b i kvadrat / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Katet b och hypotenusa c",
               ],
             ],

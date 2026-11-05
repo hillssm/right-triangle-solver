@@ -211,23 +211,23 @@ export const LBP_B5_ID = {
             ],
             "rows": [
               [
-                "b",
+                "[[b]]",
                 "Panjang kaki itu sendiri",
                 "8",
               ],
               [
-                "b kuadrat",
+                "[[b^2]]",
                 "Panjang kaki dikalikan dengan dirinya sendiri",
                 "64",
               ],
               [
-                "c kali q",
-                "Hasil kali yang disamakan teorema dengan b kuadrat",
+                "[[c \\times q]]",
+                "Hasil kali yang disamakan teorema dengan [[b^2]]",
                 "64",
               ],
               [
-                "Akar kuadrat dari cq",
-                "Langkah yang memulihkan b dari b kuadrat",
+                "[[\\sqrt{cq}]]",
+                "Langkah yang memulihkan b dari [[b^2]]",
                 "8",
               ],
             ],
@@ -475,17 +475,17 @@ export const LBP_B5_ID = {
             "rows": [
               [
                 "Kaki b",
-                "b = sqrt(cq)",
+                "[[b = \\sqrt{c \\times q}]]",
                 "Hipotenusa c dan proyeksi q",
               ],
               [
                 "Hipotenusa c",
-                "c = b squared / q",
+                "[[c = \frac{b^2}{q}]]",
                 "Kaki b dan proyeksi q",
               ],
               [
                 "Proyeksi q",
-                "q = b squared / c",
+                "[[q = \frac{b^2}{c}]]",
                 "Kaki b dan hipotenusa c",
               ],
             ],

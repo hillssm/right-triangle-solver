@@ -10,6 +10,10 @@ import { seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem, formatRootBars } from 'src/utils/formatList';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
+// Page 30 of 45: full hypotenuse-from-projections guide (EN + 18 locales).
+import HypotenuseFromProjectionsGuide from 'theme/components/HypotenuseFromProjectionsGuide.astro';
+import HypotenuseFromProjectionsGuideLocalized from 'theme/components/HypotenuseFromProjectionsGuideLocalized.astro';
+import { HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS } from 'src/data/hypotenuseFromProjectionsGuideTranslations';
 
 interface Props {
   page: FocusedProjectionCalculatorPageData;
@@ -26,6 +30,12 @@ const solver = (common.solver as Record<string, string>) || {};
 const parentCalculatorPath = '/right-triangle-projection-calculator/';
 const canonicalPath = localizePath(locale, page.url);
 const openToolLabel = pick(solver, 'openTool', 'Open Tool');
+
+// Page 30 of 45: full guide replaces the old thin template content on the
+// hypotenuse-from-projections page (calculator itself stays untouched).
+const isHypotenuseFromProjectionsPage =
+  page.slug === 'right-triangle-hypotenuse-from-projections-calculator' &&
+  (locale === 'en' || HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]);
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -399,6 +409,7 @@ const quickSummaryCards = [
     runtimeTranslations={calculatorRuntimeTranslations}
   />
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.howItWorksHeading} />
     <p set:html={howItWorksIntro} />
@@ -416,7 +427,9 @@ const quickSummaryCards = [
       ))}
     </div>
   </section>
+  )}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.formulaHeading} />
     <div class="not-prose mt-4 grid gap-3">
@@ -434,7 +447,9 @@ const quickSummaryCards = [
       <p set:html={paragraph} />
     ))}
   </section>
+)}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold" set:html={pageStructure.diagramHeading} />
     <p class="mt-3 leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.diagram.intro)} />
@@ -546,7 +561,9 @@ const quickSummaryCards = [
       </div>
     </div>
   </section>
+  )}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.howToHeading} />
     <ol>
@@ -555,7 +572,9 @@ const quickSummaryCards = [
       ))}
     </ol>
   </section>
+  )}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.exampleHeading} />
     <p set:html={formatRootBars(page.example.intro)} />
@@ -572,7 +591,9 @@ const quickSummaryCards = [
     </div>
     <p class="mt-4" set:html={page.example.explanation} />
   </section>
+)}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.resultMeaningHeading} />
     {page.resultMeaning.map((paragraph) => (
@@ -590,14 +611,18 @@ const quickSummaryCards = [
       ))}
     </ul>
   </section>
+  )}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.whyFormulaWorksHeading} />
     {pageStructure.whyFormulaWorks.map((paragraph) => (
       <p set:html={paragraph} />
     ))}
   </section>
+  )}
 
+{!isHypotenuseFromProjectionsPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.commonMistakesHeading} />
     <p set:html={pageUi.commonMistakesIntro} />
@@ -607,7 +632,10 @@ const quickSummaryCards = [
       ))}
     </ul>
   </section>
+  )}
 
+{!isHypotenuseFromProjectionsPage && (
+  <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.additionalExample.h2} />
     <p set:html={pageStructure.additionalExample.intro} />
@@ -644,4 +672,9 @@ const quickSummaryCards = [
       ))}
     </div>
   </section>
+  </>
+  )}
+
+  {isHypotenuseFromProjectionsPage && locale === 'en' ? <HypotenuseFromProjectionsGuide /> : null}
+  {isHypotenuseFromProjectionsPage && locale !== 'en' && HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale] ? <HypotenuseFromProjectionsGuideLocalized guide={HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Equal vs. Unequal Projections (c = 10)</text>
+  <polygon points="140,440 480,440 310,270" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="140,440 480,440 310,270" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="310" y1="270" x2="310" y2="440" stroke="#4ade80" stroke-width="5" stroke-dasharray="9 7" stroke-linecap="round"/>
+  <polyline points="290,440 290,420 310,420" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="140" cy="440" r="7" fill="#f1c97d"/>
+  <circle cx="480" cy="440" r="7" fill="#f1c97d"/>
+  <circle cx="310" cy="440" r="6" fill="#4ade80"/>
+  <polygon points="720,440 1060,440 788,304" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="720,440 1060,440 788,304" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="788" y1="304" x2="788" y2="440" stroke="#4ade80" stroke-width="5" stroke-dasharray="9 7" stroke-linecap="round"/>
+  <polyline points="768,440 768,420 788,420" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="720" cy="440" r="7" fill="#f1c97d"/>
+  <circle cx="1060" cy="440" r="7" fill="#f1c97d"/>
+  <circle cx="788" cy="440" r="6" fill="#4ade80"/>
+  <text x="310" y="478" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">p = 5, q = 5</text>
+  <text x="310" y="510" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 10</text>
+  <text x="890" y="478" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">p = 2, q = 8</text>
+  <text x="890" y="510" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 10</text>
+  <text x="310" y="250" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="middle">isosceles</text>
+  <text x="890" y="284" font-size="20" font-weight="400" fill="#a3a3a3" text-anchor="middle">leaning</text>
+  <text x="600" y="600" font-size="22" fill="#a3a3a3" text-anchor="middle">Same c = 10, different shapes: p = q = 5 vs p = 2, q = 8.</text>
+</svg>

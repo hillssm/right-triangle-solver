@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Similar Triangles: ABC, ACD, CBD</text>
+  <line x1="335" y1="330" x2="335" y2="450" stroke="#4ade80" stroke-width="4" stroke-dasharray="8 6" stroke-linecap="round"/>
+  <polygon points="245,450 495,450 335,330" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="245,450 495,450 335,330" fill="none" stroke="#f1c97d" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="245" cy="450" r="7" fill="#f1c97d"/>
+  <circle cx="495" cy="450" r="7" fill="#f1c97d"/>
+  <circle cx="335" cy="330" r="7" fill="#f1c97d"/>
+  <polyline points="317,450 317,432 335,432" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polygon points="505,450 595,450 595,330" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="505,450 595,450 595,330" fill="none" stroke="#f1c97d" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="505" cy="450" r="7" fill="#f1c97d"/>
+  <circle cx="595" cy="450" r="7" fill="#f1c97d"/>
+  <circle cx="595" cy="330" r="7" fill="#f1c97d"/>
+  <polyline points="577,450 577,432 595,432" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polygon points="795,450 955,450 795,330" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="795,450 955,450 795,330" fill="none" stroke="#f1c97d" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="795" cy="450" r="7" fill="#f1c97d"/>
+  <circle cx="955" cy="450" r="7" fill="#f1c97d"/>
+  <circle cx="795" cy="330" r="7" fill="#f1c97d"/>
+  <polyline points="777,450 777,432 795,432" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="324.2,344.4 338.6,355.2 349.4,340.8" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="272" y="420" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">A</text>
+  <text x="468" y="420" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">B</text>
+  <text x="532" y="420" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">A</text>
+  <text x="580" y="366" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">B</text>
+  <text x="928" y="420" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">B</text>
+  <text x="810" y="366" font-size="22" font-weight="700" fill="#7dd3fc" text-anchor="middle">A</text>
+  <text x="370" y="490" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">ABC (original)</text>
+  <text x="550" y="490" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">ACD</text>
+  <text x="875" y="490" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">CBD</text>
+  <rect x="1000" y="96" width="176" height="120" rx="12" fill="#1c1b1b" stroke="#2e2c2c"/>
+  <rect x="1016" y="122" width="16" height="16" fill="#7dd3fc"/>
+  <text x="1090" y="136" font-size="18" font-weight="400" fill="#ffffff" text-anchor="middle">angle A</text>
+  <rect x="1016" y="162" width="16" height="16" fill="#4ade80"/>
+  <text x="1090" y="176" font-size="18" font-weight="400" fill="#ffffff" text-anchor="middle">angle B</text>
+  <text x="600" y="600" font-size="22" fill="#a3a3a3" text-anchor="middle">ACD and CBD are similar to ABC: a² = cp, b² = cq.</text>
+</svg>

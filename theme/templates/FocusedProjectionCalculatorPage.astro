@@ -18,6 +18,10 @@ import { HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS } from 'src/data/hypoten
 import LegAFromProjectionGuide from 'theme/components/LegAFromProjectionGuide.astro';
 import LegAFromProjectionGuideLocalized from 'theme/components/LegAFromProjectionGuideLocalized.astro';
 import { LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS } from 'src/data/legAFromProjectionGuideTranslations';
+// Page 32 of 45: full leg-b-from-projection guide (EN + 18 locales).
+import LegBFromProjectionGuide from 'theme/components/LegBFromProjectionGuide.astro';
+import LegBFromProjectionGuideLocalized from 'theme/components/LegBFromProjectionGuideLocalized.astro';
+import { LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS } from 'src/data/legBFromProjectionGuideTranslations';
 
 interface Props {
   page: FocusedProjectionCalculatorPageData;
@@ -46,6 +50,12 @@ const isHypotenuseFromProjectionsPage =
 const isLegAFromProjectionPage =
   page.slug === 'right-triangle-leg-a-from-projection-calculator' &&
   (locale === 'en' || LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]);
+
+// Page 32 of 45: full guide replaces the old thin template content on the
+// leg-b-from-projection page (calculator itself stays untouched).
+const isLegBFromProjectionPage =
+  page.slug === 'right-triangle-leg-b-from-projection-calculator' &&
+  (locale === 'en' || LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]);
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -419,7 +429,7 @@ const quickSummaryCards = [
     runtimeTranslations={calculatorRuntimeTranslations}
   />
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.howItWorksHeading} />
     <p set:html={howItWorksIntro} />
@@ -439,7 +449,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.formulaHeading} />
     <div class="not-prose mt-4 grid gap-3">
@@ -459,7 +469,7 @@ const quickSummaryCards = [
   </section>
 )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold" set:html={pageStructure.diagramHeading} />
     <p class="mt-3 leading-relaxed text-on-surface-variant" set:html={formatRootBars(page.diagram.intro)} />
@@ -573,7 +583,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.howToHeading} />
     <ol>
@@ -584,7 +594,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.exampleHeading} />
     <p set:html={formatRootBars(page.example.intro)} />
@@ -603,7 +613,7 @@ const quickSummaryCards = [
   </section>
 )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.resultMeaningHeading} />
     {page.resultMeaning.map((paragraph) => (
@@ -623,7 +633,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.whyFormulaWorksHeading} />
     {pageStructure.whyFormulaWorks.map((paragraph) => (
@@ -632,7 +642,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageUi.commonMistakesHeading} />
     <p set:html={pageUi.commonMistakesIntro} />
@@ -644,7 +654,7 @@ const quickSummaryCards = [
   </section>
   )}
 
-{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && (
+{!isHypotenuseFromProjectionsPage && !isLegAFromProjectionPage && !isLegBFromProjectionPage && (
   <>
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={pageStructure.additionalExample.h2} />
@@ -689,4 +699,6 @@ const quickSummaryCards = [
   {isHypotenuseFromProjectionsPage && locale !== 'en' && HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale] ? <HypotenuseFromProjectionsGuideLocalized guide={HYPOTENUSE_FROM_PROJECTIONS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isLegAFromProjectionPage && locale === 'en' ? <LegAFromProjectionGuide /> : null}
   {isLegAFromProjectionPage && locale !== 'en' && LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale] ? <LegAFromProjectionGuideLocalized guide={LEG_A_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isLegBFromProjectionPage && locale === 'en' ? <LegBFromProjectionGuide /> : null}
+  {isLegBFromProjectionPage && locale !== 'en' && LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale] ? <LegBFromProjectionGuideLocalized guide={LEG_B_FROM_PROJECTION_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

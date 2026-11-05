@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="52" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">p vs q: Pair Each Leg With Its Own Projection</text>
+  <polygon points="300,430 900,430 516,142" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="300,430 900,430 516,142" fill="none" stroke="#f1c97d" stroke-width="8" stroke-linejoin="round"/>
+  <line x1="516" y1="142" x2="516" y2="430" stroke="#4ade80" stroke-width="6" stroke-dasharray="10 8" stroke-linecap="round"/>
+  <polyline points="504,158 520,170 532,154" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <polyline points="496,430 496,410 516,410" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <circle cx="300" cy="430" r="9" fill="#f1c97d"/>
+  <circle cx="900" cy="430" r="9" fill="#f1c97d"/>
+  <circle cx="516" cy="142" r="9" fill="#f1c97d"/>
+  <circle cx="516" cy="430" r="7" fill="#4ade80"/>
+  <text x="300" y="462" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">A</text>
+  <text x="900" y="462" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="516" y="112" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <text x="544" y="462" font-size="20" font-weight="700" fill="#4ade80" text-anchor="middle">D</text>
+  <text x="408" y="462" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">p</text>
+  <text x="708" y="462" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">q</text>
+  <text x="488" y="286" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">h</text>
+  <text x="380" y="280" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">a</text>
+  <text x="736" y="280" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">b</text>
+  <text x="800" y="408" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">c</text>
+  <rect x="110" y="488" width="470" height="88" rx="12" fill="#1c1b1b" stroke="#f1c97d"/>
+  <text x="345" y="524" font-size="23" font-weight="700" fill="#f1c97d" text-anchor="middle">LEG a: a² = c × p</text>
+  <text x="345" y="558" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">25 × 9 = 225, a = 15</text>
+  <rect x="620" y="488" width="470" height="88" rx="12" fill="#1c1b1b" stroke="#7dd3fc"/>
+  <text x="855" y="524" font-size="23" font-weight="700" fill="#7dd3fc" text-anchor="middle">LEG b: b² = c × q</text>
+  <text x="855" y="558" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">25 × 16 = 400, b = 20</text>
+  <text x="600" y="612" font-size="20" fill="#f1c97d" text-anchor="middle">Wrong pairing: √(25 × 9) = 15 is leg a, not leg b.</text>
+</svg>

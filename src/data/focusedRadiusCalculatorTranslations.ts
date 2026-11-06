@@ -405,7 +405,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['अंतःत्रिज्या', 'त्रिज्या संबंध r'],
       intro: [
         'जब आपके पास भुजा a, भुजा b और कर्ण c हो और अंतःत्रिज्या r चाहिए, तब इस कैलकुलेटर का उपयोग करें।',
-        'अंतःत्रिज्या उस अंतःवृत्त की त्रिज्या है जो समकोण त्रिभुज के अंदर फिट होता है और तीनों भुजाओं को छूता है।'
       ],
       calculatorNote:
         'a, b और c के लिए धनात्मक मान दर्ज करें। कर्ण c सबसे लंबी भुजा होना चाहिए और तीनों भुजाएं मान्य समकोण त्रिभुज बनानी चाहिए।',
@@ -489,7 +488,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['परिवृत्त त्रिज्या', 'त्रिज्या संबंध R'],
       intro: [
         'जब कर्ण c ज्ञात हो और परिवृत्त त्रिज्या R चाहिए, तब इस कैलकुलेटर का उपयोग करें।',
-        'समकोण त्रिभुज में कर्ण परिवृत्त का व्यास होता है, इसलिए परिवृत्त त्रिज्या कर्ण का आधा होती है।'
       ],
       calculatorNote:
         'कर्ण c के लिए धनात्मक मान दर्ज करें। यह कैलकुलेटर मानता है कि c समकोण के सामने वाली भुजा है।',
@@ -677,7 +675,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['内切圆半径', '半径关系 r'],
       intro: [
         '当已知 a、b 和斜边 c，并需要求 r 时使用此页面。',
-        'r 是内切圆的半径，该圆与直角三角形的三条边相切。'
       ],
       calculatorNote:
         '请输入 a、b、c 的正值。斜边 c 必须是最长边，并且这些边长应组成有效直角三角形。',
@@ -717,7 +714,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['外接圆半径', '半径关系 R'],
       intro: [
         '当已知斜边 c，并需要求 R 时使用此页面。',
-        '在直角三角形中，斜边是外接圆的直径。'
       ],
       calculatorNote: '请输入斜边 c 的正值。c 是直角的对边。',
       formulaParagraphs: ['外接圆的直径是 c，因此半径是 c / 2。'],
@@ -870,7 +866,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Inradie', 'Radierelation r'],
       intro: [
         'Använd sidan när a, b och hypotenusan c är kända och du vill hitta r.',
-        'r är radien för incirkeln som tangerar triangelns tre sidor.'
       ],
       calculatorNote:
         'Ange positiva värden för a, b och c. Hypotenusan c måste vara längst och bilda en giltig rätvinklig triangel.',
@@ -910,7 +905,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Omskriven radie', 'Radierelation R'],
       intro: [
         'Använd sidan när hypotenusan c är känd och du vill hitta R.',
-        'I en rätvinklig triangel är hypotenusan diametern i den omskrivna cirkeln.'
       ],
       calculatorNote: 'Ange ett positivt värde för hypotenusan c. c är sidan mittemot den räta vinkeln.',
       formulaParagraphs: ['Den omskrivna cirkelns diameter är c, så radien är c / 2.'],
@@ -1063,7 +1057,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['İçteğet yarıçapı', 'Yarıçap ilişkisi r'],
       intro: [
         'a, b ve hipotenüs c biliniyorsa ve r gerekiyorsa bu sayfayı kullanın.',
-        'r, üç kenara temas eden içteğet çemberin yarıçapıdır.'
       ],
       calculatorNote:
         'a, b ve c için pozitif değerler girin. Hipotenüs c en uzun kenar olmalı ve geçerli bir dik üçgen oluşturmalıdır.',
@@ -1103,7 +1096,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Çevrel yarıçap', 'Yarıçap ilişkisi R'],
       intro: [
         'Hipotenüs c biliniyorsa ve R gerekiyorsa bu sayfayı kullanın.',
-        'Dik üçgende hipotenüs çevrel çemberin çapıdır.'
       ],
       calculatorNote: 'Hipotenüs c için pozitif bir değer girin. c dik açının karşısındaki kenardır.',
       formulaParagraphs: ['Çevrel çemberin çapı c olduğundan yarıçap c / 2 olur.'],
@@ -1256,7 +1248,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Вписан радиус', 'Връзка на радиуса r'],
       intro: [
         'Използвайте тази страница, когато знаете a, b и хипотенуза c и искате r.',
-        'r е радиусът на вписаната окръжност, която докосва трите страни.'
       ],
       calculatorNote:
         'Въведете положителни стойности за a, b и c. Хипотенузата c трябва да е най-дългата страна и да образува валиден правоъгълен триъгълник.',
@@ -1296,7 +1287,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Описан радиус', 'Връзка на радиуса R'],
       intro: [
         'Използвайте тази страница, когато хипотенузата c е известна и искате R.',
-        'В правоъгълен триъгълник хипотенузата е диаметърът на описаната окръжност.'
       ],
       calculatorNote: 'Въведете положителна стойност за хипотенуза c. c е страната срещу правия ъгъл.',
       formulaParagraphs: ['Диаметърът на описаната окръжност е c, затова радиусът е c / 2.'],
@@ -1449,7 +1439,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['نصف القطر الداخلي', 'علاقة نصف القطر r'],
       intro: [
         'استخدم هذه الصفحة عندما تعرف a و b والوتر c وتريد إيجاد r.',
-        'r هو نصف قطر الدائرة الداخلية التي تلامس أضلاع المثلث القائم الثلاثة.'
       ],
       calculatorNote:
         'أدخل قيمًا موجبة لـ a و b و c. يجب أن يكون الوتر c هو الضلع الأطول وأن تكوّن القيم مثلثًا قائمًا صالحًا.',
@@ -1489,7 +1478,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['نصف القطر المحيط', 'علاقة نصف القطر R'],
       intro: [
         'استخدم هذه الصفحة عندما يكون الوتر c معروفًا وتريد إيجاد R.',
-        'في المثلث القائم، يكون الوتر قطر الدائرة المحيطة، لذلك R يساوي نصف c.'
       ],
       calculatorNote: 'أدخل قيمة موجبة للوتر c. c هو دائمًا الضلع المقابل للزاوية القائمة.',
       formulaParagraphs: ['قطر الدائرة المحيطة هو c، لذلك نصف القطر هو c / 2.'],
@@ -1642,7 +1630,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Jari-jari dalam', 'Relasi jari-jari r'],
       intro: [
         'Gunakan halaman ini saat a, b, dan hipotenusa c diketahui dan Anda ingin menemukan r.',
-        'r adalah jari-jari lingkaran dalam yang menyentuh ketiga sisi.'
       ],
       calculatorNote:
         'Masukkan nilai positif untuk a, b, dan c. Hipotenusa c harus sisi terpanjang dan membentuk segitiga siku-siku yang valid.',
@@ -1682,7 +1669,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Jari-jari luar', 'Relasi jari-jari R'],
       intro: [
         'Gunakan halaman ini saat hipotenusa c diketahui dan Anda ingin menemukan R.',
-        'Dalam segitiga siku-siku, hipotenusa adalah diameter lingkaran luar.'
       ],
       calculatorNote: 'Masukkan nilai positif untuk hipotenusa c. c adalah sisi yang berhadapan dengan sudut siku-siku.',
       formulaParagraphs: ['Diameter lingkaran luar adalah c, jadi jari-jarinya c / 2.'],
@@ -1835,7 +1821,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Promień wpisany', 'Zależność promienia r'],
       intro: [
         'Użyj tej strony, gdy znasz a, b i przeciwprostokątną c oraz chcesz znaleźć r.',
-        'r to promień okręgu wpisanego, który dotyka trzech boków trójkąta prostokątnego.'
       ],
       calculatorNote:
         'Wprowadź dodatnie wartości a, b i c. Przeciwprostokątna c musi być najdłuższym bokiem i tworzyć poprawny trójkąt prostokątny.',
@@ -1875,7 +1860,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Promień opisany', 'Zależność promienia R'],
       intro: [
         'Użyj tej strony, gdy znasz przeciwprostokątną c i chcesz znaleźć R.',
-        'W trójkącie prostokątnym przeciwprostokątna jest średnicą okręgu opisanego.'
       ],
       calculatorNote: 'Wprowadź dodatnią wartość przeciwprostokątnej c. c jest bokiem naprzeciw kąta prostego.',
       formulaParagraphs: ['Średnicą okręgu opisanego jest c, więc promień to c / 2.'],
@@ -2028,7 +2012,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Jejari dalam', 'Hubungan jejari r'],
       intro: [
         'Gunakan halaman ini apabila a, b dan hipotenus c diketahui dan anda mahu mencari r.',
-        'r ialah jejari bulatan dalam yang menyentuh ketiga-tiga sisi.'
       ],
       calculatorNote:
         'Masukkan nilai positif untuk a, b dan c. Hipotenus c mesti sisi paling panjang dan sisi-sisi itu mesti membentuk segi tiga bersudut tegak yang sah.',
@@ -2068,7 +2051,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Jejari luar', 'Hubungan jejari R'],
       intro: [
         'Gunakan halaman ini apabila hipotenus c diketahui dan anda mahu mencari R.',
-        'Dalam segi tiga bersudut tegak, hipotenus ialah diameter bulatan luar.'
       ],
       calculatorNote: 'Masukkan nilai positif untuk hipotenus c. c ialah sisi bertentangan dengan sudut tegak.',
       formulaParagraphs: ['Diameter bulatan luar ialah c, jadi jejarinya ialah c / 2.'],
@@ -2221,7 +2203,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['내접반지름', '반지름 관계 r'],
       intro: [
         'a, b, 빗변 c를 알고 r을 구해야 할 때 사용하세요.',
-        'r은 직각삼각형의 세 변에 닿는 내접원의 반지름입니다.'
       ],
       calculatorNote:
         'a, b, c에는 양수를 입력하세요. 빗변 c는 가장 긴 변이어야 하며 유효한 직각삼각형이어야 합니다.',
@@ -2261,7 +2242,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['외접반지름', '반지름 관계 R'],
       intro: [
         '빗변 c를 알고 R을 구해야 할 때 사용하세요.',
-        '직각삼각형에서는 빗변이 외접원의 지름이므로 R은 c의 절반입니다.'
       ],
       calculatorNote: '빗변 c에는 양수를 입력하세요. c는 항상 직각의 반대편 변입니다.',
       formulaParagraphs: ['외접원의 지름은 c이므로 반지름은 c / 2입니다.'],
@@ -2414,7 +2394,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['内接円半径', '半径の関係 r'],
       intro: [
         'a、b、斜辺 c が分かっていて r を求めたいときに使います。',
-        'r は三角形の3辺に接する内接円の半径です。'
       ],
       calculatorNote:
         'a、b、c は正の値を入力してください。斜辺 c は最も長い辺で、有効な直角三角形である必要があります。',
@@ -2454,7 +2433,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['外接円半径', '半径の関係 R'],
       intro: [
         '斜辺 c が分かっていて R を求めたいときに使います。',
-        '直角三角形では斜辺が外接円の直径になるため、R は c の半分です。'
       ],
       calculatorNote: '斜辺 c に正の値を入力してください。c は常に直角の向かい側です。',
       formulaParagraphs: ['外接円の直径は c なので、半径は c / 2 です。'],
@@ -2607,7 +2585,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['অন্তঃব্যাসার্ধ', 'ব্যাসার্ধ সম্পর্ক r'],
       intro: [
         'a, b এবং অতিভুজ c জানা থাকলে r বের করতে এই পৃষ্ঠা ব্যবহার করুন।',
-        'অন্তঃব্যাসার্ধ হলো ত্রিভুজের ভিতরের অন্তঃবৃত্তের ব্যাসার্ধ, যা তিনটি বাহুকে স্পর্শ করে।'
       ],
       calculatorNote:
         'a, b এবং c এর জন্য ধনাত্মক মান লিখুন। অতিভুজ c সবচেয়ে দীর্ঘ বাহু হতে হবে এবং মানগুলো বৈধ সমকোণী ত্রিভুজ গঠন করতে হবে।',
@@ -2647,7 +2624,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['পরিবৃত্ত ব্যাসার্ধ', 'ব্যাসার্ধ সম্পর্ক R'],
       intro: [
         'অতিভুজ c জানা থাকলে R বের করতে এই পৃষ্ঠা ব্যবহার করুন।',
-        'সমকোণী ত্রিভুজে অতিভুজ পরিবৃত্তের ব্যাস, তাই R হলো c এর অর্ধেক।'
       ],
       calculatorNote:
         'অতিভুজ c এর জন্য ধনাত্মক মান লিখুন। c সবসময় সমকোণের বিপরীত বাহু।',
@@ -2801,7 +2777,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Inraio', 'Relação do raio r'],
       intro: [
         'Use esta página quando você conhece a, b e a hipotenusa c e precisa encontrar o inraio r.',
-        'O inraio é o raio do incírculo que toca os três lados do triângulo retângulo.'
       ],
       calculatorNote:
         'Insira valores positivos para a, b e c. A hipotenusa c deve ser o lado mais longo e as medidas devem formar um triângulo retângulo válido.',
@@ -2841,7 +2816,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Circunraio', 'Relação do raio R'],
       intro: [
         'Use esta página quando a hipotenusa c é conhecida e você precisa encontrar o circunraio R.',
-        'Em um triângulo retângulo, a hipotenusa é o diâmetro do circuncírculo.'
       ],
       calculatorNote:
         'Insira um valor positivo para a hipotenusa c. Esta calculadora assume que c é o lado oposto ao ângulo reto.',
@@ -2995,7 +2969,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Inraggio', 'Relazione del raggio r'],
       intro: [
         'Usa questa pagina quando conosci a, b e l’ipotenusa c e vuoi trovare l’inraggio r.',
-        'L’inraggio è il raggio dell’incirconferenza che tocca tutti e tre i lati del triangolo rettangolo.'
       ],
       calculatorNote:
         'Inserisci valori positivi per a, b e c. L’ipotenusa c deve essere il lato più lungo e le lunghezze devono formare un triangolo rettangolo valido.',
@@ -3035,7 +3008,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Circonraggio', 'Relazione del raggio R'],
       intro: [
         'Usa questa pagina quando conosci l’ipotenusa c e vuoi trovare il circonraggio R.',
-        'In un triangolo rettangolo, l’ipotenusa è il diametro della circonferenza circoscritta.'
       ],
       calculatorNote:
         'Inserisci un valore positivo per l’ipotenusa c. Questa calcolatrice assume che c sia il lato opposto all’angolo retto.',
@@ -3194,7 +3166,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Inkreisradius', 'Radiusbeziehung r'],
       intro: [
         'Nutze diesen Rechner, wenn Kathete a, Kathete b und Hypotenuse c bekannt sind und du den Inkreisradius r brauchst.',
-        'Der Inkreisradius ist der Radius des Kreises, der im rechtwinkligen Dreieck liegt und alle drei Seiten berührt.'
       ],
       calculatorNote:
         'Gib positive Werte für a, b und c ein. Die Hypotenuse c muss die längste Seite sein und die Seiten müssen ein gültiges rechtwinkliges Dreieck bilden.',
@@ -3273,7 +3244,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Umkreisradius', 'Radiusbeziehung R'],
       intro: [
         'Nutze diesen Rechner, wenn die Hypotenuse c bekannt ist und du den Umkreisradius R brauchst.',
-        'Im rechtwinkligen Dreieck ist die Hypotenuse der Durchmesser des Umkreises, daher ist R die Hälfte von c.'
       ],
       calculatorNote:
         'Gib einen positiven Wert für die Hypotenuse c ein. Dieser Rechner setzt voraus, dass c dem rechten Winkel gegenüberliegt.',
@@ -3466,7 +3436,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Inrayon', 'Relation de rayon r'],
       intro: [
         'Utilisez ce calculateur lorsque vous connaissez a, b et l’hypoténuse c, et que vous voulez trouver l’inrayon r.',
-        'L’inrayon est le rayon du cercle inscrit qui touche les trois côtés du triangle rectangle.'
       ],
       calculatorNote:
         'Saisissez des valeurs positives pour a, b et c. L’hypoténuse c doit être le côté le plus long et les trois longueurs doivent former un triangle rectangle valide.',
@@ -3545,7 +3514,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Rayon circonscrit', 'Relation de rayon R'],
       intro: [
         'Utilisez ce calculateur lorsque vous connaissez l’hypoténuse c et que vous voulez trouver R.',
-        'Dans un triangle rectangle, l’hypoténuse est le diamètre du cercle circonscrit; R vaut donc la moitié de c.'
       ],
       calculatorNote:
         'Saisissez une valeur positive pour l’hypoténuse c. Ce calculateur suppose que c est le côté opposé à l’angle droit.',
@@ -3738,7 +3706,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Вписанный радиус', 'Связь радиуса r'],
       intro: [
         'Используйте этот калькулятор, когда известны катет a, катет b и гипотенуза c, а нужно найти r.',
-        'Вписанный радиус — это радиус окружности внутри прямоугольного треугольника, касающейся всех трех сторон.'
       ],
       calculatorNote:
         'Введите положительные значения a, b и c. Гипотенуза c должна быть самой длинной стороной, а длины должны образовывать прямоугольный треугольник.',
@@ -3817,7 +3784,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Описанный радиус', 'Связь радиуса R'],
       intro: [
         'Используйте этот калькулятор, когда известна гипотенуза c и нужно найти описанный радиус R.',
-        'В прямоугольном треугольнике гипотенуза является диаметром описанной окружности, поэтому R равен половине c.'
       ],
       calculatorNote:
         'Введите положительное значение гипотенузы c. Калькулятор предполагает, что c — сторона напротив прямого угла.',
@@ -4010,7 +3976,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Inradio', 'Relación del radio r'],
       intro: [
         'Use esta calculadora cuando conozca el cateto a, el cateto b y la hipotenusa c, y necesite el inradio r.',
-        'El inradio es el radio del incírculo que cabe dentro del triángulo rectángulo y toca sus tres lados.'
       ],
       calculatorNote:
         'Ingrese valores positivos para a, b y c. La hipotenusa c debe ser el lado más largo y las tres longitudes deben formar un triángulo rectángulo válido.',
@@ -4093,7 +4058,6 @@ const RADIUS_TRANSLATIONS: Partial<Record<Locale, RadiusTranslationBundle>> = {
       modes: ['Circunradio', 'Relación del radio R'],
       intro: [
         'Use esta calculadora cuando conozca la hipotenusa c y necesite el circunradio R.',
-        'En un triángulo rectángulo, la hipotenusa es el diámetro del circuncírculo, por eso R es la mitad de c.'
       ],
       calculatorNote:
         'Ingrese un valor positivo para la hipotenusa c. Esta calculadora supone que c es el lado opuesto al ángulo recto.',

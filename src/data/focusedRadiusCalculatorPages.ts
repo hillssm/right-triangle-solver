@@ -104,8 +104,7 @@ export const focusedRadiusCalculatorPages: FocusedRadiusCalculatorPage[] = [
     calculator: inradiusCalculator,
     modes: ['Inradius', 'Radius Relation r'],
     intro: [
-      'Use this right triangle inradius <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> when you know leg a, leg b, and hypotenuse c and want to find the inradius r. The inradius is the <a href="/right-triangle-radius-calculator/" class="text-primary hover:underline">radius</a> of the incircle, the circle that fits inside the right triangle and touches all three sides.',
-      'This focused <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> is helpful when a geometry problem gives all three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> and asks for the circle inside the triangle. It uses the standard right triangle inradius formula, so the side labeled c must be the hypotenuse.',
+      'Use this right triangle inradius <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> to find inradius r from leg a, leg b, and hypotenuse c.',
     ],
     calculatorNote:
       'Enter positive values for a, b, and c. The hypotenuse c should be the longest <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side</a>, and the three <a href="/right-triangle-side-calculator/" class="text-primary hover:underline">side lengths</a> should form a valid right triangle.',

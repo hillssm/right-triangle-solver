@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">From an Equilateral Triangle</text>
+
+  <polygon points="600.0,133.6 400.0,480.0 800.0,480.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="600.0,133.6 400.0,480.0 800.0,480.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="600.0" y1="133.6" x2="600.0" y2="480.0" stroke="#4ade80" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 8"/>
+  <polyline points="580.0,480.0 580.0,460.0 600.0,460.0" fill="none" stroke="#4ade80" stroke-width="3"/>
+  <circle cx="600.0" cy="133.6" r="9" fill="#f1c97d"/>
+  <circle cx="400.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="800.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="600.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <text x="600.0" y="107.6" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">P</text>
+  <text x="372.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Q</text>
+  <text x="828.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">R</text>
+  <text x="630.0" y="488.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="start">D</text>
+  <text x="470.0" y="290.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">2a</text>
+  <text x="730.0" y="290.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">2a</text>
+  <text x="500.0" y="522.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="700.0" y="522.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="632.0" y="310.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="start">a√3</text>
+  <polyline points="626.0,178.6 624.3,179.6 622.6,180.4 620.8,181.3 619.0,182.0 617.2,182.7 615.3,183.3 613.5,183.8 611.6,184.3 609.7,184.7 607.8,185.0 605.8,185.3 603.9,185.4 601.9,185.6 600.0,185.6" fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="600.0,185.6 598.1,185.6 596.1,185.4 594.2,185.3 592.2,185.0 590.3,184.7 588.4,184.3 586.5,183.8 584.7,183.3 582.8,182.7 581.0,182.0 579.2,181.3 577.4,180.4 575.7,179.6 574.0,178.6" fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
+  <text x="538.0" y="225.6" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">30°</text>
+  <text x="662.0" y="225.6" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">30°</text>
+  <text x="478.0" y="458.0" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">60°</text>
+  <text x="722.0" y="458.0" font-size="22" font-weight="700" fill="#f1c97d" text-anchor="middle">60°</text>
+  <text x="548.0" y="446.0" font-size="22" font-weight="700" fill="#4ade80" text-anchor="middle">90°</text>
+  <text x="600.0" y="585.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">One altitude makes two 30-60-90 triangles</text>
+</svg>
+

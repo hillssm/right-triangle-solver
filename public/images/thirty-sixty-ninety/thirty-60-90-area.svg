@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Area of a 30-60-90 Triangle</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">A = a²√3 / 2</text>
+  <polygon points="848.8,470.0 350.0,182.0 350.0,470.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="848.8,470.0 350.0,182.0 350.0,470.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="848.8" cy="470.0" r="9" fill="#f1c97d"/>
+  <circle cx="350.0" cy="182.0" r="9" fill="#f1c97d"/>
+  <circle cx="350.0" cy="470.0" r="9" fill="#f1c97d"/>
+  <text x="878.8" y="478.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="350.0" y="156.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="320.0" y="478.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="790.8,470.0 790.9,467.8 791.0,465.7 791.2,463.5 791.5,461.4 791.8,459.2 792.3,457.1 792.8,455.0 793.4,452.9 794.1,450.8 794.8,448.8 795.7,446.8 796.6,444.8 797.6,442.9 798.6,441.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="760.0" y="454.2" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">30°</text>
+  <polyline points="400.2,211.0 397.9,214.7 395.3,218.2 392.5,221.5 389.5,224.5 386.2,227.3 382.7,229.9 379.0,232.2 375.2,234.3 371.2,236.0 367.1,237.4 362.9,238.5 358.6,239.4 354.3,239.8 350.0,240.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="396.0" y="269.7" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">60°</text>
+  <polyline points="370.0,470.0 370.0,450.0 350.0,450.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="402.0" y="436.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">90°</text>
+  <text x="298.0" y="335.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 6 cm</text>
+  <text x="599.4" y="522.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b = 6√3 cm</text>
+  <text x="635.4" y="264.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c = 12 cm</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">A = 18√3 ≈ 31.177 cm²</text>
+</svg>
+

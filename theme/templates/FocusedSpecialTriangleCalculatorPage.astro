@@ -4,6 +4,10 @@ import type { FocusedSpecialTriangleCalculatorPage as FocusedSpecialTriangleCalc
 import { getFormulaBySlug } from 'src/data/rightTriangleFormulas';
 import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
+// Page 39 of 45: full 30-60-90 guide (EN + 18 locales).
+import Thirty6090Guide from 'theme/components/Thirty6090Guide.astro';
+import Thirty6090GuideLocalized from 'theme/components/Thirty6090GuideLocalized.astro';
+import { THIRTY6090_GUIDE_TRANSLATIONS } from 'src/data/thirty6090GuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -132,6 +136,12 @@ const diagramAriaLabel = page.diagram.kind === '45-45-90'
   : specialUi.diagramAriaLabel30;
 const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallback: string) =>
   locale === DEFAULT_LOCALE ? seoSectionHeading(page, intent, fallback) : fallback;
+
+// Page 39 of 45: full guide replaces the old thin template content on the
+// 30-60-90 page (calculator itself stays untouched).
+const isThirty6090Page =
+  page.slug === '30-60-90-triangle-calculator' &&
+  (locale === 'en' || THIRTY6090_GUIDE_TRANSLATIONS[locale]);
 --- 
 
 <BaseLayout
@@ -302,10 +312,13 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
     </script>
   </section>
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <p set:html={page.calculatorNote} />
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('formula', specialUi.formulaHeading)}</h2>
     <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
@@ -320,7 +333,9 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       ))}
     </div>
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeading('diagram', specialUi.diagramHeading)}</h2>
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
@@ -379,14 +394,18 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       </div>
     </div>
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('howTo', specialUi.howToUseHeading)}</h2>
     <ol>
       {page.howToUse.map((step) => <li set:html={step} />)}
     </ol>
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('examples', specialUi.examplesHeading)}</h2>
     <div class="space-y-6 mt-4">
@@ -408,32 +427,41 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       ))}
     </div>
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('result', specialUi.resultMeaningHeading)}</h2>
     {page.resultMeaning.map((paragraph) => <p set:html={paragraph} />)}
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('sideRatio', specialUi.sideRatioHeading)}</h2>
     {page.sideRatio.map((paragraph) => <p set:html={paragraph} />)}
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('useCases', specialUi.useCasesHeading)}</h2>
     <ul>
       {page.useCases.map((useCase) => <li set:html={useCase} />)}
     </ul>
   </section>
+  )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('commonMistakes', specialUi.commonMistakesHeading)}</h2>
     <ul>
       {page.commonMistakes.map((mistake) => <li set:html={mistake} />)}
     </ul>
   </section>
+  )}
 
-  {page.faqs.length > 0 && (
+  {!isThirty6090Page && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
       <Faq
         heading={sectionHeading('faqs', specialUi.faqHeading)}
@@ -443,6 +471,7 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
     </div>
   )}
 
+  {!isThirty6090Page && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeading('related', specialUi.relatedHeading)}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -461,6 +490,9 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
       ))}
     </div>
   </section>
+  )}
+  {isThirty6090Page && locale === 'en' ? <Thirty6090Guide /> : null}
+  {isThirty6090Page && locale !== 'en' && THIRTY6090_GUIDE_TRANSLATIONS[locale] ? <Thirty6090GuideLocalized guide={THIRTY6090_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

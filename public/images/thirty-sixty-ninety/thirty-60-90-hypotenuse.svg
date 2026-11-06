@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Find the Hypotenuse</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">c = 2a</text>
+  <polygon points="867.9,480.0 331.0,170.0 331.0,480.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="867.9,480.0 331.0,170.0 331.0,480.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="867.9" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="331.0" cy="170.0" r="9" fill="#f1c97d"/>
+  <circle cx="331.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <text x="897.9" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="331.0" y="144.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="301.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="809.9,480.0 810.0,477.8 810.1,475.7 810.3,473.5 810.6,471.4 810.9,469.2 811.4,467.1 811.9,465.0 812.5,462.9 813.2,460.8 813.9,458.8 814.8,456.8 815.7,454.8 816.7,452.9 817.7,451.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="779.1" y="464.2" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">30°</text>
+  <polyline points="381.2,199.0 378.9,202.7 376.3,206.2 373.5,209.5 370.5,212.5 367.2,215.3 363.7,217.9 360.0,220.2 356.2,222.3 352.2,224.0 348.1,225.4 343.9,226.5 339.6,227.4 335.3,227.8 331.0,228.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="377.0" y="257.7" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">60°</text>
+  <polyline points="351.0,480.0 351.0,460.0 331.0,460.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="383.0" y="446.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">90°</text>
+  <text x="279.0" y="334.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 5 cm</text>
+  <text x="599.5" y="532.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b = 5√3 cm</text>
+  <text x="635.5" y="263.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c = 2 × 5 = 10 cm</text>
+</svg>
+

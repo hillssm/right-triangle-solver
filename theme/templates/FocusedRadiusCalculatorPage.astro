@@ -11,6 +11,10 @@ import FormulaCalculator from 'theme/components/FormulaCalculator.astro';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
+// Page 35 of 45: full circumradius guide (EN + 18 locales).
+import CircumradiusGuide from 'theme/components/CircumradiusGuide.astro';
+import CircumradiusGuideLocalized from 'theme/components/CircumradiusGuideLocalized.astro';
+import { CIRCUMR_GUIDE_TRANSLATIONS } from 'src/data/circumradiusGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { seoSectionHeading } from 'theme/utils/seoHeadings';
 
@@ -76,6 +80,12 @@ const radiusRelationHeading =
       ? 'Right Triangle Inradius Relation r'
       : 'Right Triangle Circumradius Relation R'
     : radiusUi.sectionHeadings.radiusRelation;
+
+// Page 35 of 45: full guide replaces the old thin template content on the
+// circumradius page (calculator itself stays untouched).
+const isCircumradiusPage =
+  page.slug === 'right-triangle-circumradius-calculator' &&
+  (locale === 'en' || CIRCUMR_GUIDE_TRANSLATIONS[locale]);
 ---
 
 <BaseLayout
@@ -136,6 +146,7 @@ const radiusRelationHeading =
     />
   </section>
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('formula', radiusUi.sectionHeadings.formula)}</h2>
     <p class="math-textbook text-tertiary" dir="ltr" set:html={page.formulaSection.formula} />
@@ -144,7 +155,9 @@ const radiusRelationHeading =
       {page.formulaSection.points.map((point) => <li set:html={point} />)}
     </ul>
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('diagram', radiusUi.sectionHeadings.diagram)}</h2>
     {page.diagram.paragraphs.map((paragraph) => <p set:html={paragraph} />)}
@@ -206,14 +219,18 @@ const radiusRelationHeading =
       {page.diagram.notes.map((note) => <li set:html={formatRootBars(note)} />)}
     </ul>
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('howTo', radiusUi.sectionHeadings.howToUse)}</h2>
     <ol>
       {page.howToUse.map((step) => <li set:html={step} />)}
     </ol>
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('examples', radiusUi.sectionHeadings.example)}</h2>
     <p set:html={radiusUi.sectionHeadings.given} />
@@ -229,31 +246,41 @@ const radiusRelationHeading =
     </div>
     <p set:html={page.example.result} />
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('result', radiusUi.sectionHeadings.resultMeaning)}</h2>
     {page.resultMeaning.map((paragraph) => <p set:html={paragraph} />)}
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={radiusRelationHeading} />
     {page.radiusRelation.map((paragraph) => <p set:html={paragraph} />)}
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('useCases', radiusUi.sectionHeadings.useCases)}</h2>
     <ul>
       {page.useCases.map((item) => <li set:html={item} />)}
     </ul>
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('commonMistakes', radiusUi.sectionHeadings.commonMistakes)}</h2>
     <ul>
       {page.commonMistakes.map((mistake) => <li set:html={mistake} />)}
     </ul>
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('related', radiusUi.sectionHeadings.relatedCalculators)}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -273,7 +300,9 @@ const radiusRelationHeading =
       ))}
     </div>
   </section>
+  )}
 
+{!isCircumradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('faqs', radiusUi.sectionHeadings.faqs)}</h2>
     <div class="not-prose mt-5 space-y-4">
@@ -285,6 +314,9 @@ const radiusRelationHeading =
       ))}
     </div>
   </section>
+  )}
+  {isCircumradiusPage && locale === 'en' ? <CircumradiusGuide /> : null}
+  {isCircumradiusPage && locale !== 'en' && CIRCUMR_GUIDE_TRANSLATIONS[locale] ? <CircumradiusGuideLocalized guide={CIRCUMR_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

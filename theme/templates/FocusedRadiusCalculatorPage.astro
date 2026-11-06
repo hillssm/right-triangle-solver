@@ -15,6 +15,10 @@ import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import CircumradiusGuide from 'theme/components/CircumradiusGuide.astro';
 import CircumradiusGuideLocalized from 'theme/components/CircumradiusGuideLocalized.astro';
 import { CIRCUMR_GUIDE_TRANSLATIONS } from 'src/data/circumradiusGuideTranslations';
+// Page 38 of 45: full inradius guide (EN + 18 locales).
+import InradiusGuide from 'theme/components/InradiusGuide.astro';
+import InradiusGuideLocalized from 'theme/components/InradiusGuideLocalized.astro';
+import { INRADIUS_GUIDE_TRANSLATIONS } from 'src/data/inradiusGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { seoSectionHeading } from 'theme/utils/seoHeadings';
 
@@ -86,6 +90,12 @@ const radiusRelationHeading =
 const isCircumradiusPage =
   page.slug === 'right-triangle-circumradius-calculator' &&
   (locale === 'en' || CIRCUMR_GUIDE_TRANSLATIONS[locale]);
+
+// Page 38 of 45: full guide replaces the old thin template content on the
+// inradius page (calculator itself stays untouched).
+const isInradiusPage =
+  page.slug === 'right-triangle-inradius-calculator' &&
+  (locale === 'en' || INRADIUS_GUIDE_TRANSLATIONS[locale]);
 ---
 
 <BaseLayout
@@ -146,7 +156,7 @@ const isCircumradiusPage =
     />
   </section>
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('formula', radiusUi.sectionHeadings.formula)}</h2>
     <p class="math-textbook text-tertiary" dir="ltr" set:html={page.formulaSection.formula} />
@@ -157,7 +167,7 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('diagram', radiusUi.sectionHeadings.diagram)}</h2>
     {page.diagram.paragraphs.map((paragraph) => <p set:html={paragraph} />)}
@@ -221,7 +231,7 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('howTo', radiusUi.sectionHeadings.howToUse)}</h2>
     <ol>
@@ -230,7 +240,7 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('examples', radiusUi.sectionHeadings.example)}</h2>
     <p set:html={radiusUi.sectionHeadings.given} />
@@ -248,21 +258,21 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('result', radiusUi.sectionHeadings.resultMeaning)}</h2>
     {page.resultMeaning.map((paragraph) => <p set:html={paragraph} />)}
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2 set:html={radiusRelationHeading} />
     {page.radiusRelation.map((paragraph) => <p set:html={paragraph} />)}
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('useCases', radiusUi.sectionHeadings.useCases)}</h2>
     <ul>
@@ -271,7 +281,7 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('commonMistakes', radiusUi.sectionHeadings.commonMistakes)}</h2>
     <ul>
@@ -280,7 +290,7 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('related', radiusUi.sectionHeadings.relatedCalculators)}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -302,7 +312,7 @@ const isCircumradiusPage =
   </section>
   )}
 
-{!isCircumradiusPage && (
+{!isCircumradiusPage && !isInradiusPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('faqs', radiusUi.sectionHeadings.faqs)}</h2>
     <div class="not-prose mt-5 space-y-4">
@@ -317,6 +327,8 @@ const isCircumradiusPage =
   )}
   {isCircumradiusPage && locale === 'en' ? <CircumradiusGuide /> : null}
   {isCircumradiusPage && locale !== 'en' && CIRCUMR_GUIDE_TRANSLATIONS[locale] ? <CircumradiusGuideLocalized guide={CIRCUMR_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isInradiusPage && locale === 'en' ? <InradiusGuide /> : null}
+  {isInradiusPage && locale !== 'en' && INRADIUS_GUIDE_TRANSLATIONS[locale] ? <InradiusGuideLocalized guide={INRADIUS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

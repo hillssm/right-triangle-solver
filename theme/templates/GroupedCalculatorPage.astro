@@ -41,6 +41,9 @@ import { PROJECTION_GUIDE_TRANSLATIONS } from 'src/data/projectionGuideTranslati
 import RadiusGuide from 'theme/components/RadiusGuide.astro';
 import RadiusGuideLocalized from 'theme/components/RadiusGuideLocalized.astro';
 import { RADIUS_GUIDE_TRANSLATIONS } from 'src/data/radiusGuideTranslations';
+import SpecialGuide from 'theme/components/SpecialGuide.astro';
+import SpecialGuideLocalized from 'theme/components/SpecialGuideLocalized.astro';
+import { SPECIAL_GUIDE_TRANSLATIONS } from 'src/data/specialGuideTranslations';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem } from 'src/utils/formatList';
@@ -76,6 +79,7 @@ const isMeasurementsPage = slug === 'right-triangle-measurements-calculator';
 const isAltitudePage = slug === 'right-triangle-altitude-calculator' && (locale === 'en' || ALTITUDE_GUIDE_TRANSLATIONS[locale]);
 const isProjectionPage = slug === 'right-triangle-projection-calculator' && (locale === 'en' || PROJECTION_GUIDE_TRANSLATIONS[locale]);
 const isRadiusPage = slug === 'right-triangle-radius-calculator' && (locale === 'en' || RADIUS_GUIDE_TRANSLATIONS[locale]);
+const isSpecialPage = slug === 'special-right-triangle-calculator' && (locale === 'en' || SPECIAL_GUIDE_TRANSLATIONS[locale]);
 const hideOldSideContent = isSidePage;
 const hideOldSideFromAngleContent = isSideFromAnglePage;
 const hideOldAngleContent = isAnglePage;
@@ -85,6 +89,7 @@ const hideOldMeasurementsContent = isMeasurementsPage;
 const hideOldAltitudeContent = isAltitudePage;
 const hideOldProjectionContent = isProjectionPage;
 const hideOldRadiusContent = isRadiusPage;
+const hideOldSpecialContent = isSpecialPage;
 
 if (!groupedPage && !isHubPage) {
   throw new Error(`Unknown grouped calculator slug: ${slug}`);
@@ -821,7 +826,7 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
         </script>
       </section>
 
-      {!hideOldSideContent && !hideOldSideFromAngleContent && !hideOldAngleContent && !hideOldTrigRatiosContent && !hideOldAreaContent && !hideOldMeasurementsContent && !hideOldAltitudeContent && !hideOldProjectionContent && !hideOldRadiusContent && (
+      {!hideOldSideContent && !hideOldSideFromAngleContent && !hideOldAngleContent && !hideOldTrigRatiosContent && !hideOldAreaContent && !hideOldMeasurementsContent && !hideOldAltitudeContent && !hideOldProjectionContent && !hideOldRadiusContent && !hideOldSpecialContent && (
       <>
       <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
         <h2>{sectionHeading(activePage.h2[0])}</h2>
@@ -1172,4 +1177,6 @@ const commonMistakes = Array.isArray(groupedUi.commonMistakes)
   {isProjectionPage && locale !== 'en' && PROJECTION_GUIDE_TRANSLATIONS[locale] ? <ProjectionGuideLocalized guide={PROJECTION_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isRadiusPage && locale === 'en' ? <RadiusGuide /> : null}
   {isRadiusPage && locale !== 'en' && RADIUS_GUIDE_TRANSLATIONS[locale] ? <RadiusGuideLocalized guide={RADIUS_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isSpecialPage && locale === 'en' ? <SpecialGuide /> : null}
+  {isSpecialPage && locale !== 'en' && SPECIAL_GUIDE_TRANSLATIONS[locale] ? <SpecialGuideLocalized guide={SPECIAL_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>

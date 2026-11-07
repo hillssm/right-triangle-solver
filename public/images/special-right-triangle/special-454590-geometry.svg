@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">45-45-90 Triangle Geometry</text>
+
+  <polygon points="690.0,470.0 380.0,160.0 380.0,470.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="690.0,470.0 380.0,160.0 380.0,470.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="690.0" cy="470.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="160.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="470.0" r="9" fill="#f1c97d"/>
+  <text x="720.0" y="478.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="380.0" y="134.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="350.0" y="478.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="632.0,470.0 632.1,466.7 632.4,463.5 632.8,460.3 633.5,457.1 634.3,453.9 635.3,450.8 636.4,447.8 637.7,444.8 639.2,441.9 640.9,439.1 642.7,436.4 644.7,433.8 646.8,431.4 649.0,429.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="605.0" y="442.8" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">45°</text>
+  <polyline points="421.0,201.0 418.6,203.2 416.2,205.3 413.6,207.3 410.9,209.1 408.1,210.8 405.2,212.3 402.2,213.6 399.2,214.7 396.1,215.7 392.9,216.5 389.7,217.2 386.5,217.6 383.3,217.9 380.0,218.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="415.2" y="253.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">45°</text>
+  <polyline points="400.0,470.0 400.0,450.0 380.0,450.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="432.0" y="436.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">90°</text>
+  <line x1="368.0" y1="315.0" x2="392.0" y2="315.0" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+  <line x1="535.0" y1="458.0" x2="535.0" y2="482.0" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+  <text x="322.0" y="324.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="535.0" y="522.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b = a</text>
+  <text x="575.0" y="253.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c = a√2</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">a : b : c = 1 : 1 : √2</text>
+</svg>
+

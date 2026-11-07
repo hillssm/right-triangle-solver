@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Primitive vs Non-Primitive</text>
+
+  <polygon points="250.0,520.0 90.0,400.0 90.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="250.0,520.0 90.0,400.0 90.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="250.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="90.0" cy="400.0" r="9" fill="#f1c97d"/>
+  <circle cx="90.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="106.0,520.0 106.0,504.0 90.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="170.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">3-4-5</text>
+  <text x="170.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">gcd = 1</text>
+  <text x="170.0" y="185.0" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">primitive</text>
+  <polygon points="880.0,520.0 560.0,280.0 560.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="880.0,520.0 560.0,280.0 560.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="880.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="560.0" cy="280.0" r="9" fill="#f1c97d"/>
+  <circle cx="560.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="576.0,520.0 576.0,504.0 560.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="720.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">6-8-10</text>
+  <text x="720.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">gcd = 2</text>
+  <text x="720.0" y="185.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">not primitive</text>
+  <text x="445.0" y="400.0" font-size="40" font-weight="700" fill="#f1c97d" text-anchor="middle">× 2</text>
+  <text x="600.0" y="108.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">The second triangle is twice the first in every side</text>
+</svg>
+

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Three Different Primitive Triples</text>
+
+  <polygon points="240.0,520.0 60.0,385.0 60.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="240.0,520.0 60.0,385.0 60.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="240.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="60.0" cy="385.0" r="9" fill="#f1c97d"/>
+  <circle cx="60.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="76.0,520.0 76.0,504.0 60.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="150.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">3-4-5</text>
+  <polygon points="570.0,520.0 330.0,420.0 330.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="570.0,520.0 330.0,420.0 330.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="570.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="330.0" cy="420.0" r="9" fill="#f1c97d"/>
+  <circle cx="330.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="346.0,520.0 346.0,504.0 330.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="450.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">5-12-13</text>
+  <polygon points="900.0,520.0 660.0,392.0 660.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="900.0,520.0 660.0,392.0 660.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="900.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="660.0" cy="392.0" r="9" fill="#f1c97d"/>
+  <circle cx="660.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="676.0,520.0 676.0,504.0 660.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="780.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">8-15-17</text>
+  <text x="600.0" y="108.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">Same theorem, different shapes and angles</text>
+</svg>
+

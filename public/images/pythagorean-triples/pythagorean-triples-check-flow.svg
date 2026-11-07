@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Checking a Triple: 7, 24, 25</text>
+
+  <rect x="450" y="88" width="300" height="60" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="600.0" y="126.0" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">Input: 7, 24, 25</text>
+  <line x1="600" y1="148" x2="600" y2="186" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="592,184 600,196 608,184" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="330" y="196" width="540" height="60" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="600.0" y="234.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">Square the legs: 49 and 576</text>
+  <line x1="600" y1="256" x2="600" y2="294" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="592,292 600,304 608,292" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="330" y="304" width="540" height="60" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="600.0" y="342.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">Add: 49 + 576 = 625</text>
+  <line x1="600" y1="364" x2="600" y2="402" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="592,400 600,412 608,400" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="330" y="412" width="540" height="60" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="600.0" y="450.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Square the hypotenuse: 25² = 625</text>
+  <line x1="600" y1="472" x2="600" y2="510" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="592,508 600,520 608,508" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="390" y="520" width="420" height="60" rx="12" fill="#1c1b1b" stroke="#4ade80" stroke-width="3"/>
+  <text x="600.0" y="558.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">625 = 625: valid triple</text>
+</svg>
+

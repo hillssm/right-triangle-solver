@@ -324,7 +324,7 @@ export const focusedTriplesCalculatorPages: FocusedTriplesCalculatorPage[] = [
         question:
           'Why does the <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> say my values are not a triple?',
         answer:
-          'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> checks whether a\u00B2 + b\u00B2 equals c\u00B2 exactly. If there is any difference \u2014 even a small one from rounding \u2014 the values do not form a Pythagorean triple. Make sure c is the largest value.',
+          'The <a href="/right-triangle-calculator/" class="text-primary hover:underline">calculator</a> checks whether a\u00B2 + b\u00B2 equals c\u00B2 exactly. If there is any difference, even a small one from rounding, the values do not form a Pythagorean triple. Make sure c is the largest value.',
       },
     ],
   },

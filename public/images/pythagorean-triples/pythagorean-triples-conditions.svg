@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">When Does Euclid's Formula Give a Primitive Triple?</text>
+
+  <rect x="60" y="130" width="480" height="70" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="300.0" y="174.0" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">m = 3,  n = 2</text>
+  <line x1="300" y1="200" x2="300" y2="240" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="292,238 300,250 308,238" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="60" y="250" width="480" height="90" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="300.0" y="288.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">Coprime, opposite parity</text>
+  <text x="300.0" y="322.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">gcd(3, 2) = 1; one even, one odd</text>
+  <line x1="300" y1="340" x2="300" y2="380" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="292,378 300,390 308,378" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="60" y="390" width="480" height="70" rx="12" fill="#1c1b1b" stroke="#4ade80" stroke-width="3"/>
+  <text x="300.0" y="434.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">5-12-13: primitive</text>
+  <rect x="660" y="130" width="480" height="70" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="900.0" y="174.0" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">m = 3,  n = 1</text>
+  <line x1="900" y1="200" x2="900" y2="240" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="892,238 900,250 908,238" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="660" y="250" width="480" height="90" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="900.0" y="288.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">Coprime, both odd</text>
+  <text x="900.0" y="322.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">gcd(3, 1) = 1; parity condition fails</text>
+  <line x1="900" y1="340" x2="900" y2="380" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="892,378 900,390 908,378" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="660" y="390" width="480" height="70" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="900.0" y="434.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">6-8-10: not primitive</text>
+  <text x="600.0" y="108.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">Both conditions must hold at the same time</text>
+  <text x="600.0" y="560.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">Opposite parity matters as much as coprimality</text>
+</svg>
+

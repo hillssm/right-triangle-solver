@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Area of a Scaled 5-12-13 Triangle</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">A = ab / 2      A = 30k²</text>
+  <polygon points="950.0,505.0 230.0,205.0 230.0,505.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="950.0,505.0 230.0,205.0 230.0,505.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="950.0" cy="505.0" r="9" fill="#f1c97d"/>
+  <circle cx="230.0" cy="205.0" r="9" fill="#f1c97d"/>
+  <circle cx="230.0" cy="505.0" r="9" fill="#f1c97d"/>
+  <text x="980.0" y="513.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="230.0" y="179.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="200.0" y="513.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="250.0,505.0 250.0,485.0 230.0,485.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="134.0" y="364.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">height = 12k</text>
+  <text x="590.0" y="557.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">base = 5k</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">k = 2 gives A = 120 square units</text>
+</svg>
+

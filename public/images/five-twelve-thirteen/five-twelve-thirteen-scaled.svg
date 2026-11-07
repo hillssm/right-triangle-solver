@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Three Scaled Triangles, One Shape</text>
+
+  <polygon points="280.0,520.0 40.0,420.0 40.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="280.0,520.0 40.0,420.0 40.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="280.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="40.0" cy="420.0" r="9" fill="#f1c97d"/>
+  <circle cx="40.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="56.0,520.0 56.0,504.0 40.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="160.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">5-12-13</text>
+  <text x="160.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">k = 1</text>
+  <polygon points="654.0,520.0 330.0,385.0 330.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="654.0,520.0 330.0,385.0 330.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="654.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="330.0" cy="385.0" r="9" fill="#f1c97d"/>
+  <circle cx="330.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="346.0,520.0 346.0,504.0 330.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="492.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">10-24-26</text>
+  <text x="492.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">k = 2</text>
+  <polygon points="1108.0,520.0 700.0,350.0 700.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="1108.0,520.0 700.0,350.0 700.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="1108.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="700.0" cy="350.0" r="9" fill="#f1c97d"/>
+  <circle cx="700.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="716.0,520.0 716.0,504.0 700.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="904.0" y="565.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">15-36-39</text>
+  <text x="904.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">k = 3</text>
+  <text x="600.0" y="108.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">Same proportions, same angles</text>
+</svg>
+

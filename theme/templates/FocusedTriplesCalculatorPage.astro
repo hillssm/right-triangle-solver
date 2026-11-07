@@ -6,6 +6,10 @@ import Faq from 'theme/components/Faq.astro';
 import ThreeFourFiveGuide from 'theme/components/ThreeFourFiveGuide.astro';
 import ThreeFourFiveGuideLocalized from 'theme/components/ThreeFourFiveGuideLocalized.astro';
 import { THREEFOURFIVE_GUIDE_TRANSLATIONS } from 'src/data/threeFourFiveGuideTranslations';
+// Page 43 of 45: full 5-12-13 guide (EN + 18 locales).
+import FiveTwelveThirteenGuide from 'theme/components/FiveTwelveThirteenGuide.astro';
+import FiveTwelveThirteenGuideLocalized from 'theme/components/FiveTwelveThirteenGuideLocalized.astro';
+import { FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS } from 'src/data/fiveTwelveThirteenGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -53,6 +57,12 @@ const diagramScaleFactorLabel = pageUi.diagramScaleFactorLabel ?? 'k = scale fac
 const isThreeFourFivePage =
   page.slug === '3-4-5-triangle-calculator' &&
   (locale === 'en' || THREEFOURFIVE_GUIDE_TRANSLATIONS[locale]);
+
+// Page 43 of 45: full guide replaces the old thin template content on the
+// 5-12-13 page (calculator itself stays untouched).
+const isFiveTwelveThirteenPage =
+  page.slug === '5-12-13-triangle-calculator' &&
+  (locale === 'en' || FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS[locale]);
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -152,19 +162,19 @@ const renderMath = (expression: string, displayMode = true) =>
 
   <TriplesCalculator page={page} locale={locale} />
 
-  {!isThreeFourFivePage && page.intro && page.intro.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.intro && page.intro.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       {page.intro.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {!isThreeFourFivePage && page.calculatorNote && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.calculatorNote && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <p set:html={formatRootBars(page.calculatorNote)} />
     </section>
   )}
 
-  {!isThreeFourFivePage && page.formulaSection && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.formulaSection && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.formula} />
       {page.formulaSection.paragraphs.map((p) => <p set:html={formatRootBars(p)} />)}
@@ -182,7 +192,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && page.diagram && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.diagram && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
       <h2 class="text-2xl font-semibold" set:html={sectionHeadings.diagram} />
       <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
@@ -273,7 +283,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && page.howToUse && page.howToUse.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.howToUse && page.howToUse.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.howTo} />
       <ol>
@@ -282,7 +292,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && page.example && page.example.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.example && page.example.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.examples} />
       <div class="space-y-6 mt-4">
@@ -306,21 +316,21 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && page.resultMeaning && page.resultMeaning.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.resultMeaning && page.resultMeaning.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.result} />
       {page.resultMeaning.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {!isThreeFourFivePage && page.sideRatio && page.sideRatio.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.sideRatio && page.sideRatio.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.sideRatio} />
       {page.sideRatio.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {!isThreeFourFivePage && page.useCases && page.useCases.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.useCases && page.useCases.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.useCases} />
       <ul>
@@ -329,7 +339,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && page.commonMistakes && page.commonMistakes.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.commonMistakes && page.commonMistakes.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.commonMistakes} />
       <ul>
@@ -338,7 +348,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && page.faqs && page.faqs.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && page.faqs && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
       <Faq
         heading={sectionHeadings.faqs || faqHeading}
@@ -348,7 +358,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </div>
   )}
 
-  {!isThreeFourFivePage && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeadings.related || relatedHeading}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -370,6 +380,8 @@ const renderMath = (expression: string, displayMode = true) =>
   )}
   {isThreeFourFivePage && locale === 'en' ? <ThreeFourFiveGuide /> : null}
   {isThreeFourFivePage && locale !== 'en' && THREEFOURFIVE_GUIDE_TRANSLATIONS[locale] ? <ThreeFourFiveGuideLocalized guide={THREEFOURFIVE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isFiveTwelveThirteenPage && locale === 'en' ? <FiveTwelveThirteenGuide /> : null}
+  {isFiveTwelveThirteenPage && locale !== 'en' && FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS[locale] ? <FiveTwelveThirteenGuideLocalized guide={FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

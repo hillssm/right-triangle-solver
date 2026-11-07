@@ -8,6 +8,10 @@ import Faq from 'theme/components/Faq.astro';
 import Thirty6090Guide from 'theme/components/Thirty6090Guide.astro';
 import Thirty6090GuideLocalized from 'theme/components/Thirty6090GuideLocalized.astro';
 import { THIRTY6090_GUIDE_TRANSLATIONS } from 'src/data/thirty6090GuideTranslations';
+// Page 40 of 45: full 45-45-90 guide (EN + 18 locales).
+import FortyFiveGuide from 'theme/components/FortyFiveGuide.astro';
+import FortyFiveGuideLocalized from 'theme/components/FortyFiveGuideLocalized.astro';
+import { FORTYFIVE_GUIDE_TRANSLATIONS } from 'src/data/fortyFiveGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -142,6 +146,12 @@ const sectionHeading = (intent: Parameters<typeof seoSectionHeading>[1], fallbac
 const isThirty6090Page =
   page.slug === '30-60-90-triangle-calculator' &&
   (locale === 'en' || THIRTY6090_GUIDE_TRANSLATIONS[locale]);
+
+// Page 40 of 45: full guide replaces the old thin template content on the
+// 45-45-90 page (calculator itself stays untouched).
+const isFortyFivePage =
+  page.slug === '45-45-90-triangle-calculator' &&
+  (locale === 'en' || FORTYFIVE_GUIDE_TRANSLATIONS[locale]);
 --- 
 
 <BaseLayout
@@ -312,13 +322,13 @@ const isThirty6090Page =
     </script>
   </section>
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <p set:html={page.calculatorNote} />
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('formula', specialUi.formulaHeading)}</h2>
     <div class="not-prose mt-4 grid gap-3 sm:grid-cols-2">
@@ -335,7 +345,7 @@ const isThirty6090Page =
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeading('diagram', specialUi.diagramHeading)}</h2>
     <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
@@ -396,7 +406,7 @@ const isThirty6090Page =
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('howTo', specialUi.howToUseHeading)}</h2>
     <ol>
@@ -405,7 +415,7 @@ const isThirty6090Page =
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('examples', specialUi.examplesHeading)}</h2>
     <div class="space-y-6 mt-4">
@@ -429,21 +439,21 @@ const isThirty6090Page =
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('result', specialUi.resultMeaningHeading)}</h2>
     {page.resultMeaning.map((paragraph) => <p set:html={paragraph} />)}
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('sideRatio', specialUi.sideRatioHeading)}</h2>
     {page.sideRatio.map((paragraph) => <p set:html={paragraph} />)}
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('useCases', specialUi.useCasesHeading)}</h2>
     <ul>
@@ -452,7 +462,7 @@ const isThirty6090Page =
   </section>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
     <h2>{sectionHeading('commonMistakes', specialUi.commonMistakesHeading)}</h2>
     <ul>
@@ -461,7 +471,7 @@ const isThirty6090Page =
   </section>
   )}
 
-  {!isThirty6090Page && page.faqs.length > 0 && (
+  {!isThirty6090Page && !isFortyFivePage && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
       <Faq
         heading={sectionHeading('faqs', specialUi.faqHeading)}
@@ -471,7 +481,7 @@ const isThirty6090Page =
     </div>
   )}
 
-  {!isThirty6090Page && (
+  {!isThirty6090Page && !isFortyFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeading('related', specialUi.relatedHeading)}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -493,6 +503,8 @@ const isThirty6090Page =
   )}
   {isThirty6090Page && locale === 'en' ? <Thirty6090Guide /> : null}
   {isThirty6090Page && locale !== 'en' && THIRTY6090_GUIDE_TRANSLATIONS[locale] ? <Thirty6090GuideLocalized guide={THIRTY6090_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isFortyFivePage && locale === 'en' ? <FortyFiveGuide /> : null}
+  {isFortyFivePage && locale !== 'en' && FORTYFIVE_GUIDE_TRANSLATIONS[locale] ? <FortyFiveGuideLocalized guide={FORTYFIVE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

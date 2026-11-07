@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">A Square Diagonal Makes Two 45-45-90 Triangles</text>
+
+  <polygon points="400.0,150.0 800.0,150.0 800.0,550.0 400.0,550.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="400.0,150.0 800.0,150.0 800.0,550.0 400.0,550.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="400.0" y1="550.0" x2="800.0" y2="150.0" stroke="#4ade80" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="400.0" cy="150.0" r="9" fill="#f1c97d"/>
+  <circle cx="800.0" cy="150.0" r="9" fill="#f1c97d"/>
+  <circle cx="800.0" cy="550.0" r="9" fill="#f1c97d"/>
+  <circle cx="400.0" cy="550.0" r="9" fill="#f1c97d"/>
+  <text x="370.0" y="158.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="end">P</text>
+  <text x="830.0" y="158.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">Q</text>
+  <text x="830.0" y="558.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">R</text>
+  <text x="370.0" y="558.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="end">S</text>
+  <text x="372.0" y="350.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="end">a = 8 cm</text>
+  <text x="600.0" y="592.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 8 cm</text>
+  <text x="640.0" y="330.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="start">d = 8√2 ≈ 11.314 cm</text>
+  <polyline points="400.0,494.0 403.1,494.1 406.3,494.4 409.4,494.8 412.5,495.4 415.5,496.2 418.5,497.1 421.4,498.3 424.3,499.5 427.1,501.0 429.8,502.6 432.4,504.3 434.9,506.2 437.3,508.2 439.6,510.4" fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
+  <text x="437.0" y="461.0" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">45°</text>
+  <polyline points="760.4,189.6 758.2,187.3 756.2,184.9 754.3,182.4 752.6,179.8 751.0,177.1 749.5,174.3 748.3,171.4 747.1,168.5 746.2,165.5 745.4,162.5 744.8,159.4 744.4,156.3 744.1,153.1 744.0,150.0" fill="none" stroke="#4ade80" stroke-width="3" stroke-linecap="round"/>
+  <text x="711.0" y="195.0" font-size="24" font-weight="700" fill="#4ade80" text-anchor="middle">45°</text>
+</svg>
+

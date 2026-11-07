@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Why √2 Appears</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">a² + a² = c²   →   c = a√2</text>
+  <polygon points="670.0,480.0 380.0,190.0 380.0,480.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="670.0,480.0 380.0,190.0 380.0,480.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="670.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="190.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <text x="700.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="380.0" y="164.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="350.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="612.0,480.0 612.1,476.7 612.4,473.5 612.8,470.3 613.5,467.1 614.3,463.9 615.3,460.8 616.4,457.8 617.7,454.8 619.2,451.9 620.9,449.1 622.7,446.4 624.7,443.8 626.8,441.4 629.0,439.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="585.0" y="452.8" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">45°</text>
+  <polyline points="421.0,231.0 418.6,233.2 416.2,235.3 413.6,237.3 410.9,239.1 408.1,240.8 405.2,242.3 402.2,243.6 399.2,244.7 396.1,245.7 392.9,246.5 389.7,247.2 386.5,247.6 383.3,247.9 380.0,248.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="415.2" y="283.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">45°</text>
+  <polyline points="400.0,480.0 400.0,460.0 380.0,460.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="432.0" y="446.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">90°</text>
+  <line x1="368.0" y1="335.0" x2="392.0" y2="335.0" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+  <line x1="525.0" y1="468.0" x2="525.0" y2="492.0" stroke="#4ade80" stroke-width="4" stroke-linecap="round"/>
+  <text x="322.0" y="344.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a</text>
+  <text x="525.0" y="532.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">a</text>
+  <text x="565.0" y="273.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">2a² = c², so c = a√2</text>
+</svg>
+

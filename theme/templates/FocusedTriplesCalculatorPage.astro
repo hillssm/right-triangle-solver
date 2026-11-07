@@ -2,6 +2,10 @@
 import type { FocusedTriplesCalculatorPage as FocusedTriplesCalculatorPageData } from 'src/data/focusedTriplesCalculatorPages';
 import TriplesCalculator from 'theme/components/TriplesCalculator.astro';
 import Faq from 'theme/components/Faq.astro';
+// Page 42 of 45: full 3-4-5 guide (EN + 18 locales).
+import ThreeFourFiveGuide from 'theme/components/ThreeFourFiveGuide.astro';
+import ThreeFourFiveGuideLocalized from 'theme/components/ThreeFourFiveGuideLocalized.astro';
+import { THREEFOURFIVE_GUIDE_TRANSLATIONS } from 'src/data/threeFourFiveGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -43,6 +47,12 @@ const sectionHeadings = {
 };
 const diagramKeyLabel = pageUi.diagramKeyLabel ?? 'Triangle Diagram Key';
 const diagramScaleFactorLabel = pageUi.diagramScaleFactorLabel ?? 'k = scale factor';
+
+// Page 42 of 45: full guide replaces the old thin template content on the
+// 3-4-5 page (calculator itself stays untouched).
+const isThreeFourFivePage =
+  page.slug === '3-4-5-triangle-calculator' &&
+  (locale === 'en' || THREEFOURFIVE_GUIDE_TRANSLATIONS[locale]);
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -142,19 +152,19 @@ const renderMath = (expression: string, displayMode = true) =>
 
   <TriplesCalculator page={page} locale={locale} />
 
-  {page.intro && page.intro.length > 0 && (
+  {!isThreeFourFivePage && page.intro && page.intro.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       {page.intro.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {page.calculatorNote && (
+  {!isThreeFourFivePage && page.calculatorNote && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <p set:html={formatRootBars(page.calculatorNote)} />
     </section>
   )}
 
-  {page.formulaSection && (
+  {!isThreeFourFivePage && page.formulaSection && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.formula} />
       {page.formulaSection.paragraphs.map((p) => <p set:html={formatRootBars(p)} />)}
@@ -172,7 +182,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {page.diagram && (
+  {!isThreeFourFivePage && page.diagram && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
       <h2 class="text-2xl font-semibold" set:html={sectionHeadings.diagram} />
       <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
@@ -263,7 +273,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {page.howToUse && page.howToUse.length > 0 && (
+  {!isThreeFourFivePage && page.howToUse && page.howToUse.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.howTo} />
       <ol>
@@ -272,7 +282,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {page.example && page.example.length > 0 && (
+  {!isThreeFourFivePage && page.example && page.example.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.examples} />
       <div class="space-y-6 mt-4">
@@ -296,21 +306,21 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {page.resultMeaning && page.resultMeaning.length > 0 && (
+  {!isThreeFourFivePage && page.resultMeaning && page.resultMeaning.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.result} />
       {page.resultMeaning.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {page.sideRatio && page.sideRatio.length > 0 && (
+  {!isThreeFourFivePage && page.sideRatio && page.sideRatio.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.sideRatio} />
       {page.sideRatio.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {page.useCases && page.useCases.length > 0 && (
+  {!isThreeFourFivePage && page.useCases && page.useCases.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.useCases} />
       <ul>
@@ -319,7 +329,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {page.commonMistakes && page.commonMistakes.length > 0 && (
+  {!isThreeFourFivePage && page.commonMistakes && page.commonMistakes.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.commonMistakes} />
       <ul>
@@ -328,7 +338,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {page.faqs && page.faqs.length > 0 && (
+  {!isThreeFourFivePage && page.faqs && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
       <Faq
         heading={sectionHeadings.faqs || faqHeading}
@@ -338,6 +348,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </div>
   )}
 
+  {!isThreeFourFivePage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeadings.related || relatedHeading}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -356,6 +367,9 @@ const renderMath = (expression: string, displayMode = true) =>
       ))}
     </div>
   </section>
+  )}
+  {isThreeFourFivePage && locale === 'en' ? <ThreeFourFiveGuide /> : null}
+  {isThreeFourFivePage && locale !== 'en' && THREEFOURFIVE_GUIDE_TRANSLATIONS[locale] ? <ThreeFourFiveGuideLocalized guide={THREEFOURFIVE_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Comparing Pythagorean Triples</text>
+
+  <polygon points="250.0,500.0 90.0,380.0 90.0,500.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="250.0,500.0 90.0,380.0 90.0,500.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="250.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <circle cx="90.0" cy="380.0" r="9" fill="#f1c97d"/>
+  <circle cx="90.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <polyline points="106.0,500.0 106.0,484.0 90.0,484.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="170.0" y="545.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">3-4-5</text>
+  <text x="170.0" y="580.0" font-size="22" font-weight="700" fill="#a3a3a3" text-anchor="middle">original</text>
+  <polygon points="550.0,500.0 330.0,335.0 330.0,500.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="550.0,500.0 330.0,335.0 330.0,500.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="550.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <circle cx="330.0" cy="335.0" r="9" fill="#f1c97d"/>
+  <circle cx="330.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <polyline points="346.0,500.0 346.0,484.0 330.0,484.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="440.0" y="545.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">6-8-10</text>
+  <text x="440.0" y="580.0" font-size="22" font-weight="700" fill="#a3a3a3" text-anchor="middle">scaled 3-4-5</text>
+  <polygon points="1000.0,500.0 640.0,350.0 640.0,500.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="1000.0,500.0 640.0,350.0 640.0,500.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="1000.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <circle cx="640.0" cy="350.0" r="9" fill="#f1c97d"/>
+  <circle cx="640.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <polyline points="656.0,500.0 656.0,484.0 640.0,484.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="820.0" y="545.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">5-12-13</text>
+  <text x="820.0" y="580.0" font-size="22" font-weight="700" fill="#a3a3a3" text-anchor="middle">different triple</text>
+  <text x="600.0" y="108.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">6-8-10 is a scaled 3-4-5; 5-12-13 is a different triple</text>
+</svg>
+

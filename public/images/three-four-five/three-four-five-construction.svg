@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">The 3-4-5 Method for a Square Corner</text>
+
+  <polygon points="300.0,480.0 570.0,480.0 300.0,120.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="300.0,480.0 570.0,480.0 300.0,120.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="300.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="570.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="300.0" cy="120.0" r="9" fill="#f1c97d"/>
+  <text x="266.0" y="488.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="end">Corner</text>
+  <text x="600.0" y="488.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="start">3 ft mark</text>
+  <text x="300.0" y="94.0" font-size="24" font-weight="700" fill="#ffffff" text-anchor="middle">4 ft mark</text>
+  <polyline points="320.0,480.0 320.0,460.0 300.0,460.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="352.0" y="446.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">90°</text>
+  <text x="435.0" y="532.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">3 feet</text>
+  <text x="222.0" y="309.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">4 feet</text>
+  <text x="531.0" y="292.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">5 feet</text>
+  <text x="850.0" y="300.0" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">3² + 4² = 5²</text>
+  <text x="850.0" y="350.0" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">9 + 16 = 25</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">A 5 foot diagonal means the corner is square</text>
+</svg>
+

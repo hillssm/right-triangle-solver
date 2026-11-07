@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Why 3-4-5 Is a Pythagorean Triple</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">3² + 4² = 5²      9 + 16 = 25</text>
+  <polygon points="700.0,480.0 380.0,240.0 380.0,480.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="700.0,480.0 380.0,240.0 380.0,480.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="700.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="240.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <text x="730.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="380.0" y="214.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="350.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="642.0,480.0 642.1,477.3 642.2,474.7 642.6,472.0 643.0,469.4 643.5,466.8 644.2,464.2 645.0,461.7 645.9,459.1 646.9,456.7 648.0,454.3 649.3,451.9 650.6,449.6 652.1,447.4 653.6,445.2" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="612.7" y="458.9" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">36.87°</text>
+  <polyline points="426.4,274.8 424.0,277.8 421.4,280.6 418.6,283.3 415.7,285.7 412.6,288.0 409.3,290.0 405.9,291.9 402.4,293.5 398.9,294.8 395.2,296.0 391.4,296.9 387.7,297.5 383.8,297.9 380.0,298.0" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="421.1" y="330.3" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">53.13°</text>
+  <polyline points="400.0,480.0 400.0,460.0 380.0,460.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="432.0" y="446.0" font-size="24" font-weight="700" fill="#f1c97d" text-anchor="middle">90°</text>
+  <text x="308.0" y="369.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">3² = 9</text>
+  <text x="540.0" y="532.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">4² = 16</text>
+  <text x="592.0" y="308.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">5² = 25</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">9 + 16 = 25, so the angle opposite 5 is 90°</text>
+</svg>
+

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Perimeter of a Scaled 3-4-5 Triangle</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">P = 3k + 4k + 5k = 12k</text>
+  <polygon points="750.0,500.0 350.0,200.0 350.0,500.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="750.0,500.0 350.0,200.0 350.0,500.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="750.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <circle cx="350.0" cy="200.0" r="9" fill="#f1c97d"/>
+  <circle cx="350.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <text x="780.0" y="508.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="350.0" y="174.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="320.0" y="508.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="370.0,500.0 370.0,480.0 350.0,480.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="292.0" y="359.0" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 3k</text>
+  <text x="550.0" y="552.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b = 4k</text>
+  <text x="590.0" y="288.0" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c = 5k</text>
+  <text x="600.0" y="585.0" font-size="28" font-weight="700" fill="#4ade80" text-anchor="middle">k = 2 gives P = 24 units</text>
+</svg>
+

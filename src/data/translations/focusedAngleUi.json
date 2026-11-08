@@ -1046,7 +1046,7 @@
       "errorPrefix": "Fel",
       "stepLabels": {
         "formula": "Formel",
-        "substitution": "Substitution",
+        "substitution": "Insättning",
         "answer": "Svara",
         "explanation": "Förklaring",
         "detail": "Detalj"

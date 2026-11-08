@@ -1,10 +1,15 @@
 ---
+interface Props {
+  label?: string;
+}
+
+const { label = 'Back to Top' } = Astro.props;
 ---
 
 <button
   id="back-to-top"
   class="fixed bottom-8 right-8 z-[100] flex h-12 w-12 translate-y-20 opacity-0 items-center justify-center rounded-full bg-primary/90 text-on-primary shadow-lg transition-all duration-300 hover:scale-110 hover:bg-primary active:scale-95 sm:bottom-10 sm:right-10"
-  aria-label="Back to Top"
+  aria-label={label}
 >
   <span class="material-symbols-outlined">expand_less</span>
 </button>

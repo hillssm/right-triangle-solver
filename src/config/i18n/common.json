@@ -37,7 +37,8 @@
       "fallbackEmail": "Or email us directly at",
       "backToBlog": "Back to Blog",
       "backToFormulas": "Back to Formula Directory",
-      "switchLanguage": "Language"
+      "switchLanguage": "Language",
+      "backToTop": "Back to Top"
     },
     "footer": {
       "rights": "All rights reserved.",
@@ -174,7 +175,8 @@
       "fallbackEmail": "या हमें सीधे ईमेल करें",
       "backToBlog": "ब्लॉग पर वापस जाएं",
       "backToFormulas": "सूत्र निर्देशिका पर वापस जाएं",
-      "switchLanguage": "भाषा"
+      "switchLanguage": "भाषा",
+      "backToTop": "ऊपर जाएं"
     },
     "footer": {
       "rights": "सर्वाधिकार सुरक्षित।",
@@ -311,7 +313,8 @@
       "fallbackEmail": "O envíenos un correo directamente a",
       "backToBlog": "Volver al Blog",
       "backToFormulas": "Volver al Directorio de Fórmulas",
-      "switchLanguage": "Idioma"
+      "switchLanguage": "Idioma",
+      "backToTop": "Volver arriba"
     },
     "footer": {
       "rights": "Todos los derechos reservados.",
@@ -448,7 +451,8 @@
       "fallbackEmail": "Или напишите нам напрямую на",
       "backToBlog": "Вернуться в блог",
       "backToFormulas": "Вернуться в каталог формул",
-      "switchLanguage": "Язык"
+      "switchLanguage": "Язык",
+      "backToTop": "Наверх"
     },
     "footer": {
       "rights": "Все права защищены.",
@@ -585,7 +589,8 @@
       "fallbackEmail": "Ou envoyez-nous un e-mail directement à",
       "backToBlog": "Retour au Blog",
       "backToFormulas": "Retour au Répertoire des Formules",
-      "switchLanguage": "Langue"
+      "switchLanguage": "Langue",
+      "backToTop": "Retour en haut"
     },
     "footer": {
       "rights": "Tous droits réservés.",
@@ -722,7 +727,8 @@
       "fallbackEmail": "Oder schreiben Sie uns direkt an",
       "backToBlog": "Zurück zum Blog",
       "backToFormulas": "Zurück zum Formelverzeichnis",
-      "switchLanguage": "Sprache"
+      "switchLanguage": "Sprache",
+      "backToTop": "Nach oben"
     },
     "footer": {
       "rights": "Alle Rechte vorbehalten.",
@@ -859,7 +865,8 @@
       "fallbackEmail": "O scrivici direttamente a",
       "backToBlog": "Torna al Blog",
       "backToFormulas": "Torna alla Directory delle Formule",
-      "switchLanguage": "Lingua"
+      "switchLanguage": "Lingua",
+      "backToTop": "Torna su"
     },
     "footer": {
       "rights": "Tutti i diritti riservati.",
@@ -996,7 +1003,8 @@
       "fallbackEmail": "Ou envie um e-mail diretamente para",
       "backToBlog": "Voltar ao Blog",
       "backToFormulas": "Voltar ao Diretório de Fórmulas",
-      "switchLanguage": "Idioma"
+      "switchLanguage": "Idioma",
+      "backToTop": "Voltar ao topo"
     },
     "footer": {
       "rights": "Todos os direitos reservados.",
@@ -1133,7 +1141,8 @@
       "fallbackEmail": "অথবা সরাসরি আমাদের ইমেল করুন",
       "backToBlog": "ব্লগে ফিরে যান",
       "backToFormulas": "সূত্র ডিরেক্টরিতে ফিরে যান",
-      "switchLanguage": "ভাষা"
+      "switchLanguage": "ভাষা",
+      "backToTop": "উপরে যান"
     },
     "footer": {
       "rights": "সর্বস্বত্ব সংরক্ষিত।",
@@ -1270,7 +1279,8 @@
       "fallbackEmail": "または、こちらに直接メールしてください",
       "backToBlog": "ブログに戻る",
       "backToFormulas": "公式ディレクトリに戻る",
-      "switchLanguage": "言語"
+      "switchLanguage": "言語",
+      "backToTop": "トップへ戻る"
     },
     "footer": {
       "rights": "無断複写・転載を禁じます。",
@@ -1407,7 +1417,8 @@
       "fallbackEmail": "또는 직접 이메일을 보내주세요",
       "backToBlog": "블로그로 돌아가기",
       "backToFormulas": "공식 디렉토리로 돌아가기",
-      "switchLanguage": "언어"
+      "switchLanguage": "언어",
+      "backToTop": "맨 위로"
     },
     "footer": {
       "rights": "모든 권리 보유.",
@@ -1544,7 +1555,8 @@
       "fallbackEmail": "Atau e-mel kami terus di",
       "backToBlog": "Kembali ke Blog",
       "backToFormulas": "Kembali ke Direktori Formula",
-      "switchLanguage": "Bahasa"
+      "switchLanguage": "Bahasa",
+      "backToTop": "Kembali ke Atas"
     },
     "footer": {
       "rights": "Hak cipta terpelihara.",
@@ -1681,7 +1693,8 @@
       "fallbackEmail": "Lub napisz do nas bezpośrednio na",
       "backToBlog": "Wróć do bloga",
       "backToFormulas": "Wróć do katalogu wzorów",
-      "switchLanguage": "Język"
+      "switchLanguage": "Język",
+      "backToTop": "Do góry"
     },
     "footer": {
       "rights": "Wszelkie prawa zastrzeżone.",
@@ -1818,7 +1831,8 @@
       "fallbackEmail": "Atau email kami langsung di",
       "backToBlog": "Kembali ke Blog",
       "backToFormulas": "Kembali ke Direktori Rumus",
-      "switchLanguage": "Bahasa"
+      "switchLanguage": "Bahasa",
+      "backToTop": "Kembali ke Atas"
     },
     "footer": {
       "rights": "Hak cipta dilindungi undang-undang.",
@@ -1955,7 +1969,8 @@
       "fallbackEmail": "أو راسلنا مباشرة على",
       "backToBlog": "العودة إلى المدونة",
       "backToFormulas": "العودة إلى دليل الصيغ",
-      "switchLanguage": "اللغة"
+      "switchLanguage": "اللغة",
+      "backToTop": "العودة إلى الأعلى"
     },
     "footer": {
       "rights": "جميع الحقوق محفوظة.",
@@ -2092,7 +2107,8 @@
       "fallbackEmail": "Или ни пишете директно на",
       "backToBlog": "Обратно към блога",
       "backToFormulas": "Обратно към каталога с формули",
-      "switchLanguage": "Език"
+      "switchLanguage": "Език",
+      "backToTop": "Нагоре"
     },
     "footer": {
       "rights": "Всички права запазени.",
@@ -2229,7 +2245,8 @@
       "fallbackEmail": "Veya doğrudan bize e-posta gönderin:",
       "backToBlog": "Blog'a Geri Dön",
       "backToFormulas": "Formül Dizinine Geri Dön",
-      "switchLanguage": "Dil"
+      "switchLanguage": "Dil",
+      "backToTop": "Yukarı Dön"
     },
     "footer": {
       "rights": "Tüm hakları saklıdır.",
@@ -2366,7 +2383,8 @@
       "fallbackEmail": "Eller mejla oss direkt på",
       "backToBlog": "Tillbaka till bloggen",
       "backToFormulas": "Tillbaka till formelkatalogen",
-      "switchLanguage": "Språk"
+      "switchLanguage": "Språk",
+      "backToTop": "Tillbaka till toppen"
     },
     "footer": {
       "rights": "Alla rättigheter förbehållna.",
@@ -2503,7 +2521,8 @@
       "fallbackEmail": "或直接发邮件给我们：",
       "backToBlog": "返回博客",
       "backToFormulas": "返回公式目录",
-      "switchLanguage": "语言"
+      "switchLanguage": "语言",
+      "backToTop": "返回顶部"
     },
     "footer": {
       "rights": "版权所有。",

@@ -122,17 +122,93 @@ const calculatorUiDefaults = {
     substitution: 'Substitution',
     answer: 'Answer',
     explanation: 'Explanation',
-    detail: 'Detail'
+    detail: 'Detail',
   },
   calculationSteps: {
     perimeter: {
       title: 'Calculate Perimeter',
-      description: "Find the total length of the triangle's boundaries."
+      description: 'Find the total length of the triangle\'s boundaries.'
     },
     semiperimeter: {
       title: 'Determine Semiperimeter',
       description: 'Calculate half of the perimeter for further area derivations.'
-    }
+    },
+    angleAsin: {
+      title: 'Find Angle A from Sine',
+      description: 'Apply arcsin to the side ratio to find the angle in degrees.'
+    },
+    angleAcos: {
+      title: 'Find Angle A from Cosine',
+      description: 'Apply arccos to the side ratio to find the angle in degrees.'
+    },
+    angleAtan: {
+      title: 'Find Angle A from Tangent',
+      description: 'Apply arctan to the side ratio to find the angle in degrees.'
+    },
+    altitudeFromSides: {
+      title: 'Find Altitude h',
+      description: 'Calculate the height to the hypotenuse using the leg product ratio.'
+    },
+    projectionP: {
+      title: 'Find Projection p',
+      description: 'Calculate the segment of the hypotenuse adjacent to leg a.'
+    },
+    projectionQ: {
+      title: 'Find Projection q',
+      description: 'Calculate the segment of the hypotenuse adjacent to leg b.'
+    },
+    inradius: {
+      title: 'Calculate Inradius r',
+      description: 'Find the radius of the largest circle that fits inside the triangle.'
+    },
+    inradiusStrict: {
+      title: 'Calculate Inradius r',
+      description: 'Find the radius of the largest circle that fits inside the triangle.'
+    },
+    circumradius: {
+      title: 'Calculate Circumradius R',
+      description: 'The circumradius is simply half of the hypotenuse.'
+    },
+    legFromHcSin: {
+      title: 'Find opposite side a',
+      description: 'Multiply hypotenuse c by sin(A) to get the side across from angle A.'
+    },
+    legFromHcCos: {
+      title: 'Find adjacent side b',
+      description: 'Multiply hypotenuse c by cos(A) to get the side next to angle A.'
+    },
+    legFromLegTan: {
+      title: 'Find opposite side a',
+      description: 'Multiply adjacent side b by tan(A) to get the side across from angle A.'
+    },
+    legFromLegTanDiv: {
+      title: 'Find adjacent side b',
+      description: 'Divide opposite side a by tan(A) to get the side next to angle A.'
+    },
+    altitudeFromProjections: {
+      title: 'Find Altitude h',
+      description: 'The geometric mean of the hypotenuse segments.'
+    },
+    legAFromProjection: {
+      title: 'Solve for Leg a',
+      description: 'Calculate leg a from hypotenuse c and projection p.'
+    },
+    legBFromProjection: {
+      title: 'Solve for Leg b',
+      description: 'Calculate leg b from hypotenuse c and projection q.'
+    },
+    hypotenuseFromProjections: {
+      title: 'Solve for Hypotenuse c',
+      description: 'Sum the two segments of the hypotenuse.'
+    },
+    angleBFromA: {
+      title: 'Find Angle B',
+      description: 'Subtract angle A from the triangle\'s 90-degree constant.'
+    },
+    angleAFromB: {
+      title: 'Find Angle A',
+      description: 'Subtract angle B from the triangle\'s 90-degree constant.'
+    },
   }
 };
 
@@ -148,17 +224,893 @@ const calculatorUiByLocale: Partial<Record<Locale, Partial<typeof calculatorUiDe
       substitution: 'प्रतिस्थापन',
       answer: 'उत्तर',
       explanation: 'व्याख्या',
-      detail: 'विवरण'
+      detail: 'विवरण',
     },
     calculationSteps: {
+      altitudeFromProjections: {
+        title: 'ऊँचाई h ज्ञात करें',
+        description: 'कर्ण के दोनों खंडों का ज्यामितीय माध्य।'
+      },
+      altitudeFromSides: {
+        title: 'ऊँचाई h ज्ञात करें',
+        description: 'भुजाओं के गुणनफल अनुपात का उपयोग करके कर्ण पर ऊँचाई निकालें।'
+      },
+      angleAFromB: {
+        title: 'कोण A ज्ञात करें',
+        description: 'त्रिभुज के 90° स्थिरांक से कोण B घटाएँ।'
+      },
+      angleAcos: {
+        title: 'कोसाइन से कोण A ज्ञात करें',
+        description: 'कोण डिग्री में ज्ञात करने के लिए भुजा अनुपात पर arccos लागू करें।'
+      },
+      angleAsin: {
+        title: 'साइन से कोण A ज्ञात करें',
+        description: 'कोण डिग्री में ज्ञात करने के लिए भुजा अनुपात पर arcsin लागू करें।'
+      },
+      angleAtan: {
+        title: 'टैंजेंट से कोण A ज्ञात करें',
+        description: 'कोण डिग्री में ज्ञात करने के लिए भुजा अनुपात पर arctan लागू करें।'
+      },
+      angleBFromA: {
+        title: 'कोण B ज्ञात करें',
+        description: 'त्रिभुज के 90° स्थिरांक से कोण A घटाएँ।'
+      },
+      circumradius: {
+        title: 'परित्रिज्या R की गणना करें',
+        description: 'परित्रिज्या कर्ण की आधी होती है।'
+      },
+      hypotenuseFromProjections: {
+        title: 'कर्ण c के लिए हल करें',
+        description: 'कर्ण के दोनों खंडों को जोड़ें।'
+      },
+      inradius: {
+        title: 'अंतःत्रिज्या r की गणना करें',
+        description: 'त्रिभुज के अंदर बनने वाले सबसे बड़े वृत्त की त्रिज्या ज्ञात करें।'
+      },
+      inradiusStrict: {
+        title: 'अंतःत्रिज्या r की गणना करें',
+        description: 'त्रिभुज के अंदर बनने वाले सबसे बड़े वृत्त की त्रिज्या ज्ञात करें।'
+      },
+      legAFromProjection: {
+        title: 'भुजा a के लिए हल करें',
+        description: 'कर्ण c और प्रक्षेप p से भुजा a की गणना करें।'
+      },
+      legBFromProjection: {
+        title: 'भुजा b के लिए हल करें',
+        description: 'कर्ण c और प्रक्षेप q से भुजा b की गणना करें।'
+      },
+      legFromHcCos: {
+        title: 'आसन्न भुजा b ज्ञात करें',
+        description: 'कोण A के पास वाली भुजा पाने के लिए कर्ण c को cos(A) से गुणा करें।'
+      },
+      legFromHcSin: {
+        title: 'सम्मुख भुजा a ज्ञात करें',
+        description: 'कोण A के सम्मुख भुजा पाने के लिए कर्ण c को sin(A) से गुणा करें।'
+      },
+      legFromLegTan: {
+        title: 'सम्मुख भुजा a ज्ञात करें',
+        description: 'कोण A के सम्मुख भुजा पाने के लिए आसन्न भुजा b को tan(A) से गुणा करें।'
+      },
+      legFromLegTanDiv: {
+        title: 'आसन्न भुजा b ज्ञात करें',
+        description: 'कोण A के पास वाली भुजा पाने के लिए सम्मुख भुजा a को tan(A) से विभाजित करें।'
+      },
       perimeter: {
         title: 'परिधि की गणना करें',
         description: 'त्रिभुज की तीनों बाहरी भुजाओं की लंबाई जोड़ें।'
       },
+      projectionP: {
+        title: 'प्रक्षेप p ज्ञात करें',
+        description: 'भुजा a के पास वाले कर्ण के खंड की गणना करें।'
+      },
+      projectionQ: {
+        title: 'प्रक्षेप q ज्ञात करें',
+        description: 'भुजा b के पास वाले कर्ण के खंड की गणना करें।'
+      },
       semiperimeter: {
         title: 'अर्धपरिधि निकालें',
         description: 'पहले परिधि निकालें, फिर उसे 2 से विभाजित करें।'
-      }
+      },
+    }
+  },
+  es: {
+    calculationComplete: 'Cálculo completado.',
+    unableToCalculate: 'No se puede calcular.',
+    fixErrors: 'Corrija los errores de los campos anteriores.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Error',
+    stepLabels: {
+      formula: 'Fórmula',
+      substitution: 'Sustitución',
+      answer: 'Respuesta',
+      explanation: 'Explicación',
+      detail: 'Detalle',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Hallar la altura h',
+        description: 'La media geométrica de los segmentos de la hipotenusa.'
+      },
+      altitudeFromSides: {
+        title: 'Hallar la altura h',
+        description: 'Calcula la altura sobre la hipotenusa usando la razón del producto de los catetos.'
+      },
+      angleAFromB: {
+        title: 'Hallar el ángulo A',
+        description: 'Resta el ángulo B de la constante de 90 grados del triángulo.'
+      },
+      angleAcos: {
+        title: 'Hallar el ángulo A a partir del coseno',
+        description: 'Aplica arccos a la razón de los lados para hallar el ángulo en grados.'
+      },
+      angleAsin: {
+        title: 'Hallar el ángulo A a partir del seno',
+        description: 'Aplica arcsin a la razón de los lados para hallar el ángulo en grados.'
+      },
+      angleAtan: {
+        title: 'Hallar el ángulo A a partir de la tangente',
+        description: 'Aplica arctan a la razón de los lados para hallar el ángulo en grados.'
+      },
+      angleBFromA: {
+        title: 'Hallar el ángulo B',
+        description: 'Resta el ángulo A de la constante de 90 grados del triángulo.'
+      },
+      circumradius: {
+        title: 'Calcular el circunradio R',
+        description: 'El circunradio es simplemente la mitad de la hipotenusa.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Resolver la hipotenusa c',
+        description: 'Suma los dos segmentos de la hipotenusa.'
+      },
+      inradius: {
+        title: 'Calcular el inradio r',
+        description: 'Halla el radio del círculo más grande que cabe dentro del triángulo.'
+      },
+      inradiusStrict: {
+        title: 'Calcular el inradio r',
+        description: 'Halla el radio del círculo más grande que cabe dentro del triángulo.'
+      },
+      legAFromProjection: {
+        title: 'Resolver el cateto a',
+        description: 'Calcula el cateto a a partir de la hipotenusa c y la proyección p.'
+      },
+      legBFromProjection: {
+        title: 'Resolver el cateto b',
+        description: 'Calcula el cateto b a partir de la hipotenusa c y la proyección q.'
+      },
+      legFromHcCos: {
+        title: 'Hallar el cateto adyacente b',
+        description: 'Multiplica la hipotenusa c por cos(A) para obtener el lado junto al ángulo A.'
+      },
+      legFromHcSin: {
+        title: 'Hallar el cateto opuesto a',
+        description: 'Multiplica la hipotenusa c por sin(A) para obtener el lado opuesto al ángulo A.'
+      },
+      legFromLegTan: {
+        title: 'Hallar el cateto opuesto a',
+        description: 'Multiplica el cateto adyacente b por tan(A) para obtener el lado opuesto al ángulo A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Hallar el cateto adyacente b',
+        description: 'Divide el cateto opuesto a entre tan(A) para obtener el lado junto al ángulo A.'
+      },
+      perimeter: {
+        title: 'Calcular el perímetro',
+        description: 'Halla la longitud total de los lados del triángulo.'
+      },
+      projectionP: {
+        title: 'Hallar la proyección p',
+        description: 'Calcula el segmento de la hipotenusa adyacente al cateto a.'
+      },
+      projectionQ: {
+        title: 'Hallar la proyección q',
+        description: 'Calcula el segmento de la hipotenusa adyacente al cateto b.'
+      },
+      semiperimeter: {
+        title: 'Determinar el semiperímetro',
+        description: 'Calcula la mitad del perímetro para derivar el área.'
+      },
+    }
+  },
+  ru: {
+    calculationComplete: 'Расчёт завершён.',
+    unableToCalculate: 'Невозможно выполнить расчёт.',
+    fixErrors: 'Исправьте ошибки в полях выше.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Ошибка',
+    stepLabels: {
+      formula: 'Формула',
+      substitution: 'Подстановка',
+      answer: 'Ответ',
+      explanation: 'Объяснение',
+      detail: 'Подробности',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Найти высоту h',
+        description: 'Среднее геометрическое отрезков гипотенузы.'
+      },
+      altitudeFromSides: {
+        title: 'Найти высоту h',
+        description: 'Вычислите высоту к гипотенузе, используя произведение катетов.'
+      },
+      angleAFromB: {
+        title: 'Найти угол A',
+        description: 'Вычтите угол B из 90°.'
+      },
+      angleAcos: {
+        title: 'Найти угол A по cos',
+        description: 'Примените arccos к отношению сторон, чтобы найти угол в градусах.'
+      },
+      angleAsin: {
+        title: 'Найти угол A по sin',
+        description: 'Примените arcsin к отношению сторон, чтобы найти угол в градусах.'
+      },
+      angleAtan: {
+        title: 'Найти угол A по tan',
+        description: 'Примените arctan к отношению сторон, чтобы найти угол в градусах.'
+      },
+      angleBFromA: {
+        title: 'Найти угол B',
+        description: 'Вычтите угол A из 90°.'
+      },
+      circumradius: {
+        title: 'Вычислить радиус описанной окружности R',
+        description: 'Радиус описанной окружности равен половине гипотенузы.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Найти гипотенузу c',
+        description: 'Сложите два отрезка гипотенузы.'
+      },
+      inradius: {
+        title: 'Вычислить радиус вписанной окружности r',
+        description: 'Найдите радиус наибольшей окружности, которая помещается внутри треугольника.'
+      },
+      inradiusStrict: {
+        title: 'Вычислить радиус вписанной окружности r',
+        description: 'Найдите радиус наибольшей окружности, которая помещается внутри треугольника.'
+      },
+      legAFromProjection: {
+        title: 'Найти катет a',
+        description: 'Вычислите катет a по гипотенузе c и проекции p.'
+      },
+      legBFromProjection: {
+        title: 'Найти катет b',
+        description: 'Вычислите катет b по гипотенузе c и проекции q.'
+      },
+      legFromHcCos: {
+        title: 'Найти прилежащий катет b',
+        description: 'Умножьте гипотенузу c на cos(A), чтобы получить сторону рядом с углом A.'
+      },
+      legFromHcSin: {
+        title: 'Найти противолежащий катет a',
+        description: 'Умножьте гипотенузу c на sin(A), чтобы получить сторону напротив угла A.'
+      },
+      legFromLegTan: {
+        title: 'Найти противолежащий катет a',
+        description: 'Умножьте прилежащий катет b на tan(A), чтобы получить сторону напротив угла A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Найти прилежащий катет b',
+        description: 'Разделите противолежащий катет a на tan(A), чтобы получить сторону рядом с углом A.'
+      },
+      perimeter: {
+        title: 'Вычислить периметр',
+        description: 'Найдите общую длину границ треугольника.'
+      },
+      projectionP: {
+        title: 'Найти проекцию p',
+        description: 'Вычислите отрезок гипотенузы, прилежащий к катету a.'
+      },
+      projectionQ: {
+        title: 'Найти проекцию q',
+        description: 'Вычислите отрезок гипотенузы, прилежащий к катету b.'
+      },
+      semiperimeter: {
+        title: 'Определить полупериметр',
+        description: 'Вычислите половину периметра для дальнейших расчётов площади.'
+      },
+    }
+  },
+  fr: {
+    calculationComplete: 'Calcul terminé.',
+    unableToCalculate: 'Impossible de calculer.',
+    fixErrors: 'Veuillez corriger les erreurs dans les champs ci-dessus.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Erreur',
+    stepLabels: {
+      formula: 'Formule',
+      substitution: 'Substitution',
+      answer: 'Réponse',
+      explanation: 'Explication',
+      detail: 'Détail',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Trouver la hauteur h',
+        description: 'La moyenne géométrique des segments de l\'hypoténuse.'
+      },
+      altitudeFromSides: {
+        title: 'Trouver la hauteur h',
+        description: 'Calculez la hauteur sur l\'hypoténuse à l\'aide du rapport du produit des côtés.'
+      },
+      angleAFromB: {
+        title: 'Trouver l\'angle A',
+        description: 'Soustrayez l\'angle B de la constante de 90 degrés du triangle.'
+      },
+      angleAcos: {
+        title: 'Trouver l\'angle A à partir du cosinus',
+        description: 'Appliquez arccos au rapport des côtés pour trouver l\'angle en degrés.'
+      },
+      angleAsin: {
+        title: 'Trouver l\'angle A à partir du sinus',
+        description: 'Appliquez arcsin au rapport des côtés pour trouver l\'angle en degrés.'
+      },
+      angleAtan: {
+        title: 'Trouver l\'angle A à partir de la tangente',
+        description: 'Appliquez arctan au rapport des côtés pour trouver l\'angle en degrés.'
+      },
+      angleBFromA: {
+        title: 'Trouver l\'angle B',
+        description: 'Soustrayez l\'angle A de la constante de 90 degrés du triangle.'
+      },
+      circumradius: {
+        title: 'Calculer le rayon circonscrit R',
+        description: 'Le rayon circonscrit est simplement la moitié de l\'hypoténuse.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Résoudre l\'hypoténuse c',
+        description: 'Additionnez les deux segments de l\'hypoténuse.'
+      },
+      inradius: {
+        title: 'Calculer le rayon inscrit r',
+        description: 'Trouvez le rayon du plus grand cercle qui tient à l\'intérieur du triangle.'
+      },
+      inradiusStrict: {
+        title: 'Calculer le rayon inscrit r',
+        description: 'Trouvez le rayon du plus grand cercle qui tient à l\'intérieur du triangle.'
+      },
+      legAFromProjection: {
+        title: 'Résoudre le côté a',
+        description: 'Calculez le côté a à partir de l\'hypoténuse c et de la projection p.'
+      },
+      legBFromProjection: {
+        title: 'Résoudre le côté b',
+        description: 'Calculez le côté b à partir de l\'hypoténuse c et de la projection q.'
+      },
+      legFromHcCos: {
+        title: 'Trouver le côté adjacent b',
+        description: 'Multipliez l\'hypoténuse c par cos(A) pour obtenir le côté adjacent à l\'angle A.'
+      },
+      legFromHcSin: {
+        title: 'Trouver le côté opposé a',
+        description: 'Multipliez l\'hypoténuse c par sin(A) pour obtenir le côté opposé à l\'angle A.'
+      },
+      legFromLegTan: {
+        title: 'Trouver le côté opposé a',
+        description: 'Multipliez le côté adjacent b par tan(A) pour obtenir le côté opposé à l\'angle A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Trouver le côté adjacent b',
+        description: 'Divisez le côté opposé a par tan(A) pour obtenir le côté adjacent à l\'angle A.'
+      },
+      perimeter: {
+        title: 'Calculer le périmètre',
+        description: 'Trouvez la longueur totale des côtés du triangle.'
+      },
+      projectionP: {
+        title: 'Trouver la projection p',
+        description: 'Calculez le segment de l\'hypoténuse adjacent au côté a.'
+      },
+      projectionQ: {
+        title: 'Trouver la projection q',
+        description: 'Calculez le segment de l\'hypoténuse adjacent au côté b.'
+      },
+      semiperimeter: {
+        title: 'Déterminer le demi-périmètre',
+        description: 'Calculez la moitié du périmètre pour les calculs d\'aire suivants.'
+      },
+    }
+  },
+  de: {
+    calculationComplete: 'Berechnung abgeschlossen.',
+    unableToCalculate: 'Berechnung nicht möglich.',
+    fixErrors: 'Bitte korrigieren Sie die Fehler in den Feldern oben.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Fehler',
+    stepLabels: {
+      formula: 'Formel',
+      substitution: 'Einsetzen',
+      answer: 'Ergebnis',
+      explanation: 'Erklärung',
+      detail: 'Detail',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Höhe h bestimmen',
+        description: 'Das geometrische Mittel der Hypotenusenabschnitte.'
+      },
+      altitudeFromSides: {
+        title: 'Höhe h bestimmen',
+        description: 'Berechne die Höhe auf die Hypotenuse mithilfe des Kathetenprodukts.'
+      },
+      angleAFromB: {
+        title: 'Winkel A bestimmen',
+        description: 'Ziehe Winkel B von der 90-Grad-Konstanten des Dreiecks ab.'
+      },
+      angleAcos: {
+        title: 'Winkel A aus dem Kosinus bestimmen',
+        description: 'Wende arccos auf das Seitenverhältnis an, um den Winkel in Grad zu bestimmen.'
+      },
+      angleAsin: {
+        title: 'Winkel A aus dem Sinus bestimmen',
+        description: 'Wende arcsin auf das Seitenverhältnis an, um den Winkel in Grad zu bestimmen.'
+      },
+      angleAtan: {
+        title: 'Winkel A aus dem Tangens bestimmen',
+        description: 'Wende arctan auf das Seitenverhältnis an, um den Winkel in Grad zu bestimmen.'
+      },
+      angleBFromA: {
+        title: 'Winkel B bestimmen',
+        description: 'Ziehe Winkel A von der 90-Grad-Konstanten des Dreiecks ab.'
+      },
+      circumradius: {
+        title: 'Umkreisradius R berechnen',
+        description: 'Der Umkreisradius ist einfach die Hälfte der Hypotenuse.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Hypotenuse c berechnen',
+        description: 'Addiere die beiden Abschnitte der Hypotenuse.'
+      },
+      inradius: {
+        title: 'Inkreisradius r berechnen',
+        description: 'Bestimme den Radius des größten Kreises, der in das Dreieck passt.'
+      },
+      inradiusStrict: {
+        title: 'Inkreisradius r berechnen',
+        description: 'Bestimme den Radius des größten Kreises, der in das Dreieck passt.'
+      },
+      legAFromProjection: {
+        title: 'Kathete a berechnen',
+        description: 'Berechne Kathete a aus Hypotenuse c und Hypotenusenabschnitt p.'
+      },
+      legBFromProjection: {
+        title: 'Kathete b berechnen',
+        description: 'Berechne Kathete b aus Hypotenuse c und Hypotenusenabschnitt q.'
+      },
+      legFromHcCos: {
+        title: 'Ankathete b bestimmen',
+        description: 'Multipliziere Hypotenuse c mit cos(A), um die Seite neben Winkel A zu erhalten.'
+      },
+      legFromHcSin: {
+        title: 'Gegenkathete a bestimmen',
+        description: 'Multipliziere Hypotenuse c mit sin(A), um die Seite gegenüber Winkel A zu erhalten.'
+      },
+      legFromLegTan: {
+        title: 'Gegenkathete a bestimmen',
+        description: 'Multipliziere Ankathete b mit tan(A), um die Seite gegenüber Winkel A zu erhalten.'
+      },
+      legFromLegTanDiv: {
+        title: 'Ankathete b bestimmen',
+        description: 'Teile Gegenkathete a durch tan(A), um die Seite neben Winkel A zu erhalten.'
+      },
+      perimeter: {
+        title: 'Umfang berechnen',
+        description: 'Bestimme die Gesamtlänge der Dreiecksseiten.'
+      },
+      projectionP: {
+        title: 'Hypotenusenabschnitt p bestimmen',
+        description: 'Berechne den Hypotenusenabschnitt neben Kathete a.'
+      },
+      projectionQ: {
+        title: 'Hypotenusenabschnitt q bestimmen',
+        description: 'Berechne den Hypotenusenabschnitt neben Kathete b.'
+      },
+      semiperimeter: {
+        title: 'Halbumfang bestimmen',
+        description: 'Berechne die Hälfte des Umfangs für weitere Flächenberechnungen.'
+      },
+    }
+  },
+  it: {
+    calculationComplete: 'Calcolo completato.',
+    unableToCalculate: 'Impossibile eseguire il calcolo.',
+    fixErrors: 'Correggi gli errori nei campi sopra.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Errore',
+    stepLabels: {
+      formula: 'Formula',
+      substitution: 'Sostituzione',
+      answer: 'Risultato',
+      explanation: 'Spiegazione',
+      detail: 'Dettaglio',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Trova l\'altezza h',
+        description: 'La media geometrica dei segmenti dell\'ipotenusa.'
+      },
+      altitudeFromSides: {
+        title: 'Trova l\'altezza h',
+        description: 'Calcola l\'altezza relativa all\'ipotenusa usando il rapporto del prodotto dei cateti.'
+      },
+      angleAFromB: {
+        title: 'Trova l\'angolo A',
+        description: 'Sottrai l\'angolo B dalla costante di 90 gradi del triangolo.'
+      },
+      angleAcos: {
+        title: 'Trova l\'angolo A dal coseno',
+        description: 'Applica arccos al rapporto dei lati per trovare l\'angolo in gradi.'
+      },
+      angleAsin: {
+        title: 'Trova l\'angolo A dal seno',
+        description: 'Applica arcsin al rapporto dei lati per trovare l\'angolo in gradi.'
+      },
+      angleAtan: {
+        title: 'Trova l\'angolo A dalla tangente',
+        description: 'Applica arctan al rapporto dei lati per trovare l\'angolo in gradi.'
+      },
+      angleBFromA: {
+        title: 'Trova l\'angolo B',
+        description: 'Sottrai l\'angolo A dalla costante di 90 gradi del triangolo.'
+      },
+      circumradius: {
+        title: 'Calcola il raggio circoscritto R',
+        description: 'Il raggio circoscritto è semplicemente la metà dell\'ipotenusa.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Risolvi per l\'ipotenusa c',
+        description: 'Somma i due segmenti dell\'ipotenusa.'
+      },
+      inradius: {
+        title: 'Calcola il raggio inscritto r',
+        description: 'Trova il raggio del cerchio più grande che sta dentro il triangolo.'
+      },
+      inradiusStrict: {
+        title: 'Calcola il raggio inscritto r',
+        description: 'Trova il raggio del cerchio più grande che sta dentro il triangolo.'
+      },
+      legAFromProjection: {
+        title: 'Risolvi per il cateto a',
+        description: 'Calcola il cateto a dall\'ipotenusa c e dalla proiezione p.'
+      },
+      legBFromProjection: {
+        title: 'Risolvi per il cateto b',
+        description: 'Calcola il cateto b dall\'ipotenusa c e dalla proiezione q.'
+      },
+      legFromHcCos: {
+        title: 'Trova il cateto adiacente b',
+        description: 'Moltiplica l\'ipotenusa c per cos(A) per ottenere il lato accanto all\'angolo A.'
+      },
+      legFromHcSin: {
+        title: 'Trova il cateto opposto a',
+        description: 'Moltiplica l\'ipotenusa c per sin(A) per ottenere il lato opposto all\'angolo A.'
+      },
+      legFromLegTan: {
+        title: 'Trova il cateto opposto a',
+        description: 'Moltiplica il cateto adiacente b per tan(A) per ottenere il lato opposto all\'angolo A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Trova il cateto adiacente b',
+        description: 'Dividi il cateto opposto a per tan(A) per ottenere il lato accanto all\'angolo A.'
+      },
+      perimeter: {
+        title: 'Calcola il perimetro',
+        description: 'Trova la lunghezza totale dei lati del triangolo.'
+      },
+      projectionP: {
+        title: 'Trova la proiezione p',
+        description: 'Calcola il segmento dell\'ipotenusa adiacente al cateto a.'
+      },
+      projectionQ: {
+        title: 'Trova la proiezione q',
+        description: 'Calcola il segmento dell\'ipotenusa adiacente al cateto b.'
+      },
+      semiperimeter: {
+        title: 'Determina il semiperimetro',
+        description: 'Calcola la metà del perimetro per ulteriori derivazioni dell\'area.'
+      },
+    }
+  },
+  pt: {
+    calculationComplete: 'Cálculo concluído.',
+    unableToCalculate: 'Não foi possível calcular.',
+    fixErrors: 'Corrija os erros nos campos acima.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Erro',
+    stepLabels: {
+      formula: 'Fórmula',
+      substitution: 'Substituição',
+      answer: 'Resposta',
+      explanation: 'Explicação',
+      detail: 'Detalhe',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Encontrar a altura h',
+        description: 'A média geométrica dos segmentos da hipotenusa.'
+      },
+      altitudeFromSides: {
+        title: 'Encontrar a altura h',
+        description: 'Calcule a altura relativa à hipotenusa usando a razão do produto dos catetos.'
+      },
+      angleAFromB: {
+        title: 'Encontrar o ângulo A',
+        description: 'Subtraia o ângulo B da constante de 90 graus do triângulo.'
+      },
+      angleAcos: {
+        title: 'Encontrar o ângulo A pelo cosseno',
+        description: 'Aplique arccos à razão dos lados para encontrar o ângulo em graus.'
+      },
+      angleAsin: {
+        title: 'Encontrar o ângulo A pelo seno',
+        description: 'Aplique arcsin à razão dos lados para encontrar o ângulo em graus.'
+      },
+      angleAtan: {
+        title: 'Encontrar o ângulo A pela tangente',
+        description: 'Aplique arctan à razão dos lados para encontrar o ângulo em graus.'
+      },
+      angleBFromA: {
+        title: 'Encontrar o ângulo B',
+        description: 'Subtraia o ângulo A da constante de 90 graus do triângulo.'
+      },
+      circumradius: {
+        title: 'Calcular o raio circunscrito R',
+        description: 'O raio circunscrito é simplesmente metade da hipotenusa.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Resolver a hipotenusa c',
+        description: 'Some os dois segmentos da hipotenusa.'
+      },
+      inradius: {
+        title: 'Calcular o raio inscrito r',
+        description: 'Encontre o raio do maior círculo que cabe dentro do triângulo.'
+      },
+      inradiusStrict: {
+        title: 'Calcular o raio inscrito r',
+        description: 'Encontre o raio do maior círculo que cabe dentro do triângulo.'
+      },
+      legAFromProjection: {
+        title: 'Resolver o cateto a',
+        description: 'Calcule o cateto a a partir da hipotenusa c e da projeção p.'
+      },
+      legBFromProjection: {
+        title: 'Resolver o cateto b',
+        description: 'Calcule o cateto b a partir da hipotenusa c e da projeção q.'
+      },
+      legFromHcCos: {
+        title: 'Encontrar o lado adjacente b',
+        description: 'Multiplique a hipotenusa c por cos(A) para obter o lado adjacente ao ângulo A.'
+      },
+      legFromHcSin: {
+        title: 'Encontrar o lado oposto a',
+        description: 'Multiplique a hipotenusa c por sin(A) para obter o lado oposto ao ângulo A.'
+      },
+      legFromLegTan: {
+        title: 'Encontrar o lado oposto a',
+        description: 'Multiplique o lado adjacente b por tan(A) para obter o lado oposto ao ângulo A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Encontrar o lado adjacente b',
+        description: 'Divida o lado oposto a por tan(A) para obter o lado adjacente ao ângulo A.'
+      },
+      perimeter: {
+        title: 'Calcular o perímetro',
+        description: 'Encontre o comprimento total dos limites do triângulo.'
+      },
+      projectionP: {
+        title: 'Encontrar a projeção p',
+        description: 'Calcule o segmento da hipotenusa adjacente ao cateto a.'
+      },
+      projectionQ: {
+        title: 'Encontrar a projeção q',
+        description: 'Calcule o segmento da hipotenusa adjacente ao cateto b.'
+      },
+      semiperimeter: {
+        title: 'Determinar o semiperímetro',
+        description: 'Calcule metade do perímetro para derivações posteriores da área.'
+      },
+    }
+  },
+  bn: {
+    calculationComplete: 'গণনা সম্পন্ন হয়েছে।',
+    unableToCalculate: 'গণনা করা যাচ্ছে না।',
+    fixErrors: 'উপরের ক্ষেত্রগুলোর ভুলগুলো ঠিক করুন।',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'ত্রুটি',
+    stepLabels: {
+      formula: 'সূত্র',
+      substitution: 'প্রতিস্থাপন',
+      answer: 'উত্তর',
+      explanation: 'ব্যাখ্যা',
+      detail: 'বিস্তারিত',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'উচ্চতা h নির্ণয় করুন',
+        description: 'অতিভুজের অংশদ্বয়ের জ্যামিতিক গড়।'
+      },
+      altitudeFromSides: {
+        title: 'উচ্চতা h নির্ণয় করুন',
+        description: 'বাহুদ্বয়ের গুণফলের অনুপাত ব্যবহার করে অতিভুজের উপর উচ্চতা নির্ণয় করুন।'
+      },
+      angleAFromB: {
+        title: 'কোণ A নির্ণয় করুন',
+        description: 'ত্রিভুজের 90-ডিগ্রি ধ্রুবক থেকে কোণ B বিয়োগ করুন।'
+      },
+      angleAcos: {
+        title: 'cosine থেকে কোণ A নির্ণয় করুন',
+        description: 'বাহুর অনুপাতে arccos প্রয়োগ করে ডিগ্রিতে কোণ নির্ণয় করুন।'
+      },
+      angleAsin: {
+        title: 'sine থেকে কোণ A নির্ণয় করুন',
+        description: 'বাহুর অনুপাতে arcsin প্রয়োগ করে ডিগ্রিতে কোণ নির্ণয় করুন।'
+      },
+      angleAtan: {
+        title: 'tangent থেকে কোণ A নির্ণয় করুন',
+        description: 'বাহুর অনুপাতে arctan প্রয়োগ করে ডিগ্রিতে কোণ নির্ণয় করুন।'
+      },
+      angleBFromA: {
+        title: 'কোণ B নির্ণয় করুন',
+        description: 'ত্রিভুজের 90-ডিগ্রি ধ্রুবক থেকে কোণ A বিয়োগ করুন।'
+      },
+      circumradius: {
+        title: 'পরিব্যাসার্ধ R নির্ণয় করুন',
+        description: 'পরিব্যাসার্ধ হলো অতিভুজের অর্ধেক।'
+      },
+      hypotenuseFromProjections: {
+        title: 'অতিভুজ c নির্ণয় করুন',
+        description: 'অতিভুজের দুটি অংশ যোগ করুন।'
+      },
+      inradius: {
+        title: 'অন্তঃব্যাসার্ধ r নির্ণয় করুন',
+        description: 'ত্রিভুজের ভেতরে আঁটা সবচেয়ে বড় বৃত্তের ব্যাসার্ধ নির্ণয় করুন।'
+      },
+      inradiusStrict: {
+        title: 'অন্তঃব্যাসার্ধ r নির্ণয় করুন',
+        description: 'ত্রিভুজের ভেতরে আঁটা সবচেয়ে বড় বৃত্তের ব্যাসার্ধ নির্ণয় করুন।'
+      },
+      legAFromProjection: {
+        title: 'বাহু a নির্ণয় করুন',
+        description: 'অতিভুজ c এবং অভিক্ষেপ p থেকে বাহু a নির্ণয় করুন।'
+      },
+      legBFromProjection: {
+        title: 'বাহু b নির্ণয় করুন',
+        description: 'অতিভুজ c এবং অভিক্ষেপ q থেকে বাহু b নির্ণয় করুন।'
+      },
+      legFromHcCos: {
+        title: 'সংলগ্ন বাহু b নির্ণয় করুন',
+        description: 'কোণ A এর সংলগ্ন বাহু পেতে অতিভুজ c কে cos(A) দিয়ে গুণ করুন।'
+      },
+      legFromHcSin: {
+        title: 'বিপরীত বাহু a নির্ণয় করুন',
+        description: 'কোণ A এর বিপরীত বাহু পেতে অতিভুজ c কে sin(A) দিয়ে গুণ করুন।'
+      },
+      legFromLegTan: {
+        title: 'বিপরীত বাহু a নির্ণয় করুন',
+        description: 'কোণ A এর বিপরীত বাহু পেতে সংলগ্ন বাহু b কে tan(A) দিয়ে গুণ করুন।'
+      },
+      legFromLegTanDiv: {
+        title: 'সংলগ্ন বাহু b নির্ণয় করুন',
+        description: 'কোণ A এর সংলগ্ন বাহু পেতে বিপরীত বাহু a কে tan(A) দিয়ে ভাগ করুন।'
+      },
+      perimeter: {
+        title: 'পরিসীমা নির্ণয় করুন',
+        description: 'ত্রিভুজের সীমানার মোট দৈর্ঘ্য নির্ণয় করুন।'
+      },
+      projectionP: {
+        title: 'অভিক্ষেপ p নির্ণয় করুন',
+        description: 'অতিভুজের যে অংশটি বাহু a এর সংলগ্ন, তা নির্ণয় করুন।'
+      },
+      projectionQ: {
+        title: 'অভিক্ষেপ q নির্ণয় করুন',
+        description: 'অতিভুজের যে অংশটি বাহু b এর সংলগ্ন, তা নির্ণয় করুন।'
+      },
+      semiperimeter: {
+        title: 'অর্ধ-পরিসীমা নির্ণয় করুন',
+        description: 'ক্ষেত্রফল নির্ণয়ের পরবর্তী ধাপের জন্য পরিসীমার অর্ধেক নির্ণয় করুন।'
+      },
+    }
+  },
+  ja: {
+    calculationComplete: '計算が完了しました。',
+    unableToCalculate: '計算できませんでした。',
+    fixErrors: '上記のフィールドのエラーを修正してください。',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'エラー',
+    stepLabels: {
+      formula: '公式',
+      substitution: '代入',
+      answer: '答え',
+      explanation: '説明',
+      detail: '詳細',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: '高さhを求める',
+        description: '斜辺の区間の幾何平均です。'
+      },
+      altitudeFromSides: {
+        title: '高さhを求める',
+        description: '辺の積の比を用いて斜辺への高さを計算します。'
+      },
+      angleAFromB: {
+        title: '角Aを求める',
+        description: '三角形の90°の定数から角Bを引きます。'
+      },
+      angleAcos: {
+        title: 'cosから角Aを求める',
+        description: '辺の比にarccosを適用して角を度で求めます。'
+      },
+      angleAsin: {
+        title: 'sinから角Aを求める',
+        description: '辺の比にarcsinを適用して角を度で求めます。'
+      },
+      angleAtan: {
+        title: 'tanから角Aを求める',
+        description: '辺の比にarctanを適用して角を度で求めます。'
+      },
+      angleBFromA: {
+        title: '角Bを求める',
+        description: '三角形の90°の定数から角Aを引きます。'
+      },
+      circumradius: {
+        title: '外接円の半径Rを計算',
+        description: '外接円の半径は単に斜辺の半分です。'
+      },
+      hypotenuseFromProjections: {
+        title: '斜辺cを求める',
+        description: '斜辺の2つの区間を合計します。'
+      },
+      inradius: {
+        title: '内接円の半径rを計算',
+        description: '三角形の内部に収まる最大の円の半径を求めます。'
+      },
+      inradiusStrict: {
+        title: '内接円の半径rを計算',
+        description: '三角形の内部に収まる最大の円の半径を求めます。'
+      },
+      legAFromProjection: {
+        title: '辺aを求める',
+        description: '斜辺cと射影pから辺aを計算します。'
+      },
+      legBFromProjection: {
+        title: '辺bを求める',
+        description: '斜辺cと射影qから辺bを計算します。'
+      },
+      legFromHcCos: {
+        title: '隣辺bを求める',
+        description: '斜辺cにcos(A)を掛けて、角Aの隣辺を求めます。'
+      },
+      legFromHcSin: {
+        title: '対辺aを求める',
+        description: '斜辺cにsin(A)を掛けて、角Aの対辺を求めます。'
+      },
+      legFromLegTan: {
+        title: '対辺aを求める',
+        description: '隣辺bにtan(A)を掛けて、角Aの対辺を求めます。'
+      },
+      legFromLegTanDiv: {
+        title: '隣辺bを求める',
+        description: '対辺aをtan(A)で割って、角Aの隣辺を求めます。'
+      },
+      perimeter: {
+        title: '周囲の長さを計算',
+        description: '三角形の境界の合計の長さを求めます。'
+      },
+      projectionP: {
+        title: '射影pを求める',
+        description: '辺aに隣接する斜辺の区間を計算します。'
+      },
+      projectionQ: {
+        title: '射影qを求める',
+        description: '辺bに隣接する斜辺の区間を計算します。'
+      },
+      semiperimeter: {
+        title: '半周の長さを求める',
+        description: '面積の導出のために周囲の長さの半分を計算します。'
+      },
     }
   },
   ko: {
@@ -172,19 +1124,895 @@ const calculatorUiByLocale: Partial<Record<Locale, Partial<typeof calculatorUiDe
       substitution: '대입',
       answer: '답',
       explanation: '설명',
-      detail: '세부 내용'
+      detail: '세부 내용',
     },
     calculationSteps: {
+      altitudeFromProjections: {
+        title: '높이 h 구하기',
+        description: '빗변 선분들의 기하 평균입니다.'
+      },
+      altitudeFromSides: {
+        title: '높이 h 구하기',
+        description: '다리 곱의 비율을 이용해 빗변에 대한 높이를 계산합니다.'
+      },
+      angleAFromB: {
+        title: '각 A 구하기',
+        description: '삼각형의 90° 상수에서 각 B를 뺍니다.'
+      },
+      angleAcos: {
+        title: 'cos으로 각 A 구하기',
+        description: '변의 비에 arccos을 적용하여 각도를 구합니다.'
+      },
+      angleAsin: {
+        title: 'sin으로 각 A 구하기',
+        description: '변의 비에 arcsin을 적용하여 각도를 구합니다.'
+      },
+      angleAtan: {
+        title: 'tan으로 각 A 구하기',
+        description: '변의 비에 arctan을 적용하여 각도를 구합니다.'
+      },
+      angleBFromA: {
+        title: '각 B 구하기',
+        description: '삼각형의 90° 상수에서 각 A를 뺍니다.'
+      },
+      circumradius: {
+        title: '외접원 반지름 R 계산',
+        description: '외접원 반지름은 빗변의 절반입니다.'
+      },
+      hypotenuseFromProjections: {
+        title: '빗변 c 구하기',
+        description: '빗변의 두 선분을 더합니다.'
+      },
+      inradius: {
+        title: '내접원 반지름 r 계산',
+        description: '삼각형 안에 들어가는 가장 큰 원의 반지름을 구합니다.'
+      },
+      inradiusStrict: {
+        title: '내접원 반지름 r 계산',
+        description: '삼각형 안에 들어가는 가장 큰 원의 반지름을 구합니다.'
+      },
+      legAFromProjection: {
+        title: '다리 a 구하기',
+        description: '빗변 c와 사영 p로부터 다리 a를 계산합니다.'
+      },
+      legBFromProjection: {
+        title: '다리 b 구하기',
+        description: '빗변 c와 사영 q로부터 다리 b를 계산합니다.'
+      },
+      legFromHcCos: {
+        title: '인접한 변 b 구하기',
+        description: '빗변 c에 cos(A)를 곱하여 각 A에 인접한 변을 구합니다.'
+      },
+      legFromHcSin: {
+        title: '마주보는 변 a 구하기',
+        description: '빗변 c에 sin(A)를 곱하여 각 A의 마주보는 변을 구합니다.'
+      },
+      legFromLegTan: {
+        title: '마주보는 변 a 구하기',
+        description: '인접한 변 b에 tan(A)를 곱하여 각 A의 마주보는 변을 구합니다.'
+      },
+      legFromLegTanDiv: {
+        title: '인접한 변 b 구하기',
+        description: '마주보는 변 a를 tan(A)로 나누어 각 A에 인접한 변을 구합니다.'
+      },
       perimeter: {
         title: '둘레 계산',
         description: '삼각형의 세 변 길이를 모두 더합니다.'
       },
+      projectionP: {
+        title: '사영 p 구하기',
+        description: '다리 a에 인접한 빗변의 선분을 계산합니다.'
+      },
+      projectionQ: {
+        title: '사영 q 구하기',
+        description: '다리 b에 인접한 빗변의 선분을 계산합니다.'
+      },
       semiperimeter: {
         title: '반둘레 계산',
         description: '전체 둘레를 구한 뒤 2로 나눕니다.'
-      }
+      },
     }
-  }
+  },
+  ms: {
+    calculationComplete: 'Pengiraan selesai.',
+    unableToCalculate: 'Tidak dapat mengira.',
+    fixErrors: 'Sila betulkan ralat pada medan di atas.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Ralat',
+    stepLabels: {
+      formula: 'Formula',
+      substitution: 'Penggantian',
+      answer: 'Jawapan',
+      explanation: 'Penjelasan',
+      detail: 'Butiran',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Cari Altitud h',
+        description: 'Min geometri bagi segmen-segmen hipotenus.'
+      },
+      altitudeFromSides: {
+        title: 'Cari Altitud h',
+        description: 'Kira ketinggian ke hipotenus menggunakan nisbah hasil darab kaki.'
+      },
+      angleAFromB: {
+        title: 'Cari Sudut A',
+        description: 'Tolak sudut B daripada pemalar 90 darjah segi tiga.'
+      },
+      angleAcos: {
+        title: 'Cari Sudut A daripada Cosine',
+        description: 'Gunakan arccos pada nisbah sisi untuk mencari sudut dalam darjah.'
+      },
+      angleAsin: {
+        title: 'Cari Sudut A daripada Sine',
+        description: 'Gunakan arcsin pada nisbah sisi untuk mencari sudut dalam darjah.'
+      },
+      angleAtan: {
+        title: 'Cari Sudut A daripada Tangent',
+        description: 'Gunakan arctan pada nisbah sisi untuk mencari sudut dalam darjah.'
+      },
+      angleBFromA: {
+        title: 'Cari Sudut B',
+        description: 'Tolak sudut A daripada pemalar 90 darjah segi tiga.'
+      },
+      circumradius: {
+        title: 'Kira Jejari Luar R',
+        description: 'Jejari luar hanyalah separuh daripada hipotenus.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Selesaikan Hipotenus c',
+        description: 'Jumlahkan kedua-dua segmen hipotenus.'
+      },
+      inradius: {
+        title: 'Kira Jejari Dalam r',
+        description: 'Cari jejari bulatan terbesar yang muat di dalam segi tiga.'
+      },
+      inradiusStrict: {
+        title: 'Kira Jejari Dalam r',
+        description: 'Cari jejari bulatan terbesar yang muat di dalam segi tiga.'
+      },
+      legAFromProjection: {
+        title: 'Selesaikan Kaki a',
+        description: 'Kira kaki a daripada hipotenus c dan unjuran p.'
+      },
+      legBFromProjection: {
+        title: 'Selesaikan Kaki b',
+        description: 'Kira kaki b daripada hipotenus c dan unjuran q.'
+      },
+      legFromHcCos: {
+        title: 'Cari sisi bersebelahan b',
+        description: 'Darab hipotenus c dengan cos(A) untuk mendapatkan sisi yang bersebelahan dengan sudut A.'
+      },
+      legFromHcSin: {
+        title: 'Cari sisi bertentangan a',
+        description: 'Darab hipotenus c dengan sin(A) untuk mendapatkan sisi yang bertentangan dengan sudut A.'
+      },
+      legFromLegTan: {
+        title: 'Cari sisi bertentangan a',
+        description: 'Darab sisi bersebelahan b dengan tan(A) untuk mendapatkan sisi yang bertentangan dengan sudut A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Cari sisi bersebelahan b',
+        description: 'Bahagi sisi bertentangan a dengan tan(A) untuk mendapatkan sisi yang bersebelahan dengan sudut A.'
+      },
+      perimeter: {
+        title: 'Kira Perimeter',
+        description: 'Cari jumlah panjang sempadan segi tiga.'
+      },
+      projectionP: {
+        title: 'Cari Unjuran p',
+        description: 'Kira segmen hipotenus yang bersebelahan dengan kaki a.'
+      },
+      projectionQ: {
+        title: 'Cari Unjuran q',
+        description: 'Kira segmen hipotenus yang bersebelahan dengan kaki b.'
+      },
+      semiperimeter: {
+        title: 'Tentukan Semiperimeter',
+        description: 'Kira separuh perimeter untuk terbitan luas selanjutnya.'
+      },
+    }
+  },
+  pl: {
+    calculationComplete: 'Obliczenie zakończone.',
+    unableToCalculate: 'Nie można obliczyć.',
+    fixErrors: 'Popraw błędy w polach powyżej.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Błąd',
+    stepLabels: {
+      formula: 'Wzór',
+      substitution: 'Podstawienie',
+      answer: 'Odpowiedź',
+      explanation: 'Wyjaśnienie',
+      detail: 'Szczegóły',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Znajdź wysokość h',
+        description: 'Średnia geometryczna odcinków przeciwprostokątnej.'
+      },
+      altitudeFromSides: {
+        title: 'Znajdź wysokość h',
+        description: 'Oblicz wysokość poprowadzoną na przeciwprostokątną, korzystając z iloczynu przyprostokątnych.'
+      },
+      angleAFromB: {
+        title: 'Znajdź kąt A',
+        description: 'Odejmij kąt B od stałej 90 stopni trójkąta.'
+      },
+      angleAcos: {
+        title: 'Znajdź kąt A z cosinusa',
+        description: 'Zastosuj arccos do stosunku boków, aby znaleźć kąt w stopniach.'
+      },
+      angleAsin: {
+        title: 'Znajdź kąt A z sinusa',
+        description: 'Zastosuj arcsin do stosunku boków, aby znaleźć kąt w stopniach.'
+      },
+      angleAtan: {
+        title: 'Znajdź kąt A z tangensa',
+        description: 'Zastosuj arctan do stosunku boków, aby znaleźć kąt w stopniach.'
+      },
+      angleBFromA: {
+        title: 'Znajdź kąt B',
+        description: 'Odejmij kąt A od stałej 90 stopni trójkąta.'
+      },
+      circumradius: {
+        title: 'Oblicz promień okręgu opisanego R',
+        description: 'Promień okręgu opisanego to po prostu połowa przeciwprostokątnej.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Oblicz przeciwprostokątną c',
+        description: 'Zsumuj dwa odcinki przeciwprostokątnej.'
+      },
+      inradius: {
+        title: 'Oblicz promień okręgu wpisanego r',
+        description: 'Znajdź promień największego okręgu, który mieści się wewnątrz trójkąta.'
+      },
+      inradiusStrict: {
+        title: 'Oblicz promień okręgu wpisanego r',
+        description: 'Znajdź promień największego okręgu, który mieści się wewnątrz trójkąta.'
+      },
+      legAFromProjection: {
+        title: 'Oblicz przyprostokątną a',
+        description: 'Oblicz przyprostokątną a na podstawie przeciwprostokątnej c i rzutu p.'
+      },
+      legBFromProjection: {
+        title: 'Oblicz przyprostokątną b',
+        description: 'Oblicz przyprostokątną b na podstawie przeciwprostokątnej c i rzutu q.'
+      },
+      legFromHcCos: {
+        title: 'Znajdź przyprostokątną b przyległą do kąta',
+        description: 'Pomnóż przeciwprostokątną c przez cos(A), aby otrzymać bok przyległy do kąta A.'
+      },
+      legFromHcSin: {
+        title: 'Znajdź przyprostokątną a leżącą naprzeciw kąta',
+        description: 'Pomnóż przeciwprostokątną c przez sin(A), aby otrzymać bok leżący naprzeciw kąta A.'
+      },
+      legFromLegTan: {
+        title: 'Znajdź przyprostokątną a leżącą naprzeciw kąta',
+        description: 'Pomnóż przyprostokątną b przyległą do kąta przez tan(A), aby otrzymać bok leżący naprzeciw kąta A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Znajdź przyprostokątną b przyległą do kąta',
+        description: 'Podziel przyprostokątną a leżącą naprzeciw kąta przez tan(A), aby otrzymać bok przyległy do kąta A.'
+      },
+      perimeter: {
+        title: 'Oblicz obwód',
+        description: 'Oblicz całkowitą długość boków trójkąta.'
+      },
+      projectionP: {
+        title: 'Znajdź rzut p',
+        description: 'Oblicz odcinek przeciwprostokątnej przyległy do przyprostokątnej a.'
+      },
+      projectionQ: {
+        title: 'Znajdź rzut q',
+        description: 'Oblicz odcinek przeciwprostokątnej przyległy do przyprostokątnej b.'
+      },
+      semiperimeter: {
+        title: 'Wyznacz półobwód',
+        description: 'Oblicz połowę obwodu, aby dalej wyznaczyć pole.'
+      },
+    }
+  },
+  id: {
+    calculationComplete: 'Perhitungan selesai.',
+    unableToCalculate: 'Tidak dapat menghitung.',
+    fixErrors: 'Perbaiki kesalahan pada kolom di atas.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Kesalahan',
+    stepLabels: {
+      formula: 'Rumus',
+      substitution: 'Substitusi',
+      answer: 'Jawaban',
+      explanation: 'Penjelasan',
+      detail: 'Detail',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Cari Tinggi h',
+        description: 'Rata-rata geometris dari ruas-ruas hipotenusa.'
+      },
+      altitudeFromSides: {
+        title: 'Cari Tinggi h',
+        description: 'Hitung tinggi ke hipotenusa menggunakan rasio hasil kali kaki.'
+      },
+      angleAFromB: {
+        title: 'Cari Sudut A',
+        description: 'Kurangi sudut B dari konstanta 90 derajat segitiga.'
+      },
+      angleAcos: {
+        title: 'Cari Sudut A dari Kosinus',
+        description: 'Terapkan arccos pada rasio sisi untuk mencari sudut dalam derajat.'
+      },
+      angleAsin: {
+        title: 'Cari Sudut A dari Sinus',
+        description: 'Terapkan arcsin pada rasio sisi untuk mencari sudut dalam derajat.'
+      },
+      angleAtan: {
+        title: 'Cari Sudut A dari Tangen',
+        description: 'Terapkan arctan pada rasio sisi untuk mencari sudut dalam derajat.'
+      },
+      angleBFromA: {
+        title: 'Cari Sudut B',
+        description: 'Kurangi sudut A dari konstanta 90 derajat segitiga.'
+      },
+      circumradius: {
+        title: 'Hitung Jari-Jari Lingkaran Luar R',
+        description: 'Jari-jari lingkaran luar sama dengan setengah dari hipotenusa.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Selesaikan Hipotenusa c',
+        description: 'Jumlahkan kedua ruas hipotenusa.'
+      },
+      inradius: {
+        title: 'Hitung Jari-Jari Lingkaran Dalam r',
+        description: 'Cari jari-jari lingkaran terbesar yang muat di dalam segitiga.'
+      },
+      inradiusStrict: {
+        title: 'Hitung Jari-Jari Lingkaran Dalam r',
+        description: 'Cari jari-jari lingkaran terbesar yang muat di dalam segitiga.'
+      },
+      legAFromProjection: {
+        title: 'Selesaikan Kaki a',
+        description: 'Hitung kaki a dari hipotenusa c dan proyeksi p.'
+      },
+      legBFromProjection: {
+        title: 'Selesaikan Kaki b',
+        description: 'Hitung kaki b dari hipotenusa c dan proyeksi q.'
+      },
+      legFromHcCos: {
+        title: 'Cari sisi bersebelahan b',
+        description: 'Kalikan hipotenusa c dengan cos(A) untuk mendapatkan sisi di samping sudut A.'
+      },
+      legFromHcSin: {
+        title: 'Cari sisi berhadapan a',
+        description: 'Kalikan hipotenusa c dengan sin(A) untuk mendapatkan sisi di seberang sudut A.'
+      },
+      legFromLegTan: {
+        title: 'Cari sisi berhadapan a',
+        description: 'Kalikan sisi bersebelahan b dengan tan(A) untuk mendapatkan sisi di seberang sudut A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Cari sisi bersebelahan b',
+        description: 'Bagi sisi berhadapan a dengan tan(A) untuk mendapatkan sisi di samping sudut A.'
+      },
+      perimeter: {
+        title: 'Hitung Keliling',
+        description: 'Cari panjang total batas-batas segitiga.'
+      },
+      projectionP: {
+        title: 'Cari Proyeksi p',
+        description: 'Hitung ruas hipotenusa yang bersebelahan dengan kaki a.'
+      },
+      projectionQ: {
+        title: 'Cari Proyeksi q',
+        description: 'Hitung ruas hipotenusa yang bersebelahan dengan kaki b.'
+      },
+      semiperimeter: {
+        title: 'Tentukan Semiperimeter',
+        description: 'Hitung setengah keliling untuk penurunan luas selanjutnya.'
+      },
+    }
+  },
+  ar: {
+    calculationComplete: 'اكتمل الحساب.',
+    unableToCalculate: 'تعذّر إجراء الحساب.',
+    fixErrors: 'يرجى تصحيح الأخطاء في الحقول أعلاه.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'خطأ',
+    stepLabels: {
+      formula: 'الصيغة',
+      substitution: 'التعويض',
+      answer: 'الإجابة',
+      explanation: 'التفسير',
+      detail: 'التفصيل',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'أوجد الارتفاع h',
+        description: 'الوسط الهندسي لقطعتي الوتر.'
+      },
+      altitudeFromSides: {
+        title: 'أوجد الارتفاع h',
+        description: 'احسب الارتفاع إلى الوتر باستخدام نسبة حاصل ضرب الساقين.'
+      },
+      angleAFromB: {
+        title: 'أوجد الزاوية A',
+        description: 'اطرح الزاوية B من ثابت المثلث 90 درجة.'
+      },
+      angleAcos: {
+        title: 'أوجد الزاوية A من Cosine',
+        description: 'طبّق arccos على نسبة الأضلاع لإيجاد الزاوية بالدرجات.'
+      },
+      angleAsin: {
+        title: 'أوجد الزاوية A من Sine',
+        description: 'طبّق arcsin على نسبة الأضلاع لإيجاد الزاوية بالدرجات.'
+      },
+      angleAtan: {
+        title: 'أوجد الزاوية A من Tangent',
+        description: 'طبّق arctan على نسبة الأضلاع لإيجاد الزاوية بالدرجات.'
+      },
+      angleBFromA: {
+        title: 'أوجد الزاوية B',
+        description: 'اطرح الزاوية A من ثابت المثلث 90 درجة.'
+      },
+      circumradius: {
+        title: 'احسب نصف قطر الدائرة المحيطة R',
+        description: 'نصف قطر الدائرة المحيطة هو ببساطة نصف الوتر.'
+      },
+      hypotenuseFromProjections: {
+        title: 'حلّ للوتر c',
+        description: 'اجمع قطعتي الوتر.'
+      },
+      inradius: {
+        title: 'احسب نصف قطر الدائرة الداخلية r',
+        description: 'أوجد نصف قطر أكبر دائرة تتسع داخل المثلث.'
+      },
+      inradiusStrict: {
+        title: 'احسب نصف قطر الدائرة الداخلية r',
+        description: 'أوجد نصف قطر أكبر دائرة تتسع داخل المثلث.'
+      },
+      legAFromProjection: {
+        title: 'حلّ للساق a',
+        description: 'احسب الساق a من الوتر c والإسقاط p.'
+      },
+      legBFromProjection: {
+        title: 'حلّ للساق b',
+        description: 'احسب الساق b من الوتر c والإسقاط q.'
+      },
+      legFromHcCos: {
+        title: 'أوجد الضلع المجاورة b',
+        description: 'اضرب الوتر c في cos(A) للحصول على الضلع المجاورة للزاوية A.'
+      },
+      legFromHcSin: {
+        title: 'أوجد الضلع المقابلة a',
+        description: 'اضرب الوتر c في sin(A) للحصول على الضلع المقابلة للزاوية A.'
+      },
+      legFromLegTan: {
+        title: 'أوجد الضلع المقابلة a',
+        description: 'اضرب الضلع المجاورة b في tan(A) للحصول على الضلع المقابلة للزاوية A.'
+      },
+      legFromLegTanDiv: {
+        title: 'أوجد الضلع المجاورة b',
+        description: 'اقسم الضلع المقابلة a على tan(A) للحصول على الضلع المجاورة للزاوية A.'
+      },
+      perimeter: {
+        title: 'احسب المحيط',
+        description: 'أوجد الطول الإجمالي لحدود المثلث.'
+      },
+      projectionP: {
+        title: 'أوجد الإسقاط p',
+        description: 'احسب قطعة الوتر المجاورة للساق a.'
+      },
+      projectionQ: {
+        title: 'أوجد الإسقاط q',
+        description: 'احسب قطعة الوتر المجاورة للساق b.'
+      },
+      semiperimeter: {
+        title: 'حدّد نصف المحيط',
+        description: 'احسب نصف المحيط لاستخدامه في اشتقاقات المساحة اللاحقة.'
+      },
+    }
+  },
+  bg: {
+    calculationComplete: 'Изчислението е завършено.',
+    unableToCalculate: 'Не може да се изчисли.',
+    fixErrors: 'Моля, поправете грешките в полетата по-горе.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Грешка',
+    stepLabels: {
+      formula: 'Формула',
+      substitution: 'Заместване',
+      answer: 'Отговор',
+      explanation: 'Обяснение',
+      detail: 'Подробност',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Намиране на височина h',
+        description: 'Средногеометричното на отсечките от хипотенузата.'
+      },
+      altitudeFromSides: {
+        title: 'Намиране на височина h',
+        description: 'Изчислете височината към хипотенузата чрез отношението на произведението на катетите.'
+      },
+      angleAFromB: {
+        title: 'Намиране на ъгъл A',
+        description: 'Извадете ъгъл B от константата 90 градуса на триъгълника.'
+      },
+      angleAcos: {
+        title: 'Намиране на ъгъл A чрез косинус',
+        description: 'Приложете arccos върху отношението на страните, за да намерите ъгъла в градуси.'
+      },
+      angleAsin: {
+        title: 'Намиране на ъгъл A чрез синус',
+        description: 'Приложете arcsin върху отношението на страните, за да намерите ъгъла в градуси.'
+      },
+      angleAtan: {
+        title: 'Намиране на ъгъл A чрез тангенс',
+        description: 'Приложете arctan върху отношението на страните, за да намерите ъгъла в градуси.'
+      },
+      angleBFromA: {
+        title: 'Намиране на ъгъл B',
+        description: 'Извадете ъгъл A от константата 90 градуса на триъгълника.'
+      },
+      circumradius: {
+        title: 'Изчисляване на описан радиус R',
+        description: 'Описаният радиус е просто половината от хипотенузата.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Намиране на хипотенуза c',
+        description: 'Съберете двете отсечки на хипотенузата.'
+      },
+      inradius: {
+        title: 'Изчисляване на вписан радиус r',
+        description: 'Намерете радиуса на най-голямата окръжност, която се побира в триъгълника.'
+      },
+      inradiusStrict: {
+        title: 'Изчисляване на вписан радиус r',
+        description: 'Намерете радиуса на най-голямата окръжност, която се побира в триъгълника.'
+      },
+      legAFromProjection: {
+        title: 'Намиране на катет a',
+        description: 'Изчислете катет a от хипотенузата c и проекцията p.'
+      },
+      legBFromProjection: {
+        title: 'Намиране на катет b',
+        description: 'Изчислете катет b от хипотенузата c и проекцията q.'
+      },
+      legFromHcCos: {
+        title: 'Намиране на прилежащ катет b',
+        description: 'Умножете хипотенузата c по cos(A), за да получите страната до ъгъл A.'
+      },
+      legFromHcSin: {
+        title: 'Намиране на срещулежащ катет a',
+        description: 'Умножете хипотенузата c по sin(A), за да получите страната срещу ъгъл A.'
+      },
+      legFromLegTan: {
+        title: 'Намиране на срещулежащ катет a',
+        description: 'Умножете прилежащия катет b по tan(A), за да получите страната срещу ъгъл A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Намиране на прилежащ катет b',
+        description: 'Разделете срещулежащия катет a на tan(A), за да получите страната до ъгъл A.'
+      },
+      perimeter: {
+        title: 'Изчисляване на периметър',
+        description: 'Намерете общата дължина на страните на триъгълника.'
+      },
+      projectionP: {
+        title: 'Намиране на проекция p',
+        description: 'Изчислете отсечката от хипотенузата, съседна на катет a.'
+      },
+      projectionQ: {
+        title: 'Намиране на проекция q',
+        description: 'Изчислете отсечката от хипотенузата, съседна на катет b.'
+      },
+      semiperimeter: {
+        title: 'Определяне на полупериметър',
+        description: 'Изчислете половината от периметъра за по-нататъшни изчисления на лицето.'
+      },
+    }
+  },
+  tr: {
+    calculationComplete: 'Hesaplama tamamlandı.',
+    unableToCalculate: 'Hesaplanamadı.',
+    fixErrors: 'Lütfen yukarıdaki alanlardaki hataları düzeltin.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Hata',
+    stepLabels: {
+      formula: 'Formül',
+      substitution: 'Yerine koyma',
+      answer: 'Cevap',
+      explanation: 'Açıklama',
+      detail: 'Detay',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'h Yüksekliğini Bulun',
+        description: 'Hipotenüs parçalarının geometrik ortalaması.'
+      },
+      altitudeFromSides: {
+        title: 'h Yüksekliğini Bulun',
+        description: 'Dik kenarların çarpım oranını kullanarak hipotenüse ait yüksekliği hesaplayın.'
+      },
+      angleAFromB: {
+        title: 'A Açısını Bulun',
+        description: 'Üçgenin 90 derecelik sabitinden B açısını çıkarın.'
+      },
+      angleAcos: {
+        title: 'A Açısını Kosinüs ile Bulun',
+        description: 'Açıyı derece cinsinden bulmak için kenar oranına arccos uygulayın.'
+      },
+      angleAsin: {
+        title: 'A Açısını Sinüs ile Bulun',
+        description: 'Açıyı derece cinsinden bulmak için kenar oranına arcsin uygulayın.'
+      },
+      angleAtan: {
+        title: 'A Açısını Tanjant ile Bulun',
+        description: 'Açıyı derece cinsinden bulmak için kenar oranına arctan uygulayın.'
+      },
+      angleBFromA: {
+        title: 'B Açısını Bulun',
+        description: 'Üçgenin 90 derecelik sabitinden A açısını çıkarın.'
+      },
+      circumradius: {
+        title: 'R Çevrel Çember Yarıçapını Hesaplayın',
+        description: 'Çevrel çember yarıçapı, hipotenüsün yarısıdır.'
+      },
+      hypotenuseFromProjections: {
+        title: 'c Hipotenüsünü Bulun',
+        description: 'Hipotenüsün iki parçasını toplayın.'
+      },
+      inradius: {
+        title: 'r İç Teğet Çember Yarıçapını Hesaplayın',
+        description: 'Üçgenin içine sığan en büyük çemberin yarıçapını bulun.'
+      },
+      inradiusStrict: {
+        title: 'r İç Teğet Çember Yarıçapını Hesaplayın',
+        description: 'Üçgenin içine sığan en büyük çemberin yarıçapını bulun.'
+      },
+      legAFromProjection: {
+        title: 'a Dik Kenarını Bulun',
+        description: 'Hipotenüs c ve izdüşüm p\'den a dik kenarını hesaplayın.'
+      },
+      legBFromProjection: {
+        title: 'b Dik Kenarını Bulun',
+        description: 'Hipotenüs c ve izdüşüm q\'dan b dik kenarını hesaplayın.'
+      },
+      legFromHcCos: {
+        title: 'Bitişik kenar b\'yi Bulun',
+        description: 'A açısına bitişik kenarı bulmak için hipotenüs c\'yi cos(A) ile çarpın.'
+      },
+      legFromHcSin: {
+        title: 'Karşı kenar a\'yı Bulun',
+        description: 'A açısının karşısındaki kenarı bulmak için hipotenüs c\'yi sin(A) ile çarpın.'
+      },
+      legFromLegTan: {
+        title: 'Karşı kenar a\'yı Bulun',
+        description: 'A açısının karşısındaki kenarı bulmak için bitişik kenar b\'yi tan(A) ile çarpın.'
+      },
+      legFromLegTanDiv: {
+        title: 'Bitişik kenar b\'yi Bulun',
+        description: 'A açısına bitişik kenarı bulmak için karşı kenar a\'yı tan(A) ile bölün.'
+      },
+      perimeter: {
+        title: 'Çevreyi Hesaplayın',
+        description: 'Üçgenin sınırlarının toplam uzunluğunu bulun.'
+      },
+      projectionP: {
+        title: 'p İzdüşümünü Bulun',
+        description: 'a dik kenarına bitişik hipotenüs parçasını hesaplayın.'
+      },
+      projectionQ: {
+        title: 'q İzdüşümünü Bulun',
+        description: 'b dik kenarına bitişik hipotenüs parçasını hesaplayın.'
+      },
+      semiperimeter: {
+        title: 'Yarı Çevreyi Belirleyin',
+        description: 'İleride alan hesaplamaları için çevrenin yarısını hesaplayın.'
+      },
+    }
+  },
+  sv: {
+    calculationComplete: 'Beräkningen är klar.',
+    unableToCalculate: 'Det gick inte att beräkna.',
+    fixErrors: 'Korrigera felen i fälten ovan.',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: 'Fel',
+    stepLabels: {
+      formula: 'Formel',
+      substitution: 'Insättning',
+      answer: 'Svar',
+      explanation: 'Förklaring',
+      detail: 'Detalj',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: 'Bestäm höjden h',
+        description: 'Det geometriska medelvärdet av hypotenusans segment.'
+      },
+      altitudeFromSides: {
+        title: 'Bestäm höjden h',
+        description: 'Beräkna höjden mot hypotenusan utifrån produkten av kateterna.'
+      },
+      angleAFromB: {
+        title: 'Bestäm vinkel A',
+        description: 'Subtrahera vinkel B från triangelns 90-graderskonstant.'
+      },
+      angleAcos: {
+        title: 'Bestäm vinkel A med cosinus',
+        description: 'Använd arccos på sidförhållandet för att bestämma vinkeln i grader.'
+      },
+      angleAsin: {
+        title: 'Bestäm vinkel A med sinus',
+        description: 'Använd arcsin på sidförhållandet för att bestämma vinkeln i grader.'
+      },
+      angleAtan: {
+        title: 'Bestäm vinkel A med tangens',
+        description: 'Använd arctan på sidförhållandet för att bestämma vinkeln i grader.'
+      },
+      angleBFromA: {
+        title: 'Bestäm vinkel B',
+        description: 'Subtrahera vinkel A från triangelns 90-graderskonstant.'
+      },
+      circumradius: {
+        title: 'Beräkna omskrivna cirkelns radie R',
+        description: 'Den omskrivna cirkelns radie är helt enkelt halva hypotenusan.'
+      },
+      hypotenuseFromProjections: {
+        title: 'Lös ut hypotenusan c',
+        description: 'Summer de två segmenten av hypotenusan.'
+      },
+      inradius: {
+        title: 'Beräkna inradien r',
+        description: 'Bestäm radien för den största cirkeln som får plats inuti triangeln.'
+      },
+      inradiusStrict: {
+        title: 'Beräkna inradien r',
+        description: 'Bestäm radien för den största cirkeln som får plats inuti triangeln.'
+      },
+      legAFromProjection: {
+        title: 'Lös ut katet a',
+        description: 'Beräkna katet a utifrån hypotenusan c och projektionen p.'
+      },
+      legBFromProjection: {
+        title: 'Lös ut katet b',
+        description: 'Beräkna katet b utifrån hypotenusan c och projektionen q.'
+      },
+      legFromHcCos: {
+        title: 'Bestäm närliggande sida b',
+        description: 'Multiplicera hypotenusan c med cos(A) för att få sidan bredvid vinkel A.'
+      },
+      legFromHcSin: {
+        title: 'Bestäm motstående sida a',
+        description: 'Multiplicera hypotenusan c med sin(A) för att få sidan mitt emot vinkel A.'
+      },
+      legFromLegTan: {
+        title: 'Bestäm motstående sida a',
+        description: 'Multiplicera närliggande sida b med tan(A) för att få sidan mitt emot vinkel A.'
+      },
+      legFromLegTanDiv: {
+        title: 'Bestäm närliggande sida b',
+        description: 'Dividera motstående sida a med tan(A) för att få sidan bredvid vinkel A.'
+      },
+      perimeter: {
+        title: 'Beräkna omkretsen',
+        description: 'Bestäm den totala längden av triangelns sidor.'
+      },
+      projectionP: {
+        title: 'Bestäm projektionen p',
+        description: 'Beräkna segmentet av hypotenusan som gränsar till katet a.'
+      },
+      projectionQ: {
+        title: 'Bestäm projektionen q',
+        description: 'Beräkna segmentet av hypotenusan som gränsar till katet b.'
+      },
+      semiperimeter: {
+        title: 'Bestäm semiperimetern',
+        description: 'Beräkna halva omkretsen för vidare areahärledningar.'
+      },
+    }
+  },
+  zh: {
+    calculationComplete: '计算完成。',
+    unableToCalculate: '无法计算。',
+    fixErrors: '请修正上方字段中的错误。',
+    sqUnits: (units.m ? ` ${units.m}<sup>2</sup>` : ' sq units'),
+    errorPrefix: '错误',
+    stepLabels: {
+      formula: '公式',
+      substitution: '代入',
+      answer: '答案',
+      explanation: '说明',
+      detail: '详情',
+    },
+    calculationSteps: {
+      altitudeFromProjections: {
+        title: '求高 h',
+        description: '斜边两线段的几何平均数。'
+      },
+      altitudeFromSides: {
+        title: '求高 h',
+        description: '利用直角边乘积之比计算斜边上的高。'
+      },
+      angleAFromB: {
+        title: '求角 A',
+        description: '用三角形的 90 度常数减去角 B。'
+      },
+      angleAcos: {
+        title: '用余弦求角 A',
+        description: '对边长之比应用 arccos，求出以度为单位的角。'
+      },
+      angleAsin: {
+        title: '用正弦求角 A',
+        description: '对边长之比应用 arcsin，求出以度为单位的角。'
+      },
+      angleAtan: {
+        title: '用正切求角 A',
+        description: '对边长之比应用 arctan，求出以度为单位的角。'
+      },
+      angleBFromA: {
+        title: '求角 B',
+        description: '用三角形的 90 度常数减去角 A。'
+      },
+      circumradius: {
+        title: '计算外接圆半径 R',
+        description: '外接圆半径就是斜边的一半。'
+      },
+      hypotenuseFromProjections: {
+        title: '求斜边 c',
+        description: '将斜边的两段相加。'
+      },
+      inradius: {
+        title: '计算内切圆半径 r',
+        description: '求能放入三角形内的最大圆的半径。'
+      },
+      inradiusStrict: {
+        title: '计算内切圆半径 r',
+        description: '求能放入三角形内的最大圆的半径。'
+      },
+      legAFromProjection: {
+        title: '求直角边 a',
+        description: '由斜边 c 和投影 p 计算直角边 a。'
+      },
+      legBFromProjection: {
+        title: '求直角边 b',
+        description: '由斜边 c 和投影 q 计算直角边 b。'
+      },
+      legFromHcCos: {
+        title: '求邻边 b',
+        description: '斜边 c 乘以 cos(A)，得到角 A 的邻边。'
+      },
+      legFromHcSin: {
+        title: '求对边 a',
+        description: '斜边 c 乘以 sin(A)，得到角 A 的对边。'
+      },
+      legFromLegTan: {
+        title: '求对边 a',
+        description: '邻边 b 乘以 tan(A)，得到角 A 的对边。'
+      },
+      legFromLegTanDiv: {
+        title: '求邻边 b',
+        description: '对边 a 除以 tan(A)，得到角 A 的邻边。'
+      },
+      perimeter: {
+        title: '计算周长',
+        description: '求三角形各边长度之和。'
+      },
+      projectionP: {
+        title: '求投影 p',
+        description: '计算斜边上与直角边 a 相邻的线段。'
+      },
+      projectionQ: {
+        title: '求投影 q',
+        description: '计算斜边上与直角边 b 相邻的线段。'
+      },
+      semiperimeter: {
+        title: '求半周长',
+        description: '计算周长的一半，用于进一步推导面积。'
+      },
+    }
+  },
 };
 
 const calculatorUi = {

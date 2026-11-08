@@ -15,6 +15,8 @@ import BaseLayout from 'theme/layouts/BaseLayout.astro';
 import { toAbsoluteUrl } from 'theme/utils/site';
 import { replaceGenericSeoHeading, seoSectionHeading } from 'theme/utils/seoHeadings';
 import { formatListItem, formatRootBars } from 'src/utils/formatList';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 import katex from 'katex';
 import 'katex/dist/katex.min.css';
 
@@ -71,6 +73,17 @@ const renderMath = (expression: string, displayMode = true) =>
     throwOnError: false,
     displayMode
   });
+
+// Swap guide-diagram <img> srcs to the localized variant when it exists on disk.
+const localizeDiagramSrcs = (html: string): string => {
+  if (!html || locale === DEFAULT_LOCALE) return html;
+  return html.replace(/\/images\/([A-Za-z0-9-]+)\/([A-Za-z0-9_.-]+)\.svg/g, (m, dir, name) => {
+    const localized = `${name}-${locale}.svg`;
+    return existsSync(join(process.cwd(), 'public', 'images', dir, localized))
+      ? `/images/${dir}/${localized}`
+      : m;
+  });
+};
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -371,7 +384,7 @@ const sectionHeading = (
         <p set:html={formatRootBars(paragraph)} />
       ))}
       {section.customHtml && (
-        <div class="not-prose" set:html={section.customHtml} />
+        <div class="not-prose" set:html={localizeDiagramSrcs(section.customHtml)} />
       )}
       {section.listItems && section.listItems.length > 0 && (
         <>

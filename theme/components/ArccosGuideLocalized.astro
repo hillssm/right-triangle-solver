@@ -6,6 +6,8 @@
  */
 import katex from 'katex';
 import Faq from 'theme/components/Faq.astro';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 interface Props {
   guide: any;
@@ -40,7 +42,11 @@ const rich = (s: string): string => {
   return out;
 };
 
-const imgSrc = (name: string): string => `/images/angle-from-cosine/${name}`;
+const IMG_DIR = join(process.cwd(), 'public', 'images', 'angle-from-cosine');
+const imgSrc = (name: string): string => {
+  const localized = name.replace('.svg', `-${locale}.svg`);
+  return existsSync(join(IMG_DIR, localized)) ? `/images/angle-from-cosine/${localized}` : `/images/angle-from-cosine/${name}`;
+};
 
 // Section IDs in order (11 content sections, excluding related which is rendered separately)
 const sectionOrder = [

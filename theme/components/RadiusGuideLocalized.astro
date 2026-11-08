@@ -8,6 +8,8 @@
  */
 import katex from 'katex';
 import Faq from 'theme/components/Faq.astro';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 interface Props {
   guide: any;
@@ -42,7 +44,11 @@ const rich = (s: string): string => {
   return out;
 };
 
-const imgSrc = (name: string): string => `/images/radius/${name}`;
+const IMG_DIR = join(process.cwd(), 'public', 'images', 'radius');
+const imgSrc = (name: string): string => {
+  const localized = name.replace('.svg', `-${locale}.svg`);
+  return existsSync(join(IMG_DIR, localized)) ? `/images/radius/${localized}` : `/images/radius/${name}`;
+};
 
 // Section IDs in order (20 content sections)
 const sectionOrder = [

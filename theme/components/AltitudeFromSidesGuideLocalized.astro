@@ -8,6 +8,8 @@
  */
 import katex from 'katex';
 import Faq from 'theme/components/Faq.astro';
+import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 interface Props {
   guide: any;
@@ -42,7 +44,11 @@ const rich = (s: string): string => {
   return out;
 };
 
-const imgSrc = (name: string): string => `/images/right-triangle-altitude-from-sides-calculator/${name}`;
+const IMG_DIR = join(process.cwd(), 'public', 'images', 'right-triangle-altitude-from-sides-calculator');
+const imgSrc = (name: string): string => {
+  const localized = name.replace('.svg', `-${locale}.svg`);
+  return existsSync(join(IMG_DIR, localized)) ? `/images/right-triangle-altitude-from-sides-calculator/${localized}` : `/images/right-triangle-altitude-from-sides-calculator/${name}`;
+};
 
 // Section IDs in order (16 content sections)
 const sectionOrder = [

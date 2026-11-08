@@ -24,3 +24,6 @@ pnpm-debug.log*
 .idea/
 
 .vercel
+
+# generated localized diagram variants (scripts/generate-localized-diagrams.cjs, prebuild)
+public/images/**/*-[a-z][a-z].svg

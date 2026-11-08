@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Perimeter and Area Scaling: 3-4-5 to 6-8-10</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">k = 2: sides double, perimeter doubles, area × 4</text>
+  <polygon points="320.0,440.0 140.0,305.0 140.0,440.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="320.0,440.0 140.0,305.0 140.0,440.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="320.0" cy="440.0" r="9" fill="#f1c97d"/>
+  <circle cx="140.0" cy="305.0" r="9" fill="#f1c97d"/>
+  <circle cx="140.0" cy="440.0" r="9" fill="#f1c97d"/>
+  <text x="350.0" y="448.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="140.0" y="279.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="110.0" y="448.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="156.0,440.0 156.0,424.0 140.0,424.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="82.0" y="381.5" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 3</text>
+  <text x="230.0" y="492.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b = 4</text>
+  <text x="270.0" y="310.5" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c = 5</text>
+  <text x="230.0" y="530.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">P = 3 + 4 + 5 = 12</text>
+  <text x="230.0" y="562.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">A = (3 × 4) ÷ 2 = 6</text>
+  <polygon points="820.0,440.0 640.0,305.0 640.0,440.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="820.0,440.0 640.0,305.0 640.0,440.0" fill="none" stroke="#7dd3fc" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="820.0" cy="440.0" r="9" fill="#7dd3fc"/>
+  <circle cx="640.0" cy="305.0" r="9" fill="#7dd3fc"/>
+  <circle cx="640.0" cy="440.0" r="9" fill="#7dd3fc"/>
+  <text x="850.0" y="448.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="640.0" y="279.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="610.0" y="448.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="656.0,440.0 656.0,424.0 640.0,424.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="582.0" y="381.5" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a′ = 6</text>
+  <text x="730.0" y="492.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b′ = 8</text>
+  <text x="770.0" y="310.5" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c′ = 10</text>
+  <text x="820.0" y="530.0" font-size="26" font-weight="700" fill="#f1c97d" text-anchor="middle">P = 6 + 8 + 10 = 24</text>
+  <text x="820.0" y="562.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">A = (6 × 8) ÷ 2 = 24</text>
+  <text x="480.0" y="380.0" font-size="40" font-weight="700" fill="#f1c97d" text-anchor="middle">× 2</text>
+  <text x="600.0" y="600.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Area grows by k² = 4, not by 2</text>
+</svg>
+

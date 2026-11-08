@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Two Similar Right Triangles: 3-4-5 and 6-8-10</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">k = 6 ÷ 3 = 8 ÷ 4 = 10 ÷ 5 = 2</text>
+  <polygon points="360.0,480.0 180.0,345.0 180.0,480.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="360.0,480.0 180.0,345.0 180.0,480.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="360.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <circle cx="180.0" cy="345.0" r="9" fill="#f1c97d"/>
+  <circle cx="180.0" cy="480.0" r="9" fill="#f1c97d"/>
+  <text x="390.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="180.0" y="319.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="150.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="196.0,480.0 196.0,464.0 180.0,464.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="122.0" y="421.5" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a = 3</text>
+  <text x="270.0" y="532.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b = 4</text>
+  <text x="310.0" y="350.5" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c = 5</text>
+  <text x="270.0" y="568.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Original: 3-4-5</text>
+  <polygon points="880.0,480.0 700.0,345.0 700.0,480.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="880.0,480.0 700.0,345.0 700.0,480.0" fill="none" stroke="#7dd3fc" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="880.0" cy="480.0" r="9" fill="#7dd3fc"/>
+  <circle cx="700.0" cy="345.0" r="9" fill="#7dd3fc"/>
+  <circle cx="700.0" cy="480.0" r="9" fill="#7dd3fc"/>
+  <text x="910.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="700.0" y="319.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="670.0" y="488.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="716.0,480.0 716.0,464.0 700.0,464.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="642.0" y="421.5" font-size="28" font-weight="700" fill="#7dd3fc" text-anchor="middle">a′ = 6</text>
+  <text x="790.0" y="532.0" font-size="28" font-weight="700" fill="#f1c97d" text-anchor="middle">b′ = 8</text>
+  <text x="830.0" y="350.5" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">c′ = 10</text>
+  <text x="880.0" y="568.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Similar: 6-8-10</text>
+  <text x="530.0" y="400.0" font-size="40" font-weight="700" fill="#f1c97d" text-anchor="middle">× 2</text>
+  <text x="600.0" y="600.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Every side doubles, so the shape stays the same</text>
+</svg>
+

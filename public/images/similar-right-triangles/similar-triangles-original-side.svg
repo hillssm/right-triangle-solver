@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Finding an Original Side</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">Original Side = Similar Side ÷ k</text>
+  <rect x="800" y="250" width="340" height="90" rx="12" fill="#1c1b1b" stroke="#f1c97d" stroke-width="3"/>
+  <text x="970.0" y="286.0" font-size="26" font-weight="700" fill="#a3a3a3" text-anchor="middle">Similar side</text>
+  <text x="970.0" y="322.0" font-size="30" font-weight="700" fill="#ffffff" text-anchor="middle">= 15</text>
+  <line x1="800.0" y1="295.0" x2="652.0" y2="295.0" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <line x1="640.0" y1="295.0" x2="652.1" y2="288.0" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <line x1="640.0" y1="295.0" x2="652.1" y2="302.0" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="720.0" y="262.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">÷ 3</text>
+  <rect x="300" y="250" width="340" height="90" rx="12" fill="#1c1b1b" stroke="#4ade80" stroke-width="3"/>
+  <text x="470.0" y="286.0" font-size="26" font-weight="700" fill="#a3a3a3" text-anchor="middle">Original side</text>
+  <text x="470.0" y="322.0" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">= 5</text>
+  <rect x="400" y="430" width="400" height="70" rx="12" fill="#1c1b1b" stroke="#4ade80" stroke-width="3"/>
+  <text x="600.0" y="474.0" font-size="30" font-weight="700" fill="#4ade80" text-anchor="middle">15 ÷ 3 = 5</text>
+  <text x="600.0" y="585.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Divide by k to reverse a scaling and recover the original</text>
+</svg>
+

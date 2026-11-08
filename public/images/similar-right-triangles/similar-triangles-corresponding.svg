@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Corresponding Sides: ABC and DEF</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">AB ↔ DE      BC ↔ EF      AC ↔ DF</text>
+  <polygon points="420.0,500.0 200.0,335.0 200.0,500.0" fill="#ffffff" fill-opacity="0.0" stroke="none"/>
+  <polygon points="420.0,500.0 200.0,335.0 200.0,500.0" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="200.0" y1="335.0" x2="200.0" y2="500.0" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round"/>
+  <line x1="420.0" y1="500.0" x2="200.0" y2="500.0" stroke="#f1c97d" stroke-width="8" stroke-linecap="round"/>
+  <line x1="420.0" y1="500.0" x2="200.0" y2="335.0" stroke="#4ade80" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="420.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <circle cx="200.0" cy="335.0" r="9" fill="#f1c97d"/>
+  <circle cx="200.0" cy="500.0" r="9" fill="#f1c97d"/>
+  <text x="450.0" y="508.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">A</text>
+  <text x="200.0" y="309.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">B</text>
+  <text x="170.0" y="508.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">C</text>
+  <polyline points="216.0,500.0 216.0,484.0 200.0,484.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="310.0" y="552.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Triangle ABC</text>
+  <polygon points="940.0,500.0 720.0,335.0 720.0,500.0" fill="#ffffff" fill-opacity="0.0" stroke="none"/>
+  <polygon points="940.0,500.0 720.0,335.0 720.0,500.0" fill="none" stroke="#ffffff" stroke-width="7" stroke-linejoin="round"/>
+  <line x1="720.0" y1="335.0" x2="720.0" y2="500.0" stroke="#7dd3fc" stroke-width="8" stroke-linecap="round"/>
+  <line x1="940.0" y1="500.0" x2="720.0" y2="500.0" stroke="#f1c97d" stroke-width="8" stroke-linecap="round"/>
+  <line x1="940.0" y1="500.0" x2="720.0" y2="335.0" stroke="#4ade80" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="940.0" cy="500.0" r="9" fill="#7dd3fc"/>
+  <circle cx="720.0" cy="335.0" r="9" fill="#7dd3fc"/>
+  <circle cx="720.0" cy="500.0" r="9" fill="#7dd3fc"/>
+  <text x="970.0" y="508.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="start">D</text>
+  <text x="720.0" y="309.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">E</text>
+  <text x="690.0" y="508.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">F</text>
+  <polyline points="736.0,500.0 736.0,484.0 720.0,484.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="830.0" y="552.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">Triangle DEF</text>
+  <polyline points="368.0,500.0 368.1,497.6 368.2,495.2 368.5,492.9 368.9,490.5 369.4,488.2 370.0,485.8 370.7,483.6 371.5,481.3 372.4,479.1 373.4,476.9 374.5,474.8 375.7,472.8 377.0,470.7 378.4,468.8" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="888.0,500.0 888.1,497.6 888.2,495.2 888.5,492.9 888.9,490.5 889.4,488.2 890.0,485.8 890.7,483.6 891.5,481.3 892.4,479.1 893.4,476.9 894.5,474.8 895.7,472.8 897.0,470.7 898.4,468.8" fill="none" stroke="#f1c97d" stroke-width="3" stroke-linecap="round"/>
+  <text x="600.0" y="585.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Matching colors mark matching sides</text>
+</svg>
+

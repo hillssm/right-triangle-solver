@@ -14,6 +14,10 @@ import { FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS } from 'src/data/fiveTwelveThirte
 import PythagoreanTriplesGuide from 'theme/components/PythagoreanTriplesGuide.astro';
 import PythagoreanTriplesGuideLocalized from 'theme/components/PythagoreanTriplesGuideLocalized.astro';
 import { PYTHAGOREANTRIPLES_GUIDE_TRANSLATIONS } from 'src/data/pythagoreanTriplesGuideTranslations';
+// Page 45 of 45: full Similar Right Triangles guide (EN + 18 locales).
+import SimilarTrianglesGuide from 'theme/components/SimilarTrianglesGuide.astro';
+import SimilarTrianglesGuideLocalized from 'theme/components/SimilarTrianglesGuideLocalized.astro';
+import { SIMILARTRIANGLES_GUIDE_TRANSLATIONS } from 'src/data/similarTrianglesGuideTranslations';
 import { DEFAULT_LOCALE, localizePath, type Locale } from 'theme/i18n/locales';
 import { getTranslations, pick } from 'theme/i18n/translations';
 import BaseLayout from 'theme/layouts/BaseLayout.astro';
@@ -73,6 +77,12 @@ const isFiveTwelveThirteenPage =
 const isPythagoreanTriplesPage =
   page.slug === 'pythagorean-triples-calculator' &&
   (locale === 'en' || PYTHAGOREANTRIPLES_GUIDE_TRANSLATIONS[locale]);
+
+// Page 45 of 45: full guide replaces the old thin template content on the
+// Similar Right Triangles page (calculator itself stays untouched).
+const isSimilarRightTrianglesPage =
+  page.slug === 'similar-right-triangles-calculator' &&
+  (locale === 'en' || SIMILARTRIANGLES_GUIDE_TRANSLATIONS[locale]);
 
 const breadcrumbItems = [
   { label: homeLabel, href: localizePath(locale, '/') },
@@ -172,19 +182,19 @@ const renderMath = (expression: string, displayMode = true) =>
 
   <TriplesCalculator page={page} locale={locale} />
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.intro && page.intro.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.intro && page.intro.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       {page.intro.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.calculatorNote && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.calculatorNote && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <p set:html={formatRootBars(page.calculatorNote)} />
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.formulaSection && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.formulaSection && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.formula} />
       {page.formulaSection.paragraphs.map((p) => <p set:html={formatRootBars(p)} />)}
@@ -202,7 +212,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.diagram && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.diagram && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
       <h2 class="text-2xl font-semibold" set:html={sectionHeadings.diagram} />
       <div class="mt-5 grid gap-6 lg:grid-cols-[minmax(0,1.15fr)_minmax(14rem,0.85fr)] lg:items-start">
@@ -293,7 +303,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.howToUse && page.howToUse.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.howToUse && page.howToUse.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.howTo} />
       <ol>
@@ -302,7 +312,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.example && page.example.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.example && page.example.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.examples} />
       <div class="space-y-6 mt-4">
@@ -326,21 +336,21 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.resultMeaning && page.resultMeaning.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.resultMeaning && page.resultMeaning.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.result} />
       {page.resultMeaning.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.sideRatio && page.sideRatio.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.sideRatio && page.sideRatio.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.sideRatio} />
       {page.sideRatio.map((paragraph) => <p set:html={formatRootBars(paragraph)} />)}
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.useCases && page.useCases.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.useCases && page.useCases.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.useCases} />
       <ul>
@@ -349,7 +359,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.commonMistakes && page.commonMistakes.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.commonMistakes && page.commonMistakes.length > 0 && (
     <section class="mx-auto mt-8 w-full max-w-4xl section-shell prose-shell">
       <h2 set:html={sectionHeadings.commonMistakes} />
       <ul>
@@ -358,7 +368,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </section>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && page.faqs && page.faqs.length > 0 && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && page.faqs && page.faqs.length > 0 && (
     <div class="mx-auto mt-8 w-full max-w-4xl">
       <Faq
         heading={sectionHeadings.faqs || faqHeading}
@@ -368,7 +378,7 @@ const renderMath = (expression: string, displayMode = true) =>
     </div>
   )}
 
-  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && (
+  {!isThreeFourFivePage && !isFiveTwelveThirteenPage && !isPythagoreanTriplesPage && !isSimilarRightTrianglesPage && (
   <section class="mx-auto mt-8 w-full max-w-4xl section-shell">
     <h2 class="text-2xl font-semibold">{sectionHeadings.related || relatedHeading}</h2>
     <div class="not-prose mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -394,6 +404,8 @@ const renderMath = (expression: string, displayMode = true) =>
   {isFiveTwelveThirteenPage && locale !== 'en' && FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS[locale] ? <FiveTwelveThirteenGuideLocalized guide={FIVETWELVETHIRTEEN_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
   {isPythagoreanTriplesPage && locale === 'en' ? <PythagoreanTriplesGuide /> : null}
   {isPythagoreanTriplesPage && locale !== 'en' && PYTHAGOREANTRIPLES_GUIDE_TRANSLATIONS[locale] ? <PythagoreanTriplesGuideLocalized guide={PYTHAGOREANTRIPLES_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
+  {isSimilarRightTrianglesPage && locale === 'en' ? <SimilarTrianglesGuide /> : null}
+  {isSimilarRightTrianglesPage && locale !== 'en' && SIMILARTRIANGLES_GUIDE_TRANSLATIONS[locale] ? <SimilarTrianglesGuideLocalized guide={SIMILARTRIANGLES_GUIDE_TRANSLATIONS[locale]} locale={locale} /> : null}
 </BaseLayout>
 
 <style>

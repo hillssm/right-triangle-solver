@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" font-family="Manrope, Inter, system-ui, sans-serif">
+  <rect x="0" y="0" width="1200" height="630" fill="#131313"/>
+  <text x="600" y="58" font-size="28" font-weight="700" fill="#ffffff" text-anchor="middle">Enlargement and Reduction</text>
+
+  <text x="600.0" y="108.0" font-size="30" font-weight="700" fill="#f1c97d" text-anchor="middle">Same angles, same proportions, different sizes</text>
+  <polygon points="220.0,520.0 120.0,445.0 120.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="220.0,520.0 120.0,445.0 120.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="220.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="120.0" cy="445.0" r="9" fill="#f1c97d"/>
+  <circle cx="120.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="134.0,520.0 134.0,506.0 120.0,506.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="170.0" y="568.0" font-size="26" font-weight="700" fill="#7dd3fc" text-anchor="middle">k = 0.5</text>
+  <text x="170.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">half size</text>
+  <polygon points="580.0,520.0 380.0,370.0 380.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="580.0,520.0 380.0,370.0 380.0,520.0" fill="none" stroke="#f1c97d" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="580.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="370.0" r="9" fill="#f1c97d"/>
+  <circle cx="380.0" cy="520.0" r="9" fill="#f1c97d"/>
+  <polyline points="396.0,520.0 396.0,504.0 380.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="480.0" y="568.0" font-size="26" font-weight="700" fill="#ffffff" text-anchor="middle">k = 1</text>
+  <text x="480.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">same size</text>
+  <polygon points="1100.0,520.0 700.0,220.0 700.0,520.0" fill="#ffffff" fill-opacity="0.04" stroke="none"/>
+  <polygon points="1100.0,520.0 700.0,220.0 700.0,520.0" fill="none" stroke="#4ade80" stroke-width="7" stroke-linejoin="round"/>
+  <circle cx="1100.0" cy="520.0" r="9" fill="#4ade80"/>
+  <circle cx="700.0" cy="220.0" r="9" fill="#4ade80"/>
+  <circle cx="700.0" cy="520.0" r="9" fill="#4ade80"/>
+  <polyline points="716.0,520.0 716.0,504.0 700.0,504.0" fill="none" stroke="#ffffff" stroke-width="3"/>
+  <text x="900.0" y="568.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">k = 2</text>
+  <text x="900.0" y="150.0" font-size="24" font-weight="700" fill="#a3a3a3" text-anchor="middle">twice as large</text>
+  <text x="600.0" y="600.0" font-size="26" font-weight="700" fill="#4ade80" text-anchor="middle">Scaling changes size only, never the angles</text>
+</svg>
+

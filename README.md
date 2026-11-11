@@ -2,6 +2,8 @@
 
 A premium, luxury-themed geometry workspace built with Astro and Tailwind CSS.
 
+Live site: https://www.righttrianglesolver.com/
+
 ## Features
 - **Instant Solving**: Calculate missing sides and angles as you type.
 - **Solution Steps**: View detailed mathematical derivations for every answer.
